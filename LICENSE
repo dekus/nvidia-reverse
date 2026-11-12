@@ -1,0 +1,65 @@
+Copyright (c) 2026 dekus
+
+This repository is a reverse-engineering research corpus. It contains three
+distinct categories of material, each under its own terms:
+
+1. Original documentation, analysis prose, catalogs, inventories, coverage
+   data, cross-references, extracted interface schemas and all other
+   human-authored text in docs/, evidence/*.json, evidence/*.jsonl and the
+   repository's root Markdown files are licensed under the Creative Commons
+   Attribution 4.0 International License (CC-BY-4.0).
+
+   SPDX-License-Identifier: CC-BY-4.0
+   Full text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+2. Software in tools/ (the corpus browser and any accompanying scripts
+   authored by the repository owner) is licensed under the MIT License:
+
+   Permission is hereby granted, free of charge, to any person obtaining a
+   copy of this software and associated documentation files (the "Software"),
+   to deal in the Software without restriction, including without limitation
+   the rights to use, copy, modify, merge, publish, distribute, sublicense,
+   and/or sell copies of the Software, and to permit persons to whom the
+   Software is furnished to do so, subject to the following conditions:
+
+   The above copyright notice and this permission notice shall be included in
+   all copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+   THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+   DEALINGS IN THE SOFTWARE.
+
+   SPDX-License-Identifier: MIT
+
+3. Reconstructed C pseudocode, disassembly listings, PE metadata and extracted
+   strings, descriptors and resources under evidence/decompiled/,
+   evidence/disassembly/, evidence/pe/, evidence/strings/, evidence/protobuf/,
+   evidence/embedded_json/, evidence/js/, evidence/text/ and
+   docs/routines/ are derivative analysis artifacts produced from software
+   distributed by NVIDIA Corporation and third-party vendors. The underlying
+   software remains the property of its respective copyright holders. These
+   artifacts are published for the purposes of interoperability research,
+   security research, education and scholarship, which the authors believe to
+   be permitted by applicable fair-use and research exceptions, including
+   17 U.S.C. § 107, Directive (EU) 2019/790 Articles 3 and 4, and comparable
+   provisions in other jurisdictions.
+
+   No claim of copyright is made over the underlying NVIDIA or third-party
+   software. Third-party license notices distributed with the original
+   software are preserved in THIRD_PARTY_NOTICES.txt. Trademarks referenced
+   in this repository (including NVIDIA, GeForce, CUDA, DLSS, Ansel,
+   ShadowPlay, FrameView, GameStream and related marks) remain the property
+   of their respective owners; no affiliation with or endorsement by NVIDIA
+   Corporation is claimed or implied.
+
+   If you are a rights holder and believe material in category 3 exceeds the
+   scope of research use, please open a GitHub issue or contact the
+   repository owner so the specific material can be reviewed.
+
+Attribution requirement (categories 1 and 2):
+  dekus, "NVIDIA software reverse engineering" (2026),
+  https://github.com/dekus/nvidia-reverse
