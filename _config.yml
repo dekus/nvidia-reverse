@@ -1,0 +1,7 @@
+theme: jekyll-theme-hacker
+title: NVIDIA software reverse engineering
+description: >-
+  Static-analysis corpus of NVIDIA App 11.0.9.585, NvContainer, FrameView SDK
+  and the whole C:\Program Files\NVIDIA Corporation tree. 131 PE images,
+  1,180,302 decompiled functions, 14 recovered Protocol Buffers schemas.
+show_downloads: false
