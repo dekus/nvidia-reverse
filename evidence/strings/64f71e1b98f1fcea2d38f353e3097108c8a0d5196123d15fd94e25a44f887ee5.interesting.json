@@ -1,0 +1,1332 @@
+[
+  {
+    "offset": "0x5c5960",
+    "encoding": "ascii",
+    "text": "OpenTracingPropagationError"
+  },
+  {
+    "offset": "0x5c5980",
+    "encoding": "ascii",
+    "text": "opentracing: SpanContext type incompatible with tracer"
+  },
+  {
+    "offset": "0x5c59b8",
+    "encoding": "ascii",
+    "text": "opentracing: Invalid Inject/Extract carrier"
+  },
+  {
+    "offset": "0x5c59e8",
+    "encoding": "ascii",
+    "text": "opentracing: SpanContext data corrupted in Extract carrier"
+  },
+  {
+    "offset": "0x5c5a28",
+    "encoding": "ascii",
+    "text": "opentracing: SpanContext key not found"
+  },
+  {
+    "offset": "0x5c5a50",
+    "encoding": "ascii",
+    "text": "opentracing: Lookup for the given key is not supported"
+  },
+  {
+    "offset": "0x5c5a88",
+    "encoding": "ascii",
+    "text": "opentracing: unknown propagation error"
+  },
+  {
+    "offset": "0x5d1bd0",
+    "encoding": "ascii",
+    "text": "lightstep.opentracing_version"
+  },
+  {
+    "offset": "0x60eb40",
+    "encoding": "ascii",
+    "text": "BIO_socket_ioctl"
+  },
+  {
+    "offset": "0x60eb58",
+    "encoding": "ascii",
+    "text": "calling ioctlsocket()"
+  },
+  {
+    "offset": "0x681c20",
+    "encoding": "ascii",
+    "text": "localhost/"
+  },
+  {
+    "offset": "0x6d1380",
+    "encoding": "ascii",
+    "text": "127.0.0.1"
+  },
+  {
+    "offset": "0x6d1468",
+    "encoding": "ascii",
+    "text": "localhost."
+  },
+  {
+    "offset": "0x6d1478",
+    "encoding": "ascii",
+    "text": ".localhost"
+  },
+  {
+    "offset": "0x6d1488",
+    "encoding": "ascii",
+    "text": ".localhost."
+  },
+  {
+    "offset": "0x6d3410",
+    "encoding": "ascii",
+    "text": "cr_in, rewind via set.ioctl_func -> %d"
+  },
+  {
+    "offset": "0x6d3438",
+    "encoding": "ascii",
+    "text": "ioctl callback returned error %d"
+  },
+  {
+    "offset": "0x6d6a70",
+    "encoding": "ascii",
+    "text": "%s: user=%s, passwd=%s, sasl_authzid=%s, oauth_bearer=%s, source=%d"
+  },
+  {
+    "offset": "0x6d6e00",
+    "encoding": "ascii",
+    "text": "127.0.0.1/"
+  },
+  {
+    "offset": "0x6d7cb0",
+    "encoding": "ascii",
+    "text": "Negotiate: noauthpersist -> %d, header part: %s"
+  },
+  {
+    "offset": "0x6e2a90",
+    "encoding": "ascii",
+    "text": "XOAUTH2"
+  },
+  {
+    "offset": "0x6e2a98",
+    "encoding": "ascii",
+    "text": "OAUTHBEARER"
+  },
+  {
+    "offset": "0x6e2c68",
+    "encoding": "ascii",
+    "text": "CURLOPT_XOAUTH2_BEARER"
+  },
+  {
+    "offset": "0x6f0740",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\main.cpp"
+  },
+  {
+    "offset": "0x6f08a0",
+    "encoding": "ascii",
+    "text": "NvTelemetryPlugin"
+  },
+  {
+    "offset": "0x6f09d0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\NvTelemetry.cpp"
+  },
+  {
+    "offset": "0x6f0a30",
+    "encoding": "ascii",
+    "text": "Invalid initialization parameter. Are you trying to re-initialize NvTelemetry with different parameters ("
+  },
+  {
+    "offset": "0x6f0af0",
+    "encoding": "ascii",
+    "text": "Invalid initialization parameter. Are you trying to re-initialize NvTelemetry with different parameters (config file path doesn't match)?"
+  },
+  {
+    "offset": "0x6f0b80",
+    "encoding": "ascii",
+    "text": "Invalid initialization parameter. Are you trying to re-initialize NvTelemetry with different parameters (working directory path doesn't match)?"
+  },
+  {
+    "offset": "0x6f0c10",
+    "encoding": "ascii",
+    "text": "Invalid initialization parameter. Are you trying to re-initialize NvTelemetry with different parameters (log file path doesn't match)?"
+  },
+  {
+    "offset": "0x6f0ca0",
+    "encoding": "ascii",
+    "text": "Invalid initialization parameter. Are you trying to re-initialize NvTelemetry with different parameters (log level doesn't match)?"
+  },
+  {
+    "offset": "0x6f0d30",
+    "encoding": "ascii",
+    "text": "Invalid initialization parameter. Are you trying to re-initialize NvTelemetry with different parameters (use staging servers flag doesn't match)?"
+  },
+  {
+    "offset": "0x6f0ed0",
+    "encoding": "ascii",
+    "text": "NvTelemetry.json"
+  },
+  {
+    "offset": "0x6f0f30",
+    "encoding": "ascii",
+    "text": "NvTelemetry"
+  },
+  {
+    "offset": "0x6f12d8",
+    "encoding": "ascii",
+    "text": "NvTelemetry.log"
+  },
+  {
+    "offset": "0x6f1360",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\Common\\TelemetryConfig.cpp"
+  },
+  {
+    "offset": "0x6f1418",
+    "encoding": "ascii",
+    "text": "openTracingConfig"
+  },
+  {
+    "offset": "0x6f1ed0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetryDeviceIdLib\\src\\device_id_windows.cpp"
+  },
+  {
+    "offset": "0x6f2660",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetryDeviceIdLib\\inc\\wmihelper.h"
+  },
+  {
+    "offset": "0x6f26e0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetryDeviceIdLib\\src\\wmihelper.cpp"
+  },
+  {
+    "offset": "0x6fa160",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\NvTelemetryManager.cpp"
+  },
+  {
+    "offset": "0x6fa748",
+    "encoding": "ascii",
+    "text": "Purging telemetry"
+  },
+  {
+    "offset": "0x6fa788",
+    "encoding": "ascii",
+    "text": "Unknown telemetry initialization mode: "
+  },
+  {
+    "offset": "0x6fa7e8",
+    "encoding": "ascii",
+    "text": "telemetry"
+  },
+  {
+    "offset": "0x6fa940",
+    "encoding": "ascii",
+    "text": "NVIDIA::Telemetry::TelemetryManager::Send_DeviceIdChange_Event"
+  },
+  {
+    "offset": "0x6facf0",
+    "encoding": "ascii",
+    "text": "--NV_TELEMETRY--"
+  },
+  {
+    "offset": "0x6fb1e2",
+    "encoding": "ascii",
+    "text": "    \"title\": \"JSON schema for NvTelemetry localized config storage format\","
+  },
+  {
+    "offset": "0x6fb3e0",
+    "encoding": "ascii",
+    "text": "NVIDIA::Telemetry::LocalizationOverridesPersistency::ReadLocalizationOverrides"
+  },
+  {
+    "offset": "0x6fb480",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\LocalizationOverridesPersistency.cpp"
+  },
+  {
+    "offset": "0x6fbcd0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\inc\\CommonHeaderInfo.h"
+  },
+  {
+    "offset": "0x6fbda0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\feedback_manager.cpp"
+  },
+  {
+    "offset": "0x6fbdf8",
+    "encoding": "ascii",
+    "text": "Check m_telemetryFilter != nullptr failed"
+  },
+  {
+    "offset": "0x6fc2b0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\Common\\opentracing.h"
+  },
+  {
+    "offset": "0x6fc2f8",
+    "encoding": "ascii",
+    "text": "Check m_telemetryFilter failed"
+  },
+  {
+    "offset": "0x6fc320",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\feedback_sender.cpp"
+  },
+  {
+    "offset": "0x6fc470",
+    "encoding": "ascii",
+    "text": "NVIDIA::Telemetry::FeedbackSender::SendRoutine"
+  },
+  {
+    "offset": "0x6fcb62",
+    "encoding": "ascii",
+    "text": "    \"title\": \"JSON schema for NvTelemetry CurrentState.json:\","
+  },
+  {
+    "offset": "0x6fce40",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\CurrentStatePersistency.cpp"
+  },
+  {
+    "offset": "0x6fcec0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\NvTelemetryExperimentManager.cpp"
+  },
+  {
+    "offset": "0x6fcff0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\NvTelemetryIpcController.cpp"
+  },
+  {
+    "offset": "0x6fd2f0",
+    "encoding": "ascii",
+    "text": "Creating NvTelemetry persistency for "
+  },
+  {
+    "offset": "0x6fd3a0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\TelemetryPersistency.cpp"
+  },
+  {
+    "offset": "0x6fd4b0",
+    "encoding": "ascii",
+    "text": "Destroying NvTelemetry persistency"
+  },
+  {
+    "offset": "0x7008d0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\NvTelemetryEventSender.cpp"
+  },
+  {
+    "offset": "0x700978",
+    "encoding": "ascii",
+    "text": "Creating NvTelemetryEventManager"
+  },
+  {
+    "offset": "0x7009f8",
+    "encoding": "ascii",
+    "text": "Destroying NvTelemetryEventManager"
+  },
+  {
+    "offset": "0x700cc8",
+    "encoding": "ascii",
+    "text": "NVIDIA::Telemetry::NvTelemetryEventManager::RunSender"
+  },
+  {
+    "offset": "0x700d30",
+    "encoding": "ascii",
+    "text": "NvTelemetryEventManager: localized endpoint URL did not change. Skipping processing OnEventURLChanged"
+  },
+  {
+    "offset": "0x700ee8",
+    "encoding": "ascii",
+    "text": "Creating TelemetryFilter"
+  },
+  {
+    "offset": "0x700f10",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\TelemetryFilter.cpp"
+  },
+  {
+    "offset": "0x700f68",
+    "encoding": "ascii",
+    "text": "Telemetry consent for userId="
+  },
+  {
+    "offset": "0x700f90",
+    "encoding": "ascii",
+    "text": "Destroying TelemetryFilter"
+  },
+  {
+    "offset": "0x700fb0",
+    "encoding": "ascii",
+    "text": "Telemetry consent for clientId="
+  },
+  {
+    "offset": "0x700fd0",
+    "encoding": "ascii",
+    "text": "Set telemetry consent for userId="
+  },
+  {
+    "offset": "0x701008",
+    "encoding": "ascii",
+    "text": "Loading Telemetry filter state (legacy format)"
+  },
+  {
+    "offset": "0x701038",
+    "encoding": "ascii",
+    "text": "Set device telemetry consent for clientId="
+  },
+  {
+    "offset": "0x701068",
+    "encoding": "ascii",
+    "text": "Loading Telemetry filter state"
+  },
+  {
+    "offset": "0x701088",
+    "encoding": "ascii",
+    "text": "Loading telemetry filter state (legacy format) failed"
+  },
+  {
+    "offset": "0x7010c0",
+    "encoding": "ascii",
+    "text": "Telemetry filter file ("
+  },
+  {
+    "offset": "0x7010f0",
+    "encoding": "ascii",
+    "text": "Check doc.HasMember(TelemetryGDPRDeviceSectionName) failed"
+  },
+  {
+    "offset": "0x701130",
+    "encoding": "ascii",
+    "text": "Check doc.HasMember(TelemetryGDPRUserSectionName) failed"
+  },
+  {
+    "offset": "0x701170",
+    "encoding": "ascii",
+    "text": "Saving Telemetry filter state"
+  },
+  {
+    "offset": "0x701190",
+    "encoding": "ascii",
+    "text": "Loading telemetry filter state failed: "
+  },
+  {
+    "offset": "0x7011b8",
+    "encoding": "ascii",
+    "text": "Saving telemetry filter state failed: "
+  },
+  {
+    "offset": "0x701350",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\OnDiskFeedback.cpp"
+  },
+  {
+    "offset": "0x701fc0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\feedback.cpp"
+  },
+  {
+    "offset": "0x702190",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\Common\\marshalling.h"
+  },
+  {
+    "offset": "0x702270",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\ExperimentIpcHandler.cpp"
+  },
+  {
+    "offset": "0x7023a0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\LocalizedEndPointIpcHandler.cpp"
+  },
+  {
+    "offset": "0x7024c0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\DistributedTracingStateIpcHandler.cpp"
+  },
+  {
+    "offset": "0x702630",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\ConsentIpcHandler.cpp"
+  },
+  {
+    "offset": "0x7026b0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\PipeServer.cpp"
+  },
+  {
+    "offset": "0x7027b0",
+    "encoding": "ascii",
+    "text": "Check !GetPipeName(m_iTelemetryConfig).empty() failed"
+  },
+  {
+    "offset": "0x702af8",
+    "encoding": "ascii",
+    "text": "Check data.size() <= TELEMETRY_IPC_BUFFER_SIZE failed"
+  },
+  {
+    "offset": "0x702de0",
+    "encoding": "ascii",
+    "text": "Check ConvertStringSidToSidW(NVIDIA::Telemetry::GetUserID().c_str(), &sid) failed with GLE=0x"
+  },
+  {
+    "offset": "0x703140",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\FeedbackIpcHandler.cpp"
+  },
+  {
+    "offset": "0x703200",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\EventIpcHandler.cpp"
+  },
+  {
+    "offset": "0x7038e0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\TelemetryEvent.cpp"
+  },
+  {
+    "offset": "0x7047f0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\UserInfo.cpp"
+  },
+  {
+    "offset": "0x704910",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\NvTelemetry\\src\\TelemetryEventBatch.cpp"
+  },
+  {
+    "offset": "0x704978",
+    "encoding": "ascii",
+    "text": "Check m_telemetryPersistency != nullptr failed"
+  },
+  {
+    "offset": "0x7065e0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\Common\\cryptography_hash.cpp"
+  },
+  {
+    "offset": "0x706878",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\Common\\common.cpp"
+  },
+  {
+    "offset": "0x706b90",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\Common\\sleep_interval.cpp"
+  },
+  {
+    "offset": "0x706c80",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\Common\\telemetry_ipc.cpp"
+  },
+  {
+    "offset": "0x70e508",
+    "encoding": "ascii",
+    "text": "localhost"
+  },
+  {
+    "offset": "0x70ebe0",
+    "encoding": "ascii",
+    "text": "NvTelemetryVFS"
+  },
+  {
+    "offset": "0x70ec40",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\Common\\PersistencyCodec.cpp"
+  },
+  {
+    "offset": "0x71d358",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvTelemetry\\build\\bin\\x64\\Release\\NvTelemetry64.pdb"
+  },
+  {
+    "offset": "0x76372e",
+    "encoding": "ascii",
+    "text": "NvTelemetry64.dll"
+  },
+  {
+    "offset": "0x763771",
+    "encoding": "ascii",
+    "text": "FreeTelemetryString"
+  },
+  {
+    "offset": "0x763795",
+    "encoding": "ascii",
+    "text": "GetDeviceTelemetryConsent"
+  },
+  {
+    "offset": "0x7637af",
+    "encoding": "ascii",
+    "text": "GetUserTelemetryConsent"
+  },
+  {
+    "offset": "0x7637c7",
+    "encoding": "ascii",
+    "text": "InitializeTelemetryStandalone"
+  },
+  {
+    "offset": "0x7637e5",
+    "encoding": "ascii",
+    "text": "InitializeTelemetryStandaloneWithDeviceId"
+  },
+  {
+    "offset": "0x76380f",
+    "encoding": "ascii",
+    "text": "InitializeTelemetryStandalone_2"
+  },
+  {
+    "offset": "0x76382f",
+    "encoding": "ascii",
+    "text": "InitializeTelemetryStandalone_3"
+  },
+  {
+    "offset": "0x76384f",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x76385f",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendAnonymousEvent"
+  },
+  {
+    "offset": "0x76387d",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendAnonymousEvent_2"
+  },
+  {
+    "offset": "0x76389d",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendEvent"
+  },
+  {
+    "offset": "0x7638b2",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendEvent_2"
+  },
+  {
+    "offset": "0x7638c9",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback"
+  },
+  {
+    "offset": "0x7638e1",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_2"
+  },
+  {
+    "offset": "0x7638fb",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_3"
+  },
+  {
+    "offset": "0x763915",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_4"
+  },
+  {
+    "offset": "0x76392f",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_5"
+  },
+  {
+    "offset": "0x763949",
+    "encoding": "ascii",
+    "text": "NvTelemetrySetAbContext"
+  },
+  {
+    "offset": "0x763971",
+    "encoding": "ascii",
+    "text": "SetDeviceTelemetryConsent"
+  },
+  {
+    "offset": "0x7639bc",
+    "encoding": "ascii",
+    "text": "SetUserTelemetryConsent"
+  },
+  {
+    "offset": "0x7639d4",
+    "encoding": "ascii",
+    "text": "SubscribeForTelemetryNotifications"
+  },
+  {
+    "offset": "0x7639f7",
+    "encoding": "ascii",
+    "text": "UninitializeTelemetry"
+  },
+  {
+    "offset": "0x763a0d",
+    "encoding": "ascii",
+    "text": "UnsubscribeFromTelemetryNotifications"
+  },
+  {
+    "offset": "0x76486a",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeW"
+  },
+  {
+    "offset": "0x764a88",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x765cb8",
+    "encoding": "ascii",
+    "text": "WSAIoctl"
+  },
+  {
+    "offset": "0x76fef0",
+    "encoding": "ascii",
+    "text": ".?AVSpanContext@v2@opentracing@@"
+  },
+  {
+    "offset": "0x76ffd0",
+    "encoding": "ascii",
+    "text": ".P6AXW4LogLevel@lightstep@@Vstring_view@v2@opentracing@@@Z"
+  },
+  {
+    "offset": "0x7706a8",
+    "encoding": "ascii",
+    "text": ".?AVbad_variant_access@util@v2@opentracing@@"
+  },
+  {
+    "offset": "0x7713b0",
+    "encoding": "ascii",
+    "text": ".?AU?$default_delete@UITelemetryConfig@Telemetry@NVIDIA@@@std@@"
+  },
+  {
+    "offset": "0x771a50",
+    "encoding": "ascii",
+    "text": ".?AV?$_Fake_no_copy_callable_adapter@P8TelemetryManager@Telemetry@NVIDIA@@EAA?AUDeviceInfo@23@AEBU423@@ZPEAV123@AEBU423@@std@@"
+  },
+  {
+    "offset": "0x771ae0",
+    "encoding": "ascii",
+    "text": ".?AU?$default_delete@UINvOpenTracer@OpenTracing@Common@@@std@@"
+  },
+  {
+    "offset": "0x771b30",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_1>@?1???$?0V?$_Fake_no_copy_callable_adapter@P8IDeviceInfoGenerator@Telemetry@NVIDIA@@EAA?AUDeviceInfo@23@XZV?$unique_ptr@UIDeviceInfoGenerator@Telemetry@NVIDIA@@U?$default_delete@UIDeviceInfoGenerator@Telemetry@NVIDIA@@@std@@@std@@@std@@@?$_Task_async_state@UDeviceInfo@Telemetry@NVIDIA@@@std@@QEAA@$$QEAV?$_Fake_no_copy_callable_adapter@P8IDeviceInfoGenerator@Telemetry@NVIDIA@@EAA?AUDeviceInfo@23@XZV?$unique_ptr@UIDeviceInfoGenerator@Telemetry@NVIDIA@@U?$default_delete@UIDeviceInfoGenerator@Telemetry@NVIDIA@@@std@@@std@@@2@@Z@"
+  },
+  {
+    "offset": "0x771da0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Fake_no_copy_callable_adapter@P8IDeviceInfoGenerator@Telemetry@NVIDIA@@EAA?AUDeviceInfo@23@XZV?$unique_ptr@UIDeviceInfoGenerator@Telemetry@NVIDIA@@U?$default_delete@UIDeviceInfoGenerator@Telemetry@NVIDIA@@@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x771ea0",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_1>@?1???$?0V?$_Fake_no_copy_callable_adapter@P8TelemetryManager@Telemetry@NVIDIA@@EAA?AUDeviceInfo@23@AEBU423@@ZPEAV123@AEBU423@@std@@@?$_Task_async_state@UDeviceInfo@Telemetry@NVIDIA@@@std@@QEAA@$$QEAV?$_Fake_no_copy_callable_adapter@P8TelemetryManager@Telemetry@NVIDIA@@EAA?AUDeviceInfo@23@AEBU423@@ZPEAV123@AEBU423@@2@@Z@"
+  },
+  {
+    "offset": "0x772010",
+    "encoding": "ascii",
+    "text": ".?AU?$default_delete@VSpan@v2@opentracing@@@std@@"
+  },
+  {
+    "offset": "0x7720f0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Fake_no_copy_callable_adapter@V<lambda_1>@?1??HandleRequestAsync@PipeServer@IPC@Telemetry@NVIDIA@@AEAAXV?$unique_ptr@XP6AHPEAX@Z@std@@@Z@@std@@"
+  },
+  {
+    "offset": "0x7721a0",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_1>@?1???$?0V?$_Fake_no_copy_callable_adapter@V<lambda_1>@?1??HandleRequestAsync@PipeServer@IPC@Telemetry@NVIDIA@@AEAAXV?$unique_ptr@XP6AHPEAX@Z@std@@@Z@@std@@@?$_Task_async_state@X@std@@QEAA@$$QEAV?$_Fake_no_copy_callable_adapter@V<lambda_1>@?1??HandleRequestAsync@PipeServer@IPC@Telemetry@NVIDIA@@AEAAXV?$unique_ptr@XP6AHPEAX@Z@std@@@Z@@2@@Z@"
+  },
+  {
+    "offset": "0x772b30",
+    "encoding": "ascii",
+    "text": ".?AVPropagationErrorCategory@?A0xde5e60b2@v2@opentracing@@"
+  },
+  {
+    "offset": "0x772e50",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_base@XW4LogLevel@lightstep@@Vstring_view@v2@opentracing@@@std@@"
+  },
+  {
+    "offset": "0x772eb0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_impl_no_alloc@P6AXW4LogLevel@lightstep@@Vstring_view@v2@opentracing@@@ZXW412@V345@@std@@"
+  },
+  {
+    "offset": "0x773490",
+    "encoding": "ascii",
+    "text": ".?AVTracer@v2@opentracing@@"
+  },
+  {
+    "offset": "0x773a50",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_base@V?$expected@XVerror_code@std@@@v2@opentracing@@Vstring_view@23@V423@@std@@"
+  },
+  {
+    "offset": "0x773ac0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_impl_no_alloc@V<lambda_6f50189e24633f8cc7b571364cc0f1be>@@V?$expected@XVerror_code@std@@@v2@opentracing@@Vstring_view@34@V534@@std@@"
+  },
+  {
+    "offset": "0x773b70",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_impl_no_alloc@V<lambda_7a53965e48bf8b38c938b6aff7faa203>@@V?$expected@XVerror_code@std@@@v2@opentracing@@Vstring_view@34@V534@@std@@"
+  },
+  {
+    "offset": "0x773c20",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_impl_no_alloc@V<lambda_725e526522a6c5de56d539d14ef3060b>@@V?$expected@XVerror_code@std@@@v2@opentracing@@Vstring_view@34@V534@@std@@"
+  },
+  {
+    "offset": "0x773cd0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_impl_no_alloc@V<lambda_dac951cea72cf1f1bc36ad6c00b1e53c>@@V?$expected@XVerror_code@std@@@v2@opentracing@@Vstring_view@34@V534@@std@@"
+  },
+  {
+    "offset": "0x773d80",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_impl_no_alloc@V<lambda_ed085e264122aff0465b480dd6c054e3>@@V?$expected@XVerror_code@std@@@v2@opentracing@@Vstring_view@34@V534@@std@@"
+  },
+  {
+    "offset": "0x773e30",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_impl_no_alloc@V<lambda_9291a0d8e459b8c529273e21f8e8aa97>@@V?$expected@XVerror_code@std@@@v2@opentracing@@Vstring_view@34@V534@@std@@"
+  },
+  {
+    "offset": "0x773ed8",
+    "encoding": "ascii",
+    "text": ".?AVSpan@v2@opentracing@@"
+  },
+  {
+    "offset": "0x774170",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_impl_no_alloc@V<lambda_b5aaa05d64fec9f97be6f740984f8ffe>@@V?$expected@XVerror_code@std@@@v2@opentracing@@Vstring_view@34@V534@@std@@"
+  },
+  {
+    "offset": "0x774220",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_impl_no_alloc@V<lambda_43e350049c1dc808656f53dbebcbe322>@@V?$expected@XVerror_code@std@@@v2@opentracing@@Vstring_view@34@V534@@std@@"
+  },
+  {
+    "offset": "0x7753e0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_resource@PEAUITelemetryConfig@Telemetry@NVIDIA@@U?$default_delete@UITelemetryConfig@Telemetry@NVIDIA@@@std@@@std@@"
+  },
+  {
+    "offset": "0x7757c8",
+    "encoding": "ascii",
+    "text": ".?AVTelemetryConfig@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x775800",
+    "encoding": "ascii",
+    "text": ".?AUITelemetryConfig@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x775838",
+    "encoding": "ascii",
+    "text": ".?AVDeviceInfoGenerator@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x775878",
+    "encoding": "ascii",
+    "text": ".?AUIDeviceInfoGenerator@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x775bc0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Packaged_state@$$A6A?AUAdaptersInfo@Telemetry@NVIDIA@@XZ@std@@"
+  },
+  {
+    "offset": "0x775f60",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_impl_no_alloc@V?$_Fake_no_copy_callable_adapter@V<lambda_787bc42bbc228099cf1870b877998389>@@@std@@UAdaptersInfo@Telemetry@NVIDIA@@$$V@std@@"
+  },
+  {
+    "offset": "0x776120",
+    "encoding": "ascii",
+    "text": ".?AUIDeviceInfoProvider@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x776320",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_impl_no_alloc@V?$_Fake_no_copy_callable_adapter@V<lambda_a3fa66fd25c60d36ff4b95d5fd09783b>@@@std@@W4DeviceType@Telemetry@NVIDIA@@$$V@std@@"
+  },
+  {
+    "offset": "0x7763d0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Packaged_state@$$A6A?AW4DeviceType@Telemetry@NVIDIA@@XZ@std@@"
+  },
+  {
+    "offset": "0x776430",
+    "encoding": "ascii",
+    "text": ".?AV?$_Associated_state@UAdaptersInfo@Telemetry@NVIDIA@@@std@@"
+  },
+  {
+    "offset": "0x7764f0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Task_async_state@W4DeviceType@Telemetry@NVIDIA@@@std@@"
+  },
+  {
+    "offset": "0x776700",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_base@W4DeviceType@Telemetry@NVIDIA@@$$V@std@@"
+  },
+  {
+    "offset": "0x776930",
+    "encoding": "ascii",
+    "text": ".?AV?$_Associated_state@W4DeviceType@Telemetry@NVIDIA@@@std@@"
+  },
+  {
+    "offset": "0x776de0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_base@UAdaptersInfo@Telemetry@NVIDIA@@$$V@std@@"
+  },
+  {
+    "offset": "0x776f70",
+    "encoding": "ascii",
+    "text": ".?AV?$_Task_async_state@UAdaptersInfo@Telemetry@NVIDIA@@@std@@"
+  },
+  {
+    "offset": "0x777000",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?1???$?0V?$_Fake_no_copy_callable_adapter@P8TelemetryManager@Telemetry@NVIDIA@@EAA?AUDeviceInfo@23@AEBU423@@ZPEAV123@AEBU423@@std@@@?$_Task_async_state@UDeviceInfo@Telemetry@NVIDIA@@@std@@QEAA@$$QEAV?$_Fake_no_copy_callable_adapter@P8TelemetryManager@Telemetry@NVIDIA@@EAA?AUDeviceInfo@23@AEBU423@@ZPEAV123@AEBU423@@3@@Z@X$$V@std@@"
+  },
+  {
+    "offset": "0x777270",
+    "encoding": "ascii",
+    "text": ".?AU?$_PPLTaskHandle@EU?$_InitialTaskHandle@XV<lambda_1>@?1???$?0V?$_Fake_no_copy_callable_adapter@P8TelemetryManager@Telemetry@NVIDIA@@EAA?AUDeviceInfo@23@AEBU423@@ZPEAV123@AEBU423@@std@@@?$_Task_async_state@UDeviceInfo@Telemetry@NVIDIA@@@std@@QEAA@$$QEAV?$_Fake_no_copy_callable_adapter@P8TelemetryManager@Telemetry@NVIDIA@@EAA?AUDeviceInfo@23@AEBU423@@ZPEAV123@AEBU423@@3@@Z@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@U_TaskProcHandle@details@3@@details@Concurrency@@"
+  },
+  {
+    "offset": "0x777470",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_impl_no_alloc@V?$_Fake_no_copy_callable_adapter@P8IDeviceInfoGenerator@Telemetry@NVIDIA@@EAA?AUDeviceInfo@23@XZV?$unique_ptr@UIDeviceInfoGenerator@Telemetry@NVIDIA@@U?$default_delete@UIDeviceInfoGenerator@Telemetry@NVIDIA@@@std@@@std@@@std@@UDeviceInfo@Telemetry@NVIDIA@@$$V@std@@"
+  },
+  {
+    "offset": "0x777640",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VNvTelemetryEventManager@Telemetry@NVIDIA@@@std@@"
+  },
+  {
+    "offset": "0x7776a0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Task_async_state@UDeviceInfo@Telemetry@NVIDIA@@@std@@"
+  },
+  {
+    "offset": "0x7776f0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VTelemetryNotificationListener@?A0xd3b16eea@@@std@@"
+  },
+  {
+    "offset": "0x777780",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VCurrentStatePersistency@Telemetry@NVIDIA@@@std@@"
+  },
+  {
+    "offset": "0x7777e0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_base@UDeviceInfo@Telemetry@NVIDIA@@$$V@std@@"
+  },
+  {
+    "offset": "0x777830",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VExperimentManager@Telemetry@NVIDIA@@@std@@"
+  },
+  {
+    "offset": "0x7778d8",
+    "encoding": "ascii",
+    "text": ".?AUINotificationListener@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x777920",
+    "encoding": "ascii",
+    "text": ".?AU?$_InitialTaskHandle@XV<lambda_1>@?1???$?0V?$_Fake_no_copy_callable_adapter@P8TelemetryManager@Telemetry@NVIDIA@@EAA?AUDeviceInfo@23@AEBU423@@ZPEAV123@AEBU423@@std@@@?$_Task_async_state@UDeviceInfo@Telemetry@NVIDIA@@@std@@QEAA@$$QEAV?$_Fake_no_copy_callable_adapter@P8TelemetryManager@Telemetry@NVIDIA@@EAA?AUDeviceInfo@23@AEBU423@@ZPEAV123@AEBU423@@3@@Z@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@"
+  },
+  {
+    "offset": "0x777ae0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_impl_no_alloc@V?$_Fake_no_copy_callable_adapter@P8TelemetryManager@Telemetry@NVIDIA@@EAA?AUDeviceInfo@23@AEBU423@@ZPEAV123@AEBU423@@std@@UDeviceInfo@Telemetry@NVIDIA@@$$V@std@@"
+  },
+  {
+    "offset": "0x777bb0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VTelemetryFilter@Telemetry@NVIDIA@@@std@@"
+  },
+  {
+    "offset": "0x777c00",
+    "encoding": "ascii",
+    "text": ".?AU?$_InitialTaskHandle@XV<lambda_1>@?1???$?0V?$_Fake_no_copy_callable_adapter@P8IDeviceInfoGenerator@Telemetry@NVIDIA@@EAA?AUDeviceInfo@23@XZV?$unique_ptr@UIDeviceInfoGenerator@Telemetry@NVIDIA@@U?$default_delete@UIDeviceInfoGenerator@Telemetry@NVIDIA@@@std@@@std@@@std@@@?$_Task_async_state@UDeviceInfo@Telemetry@NVIDIA@@@std@@QEAA@$$QEAV?$_Fake_no_copy_callable_adapter@P8IDeviceInfoGenerator@Telemetry@NVIDIA@@EAA?AUDeviceInfo@23@XZV?$unique_ptr@UIDeviceInfoGenerator@Telemetry@NVIDIA@@U?$default_delete@UIDeviceInfoGenerator@Telemetry@NVIDIA@@@std@@@std@@@3@@Z@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@"
+  },
+  {
+    "offset": "0x777ee0",
+    "encoding": "ascii",
+    "text": ".?AUIFeedbackNotificationListener@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x777f30",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VTelemetryPersistency@Telemetry@NVIDIA@@@std@@"
+  },
+  {
+    "offset": "0x777f90",
+    "encoding": "ascii",
+    "text": ".?AV?$_Associated_state@UDeviceInfo@Telemetry@NVIDIA@@@std@@"
+  },
+  {
+    "offset": "0x777fe0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?1???$?0V?$_Fake_no_copy_callable_adapter@P8IDeviceInfoGenerator@Telemetry@NVIDIA@@EAA?AUDeviceInfo@23@XZV?$unique_ptr@UIDeviceInfoGenerator@Telemetry@NVIDIA@@U?$default_delete@UIDeviceInfoGenerator@Telemetry@NVIDIA@@@std@@@std@@@std@@@?$_Task_async_state@UDeviceInfo@Telemetry@NVIDIA@@@std@@QEAA@$$QEAV?$_Fake_no_copy_callable_adapter@P8IDeviceInfoGenerator@Telemetry@NVIDIA@@EAA?AUDeviceInfo@23@XZV?$unique_ptr@UIDeviceInfoGenerator@Telemetry@NVIDIA@@U?$default_delete@UIDeviceInfoGenerator@Telemetry@NVIDIA@@@std@@@std@@@3@@Z@X$$V@std@@"
+  },
+  {
+    "offset": "0x778240",
+    "encoding": "ascii",
+    "text": ".?AVTelemetryNotificationListener@?A0xd3b16eea@@"
+  },
+  {
+    "offset": "0x778290",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VFeedbackDB@Telemetry@NVIDIA@@@std@@"
+  },
+  {
+    "offset": "0x778340",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VLocalizationOverridesPersistency@Telemetry@NVIDIA@@@std@@"
+  },
+  {
+    "offset": "0x7783b0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Packaged_state@$$A6A?AUDeviceInfo@Telemetry@NVIDIA@@XZ@std@@"
+  },
+  {
+    "offset": "0x778410",
+    "encoding": "ascii",
+    "text": ".?AU?$_PPLTaskHandle@EU?$_InitialTaskHandle@XV<lambda_1>@?1???$?0V?$_Fake_no_copy_callable_adapter@P8IDeviceInfoGenerator@Telemetry@NVIDIA@@EAA?AUDeviceInfo@23@XZV?$unique_ptr@UIDeviceInfoGenerator@Telemetry@NVIDIA@@U?$default_delete@UIDeviceInfoGenerator@Telemetry@NVIDIA@@@std@@@std@@@std@@@?$_Task_async_state@UDeviceInfo@Telemetry@NVIDIA@@@std@@QEAA@$$QEAV?$_Fake_no_copy_callable_adapter@P8IDeviceInfoGenerator@Telemetry@NVIDIA@@EAA?AUDeviceInfo@23@XZV?$unique_ptr@UIDeviceInfoGenerator@Telemetry@NVIDIA@@U?$default_delete@UIDeviceInfoGenerator@Telemetry@NVIDIA@@@std@@@std@@@3@@Z@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@U_TaskProcHandle@details@3@@details@Concurrency@@"
+  },
+  {
+    "offset": "0x7786e0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_resource@PEAUINvOpenTracer@OpenTracing@Common@@U?$default_delete@UINvOpenTracer@OpenTracing@Common@@@std@@@std@@"
+  },
+  {
+    "offset": "0x778780",
+    "encoding": "ascii",
+    "text": ".?AUIEventNotificationListener@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x7787d0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VFeedbackManager@Telemetry@NVIDIA@@@std@@"
+  },
+  {
+    "offset": "0x778870",
+    "encoding": "ascii",
+    "text": ".?AVLocalizationOverridesPersistency@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x778b00",
+    "encoding": "ascii",
+    "text": ".?AUILocalizationOverridesPersistency@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x778b50",
+    "encoding": "ascii",
+    "text": ".?AUIFeedbackDB@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x778b90",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VOnDiskFeedback@Telemetry@NVIDIA@@@std@@"
+  },
+  {
+    "offset": "0x778be0",
+    "encoding": "ascii",
+    "text": ".?AVFeedbackDB@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x778c70",
+    "encoding": "ascii",
+    "text": ".?AVFeedbackManager@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x778cb0",
+    "encoding": "ascii",
+    "text": ".?AUITelemetryFeedbackManager@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x778d00",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VFeedbackDBListener@Telemetry@NVIDIA@@@std@@"
+  },
+  {
+    "offset": "0x778d60",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_resource@PEAVSpan@v2@opentracing@@U?$default_delete@VSpan@v2@opentracing@@@std@@@std@@"
+  },
+  {
+    "offset": "0x778dd8",
+    "encoding": "ascii",
+    "text": ".?AVFeedbackSender@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x778e10",
+    "encoding": "ascii",
+    "text": ".?AVStartSpanOption@v2@opentracing@@"
+  },
+  {
+    "offset": "0x778e50",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VOpenTracingWrapper@OpenTracing@Telemetry@NVIDIA@@@std@@"
+  },
+  {
+    "offset": "0x778eb0",
+    "encoding": "ascii",
+    "text": ".?AVSpanReference@v2@opentracing@@"
+  },
+  {
+    "offset": "0x778ef0",
+    "encoding": "ascii",
+    "text": ".?AUIFeedbackDBEventsListener@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x778f38",
+    "encoding": "ascii",
+    "text": ".?AVIFeedbackSender@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x778fb0",
+    "encoding": "ascii",
+    "text": ".?AVFeedbackDBListener@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x778ff0",
+    "encoding": "ascii",
+    "text": ".?AVCurrentStatePersistency@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x779030",
+    "encoding": "ascii",
+    "text": ".?AUICurrentStatePersistency@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x779070",
+    "encoding": "ascii",
+    "text": ".?AUITelemetryExperimentManager@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x7790b8",
+    "encoding": "ascii",
+    "text": ".?AVExperimentManager@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x779100",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VPipeRequestHandler@IPC@Telemetry@NVIDIA@@@std@@"
+  },
+  {
+    "offset": "0x779158",
+    "encoding": "ascii",
+    "text": ".?AVPipeRequestHandler@IPC@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x779198",
+    "encoding": "ascii",
+    "text": ".?AUIPipeRequestHandler@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x7791d8",
+    "encoding": "ascii",
+    "text": ".?AVTelemetryPersistency@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x779218",
+    "encoding": "ascii",
+    "text": ".?AUITelemetryPersistency@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x7792e0",
+    "encoding": "ascii",
+    "text": ".?AVNvTelemetryEventManager@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x779380",
+    "encoding": "ascii",
+    "text": ".?AUITelemetryEventManager@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x7793c0",
+    "encoding": "ascii",
+    "text": ".?AVTelemetryFilter@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x7793f8",
+    "encoding": "ascii",
+    "text": ".?AUITelemetryFilter@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x779478",
+    "encoding": "ascii",
+    "text": ".?AUIFeedback@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x7794b0",
+    "encoding": "ascii",
+    "text": ".?AVFeedback@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x7794e0",
+    "encoding": "ascii",
+    "text": ".?AVOnDiskFeedback@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x779520",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_impl_no_alloc@V?$_Fake_no_copy_callable_adapter@V<lambda_1>@?1??HandleRequestAsync@PipeServer@IPC@Telemetry@NVIDIA@@AEAAXV?$unique_ptr@XP6AHPEAX@Z@std@@@Z@@std@@X$$V@std@@"
+  },
+  {
+    "offset": "0x7795f0",
+    "encoding": "ascii",
+    "text": ".?AU?$_PPLTaskHandle@EU?$_InitialTaskHandle@XV<lambda_1>@?1???$?0V?$_Fake_no_copy_callable_adapter@V<lambda_1>@?1??HandleRequestAsync@PipeServer@IPC@Telemetry@NVIDIA@@AEAAXV?$unique_ptr@XP6AHPEAX@Z@std@@@Z@@std@@@?$_Task_async_state@X@std@@QEAA@$$QEAV?$_Fake_no_copy_callable_adapter@V<lambda_1>@?1??HandleRequestAsync@PipeServer@IPC@Telemetry@NVIDIA@@AEAAXV?$unique_ptr@XP6AHPEAX@Z@std@@@Z@@3@@Z@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@U_TaskProcHandle@details@3@@details@Concurrency@@"
+  },
+  {
+    "offset": "0x779810",
+    "encoding": "ascii",
+    "text": ".?AU?$_InitialTaskHandle@XV<lambda_1>@?1???$?0V?$_Fake_no_copy_callable_adapter@V<lambda_1>@?1??HandleRequestAsync@PipeServer@IPC@Telemetry@NVIDIA@@AEAAXV?$unique_ptr@XP6AHPEAX@Z@std@@@Z@@std@@@?$_Task_async_state@X@std@@QEAA@$$QEAV?$_Fake_no_copy_callable_adapter@V<lambda_1>@?1??HandleRequestAsync@PipeServer@IPC@Telemetry@NVIDIA@@AEAAXV?$unique_ptr@XP6AHPEAX@Z@std@@@Z@@3@@Z@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@"
+  },
+  {
+    "offset": "0x7799e0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?1???$?0V?$_Fake_no_copy_callable_adapter@V<lambda_1>@?1??HandleRequestAsync@PipeServer@IPC@Telemetry@NVIDIA@@AEAAXV?$unique_ptr@XP6AHPEAX@Z@std@@@Z@@std@@@?$_Task_async_state@X@std@@QEAA@$$QEAV?$_Fake_no_copy_callable_adapter@V<lambda_1>@?1??HandleRequestAsync@PipeServer@IPC@Telemetry@NVIDIA@@AEAAXV?$unique_ptr@XP6AHPEAX@Z@std@@@Z@@3@@Z@X$$V@std@@"
+  },
+  {
+    "offset": "0x77a7c0",
+    "encoding": "ascii",
+    "text": ".?AVContextWriter@OpenTracing@Common@@"
+  },
+  {
+    "offset": "0x77a7f8",
+    "encoding": "ascii",
+    "text": ".?AVTextMapWriter@v2@opentracing@@"
+  },
+  {
+    "offset": "0x77a830",
+    "encoding": "ascii",
+    "text": ".?AVNvLightStepOpenTracer@OpenTracing@Common@@"
+  },
+  {
+    "offset": "0x77a870",
+    "encoding": "ascii",
+    "text": ".?AUINvOpenTracer@OpenTracing@Common@@"
+  },
+  {
+    "offset": "0x77a8a8",
+    "encoding": "ascii",
+    "text": ".?AVTextMapReader@v2@opentracing@@"
+  },
+  {
+    "offset": "0x77a960",
+    "encoding": "ascii",
+    "text": ".?AVContextReader@OpenTracing@Common@@"
+  },
+  {
+    "offset": "0x77a9f8",
+    "encoding": "ascii",
+    "text": ".?AVNvSyncTransporter@OpenTracing@Common@@"
+  },
+  {
+    "offset": "0x77aa70",
+    "encoding": "ascii",
+    "text": ".?AUIHashImplementation@Hash@Misc@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x77aab8",
+    "encoding": "ascii",
+    "text": ".?AVSHA256Hasher@Misc@Telemetry@NVIDIA@@"
+  },
+  {
+    "offset": "0x6f087e",
+    "encoding": "utf-16le",
+    "text": "xNvTelemetry.log"
+  },
+  {
+    "offset": "0x6f0ee8",
+    "encoding": "utf-16le",
+    "text": "NvTelemetry\\"
+  },
+  {
+    "offset": "0x6f0f90",
+    "encoding": "utf-16le",
+    "text": "https://events.telemetry.data.nvidia.com"
+  },
+  {
+    "offset": "0x6f0ff0",
+    "encoding": "utf-16le",
+    "text": "https://events.telemetry.data-uat.nvidia.com"
+  },
+  {
+    "offset": "0x6f1050",
+    "encoding": "utf-16le",
+    "text": "https://feedbacks.telemetry.data.nvidia.com"
+  },
+  {
+    "offset": "0x6f10b0",
+    "encoding": "utf-16le",
+    "text": "https://feedbacks.telemetry.data-uat.nvidia.com"
+  },
+  {
+    "offset": "0x6fa0de",
+    "encoding": "utf-16le",
+    "text": "4telemetry_switch.ini"
+  },
+  {
+    "offset": "0x6fa1f8",
+    "encoding": "utf-16le",
+    "text": "Running NvTelemetry version "
+  },
+  {
+    "offset": "0x6fa260",
+    "encoding": "utf-16le",
+    "text": "Creating TelemetryManager"
+  },
+  {
+    "offset": "0x6fa470",
+    "encoding": "utf-16le",
+    "text": "TelemetryManager created."
+  },
+  {
+    "offset": "0x6fa4a8",
+    "encoding": "utf-16le",
+    "text": "Destroying TelemetryManager"
+  },
+  {
+    "offset": "0x6facc0",
+    "encoding": "utf-16le",
+    "text": "NvTelemetry/19.8.6.0"
+  },
+  {
+    "offset": "0x706c0e",
+    "encoding": "utf-16le",
+    "text": "d\\\\.\\pipe\\{F685F498-BFDE-49D3-8132-D708F76B990E}"
+  },
+  {
+    "offset": "0x7b7ba8",
+    "encoding": "utf-16le",
+    "text": "NVIDIA Telemetry"
+  },
+  {
+    "offset": "0x7b7c20",
+    "encoding": "utf-16le",
+    "text": "NVIDIA Telemetry"
+  },
+  {
+    "offset": "0x7b7cf4",
+    "encoding": "utf-16le",
+    "text": "NvTelemetry.dll"
+  },
+  {
+    "offset": "0x7b7d34",
+    "encoding": "utf-16le",
+    "text": "NVIDIA Telemetry"
+  }
+]

@@ -1,0 +1,1055 @@
+[
+  {
+    "file_offset": "0x41db40",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#downloader",
+      "title": "Downloader Endpoints",
+      "type": "object",
+      "system": "CrimsonNative",
+      "module": "Downloader",
+      "definitions": {
+        "UpdateFrameworkResult": {
+          "type": "integer",
+          "description": "Enum for error code returned by update framework",
+          "enum": [
+            -1,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "tsEnumNames": [
+            "NotImplemented",
+            "Success",
+            "Error",
+            "UpdateFrameworkUninitialised",
+            "UpdateCheckMgrUninitialised",
+            "NoUpdateCheckCandidate",
+            "InvalidComponentType",
+            "UpdateCheckInfoException",
+            "UpdateCheckComponentInapplicable",
+            "InvalidArgument",
+            "InvalidOperation",
+            "FileDoesNotExist",
+            "NotFound",
+            "BadJson",
+            "KeyDoesNotExist",
+            "InternalException",
+            "ProfileCatalogUninitialised",
+            "AlreadyDownloaded",
+            "CannotDeleteFile",
+            "DownloaderBusyTryLater",
+            "CurlInitFailed",
+            "PostProcessingPolicyDontRun",
+            "DownloadPolicyDontRun",
+            "UpdateCheckPeriodNotElapsed",
+            "PluginLoadError",
+            "PluginFnAddrError",
+            "PluginError"
+          ]
+        },
+        "UpdateChannel": {
+          "type": "integer",
+          "description": "Enum channel of the update",
+          "enum": [
+            0,
+            1,
+            -1
+          ],
+          "tsEnumNames": [
+            "Official",
+            "Beta",
+            "Unknown"
+          ]
+        },
+        "DownloadTypeInfo": {
+          "type": "object",
+          "properties": {
+            "componentName": {
+              "type": "string",
+              "description": "Name of the download component"
+            },
+            "updateChannel": {
+              "$ref": "#/definitions/UpdateChannel"
+            },
+            "updateType": {
+              "type": "integer",
+              "description": "Enum type of the update",
+              "enum": [
+                0,
+                1,
+                -1
+              ],
+              "tsEnumNames": [
+                "Full",
+                "Diff",
+                "Unknown"
+              ]
+            },
+            "invokeType": {
+              "type": "integer",
+              "description": "Enum type of the update invocation",
+              "enum": [
+                0,
+                1,
+                -1
+              ],
+              "tsEnumNames": [
+                "Auto",
+                "Manual",
+                "Unknown"
+              ]
+            }
+          },
+          "required": [
+            "componentName",
+            "updateChannel",
+            "updateType",
+            "invokeType"
+          ]
+        },
+        "DownloadProgressStatus": {
+          "type": "object",
+          "properties": {
+            "downloadStatus": {
+              "type": "integer",
+              "description": "Enum defining download status",
+              "enum": [
+                -1,
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+              ],
+              "tsEnumNames": [
+                "Undefined",
+                "DownloadTriggered",
+                "Downloading",
+                "VerifyingChecksum",
+                "VerifyingSignature",
+                "Paused",
+                "Cancelled",
+                "NetworkErrorRetrying",
+                "NetworkErrorRetryPaused",
+                "Finished",
+                "ChecksumVerificationFailed",
+                "SignatureVerificationFailed",
+                "DiskWriteFail",
+                "Error",
+                "NotAllowedNow",
+                "Prohibited"
+              ]
+            },
+            "percentComplete": {
+              "type": "number",
+              "description": "Percentage to which the download is completed"
+            },
+            "timeRemaining": {
+              "type": "number",
+              "description": "time remaining for download complete"
+            },
+            "downloadSpeed": {
+              "type": "number",
+              "description": "speed of the download"
+            },
+            "totalBytes": {
+              "type": "number",
+              "description": "total size of the download, in bytes"
+            },
+            "bytesDone": {
+              "type": "number",
+              "description": "bytes that are downloaded so far"
+            },
+            "taskId": {
+              "type": "string",
+              "description": "Id of the download task"
+            },
+            "downloadedLocation": {
+              "type": "string",
+              "description": "path of the downloaded file"
+            },
+            "failureCount": {
+              "type": "integer",
+              "description": "number of times the download failed"
+            },
+            "version": {
+              "type": "string",
+              "description": "version of the component being downloaded"
+            },
+            "downloadTypeInfo": {
+              "$ref": "#/definitions/DownloadTypeInfo"
+            },
+            "httpResponseCode": {
+              "type": "integer",
+              "description": "http response code"
+            },
+            "errorCode": {
+              "type": "string",
+              "description": "error code from downloader"
+            },
+            "downloadPausedOnce": {
+              "type": "integer",
+              "description": "whether the download was paused once or not"
+            },
+            "downloadUrl": {
+              "type": "string",
+              "description": "url of the download"
+            }
+          },
+          "required": [
+            "downloadStatus",
+            "percentComplete",
+            "timeRemaining",
+            "downloadSpeed",
+            "totalBytes",
+            "bytesDone",
+            "taskId",
+            "downloadedLocation",
+            "failureCount",
+            "version",
+            "downloadTypeInfo",
+            "httpResponseCode",
+            "errorCode",
+            "downloadPausedOnce",
+            "downloadUrl"
+          ]
+        },
+        "DownloadProgressStatusReturn": {
+          "type": "object",
+          "properties": {
+            "updateFrameworkResult": {
+              "$ref": "#/definitions/UpdateFrameworkResult"
+            },
+            "downloadProgressStatus": {
+              "$ref": "#/definitions/DownloadProgressStatus"
+            }
+          },
+          "required": [
+            "updateFrameworkResult",
+            "downloadProgressStatus"
+          ]
+        },
+        "PostProcessingAction": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "name of the action"
+            },
+            "output": {
+              "type": "string",
+              "description": "output of the action. the string can contain anything right from XML, \nJSON to simple path string, if there is no output it'll be empty"
+            },
+            "actionStatus": {
+              "type": "integer",
+              "description": "enum for status of the action",
+              "enum": [
+                -1,
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "tsEnumNames": [
+                "Undefined",
+                "Ready",
+                "Executing",
+                "Completed",
+                "CouldNotRun",
+                "FailedRetryPending",
+                "Failed"
+              ]
+            },
+            "retryCount": {
+              "type": "integer",
+              "description": "count of the retried attempts for this action, after failure"
+            }
+          },
+          "required": [
+            "name",
+            "actionStatus",
+            "retryCount"
+          ]
+        },
+        "PostProcessingStatusInfo": {
+          "type": "object",
+          "properties": {
+            "taskId": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Id of the task for which status is to be queried"
+            },
+            "postProcessingStatus": {
+              "type": "integer",
+              "description": "Enum defining post processing status",
+              "enum": [
+                -1,
+                0,
+                1,
+                2
+              ],
+              "tsEnumNames": [
+                "Undefined",
+                "ExecutingActions",
+                "Completed",
+                "Failed"
+              ]
+            },
+            "actions": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/PostProcessingAction"
+              }
+            }
+          },
+          "required": [
+            "taskId",
+            "postProcessingStatus",
+            "actions"
+          ]
+        },
+        "PostProgressStatusReturn": {
+          "type": "object",
+          "properties": {
+            "updateFrameworkResult": {
+              "$ref": "#/definitions/UpdateFrameworkResult"
+            },
+            "postProcessingStatusInfo": {
+              "$ref": "#/definitions/PostProcessingStatusInfo"
+            }
+          },
+          "required": [
+            "updateFrameworkResult",
+            "postProcessingStatusInfo"
+          ]
+        },
+        "CheckForUpdateStatus": {
+          "type": "object",
+          "properties": {
+            "isBetaRequested": {
+              "type": "boolean",
+              "description": "Boolean describing whether beta was requested"
+            },
+            "progressStatus": {
+              "type": "integer",
+              "description": "Enum defining return code of the update check",
+              "enum": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "tsEnumNames": [
+                "Started",
+                "Retrying",
+                "RetryStopped",
+                "Finished",
+                "Failed"
+              ]
+            },
+            "url": {
+              "type": "string",
+              "description": "url of the download"
+            },
+            "isBeta": {
+              "type": "boolean",
+              "description": "whether the update that is available is beta or not"
+            },
+            "version": {
+              "type": "string",
+              "description": "version of the available update"
+            }
+          },
+          "required": [
+            "isBetaRequested",
+            "progressStatus",
+            "url",
+            "isBeta",
+            "version"
+          ]
+        },
+        "AutoUpdateProgressInfo": {
+          "type": "object",
+          "properties": {
+            "componentName": {
+              "type": "string",
+              "description": "Name of the component to auto update"
+            },
+            "taskId": {
+              "type": "string",
+              "minLength": 0,
+              "description": "Id of the task for which status is to be reported"
+            },
+            "updateState": {
+              "type": "integer",
+              "description": "Enum defining update state",
+              "enum": [
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "tsEnumNames": [
+                "Unknown",
+                "UpdateInProgress",
+                "UpdateUnavailable",
+                "UpdateSuccessful",
+                "UpdateFailed"
+              ]
+            },
+            "updateExecutionPhase": {
+              "type": "integer",
+              "description": "Enum defining update execution phase",
+              "enum": [
+                -1,
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "tsEnumNames": [
+                "Uninitialised",
+                "CheckingForUpdate",
+                "UpdateCheckEnd",
+                "Downloading",
+                "DownloadEnd",
+                "PostProcessing",
+                "PostProcessingEnd"
+              ]
+            }
+          },
+          "required": [
+            "componentName",
+            "updateState",
+            "updateExecutionPhase"
+          ]
+        },
+        "GetFirstBootTimeAfterInstall": {
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "updateFrameworkResult": {
+                "$ref": "#/definitions/UpdateFrameworkResult"
+              },
+              "firstBootTime": {
+                "type": "string",
+                "description": "Time of the first boot after install. ex. Tue Aug  8 12:38:54 2023"
+              }
+            },
+            "required": [
+              "updateFrameworkResult",
+              "firstBootTime"
+            ]
+          }
+        },
+        "GetMaxDaysBetweenReleases": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "componentName": {
+                "type": "string",
+                "description": "Name of the component for which max days between releases is to be fetched"
+              }
+            },
+            "required": [
+              "componentName"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "updateFrameworkResult": {
+                "$ref": "#/definitions/UpdateFrameworkResult"
+              },
+              "maxDaysBetweenReleases": {
+                "type": "integer",
+                "description": "this is configured in profile catalog"
+              }
+            },
+            "required": [
+              "updateFrameworkResult",
+              "maxDaysBetweenReleases"
+            ]
+          }
+        },
+        "CheckForUpdate": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "downloadTypeInfo": {
+                "$ref": "#/definitions/DownloadTypeInfo"
+              }
+            },
+            "required": [
+              "downloadTypeInfo"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "updateFrameworkResult": {
+                "$ref": "#/definitions/UpdateFrameworkResult"
+              }
+            },
+            "required": [
+              "updateFrameworkResult"
+            ]
+          }
+        },
+        "GetLatestUpdateCheckTime": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "componentName": {
+                "type": "string",
+                "description": "Name of the component for which latest update check information is to be fetched"
+              }
+            },
+            "required": [
+              "componentName"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "updateFrameworkResult": {
+                "$ref": "#/definitions/UpdateFrameworkResult"
+              },
+              "latestUpdatecheckTime": {
+                "type": "string",
+                "description": "Time of the latest successfull update check time. ex. Tue Aug  8 12:38:54 2023"
+              }
+            },
+            "required": [
+              "updateFrameworkResult",
+              "latestUpdatecheckTime"
+            ]
+          }
+        },
+        "GetTaskDownloadStatus": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "componentName": {
+                "type": "string",
+                "description": "Name of the component for which download status is to be fetched"
+              },
+              "taskId": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Id of the task for which status is to be queried"
+              }
+            },
+            "required": [
+              "componentName",
+              "taskId"
+            ]
+          },
+          "return": {
+            "$ref": "#/definitions/DownloadProgressStatusReturn"
+          }
+        },
+        "GetDownloadStatus": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "componentName": {
+                "type": "string",
+                "description": "Name of the component for which download status is to be fetched"
+              },
+              "version": {
+                "type": "string",
+                "description": "version of the component being downloaded"
+              },
+              "url": {
+                "type": "string",
+                "description": "url of the component being downloaded"
+              }
+            },
+            "required": [
+              "componentName",
+              "version",
+              "url"
+            ]
+          },
+          "return": {
+            "$ref": "#/definitions/DownloadProgressStatusReturn"
+          }
+        },
+        "StartDownload": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "version": {
+                "type": "string",
+                "description": "version of the component to be downloaded"
+              },
+              "url": {
+                "type": "string",
+                "description": "url of the download"
+              },
+              "downloadTypeInfo": {
+                "$ref": "#/definitions/DownloadTypeInfo"
+              }
+            },
+            "required": [
+              "version",
+              "url",
+              "downloadTypeInfo"
+            ]
+          },
+          "return": {
+            "$ref": "#/definitions/DownloadProgressStatusReturn"
+          }
+        },
+        "StartDownloadAndPostProcess": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "version": {
+                "type": "string",
+                "description": "version of the component to be downloaded"
+              },
+              "url": {
+                "type": "string",
+                "description": "url of the download"
+              },
+              "downloadTypeInfo": {
+                "$ref": "#/definitions/DownloadTypeInfo"
+              }
+            },
+            "required": [
+              "version",
+              "url",
+              "downloadTypeInfo"
+            ]
+          },
+          "return": {
+            "$ref": "#/definitions/DownloadProgressStatusReturn"
+          }
+        },
+        "ScheduleDownloadAndPostProcess": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "scheduleAfterSeconds": {
+                "type": "integer",
+                "description": "Number of seconds after the download and post processing is to be scheduled"
+              },
+              "version": {
+                "type": "string",
+                "description": "version of the component to be downloaded and extracted"
+              },
+              "url": {
+                "type": "string",
+                "description": "url of the download"
+              },
+              "downloadTypeInfo": {
+                "$ref": "#/definitions/DownloadTypeInfo"
+              }
+            },
+            "required": [
+              "scheduleAfterSeconds",
+              "version",
+              "url",
+              "downloadTypeInfo"
+            ]
+          },
+          "return": {
+            "$ref": "#/definitions/DownloadProgressStatusReturn"
+          }
+        },
+        "PauseDownload": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "componentName": {
+                "type": "string",
+                "description": "Name of the component for which download needs to be paused"
+              },
+              "taskId": {
+                "type": "string",
+                "description": "Id of the download task which needs to be paused. Note post processing cannot be paused."
+              }
+            },
+            "required": [
+              "componentName",
+              "taskId"
+            ]
+          },
+          "return": {
+            "$ref": "#/definitions/DownloadProgressStatusReturn"
+          }
+        },
+        "ResumeDownload": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "componentName": {
+                "type": "string",
+                "description": "Name of the component for which download & post processing is to be resumed"
+              },
+              "taskId": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Id of the download task which needs to be resumed"
+              }
+            },
+            "required": [
+              "componentName",
+              "taskId"
+            ]
+          },
+          "return": {
+            "$ref": "#/definitions/DownloadProgressStatusReturn"
+          }
+        },
+        "ResumeDownloadAndPostProcess": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "componentName": {
+                "type": "string",
+                "description": "Name of the component for which download & post processing is to be resumed"
+              },
+              "taskId": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Id of the download task which needs to be resumed"
+              }
+            },
+            "required": [
+              "componentName",
+              "taskId"
+            ]
+          },
+          "return": {
+            "$ref": "#/definitions/DownloadProgressStatusReturn"
+          }
+        },
+        "StopDownload": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "componentName": {
+                "type": "string",
+                "description": "Name of the component for which download needs to be stopped"
+              },
+              "taskId": {
+                "type": "string",
+                "description": "Id of the download task which needs to be stopped"
+              }
+            },
+            "required": [
+              "componentName",
+              "taskId"
+            ]
+          },
+          "return": {
+            "$ref": "#/definitions/DownloadProgressStatusReturn"
+          }
+        },
+        "GetPostProcessingStatus": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "componentName": {
+                "type": "string",
+                "description": "Name of the component for which post processing needs to be started"
+              },
+              "taskId": {
+                "type": "string",
+                "description": "Id of the download task for which post processing status is queried"
+              }
+            },
+            "required": [
+              "componentName",
+              "taskId"
+            ]
+          },
+          "return": {
+            "$ref": "#/definitions/PostProgressStatusReturn"
+          }
+        },
+        "StartPostProcessing": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "componentName": {
+                "type": "string",
+                "description": "Name of the component for which post processing needs to be started"
+              },
+              "taskId": {
+                "type": "string",
+                "description": "Id of the download task for which post processing needs to be started"
+              }
+            },
+            "required": [
+              "componentName",
+              "taskId"
+            ]
+          },
+          "return": {
+            "$ref": "#/definitions/PostProgressStatusReturn"
+          }
+        },
+        "TriggerAutoUpdate": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "componentName": {
+                "type": "string",
+                "description": "Name of the component for which auto update is to be triggered"
+              }
+            },
+            "required": [
+              "componentName"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "updateFrameworkResult": {
+                "$ref": "#/definitions/UpdateFrameworkResult"
+              }
+            },
+            "required": [
+              "updateFrameworkResult"
+            ]
+          }
+        },
+        "RegisterCheckForUpdateProgress": {
+          "isCommand": true,
+          "type": "object",
+          "persistent": true,
+          "return": {
+            "$ref": "#/definitions/CheckForUpdateStatus"
+          }
+        },
+        "RegisterDownloadProgress": {
+          "isCommand": true,
+          "type": "object",
+          "persistent": true,
+          "return": {
+            "$ref": "#/definitions/DownloadProgressStatus"
+          }
+        },
+        "RegisterPostProcessingProgress": {
+          "isCommand": true,
+          "type": "object",
+          "persistent": true,
+          "return": {
+            "$ref": "#/definitions/PostProcessingStatusInfo"
+          }
+        },
+        "RegisterAutoUpdateProgress": {
+          "isCommand": true,
+          "type": "object",
+          "persistent": true,
+          "return": {
+            "$ref": "#/definitions/AutoUpdateProgressInfo"
+          }
+        },
+        "CreateProfileStatusEnum": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "Success",
+            "Failure",
+            "FailureNoSourceProfile"
+          ]
+        },
+        "CreateProfileFromSourceProfile": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "componentName": {
+                "type": "string",
+                "description": "Name of the component to copy profile from"
+              },
+              "sourceComponentName": {
+                "type": "string",
+                "description": "Name of the component to copy profile from"
+              },
+              "forceUpdate": {
+                "type": "boolean",
+                "description": "Update profile if already exists"
+              },
+              "checksumType": {
+                "type": "string",
+                "description": "Type of checksum to verify. NONE,MD5,SHA512,SHA256"
+              },
+              "installationKey": {
+                "type": "string",
+                "description": "Registry path used to detect installation state"
+              }
+            },
+            "required": [
+              "componentName",
+              "sourceComponentName"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "updateFrameworkResult": {
+                "$ref": "#/definitions/UpdateFrameworkResult"
+              },
+              "createProfileStatus": {
+                "$ref": "#/definitions/CreateProfileStatusEnum"
+              }
+            },
+            "required": [
+              "updateFrameworkResult",
+              "createProfileStatus"
+            ]
+          }
+        },
+        "GetUpdateChannel": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns the udpate channel information",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "componentName": {
+                "type": "string",
+                "description": "Name of the component"
+              }
+            },
+            "required": [
+              "componentName"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "updateFrameworkResult": {
+                "$ref": "#/definitions/UpdateFrameworkResult"
+              },
+              "updateChannel": {
+                "type": "string",
+                "description": "Name of the channel"
+              }
+            },
+            "required": [
+              "updateFrameworkResult",
+              "updateChannel"
+            ]
+          }
+        },
+        "SetUpdateChannel": {
+          "type": "object",
+          "isCommand": true,
+          "description": "sets the udpate channel information",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "componentName": {
+                "type": "string",
+                "description": "Name of the component"
+              },
+              "updateChannel": {
+                "type": "string",
+                "description": "Name of the channel"
+              }
+            },
+            "required": [
+              "componentName",
+              "updateChannel"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "updateFrameworkResult": {
+                "$ref": "#/definitions/UpdateFrameworkResult"
+              }
+            },
+            "required": [
+              "updateFrameworkResult"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

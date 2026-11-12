@@ -1,0 +1,12 @@
+{
+  "path": "FrameViewSDK\\etw_nv\\ddETWExternal.dll",
+  "sha256": "676db6bd39cd2cf854e768c8da0ec5b01c2eb980f4df95f6409531b5d513f2b3",
+  "method": "Capstone linear sweep over raw bytes of all IMAGE_SCN_MEM_EXECUTE sections; skipdata enabled; no reachability proof",
+  "sections": [],
+  "utc": "2026-11-11T21:40:10.753357+00:00",
+  "instructions": 0,
+  "skipdata_bytes": 0,
+  "calls": 0,
+  "api_reference_counts": {},
+  "complete_linear_sweep": true
+}

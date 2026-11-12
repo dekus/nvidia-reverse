@@ -1,0 +1,587 @@
+[
+  {
+    "file_offset": "0x236590",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#nvaccount",
+      "title": "NvAccount Endpoints",
+      "type": "object",
+      "module": "NvAccount",
+      "definitions": {
+        "ConsentLevel": {
+          "type": "object",
+          "properties": {
+            "hasRequiredConsent": {
+              "type": "boolean"
+            },
+            "hasFunctionalConsent": {
+              "type": "boolean"
+            },
+            "hasTechnicalConsent": {
+              "type": "boolean"
+            },
+            "hasBehavioralConsent": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "hasFunctionalConsent",
+            "hasBehavioralConsent"
+          ]
+        },
+        "PrivacySettings": {
+          "type": "string",
+          "enum": [
+            "None",
+            "RequiredOnly",
+            "RequiredFunctional",
+            "RequiredFunctionalTechnical"
+          ]
+        },
+        "UserId": {
+          "type": "object",
+          "description": "Starfleet id information",
+          "properties": {
+            "userId": {
+              "type": "string"
+            },
+            "externalUserId": {
+              "type": "string"
+            },
+            "identityProviderId": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "userId",
+            "externalUserId",
+            "identityProviderId"
+          ]
+        },
+        "TokensInformation": {
+          "type": "object",
+          "properties": {
+            "accessToken": {
+              "type": "string"
+            },
+            "clientToken": {
+              "type": "string"
+            },
+            "identityToken": {
+              "type": "string"
+            },
+            "accessTokenExpiry": {
+              "description": "Token expiration timestamp as an ISO string",
+              "type": "string"
+            },
+            "clientTokenExpiry": {
+              "description": "Token expiration timestamp as an ISO string",
+              "type": "string"
+            },
+            "identityTokenExpiry": {
+              "description": "Token expiration timestamp as an ISO string",
+              "type": "string"
+            },
+            "clientTokenValidityDurationMilliseconds": {
+              "type": "integer",
+              "maximum": 18446744073709551615
+            }
+          },
+          "required": [
+            "accessToken",
+            "clientToken",
+            "identityToken",
+            "accessTokenExpiry",
+            "clientTokenExpiry",
+            "identityTokenExpiry",
+            "clientTokenValidityDurationMilliseconds"
+          ]
+        },
+        "UserAccount": {
+          "type": "object",
+          "description": "Contains all available information about the user, except tokens",
+          "properties": {
+            "userId": {
+              "$ref": "#/definitions/UserId"
+            },
+            "preferredUsername": {
+              "type": "string"
+            },
+            "consentLevel": {
+              "$ref": "#/definitions/ConsentLevel"
+            }
+          },
+          "required": [
+            "userId",
+            "preferredUsername",
+            "consentLevel"
+          ]
+        },
+        "GetEULAAccepted": {
+          "description": "Returns true if a particular EULA version was accepted by the user. EULA versions are considered to be equal if the full EULA texts are also equal.",
+          "isCommand": true,
+          "persistent": false,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "eulaText": {
+                "description": "Full EULA text in UTF-8 (No BOM) and Windows line endings (CRLF).",
+                "type": "string"
+              }
+            },
+            "required": [
+              "eulaText"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "isAccepted": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "isAccepted"
+            ]
+          }
+        },
+        "SetEULAAccepted": {
+          "description": "Marks EULA version as accepted.",
+          "isCommand": true,
+          "persistent": false,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "eulaText": {
+                "description": "Full EULA text in UTF-8 (No BOM) and Windows line endings (CRLF).",
+                "type": "string"
+              }
+            },
+            "required": [
+              "eulaText"
+            ]
+          },
+          "type": "object"
+        },
+        "OnLogin": {
+          "description": "UI sends notifications to NvAccount on user login by calling this method",
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "tokens": {
+                "$ref": "#/definitions/TokensInformation"
+              },
+              "userAccount": {
+                "$ref": "#/definitions/UserAccount"
+              }
+            },
+            "required": [
+              "tokens",
+              "userAccount"
+            ]
+          }
+        },
+        "OnLogout": {
+          "description": "UI sends notifications to NvAccount on user logout by calling this method",
+          "isCommand": true,
+          "type": "object"
+        },
+        "GetUserAccount": {
+          "description": "Returns logged in user: ids, consent. This command may return stale consent information if localization overrides are not available and a web call is needed to refresh consent.",
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "userAccount": {
+                "description": "User account information is present only when user is logged in",
+                "$ref": "#/definitions/UserAccount"
+              }
+            }
+          }
+        },
+        "GetIdToken": {
+          "description": "Returns id token for currently logged in user. The token will be valid for at least 1 minute. This command may return an error if localization overrides are not available and a web call is needed to refresh consent.",
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "idToken": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "RefreshConsent": {
+          "description": "Forces user consent refresh. Return an error if the user is not logged in. This command may return an error if localization overrides are not available.",
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "$ref": "#/definitions/ConsentLevel"
+          }
+        },
+        "GetUserId": {
+          "description": "Returns user id for sending telemetry.",
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "userId": {
+                "description": "User id is present only when user is logged in",
+                "$ref": "#/definitions/UserId"
+              }
+            }
+          }
+        },
+        "UserIdChangedNotification": {
+          "description": "This notification is broadcasted when user id changes.",
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "userId": {
+                "description": "User id is present only when user is logged in",
+                "$ref": "#/definitions/UserId"
+              }
+            }
+          }
+        },
+        "UserConsentChangedNotification": {
+          "description": "This notification is broadcasted when user-level consent changes.",
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "userId": {
+                "$ref": "#/definitions/UserId"
+              },
+              "consentLevel": {
+                "$ref": "#/definitions/ConsentLevel"
+              }
+            },
+            "required": [
+              "userId",
+              "consentLevel"
+            ]
+          }
+        },
+        "GetPrivacySettings": {
+          "description": "Returns product-wide privacy settings state for UI to display",
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "privacySettings": {
+                "$ref": "#/definitions/PrivacySettings"
+              }
+            },
+            "required": [
+              "privacySettings"
+            ]
+          }
+        },
+        "SetPrivacySettings": {
+          "description": "Sets product-wide privacy settings. Setting privacy settings to 'none' will cause API to return error.",
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "privacySettings": {
+                "$ref": "#/definitions/PrivacySettings"
+              }
+            },
+            "required": [
+              "privacySettings"
+            ]
+          }
+        },
+        "GetPrivacySettingsConsentInformation": {
+          "description": "Returns device-level consent flags corresponding to product-wide privacy settings. The intended consumer of this information is the UI telemetry library. Individual telemetry senders are not expected to need this information",
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "deviceConsent": {
+                "$ref": "#/definitions/ConsentLevel"
+              }
+            },
+            "required": [
+              "deviceConsent"
+            ]
+          }
+        },
+        "PrivacySettingsConsentInformationChangedNotification": {
+          "description": "This notification is broadcasted when device-level consent flags change.",
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "deviceConsent": {
+                "$ref": "#/definitions/ConsentLevel"
+              }
+            },
+            "required": [
+              "deviceConsent"
+            ]
+          }
+        },
+        "PrivacySettingsChangedNotification": {
+          "description": "This notification is broadcasted when privacy settings change.",
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "privacySettings": {
+                "$ref": "#/definitions/PrivacySettings"
+              }
+            },
+            "required": [
+              "privacySettings"
+            ]
+          }
+        },
+        "GetUserAccountAndDeviceConsent": {
+          "description": "Returns device-level and user-level consent flags. The intended consumer of this information is the telemetry library in IGO. User context will be present only when the user is logged in.",
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "deviceConsent": {
+                "$ref": "#/definitions/ConsentLevel"
+              },
+              "userAccount": {
+                "description": "User context will be present only when the user is logged in.",
+                "$ref": "#/definitions/UserAccount"
+              }
+            },
+            "required": [
+              "deviceConsent"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "file_offset": "0x23b360",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for NvAccount storage format",
+      "type": "object",
+      "definitions": {
+        "UserId": {
+          "type": "object",
+          "description": "Starfleet id information",
+          "properties": {
+            "userId": {
+              "type": "string"
+            },
+            "externalUserId": {
+              "type": "string"
+            },
+            "identityProviderId": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "userId",
+            "externalUserId",
+            "identityProviderId"
+          ]
+        },
+        "UserConsent": {
+          "type": "object",
+          "description": "Starfleet id information",
+          "properties": {
+            "consentExpiry": {
+              "type": "string"
+            },
+            "hasFunctionalConsent": {
+              "type": "boolean"
+            },
+            "hasTechnicalConsent": {
+              "type": "boolean"
+            },
+            "hasBehavioralConsent": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "consentExpiry",
+            "hasFunctionalConsent",
+            "hasTechnicalConsent",
+            "hasBehavioralConsent"
+          ]
+        }
+      },
+      "properties": {
+        "tokens": {
+          "description": "Tokens information URLEncoded and Base64 encoded",
+          "type": "string"
+        },
+        "userId": {
+          "$ref": "#/definitions/UserId"
+        },
+        "preferredUsername": {
+          "type": "string"
+        },
+        "userConsent": {
+          "$ref": "#/definitions/UserConsent"
+        }
+      },
+      "required": [
+        "tokens",
+        "userId",
+        "preferredUsername",
+        "userConsent"
+      ]
+    }
+  },
+  {
+    "file_offset": "0x23bcc0",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for NvAccount storage format",
+      "type": "object",
+      "properties": {
+        "accessToken": {
+          "type": "string"
+        },
+        "clientToken": {
+          "type": "string"
+        },
+        "identityToken": {
+          "type": "string"
+        },
+        "accessTokenExpiry": {
+          "description": "Token expiration timestamp as ISO8601 string",
+          "type": "string"
+        },
+        "clientTokenExpiry": {
+          "description": "Token expiration timestamp as ISO8601 string",
+          "type": "string"
+        },
+        "identityTokenExpiry": {
+          "description": "Token expiration timestamp as ISO8601 string",
+          "type": "string"
+        },
+        "clientTokenValidityDurationMilliseconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "accessToken",
+        "clientToken",
+        "identityToken",
+        "accessTokenExpiry",
+        "clientTokenExpiry",
+        "identityTokenExpiry",
+        "clientTokenValidityDurationMilliseconds"
+      ]
+    }
+  },
+  {
+    "file_offset": "0x23ded0",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "NvAccount system-wide storage",
+      "type": "object",
+      "definitions": {
+        "PrivacySettings": {
+          "type": "string",
+          "enum": [
+            "None",
+            "RequiredOnly",
+            "RequiredFunctional",
+            "RequiredFunctionalTechnical"
+          ]
+        }
+      },
+      "properties": {
+        "privacySettings": {
+          "$ref": "#/definitions/PrivacySettings"
+        }
+      },
+      "required": [
+        "privacySettings"
+      ]
+    }
+  },
+  {
+    "file_offset": "0x23e3f0",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for Starfleet /tokens response for obtaining tokens using client token",
+      "type": "object",
+      "properties": {
+        "id_token": {
+          "type": "string"
+        },
+        "access_token": {
+          "type": "string"
+        },
+        "expires_in": {
+          "type": "integer"
+        },
+        "client_token": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id_token",
+        "access_token",
+        "expires_in",
+        "client_token"
+      ]
+    }
+  },
+  {
+    "file_offset": "0x23e6c0",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for Starfleet /userinfo response for obtaining user-level consent information",
+      "type": "object",
+      "definitions": {
+        "ConsentLevel": {
+          "type": "object",
+          "properties": {
+            "trackTechnicalData": {
+              "type": "boolean"
+            },
+            "trackBehavioralData": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "trackBehavioralData"
+          ]
+        }
+      },
+      "properties": {
+        "consent": {
+          "$ref": "#/definitions/ConsentLevel"
+        }
+      },
+      "required": [
+        "consent"
+      ]
+    }
+  }
+]

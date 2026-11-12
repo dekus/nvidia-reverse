@@ -1,0 +1,217 @@
+[
+  {
+    "offset": "0x247e06",
+    "encoding": "ascii",
+    "text": "      \"description\": \"Reset average metrics calculation from FvSDK\""
+  },
+  {
+    "offset": "0x248333",
+    "encoding": "ascii",
+    "text": "      \"description\": \"Align Latency Monitoring Rectangle from FvSDK\""
+  },
+  {
+    "offset": "0x24be20",
+    "encoding": "ascii",
+    "text": "Loading nvapi.."
+  },
+  {
+    "offset": "0x24bec8",
+    "encoding": "ascii",
+    "text": "Failed to init nvapi"
+  },
+  {
+    "offset": "0x24bee8",
+    "encoding": "ascii",
+    "text": "nvapiinit successful"
+  },
+  {
+    "offset": "0x24c048",
+    "encoding": "ascii",
+    "text": "Failed to create a FvSDK session "
+  },
+  {
+    "offset": "0x24c070",
+    "encoding": "ascii",
+    "text": "Successfully created a FvSDK session "
+  },
+  {
+    "offset": "0x24c0a0",
+    "encoding": "ascii",
+    "text": "Destroyed previously created FvSDK session "
+  },
+  {
+    "offset": "0x24c0d8",
+    "encoding": "ascii",
+    "text": "FvSDK_CreateSession() failed with error status code %d "
+  },
+  {
+    "offset": "0x24cad0",
+    "encoding": "ascii",
+    "text": "FvSDK_ResetSampling status = %d"
+  },
+  {
+    "offset": "0x24cc10",
+    "encoding": "ascii",
+    "text": "FvSDK_AlignLatencyMonitoringRect status = %d"
+  },
+  {
+    "offset": "0x24cc48",
+    "encoding": "ascii",
+    "text": "NVAPI for IsRLAMonitor failed : %d "
+  },
+  {
+    "offset": "0x24cce8",
+    "encoding": "ascii",
+    "text": "NVAPI for ShowFlashIndicator failed "
+  },
+  {
+    "offset": "0x24cd40",
+    "encoding": "ascii",
+    "text": "NVAPI for SetFlashIndicatorSize failed "
+  },
+  {
+    "offset": "0x24cd70",
+    "encoding": "ascii",
+    "text": "FvSDK_EnableMetrics2 status = %d"
+  },
+  {
+    "offset": "0x24d410",
+    "encoding": "ascii",
+    "text": "Start nvapi GetNGXOverrideState"
+  },
+  {
+    "offset": "0x24d438",
+    "encoding": "ascii",
+    "text": "Finsih nvapi GetNGXOverrideState"
+  },
+  {
+    "offset": "0x24d510",
+    "encoding": "ascii",
+    "text": "%s : NVAPI_OK "
+  },
+  {
+    "offset": "0x24d530",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\NvPerfMon\\module\\NvapiWrapper.cpp"
+  },
+  {
+    "offset": "0x24d5c0",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetFullName"
+  },
+  {
+    "offset": "0x24d5f8",
+    "encoding": "ascii",
+    "text": "NvAPI_EnumLogicalGPUs"
+  },
+  {
+    "offset": "0x24d618",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetLogicalGpuInfo"
+  },
+  {
+    "offset": "0x24d640",
+    "encoding": "ascii",
+    "text": "NvAPI_DISP_GetGDIPrimaryDisplayId"
+  },
+  {
+    "offset": "0x24d688",
+    "encoding": "ascii",
+    "text": "NvAPI_DISP_GetMonitorCapabilities"
+  },
+  {
+    "offset": "0x24d6b0",
+    "encoding": "ascii",
+    "text": "NvAPI_Reflex_FlashIndicatorSet"
+  },
+  {
+    "offset": "0x24d6d8",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_GetDriverAndBranchVersion"
+  },
+  {
+    "offset": "0x24d710",
+    "encoding": "ascii",
+    "text": "Called NvAPI_NGX_GetNGXOverrideState for processId: %d and cmsId: %d, status: %d"
+  },
+  {
+    "offset": "0x24d778",
+    "encoding": "ascii",
+    "text": "Catch nvapi exception %s"
+  },
+  {
+    "offset": "0x2537e0",
+    "encoding": "ascii",
+    "text": "Skipping telemetry report of error %s from method %s"
+  },
+  {
+    "offset": "0x254b58",
+    "encoding": "ascii",
+    "text": "FvSDK_x64.dll"
+  },
+  {
+    "offset": "0x2555f8",
+    "encoding": "ascii",
+    "text": "nvapi_QueryInterface"
+  },
+  {
+    "offset": "0x255618",
+    "encoding": "ascii",
+    "text": "nvapi_Direct_GetMethod"
+  },
+  {
+    "offset": "0x2dced4",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x251410",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  },
+  {
+    "offset": "0x254b68",
+    "encoding": "utf-16le",
+    "text": "FvSDK_x64.dll"
+  },
+  {
+    "offset": "0x2550f0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x255140",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x255440",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x255540",
+    "encoding": "utf-16le",
+    "text": "NvAPI Direct was not found. Please update your driver."
+  },
+  {
+    "offset": "0x255668",
+    "encoding": "utf-16le",
+    "text": "nvapi64.dll"
+  },
+  {
+    "offset": "0x255d20",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x255d70",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x256070",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  }
+]

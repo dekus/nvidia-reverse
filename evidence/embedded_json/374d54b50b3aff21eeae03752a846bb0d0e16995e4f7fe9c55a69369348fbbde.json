@@ -1,0 +1,1332 @@
+[
+  {
+    "file_offset": "0x1afe50",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#localGames",
+      "title": "Local games",
+      "type": "object",
+      "module": "LocalGames",
+      "definitions": {
+        "Application": {
+          "type": "object",
+          "properties": {
+            "localId": {
+              "type": "integer",
+              "description": "Machine-unique application installation ID"
+            },
+            "cmsId": {
+              "type": "integer",
+              "maximum": 9223372036854775807,
+              "minimum": -9223372036854775808,
+              "description": "Application ID in Unified CMS: https://wiki.nvidia.com/engwiki/index.php/Unified_CMS"
+            },
+            "shortName": {
+              "type": "string",
+              "description": "Application shortname, unique title identifier in OPS infrastructure."
+            },
+            "displayName": {
+              "type": "string",
+              "description": "Non-localized original application name."
+            },
+            "installDirectory": {
+              "type": "string",
+              "description": "Full path to the application installation directory."
+            },
+            "regularOpsSupported": {
+              "type": "boolean",
+              "description": "Defines if the application can have settings and is subject to optimization. Applications without this flag are not shown in GFE UI."
+            },
+            "drsAppSubPath": {
+              "type": "string",
+              "description": "DRS App sub path from fingerprint."
+            },
+            "isCreativeApp": {
+              "type": "boolean",
+              "description": "Defines whether this is creative app."
+            },
+            "chromaAppId": {
+              "type": "string",
+              "description": "chroma Id to fetch he assets."
+            },
+            "initialTime": {
+              "type": "string",
+              "description": "Timestamp of when the app was detected or manually added (in ISO format)."
+            },
+            "lastLaunchTime": {
+              "type": "string",
+              "description": "Timestamp of when the last 3D context was created by the app (in ISO format)."
+            },
+            "isManuallyAdded": {
+              "type": "boolean",
+              "description": "Defines whether this app was added manually."
+            },
+            "isFingerprintDetected": {
+              "type": "boolean",
+              "description": "Defines whether this app was detected via fingerprint."
+            },
+            "dlssOverrideNoOps": {
+              "type": "boolean",
+              "description": "Defines if the application supports DLSS override and OPS is not supported."
+            },
+            "arch64OpsSupported": {
+              "type": "boolean",
+              "description": "Defines if the application supports OPS x64 arch."
+            },
+            "isMultiGPUInferenceAllowed": {
+              "type": "boolean",
+              "description": "Defines if the application allows multi GPU inference."
+            },
+            "disableSRModelOverride": {
+              "type": "boolean",
+              "description": "Defines if the application disables the SR model override, which is used to disable DLSS SR in apps."
+            }
+          },
+          "required": [
+            "localId",
+            "cmsId",
+            "shortName",
+            "displayName",
+            "installDirectory",
+            "regularOpsSupported",
+            "drsAppSubPath",
+            "isCreativeApp",
+            "chromaAppId",
+            "initialTime",
+            "lastLaunchTime",
+            "isManuallyAdded",
+            "isFingerprintDetected"
+          ]
+        },
+        "GetApplications": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns array of detected applications.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "applications": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/Application"
+                }
+              }
+            },
+            "required": [
+              "applications"
+            ]
+          }
+        },
+        "RegisterApplicationChangedNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "application": {
+                "$ref": "#/definitions/Application"
+              }
+            },
+            "required": [
+              "application"
+            ]
+          }
+        },
+        "RegisterApplicationRemovedNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "localId": {
+                "type": "integer",
+                "description": "ID of the application that was removed from the list"
+              }
+            },
+            "required": [
+              "localId"
+            ]
+          }
+        },
+        "ApplicationScanType": {
+          "type": "string",
+          "description": "Defines possible scan types",
+          "enum": [
+            "fast",
+            "traditional"
+          ]
+        },
+        "StartApplicationScan": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Starts application scan if it is not already running",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "$ref": "#/definitions/ApplicationScanType"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          }
+        },
+        "RegisterApplicationScanProgressNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string",
+                "description": "Defines current scan status",
+                "enum": [
+                  "started",
+                  "finished",
+                  "failed",
+                  "progress"
+                ]
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "GetLastApplicationScanTime": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns time when last succesfull application scan finished",
+          "return": {
+            "type": "object",
+            "properties": {
+              "timestamp": {
+                "type": "string",
+                "description": "Last application scan time in ISO format or empty string if there were no scans"
+              }
+            },
+            "required": [
+              "timestamp"
+            ]
+          }
+        },
+        "LaunchApplication": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Launches application",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "localId": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "localId"
+            ]
+          }
+        },
+        "LaunchApplicationByPath": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Launches application by full executable path. Use for manually added apps when Application_Launch(localId) is not supported.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "applicationImagePath": {
+                "type": "string",
+                "description": "Full path to the executable (e.g. C:\\Games\\MyGame\\game.exe)"
+              }
+            },
+            "required": [
+              "applicationImagePath"
+            ]
+          }
+        },
+        "GetLauncherPID": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns PID of application launcher, see https://jirasw.nvidia.com/browse/CRIMSON-3899 for more details",
+          "return": {
+            "type": "object",
+            "properties": {
+              "pid": {
+                "type": "integer",
+                "description": "Return PID of application launcher"
+              }
+            },
+            "required": [
+              "pid"
+            ]
+          }
+        },
+        "GetApplicationSearchPaths": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns current list of the application search paths.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "paths": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "paths"
+            ]
+          }
+        },
+        "AddApplicationSearchPath": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Adds application search path",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string",
+                "description": "Full directory path in local file system.",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "path"
+            ]
+          }
+        },
+        "RemoveApplicationSearchPath": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Removes application search path",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string",
+                "description": "Full directory path in local file system.",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "path"
+            ]
+          }
+        },
+        "BatteryBoostState": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Defines if BatteryBoost is enabled"
+            },
+            "currentLimit": {
+              "type": "integer",
+              "description": "BatteryBoost Framerate limit"
+            }
+          },
+          "required": [
+            "enabled",
+            "currentLimit"
+          ]
+        },
+        "GetBatteryBoostState": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns current BatteryBoost state",
+          "return": {
+            "$ref": "#/definitions/BatteryBoostState"
+          }
+        },
+        "SetBatteryBoostState": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Tunes BatteryBoost state",
+          "parameters": {
+            "$ref": "#/definitions/BatteryBoostState"
+          }
+        },
+        "GetBatteryBoostSupportState": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Provides information about BatteryBoost support",
+          "return": {
+            "type": "object",
+            "properties": {
+              "supported": {
+                "type": "boolean",
+                "description": "Defines if BatteryBoost is supported"
+              }
+            },
+            "required": [
+              "supported"
+            ]
+          }
+        },
+        "GetIsSystemOPSCompatible": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns whether the system is OPS compatible",
+          "return": {
+            "type": "object",
+            "properties": {
+              "compatible": {
+                "type": "boolean",
+                "description": "Indicates if the system is OPS compatible"
+              }
+            },
+            "required": [
+              "compatible"
+            ]
+          }
+        },
+        "GetIsMultiGPUInferenceSupported": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns whether MultiGPU inference feature is supported",
+          "return": {
+            "type": "object",
+            "properties": {
+              "supported": {
+                "type": "boolean",
+                "description": "Indicates if MultiGPU inference is supported"
+              }
+            },
+            "required": [
+              "supported"
+            ]
+          }
+        },
+        "WhisperModeState": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Defines if WhisperMode is enabled for the system"
+            },
+            "supported": {
+              "type": "boolean",
+              "description": "Defines if WhisperMode is supported for system"
+            }
+          },
+          "required": [
+            "enabled",
+            "supported"
+          ]
+        },
+        "GetWhisperModeState": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns current WhisperMode state",
+          "return": {
+            "$ref": "#/definitions/WhisperModeState"
+          }
+        },
+        "SetWhisperModeState": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Enables or disables WhisperMode for the system",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "enabled": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "enabled"
+            ]
+          }
+        },
+        "GetWhisperModeInfo": {
+          "type": "object",
+          "isCommand": true,
+          "description": "returns Whisper mode information",
+          "return": {
+            "type": "object",
+            "properties": {
+              "isWhisperMode": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "isWhisperMode"
+            ]
+          }
+        },
+        "RegisterWhisperModeStateNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "$ref": "#/definitions/WhisperModeState"
+          }
+        },
+        "FeatureSupportCriterion": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Criterion name"
+            },
+            "message": {
+              "type": "string",
+              "description": "User-visible message for criterion"
+            },
+            "state": {
+              "type": "boolean",
+              "description": "Defines criterion state"
+            },
+            "isRecommendation": {
+              "type": "boolean",
+              "description": "If true then this requirement is optional, otherwise it is mandatory"
+            }
+          },
+          "required": [
+            "name",
+            "message",
+            "state",
+            "isRecommendation"
+          ]
+        },
+        "FeatureSupportState": {
+          "type": "object",
+          "properties": {
+            "states": {
+              "type": "array",
+              "description": "Describes individual feature states",
+              "items": {
+                "$ref": "#/definitions/FeatureSupportCriterion"
+              }
+            },
+            "overallState": {
+              "type": "boolean",
+              "description": "Defines if feature is supported"
+            },
+            "featureTile": {
+              "type": "string",
+              "description": "UI tile name"
+            },
+            "header": {
+              "type": "string",
+              "description": "Localized header name"
+            },
+            "message": {
+              "type": "string",
+              "description": "Localized feature tile message"
+            }
+          },
+          "required": [
+            "states",
+            "overallState",
+            "featureTile",
+            "header",
+            "message"
+          ]
+        },
+        "GetWhisperModeSupportState": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns current WhisperMode support state",
+          "return": {
+            "$ref": "#/definitions/FeatureSupportState"
+          }
+        },
+        "RegisterWhisperModeSupportStateNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "$ref": "#/definitions/FeatureSupportState"
+          }
+        },
+        "SettingTranslation": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Setting name"
+            },
+            "nameTranslation": {
+              "type": "string",
+              "description": "Setting name translation"
+            },
+            "values": {
+              "type": "array",
+              "description": "Setting values translation",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "valueName": {
+                    "type": "string",
+                    "description": "Setting value name"
+                  },
+                  "valueTranslation": {
+                    "type": "string",
+                    "description": "Setting value translation"
+                  }
+                },
+                "required": [
+                  "valueName",
+                  "valueTranslation"
+                ]
+              }
+            }
+          },
+          "required": [
+            "name",
+            "nameTranslation",
+            "values"
+          ]
+        },
+        "GetSettingsTranslations": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns array of settings translations.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "shortName": {
+                "type": "string"
+              },
+              "locale": {
+                "type": "string",
+                "description": "Locale format is 'lang_territory', lang is 2 letter code from ISO 639-2, territory is 2-3 letter code from ISO 3166."
+              }
+            },
+            "required": [
+              "shortName",
+              "locale"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "translations": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/SettingTranslation"
+                }
+              }
+            },
+            "required": [
+              "translations"
+            ]
+          }
+        },
+        "SettingValue": {
+          "type": "object",
+          "description": "Describes setting value, name and type.",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Non-localized setting name"
+            },
+            "type": {
+              "type": "string",
+              "description": "Defines setting value type",
+              "enum": [
+                "STRING",
+                "INT",
+                "FLOAT",
+                "ENUM",
+                "BOOL",
+                "DRIVER_ENUM",
+                "DRIVER_INT"
+              ]
+            },
+            "value": {
+              "type": "string",
+              "description": "Non-localized setting value."
+            },
+            "drsEnumId": {
+              "type": "string",
+              "description": "DRS enum id to map this setting to driver setting"
+            }
+          },
+          "required": [
+            "name",
+            "type",
+            "value"
+          ]
+        },
+        "SettingsTweak": {
+          "type": "object",
+          "description": "Defines the settings tweak (resolution only)",
+          "properties": {
+            "resolutionValue": {
+              "type": "string",
+              "description": "Resolution value to use"
+            }
+          },
+          "required": [
+            "resolutionValue"
+          ]
+        },
+        "SettingsRecommendation": {
+          "type": "object",
+          "description": "Defines the settings recommendation in settings space",
+          "properties": {
+            "recommendedIndex": {
+              "type": "integer",
+              "maximum": 65535,
+              "minimum": 0,
+              "description": "Contains index of the recommended settings set in setting space"
+            },
+            "belowMinspec": {
+              "type": "boolean",
+              "description": "Defines if it is possible to provide good playing experience with any settings set"
+            }
+          },
+          "required": [
+            "recommendedIndex",
+            "belowMinspec"
+          ]
+        },
+        "SettingsSpace": {
+          "type": "object",
+          "description": "Defines possible application settings for the specified tweaks",
+          "properties": {
+            "settingsSets": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/SettingValue"
+                }
+              },
+              "description": "Settings sets available for selected resolution"
+            },
+            "recommendationAC": {
+              "$ref": "#/definitions/SettingsRecommendation"
+            },
+            "recommendationDC": {
+              "$ref": "#/definitions/SettingsRecommendation"
+            }
+          },
+          "required": [
+            "settingsSets"
+          ]
+        },
+        "GetSettingsSpace": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns settings for the application settings space. Intended to use for the Slider feature.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "localId": {
+                "type": "integer"
+              },
+              "tweak": {
+                "$ref": "#/definitions/SettingsTweak"
+              }
+            },
+            "required": [
+              "localId",
+              "tweak"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "settingsSpace": {
+                "$ref": "#/definitions/SettingsSpace"
+              }
+            },
+            "required": [
+              "settingsSpace"
+            ]
+          }
+        },
+        "ApplicationPowerMode": {
+          "type": "string",
+          "description": "Defines possible application power modes",
+          "enum": [
+            "AC",
+            "DC"
+          ]
+        },
+        "SliderPosition": {
+          "type": "object",
+          "description": "Describes position on the OPS Slider",
+          "properties": {
+            "tweak": {
+              "$ref": "#/definitions/SettingsTweak"
+            },
+            "settingsIndex": {
+              "type": "integer",
+              "description": "Index of setting set in settings space"
+            }
+          },
+          "required": [
+            "tweak",
+            "settingsIndex"
+          ]
+        },
+        "SetTargetSettings": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Sets or reverts target settings for a specified power mode. If position is not provided, settings are reverted instead of being set.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "localId": {
+                "type": "integer"
+              },
+              "powerMode": {
+                "$ref": "#/definitions/ApplicationPowerMode"
+              },
+              "position": {
+                "$ref": "#/definitions/SliderPosition"
+              }
+            },
+            "required": [
+              "localId",
+              "powerMode"
+            ]
+          }
+        },
+        "OptimizationState": {
+          "type": "string",
+          "description": "Defines possible optimization states for profile",
+          "enum": [
+            "DISABLED",
+            "UNOPTIMIZED",
+            "CUSTOMIZED",
+            "OPTIMIZED"
+          ]
+        },
+        "SliderResolution": {
+          "type": "object",
+          "description": "Describes the OPS Slider resolution in resolution dropdown.",
+          "properties": {
+            "value": {
+              "type": "string",
+              "description": "In-game setting value used for this resolution. Do not assume format of this value."
+            },
+            "width": {
+              "type": "integer",
+              "description": "Width of the image in pixels."
+            },
+            "height": {
+              "type": "integer",
+              "description": "Height of the image in pixels."
+            },
+            "isHypersampling": {
+              "type": "boolean",
+              "description": "Set to 'true' if resolution is hypersampling/DSR resolution."
+            }
+          },
+          "required": [
+            "value",
+            "width",
+            "height",
+            "isHypersampling"
+          ]
+        },
+        "SliderSettings": {
+          "type": "object",
+          "description": "Describes OPS Slider dropdown settings",
+          "properties": {
+            "resolutionName": {
+              "type": "string",
+              "description": "Name used for resolution setting."
+            },
+            "resolutions": {
+              "type": "array",
+              "description": "Resolutions in slider dropdown",
+              "items": {
+                "$ref": "#/definitions/SliderResolution"
+              }
+            },
+            "resolutionRecommendation": {
+              "type": "integer",
+              "maximum": 65535,
+              "minimum": 0,
+              "description": "Index of the recommended value in 'resolutions' array."
+            },
+            "hasRecommendedDesktopResolution": {
+              "type": "boolean",
+              "description": "True when the desktop resolution has no OPS; use recommendedDesktopResolution."
+            },
+            "recommendedDesktopResolution": {
+              "type": "string",
+              "description": "OPS-backed desktop resolution when hasRecommendedDesktopResolution is true."
+            }
+          },
+          "required": [
+            "resolutionName",
+            "resolutions",
+            "resolutionRecommendation",
+            "hasRecommendedDesktopResolution"
+          ]
+        },
+        "SettingsProfileState": {
+          "type": "object",
+          "description": "Describes application profile (or virtual profile) state",
+          "properties": {
+            "currentOptimizationState": {
+              "$ref": "#/definitions/OptimizationState"
+            },
+            "currentPosition": {
+              "$ref": "#/definitions/SliderPosition"
+            },
+            "targetOptimizationState": {
+              "$ref": "#/definitions/OptimizationState"
+            },
+            "targetPosition": {
+              "$ref": "#/definitions/SliderPosition"
+            },
+            "targetSettings": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/SettingValue"
+              }
+            },
+            "sliderSettings": {
+              "$ref": "#/definitions/SliderSettings"
+            },
+            "recommendation": {
+              "$ref": "#/definitions/SettingsRecommendation"
+            },
+            "settingsSets": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/SettingValue"
+                }
+              },
+              "description": "Settings sets available for selected resolution"
+            }
+          },
+          "required": [
+            "currentOptimizationState",
+            "targetOptimizationState"
+          ]
+        },
+        "ApplicationState": {
+          "type": "object",
+          "description": "Describes application state",
+          "properties": {
+            "currentPowerMode": {
+              "$ref": "#/definitions/ApplicationPowerMode"
+            },
+            "everChangedByGFE": {
+              "type": "boolean",
+              "description": "Is set to true if GFE ever tried to optimize or customize the game."
+            },
+            "profileAC": {
+              "$ref": "#/definitions/SettingsProfileState"
+            },
+            "profileDC": {
+              "$ref": "#/definitions/SettingsProfileState"
+            }
+          },
+          "required": [
+            "currentPowerMode",
+            "everChangedByGFE",
+            "profileAC",
+            "profileDC"
+          ]
+        },
+        "GetApplicationState": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns current application state.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "localId": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "localId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "state": {
+                "$ref": "#/definitions/ApplicationState"
+              }
+            },
+            "required": [
+              "state"
+            ]
+          }
+        },
+        "RegisterApplicationStateChangedNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Provides notifications when application state changes, either due to API calls or because of user actions.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "localId": {
+                "type": "integer",
+                "description": "ID of the application that has its state changed"
+              }
+            },
+            "required": [
+              "localId"
+            ]
+          }
+        },
+        "RegisterMultiGPUStateChangedNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Provides notifications when MultiGPU state changes.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "isMultiGPU": {
+                "type": "boolean",
+                "description": "indicates whether state is changeed from single GPU to multiGPU and vice versa"
+              }
+            },
+            "required": [
+              "isMultiGPU"
+            ]
+          }
+        },
+        "signParams": {
+          "type": "object",
+          "description": "sign input paramaters",
+          "properties": {
+            "key": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              },
+              "description": "encrypted key from gfwsl web session"
+            },
+            "nonce": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              },
+              "description": "16 byte Random number"
+            },
+            "programId": {
+              "type": "integer",
+              "description": "4 Byte Program Id"
+            },
+            "sessionId": {
+              "type": "integer",
+              "description": "4 Byte session Id"
+            },
+            "signAlgorithm": {
+              "type": "integer",
+              "description": "1, 2, 4 indicates RSA 1024, RSA2048 and RSA 4096 sign algorithms"
+            }
+          },
+          "required": [
+            "key",
+            "nonce",
+            "programId",
+            "sessionId"
+          ]
+        },
+        "signGPUIDInput": {
+          "type": "object",
+          "description": "input elements required for getting signedGPU ID",
+          "properties": {
+            "gpuHandle": {
+              "type": "integer",
+              "description": "handle of GPU which we requesting to get the signature"
+            },
+            "signParams": {
+              "$ref": "#/definitions/signParams"
+            }
+          },
+          "required": [
+            "gpuHandle",
+            "signParams"
+          ]
+        },
+        "deviceInfo": {
+          "type": "object",
+          "description": "GPU Device Information",
+          "properties": {
+            "vendorId": {
+              "type": "integer",
+              "description": "GPU Vendor identifier"
+            },
+            "deviceId": {
+              "type": "integer",
+              "description": "GPU Device Id"
+            },
+            "subSystemId": {
+              "type": "integer",
+              "description": "GPU SubSystem identifier"
+            },
+            "subVendorId": {
+              "type": "integer",
+              "description": "GPU SubVendor identifier"
+            },
+            "revisionId": {
+              "type": "integer",
+              "description": "GPU Revison Number"
+            },
+            "chipId": {
+              "type": "integer",
+              "description": "GPU Chip information"
+            }
+          },
+          "required": [
+            "vendorId",
+            "deviceId",
+            "subSystemId",
+            "subVendorId",
+            "revisionId",
+            "chipId"
+          ]
+        },
+        "GetSignedGPUID": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns signed payload for given GPU.",
+          "parameters": {
+            "type": "object",
+            "description": "input elements required for getting signedGPU ID",
+            "properties": {
+              "gpuHandle": {
+                "type": "integer",
+                "description": "handle of GPU which we requesting to get the signature"
+              },
+              "signParams": {
+                "$ref": "#/definitions/signParams"
+              }
+            },
+            "required": [
+              "gpuHandle",
+              "signParams"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "description": "output of signed GPUID",
+            "properties": {
+              "ecidSha2Hash": {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                },
+                "description": "SHA hashed ECID value"
+              },
+              "deviceInfo": {
+                "$ref": "#/definitions/deviceInfo"
+              },
+              "uCodeVersion": {
+                "type": "integer",
+                "description": " Version of the uCode used"
+              },
+              "data": {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                },
+                "description": "signed payload"
+              }
+            },
+            "required": [
+              "ecidSha2Hash",
+              "deviceInfo",
+              "uCodeVersion",
+              "data"
+            ]
+          }
+        },
+        "LaunchMSSettings": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Launches MS Settings page.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "pageId": {
+                "type": "integer",
+                "enum": [
+                  -1,
+                  0,
+                  1
+                ],
+                "tsEnumNames": [
+                  "Invalid",
+                  "Notifications",
+                  "Display"
+                ]
+              }
+            },
+            "required": [
+              "pageId"
+            ]
+          }
+        },
+        "SetOOTBStatus": {
+          "isCommand": true,
+          "type": "object",
+          "description": "sets OOTB started or finished",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ootbStatus": {
+                "type": "integer",
+                "description": "Defines possible status",
+                "enum": [
+                  1,
+                  2
+                ],
+                "tsEnumNames": [
+                  "STARTED",
+                  "FINISHED"
+                ]
+              }
+            },
+            "required": [
+              "ootbStatus"
+            ]
+          }
+        },
+        "FindAndGetAppMetadata": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns metadata for app available in fingerprint DB.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "applicationImagePath": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "applicationImagePath"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "isPresent": {
+                "type": "boolean"
+              },
+              "application": {
+                "$ref": "#/definitions/Application"
+              }
+            },
+            "required": [
+              "isPresent"
+            ]
+          }
+        },
+        "AddManualApplication": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Instructs NvBackend to add a given app to it's tracking list.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "applicationImagePath": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "applicationImagePath"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "success": {
+                "type": "boolean",
+                "description": "Defines if app was successfully added to the NvBackend tracking list."
+              },
+              "application": {
+                "$ref": "#/definitions/Application"
+              }
+            },
+            "required": [
+              "success"
+            ]
+          }
+        },
+        "DeleteManualApplication": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Instructs NvBackend to delete a given app to it's tracking list.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "appId": {
+                "type": "integer",
+                "description": "Machine-unique application installation ID"
+              }
+            },
+            "required": [
+              "appId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "success": {
+                "type": "boolean",
+                "description": "Defines if app was successfully added to the NvBackend tracking list."
+              }
+            },
+            "required": [
+              "success"
+            ]
+          }
+        },
+        "GetAutoOptimizeEnabled": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns auto optimize game flag.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "isEnabled": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "isEnabled"
+            ]
+          }
+        },
+        "SetAutoOptimizeEnabled": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Sets auto optimize game flag.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "isEnabled": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "isEnabled"
+            ]
+          }
+        },
+        "TriggerNGXUpdater": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Downloads Latest NGX Override DLL's."
+        }
+      }
+    }
+  }
+]

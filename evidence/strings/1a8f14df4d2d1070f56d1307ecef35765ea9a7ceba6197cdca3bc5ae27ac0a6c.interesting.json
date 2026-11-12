@@ -1,0 +1,47 @@
+[
+  {
+    "offset": "0x201d0",
+    "encoding": "ascii",
+    "text": "NVIDIA Corporation\\NVIDIA App\\McpServer"
+  },
+  {
+    "offset": "0x20228",
+    "encoding": "ascii",
+    "text": "NvAppMcpServer_bridge.log"
+  },
+  {
+    "offset": "0x206f8",
+    "encoding": "ascii",
+    "text": "\\\\.\\pipe\\nvidia-nvapp-mcp-server-"
+  },
+  {
+    "offset": "0x21350",
+    "encoding": "ascii",
+    "text": "=== NvAppMcpServer starting (PID=%lu) ==="
+  },
+  {
+    "offset": "0x213a0",
+    "encoding": "ascii",
+    "text": "NvAppMcpServer - NVIDIA App MCP Bridge"
+  },
+  {
+    "offset": "0x213f0",
+    "encoding": "ascii",
+    "text": "  NvAppMcpServer              Relay stdio <-> named pipe to NvContainer MCP server"
+  },
+  {
+    "offset": "0x21510",
+    "encoding": "ascii",
+    "text": "NvAppMcpServer - Debug"
+  },
+  {
+    "offset": "0x25180",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\_out\\stage\\nvapp-prod-x64-release\\RelWithDebInfo\\McpServer\\NvAppMcpServer.pdb"
+  },
+  {
+    "offset": "0x2d71c",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  }
+]

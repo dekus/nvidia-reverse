@@ -1,0 +1,97 @@
+[
+  {
+    "offset": "0x12ab60",
+    "encoding": "ascii",
+    "text": "Telemetry API %s"
+  },
+  {
+    "offset": "0x12bf20",
+    "encoding": "ascii",
+    "text": "\\NvcTelemetryHel"
+  },
+  {
+    "offset": "0x12c8e8",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x1304e0",
+    "encoding": "ascii",
+    "text": "InitTelemetry"
+  },
+  {
+    "offset": "0x1304f0",
+    "encoding": "ascii",
+    "text": "DeInitTelemetry"
+  },
+  {
+    "offset": "0x163ae4",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x12c900",
+    "encoding": "utf-16le",
+    "text": "NvPluginGetInfo is not exported by %ls"
+  },
+  {
+    "offset": "0x12c9a0",
+    "encoding": "utf-16le",
+    "text": "NvPluginGetInfo for %ls returned invalid plugin descriptor"
+  },
+  {
+    "offset": "0x12e960",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x12e9a0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x12ec20",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x12f590",
+    "encoding": "utf-16le",
+    "text": "--sendtelemetry"
+  },
+  {
+    "offset": "0x12f5b0",
+    "encoding": "utf-16le",
+    "text": "sends telemetry using specified container telemetry helper DLL"
+  },
+  {
+    "offset": "0x130cd0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NvContainer"
+  },
+  {
+    "offset": "0x131080",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0x1310a8",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0x1310d0",
+    "encoding": "utf-16le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0x1310e8",
+    "encoding": "utf-16le",
+    "text": "HKEY_CLASSES_ROOT"
+  },
+  {
+    "offset": "0x131110",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_CONFIG"
+  }
+]

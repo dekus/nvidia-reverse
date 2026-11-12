@@ -1,0 +1,347 @@
+[
+  {
+    "offset": "0x1fcae0",
+    "encoding": "ascii",
+    "text": "NvcPluginStart ignored NvPluginWindow handle"
+  },
+  {
+    "offset": "0x1fde08",
+    "encoding": "ascii",
+    "text": "NvTelemetry"
+  },
+  {
+    "offset": "0x1fde18",
+    "encoding": "ascii",
+    "text": "NvTelemetry.json"
+  },
+  {
+    "offset": "0x1fe4a8",
+    "encoding": "ascii",
+    "text": "telemetryApi cannot be null"
+  },
+  {
+    "offset": "0x1fe712",
+    "encoding": "ascii",
+    "text": "    \"title\": \"JSON schema for NvTelemetry config format\","
+  },
+  {
+    "offset": "0x1fe776",
+    "encoding": "ascii",
+    "text": "        \"nvTelemetry\": {"
+  },
+  {
+    "offset": "0x1fe99d",
+    "encoding": "ascii",
+    "text": "        \"nvTelemetry\""
+  },
+  {
+    "offset": "0x1fea60",
+    "encoding": "ascii",
+    "text": "Localization overrides JSON failed to validate against telemetry config schema"
+  },
+  {
+    "offset": "0x1feac0",
+    "encoding": "ascii",
+    "text": "nvTelemetry"
+  },
+  {
+    "offset": "0x1feb10",
+    "encoding": "ascii",
+    "text": "Setting NvTelemetry localized endpoint URLs: %s %s %s"
+  },
+  {
+    "offset": "0x1feb50",
+    "encoding": "ascii",
+    "text": "NvTelemetry endpoint URLs did not change. Skipping the update"
+  },
+  {
+    "offset": "0x1feba0",
+    "encoding": "ascii",
+    "text": "Unable to set NvTelemetry endpoints: %s."
+  },
+  {
+    "offset": "0x1febd8",
+    "encoding": "ascii",
+    "text": "Failed to set NvTelemetry endpoints: %s"
+  },
+  {
+    "offset": "0x201e58",
+    "encoding": "ascii",
+    "text": "NvMessageBus.dll"
+  },
+  {
+    "offset": "0x206890",
+    "encoding": "ascii",
+    "text": "Skipping telemetry report of error %s from method %s"
+  },
+  {
+    "offset": "0x208850",
+    "encoding": "ascii",
+    "text": "GetUserConsent"
+  },
+  {
+    "offset": "0x208868",
+    "encoding": "ascii",
+    "text": "HTTP Telemetry: No ServiceUseCase mapping found"
+  },
+  {
+    "offset": "0x208928",
+    "encoding": "ascii",
+    "text": "HTTP Telemetry: No ServiceSubUseCase mapping found"
+  },
+  {
+    "offset": "0x208990",
+    "encoding": "ascii",
+    "text": "Telemetry pointer cannot be null"
+  },
+  {
+    "offset": "0x2089b8",
+    "encoding": "ascii",
+    "text": "Failed to send HTTP telemetry: %d"
+  },
+  {
+    "offset": "0x209020",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\common\\NvTelemetryClients\\NvAppClient.cpp"
+  },
+  {
+    "offset": "0x209838",
+    "encoding": "ascii",
+    "text": "DDDataConsentRequestShown"
+  },
+  {
+    "offset": "0x20a728",
+    "encoding": "ascii",
+    "text": "ConsentAlreadyPresent"
+  },
+  {
+    "offset": "0x20ab48",
+    "encoding": "ascii",
+    "text": "Invalid ConsentRequestAction value passed: "
+  },
+  {
+    "offset": "0x20ab80",
+    "encoding": "ascii",
+    "text": ": no corresponding member found in enum ConsentRequestAction_t"
+  },
+  {
+    "offset": "0x20abd0",
+    "encoding": "ascii",
+    "text": "Check gs_telemetry failed"
+  },
+  {
+    "offset": "0x20e7b0",
+    "encoding": "ascii",
+    "text": "InitializeTelemetry"
+  },
+  {
+    "offset": "0x20e818",
+    "encoding": "ascii",
+    "text": "InitializeTelemetry_2"
+  },
+  {
+    "offset": "0x20e8d0",
+    "encoding": "ascii",
+    "text": "InitializeTelemetryStandalone"
+  },
+  {
+    "offset": "0x20e9e8",
+    "encoding": "ascii",
+    "text": "InitializeTelemetryStandalone_2"
+  },
+  {
+    "offset": "0x20ead0",
+    "encoding": "ascii",
+    "text": "UninitializeTelemetry"
+  },
+  {
+    "offset": "0x20eb90",
+    "encoding": "ascii",
+    "text": "GetUserTelemetryConsent"
+  },
+  {
+    "offset": "0x20ebb0",
+    "encoding": "ascii",
+    "text": "Check m_getUserTelemetryConsent failed"
+  },
+  {
+    "offset": "0x20ebe0",
+    "encoding": "ascii",
+    "text": "GetDeviceTelemetryConsent"
+  },
+  {
+    "offset": "0x20ec00",
+    "encoding": "ascii",
+    "text": "Check m_getDeviceTelemetryConsent failed"
+  },
+  {
+    "offset": "0x20ec38",
+    "encoding": "ascii",
+    "text": "SetUserTelemetryConsent"
+  },
+  {
+    "offset": "0x20ec58",
+    "encoding": "ascii",
+    "text": "Check m_setUserTelemetryConsent failed"
+  },
+  {
+    "offset": "0x20ec88",
+    "encoding": "ascii",
+    "text": "SetDeviceTelemetryConsent"
+  },
+  {
+    "offset": "0x20eca8",
+    "encoding": "ascii",
+    "text": "Check m_setDeviceTelemetryConsent failed"
+  },
+  {
+    "offset": "0x20ece0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendEvent"
+  },
+  {
+    "offset": "0x20ed20",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendAnonymousEvent"
+  },
+  {
+    "offset": "0x20ed70",
+    "encoding": "ascii",
+    "text": "SubscribeForTelemetryNotifications"
+  },
+  {
+    "offset": "0x20edc0",
+    "encoding": "ascii",
+    "text": "UnsubscribeFromTelemetryNotifications"
+  },
+  {
+    "offset": "0x20ee10",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendEvent_2"
+  },
+  {
+    "offset": "0x20ee50",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendAnonymousEvent_2"
+  },
+  {
+    "offset": "0x20eea8",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_2"
+  },
+  {
+    "offset": "0x20eef0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_3"
+  },
+  {
+    "offset": "0x20ef10",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_4"
+  },
+  {
+    "offset": "0x20ef30",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_5"
+  },
+  {
+    "offset": "0x20ef50",
+    "encoding": "ascii",
+    "text": "FreeTelemetryString"
+  },
+  {
+    "offset": "0x20ef68",
+    "encoding": "ascii",
+    "text": "Check m_freeTelemetryString failed"
+  },
+  {
+    "offset": "0x20f0e0",
+    "encoding": "ascii",
+    "text": "Trying to send non-anonymous telemetry anonymized."
+  },
+  {
+    "offset": "0x20f188",
+    "encoding": "ascii",
+    "text": "telemetry"
+  },
+  {
+    "offset": "0x20f3d0",
+    "encoding": "ascii",
+    "text": "New Nvtelemetry SDK needed (19.0.0.0 and above) "
+  },
+  {
+    "offset": "0x20f560",
+    "encoding": "ascii",
+    "text": "DisplayDriverTelemetryConsentRequestAction"
+  },
+  {
+    "offset": "0x246838",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x249040",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VNvTelemetryApi@@@std@@"
+  },
+  {
+    "offset": "0x249090",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VTelemetry@NvAppClient@NvTelemetry@@@std@@"
+  },
+  {
+    "offset": "0x2493c0",
+    "encoding": "ascii",
+    "text": ".?AUINvTelemetryApi@@"
+  },
+  {
+    "offset": "0x2493f0",
+    "encoding": "ascii",
+    "text": ".?AVNvTelemetryApi@@"
+  },
+  {
+    "offset": "0x24c4c0",
+    "encoding": "ascii",
+    "text": ".?AUITelemetry@NvAppClient@NvTelemetry@@"
+  },
+  {
+    "offset": "0x24c508",
+    "encoding": "ascii",
+    "text": ".?AVTelemetry@NvAppClient@NvTelemetry@@"
+  },
+  {
+    "offset": "0x267846",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x202f90",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x202fe0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x2032e0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x203c60",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  },
+  {
+    "offset": "0x209130",
+    "encoding": "utf-16le",
+    "text": "NvTelemetryAPI64.dll"
+  },
+  {
+    "offset": "0x2091f0",
+    "encoding": "utf-16le",
+    "text": "\\NVIDIA Corporation\\NvTelemetry"
+  }
+]

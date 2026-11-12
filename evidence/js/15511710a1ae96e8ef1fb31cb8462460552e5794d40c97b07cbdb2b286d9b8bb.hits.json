@@ -1,0 +1,146 @@
+[
+  {
+    "line": 11781,
+    "text": "                }, i && i.prototype.getSettings) {\r"
+  },
+  {
+    "line": 11782,
+    "text": "                const d = i.prototype.getSettings;\r"
+  },
+  {
+    "line": 11783,
+    "text": "                i.prototype.getSettings = function() {\r"
+  },
+  {
+    "line": 14482,
+    "text": "              const s = null !== (i = r.getSettings().frameRate) && void 0 !== i ? i : jn;\r"
+  },
+  {
+    "line": 14493,
+    "text": "              const e = xs(t.getSettings()),\r"
+  },
+  {
+    "line": 14542,
+    "text": "              const e = xi(t.getSettings()),\r"
+  },
+  {
+    "line": 14694,
+    "text": "            vi = (null === (ja = null === (Ro = window.location) || void 0 === Ro ? void 0 : Ro.hostname) || void 0 === ja ? void 0 : ja.indexOf(\"localhost\")) > -1,\r"
+  },
+  {
+    "line": 16395,
+    "text": "                      const O = m.getSettings();\r"
+  },
+  {
+    "line": 16399,
+    "text": "                      const O = h.getSettings();\r"
+  },
+  {
+    "line": 16409,
+    "text": "                              X = m.getSettings();\r"
+  },
+  {
+    "line": 16565,
+    "text": "            return Js()('/*! For license information please see scheduler.worker.worker.js.LICENSE.txt */\\n(()=>{\"use strict\";var i,t;!function(i){i.CONFIG=\"config\",i.UPDATE=\"update\",i.START=\"start\",i.STOP=\"stop\"}(i||(i={})),function(i){i.VIDEO_SEND=\"video/send\",i.VIDEO_RECEIVE=\"video/receive\",i.INSERT_SEI=\"insertSei\"}(t||(t={}));const s=self;const n=new class Scheduler{constructor(){this.config={frameRate:60,isRunning:!1}}setConfig(i){this.config=Object.assign(Object.assign({},this.config),i),this.config.isRunning&&(this.stop(),this.start())}start(){this.config.isRunning||(this.intervalId=setInterval((()=>{s.postMessage({type:i.UPDATE})}),1e3/this.config.frameRate),this.config.isRunning=!0)}stop(){this.config.isRunning&&(clearInterval(this.intervalId),this.intervalId=void 0,this.config.isRunning=!1)}};s.addEventListener(\"message\",(function(t){var s;if(null===(s=null==t?void 0:t.data)||void 0===s?void 0:s.type)switch(t.data.type){case i.CONFIG:n.setConfig(t.data.payload||{});break;case i.START:n.start();break;case i.STOP:n.stop()}}))})();', \"Worker\", void 0, void 0)\r"
+  },
+  {
+    "line": 16609,
+    "text": "              a && this.mediaStreamManager.setTrack(Vt.VIDEO, a), d && this.mediaStreamManager.setTrack(Vt.AUDIO, d), this.schedulerWorker.addEventListener(\"message\", this.handleWorkerEvent), this.schedulerWorker.postMessage({\r"
+  },
+  {
+    "line": 16720,
+    "text": "                    B = (null === (s = E.getSettings) || void 0 === s ? void 0 : s.call(E)) || {};\r"
+  },
+  {
+    "line": 16803,
+    "text": "                const a = (null === (e = s?.getSettings) || void 0 === e ? void 0 : e.call(s)) || {};\r"
+  },
+  {
+    "line": 16846,
+    "text": "              this.running || (this.running = !0, this.schedulerWorker.postMessage({\r"
+  },
+  {
+    "line": 16851,
+    "text": "              }), this.schedulerWorker.postMessage({\r"
+  },
+  {
+    "line": 17453,
+    "text": "            WEBSOCKET_MESSAGE_PARSE_FAILURE: {\r"
+  },
+  {
+    "line": 17455,
+    "text": "              message: \"Failed to parse websocket message\",\r"
+  },
+  {
+    "line": 17521,
+    "text": "              message: \"Error creating WebSocket\",\r"
+  },
+  {
+    "line": 18897,
+    "text": "                      } = xi(W.getSettings()), {\r"
+  },
+  {
+    "line": 18911,
+    "text": "                      const X = null !== (q = W.getSettings().frameRate) && void 0 !== q ? q : jn,\r"
+  },
+  {
+    "line": 19068,
+    "text": "            return Js()('/*! For license information please see transform.worker.worker.js.LICENSE.txt */\\n(()=>{\"use strict\";const e=new Uint8Array([158,80,78,165,238,90,79,2,148,159,176,51,163,118,141,162]);var t;!function(e){e.VIDEO_SEND=\"video/send\",e.VIDEO_RECEIVE=\"video/receive\",e.INSERT_SEI=\"insertSei\"}(t||(t={}));function n(t,n){const{transformerId:s,type:r,payloads:a}=n;let o=[];if(\"sei\"===n.type){const{value:n,messages:s}=function(t,n){function s(e,t,n){return n+t.length<=e.byteLength&&t.every(((t,s)=>e.getUint8(n+s)===t))}function r(e,t){const n=function(e,t){return new Uint8Array([0,0,1,6,5,...t,...e])}(e,function(e){const t=[];for(;e>=255;)t.push(255),e-=255;return t.push(e),new Uint8Array(t)}(t.length+e.length)),s=function(e){const t=[...e];let n=3;for(;n<t.length-2;)0!==t[n]||0!==t[n+1]||0!==t[n+2]&&1!==t[n+2]&&2!==t[n+2]&&3!==t[n+2]?n+=1:(t.splice(n+2,0,3),n+=3);return t}(new Uint8Array([...n,...t,128]));return new Uint8Array(s)}function a(e,n){const r=function(e){const t=new DataView(e);for(let e=0;e<t.byteLength-4;e++)if(s(t,[0,0,1],e)){const n=31&t.getUint8(e+3);if(n>=1&&n<=5)return e}return-1}(t.data);if(r>=0){const e=new ArrayBuffer(t.data.byteLength+n.byteLength),s=new Uint8Array(e);return s.set(new Uint8Array(t.data.slice(0,r)),0),s.set(n,r),s.set(new Uint8Array(t.data.slice(r)),r+n.byteLength),e}return e}return function(){const s=[];for(let o=0;o<n.length;o+=1){const i=r(e,new Uint8Array(n[o]));t.data=a(t.data,i),s.push({uuid:e,payload:n[o]})}return{va"
+  },
+  {
+    "line": 19157,
+    "text": "              null === (e = this.worker) || void 0 === e || e.postMessage({\r"
+  },
+  {
+    "line": 19248,
+    "text": "              null === (i = this.worker) || void 0 === i || i.postMessage({\r"
+  },
+  {
+    "line": 19283,
+    "text": "              return this.state === o.INITIALIZED && this.transceiver ? (null === (i = this.worker) || void 0 === i || i.postMessage({\r"
+  },
+  {
+    "line": 21892,
+    "text": "                  const q = e.track.getSettings();\r"
+  },
+  {
+    "line": 21896,
+    "text": "                  const B = t.track.getSettings();\r"
+  },
+  {
+    "line": 22660,
+    "text": "                  this.socket = this.createWebSocket(`${this.addr}?error_over_ws=1&${d}&traceid=${a}`, s), this.socket.onmessage = this.onMessage.bind(this), this.socket.onerror = this.onError.bind(this), this.socket.onclose = this.onClose.bind(this), this.socket.onopen = this.onOpen.bind(this), this.protocol = this.socket.protocol\r"
+  },
+  {
+    "line": 22769,
+    "text": "                if (this.cleanupWebSocket(), e && this.isStateMessageReceived()) this.trackJoinEnded(), this.emitter.emit(cc, \"intentional-close\");\r"
+  },
+  {
+    "line": 22781,
+    "text": "            createWebSocket(t, e) {\r"
+  },
+  {
+    "line": 22782,
+    "text": "              return new WebSocket(t, e)\r"
+  },
+  {
+    "line": 22784,
+    "text": "            cleanupWebSocket() {\r"
+  },
+  {
+    "line": 22954,
+    "text": "              e.ok || (i = e.error, i.details = `Timeout triggered by ${t.code}`), this.trackSocketError(i), this.markSocketAsClosed(), this.clearPingPongTracking(), this.clearConnectionAttemptTimeouts(), this.cleanupWebSocket(), i.fatal ? (this.clearConnectionAttempts(), this.emitter.emit(Wt, i)) : this.queueExponentialBackoffRetry()\r"
+  },
+  {
+    "line": 23148,
+    "text": "                  code: lt.WEBSOCKET_MESSAGE_PARSE_FAILURE.code,\r"
+  },
+  {
+    "line": 23161,
+    "text": "                  message: lt.WEBSOCKET_MESSAGE_PARSE_FAILURE.message,\r"
+  },
+  {
+    "line": 23760,
+    "text": "                    m = null !== (s = null === (i = r.getSettings()) || void 0 === i ? void 0 : i.displaySurface) && void 0 !== s && s,\r"
+  }
+]

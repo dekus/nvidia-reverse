@@ -1,0 +1,127 @@
+[
+  {
+    "offset": "0x6dfa0",
+    "encoding": "ascii",
+    "text": "nvapi_Direct_GetMethod"
+  },
+  {
+    "offset": "0x6dfb8",
+    "encoding": "ascii",
+    "text": "nvapi_QueryInterface"
+  },
+  {
+    "offset": "0x7a5b0",
+    "encoding": "ascii",
+    "text": "NvPluginSystemDataCollector"
+  },
+  {
+    "offset": "0x7d800",
+    "encoding": "ascii",
+    "text": "NvMessageBus.dll"
+  },
+  {
+    "offset": "0x7f040",
+    "encoding": "ascii",
+    "text": "ctlPowerTelemetryGet"
+  },
+  {
+    "offset": "0x83e1c",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Symbols\\SystemDataCollectorsContainerPlugin_x64.pdb"
+  },
+  {
+    "offset": "0x8d408",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x8db55",
+    "encoding": "ascii",
+    "text": "ctlPowerTelemetryGet"
+  },
+  {
+    "offset": "0x8e478",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x6df20",
+    "encoding": "utf-16le",
+    "text": "NvAPI Direct was not found. Please update your driver."
+  },
+  {
+    "offset": "0x6e000",
+    "encoding": "utf-16le",
+    "text": "nvapi64.dll"
+  },
+  {
+    "offset": "0x6e270",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x6e540",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x6e580",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x7cf70",
+    "encoding": "utf-16le",
+    "text": "Oc::NvapiAdapter::initialize failed!"
+  },
+  {
+    "offset": "0x7cfc0",
+    "encoding": "utf-16le",
+    "text": "Oc::NvapiAdapter::getNumberOfGPUs failed!"
+  },
+  {
+    "offset": "0x7d020",
+    "encoding": "utf-16le",
+    "text": "Legacy GPU detected, falling back to NvAPIs"
+  },
+  {
+    "offset": "0x7d110",
+    "encoding": "utf-16le",
+    "text": "takeSample in legacy NvAPI mode"
+  },
+  {
+    "offset": "0x7d150",
+    "encoding": "utf-16le",
+    "text": "NvAPI Fans: %d"
+  },
+  {
+    "offset": "0x7d170",
+    "encoding": "utf-16le",
+    "text": "NvAPI Fan speed %d: %d"
+  },
+  {
+    "offset": "0x7f338",
+    "encoding": "utf-16le",
+    "text": "NvapiAdapter::getNumFans()"
+  },
+  {
+    "offset": "0x7f370",
+    "encoding": "utf-16le",
+    "text": "Oc::NvapiAdapter::getNumFans"
+  },
+  {
+    "offset": "0x7f3b0",
+    "encoding": "utf-16le",
+    "text": "(status != NVAPI_OK for NvAPI_GPU_ClientFanCoolersGetInfo(), status: %d)"
+  },
+  {
+    "offset": "0x7f508",
+    "encoding": "utf-16le",
+    "text": "Oc::NvapiAdapter::getFanRpm"
+  },
+  {
+    "offset": "0x7f960",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  }
+]

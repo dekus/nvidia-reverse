@@ -1,0 +1,22 @@
+[
+  {
+    "line": 979,
+    "text": "                  f = typeof window < \"u\" && window.postMessage && window.addEventListener;\r"
+  },
+  {
+    "line": 990,
+    "text": "                      I.push(b), window.postMessage(\"process-tick\", \"*\")\r"
+  },
+  {
+    "line": 1174,
+    "text": "          v.postMessage(Object.assign(Object.assign({}, g), {\r"
+  },
+  {
+    "line": 1182,
+    "text": "          v.postMessage(Object.assign(Object.assign({}, g), {\r"
+  },
+  {
+    "line": 1313,
+    "text": "        }), c.start && c.start(), c.postMessage(Object.assign({\r"
+  }
+]

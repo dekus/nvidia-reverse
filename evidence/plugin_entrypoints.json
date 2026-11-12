@@ -1,0 +1,3829 @@
+[
+  {
+    "path": "FrameViewSDK\\nvfvsdksvc_x64.exe",
+    "sha256": "e2ca40523ce7cd0c1f3b4beab6d9adf897a119c52d3c54a9e77784705c1c98e8",
+    "exports": []
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\FvContainer.System.exe",
+    "sha256": "2ef3a9a17925bf57b7834a444f82d59b1ef7c6a546505c05b9303d7764f3b6ea",
+    "exports": []
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\FvContainer.exe",
+    "sha256": "bd3fa80956cafa3eb6db3acc440145ee90d24abf96cd53ba02b6eb17542e5788",
+    "exports": []
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\NvMessageBus.dll",
+    "sha256": "4915c54254d22a538c82ed438a8b01ce3b3ccdb136a9853072d463d436e80ae3",
+    "exports": []
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\plugins\\SystemDataCollectorsContainerPlugin_x64.dll",
+    "sha256": "0fefcd9d1b06470cf19c304f33514f6ed65ca19d85d6a3637b68135cbd87a5d2",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0xcea0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 49,
+        "name": "ctlInit",
+        "rva": "0x37bc0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\plugins.system\\AggregatorContainerPlugin_x64.dll",
+    "sha256": "bc832c7e2537e63712dd3f6822331749c67f1d8641c05154a22b9e93893d42b4",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0x1b3d0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\plugins.system\\FrameViewKMDServiceContainerPlugin_x64.dll",
+    "sha256": "f74d9172acfabcc14e2f91b4ab7ef8ebd789a8bf61fc082c1da96db43a1c3d9d",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0x9080",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\plugins.system\\NvMessageBusBroadcast.dll",
+    "sha256": "e07a2df896f8e081117ae027ac4fce9613118c131030b0ccbbcc5731d750e595",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0xbba0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\SDK\\FvSDKTestClient_Public.exe",
+    "sha256": "b7dd66f1674e05fff5f3aed3315f6789698a562f58998b9b2132febc589d5098",
+    "exports": []
+  },
+  {
+    "path": "FrameViewSDK\\SDK\\Public_Release\\FvSDK_x64.dll",
+    "sha256": "3d7fc2f6badbf9ba3796ef324638526e0438bf090cbc419654294ac7fc6bc513",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "fv_QueryInterface",
+        "rva": "0x2a730",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\SDK\\Public_Release\\FvSDK_x86.dll",
+    "sha256": "1bb621f941782a3038ba01faa979849d9050f3796f1654de7ebe7491d152bf43",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "fv_QueryInterface",
+        "rva": "0x28510",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\bin\\FrameViewKMD.sys",
+    "sha256": "f768f331ecd2ed3eb121ca28569e8c7c52561c6f8b1c40e8c8f1b2185c200e02",
+    "exports": []
+  },
+  {
+    "path": "FrameViewSDK\\bin\\FvSDK_x64.dll",
+    "sha256": "e1a209218a6edd6c01f3ca107765faa44ee24539b3df8fbfc675e7bbc67b05ac",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "fv_QueryInterface",
+        "rva": "0x2a730",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\bin\\PresentMon_x64.exe",
+    "sha256": "045a5c1465886bd8435ceab20805b119367e2d71ba02a635547c81c91e791b01",
+    "exports": [
+      {
+        "ordinal": 48,
+        "name": "ctlInit",
+        "rva": "0x86020",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\bin\\amd_ags_x64.dll",
+    "sha256": "6f6eabdb872cc503beace295a349d379625b5c518646af203ec4f71f06a0ca16",
+    "exports": [
+      {
+        "ordinal": 2,
+        "name": "agsDeInit",
+        "rva": "0x70b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4,
+        "name": "agsDriverExtensionsDX11_CreateBuffer",
+        "rva": "0x1000",
+        "forwarder": null
+      },
+      {
+        "ordinal": 5,
+        "name": "agsDriverExtensionsDX11_CreateDevice",
+        "rva": "0x26f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 6,
+        "name": "agsDriverExtensionsDX11_CreateFromDevice",
+        "rva": "0x2ab0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 7,
+        "name": "agsDriverExtensionsDX11_CreateTexture1D",
+        "rva": "0x1090",
+        "forwarder": null
+      },
+      {
+        "ordinal": 8,
+        "name": "agsDriverExtensionsDX11_CreateTexture2D",
+        "rva": "0x1120",
+        "forwarder": null
+      },
+      {
+        "ordinal": 9,
+        "name": "agsDriverExtensionsDX11_CreateTexture3D",
+        "rva": "0x11b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 29,
+        "name": "agsDriverExtensionsDX12_CreateCommandList",
+        "rva": "0x46c0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 30,
+        "name": "agsDriverExtensionsDX12_CreateDevice",
+        "rva": "0x47e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 31,
+        "name": "agsDriverExtensionsDX12_CreateFromDevice",
+        "rva": "0x49e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 32,
+        "name": "agsDriverExtensionsDX12_CreateGraphicsPipelineState",
+        "rva": "0x4a60",
+        "forwarder": null
+      },
+      {
+        "ordinal": 40,
+        "name": "agsInit",
+        "rva": "0x71f0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\bin\\nvrla.exe",
+    "sha256": "ed1b58b59ac1dc101da0ddfa8a2d81fbf7adf62b83d92974fc317bccbae158d4",
+    "exports": []
+  },
+  {
+    "path": "FrameViewSDK\\etw_fcat\\NVFTVRDLL64.dll",
+    "sha256": "e75c2edcbb5f06c10e5a57afd50bc8c26f9374c3d2a28c8b54db8bc6e30134a8",
+    "exports": []
+  },
+  {
+    "path": "FrameViewSDK\\etw_nv\\ddETWExternal.dll",
+    "sha256": "676db6bd39cd2cf854e768c8da0ec5b01c2eb980f4df95f6409531b5d513f2b3",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\Display.Driver.{92800A66-972D-4AAC-A44D-81E3328AF354}\\DisplayDriverExt.dll",
+    "sha256": "417edc653f0ea0ac8be0e58a1f1c3fc17772ae9ed8c24e3ddab5200c74c33347",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\Display.Driver.{92800A66-972D-4AAC-A44D-81E3328AF354}\\DisplayDriverExt64.dll",
+    "sha256": "69c26a1b1ab9fd9278cfa31e582a3a51020a34a257f7cec866f66543b7ee42f1",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\Display.Driver.{F11599FA-D299-43A1-B827-83234858D1A3}\\DisplayDriverExt.dll",
+    "sha256": "3003a80c9e45d37ac4b345a0a3cb10d5f8ecd6b5f02ed68e8ff69b622bf57334",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\Display.NvApp.{39B563FC-F52F-4E62-B6EC-9DD602862CA8}\\NvAppExt.dll",
+    "sha256": "8b1f53246d0370b2f2d2712bfe7244ea3382c952540d030d637ad82c89d38b05",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\Display.PhysX.{5A50652D-B45C-4D25-84CD-19B69879382B}\\PhysXExt.dll",
+    "sha256": "56e11e85b9e6a3dafb6f8c57e4a4e1f3dd5c1632553c88ad0d0f32b216c6fac7",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\Display.PhysX.{5A50652D-B45C-4D25-84CD-19B69879382B}\\PhysXExt64.dll",
+    "sha256": "2d333ab49dcd59d874683c6467608bc77f87cad1fd350a6f61257262995c5c7d",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\FrameViewSdk.{9D58CA10-2FA6-49C0-9986-8FEDA998716E}\\FrameViewSdkExt.dll",
+    "sha256": "24db8717b792cce09ee877d73c37f2c65c448cadefe98ce2887250615e688ff0",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\HDAudio.Driver.{091AEA3D-8B36-4AC9-8B5B-5965F73BC7F6}\\HDAudioExt.dll",
+    "sha256": "3496720838dd19a05c76cc45f061a09bc168d409cd3883833c9e9445387a1ab4",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\HDAudio.Driver.{091AEA3D-8B36-4AC9-8B5B-5965F73BC7F6}\\HDAudioExt64.dll",
+    "sha256": "a1dad609c7a2edcf2d458920ae20f9476c8c37722a089b4ddf0ab1172f04d106",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\HDAudio.Driver.{091AEA3D-8B36-4AC9-8B5B-5965F73BC7F6}\\nvhda64v.sys",
+    "sha256": "9b6178768f6f4446b3a91c9140d9bc10312c07d6aa94af73559aab462399f766",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\InstallerCore\\NVI2.DLL",
+    "sha256": "fe0397022b4e1bf79c31d55c43fc99792d489a889c8790b712de5a022c7994a4",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\InstallerCore\\NVI2UI.DLL",
+    "sha256": "e0840001809399d9028d5edeeccd12b30c3dcbd2196742b04a902dd1a6989bb2",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\InstallerCore\\NVPrxy32.DLL",
+    "sha256": "6dcbb489b70913c73a890691b54b5d5ac494dc43f717c29d1d74d714ccfeb501",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\InstallerCore\\NVPrxy64.DLL",
+    "sha256": "599949b92a60f05705ba66c8611c177462cb44f877b16e6054c097ffb9d9e88e",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\InstallerCore\\NvInstallerUtil.dll",
+    "sha256": "e08b544f697e003cda488f09b28210b6339ed333b7d4e95beadb59fa8485b822",
+    "exports": [
+      {
+        "ordinal": 9,
+        "name": "InitializeTelemetryStandalone",
+        "rva": "0x599c0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 10,
+        "name": "InitializeTelemetryStandaloneWithDeviceId",
+        "rva": "0x59d20",
+        "forwarder": null
+      },
+      {
+        "ordinal": 11,
+        "name": "InitializeTelemetryStandalone_2",
+        "rva": "0x5a490",
+        "forwarder": null
+      },
+      {
+        "ordinal": 12,
+        "name": "InitializeTelemetryStandalone_3",
+        "rva": "0x5a150",
+        "forwarder": null
+      },
+      {
+        "ordinal": 13,
+        "name": "NvPluginGetInfo",
+        "rva": "0x50e60",
+        "forwarder": null
+      },
+      {
+        "ordinal": 30,
+        "name": "UninitializeTelemetry",
+        "rva": "0x5a650",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\InstallerCore\\SETUP.EXE",
+    "sha256": "19e9c11f18e2ee08d601475ed92110c786700467cb5ed67f85feaec380e77e3f",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\ShadowPlay.{D93CCF6F-6877-4B4B-83B0-4AF388304402}\\ShadowPlayExt.dll",
+    "sha256": "1278e2dd44d3b638091913ad27719b7d8e67766a21bc34ddf882e537fb23fa30",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\VirtualAudio.Driver.{7C43349F-A7F0-4D47-8E5D-C03E063D8955}\\nvaudcap32v.dll",
+    "sha256": "d41f77ca62e406125bb165450ef99d16ced0fac9a574058ca3cd31b6a3b58ca8",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvAudCapAPICreateInstance",
+        "rva": "0xfc40",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\VirtualAudio.Driver.{7C43349F-A7F0-4D47-8E5D-C03E063D8955}\\nvaudcap64a.dll",
+    "sha256": "e92db4d1b75fb4669eb320c1a33d656bb439c8211589f482b1dbc403df871de8",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvAudCapAPICreateInstance",
+        "rva": "0x127d0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\VirtualAudio.Driver.{7C43349F-A7F0-4D47-8E5D-C03E063D8955}\\nvaudcap64v.dll",
+    "sha256": "cfaffaea819a28bc1c837a8da021afe8da3cc22b787a2ecca8ec90e04109ebcc",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvAudCapAPICreateInstance",
+        "rva": "0x10db0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\VirtualAudio.Driver.{7C43349F-A7F0-4D47-8E5D-C03E063D8955}\\nvvad32v.sys",
+    "sha256": "bf036afb14ced98ef68a3947230f58b565a14dce8c45367b6229a3b1187ccb22",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\VirtualAudio.Driver.{7C43349F-A7F0-4D47-8E5D-C03E063D8955}\\nvvad64a.sys",
+    "sha256": "0cdd4404f6878daa2e28dd9ae7ac51974b56c686488fdaba245fc5759cdfb9d2",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\VirtualAudio.Driver.{7C43349F-A7F0-4D47-8E5D-C03E063D8955}\\nvvad64v.sys",
+    "sha256": "1635fe7969dabb11902c9906432affd462e595c4b8d81d69fb55f2ff4824bc7b",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\presentations.dll",
+    "sha256": "695eaac161c28662e7ddbf04efe611713e8798e026ea57b192226f5beed77c43",
+    "exports": []
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\DynamicBillboardPresentations.dll",
+    "sha256": "c7b342b4b9f063726575d2e0ac54371c02a95ad2a82d5ebe4c6c31a21c02a65c",
+    "exports": []
+  },
+  {
+    "path": "NVIDIA App\\7z.dll",
+    "sha256": "3dfedba6e092428ed5a33c4e38d646f706ced851783442a2bb2dd281499fe2ea",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "CreateDecoder",
+        "rva": "0xfd320",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2,
+        "name": "CreateEncoder",
+        "rva": "0xfd3a0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3,
+        "name": "CreateObject",
+        "rva": "0x6d520",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\7z.exe",
+    "sha256": "3a48b1cb3d10cb76271625913c64ced4fa91f62c5c430af36fb567704b01b12f",
+    "exports": []
+  },
+  {
+    "path": "NVIDIA App\\DarkModeCheck.exe",
+    "sha256": "9c0863c1872266fd4700d303e866fb2ed8321862800b0f0de9cd05c6addb887c",
+    "exports": []
+  },
+  {
+    "path": "NVIDIA App\\InstallerExtension.dll",
+    "sha256": "764358a378bf8ed483f6c2b5288736c014bed19c05039dd1e7fc26001d0b890b",
+    "exports": []
+  },
+  {
+    "path": "NVIDIA App\\NvAppApi.dll",
+    "sha256": "25fc3ecc6208e61cd08d09c8b35ebd6aa510f4d8bdfa6750bd7fca89407ec25d",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "CreateInterface",
+        "rva": "0x2050",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\NVIDIA App.exe",
+    "sha256": "0f166e95144447c5317d92b2e74f58507cccab17033588b486f40b026f932ceb",
+    "exports": []
+  },
+  {
+    "path": "NVIDIA App\\CEF\\NVIDIA Overlay.exe",
+    "sha256": "7011028937e367e222b07f9199bf6a09ea28c14035c43593fd91df9a45ea7716",
+    "exports": []
+  },
+  {
+    "path": "NVIDIA App\\CEF\\chrome_elf.dll",
+    "sha256": "020972f183e435a7dc0d608be8d89e0f54f253bd7f7d3315c27c1715321d23ad",
+    "exports": [
+      {
+        "ordinal": 19,
+        "name": "IsThirdPartyInitialized",
+        "rva": "0x1b6b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 26,
+        "name": "SignalInitializeCrashReporting",
+        "rva": "0x19a70",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\d3dcompiler_47.dll",
+    "sha256": "b09c5df3e2259d48b7559011d5e3929cc3688653ca6cb9d91951d29708be63fa",
+    "exports": [
+      {
+        "ordinal": 7,
+        "name": "D3DCreateBlob",
+        "rva": "0x8070",
+        "forwarder": null
+      },
+      {
+        "ordinal": 8,
+        "name": "D3DCreateFunctionLinkingGraph",
+        "rva": "0x8250",
+        "forwarder": null
+      },
+      {
+        "ordinal": 9,
+        "name": "D3DCreateLinker",
+        "rva": "0x8080",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\dxcompiler.dll",
+    "sha256": "f1b24c125aa3ce8e25aed1840843bd25ebfb8584b507af1594007abb26b1ffa0",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "DxcCreateInstance",
+        "rva": "0x1fc0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2,
+        "name": "DxcCreateInstance2",
+        "rva": "0x2490",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\dxil.dll",
+    "sha256": "2c93b092b20bcf0214f5eca09ae8fd1842c8a9197b77298dfe8184c65c4c7c86",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "DxcCreateInstance",
+        "rva": "0x18e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2,
+        "name": "DxcCreateInstance2",
+        "rva": "0x19e0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\libEGL.dll",
+    "sha256": "4206dead23c7224f3fc3863c80861d0e9da1b2a91084e0454d84b427f944ccbb",
+    "exports": [
+      {
+        "ordinal": 9,
+        "name": "eglCreateContext",
+        "rva": "0x1390",
+        "forwarder": null
+      },
+      {
+        "ordinal": 10,
+        "name": "eglCreateDeviceANGLE",
+        "rva": "0x40b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 11,
+        "name": "eglCreateImage",
+        "rva": "0x2fc0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 12,
+        "name": "eglCreateImageKHR",
+        "rva": "0x6400",
+        "forwarder": null
+      },
+      {
+        "ordinal": 13,
+        "name": "eglCreateNativeClientBufferANDROID",
+        "rva": "0x38b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 14,
+        "name": "eglCreatePbufferFromClientBuffer",
+        "rva": "0x2ac0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 15,
+        "name": "eglCreatePbufferSurface",
+        "rva": "0x1480",
+        "forwarder": null
+      },
+      {
+        "ordinal": 16,
+        "name": "eglCreatePixmapSurface",
+        "rva": "0x1560",
+        "forwarder": null
+      },
+      {
+        "ordinal": 17,
+        "name": "eglCreatePlatformPixmapSurface",
+        "rva": "0x30c0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 18,
+        "name": "eglCreatePlatformPixmapSurfaceEXT",
+        "rva": "0x5b20",
+        "forwarder": null
+      },
+      {
+        "ordinal": 19,
+        "name": "eglCreatePlatformWindowSurface",
+        "rva": "0x31b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 20,
+        "name": "eglCreatePlatformWindowSurfaceEXT",
+        "rva": "0x5c10",
+        "forwarder": null
+      },
+      {
+        "ordinal": 21,
+        "name": "eglCreateStreamKHR",
+        "rva": "0x6a40",
+        "forwarder": null
+      },
+      {
+        "ordinal": 22,
+        "name": "eglCreateStreamProducerD3DTextureANGLE",
+        "rva": "0x5030",
+        "forwarder": null
+      },
+      {
+        "ordinal": 23,
+        "name": "eglCreateSync",
+        "rva": "0x32a0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 24,
+        "name": "eglCreateSyncKHR",
+        "rva": "0x6160",
+        "forwarder": null
+      },
+      {
+        "ordinal": 25,
+        "name": "eglCreateWindowSurface",
+        "rva": "0x1650",
+        "forwarder": null
+      },
+      {
+        "ordinal": 58,
+        "name": "eglInitialize",
+        "rva": "0x1ec0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 67,
+        "name": "eglProgramCacheQueryANGLE",
+        "rva": "0x4c60",
+        "forwarder": null
+      },
+      {
+        "ordinal": 69,
+        "name": "eglQueryAPI",
+        "rva": "0x2bc0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 70,
+        "name": "eglQueryContext",
+        "rva": "0x2090",
+        "forwarder": null
+      },
+      {
+        "ordinal": 71,
+        "name": "eglQueryDebugKHR",
+        "rva": "0x5fa0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 72,
+        "name": "eglQueryDeviceAttribEXT",
+        "rva": "0x5690",
+        "forwarder": null
+      },
+      {
+        "ordinal": 73,
+        "name": "eglQueryDeviceStringEXT",
+        "rva": "0x5770",
+        "forwarder": null
+      },
+      {
+        "ordinal": 74,
+        "name": "eglQueryDisplayAttribANGLE",
+        "rva": "0x44e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 75,
+        "name": "eglQueryDisplayAttribEXT",
+        "rva": "0x5840",
+        "forwarder": null
+      },
+      {
+        "ordinal": 76,
+        "name": "eglQueryDmaBufFormatsEXT",
+        "rva": "0x5920",
+        "forwarder": null
+      },
+      {
+        "ordinal": 77,
+        "name": "eglQueryDmaBufModifiersEXT",
+        "rva": "0x5a10",
+        "forwarder": null
+      },
+      {
+        "ordinal": 78,
+        "name": "eglQueryStreamKHR",
+        "rva": "0x6bf0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 79,
+        "name": "eglQueryStreamu64KHR",
+        "rva": "0x6ce0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 80,
+        "name": "eglQueryString",
+        "rva": "0x2180",
+        "forwarder": null
+      },
+      {
+        "ordinal": 81,
+        "name": "eglQueryStringiANGLE",
+        "rva": "0x4400",
+        "forwarder": null
+      },
+      {
+        "ordinal": 82,
+        "name": "eglQuerySurface",
+        "rva": "0x2250",
+        "forwarder": null
+      },
+      {
+        "ordinal": 83,
+        "name": "eglQuerySurface64KHR",
+        "rva": "0x66b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 84,
+        "name": "eglQuerySurfacePointerANGLE",
+        "rva": "0x4f40",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\libGLESv2.dll",
+    "sha256": "8e94434d84530fef7224b8f5d55f5e0344b222f8883bca35863e2194bc03e821",
+    "exports": [
+      {
+        "ordinal": 9,
+        "name": "EGL_CreateContext",
+        "rva": "0x7f00",
+        "forwarder": null
+      },
+      {
+        "ordinal": 10,
+        "name": "EGL_CreateDeviceANGLE",
+        "rva": "0xa870",
+        "forwarder": null
+      },
+      {
+        "ordinal": 11,
+        "name": "EGL_CreateImage",
+        "rva": "0x97b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 12,
+        "name": "EGL_CreateImageKHR",
+        "rva": "0xc840",
+        "forwarder": null
+      },
+      {
+        "ordinal": 13,
+        "name": "EGL_CreateNativeClientBufferANDROID",
+        "rva": "0xa120",
+        "forwarder": null
+      },
+      {
+        "ordinal": 14,
+        "name": "EGL_CreatePbufferFromClientBuffer",
+        "rva": "0x9360",
+        "forwarder": null
+      },
+      {
+        "ordinal": 15,
+        "name": "EGL_CreatePbufferSurface",
+        "rva": "0x8000",
+        "forwarder": null
+      },
+      {
+        "ordinal": 16,
+        "name": "EGL_CreatePixmapSurface",
+        "rva": "0x80f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 17,
+        "name": "EGL_CreatePlatformPixmapSurface",
+        "rva": "0x9900",
+        "forwarder": null
+      },
+      {
+        "ordinal": 18,
+        "name": "EGL_CreatePlatformPixmapSurfaceEXT",
+        "rva": "0xbf00",
+        "forwarder": null
+      },
+      {
+        "ordinal": 19,
+        "name": "EGL_CreatePlatformWindowSurface",
+        "rva": "0x9a00",
+        "forwarder": null
+      },
+      {
+        "ordinal": 20,
+        "name": "EGL_CreatePlatformWindowSurfaceEXT",
+        "rva": "0xc000",
+        "forwarder": null
+      },
+      {
+        "ordinal": 21,
+        "name": "EGL_CreateStreamKHR",
+        "rva": "0xce60",
+        "forwarder": null
+      },
+      {
+        "ordinal": 22,
+        "name": "EGL_CreateStreamProducerD3DTextureANGLE",
+        "rva": "0xb520",
+        "forwarder": null
+      },
+      {
+        "ordinal": 23,
+        "name": "EGL_CreateSync",
+        "rva": "0x9b30",
+        "forwarder": null
+      },
+      {
+        "ordinal": 24,
+        "name": "EGL_CreateSyncKHR",
+        "rva": "0xc570",
+        "forwarder": null
+      },
+      {
+        "ordinal": 25,
+        "name": "EGL_CreateWindowSurface",
+        "rva": "0x81f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 58,
+        "name": "EGL_Initialize",
+        "rva": "0x88e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 67,
+        "name": "EGL_ProgramCacheQueryANGLE",
+        "rva": "0xb1d0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 69,
+        "name": "EGL_QueryAPI",
+        "rva": "0x9470",
+        "forwarder": null
+      },
+      {
+        "ordinal": 70,
+        "name": "EGL_QueryContext",
+        "rva": "0x8a90",
+        "forwarder": null
+      },
+      {
+        "ordinal": 71,
+        "name": "EGL_QueryDebugKHR",
+        "rva": "0xc3d0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 72,
+        "name": "EGL_QueryDeviceAttribEXT",
+        "rva": "0xbb20",
+        "forwarder": null
+      },
+      {
+        "ordinal": 73,
+        "name": "EGL_QueryDeviceStringEXT",
+        "rva": "0xbbd0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 74,
+        "name": "EGL_QueryDisplayAttribANGLE",
+        "rva": "0xabc0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 75,
+        "name": "EGL_QueryDisplayAttribEXT",
+        "rva": "0xbc80",
+        "forwarder": null
+      },
+      {
+        "ordinal": 76,
+        "name": "EGL_QueryDmaBufFormatsEXT",
+        "rva": "0xbd40",
+        "forwarder": null
+      },
+      {
+        "ordinal": 77,
+        "name": "EGL_QueryDmaBufModifiersEXT",
+        "rva": "0xbe10",
+        "forwarder": null
+      },
+      {
+        "ordinal": 78,
+        "name": "EGL_QueryStreamKHR",
+        "rva": "0xcff0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 79,
+        "name": "EGL_QueryStreamu64KHR",
+        "rva": "0xd0c0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 80,
+        "name": "EGL_QueryString",
+        "rva": "0x8b60",
+        "forwarder": null
+      },
+      {
+        "ordinal": 81,
+        "name": "EGL_QueryStringiANGLE",
+        "rva": "0xab00",
+        "forwarder": null
+      },
+      {
+        "ordinal": 82,
+        "name": "EGL_QuerySurface",
+        "rva": "0x8c10",
+        "forwarder": null
+      },
+      {
+        "ordinal": 83,
+        "name": "EGL_QuerySurface64KHR",
+        "rva": "0xcb30",
+        "forwarder": null
+      },
+      {
+        "ordinal": 84,
+        "name": "EGL_QuerySurfacePointerANGLE",
+        "rva": "0xb450",
+        "forwarder": null
+      },
+      {
+        "ordinal": 123,
+        "name": "GL_BeginQuery",
+        "rva": "0x1a9f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 124,
+        "name": "GL_BeginQueryEXT",
+        "rva": "0x2f5d0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 225,
+        "name": "GL_CreateMemoryObjectsEXT",
+        "rva": "0x311b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 226,
+        "name": "GL_CreateProgram",
+        "rva": "0x13cf0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 227,
+        "name": "GL_CreateShader",
+        "rva": "0x13da0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 228,
+        "name": "GL_CreateShaderProgramv",
+        "rva": "0x200c0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 229,
+        "name": "GL_CreateShaderProgramvEXT",
+        "rva": "0x32f00",
+        "forwarder": null
+      },
+      {
+        "ordinal": 321,
+        "name": "GL_EndQuery",
+        "rva": "0x1c160",
+        "forwarder": null
+      },
+      {
+        "ordinal": 322,
+        "name": "GL_EndQueryEXT",
+        "rva": "0x2f740",
+        "forwarder": null
+      },
+      {
+        "ordinal": 473,
+        "name": "GL_GetQueryObjecti64vEXT",
+        "rva": "0x2f940",
+        "forwarder": null
+      },
+      {
+        "ordinal": 474,
+        "name": "GL_GetQueryObjecti64vRobustANGLE",
+        "rva": "0x2c600",
+        "forwarder": null
+      },
+      {
+        "ordinal": 475,
+        "name": "GL_GetQueryObjectivEXT",
+        "rva": "0x2f9f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 476,
+        "name": "GL_GetQueryObjectivRobustANGLE",
+        "rva": "0x2c540",
+        "forwarder": null
+      },
+      {
+        "ordinal": 477,
+        "name": "GL_GetQueryObjectui64vEXT",
+        "rva": "0x2faa0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 478,
+        "name": "GL_GetQueryObjectui64vRobustANGLE",
+        "rva": "0x2c6c0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 479,
+        "name": "GL_GetQueryObjectuiv",
+        "rva": "0x1cfa0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 480,
+        "name": "GL_GetQueryObjectuivEXT",
+        "rva": "0x2fb50",
+        "forwarder": null
+      },
+      {
+        "ordinal": 481,
+        "name": "GL_GetQueryObjectuivRobustANGLE",
+        "rva": "0x2a7f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 482,
+        "name": "GL_GetQueryiv",
+        "rva": "0x1d050",
+        "forwarder": null
+      },
+      {
+        "ordinal": 483,
+        "name": "GL_GetQueryivEXT",
+        "rva": "0x2fc00",
+        "forwarder": null
+      },
+      {
+        "ordinal": 484,
+        "name": "GL_GetQueryivRobustANGLE",
+        "rva": "0x2a710",
+        "forwarder": null
+      },
+      {
+        "ordinal": 591,
+        "name": "GL_IsQuery",
+        "rva": "0x1da40",
+        "forwarder": null
+      },
+      {
+        "ordinal": 592,
+        "name": "GL_IsQueryEXT",
+        "rva": "0x2fcb0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 760,
+        "name": "GL_QueryCounterEXT",
+        "rva": "0x2fd40",
+        "forwarder": null
+      },
+      {
+        "ordinal": 761,
+        "name": "GL_QueryMatrixxOES",
+        "rva": "0x3a090",
+        "forwarder": null
+      },
+      {
+        "ordinal": 961,
+        "name": "glBeginQuery",
+        "rva": "0x3d120",
+        "forwarder": null
+      },
+      {
+        "ordinal": 962,
+        "name": "glBeginQueryEXT",
+        "rva": "0x3ed90",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1063,
+        "name": "glCreateMemoryObjectsEXT",
+        "rva": "0x3efb0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1064,
+        "name": "glCreateProgram",
+        "rva": "0x3c9d0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1065,
+        "name": "glCreateShader",
+        "rva": "0x3c9e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1066,
+        "name": "glCreateShaderProgramv",
+        "rva": "0x3d7e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1067,
+        "name": "glCreateShaderProgramvEXT",
+        "rva": "0x3f1b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1159,
+        "name": "glEndQuery",
+        "rva": "0x3d2c0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1160,
+        "name": "glEndQueryEXT",
+        "rva": "0x3edb0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1311,
+        "name": "glGetQueryObjecti64vEXT",
+        "rva": "0x3ede0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1312,
+        "name": "glGetQueryObjecti64vRobustANGLE",
+        "rva": "0x3ea60",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1313,
+        "name": "glGetQueryObjectivEXT",
+        "rva": "0x3edf0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1314,
+        "name": "glGetQueryObjectivRobustANGLE",
+        "rva": "0x3ea50",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1315,
+        "name": "glGetQueryObjectui64vEXT",
+        "rva": "0x3ee00",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1316,
+        "name": "glGetQueryObjectui64vRobustANGLE",
+        "rva": "0x3ea70",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1317,
+        "name": "glGetQueryObjectuiv",
+        "rva": "0x3d400",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1318,
+        "name": "glGetQueryObjectuivEXT",
+        "rva": "0x3ee10",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1319,
+        "name": "glGetQueryObjectuivRobustANGLE",
+        "rva": "0x3e830",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1320,
+        "name": "glGetQueryiv",
+        "rva": "0x3d410",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1321,
+        "name": "glGetQueryivEXT",
+        "rva": "0x3ee20",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1322,
+        "name": "glGetQueryivRobustANGLE",
+        "rva": "0x3e820",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1429,
+        "name": "glIsQuery",
+        "rva": "0x3d4e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1430,
+        "name": "glIsQueryEXT",
+        "rva": "0x3ee30",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1598,
+        "name": "glQueryCounterEXT",
+        "rva": "0x3ee40",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1599,
+        "name": "glQueryMatrixxOES",
+        "rva": "0x3fa20",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\libcef.dll",
+    "sha256": "29bb51e0fc7ebd1d41c7781d1068c60253647013e578053b8bb93a52ad33dca7",
+    "exports": [
+      {
+        "ordinal": 13,
+        "name": "cef_binary_value_create",
+        "rva": "0x2412d0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 14,
+        "name": "cef_browser_host_create_browser",
+        "rva": "0x243800",
+        "forwarder": null
+      },
+      {
+        "ordinal": 15,
+        "name": "cef_browser_host_create_browser_sync",
+        "rva": "0x243b90",
+        "forwarder": null
+      },
+      {
+        "ordinal": 16,
+        "name": "cef_browser_view_create",
+        "rva": "0x2489e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 20,
+        "name": "cef_command_line_create",
+        "rva": "0x24fd60",
+        "forwarder": null
+      },
+      {
+        "ordinal": 24,
+        "name": "cef_create_context_shared",
+        "rva": "0x27adb0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 25,
+        "name": "cef_create_directory",
+        "rva": "0x23c7a0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 26,
+        "name": "cef_create_new_temp_directory",
+        "rva": "0x23c890",
+        "forwarder": null
+      },
+      {
+        "ordinal": 27,
+        "name": "cef_create_temp_directory_in_directory",
+        "rva": "0x23c960",
+        "forwarder": null
+      },
+      {
+        "ordinal": 28,
+        "name": "cef_create_url",
+        "rva": "0x23d250",
+        "forwarder": null
+      },
+      {
+        "ordinal": 31,
+        "name": "cef_dictionary_value_create",
+        "rva": "0x2589c0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 43,
+        "name": "cef_drag_data_create",
+        "rva": "0x25def0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 59,
+        "name": "cef_image_create",
+        "rva": "0x2629f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 60,
+        "name": "cef_initialize",
+        "rva": "0x23c460",
+        "forwarder": null
+      },
+      {
+        "ordinal": 64,
+        "name": "cef_label_button_create",
+        "rva": "0x264440",
+        "forwarder": null
+      },
+      {
+        "ordinal": 66,
+        "name": "cef_list_value_create",
+        "rva": "0x266170",
+        "forwarder": null
+      },
+      {
+        "ordinal": 70,
+        "name": "cef_menu_button_create",
+        "rva": "0x26a600",
+        "forwarder": null
+      },
+      {
+        "ordinal": 71,
+        "name": "cef_menu_model_create",
+        "rva": "0x26b2d0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 73,
+        "name": "cef_panel_create",
+        "rva": "0x270260",
+        "forwarder": null
+      },
+      {
+        "ordinal": 78,
+        "name": "cef_post_data_create",
+        "rva": "0x2726e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 79,
+        "name": "cef_post_data_element_create",
+        "rva": "0x273120",
+        "forwarder": null
+      },
+      {
+        "ordinal": 83,
+        "name": "cef_print_settings_create",
+        "rva": "0x274d20",
+        "forwarder": null
+      },
+      {
+        "ordinal": 84,
+        "name": "cef_process_message_create",
+        "rva": "0x275f50",
+        "forwarder": null
+      },
+      {
+        "ordinal": 89,
+        "name": "cef_request_context_create_context",
+        "rva": "0x27aba0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 91,
+        "name": "cef_request_create",
+        "rva": "0x279190",
+        "forwarder": null
+      },
+      {
+        "ordinal": 94,
+        "name": "cef_response_create",
+        "rva": "0x2815a0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 96,
+        "name": "cef_scroll_view_create",
+        "rva": "0x2837c0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 97,
+        "name": "cef_server_create",
+        "rva": "0x284780",
+        "forwarder": null
+      },
+      {
+        "ordinal": 101,
+        "name": "cef_shared_process_message_builder_create",
+        "rva": "0x286110",
+        "forwarder": null
+      },
+      {
+        "ordinal": 102,
+        "name": "cef_shutdown",
+        "rva": "0x23c690",
+        "forwarder": null
+      },
+      {
+        "ordinal": 103,
+        "name": "cef_stream_reader_create_for_data",
+        "rva": "0x286770",
+        "forwarder": null
+      },
+      {
+        "ordinal": 104,
+        "name": "cef_stream_reader_create_for_file",
+        "rva": "0x2865b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 105,
+        "name": "cef_stream_reader_create_for_handler",
+        "rva": "0x286900",
+        "forwarder": null
+      },
+      {
+        "ordinal": 106,
+        "name": "cef_stream_writer_create_for_file",
+        "rva": "0x286c20",
+        "forwarder": null
+      },
+      {
+        "ordinal": 107,
+        "name": "cef_stream_writer_create_for_handler",
+        "rva": "0x286de0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 160,
+        "name": "cef_test_server_create_and_start",
+        "rva": "0x2880a0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 161,
+        "name": "cef_textfield_create",
+        "rva": "0x288d10",
+        "forwarder": null
+      },
+      {
+        "ordinal": 162,
+        "name": "cef_thread_create",
+        "rva": "0x28a8e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 180,
+        "name": "cef_translator_test_create",
+        "rva": "0x28ace0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 181,
+        "name": "cef_translator_test_ref_ptr_library_child_child_create",
+        "rva": "0x290100",
+        "forwarder": null
+      },
+      {
+        "ordinal": 182,
+        "name": "cef_translator_test_ref_ptr_library_child_create",
+        "rva": "0x28fe20",
+        "forwarder": null
+      },
+      {
+        "ordinal": 183,
+        "name": "cef_translator_test_ref_ptr_library_create",
+        "rva": "0x28faa0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 184,
+        "name": "cef_translator_test_scoped_library_child_child_create",
+        "rva": "0x290b20",
+        "forwarder": null
+      },
+      {
+        "ordinal": 185,
+        "name": "cef_translator_test_scoped_library_child_create",
+        "rva": "0x290900",
+        "forwarder": null
+      },
+      {
+        "ordinal": 186,
+        "name": "cef_translator_test_scoped_library_create",
+        "rva": "0x290670",
+        "forwarder": null
+      },
+      {
+        "ordinal": 189,
+        "name": "cef_urlrequest_create",
+        "rva": "0x290c80",
+        "forwarder": null
+      },
+      {
+        "ordinal": 194,
+        "name": "cef_v8value_create_array",
+        "rva": "0x295580",
+        "forwarder": null
+      },
+      {
+        "ordinal": 195,
+        "name": "cef_v8value_create_array_buffer",
+        "rva": "0x295620",
+        "forwarder": null
+      },
+      {
+        "ordinal": 196,
+        "name": "cef_v8value_create_array_buffer_with_copy",
+        "rva": "0x295750",
+        "forwarder": null
+      },
+      {
+        "ordinal": 197,
+        "name": "cef_v8value_create_bool",
+        "rva": "0x294fe0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 198,
+        "name": "cef_v8value_create_date",
+        "rva": "0x295260",
+        "forwarder": null
+      },
+      {
+        "ordinal": 199,
+        "name": "cef_v8value_create_double",
+        "rva": "0x2951c0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 200,
+        "name": "cef_v8value_create_function",
+        "rva": "0x2957f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 201,
+        "name": "cef_v8value_create_int",
+        "rva": "0x295080",
+        "forwarder": null
+      },
+      {
+        "ordinal": 202,
+        "name": "cef_v8value_create_null",
+        "rva": "0x294f40",
+        "forwarder": null
+      },
+      {
+        "ordinal": 203,
+        "name": "cef_v8value_create_object",
+        "rva": "0x2953e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 204,
+        "name": "cef_v8value_create_promise",
+        "rva": "0x295950",
+        "forwarder": null
+      },
+      {
+        "ordinal": 205,
+        "name": "cef_v8value_create_string",
+        "rva": "0x295300",
+        "forwarder": null
+      },
+      {
+        "ordinal": 206,
+        "name": "cef_v8value_create_uint",
+        "rva": "0x295120",
+        "forwarder": null
+      },
+      {
+        "ordinal": 207,
+        "name": "cef_v8value_create_undefined",
+        "rva": "0x294b10",
+        "forwarder": null
+      },
+      {
+        "ordinal": 208,
+        "name": "cef_value_create",
+        "rva": "0x298760",
+        "forwarder": null
+      },
+      {
+        "ordinal": 210,
+        "name": "cef_waitable_event_create",
+        "rva": "0x29ab20",
+        "forwarder": null
+      },
+      {
+        "ordinal": 211,
+        "name": "cef_window_create_top_level",
+        "rva": "0x29ae60",
+        "forwarder": null
+      },
+      {
+        "ordinal": 213,
+        "name": "cef_xml_reader_create",
+        "rva": "0x29ff40",
+        "forwarder": null
+      },
+      {
+        "ordinal": 215,
+        "name": "cef_zip_reader_create",
+        "rva": "0x2a1d80",
+        "forwarder": null
+      },
+      {
+        "ordinal": 216,
+        "name": "sqlite3_dbdata_init",
+        "rva": "0x7c02ce0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\NvidiaAppPermissionOc\\NVIDIA App Permission.exe",
+    "sha256": "d9b3fd4f672a1a90698f83c9123ca3832b0a42cd1a6ba51e903f71a8bfd59ce8",
+    "exports": []
+  },
+  {
+    "path": "NVIDIA App\\CEF\\dependencies\\CrimsonUtil.dll",
+    "sha256": "74026f7a344f0bc5fca5843e9bd8475d0dd22599b1a88ab0a07b089ff6844949",
+    "exports": [
+      {
+        "ordinal": 18,
+        "name": "?CreateCancellationToken@GXP@@YA?AV?$shared_ptr@VICancellationToken@GXP@@@std@@_N@Z",
+        "rva": "0x3880",
+        "forwarder": null
+      },
+      {
+        "ordinal": 19,
+        "name": "?CreateCancellationTokenSource@GXP@@YA?AV?$shared_ptr@VICancellationTokenSource@GXP@@@std@@XZ",
+        "rva": "0x12bf0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 23,
+        "name": "?LogInit@GXP@@YAXW4Profile@1@P6AXPEBDPEAX@Z2@Z",
+        "rva": "0x14840",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\dependencies\\libcrypto-3-x64.dll",
+    "sha256": "bf7031536634118b6d476d3af2247141d37f3034fbbe2e8c7a9a60608f5ec393",
+    "exports": [
+      {
+        "ordinal": 100,
+        "name": "ASN1_OBJECT_create",
+        "rva": "0x15b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 222,
+        "name": "ASN1_check_infinite_end",
+        "rva": "0x11bd0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 223,
+        "name": "ASN1_const_check_infinite_end",
+        "rva": "0xf2d0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 294,
+        "name": "ASYNC_init_thread",
+        "rva": "0x8a00",
+        "forwarder": null
+      },
+      {
+        "ordinal": 392,
+        "name": "BIO_get_init",
+        "rva": "0xf970",
+        "forwarder": null
+      },
+      {
+        "ordinal": 399,
+        "name": "BIO_get_shutdown",
+        "rva": "0x162e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 411,
+        "name": "BIO_meth_get_create",
+        "rva": "0x136e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 424,
+        "name": "BIO_meth_set_create",
+        "rva": "0x171c0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 491,
+        "name": "BIO_set_init",
+        "rva": "0x155d0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 494,
+        "name": "BIO_set_shutdown",
+        "rva": "0x3d90",
+        "forwarder": null
+      },
+      {
+        "ordinal": 499,
+        "name": "BIO_sock_init",
+        "rva": "0x11630",
+        "forwarder": null
+      },
+      {
+        "ordinal": 516,
+        "name": "BN_BLINDING_create_param",
+        "rva": "0xb070",
+        "forwarder": null
+      },
+      {
+        "ordinal": 740,
+        "name": "CMAC_Init",
+        "rva": "0x9010",
+        "forwarder": null
+      },
+      {
+        "ordinal": 743,
+        "name": "CMS_AuthEnvelopedData_create",
+        "rva": "0xa1f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 744,
+        "name": "CMS_AuthEnvelopedData_create_ex",
+        "rva": "0x15530",
+        "forwarder": null
+      },
+      {
+        "ordinal": 754,
+        "name": "CMS_EnvelopedData_create",
+        "rva": "0x8d60",
+        "forwarder": null
+      },
+      {
+        "ordinal": 755,
+        "name": "CMS_EnvelopedData_create_ex",
+        "rva": "0xe950",
+        "forwarder": null
+      },
+      {
+        "ordinal": 759,
+        "name": "CMS_ReceiptRequest_create0",
+        "rva": "0xe4f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 760,
+        "name": "CMS_ReceiptRequest_create0_ex",
+        "rva": "0x37b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 794,
+        "name": "CMS_SignedData_init",
+        "rva": "0x13e30",
+        "forwarder": null
+      },
+      {
+        "ordinal": 825,
+        "name": "CMS_dataInit",
+        "rva": "0x60d0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 826,
+        "name": "CMS_data_create",
+        "rva": "0x105d0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 827,
+        "name": "CMS_data_create_ex",
+        "rva": "0xb290",
+        "forwarder": null
+      },
+      {
+        "ordinal": 833,
+        "name": "CMS_digest_create",
+        "rva": "0x3b80",
+        "forwarder": null
+      },
+      {
+        "ordinal": 834,
+        "name": "CMS_digest_create_ex",
+        "rva": "0x13280",
+        "forwarder": null
+      },
+      {
+        "ordinal": 933,
+        "name": "CRYPTO_THREAD_init_local",
+        "rva": "0x8bc0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 959,
+        "name": "CRYPTO_ccm128_init",
+        "rva": "0x1940",
+        "forwarder": null
+      },
+      {
+        "ordinal": 984,
+        "name": "CRYPTO_gcm128_init",
+        "rva": "0x6740",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1007,
+        "name": "CRYPTO_ocb128_init",
+        "rva": "0xf7f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1022,
+        "name": "CRYPTO_secure_malloc_init",
+        "rva": "0x4930",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1023,
+        "name": "CRYPTO_secure_malloc_initialized",
+        "rva": "0x13fb0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1141,
+        "name": "DH_meth_get_init",
+        "rva": "0x137a0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1151,
+        "name": "DH_meth_set_init",
+        "rva": "0xdd00",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1216,
+        "name": "DSA_meth_get_init",
+        "rva": "0xc650",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1229,
+        "name": "DSA_meth_set_init",
+        "rva": "0xcbe0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1354,
+        "name": "EC_KEY_METHOD_get_init",
+        "rva": "0x14a00",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1360,
+        "name": "EC_KEY_METHOD_set_init",
+        "rva": "0xa430",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1423,
+        "name": "EC_POINT_is_at_infinity",
+        "rva": "0xe6e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1441,
+        "name": "EC_POINT_set_to_infinity",
+        "rva": "0x18730",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1483,
+        "name": "ENGINE_get_init_function",
+        "rva": "0x1f710",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1500,
+        "name": "ENGINE_init",
+        "rva": "0x1e5e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1553,
+        "name": "ENGINE_set_init_function",
+        "rva": "0xab90",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1744,
+        "name": "EVP_CIPHER_meth_get_init",
+        "rva": "0xbdd0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1753,
+        "name": "EVP_CIPHER_meth_set_init",
+        "rva": "0x159e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1764,
+        "name": "EVP_CipherInit",
+        "rva": "0x18b90",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1765,
+        "name": "EVP_CipherInit_SKEY",
+        "rva": "0x29b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1766,
+        "name": "EVP_CipherInit_ex",
+        "rva": "0xd2e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1767,
+        "name": "EVP_CipherInit_ex2",
+        "rva": "0xa050",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1768,
+        "name": "EVP_CipherPipelineDecryptInit",
+        "rva": "0x1fe0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1769,
+        "name": "EVP_CipherPipelineEncryptInit",
+        "rva": "0x1f9e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1775,
+        "name": "EVP_DecodeInit",
+        "rva": "0x13df0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1779,
+        "name": "EVP_DecryptInit",
+        "rva": "0x3950",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1780,
+        "name": "EVP_DecryptInit_ex",
+        "rva": "0x5ea0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1781,
+        "name": "EVP_DecryptInit_ex2",
+        "rva": "0xc930",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1787,
+        "name": "EVP_DigestInit",
+        "rva": "0x15020",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1788,
+        "name": "EVP_DigestInit_ex",
+        "rva": "0x58d0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1789,
+        "name": "EVP_DigestInit_ex2",
+        "rva": "0x8520",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1792,
+        "name": "EVP_DigestSignInit",
+        "rva": "0x7cc0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1793,
+        "name": "EVP_DigestSignInit_ex",
+        "rva": "0x149b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1799,
+        "name": "EVP_DigestVerifyInit",
+        "rva": "0x1e1d0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1800,
+        "name": "EVP_DigestVerifyInit_ex",
+        "rva": "0x7840",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1808,
+        "name": "EVP_EncodeInit",
+        "rva": "0x17420",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1812,
+        "name": "EVP_EncryptInit",
+        "rva": "0x146f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1813,
+        "name": "EVP_EncryptInit_ex",
+        "rva": "0x15be0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1814,
+        "name": "EVP_EncryptInit_ex2",
+        "rva": "0x8b40",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1898,
+        "name": "EVP_MAC_init",
+        "rva": "0x5f70",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1899,
+        "name": "EVP_MAC_init_SKEY",
+        "rva": "0x18f40",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1953,
+        "name": "EVP_MD_meth_get_init",
+        "rva": "0xfdb0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1964,
+        "name": "EVP_MD_meth_set_init",
+        "rva": "0x3660",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1973,
+        "name": "EVP_OpenInit",
+        "rva": "0x2d40",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1974,
+        "name": "EVP_PBE_CipherInit",
+        "rva": "0x3100",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1975,
+        "name": "EVP_PBE_CipherInit_ex",
+        "rva": "0x9c00",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2138,
+        "name": "EVP_PKEY_auth_decapsulate_init",
+        "rva": "0x14340",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2139,
+        "name": "EVP_PKEY_auth_encapsulate_init",
+        "rva": "0x1f110",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2146,
+        "name": "EVP_PKEY_decapsulate_init",
+        "rva": "0x15e60",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2148,
+        "name": "EVP_PKEY_decrypt_init",
+        "rva": "0x3110",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2149,
+        "name": "EVP_PKEY_decrypt_init_ex",
+        "rva": "0xa010",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2154,
+        "name": "EVP_PKEY_derive_init",
+        "rva": "0xa4f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2155,
+        "name": "EVP_PKEY_derive_init_ex",
+        "rva": "0x81f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2161,
+        "name": "EVP_PKEY_encapsulate_init",
+        "rva": "0xe730",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2163,
+        "name": "EVP_PKEY_encrypt_init",
+        "rva": "0xa560",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2164,
+        "name": "EVP_PKEY_encrypt_init_ex",
+        "rva": "0xb040",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2170,
+        "name": "EVP_PKEY_fromdata_init",
+        "rva": "0x1700",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2218,
+        "name": "EVP_PKEY_keygen_init",
+        "rva": "0xf8b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2236,
+        "name": "EVP_PKEY_meth_get_init",
+        "rva": "0xde50",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2258,
+        "name": "EVP_PKEY_meth_set_init",
+        "rva": "0x67b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2281,
+        "name": "EVP_PKEY_paramgen_init",
+        "rva": "0x13e00",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2310,
+        "name": "EVP_PKEY_sign_init",
+        "rva": "0x1b380",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2311,
+        "name": "EVP_PKEY_sign_init_ex",
+        "rva": "0xded0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2312,
+        "name": "EVP_PKEY_sign_init_ex2",
+        "rva": "0x18e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2314,
+        "name": "EVP_PKEY_sign_message_init",
+        "rva": "0x12150",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2321,
+        "name": "EVP_PKEY_verify_init",
+        "rva": "0x114f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2322,
+        "name": "EVP_PKEY_verify_init_ex",
+        "rva": "0x1e650",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2323,
+        "name": "EVP_PKEY_verify_init_ex2",
+        "rva": "0x12130",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2325,
+        "name": "EVP_PKEY_verify_message_init",
+        "rva": "0x5330",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2328,
+        "name": "EVP_PKEY_verify_recover_init",
+        "rva": "0x4d40",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2329,
+        "name": "EVP_PKEY_verify_recover_init_ex",
+        "rva": "0x1dd50",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2330,
+        "name": "EVP_PKEY_verify_recover_init_ex2",
+        "rva": "0x11ea0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2399,
+        "name": "EVP_SealInit",
+        "rva": "0x11e90",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2611,
+        "name": "HMAC_Init",
+        "rva": "0x1e7f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2612,
+        "name": "HMAC_Init_ex",
+        "rva": "0x17940",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2646,
+        "name": "MD4_Init",
+        "rva": "0xcb30",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2651,
+        "name": "MD5_Init",
+        "rva": "0x19fe0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2656,
+        "name": "MDC2_Init",
+        "rva": "0x20440",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2712,
+        "name": "OBJ_NAME_init",
+        "rva": "0xe1b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2720,
+        "name": "OBJ_create",
+        "rva": "0x162f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2721,
+        "name": "OBJ_create_objects",
+        "rva": "0xc830",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2869,
+        "name": "OCSP_response_create",
+        "rva": "0x16480",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2879,
+        "name": "OPENSSL_INIT_free",
+        "rva": "0x110b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2880,
+        "name": "OPENSSL_INIT_new",
+        "rva": "0x34d0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2881,
+        "name": "OPENSSL_INIT_set_config_appname",
+        "rva": "0x1f740",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2882,
+        "name": "OPENSSL_INIT_set_config_file_flags",
+        "rva": "0x1e960",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2883,
+        "name": "OPENSSL_INIT_set_config_filename",
+        "rva": "0x13510",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2920,
+        "name": "OPENSSL_init",
+        "rva": "0x1cfb0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2921,
+        "name": "OPENSSL_init_crypto",
+        "rva": "0x16f40",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3009,
+        "name": "OSSL_CMP_ATAV_create",
+        "rva": "0x132a0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3018,
+        "name": "OSSL_CMP_CRLSTATUS_create",
+        "rva": "0x2a30",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3048,
+        "name": "OSSL_CMP_CTX_reinit",
+        "rva": "0x1ba30",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3089,
+        "name": "OSSL_CMP_ITAV_create",
+        "rva": "0x111d0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3132,
+        "name": "OSSL_CMP_SRV_CTX_init",
+        "rva": "0xdaa0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3133,
+        "name": "OSSL_CMP_SRV_CTX_init_trans",
+        "rva": "0x9b50",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3179,
+        "name": "OSSL_CRMF_ENCRYPTEDKEY_init_envdata",
+        "rva": "0x15ee0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3193,
+        "name": "OSSL_CRMF_MSG_create_popo",
+        "rva": "0x71f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3323,
+        "name": "OSSL_ESS_signing_cert_new_init",
+        "rva": "0x1a390",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3324,
+        "name": "OSSL_ESS_signing_cert_v2_new_init",
+        "rva": "0x15b70",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3516,
+        "name": "OSSL_PROVIDER_query_operation",
+        "rva": "0x14970",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3522,
+        "name": "OSSL_PROVIDER_unquery_operation",
+        "rva": "0xfda0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3689,
+        "name": "PEM_SignInit",
+        "rva": "0x5ec0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3834,
+        "name": "PKCS12_SAFEBAG_create0_p8inf",
+        "rva": "0x8cb0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3835,
+        "name": "PKCS12_SAFEBAG_create0_pkcs8",
+        "rva": "0x1ee30",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3836,
+        "name": "PKCS12_SAFEBAG_create_cert",
+        "rva": "0x90d0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3837,
+        "name": "PKCS12_SAFEBAG_create_crl",
+        "rva": "0xd0a0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3838,
+        "name": "PKCS12_SAFEBAG_create_pkcs8_encrypt",
+        "rva": "0xdab0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3839,
+        "name": "PKCS12_SAFEBAG_create_pkcs8_encrypt_ex",
+        "rva": "0x1d4c0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3840,
+        "name": "PKCS12_SAFEBAG_create_secret",
+        "rva": "0x8030",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3874,
+        "name": "PKCS12_create",
+        "rva": "0x1ed50",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3875,
+        "name": "PKCS12_create_ex",
+        "rva": "0xb8c0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3876,
+        "name": "PKCS12_create_ex2",
+        "rva": "0x1d610",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3885,
+        "name": "PKCS12_init",
+        "rva": "0x4730",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3886,
+        "name": "PKCS12_init_ex",
+        "rva": "0x164a0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3988,
+        "name": "PKCS7_dataInit",
+        "rva": "0x4ea0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4115,
+        "name": "RIPEMD160_Init",
+        "rva": "0x6150",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4171,
+        "name": "RSA_meth_get_init",
+        "rva": "0x6190",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4187,
+        "name": "RSA_meth_set_init",
+        "rva": "0x5de0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4281,
+        "name": "SHA1_Init",
+        "rva": "0x8a30",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4286,
+        "name": "SHA224_Init",
+        "rva": "0x1d10",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4290,
+        "name": "SHA256_Init",
+        "rva": "0x1f700",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4295,
+        "name": "SHA384_Init",
+        "rva": "0x1c7e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4299,
+        "name": "SHA512_Init",
+        "rva": "0x1cdb0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4328,
+        "name": "SRP_VBASE_init",
+        "rva": "0x14ea0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4333,
+        "name": "SRP_create_verifier",
+        "rva": "0x1a6a0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4334,
+        "name": "SRP_create_verifier_BN",
+        "rva": "0x1b070",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4335,
+        "name": "SRP_create_verifier_BN_ex",
+        "rva": "0x6dd0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4336,
+        "name": "SRP_create_verifier_ex",
+        "rva": "0x1e770",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4443,
+        "name": "TS_RESP_create_response",
+        "rva": "0x1e1e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4499,
+        "name": "TS_VERIFY_CTX_init",
+        "rva": "0x8af0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4512,
+        "name": "TXT_DB_create_index",
+        "rva": "0xeb90",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4531,
+        "name": "UI_create_method",
+        "rva": "0x15790",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4590,
+        "name": "WHIRLPOOL_Init",
+        "rva": "0x4f70",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4694,
+        "name": "X509_ATTRIBUTE_create",
+        "rva": "0x15200",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4695,
+        "name": "X509_ATTRIBUTE_create_by_NID",
+        "rva": "0x1a700",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4696,
+        "name": "X509_ATTRIBUTE_create_by_OBJ",
+        "rva": "0x1c290",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4697,
+        "name": "X509_ATTRIBUTE_create_by_txt",
+        "rva": "0x2570",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4768,
+        "name": "X509_EXTENSION_create_by_NID",
+        "rva": "0x8e90",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4769,
+        "name": "X509_EXTENSION_create_by_OBJ",
+        "rva": "0x16cb0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4794,
+        "name": "X509_LOOKUP_init",
+        "rva": "0x1800",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4802,
+        "name": "X509_LOOKUP_meth_get_init",
+        "rva": "0xe570",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4804,
+        "name": "X509_LOOKUP_meth_get_shutdown",
+        "rva": "0xd560",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4812,
+        "name": "X509_LOOKUP_meth_set_init",
+        "rva": "0x181f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4814,
+        "name": "X509_LOOKUP_meth_set_shutdown",
+        "rva": "0x4360",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4817,
+        "name": "X509_LOOKUP_shutdown",
+        "rva": "0x15b90",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4819,
+        "name": "X509_NAME_ENTRY_create_by_NID",
+        "rva": "0x1a320",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4820,
+        "name": "X509_NAME_ENTRY_create_by_OBJ",
+        "rva": "0x1e9c0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4821,
+        "name": "X509_NAME_ENTRY_create_by_txt",
+        "rva": "0x18e00",
+        "forwarder": null
+      },
+      {
+        "ordinal": 5003,
+        "name": "X509_STORE_CTX_init",
+        "rva": "0xcbf0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 5004,
+        "name": "X509_STORE_CTX_init_rpk",
+        "rva": "0x20150",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\BackgroundProcess\\BackgroundProcess.dll",
+    "sha256": "71f7038fae4657eb27dfba113ffeeb981e6952588d5e1709b952eed6760d8dcc",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCefPluginGetInfo",
+        "rva": "0xfb10",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\LocalGames.dll",
+    "sha256": "374d54b50b3aff21eeae03752a846bb0d0e16995e4f7fe9c55a69369348fbbde",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCefPluginGetInfo",
+        "rva": "0x13020",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\NvCplDisplayPlugin.dll",
+    "sha256": "1ab74d6cff0c2a7e64afdb0f8602c6d3521041d768d935e3cef2ebab69787060",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCefPluginGetInfo",
+        "rva": "0x1c310",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\NvCplPlugin.dll",
+    "sha256": "ae985824c654f6f05d73819ca800c72007b0b3bff58f2731fca9c5cc51be158b",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCefPluginGetInfo",
+        "rva": "0x25440",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\NvPerfMon.dll",
+    "sha256": "391ce3350020cd47f5ab8ab5f14261b64de11d97b93358602dbb73a5a20d13b8",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCefPluginGetInfo",
+        "rva": "0x1a2f0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\NvWorkstation.dll",
+    "sha256": "7b51449052214a12a0dbf001925cd9811c149bc38bf99edf8fd4dee4a1da9b76",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCefPluginGetInfo",
+        "rva": "0xfba0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\SystemInfo.dll",
+    "sha256": "e67c0fb8991495fc1795486263042c2af7e3ce9c29fd030ebf20a7cf53958cd4",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCefPluginGetInfo",
+        "rva": "0x10930",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\AppDiscovery.dll",
+    "sha256": "ee57869caf91ca90b55c43a549edbe255e9c2822f36bf26a8de578387df10870",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCefPluginGetInfo",
+        "rva": "0xf350",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\DriverInstall.dll",
+    "sha256": "429f7cccf4828a0cfd17962a50bb6d5b8bbe14a0666d6d36ca0a7173a4303fa1",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCefPluginGetInfo",
+        "rva": "0xf390",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\LoginId.dll",
+    "sha256": "87319cac6eaec67bfab7999494bfbf69d35f4c668f063196f58e22ddcf207f3e",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCefPluginGetInfo",
+        "rva": "0xfcb0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\MessageBusRouter.dll",
+    "sha256": "517840f0c1ffbfd699c1f628e1d37449299d242e55ec13ed4a6ab3dc95a1858a",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCefPluginGetInfo",
+        "rva": "0xf950",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\NvIGOUtil.dll",
+    "sha256": "15be24a489474a04851042b56d2c34e5928f32872ab7721f54ead26992f7f580",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCefPluginGetInfo",
+        "rva": "0xe140",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\NvOc.dll",
+    "sha256": "c1a24f75b1db3cccdeab14906a32154254e03ee1f6f9d74d8cfb0dcb726ef2ee",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCefPluginGetInfo",
+        "rva": "0x14d90",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\Gallery.dll",
+    "sha256": "5361a2c1993c80499cd6448b5f476d29a2ffee18ce20b4979ea00bcaeba32098",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCefPluginGetInfo",
+        "rva": "0x196d0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\GraphicsSetting.dll",
+    "sha256": "ffbc5c554ff6d125a49f830e2e26ff8798a9349ef29e753313e56e0b277f65a9",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCefPluginGetInfo",
+        "rva": "0x11ff0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\NvCamera.dll",
+    "sha256": "c167a74311e3de18aad10c9c6a930f9fbaf3209c3d32d18c0519844079860e3f",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCefPluginGetInfo",
+        "rva": "0x499e0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\Rise.dll",
+    "sha256": "6fe292b656acf7611b1bfe6f94c386d01f3c9aa7312c6c29a135b8313a583f60",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCefPluginGetInfo",
+        "rva": "0x187a0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\ShareServer.dll",
+    "sha256": "ea5cc83f0023ad367f1e1be8b8e038c00e364fc1516afb50412742bd9f8ed1f0",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCefPluginGetInfo",
+        "rva": "0x4cdc0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\McpServer\\NvAppCore.dll",
+    "sha256": "5b271506715f51d9690ddbfe95a9e808c1a4d616653d27eadf24da313976bc01",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvAppCore_CallTool",
+        "rva": "0x22a0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2,
+        "name": "NvAppCore_CreateInterface",
+        "rva": "0x9450",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3,
+        "name": "NvAppCore_Echo",
+        "rva": "0x19eb0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4,
+        "name": "NvAppCore_EnumerateTools",
+        "rva": "0x17ff0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 5,
+        "name": "NvAppCore_Finalize",
+        "rva": "0x5420",
+        "forwarder": null
+      },
+      {
+        "ordinal": 6,
+        "name": "NvAppCore_FreeResult",
+        "rva": "0x8ea0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 7,
+        "name": "NvAppCore_GetDriverStatus",
+        "rva": "0x17990",
+        "forwarder": null
+      },
+      {
+        "ordinal": 8,
+        "name": "NvAppCore_GetGpuInfo",
+        "rva": "0x92c0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 9,
+        "name": "NvAppCore_Initialize",
+        "rva": "0x1ae90",
+        "forwarder": null
+      },
+      {
+        "ordinal": 10,
+        "name": "NvAppCore_KbListTopics",
+        "rva": "0x6ee0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 11,
+        "name": "NvAppCore_KbQuery",
+        "rva": "0x179a0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 12,
+        "name": "NvAppCore_RegisterCallback",
+        "rva": "0xd720",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\McpServer\\NvAppMcpServer.exe",
+    "sha256": "1a8f14df4d2d1070f56d1307ecef35765ea9a7ceba6197cdca3bc5ae27ac0a6c",
+    "exports": []
+  },
+  {
+    "path": "NVIDIA App\\MessageBus\\MessageBus.dll",
+    "sha256": "64e300997b5796da22ad8baa49e4eb919cdc170157cbe6770279f94508a84650",
+    "exports": []
+  },
+  {
+    "path": "NVIDIA App\\MessageBus\\NvMessageBus.dll",
+    "sha256": "348162a5948cd59e8b0ece73c7cdf9faa55d9a9f906879392c1527308b2af85d",
+    "exports": []
+  },
+  {
+    "path": "NVIDIA App\\MessageBus\\NvMessageBusBroadcast.dll",
+    "sha256": "63b000b70eaea5477e8d30e141f84ccf5391a8d098377768795e694aeda8372f",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0xf8c0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvBackend\\NvBackendAPI64.dll",
+    "sha256": "f2bc30fbadbe0a4559915183aaf62de5b3e4267e231c4291d9b6ac7c2af4f98f",
+    "exports": [
+      {
+        "ordinal": 20,
+        "name": "EasyAPIDeinit",
+        "rva": "0x68e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 21,
+        "name": "EasyAPIInit",
+        "rva": "0x67c0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvBackend\\ApplicationOntology\\NvOAWrapperCache.exe",
+    "sha256": "0d26ce0ad86cfa671425fe7de2b762c62e148597092fe0edcf5ff84a584fdbb9",
+    "exports": []
+  },
+  {
+    "path": "NVIDIA App\\NvBackend\\ApplicationOntology\\OAWrapper.exe",
+    "sha256": "64ece426504fc9f057e8ce36a70659d6811f08f7117affb79b5765e8a67c88fe",
+    "exports": []
+  },
+  {
+    "path": "NVIDIA App\\NvBackend\\ApplicationOntology\\Ontology64.dll",
+    "sha256": "fb6f988c718b4482eda67b2924fb088b2664b4053e0280f9a5229d05da2ba525",
+    "exports": [
+      {
+        "ordinal": 2,
+        "name": "CreateApplicationOntologyFactory",
+        "rva": "0x11b70",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1,
+        "name": "CreateApplicationOntologyFactory2",
+        "rva": "0x11b80",
+        "forwarder": null
+      },
+      {
+        "ordinal": 3,
+        "name": "CreateApplicationWrapper_3",
+        "rva": "0x11dd0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvBackend\\Plugins\\LocalUser\\NvBackend64.dll",
+    "sha256": "7a84c83e7437cf63c94f9edd389f4b1e6f072ef1b7bb6fa1013a22e670132a50",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0x11f920",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\NvUI.dll",
+    "sha256": "b9d8948eedfcc5cbcd123d1b4fcd6f9c63e1cdc17ec4a6cbd3aeca7df098a597",
+    "exports": [
+      {
+        "ordinal": 22,
+        "name": "?StartNotificationIcon@NotificationIcon@UI@UXDriver@Nvidia@@SA_NW4LoadPluginOption@234@W4QuitOption@234@W4EventFlag@234@@Z",
+        "rva": "0x6a5f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 23,
+        "name": "?StartOptimusIcon@OptimusIcon@UI@UXDriver@Nvidia@@SAXW4LoadPluginOption@234@W4QuitOption@234@W4EventFlag@234@@Z",
+        "rva": "0x782c0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 40,
+        "name": "InitilizeResourceHandle",
+        "rva": "0x750c0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 44,
+        "name": "NvUiNvapiInit",
+        "rva": "0x76c60",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\NvUIR.dll",
+    "sha256": "0379f2608e9f054266d8cff9e0762cb800dcdcc7b6db2d9280f042401cc32d9b",
+    "exports": []
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvSmartMax.dll",
+    "sha256": "b2253edcb7220b0e101b96ff5c05285f4721ff4a780bea9590bbfef837d967a3",
+    "exports": [
+      {
+        "ordinal": 14,
+        "name": "NvSmartMaxShutdown",
+        "rva": "0x17940",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvSmartMax64.dll",
+    "sha256": "c9e3f66e8827874042abdbc574a350762dcf17bdc01000bd23d70f4035e0dca7",
+    "exports": [
+      {
+        "ordinal": 14,
+        "name": "NvSmartMaxShutdown",
+        "rva": "0x174c0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvSmartMaxapp.exe",
+    "sha256": "08332e1367f23cd1a995804fe8d555de51cd835ad51d5304bdbb48acaf3ab933",
+    "exports": []
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvSmartMaxapp64.exe",
+    "sha256": "e72e76aef792b9330eda6ad16ef43514d2c7c1419a1c173cbf03dfee780be8b1",
+    "exports": []
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvcpl.dll",
+    "sha256": "a7703de492d47d4e75d6f77e7350a860b927f35be719b5e78a94e4d50d236da1",
+    "exports": [
+      {
+        "ordinal": 7,
+        "name": "NV_WMIACPI_CancelEventQuery",
+        "rva": "0x64bf0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 9,
+        "name": "NV_WMIACPI_DataBlockExecEventQuery",
+        "rva": "0x64df0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 89,
+        "name": "NvCplApiCreateProfile",
+        "rva": "0x55600",
+        "forwarder": null
+      },
+      {
+        "ordinal": 90,
+        "name": "NvCplApiCreateProfileW",
+        "rva": "0x6a0d0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 99,
+        "name": "NvCplApiDeleteCustomResCreatedForUnsupportedHDFormat",
+        "rva": "0x59340",
+        "forwarder": null
+      },
+      {
+        "ordinal": 181,
+        "name": "NvCplApiInit",
+        "rva": "0x52200",
+        "forwarder": null
+      },
+      {
+        "ordinal": 34,
+        "name": "NvCplApiMuxdInitialize",
+        "rva": "0x6bcf0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 334,
+        "name": "NvQueryDVDProtection",
+        "rva": "0x5bff0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 335,
+        "name": "NvQueryMenuInit",
+        "rva": "0x5f070",
+        "forwarder": null
+      },
+      {
+        "ordinal": 376,
+        "name": "queryappprofiles",
+        "rva": "0x5f770",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvxdapix.dll",
+    "sha256": "f051472a239f3392bc59c23f3962e4dabb0ee64affdf7fa4856ace209adace6d",
+    "exports": []
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvxdbat.dll",
+    "sha256": "379ecc2cf34e0984e3bbfded7c8a4612f23b4375329c45ad3f253eaea19069d5",
+    "exports": []
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvxdplcy.dll",
+    "sha256": "76b583ae106d2e2c670c3abeacea24624e68bc629cf201492326723e38744e6e",
+    "exports": []
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\Plugins\\LocalSystem\\NvXDCore.dll",
+    "sha256": "fca581fcb45d60136a6907be06c50a9efa3dfbc682c01acb0bdb977a777dab52",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0x42e40",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\Plugins\\Session\\nvxdsyncplugin.dll",
+    "sha256": "870140e1f941c2043d5e5bd34b734f64f57b05d48f47ecf89fbf1a783371adf8",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0x6f950",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvDLISR\\NGXWrapper.dll",
+    "sha256": "c7351623cc93c87d68d8cffafb2b48d58c61505f1f6ceb213c565b2b2652df07",
+    "exports": [
+      {
+        "ordinal": 2,
+        "name": "NGXWrapper_Init",
+        "rva": "0x8c90",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvDLISR\\nvngx_dlisr.dll",
+    "sha256": "81e90273502d7f6d00f5fbd191bf9e68f2cc05851b54359458f6c6e2b30a9dad",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NVSDK_NGX_CUDA_CreateFeature",
+        "rva": "0x60c60",
+        "forwarder": null
+      },
+      {
+        "ordinal": 4,
+        "name": "NVSDK_NGX_CUDA_Init",
+        "rva": "0x614e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 6,
+        "name": "NVSDK_NGX_CUDA_Shutdown",
+        "rva": "0x618b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 7,
+        "name": "NVSDK_NGX_D3D11_CreateFeature",
+        "rva": "0xc2a0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 10,
+        "name": "NVSDK_NGX_D3D11_Init",
+        "rva": "0xc2a0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 12,
+        "name": "NVSDK_NGX_D3D11_Shutdown",
+        "rva": "0xc2a0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 13,
+        "name": "NVSDK_NGX_D3D12_CreateFeature",
+        "rva": "0xc2a0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 16,
+        "name": "NVSDK_NGX_D3D12_Init",
+        "rva": "0xc2a0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 18,
+        "name": "NVSDK_NGX_D3D12_Shutdown",
+        "rva": "0xc2a0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvDriverUpdateCheck\\NvDriverUpdateCheck64.dll",
+    "sha256": "514dcf5234b7ddd5bdd1bca1d07e5062f8217e970a8e8a21e8098fd7dac8b26c",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0x157f0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvLocalizedConfig\\NvLocalizedConfig.dll",
+    "sha256": "fb9958400043be8f32192ef061f98db24ee659f59b0c83410c791edcf5a70200",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0x1d790",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\aiuser\\McpServerPlugin.dll",
+    "sha256": "c8fe52a475cdaececd2e7d1fff2f16ad2c932d9549492727fa3fc459a5a7943e",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0x25010",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvAccount.dll",
+    "sha256": "473c1ea63f0a9a923303f7a03315eb285ad48326fd1f23f3e67685bb464dbe44",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0x205c0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\DesktopNotification.dll",
+    "sha256": "77b6a40c31dbe8319aa91cfd7921bbdea1b0a247d61986b12ed6efc53cb94089",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0x1d430",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\Diagnostics.dll",
+    "sha256": "ef4d98d1b68cf8e60bc51960b9b28be0a4e90b3291cf66953753a03f8fc056a4",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0x204e0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\Downloader.dll",
+    "sha256": "b12df892d47aaeb73f30b9f655a1f7c39541193bc6ec3546b6e982f4e78b2bbe",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0x31040",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\DriverUpdateRecommendation.dll",
+    "sha256": "7da2c603174a7c6c7d3e5549d7f1d37d9ac21283864f03d02fd3a35ee8d9a8b3",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0x1a4e0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\NvAppIgoIpcProxy.dll",
+    "sha256": "16b4d31149d89b3ac6f1ada950907521c6b75dc515b1c063b06eb2213a5e6eb5",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0x17680",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\NvKVStorage.dll",
+    "sha256": "8b7452fc80c02e6eedf41fd0c4eeb3d4875adea838010a3cb6afa65dc05dad84",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0x196d0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\oc\\_OverClockingNvc.dll",
+    "sha256": "34bf6504e387f5e00ad3d662b90a2ec23a124794352af02fbcd504d3d573a39d",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0x217d0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\session\\NvDriverDiagnostics.dll",
+    "sha256": "8dce136dde4d2f25ddf4df33373939a0e1c2ba30088fc0740a9539c1146cec30",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0x22fb0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\capcore64.dll",
+    "sha256": "ea21c7b665248ac378459dbead602436c45181cb9606b33eb6e59d30d5e9f3b4",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCreateCaptureCore",
+        "rva": "0xecf0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\ipccommon64.dll",
+    "sha256": "0c2568f255d2a966bf61638c03f51bd92c0b641d70ef0c233c67120ff8fd71ea",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "CreateIpcClient",
+        "rva": "0x78f0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2,
+        "name": "CreateIpcProxyInterface",
+        "rva": "0x9200",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvfcapi64.dll",
+    "sha256": "e753adbe26fb98537c482feab1228e30cacb3582a2cf4eabbb1762c5ef272c88",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvFcApi_CreateInterface",
+        "rva": "0x13ff0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvfp64.dll",
+    "sha256": "64368488e1fb272e7ac68d31ba01afebf9020fa0db0017b7265b928c053b20b1",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "FrameProviderCreateInterface",
+        "rva": "0x54d0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvmf64.dll",
+    "sha256": "f6078b6640f711df12da1ca6cd5d1b6aa44c59acc37d98e488d2bb7415c8e91e",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCreateMPEG4MuxSink",
+        "rva": "0xcfe0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvovapi64.dll",
+    "sha256": "0827392efec1368d1ba6ec18225614e5cce17d53954a7f28a2bf8245429995ab",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvOverlayApi_CreateInterface",
+        "rva": "0x5380",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvspapi64.dll",
+    "sha256": "25b2b108a502619e6f2248abaddb52b0f81667b60adb7c371d416eb12c7c9be1",
+    "exports": [
+      {
+        "ordinal": 16,
+        "name": "CreateOverlayApiInterface",
+        "rva": "0x100e0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 17,
+        "name": "CreateShadowPlayApiInterface",
+        "rva": "0x15c60",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvsphelper64.exe",
+    "sha256": "5637754cefd4962bb01a1508d0efcab513b4ea71d5fc923f4103cf1673218d9a",
+    "exports": []
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvsphelperplugin64.dll",
+    "sha256": "43b98088129920386e56ce706e292a49283404fdffdf834db7c47f2ca6ed6fb6",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvGetPluginState",
+        "rva": "0xb6d0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 2,
+        "name": "NvPluginGetInfo",
+        "rva": "0xb260",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvspscreenshot64.dll",
+    "sha256": "7b8b6ce9e4f48ae53f55ed74e1df2285bfa6c2ea2e5e28e920810c02c87a5ebd",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvCreateScreenshotInterface",
+        "rva": "0xc340",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\NVSPCAPS\\_nvspcaps64.dll",
+    "sha256": "0c8f771fa27f073701e99f1b3d49d45e6f99f1c2bba4291fa6003409a1c7ae1d",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0x22620",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\Plugins\\LocalSystem\\_nvspserviceplugin64.dll",
+    "sha256": "8f7587a1610874e9263fb5ab6890875f1527c4fc9e62c82c0746958416ba76fe",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0x14280",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NvContainer\\nvcontainer.exe",
+    "sha256": "0f0a5352c50d4701d629e7c88a7a45632e76217bdc8e21569af5d2ab3c345817",
+    "exports": []
+  },
+  {
+    "path": "NvContainer\\Watchdog\\NvPluginWatchdog.dll",
+    "sha256": "92fc33f9a2d3add07058ec5fd470b6653609fd59067c50020d4c6f02b797ad5d",
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "NvPluginGetInfo",
+        "rva": "0x3170",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NvTelemetry\\NvTelemetryAPI64.dll",
+    "sha256": "ab5455ea4ae1780b9badb809f0a6ead682b8d9e34f1c9c36252b906c697737f4",
+    "exports": [
+      {
+        "ordinal": 3,
+        "name": "DeInit",
+        "rva": "0x1105b0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 1,
+        "name": "EnsureThatTelemetryPluginIsRunning",
+        "rva": "0x10db80",
+        "forwarder": null
+      },
+      {
+        "ordinal": 11,
+        "name": "Init",
+        "rva": "0x110550",
+        "forwarder": null
+      },
+      {
+        "ordinal": 12,
+        "name": "InitializeTelemetry",
+        "rva": "0x110550",
+        "forwarder": null
+      },
+      {
+        "ordinal": 13,
+        "name": "InitializeTelemetry_2",
+        "rva": "0x110700",
+        "forwarder": null
+      },
+      {
+        "ordinal": 27,
+        "name": "UninitializeTelemetry",
+        "rva": "0x110a90",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NvTelemetry\\NvTelemetryBridge64.dll",
+    "sha256": "e7ca48239c18ffb6e2fc2b645eef8cc843c23fd3fcd6b90569c6bf4660af97df",
+    "exports": [
+      {
+        "ordinal": 2,
+        "name": "DeInit",
+        "rva": "0x1bb0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 10,
+        "name": "Init",
+        "rva": "0x1ba0",
+        "forwarder": null
+      },
+      {
+        "ordinal": 11,
+        "name": "Init_2",
+        "rva": "0x17c0",
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "path": "NvTelemetry\\plugin\\NvTelemetry64.dll",
+    "sha256": "64f71e1b98f1fcea2d38f353e3097108c8a0d5196123d15fd94e25a44f887ee5",
+    "exports": [
+      {
+        "ordinal": 9,
+        "name": "InitializeTelemetryStandalone",
+        "rva": "0x11c060",
+        "forwarder": null
+      },
+      {
+        "ordinal": 10,
+        "name": "InitializeTelemetryStandaloneWithDeviceId",
+        "rva": "0x11c470",
+        "forwarder": null
+      },
+      {
+        "ordinal": 11,
+        "name": "InitializeTelemetryStandalone_2",
+        "rva": "0x11cd10",
+        "forwarder": null
+      },
+      {
+        "ordinal": 12,
+        "name": "InitializeTelemetryStandalone_3",
+        "rva": "0x11c950",
+        "forwarder": null
+      },
+      {
+        "ordinal": 13,
+        "name": "NvPluginGetInfo",
+        "rva": "0x113600",
+        "forwarder": null
+      },
+      {
+        "ordinal": 30,
+        "name": "UninitializeTelemetry",
+        "rva": "0x11cf20",
+        "forwarder": null
+      }
+    ]
+  }
+]

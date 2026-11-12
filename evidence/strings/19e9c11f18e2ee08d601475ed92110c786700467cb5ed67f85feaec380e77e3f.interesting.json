@@ -1,0 +1,47 @@
+[
+  {
+    "offset": "0x3fe60",
+    "encoding": "utf-16le",
+    "text": "HKEY_CLASSES_ROOT"
+  },
+  {
+    "offset": "0x3fe84",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0x3fea8",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0x3fed0",
+    "encoding": "utf-16le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0x40090",
+    "encoding": "utf-16le",
+    "text": "\\registry\\machine\\software\\classes"
+  },
+  {
+    "offset": "0x405f8",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x46940",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Installer2"
+  },
+  {
+    "offset": "0x472f8",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Logging"
+  },
+  {
+    "offset": "0x47368",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation"
+  }
+]

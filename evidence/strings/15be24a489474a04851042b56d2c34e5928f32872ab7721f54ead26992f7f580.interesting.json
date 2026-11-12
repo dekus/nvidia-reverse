@@ -1,0 +1,122 @@
+[
+  {
+    "offset": "0x12f6f8",
+    "encoding": "ascii",
+    "text": "    \"ToggleMcpServer\": {"
+  },
+  {
+    "offset": "0x12f8c3",
+    "encoding": "ascii",
+    "text": "    \"GetMcpServerStatus\": {"
+  },
+  {
+    "offset": "0x12fae7",
+    "encoding": "ascii",
+    "text": "    \"SetMcpServerAccessLevel\": {"
+  },
+  {
+    "offset": "0x12fb3c",
+    "encoding": "ascii",
+    "text": "      \"description\": \"Persist the MCP server access level (global tier ceiling) to HKLM. On/off is controlled separately by ToggleMcpServer.\","
+  },
+  {
+    "offset": "0x131018",
+    "encoding": "ascii",
+    "text": "ToggleMcpServer"
+  },
+  {
+    "offset": "0x131030",
+    "encoding": "ascii",
+    "text": "GetMcpServerStatus"
+  },
+  {
+    "offset": "0x131048",
+    "encoding": "ascii",
+    "text": "SetMcpServerAccessLevel"
+  },
+  {
+    "offset": "0x1321c0",
+    "encoding": "ascii",
+    "text": "ToggleMcpServer: server not ready after %ums"
+  },
+  {
+    "offset": "0x1376f0",
+    "encoding": "ascii",
+    "text": "Skipping telemetry report of error %s from method %s"
+  },
+  {
+    "offset": "0x160108",
+    "encoding": "ascii",
+    "text": ".?AVToggleMcpServer@@"
+  },
+  {
+    "offset": "0x160138",
+    "encoding": "ascii",
+    "text": ".?AV?$NvIGOUtilTaskBase@VToggleMcpServer@@@@"
+  },
+  {
+    "offset": "0x160190",
+    "encoding": "ascii",
+    "text": ".?AV?$JsonResponseAsync@VToggleMcpServer@@@GXP@@"
+  },
+  {
+    "offset": "0x1601e0",
+    "encoding": "ascii",
+    "text": ".?AVGetMcpServerStatus@@"
+  },
+  {
+    "offset": "0x160220",
+    "encoding": "ascii",
+    "text": ".?AV?$NvIGOUtilTaskBase@VGetMcpServerStatus@@@@"
+  },
+  {
+    "offset": "0x160270",
+    "encoding": "ascii",
+    "text": ".?AV?$JsonResponseAsync@VGetMcpServerStatus@@@GXP@@"
+  },
+  {
+    "offset": "0x1602c8",
+    "encoding": "ascii",
+    "text": ".?AVSetMcpServerAccessLevel@@"
+  },
+  {
+    "offset": "0x160300",
+    "encoding": "ascii",
+    "text": ".?AV?$NvIGOUtilTaskBase@VSetMcpServerAccessLevel@@@@"
+  },
+  {
+    "offset": "0x160360",
+    "encoding": "ascii",
+    "text": ".?AV?$JsonResponseAsync@VSetMcpServerAccessLevel@@@GXP@@"
+  },
+  {
+    "offset": "0x175bd4",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x12db90",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x12dbe0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x12dee0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x132250",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvApp"
+  },
+  {
+    "offset": "0x135330",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  }
+]

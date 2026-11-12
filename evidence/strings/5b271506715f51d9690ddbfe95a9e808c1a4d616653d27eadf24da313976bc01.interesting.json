@@ -1,0 +1,142 @@
+[
+  {
+    "offset": "0x15e150",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\nvappcore\\src\\NvAppCore.cpp"
+  },
+  {
+    "offset": "0x15ecd3",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x15f384",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x1608de",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x160f82",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x16230b",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x162f24",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x163676",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x164843",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x165aa1",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x169430",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\nvappcore\\src\\CNvAppCore.cpp"
+  },
+  {
+    "offset": "0x1695f0",
+    "encoding": "ascii",
+    "text": "McpServer"
+  },
+  {
+    "offset": "0x16b780",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\nvappcore\\src\\CNvAppCoreImpl.cpp"
+  },
+  {
+    "offset": "0x16bd20",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\nvappcore\\src\\tools\\applications\\ApplicationTools.cpp"
+  },
+  {
+    "offset": "0x16c830",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\nvappcore\\src\\tools\\backend\\InstalledPlugin.cpp"
+  },
+  {
+    "offset": "0x16d1c0",
+    "encoding": "ascii",
+    "text": "MessageBusRouter-NvappMcp-"
+  },
+  {
+    "offset": "0x16d2a0",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\nvappcore\\src\\tools\\backend\\LiveNvAppBackend.cpp"
+  },
+  {
+    "offset": "0x16e000",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\nvappcore\\src\\tools\\drivers\\DriverReleaseNotesTools.cpp"
+  },
+  {
+    "offset": "0x16eb60",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\nvappcore\\src\\tools\\drivers\\DriverStatusTools.cpp"
+  },
+  {
+    "offset": "0x179f30",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\_out\\stage\\nvapp-prod-x64-release\\RelWithDebInfo\\McpServer\\NvAppCore.pdb"
+  },
+  {
+    "offset": "0x1ad6f4",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x16cc40",
+    "encoding": "utf-16le",
+    "text": "NVIDIA-NvappMcpBridge"
+  },
+  {
+    "offset": "0x16d4f0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NvContainer\\ModuleMap"
+  },
+  {
+    "offset": "0x16f720",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x16f770",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x16fa70",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x170830",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  },
+  {
+    "offset": "0x172410",
+    "encoding": "utf-16le",
+    "text": "NVIDIAMcpServer"
+  }
+]

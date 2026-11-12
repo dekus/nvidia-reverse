@@ -1,0 +1,32 @@
+[
+  {
+    "offset": "0x14d880",
+    "encoding": "ascii",
+    "text": "Skipping telemetry report of error %s from method %s"
+  },
+  {
+    "offset": "0x18f366",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x147f90",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x147fe0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x1482e0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x14bed0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  }
+]

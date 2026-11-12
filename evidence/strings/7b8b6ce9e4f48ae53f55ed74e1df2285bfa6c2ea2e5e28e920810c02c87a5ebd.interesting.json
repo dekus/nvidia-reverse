@@ -1,0 +1,12 @@
+[
+  {
+    "offset": "0x132278",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvApp\\ShadowPlay"
+  },
+  {
+    "offset": "0x172848",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeA"
+  }
+]

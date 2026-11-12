@@ -1,0 +1,10 @@
+[
+  {
+    "line": 352,
+    "text": "            this.telemetryUtilsService = h, this.loggingService = e, this.windowService = t, this.appConfig = n, this.marqueeElementEventMap = new Map, this.logger = this.loggingService.getLogger(\"nvapp/MarqueeEventAggregateService\"), this.setupTimerForMarqueeElement(), this.setupWindowPageHideEventListener(), this.marqueeAggregationWaitTime = this.appConfig?.marqueeAggregationWaitTime ?? M.gY\r"
+  },
+  {
+    "line": 367,
+    "text": "              this.telemetryUtilsService.sendMarqueeElement(e.url, e.action, e.section, e.feature, e.position, e.uniqueContent, e.driverVersion, e.driverType, e.aggregateCount)\r"
+  }
+]

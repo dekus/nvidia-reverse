@@ -1,0 +1,97 @@
+[
+  {
+    "offset": "0xd6aa0",
+    "encoding": "ascii",
+    "text": "Telemetry API %s"
+  },
+  {
+    "offset": "0xd7c20",
+    "encoding": "ascii",
+    "text": "\\NvcTelemetryHelP"
+  },
+  {
+    "offset": "0xd85f8",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0xdbc30",
+    "encoding": "ascii",
+    "text": "InitTelemetry"
+  },
+  {
+    "offset": "0xdbc40",
+    "encoding": "ascii",
+    "text": "DeInitTelemetry"
+  },
+  {
+    "offset": "0x103924",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0xd8610",
+    "encoding": "utf-16le",
+    "text": "NvPluginGetInfo is not exported by %ls"
+  },
+  {
+    "offset": "0xd86b0",
+    "encoding": "utf-16le",
+    "text": "NvPluginGetInfo for %ls returned invalid plugin descriptor"
+  },
+  {
+    "offset": "0xda640",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0xda680",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0xda900",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0xdb1b0",
+    "encoding": "utf-16le",
+    "text": "--sendtelemetry"
+  },
+  {
+    "offset": "0xdb1d0",
+    "encoding": "utf-16le",
+    "text": "sends telemetry using specified container telemetry helper DLL"
+  },
+  {
+    "offset": "0xdc420",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NvContainer"
+  },
+  {
+    "offset": "0xdc800",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0xdc828",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0xdc850",
+    "encoding": "utf-16le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0xdc868",
+    "encoding": "utf-16le",
+    "text": "HKEY_CLASSES_ROOT"
+  },
+  {
+    "offset": "0xdc890",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_CONFIG"
+  }
+]

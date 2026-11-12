@@ -1,0 +1,102 @@
+[
+  {
+    "offset": "0x316728",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvApp"
+  },
+  {
+    "offset": "0x327260",
+    "encoding": "ascii",
+    "text": "Skipping telemetry report of error %s from method %s"
+  },
+  {
+    "offset": "0x327ac0",
+    "encoding": "ascii",
+    "text": "ProcessIdToSessionId failed while getting admin consent SID. Error:%lu"
+  },
+  {
+    "offset": "0x327b20",
+    "encoding": "ascii",
+    "text": "WTSQueryUserToken failed while getting admin consent SID. Error:%lu"
+  },
+  {
+    "offset": "0x327b80",
+    "encoding": "ascii",
+    "text": "GetUserName failed while impersonating for admin consent. Error:%lu"
+  },
+  {
+    "offset": "0x327bd8",
+    "encoding": "ascii",
+    "text": "RevertToSelf failed after admin consent SID lookup. Error:%lu"
+  },
+  {
+    "offset": "0x327c30",
+    "encoding": "ascii",
+    "text": "ImpersonateLoggedOnUser failed for admin consent SID lookup. Error:%lu"
+  },
+  {
+    "offset": "0x327c88",
+    "encoding": "ascii",
+    "text": "DuplicateToken failed for admin consent SID lookup. Error:%lu"
+  },
+  {
+    "offset": "0x327ce0",
+    "encoding": "ascii",
+    "text": "GetSIDFromUserName failed. Trying impersonation for admin consent"
+  },
+  {
+    "offset": "0x327d30",
+    "encoding": "ascii",
+    "text": "Failed to get active user name for admin consent. Error:%lu"
+  },
+  {
+    "offset": "0x327d78",
+    "encoding": "ascii",
+    "text": "Admin consent registry key is not available. Error:%ld"
+  },
+  {
+    "offset": "0x327dc0",
+    "encoding": "ascii",
+    "text": "Admin consent registry value is not available. Error:%ld Type:%lu"
+  },
+  {
+    "offset": "0x3280a8",
+    "encoding": "ascii",
+    "text": "Unable to get current user SID for admin consent"
+  },
+  {
+    "offset": "0x3b038c",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x314f20",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NVTweak"
+  },
+  {
+    "offset": "0x324ee0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  },
+  {
+    "offset": "0x3278b0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvApp"
+  },
+  {
+    "offset": "0x3293b0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x329400",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x329700",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  }
+]

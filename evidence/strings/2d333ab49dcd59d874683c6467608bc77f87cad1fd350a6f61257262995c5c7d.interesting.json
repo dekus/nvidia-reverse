@@ -1,0 +1,57 @@
+[
+  {
+    "offset": "0xfca7e",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0xc8a00",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall"
+  },
+  {
+    "offset": "0xc8e00",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UpgradeCodes"
+  },
+  {
+    "offset": "0xc96f8",
+    "encoding": "utf-16le",
+    "text": "HKEY_CLASSES_ROOT"
+  },
+  {
+    "offset": "0xc9720",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0xc9748",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0xc9770",
+    "encoding": "utf-16le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0xc9a40",
+    "encoding": "utf-16le",
+    "text": "\\registry\\machine\\software\\classes"
+  },
+  {
+    "offset": "0xca170",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0xdb880",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Logging\\Definitions\\LogFilters\\PassFilter"
+  },
+  {
+    "offset": "0xdb9c0",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Logging"
+  }
+]

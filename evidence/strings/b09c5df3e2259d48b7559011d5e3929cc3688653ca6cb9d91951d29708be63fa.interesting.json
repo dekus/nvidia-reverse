@@ -1,0 +1,22 @@
+[
+  {
+    "offset": "0x421228",
+    "encoding": "ascii",
+    "text": "Software\\Microsoft\\Direct3D\\Direct3D12"
+  },
+  {
+    "offset": "0x47348e",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x3d5e90",
+    "encoding": "utf-16le",
+    "text": "InjectedSource"
+  },
+  {
+    "offset": "0x3d9e50",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\VisualStudio\\MSPDB"
+  }
+]

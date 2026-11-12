@@ -1,0 +1,127 @@
+[
+  {
+    "offset": "0x752bde",
+    "encoding": "ascii",
+    "text": "          \"spTelemetryName\": {"
+  },
+  {
+    "offset": "0x752c1d",
+    "encoding": "ascii",
+    "text": "            \"description\": \"Telemetry name\""
+  },
+  {
+    "offset": "0x765538",
+    "encoding": "ascii",
+    "text": "        \"ShadowPlayE_FAIL_ENABLE_NVFBC\","
+  },
+  {
+    "offset": "0x76559b",
+    "encoding": "ascii",
+    "text": "        \"ShadowPlay_E_FAIL_ENABLE_NVFBC_TIMEOUT\","
+  },
+  {
+    "offset": "0x774090",
+    "encoding": "ascii",
+    "text": "ShadowPlay: NvFBC enable failed"
+  },
+  {
+    "offset": "0x7740e8",
+    "encoding": "ascii",
+    "text": "ShadowPlay: NvFBC timeout"
+  },
+  {
+    "offset": "0x77bb80",
+    "encoding": "ascii",
+    "text": "Shadowplay Telemetry data parsing failed"
+  },
+  {
+    "offset": "0x780fb8",
+    "encoding": "ascii",
+    "text": "Exception thrown while reporting status telemetry: "
+  },
+  {
+    "offset": "0x780ff8",
+    "encoding": "ascii",
+    "text": "Exception thrown while reporting status telemetry"
+  },
+  {
+    "offset": "0x783310",
+    "encoding": "ascii",
+    "text": "NvSPCapsCallbackData data is not valid. COULD NOT SEND RESPONSE"
+  },
+  {
+    "offset": "0x785738",
+    "encoding": "ascii",
+    "text": "spTelemetry"
+  },
+  {
+    "offset": "0x785770",
+    "encoding": "ascii",
+    "text": "spTelemetryName"
+  },
+  {
+    "offset": "0x788fc8",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: spTelemetryName is not std::string"
+  },
+  {
+    "offset": "0x78d4f8",
+    "encoding": "ascii",
+    "text": "NvMessageBus.dll"
+  },
+  {
+    "offset": "0x7a1580",
+    "encoding": "ascii",
+    "text": "Skipping telemetry report of error %s from method %s"
+  },
+  {
+    "offset": "0x7a39e8",
+    "encoding": "ascii",
+    "text": "nvapi_QueryInterface"
+  },
+  {
+    "offset": "0x7a3a08",
+    "encoding": "ascii",
+    "text": "nvapi_Direct_GetMethod"
+  },
+  {
+    "offset": "0x90844e",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x786c10",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x786c60",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x786f60",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x78e290",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NvContainer\\MessageBus"
+  },
+  {
+    "offset": "0x79f4b0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  },
+  {
+    "offset": "0x7a3930",
+    "encoding": "utf-16le",
+    "text": "NvAPI Direct was not found. Please update your driver."
+  },
+  {
+    "offset": "0x7a3a58",
+    "encoding": "utf-16le",
+    "text": "nvapi64.dll"
+  }
+]

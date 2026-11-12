@@ -1,0 +1,12 @@
+[
+  {
+    "offset": "0x7d258",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x67360",
+    "encoding": "utf-16le",
+    "text": "Software\\7-zip"
+  }
+]

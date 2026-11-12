@@ -1,0 +1,22 @@
+[
+  {
+    "offset": "0x1fa38",
+    "encoding": "ascii",
+    "text": "NvMessageBus.dll"
+  },
+  {
+    "offset": "0x220e8",
+    "encoding": "ascii",
+    "text": "NvPluginAggregator"
+  },
+  {
+    "offset": "0x27b64",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x1f5e0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  }
+]

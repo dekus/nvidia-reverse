@@ -1,0 +1,1676 @@
+[
+  {
+    "file_offset": "0x216940",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#mcpserver",
+      "title": "MCP Server Plugin",
+      "type": "object",
+      "module": "McpServer",
+      "definitions": {
+        "AccessLevel": {
+          "type": "string",
+          "enum": [
+            "readonly",
+            "standard",
+            "full_access"
+          ],
+          "description": "MCP server access level (readonly = safe tools only, standard = safe + normal, full_access = all tools)"
+        },
+        "GetStatus": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Returns MCP server status (active connections, registered tools)",
+          "parameters": {},
+          "return": {
+            "type": "object",
+            "properties": {
+              "server_name": {
+                "type": "string",
+                "description": "MCP server identity name (e.g. nvidia-app)"
+              },
+              "running": {
+                "type": "boolean"
+              },
+              "stdio_connections": {
+                "type": "integer",
+                "description": "Active stdio/pipe client count"
+              },
+              "http_connections": {
+                "type": "integer",
+                "description": "Active HTTP client count"
+              },
+              "http_url": {
+                "type": "string"
+              },
+              "bridge_path": {
+                "type": "string"
+              },
+              "access_level": {
+                "$ref": "#/definitions/AccessLevel"
+              },
+              "connected_clients": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "version": {
+                      "type": "string"
+                    },
+                    "protocol": {
+                      "type": "string"
+                    },
+                    "transport": {
+                      "type": "string",
+                      "enum": [
+                        "stdio",
+                        "http"
+                      ]
+                    },
+                    "role": {
+                      "type": "string",
+                      "description": "Resolved access role (e.g. readonly, standard, full_access)"
+                    },
+                    "authenticated": {
+                      "type": "boolean"
+                    },
+                    "last_seen_age_ms": {
+                      "type": "integer",
+                      "description": "Milliseconds elapsed since last request; absent for persistent legacy connections"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "GetMcpServerTools": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Returns the list of MCP tools visible at the current access level, for UI display",
+          "parameters": {},
+          "return": {
+            "type": "object",
+            "properties": {
+              "tools": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "access_level": {
+                      "$ref": "#/definitions/AccessLevel"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "SetAccessLevel": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Set the global access-level ceiling live on the running MCP server. Persistence to HKLM is handled separately via NvIGOUtil SetMcpServerAccessLevel.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "access_level": {
+                "$ref": "#/definitions/AccessLevel"
+              }
+            },
+            "required": [
+              "access_level"
+            ]
+          }
+        },
+        "McpOverlayToolCallNotification": {
+          "description": "Broadcast when McpServer forwards an overlay tool call to Overlay UI",
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "requestId": {
+                "type": "string",
+                "description": "Correlation id for the tool call"
+              },
+              "name": {
+                "type": "string",
+                "description": "MCP tool name"
+              },
+              "arguments": {
+                "type": "object",
+                "description": "Tool arguments from MCP tools/call",
+                "additionalProperties": true
+              }
+            },
+            "required": [
+              "requestId",
+              "name",
+              "arguments"
+            ]
+          }
+        },
+        "SendMcpOverlayToolResponse": {
+          "description": "Overlay UI sends tool execution result back to McpServer",
+          "isCommand": true,
+          "persistent": false,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "requestId": {
+                "type": "string",
+                "description": "Correlation id matching McpOverlayToolCallNotification"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "success",
+                  "error"
+                ],
+                "description": "Tool execution outcome"
+              },
+              "message": {
+                "type": "string",
+                "description": "Human-readable result or error message"
+              },
+              "data": {
+                "type": "object",
+                "description": "Optional structured result data",
+                "additionalProperties": true
+              },
+              "errorCode": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "Machine-readable error code when status is error"
+              },
+              "retriable": {
+                "type": "boolean",
+                "description": "Whether the MCP client may retry the tool call"
+              }
+            },
+            "required": [
+              "requestId",
+              "status",
+              "message",
+              "retriable"
+            ]
+          }
+        },
+        "McpGameEventNotification": {
+          "description": "Overlay UI fires a game event notification to McpServer for delivery to subscribed MCP clients",
+          "isCommand": true,
+          "persistent": false,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "eventType": {
+                "type": "string",
+                "enum": [
+                  "game_started",
+                  "game_exited",
+                  "fullscreen_entered",
+                  "fullscreen_exited"
+                ],
+                "description": "Game lifecycle event type"
+              },
+              "gameName": {
+                "type": "string",
+                "description": "Display name of the game"
+              },
+              "processId": {
+                "type": "integer",
+                "description": "OS process ID of the game"
+              },
+              "fullscreen": {
+                "type": "boolean",
+                "description": "Whether the game is in fullscreen mode"
+              },
+              "timestamp": {
+                "type": "string",
+                "description": "ISO 8601 timestamp of the event"
+              }
+            },
+            "required": [
+              "eventType"
+            ]
+          }
+        },
+        "McpOverlayStateChangedNotification": {
+          "description": "Overlay UI fires a state change notification to McpServer for delivery to subscribed MCP clients as nvapp/state_changed",
+          "isCommand": true,
+          "persistent": false,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "category": {
+                "type": "string",
+                "enum": [
+                  "capture",
+                  "recording",
+                  "filters",
+                  "stats",
+                  "audio",
+                  "hotkeys",
+                  "storage",
+                  "notifications"
+                ],
+                "description": "Which overlay subsystem changed"
+              },
+              "state": {
+                "type": "object",
+                "description": "Updated state snapshot for the changed category",
+                "additionalProperties": true
+              },
+              "timestamp": {
+                "type": "string",
+                "description": "ISO 8601 timestamp of the state change"
+              }
+            },
+            "required": [
+              "category"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "file_offset": "0x21c7b0",
+    "object": {
+      "_comment": "Fields reach MCP clients only if listed in kWireToolFields in McpAdapter.cpp. Adding a key here does not publish it. '_meta_internal' is server-side only and never sent.",
+      "tools": [
+        {
+          "name": "nvapp_overlay_get_status",
+          "description": "Returns high-level runtime state across all categories (active view, capture, recording, stats, audio, filters, notifications).",
+          "inputSchema": {
+            "type": "object",
+            "properties": {}
+          },
+          "outputSchema": {
+            "type": "object",
+            "properties": {
+              "overlayView": {
+                "type": "string",
+                "enum": [
+                  "open",
+                  "closed"
+                ]
+              },
+              "recordingActive": {
+                "type": "boolean"
+              },
+              "instantReplayEnabled": {
+                "type": "boolean"
+              },
+              "desktopCapture": {
+                "type": "boolean"
+              },
+              "highlightsEnabled": {
+                "type": "boolean"
+              },
+              "statsOverlayEnabled": {
+                "type": "boolean"
+              },
+              "statsLogging": {
+                "type": "boolean"
+              },
+              "micMode": {
+                "type": "string",
+                "enum": [
+                  "on",
+                  "off",
+                  "always_on",
+                  "push_to_talk"
+                ]
+              },
+              "notificationsEnabled": {
+                "type": "boolean"
+              },
+              "rtxDvc": {
+                "type": "boolean"
+              },
+              "rtxHdr": {
+                "type": "boolean"
+              },
+              "sharpening": {
+                "type": "boolean"
+              },
+              "freestyle": {
+                "type": "boolean"
+              }
+            },
+            "additionalProperties": false
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "_meta_internal": {
+            "priority": "P0",
+            "needsConsent": false,
+            "responseExample": {
+              "overlayView": "closed",
+              "recordingActive": false,
+              "instantReplayEnabled": true,
+              "desktopCapture": true,
+              "highlightsEnabled": false,
+              "statsOverlayEnabled": true,
+              "statsLogging": false,
+              "micMode": "off",
+              "notificationsEnabled": true,
+              "rtxDvc": false,
+              "rtxHdr": true,
+              "sharpening": false,
+              "freestyle": false
+            }
+          }
+        },
+        {
+          "name": "nvapp_overlay_get_current_game_info",
+          "description": "Returns whether a game is currently running, with its name, process ID, and fullscreen state when available.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {},
+            "additionalProperties": false
+          },
+          "outputSchema": {
+            "type": "object",
+            "properties": {
+              "running": {
+                "type": "boolean"
+              },
+              "gameName": {
+                "type": "string"
+              },
+              "processId": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "fullscreen": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "running"
+            ],
+            "additionalProperties": false
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "_meta_internal": {
+            "priority": "P0",
+            "needsConsent": false,
+            "responseExample": {
+              "running": true,
+              "gameName": "Cyberpunk 2077",
+              "processId": 12345,
+              "fullscreen": true
+            }
+          }
+        },
+        {
+          "name": "nvapp_overlay_capture",
+          "description": "Control capture features: recording, instant replay, screenshots, and highlights.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "action": {
+                "type": "string",
+                "enum": [
+                  "toggle_recording",
+                  "toggle_instant_replay",
+                  "save_instant_replay",
+                  "capture_screenshot",
+                  "toggle_highlights"
+                ],
+                "description": "The capture action to perform"
+              },
+              "enable": {
+                "type": "boolean",
+                "description": "Required for toggle_* actions (true=enable, false=disable). Do not send for save_instant_replay or capture_screenshot."
+              }
+            },
+            "required": [
+              "action"
+            ]
+          },
+          "annotations": {
+            "readOnlyHint": false,
+            "destructiveHint": false,
+            "idempotentHint": false,
+            "openWorldHint": false
+          },
+          "_meta_internal": {
+            "priority": "P0",
+            "needsConsent": false,
+            "maxCallsPerMinute": 5
+          }
+        },
+        {
+          "name": "nvapp_overlay_configure_filters",
+          "description": "Enable or disable the RTX Dynamic Vibrance (DVC) filter.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "filter": {
+                "type": "string",
+                "enum": [
+                  "rtx_dvc"
+                ],
+                "description": "The game filter to configure"
+              },
+              "enable": {
+                "type": "boolean",
+                "description": "true to enable, false to disable"
+              }
+            },
+            "required": [
+              "filter",
+              "enable"
+            ],
+            "additionalProperties": false
+          },
+          "annotations": {
+            "readOnlyHint": false,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "_meta_internal": {
+            "priority": "P0",
+            "needsConsent": false,
+            "maxCallsPerMinute": 5
+          }
+        },
+        {
+          "name": "nvapp_overlay_configure_stats",
+          "description": "Show or hide the performance statistics overlay.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean",
+                "description": "Show or hide the stats overlay"
+              }
+            },
+            "required": [
+              "enable"
+            ],
+            "additionalProperties": false
+          },
+          "annotations": {
+            "readOnlyHint": false,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "_meta_internal": {
+            "priority": "P0",
+            "needsConsent": false,
+            "maxCallsPerMinute": 5
+          }
+        },
+        {
+          "name": "nvapp_overlay_echo",
+          "description": "Echoes a message via the NVIDIA Overlay UI. Use for testing overlay MCP connectivity.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "message": {
+                "type": "string",
+                "description": "The message to echo back via overlay"
+              },
+              "emit_event": {
+                "type": "string",
+                "enum": [
+                  "none",
+                  "game_event",
+                  "state_changed",
+                  "both"
+                ],
+                "description": "Which overlay notification(s) to emit after echo completes (testing aid)"
+              }
+            },
+            "required": [
+              "message"
+            ]
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "_meta_internal": {
+            "priority": "P1",
+            "needsConsent": false,
+            "private": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "file_offset": "0x220db0",
+    "object": {
+      "_comment": "Fields reach MCP clients only if listed in kWireToolFields in McpAdapter.cpp. Adding a key here does not publish it. '_meta_internal' is server-side only and never sent.",
+      "tools": [
+        {
+          "name": "nvapp_echo",
+          "description": "Echoes the input message back. Use for testing NvApp SDK connectivity.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "message": {
+                "type": "string",
+                "description": "The message to echo back"
+              },
+              "require_confirmation": {
+                "type": "boolean",
+                "description": "Testing aid for MCP 2026-07-28 multi round-trip requests. When true, the server returns an input_required result and the call only completes after the client confirms. Ignored by clients using MCP 2025-11-25 or earlier."
+              },
+              "simulate_progress": {
+                "type": "boolean",
+                "description": "Testing aid for MCP progress notifications. When true and the request carries a progressToken, the echo runs as a short multi-step async operation emitting notifications/progress before completing. Ignored if no progressToken is provided."
+              }
+            },
+            "required": [
+              "message"
+            ]
+          },
+          "outputSchema": {
+            "type": "object",
+            "properties": {
+              "echo": {
+                "type": "string",
+                "description": "The echoed message"
+              },
+              "timestamp_ms": {
+                "type": "integer",
+                "description": "Server timestamp in milliseconds"
+              }
+            },
+            "required": [
+              "echo",
+              "timestamp_ms"
+            ]
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "_meta_internal": {
+            "priority": "P2",
+            "needsConsent": false,
+            "private": true
+          }
+        },
+        {
+          "name": "nvapp_get_gpu_info",
+          "description": "Returns information about installed NVIDIA GPU adapters including name, VRAM, vendor/device IDs.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "outputSchema": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "GPU adapter name"
+              },
+              "dedicated_video_memory_mb": {
+                "type": "integer",
+                "description": "Dedicated video memory in MB"
+              },
+              "dedicated_system_memory_mb": {
+                "type": "integer",
+                "description": "Dedicated system memory in MB"
+              },
+              "shared_system_memory_mb": {
+                "type": "integer",
+                "description": "Shared system memory in MB"
+              },
+              "vendor_id": {
+                "type": "integer",
+                "description": "PCI vendor ID"
+              },
+              "device_id": {
+                "type": "integer",
+                "description": "PCI device ID"
+              },
+              "subsys_id": {
+                "type": "integer",
+                "description": "PCI subsystem ID"
+              },
+              "revision": {
+                "type": "integer",
+                "description": "PCI revision"
+              }
+            },
+            "required": [
+              "name",
+              "dedicated_video_memory_mb",
+              "vendor_id",
+              "device_id"
+            ]
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "_meta_internal": {
+            "priority": "P1",
+            "needsConsent": false,
+            "private": true
+          }
+        },
+        {
+          "name": "nvapp_client_get_applications",
+          "description": "List NVIDIA app-discovered games and applications with OPS details. Optional inputs filter results; omit all to return every app. Returned game names identify apps in game-scoped tools.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "game": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Optional exact game or application name previously returned by this tool. Omit to enumerate all discovered applications."
+              },
+              "preset": {
+                "type": "string",
+                "enum": [
+                  "Balanced",
+                  "Performance",
+                  "Recommended",
+                  "Quality"
+                ],
+                "description": "Optional preset to validate. Requires game."
+              }
+            },
+            "dependentRequired": {
+              "preset": [
+                "game"
+              ]
+            }
+          },
+          "outputSchema": {
+            "type": "object",
+            "properties": {
+              "applications": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "game": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "displayName": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "isCreativeApp": {
+                      "type": "boolean"
+                    },
+                    "isManuallyAdded": {
+                      "type": "boolean"
+                    },
+                    "opsSupported": {
+                      "type": "boolean"
+                    },
+                    "belowMinimumSpec": {
+                      "type": "boolean"
+                    },
+                    "optimizationProfiles": {
+                      "type": "object",
+                      "description": "Optimization state and available presets for AC and battery power profiles. currentState is a status, not a preset. Backend DC maps to battery.",
+                      "properties": {
+                        "ac": {
+                          "type": "object",
+                          "properties": {
+                            "currentState": {
+                              "type": "string",
+                              "enum": [
+                                "DISABLED",
+                                "UNOPTIMIZED",
+                                "CUSTOMIZED",
+                                "OPTIMIZED",
+                                "UNKNOWN"
+                              ],
+                              "description": "Configured optimization state for this power profile."
+                            },
+                            "availablePresets": {
+                              "type": "array",
+                              "description": "Presets supported by this power profile.",
+                              "items": {
+                                "type": "string",
+                                "enum": [
+                                  "Balanced",
+                                  "Performance",
+                                  "Recommended",
+                                  "Quality"
+                                ]
+                              },
+                              "uniqueItems": true
+                            },
+                            "unavailableReason": {
+                              "type": "string",
+                              "minLength": 1,
+                              "description": "Why presets cannot be applied and how to proceed."
+                            }
+                          },
+                          "required": [
+                            "currentState",
+                            "availablePresets"
+                          ]
+                        },
+                        "battery": {
+                          "type": "object",
+                          "properties": {
+                            "currentState": {
+                              "type": "string",
+                              "enum": [
+                                "DISABLED",
+                                "UNOPTIMIZED",
+                                "CUSTOMIZED",
+                                "OPTIMIZED",
+                                "UNKNOWN"
+                              ],
+                              "description": "Configured optimization state for this power profile."
+                            },
+                            "availablePresets": {
+                              "type": "array",
+                              "description": "Presets supported by this power profile.",
+                              "items": {
+                                "type": "string",
+                                "enum": [
+                                  "Balanced",
+                                  "Performance",
+                                  "Recommended",
+                                  "Quality"
+                                ]
+                              },
+                              "uniqueItems": true
+                            },
+                            "unavailableReason": {
+                              "type": "string",
+                              "minLength": 1,
+                              "description": "Why presets cannot be applied and how to proceed."
+                            }
+                          },
+                          "required": [
+                            "currentState",
+                            "availablePresets"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "ac",
+                        "battery"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "game",
+                    "displayName",
+                    "isCreativeApp",
+                    "isManuallyAdded",
+                    "opsSupported"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "applications"
+            ]
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "_meta_internal": {
+            "priority": "P0",
+            "needsConsent": false,
+            "responseExample": {
+              "applications": [
+                {
+                  "game": "Cyberpunk 2077",
+                  "displayName": "Cyberpunk 2077",
+                  "isCreativeApp": false,
+                  "isManuallyAdded": false,
+                  "opsSupported": true,
+                  "belowMinimumSpec": false,
+                  "optimizationProfiles": {
+                    "ac": {
+                      "currentState": "UNOPTIMIZED",
+                      "availablePresets": [
+                        "Balanced",
+                        "Performance",
+                        "Recommended",
+                        "Quality"
+                      ]
+                    },
+                    "battery": {
+                      "currentState": "OPTIMIZED",
+                      "availablePresets": [
+                        "Balanced",
+                        "Performance",
+                        "Recommended",
+                        "Quality"
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "nvapp_client_launch_application",
+          "description": "Launch a game or application returned by nvapp_client_get_applications.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "game": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Exact game or application name returned by nvapp_client_get_applications."
+              }
+            },
+            "required": [
+              "game"
+            ]
+          },
+          "annotations": {
+            "readOnlyHint": false,
+            "destructiveHint": false,
+            "idempotentHint": false,
+            "openWorldHint": false
+          },
+          "_meta_internal": {
+            "priority": "P0",
+            "needsConsent": false,
+            "maxCallsPerMinute": 5,
+            "limitations": [
+              "The game name must exactly match a current application record returned by nvapp_client_get_applications.",
+              "Executable paths and arbitrary shell commands are not supported."
+            ]
+          }
+        },
+        {
+          "name": "nvapp_client_get_driver_status",
+          "description": "Get the installed driver, compatible driver recommendations, previous driver information.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {}
+          },
+          "outputSchema": {
+            "type": "object",
+            "properties": {
+              "systemType": {
+                "type": "string",
+                "enum": [
+                  "GEFORCE",
+                  "WORKSTATION"
+                ]
+              },
+              "installedDriver": {
+                "type": "object",
+                "properties": {
+                  "version": {
+                    "type": "string"
+                  },
+                  "channel": {
+                    "type": "string",
+                    "enum": [
+                      "GAME_READY",
+                      "STUDIO",
+                      "NVIDIA_RECOMMENDED",
+                      "LEADING_EDGE",
+                      "CONSERVATIVE"
+                    ]
+                  },
+                  "availableActions": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "reinstall"
+                      ]
+                    },
+                    "minItems": 1,
+                    "maxItems": 1,
+                    "uniqueItems": true
+                  }
+                },
+                "required": [
+                  "version",
+                  "availableActions"
+                ]
+              },
+              "preferredChannel": {
+                "type": "string",
+                "enum": [
+                  "GAME_READY",
+                  "STUDIO",
+                  "NVIDIA_RECOMMENDED",
+                  "LEADING_EDGE",
+                  "CONSERVATIVE"
+                ]
+              },
+              "recommendedDrivers": {
+                "type": "array",
+                "description": "All compatible recommendation channels for this system: Game Ready and Studio on GeForce; NVIDIA Recommended, Leading Edge, and Conservative on workstation systems.",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "version": {
+                      "type": "string"
+                    },
+                    "channel": {
+                      "type": "string",
+                      "enum": [
+                        "GAME_READY",
+                        "STUDIO",
+                        "NVIDIA_RECOMMENDED",
+                        "LEADING_EDGE",
+                        "CONSERVATIVE"
+                      ]
+                    },
+                    "releaseDate": {
+                      "type": "string"
+                    },
+                    "isUpdateAvailable": {
+                      "type": "boolean"
+                    },
+                    "availableActions": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "install"
+                        ]
+                      },
+                      "minItems": 1,
+                      "maxItems": 1,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "version",
+                    "channel",
+                    "releaseDate",
+                    "isUpdateAvailable",
+                    "availableActions"
+                  ]
+                }
+              },
+              "previouslyInstalledDriver": {
+                "description": "The single previously installed driver retained by the NVIDIA app web layer and available for rollback, or null when no previous driver is available.",
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "version": {
+                        "type": "string"
+                      },
+                      "releaseDate": {
+                        "type": "string"
+                      },
+                      "availableActions": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "rollback"
+                          ]
+                        },
+                        "minItems": 1,
+                        "maxItems": 1,
+                        "uniqueItems": true
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "version",
+                      "releaseDate",
+                      "availableActions"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "systemType",
+              "installedDriver",
+              "preferredChannel",
+              "recommendedDrivers",
+              "previouslyInstalledDriver"
+            ]
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "_meta_internal": {
+            "priority": "P0",
+            "needsConsent": false,
+            "responseExample": {
+              "systemType": "GEFORCE",
+              "installedDriver": {
+                "version": "572.83",
+                "channel": "GAME_READY",
+                "availableActions": [
+                  "reinstall"
+                ]
+              },
+              "preferredChannel": "GAME_READY",
+              "recommendedDrivers": [
+                {
+                  "name": "GeForce Game Ready Driver",
+                  "version": "576.80",
+                  "channel": "GAME_READY",
+                  "releaseDate": "2026-07-01",
+                  "isUpdateAvailable": true,
+                  "availableActions": [
+                    "install"
+                  ]
+                },
+                {
+                  "name": "NVIDIA Studio Driver",
+                  "version": "576.52",
+                  "channel": "STUDIO",
+                  "releaseDate": "2026-06-25",
+                  "isUpdateAvailable": true,
+                  "availableActions": [
+                    "install"
+                  ]
+                }
+              ],
+              "previouslyInstalledDriver": {
+                "name": "GeForce Game Ready Driver",
+                "version": "572.83",
+                "releaseDate": "2026-04-10",
+                "availableActions": [
+                  "rollback"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "name": "nvapp_client_get_driver_release_notes",
+          "description": "Get release highlights for the installed driver or a compatible recommended driver flavor.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "driver": {
+                "type": "string",
+                "enum": [
+                  "INSTALLED",
+                  "GAME_READY",
+                  "STUDIO",
+                  "NVIDIA_RECOMMENDED",
+                  "LEADING_EDGE",
+                  "CONSERVATIVE"
+                ],
+                "description": "Driver whose release highlights should be returned. INSTALLED selects the currently installed driver; any flavor selects that exact current compatible recommendation."
+              }
+            },
+            "required": [
+              "driver"
+            ]
+          },
+          "outputSchema": {
+            "type": "object",
+            "properties": {
+              "driver": {
+                "type": "string",
+                "enum": [
+                  "INSTALLED",
+                  "GAME_READY",
+                  "STUDIO",
+                  "NVIDIA_RECOMMENDED",
+                  "LEADING_EDGE",
+                  "CONSERVATIVE"
+                ]
+              },
+              "version": {
+                "type": "string"
+              },
+              "highlights": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "type": "string"
+                    },
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "items"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "driver",
+              "version",
+              "highlights"
+            ]
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "_meta_internal": {
+            "priority": "P0",
+            "needsConsent": false,
+            "responseExample": {
+              "driver": "GAME_READY",
+              "version": "576.80",
+              "highlights": [
+                {
+                  "title": "What's New",
+                  "items": [
+                    "Release highlight"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "nvapp_client_set_game_optimization",
+          "description": "Apply a game optimization preset or restore defaults for a supported game. The AC power profile is used when powerSource is omitted.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "game": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Exact game or application name returned by nvapp_client_get_applications."
+              },
+              "preset": {
+                "type": "string",
+                "enum": [
+                  "Balanced",
+                  "Performance",
+                  "Recommended",
+                  "Quality",
+                  "Revert"
+                ],
+                "description": "Preset to apply: Performance (frame rate), Balanced (slider midpoint), Recommended (NVIDIA per-game recommendation), Quality (image quality), or Revert (restore defaults for the selected power profile)."
+              },
+              "powerSource": {
+                "type": "string",
+                "enum": [
+                  "AC",
+                  "Battery"
+                ],
+                "description": "Optional power source whose OPS profile is changed. Defaults to AC when omitted. MCP Battery maps to backend DC. This value of 'Battery' for this setting is only applicable when battery boost is supported on the system."
+              }
+            },
+            "required": [
+              "game",
+              "preset"
+            ]
+          },
+          "annotations": {
+            "readOnlyHint": false,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "_meta_internal": {
+            "priority": "P0",
+            "needsConsent": false,
+            "maxCallsPerMinute": 5
+          }
+        },
+        {
+          "name": "nvapp_client_get_laptop_features",
+          "description": "Get Battery Boost and Whisper Mode settings globally or for a game. This setting is applicable only for notebooks.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "game": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Game name from nvapp_client_get_applications. Use 'global' or 'base' for global settings; defaults to global."
+              }
+            },
+            "additionalProperties": false
+          },
+          "outputSchema": {
+            "type": "object",
+            "properties": {
+              "scope": {
+                "type": "string",
+                "enum": [
+                  "global",
+                  "application"
+                ]
+              },
+              "game": {
+                "type": "string",
+                "description": "Game name when scope is application."
+              },
+              "batteryBoost": {
+                "type": "object",
+                "properties": {
+                  "supported": {
+                    "type": "boolean"
+                  },
+                  "useGlobal": {
+                    "type": "boolean",
+                    "description": "Whether the application inherits the global setting. Returned only for application scope."
+                  },
+                  "enabled": {
+                    "type": "boolean",
+                    "description": "Effective enabled state."
+                  },
+                  "frameRate": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "Effective Battery Boost frame rate."
+                  }
+                },
+                "required": [
+                  "supported"
+                ],
+                "if": {
+                  "properties": {
+                    "supported": {
+                      "const": true
+                    }
+                  },
+                  "required": [
+                    "supported"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "enabled"
+                  ]
+                },
+                "additionalProperties": false
+              },
+              "whisperMode": {
+                "type": "object",
+                "properties": {
+                  "supported": {
+                    "type": "boolean"
+                  },
+                  "useGlobal": {
+                    "type": "boolean",
+                    "description": "Whether the application inherits the global setting. Returned only for application scope."
+                  },
+                  "enabled": {
+                    "type": "boolean",
+                    "description": "Effective enabled state."
+                  },
+                  "fanVolume": {
+                    "type": "string",
+                    "enum": [
+                      "Balanced",
+                      "Quiet",
+                      "Quieter"
+                    ],
+                    "description": "Effective acoustic level."
+                  },
+                  "frameRate": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "Effective Whisper Mode frame rate."
+                  }
+                },
+                "required": [
+                  "supported"
+                ],
+                "if": {
+                  "properties": {
+                    "supported": {
+                      "const": true
+                    }
+                  },
+                  "required": [
+                    "supported"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "enabled"
+                  ]
+                },
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "scope",
+              "batteryBoost",
+              "whisperMode"
+            ],
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "scope": {
+                      "const": "application"
+                    }
+                  },
+                  "required": [
+                    "scope"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "game"
+                  ],
+                  "properties": {
+                    "batteryBoost": {
+                      "required": [
+                        "useGlobal"
+                      ]
+                    },
+                    "whisperMode": {
+                      "required": [
+                        "useGlobal"
+                      ]
+                    }
+                  }
+                },
+                "else": {
+                  "properties": {
+                    "batteryBoost": {
+                      "not": {
+                        "required": [
+                          "useGlobal"
+                        ]
+                      }
+                    },
+                    "whisperMode": {
+                      "not": {
+                        "required": [
+                          "useGlobal"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "additionalProperties": false
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "_meta_internal": {
+            "priority": "P0",
+            "needsConsent": false,
+            "responseExample": {
+              "scope": "application",
+              "game": "Cyberpunk 2077",
+              "batteryBoost": {
+                "supported": true,
+                "useGlobal": true,
+                "enabled": true,
+                "frameRate": 60
+              },
+              "whisperMode": {
+                "supported": true,
+                "useGlobal": false,
+                "enabled": false,
+                "fanVolume": "Quiet",
+                "frameRate": 40
+              }
+            }
+          }
+        },
+        {
+          "name": "nvapp_client_set_laptop_feature",
+          "description": "Set Battery Boost or Whisper Mode globally or for a game. This setting is applicable only for notebooks.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "game": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Game name from nvapp_client_get_applications. Use 'global' or 'base' for global settings; defaults to global."
+              },
+              "batteryBoost": {
+                "type": "object",
+                "properties": {
+                  "useGlobal": {
+                    "type": "boolean",
+                    "description": "Whether the application should inherit the global setting. Valid only for application scope."
+                  },
+                  "enabled": {
+                    "type": "boolean"
+                  }
+                },
+                "if": {
+                  "properties": {
+                    "useGlobal": {
+                      "const": true
+                    }
+                  },
+                  "required": [
+                    "useGlobal"
+                  ]
+                },
+                "then": {
+                  "not": {
+                    "required": [
+                      "enabled"
+                    ]
+                  }
+                },
+                "else": {
+                  "required": [
+                    "enabled"
+                  ]
+                },
+                "additionalProperties": false
+              },
+              "whisperMode": {
+                "type": "object",
+                "properties": {
+                  "useGlobal": {
+                    "type": "boolean",
+                    "description": "Whether the application should inherit the global setting. Valid only for application scope."
+                  },
+                  "enabled": {
+                    "type": "boolean"
+                  },
+                  "fanVolume": {
+                    "type": "string",
+                    "enum": [
+                      "Balanced",
+                      "Quiet",
+                      "Quieter"
+                    ],
+                    "description": "Global Whisper Mode acoustic level."
+                  }
+                },
+                "if": {
+                  "properties": {
+                    "useGlobal": {
+                      "const": true
+                    }
+                  },
+                  "required": [
+                    "useGlobal"
+                  ]
+                },
+                "then": {
+                  "not": {
+                    "anyOf": [
+                      {
+                        "required": [
+                          "enabled"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "fanVolume"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "required": [
+                    "enabled"
+                  ]
+                },
+                "additionalProperties": false
+              }
+            },
+            "oneOf": [
+              {
+                "required": [
+                  "batteryBoost"
+                ]
+              },
+              {
+                "required": [
+                  "whisperMode"
+                ]
+              }
+            ],
+            "allOf": [
+              {
+                "if": {
+                  "anyOf": [
+                    {
+                      "not": {
+                        "required": [
+                          "game"
+                        ]
+                      }
+                    },
+                    {
+                      "properties": {
+                        "game": {
+                          "enum": [
+                            "global",
+                            "base"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "game"
+                      ]
+                    }
+                  ]
+                },
+                "then": {
+                  "properties": {
+                    "batteryBoost": {
+                      "not": {
+                        "required": [
+                          "useGlobal"
+                        ]
+                      }
+                    },
+                    "whisperMode": {
+                      "not": {
+                        "required": [
+                          "useGlobal"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "else": {
+                  "properties": {
+                    "batteryBoost": {
+                      "required": [
+                        "useGlobal"
+                      ]
+                    },
+                    "whisperMode": {
+                      "required": [
+                        "useGlobal"
+                      ],
+                      "not": {
+                        "required": [
+                          "fanVolume"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "additionalProperties": false
+          },
+          "annotations": {
+            "readOnlyHint": false,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "_meta_internal": {
+            "priority": "P0",
+            "needsConsent": false,
+            "maxCallsPerMinute": 5
+          }
+        }
+      ]
+    }
+  }
+]

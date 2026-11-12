@@ -1,0 +1,542 @@
+[
+  {
+    "offset": "0x18d448",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvApp\\ShadowPlay"
+  },
+  {
+    "offset": "0x18e2d0",
+    "encoding": "ascii",
+    "text": "CNvFbcLogger::DeleteInstance: CSPEventListener finalize failed. 0x%08X"
+  },
+  {
+    "offset": "0x18e358",
+    "encoding": "ascii",
+    "text": "CNvFbcLogger::EventCallback: Event Callback Parameters Null"
+  },
+  {
+    "offset": "0x18e3c8",
+    "encoding": "ascii",
+    "text": "CNvFbcLogger::Run: Failed to create ETWController"
+  },
+  {
+    "offset": "0x18e428",
+    "encoding": "ascii",
+    "text": "CNvFbcLogger::Run: trace open failed"
+  },
+  {
+    "offset": "0x18e458",
+    "encoding": "ascii",
+    "text": "CNvFbcLogger::Run: Returned from Process Trace"
+  },
+  {
+    "offset": "0x18e490",
+    "encoding": "ascii",
+    "text": "CNvFbcLogger::StartNvFbcLogging: GetModuleHandleEx Failed GLE[%d]"
+  },
+  {
+    "offset": "0x18e4e0",
+    "encoding": "ascii",
+    "text": "CNvFbcLogger::StopNvFbcLogging: ETW Controller does not Exist"
+  },
+  {
+    "offset": "0x18e530",
+    "encoding": "ascii",
+    "text": "CNvFbcLogger::StopNvFbcLogging: Failed ot stop NvFbclogger GLE[%X]"
+  },
+  {
+    "offset": "0x18e580",
+    "encoding": "ascii",
+    "text": "CNvFbcLogger::StopNvFbcLogging: Failed ot stop NVFbglogging GLE[%X]"
+  },
+  {
+    "offset": "0x18e5e0",
+    "encoding": "ascii",
+    "text": "CNvFbcLogger::StopNvFbcLogging: Failed to stop NvFbcLogger Thread"
+  },
+  {
+    "offset": "0x18e630",
+    "encoding": "ascii",
+    "text": "CNvFbcLogger::StopNvFbcLogging: Handle to dll is NULL"
+  },
+  {
+    "offset": "0x18e670",
+    "encoding": "ascii",
+    "text": "CNvFbcLogger::StopNvFbcLogging: OUT"
+  },
+  {
+    "offset": "0x18e6a0",
+    "encoding": "ascii",
+    "text": "CNvFbcLogger::SendThreadTelemetryEvent: Telemetry Manager not available for reporting Thread Crash"
+  },
+  {
+    "offset": "0x18f090",
+    "encoding": "ascii",
+    "text": "ShadowPlayController::EnableNvFbcLogging: NVFBCLogger Already "
+  },
+  {
+    "offset": "0x18f0e0",
+    "encoding": "ascii",
+    "text": "ShadowPlayController::EnableNvFbcLogging: Failed to Create NvFbcLogger"
+  },
+  {
+    "offset": "0x18f140",
+    "encoding": "ascii",
+    "text": "ShadowPlayController::EnableNvFbcLogging: Failed to start NvFbcLogger hr[%x]"
+  },
+  {
+    "offset": "0x18f1a0",
+    "encoding": "ascii",
+    "text": "ShadowPlayController::EnableNvFbcLogging: Failed to stop NvFbcLogger hr[%x]"
+  },
+  {
+    "offset": "0x18f7d0",
+    "encoding": "ascii",
+    "text": "ShadowPlayController::SendThreadTelemetryEvent: Telemetry Manager not available for reporting Thread Crash"
+  },
+  {
+    "offset": "0x18fff0",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{REDACTED_INSTALLATION_ID}_RISE"
+  },
+  {
+    "offset": "0x190180",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvApp"
+  },
+  {
+    "offset": "0x1906c0",
+    "encoding": "ascii",
+    "text": "ShadowPlayServicePlugin::OnNvPluginSystemMessage: Event received DBT_DEVICEARRIVAL"
+  },
+  {
+    "offset": "0x190a10",
+    "encoding": "ascii",
+    "text": "ShadowPlayServicePlugin::ProcessReceivedIpcMessage: ServiceMsgTypeControlMcpServer"
+  },
+  {
+    "offset": "0x190a80",
+    "encoding": "ascii",
+    "text": "ShadowPlayServicePlugin::ProcessReceivedIpcMessage: ServiceMsgTypeControlMcpServerAccessLevel"
+  },
+  {
+    "offset": "0x190ef0",
+    "encoding": "ascii",
+    "text": "ShadowPlayServicePlugin::ProcessReceivedIpcMessage: ServiceMsgTypeControlNvFbcLogger"
+  },
+  {
+    "offset": "0x190f60",
+    "encoding": "ascii",
+    "text": "ShadowPlayServicePlugin::ProcessReceivedIpcMessage:Failed to start NvFbcLogger "
+  },
+  {
+    "offset": "0x191560",
+    "encoding": "ascii",
+    "text": "ShadowPlayServicePlugin::McpServerManageSymLink: failed to delete existing symLink %S with error %d"
+  },
+  {
+    "offset": "0x1915e0",
+    "encoding": "ascii",
+    "text": "ShadowPlayServicePlugin::McpServerManageSymLink: SymLink (%S) removed"
+  },
+  {
+    "offset": "0x1916b0",
+    "encoding": "ascii",
+    "text": "ShadowPlayServicePlugin::McpServerManageSymLink: CreateSymbolicLink failed = %d"
+  },
+  {
+    "offset": "0x191710",
+    "encoding": "ascii",
+    "text": "ShadowPlayServicePlugin::McpServerManageSymLink: SymLink (%S) created"
+  },
+  {
+    "offset": "0x191768",
+    "encoding": "ascii",
+    "text": "ShadowPlayServicePlugin::ControlMcpServer: ControlMcpServer"
+  },
+  {
+    "offset": "0x1917b0",
+    "encoding": "ascii",
+    "text": "ShadowPlayServicePlugin::ControlMcpServer: Incorrect payload"
+  },
+  {
+    "offset": "0x191800",
+    "encoding": "ascii",
+    "text": "ShadowPlayServicePlugin::ControlMcpServer: action=%d (start=%d)"
+  },
+  {
+    "offset": "0x191850",
+    "encoding": "ascii",
+    "text": "ShadowPlayServicePlugin::ControlMcpServer: allocation failed"
+  },
+  {
+    "offset": "0x191a00",
+    "encoding": "ascii",
+    "text": "ShadowPlayServicePlugin::ControlMcpServerAccessLevel: ControlMcpServerAccessLevel"
+  },
+  {
+    "offset": "0x191a70",
+    "encoding": "ascii",
+    "text": "ShadowPlayServicePlugin::ControlMcpServerAccessLevel: Incorrect payload"
+  },
+  {
+    "offset": "0x191ad0",
+    "encoding": "ascii",
+    "text": "ShadowPlayServicePlugin::ControlMcpServerAccessLevel: accessLevel=%d"
+  },
+  {
+    "offset": "0x191b30",
+    "encoding": "ascii",
+    "text": "ShadowPlayServicePlugin::ControlMcpServerAccessLevel: allocation failed"
+  },
+  {
+    "offset": "0x192aa0",
+    "encoding": "ascii",
+    "text": "TelemetryManager::HandleEventTelemetry Param mismatch for event %d (%d!=%d)"
+  },
+  {
+    "offset": "0x192b30",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendShadowPlayRecordingEvent : NULL param"
+  },
+  {
+    "offset": "0x192bc8",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendCaptureRequestResponseEvent : NULL param"
+  },
+  {
+    "offset": "0x192c60",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendShadowPlayInfoEvent : NULL param"
+  },
+  {
+    "offset": "0x192cf8",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendShadowPlayToggleEvent : NULL param"
+  },
+  {
+    "offset": "0x192d80",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendThreadCrashEvent : NULL param"
+  },
+  {
+    "offset": "0x192df8",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendAPIErrorEvent : NULL param"
+  },
+  {
+    "offset": "0x192e70",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendShadowPlayErrorEvent : NULL param"
+  },
+  {
+    "offset": "0x192ef8",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendTrimErrorEvent : NULL param"
+  },
+  {
+    "offset": "0x192f68",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendCapCoreFatalEvent : NULL param"
+  },
+  {
+    "offset": "0x192fe8",
+    "encoding": "ascii",
+    "text": "TelemetryManager::OnRecordingStop app telemetry not allowed"
+  },
+  {
+    "offset": "0x193030",
+    "encoding": "ascii",
+    "text": "TelemetryManager::OnScreenshot app telemetry not allowed"
+  },
+  {
+    "offset": "0x193080",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendRecordingEventAsync: m_pRecEventQueue(%p)"
+  },
+  {
+    "offset": "0x1930d0",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendRecordingEventAsync: EnqueueMessage failed(0x%08X)"
+  },
+  {
+    "offset": "0x193128",
+    "encoding": "ascii",
+    "text": "TelemetryManager::EventQueueCb: pArgs NULL"
+  },
+  {
+    "offset": "0x193160",
+    "encoding": "ascii",
+    "text": "TelemetryManager::EventQueueCb: args hContext(0x%X) pvMsgData(%p) uiMsgSize(%d)"
+  },
+  {
+    "offset": "0x1931c0",
+    "encoding": "ascii",
+    "text": "TelemetryManager::HandleRecordingEvent unrecognised event (%d)"
+  },
+  {
+    "offset": "0x193210",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendSystemConfigurationEvent : NULL param"
+  },
+  {
+    "offset": "0x1932a0",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendLicenceCountingEvent : NULL param"
+  },
+  {
+    "offset": "0x1932e8",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SetParams: IN"
+  },
+  {
+    "offset": "0x195248",
+    "encoding": "ascii",
+    "text": "../common/telemetry/NvTelemetryEvents.cpp"
+  },
+  {
+    "offset": "0x195fc8",
+    "encoding": "ascii",
+    "text": "Check gs_telemetry failed"
+  },
+  {
+    "offset": "0x197c78",
+    "encoding": "ascii",
+    "text": "InitializeTelemetry"
+  },
+  {
+    "offset": "0x197ce0",
+    "encoding": "ascii",
+    "text": "InitializeTelemetry_2"
+  },
+  {
+    "offset": "0x197da0",
+    "encoding": "ascii",
+    "text": "InitializeTelemetryStandalone"
+  },
+  {
+    "offset": "0x197eb8",
+    "encoding": "ascii",
+    "text": "InitializeTelemetryStandalone_2"
+  },
+  {
+    "offset": "0x197fa0",
+    "encoding": "ascii",
+    "text": "UninitializeTelemetry"
+  },
+  {
+    "offset": "0x198060",
+    "encoding": "ascii",
+    "text": "GetUserTelemetryConsent"
+  },
+  {
+    "offset": "0x198080",
+    "encoding": "ascii",
+    "text": "Check m_getUserTelemetryConsent failed"
+  },
+  {
+    "offset": "0x1980b0",
+    "encoding": "ascii",
+    "text": "GetDeviceTelemetryConsent"
+  },
+  {
+    "offset": "0x1980d0",
+    "encoding": "ascii",
+    "text": "Check m_getDeviceTelemetryConsent failed"
+  },
+  {
+    "offset": "0x198108",
+    "encoding": "ascii",
+    "text": "SetUserTelemetryConsent"
+  },
+  {
+    "offset": "0x198128",
+    "encoding": "ascii",
+    "text": "Check m_setUserTelemetryConsent failed"
+  },
+  {
+    "offset": "0x198158",
+    "encoding": "ascii",
+    "text": "SetDeviceTelemetryConsent"
+  },
+  {
+    "offset": "0x198178",
+    "encoding": "ascii",
+    "text": "Check m_setDeviceTelemetryConsent failed"
+  },
+  {
+    "offset": "0x1981b0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendEvent"
+  },
+  {
+    "offset": "0x1981f0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendAnonymousEvent"
+  },
+  {
+    "offset": "0x198240",
+    "encoding": "ascii",
+    "text": "SubscribeForTelemetryNotifications"
+  },
+  {
+    "offset": "0x198290",
+    "encoding": "ascii",
+    "text": "UnsubscribeFromTelemetryNotifications"
+  },
+  {
+    "offset": "0x1982e0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendEvent_2"
+  },
+  {
+    "offset": "0x198320",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendAnonymousEvent_2"
+  },
+  {
+    "offset": "0x198378",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_2"
+  },
+  {
+    "offset": "0x1983c0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_3"
+  },
+  {
+    "offset": "0x1983e0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_4"
+  },
+  {
+    "offset": "0x198400",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_5"
+  },
+  {
+    "offset": "0x198420",
+    "encoding": "ascii",
+    "text": "FreeTelemetryString"
+  },
+  {
+    "offset": "0x198438",
+    "encoding": "ascii",
+    "text": "Check m_freeTelemetryString failed"
+  },
+  {
+    "offset": "0x1985b0",
+    "encoding": "ascii",
+    "text": "Trying to send non-anonymous telemetry anonymized."
+  },
+  {
+    "offset": "0x198658",
+    "encoding": "ascii",
+    "text": "telemetry"
+  },
+  {
+    "offset": "0x19a300",
+    "encoding": "ascii",
+    "text": "Application_ShouldReportTelemetry"
+  },
+  {
+    "offset": "0x19a500",
+    "encoding": "ascii",
+    "text": "NvBackendAPIController::LoadNvBackendLibraryAndQueryInterface: Application_ShouldReportTelemetry not found"
+  },
+  {
+    "offset": "0x19a950",
+    "encoding": "ascii",
+    "text": "NvBackendAPIController::IsAppTelemetryAllowed : Could not load Dll"
+  },
+  {
+    "offset": "0x19a9a0",
+    "encoding": "ascii",
+    "text": "NvBackendAPIController::IsAppTelemetryAllowed: Failed to init EasyAPI"
+  },
+  {
+    "offset": "0x19aa00",
+    "encoding": "ascii",
+    "text": "NvBackendAPIController::IsAppTelemetryAllowed Application_ShouldReportTelemetry failed | ret=%d"
+  },
+  {
+    "offset": "0x19aa78",
+    "encoding": "ascii",
+    "text": "NvBackendAPIController::IsAppTelemetryAllowed : took %dms"
+  },
+  {
+    "offset": "0x1d266b",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x1d4888",
+    "encoding": "ascii",
+    "text": ".?AVCNvFbcLogger@@"
+  },
+  {
+    "offset": "0x1d4c40",
+    "encoding": "ascii",
+    "text": ".?AUITelemetry@ShadowPlay@NvTelemetry@@"
+  },
+  {
+    "offset": "0x1d4c88",
+    "encoding": "ascii",
+    "text": ".?AVTelemetry@ShadowPlay@NvTelemetry@@"
+  },
+  {
+    "offset": "0x1e7016",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeW"
+  },
+  {
+    "offset": "0x18c7b0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x18c800",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x18cac0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x18e328",
+    "encoding": "utf-16le",
+    "text": "NvFBCLoggerThread"
+  },
+  {
+    "offset": "0x190730",
+    "encoding": "utf-16le",
+    "text": "\\NVIDIA Corporation\\NvContainer\\Plugins\\SPUser\\nvspcaps"
+  },
+  {
+    "offset": "0x1907c0",
+    "encoding": "utf-16le",
+    "text": "\\NVIDIA Corporation\\NvContainer\\Plugins\\User\\nvspcaps"
+  },
+  {
+    "offset": "0x190b60",
+    "encoding": "utf-16le",
+    "text": "\\NVIDIA Corporation\\NVIDIA App\\ShadowPlay\\nvspcaps"
+  },
+  {
+    "offset": "0x195320",
+    "encoding": "utf-16le",
+    "text": "NvTelemetryAPI64.dll"
+  },
+  {
+    "offset": "0x1953e0",
+    "encoding": "utf-16le",
+    "text": "\\NVIDIA Corporation\\NvTelemetry"
+  },
+  {
+    "offset": "0x19ea70",
+    "encoding": "utf-16le",
+    "text": "\\\\.\\pipe\\A7F3C291-4E8B-4D1F-9C2A-5B6E7F8D9012"
+  }
+]

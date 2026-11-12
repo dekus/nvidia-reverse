@@ -1,0 +1,372 @@
+[
+  {
+    "offset": "0x3678e0",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global"
+  },
+  {
+    "offset": "0x374e98",
+    "encoding": "ascii",
+    "text": "      \"description\": \"DLSS Model Overrides. Latest value provided by NVAPI\","
+  },
+  {
+    "offset": "0x385698",
+    "encoding": "ascii",
+    "text": "NvAPI_Initialize failed, nr=%d"
+  },
+  {
+    "offset": "0x3856c0",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\NvCplPlugin\\plugin\\AppProfiles\\NvApiWrapper.cpp"
+  },
+  {
+    "offset": "0x385758",
+    "encoding": "ascii",
+    "text": "NvAPI_Unload failed - NVAPI still in use"
+  },
+  {
+    "offset": "0x385790",
+    "encoding": "ascii",
+    "text": "NvAPI_Unload failed, nr=%d"
+  },
+  {
+    "offset": "0x3857b0",
+    "encoding": "ascii",
+    "text": "NvAPI_EnumPhysicalGPUs failed, nr=%d"
+  },
+  {
+    "offset": "0x3857e0",
+    "encoding": "ascii",
+    "text": "NvAPI_EnumPhysicalGPUs failed, nrGpu=%d"
+  },
+  {
+    "offset": "0x3858a8",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetArchInfo for hGpu=0x%X failed with nr=%d"
+  },
+  {
+    "offset": "0x3858e8",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetMemoryInfoEx for hGpu=0x%X failed with nr=%d"
+  },
+  {
+    "offset": "0x385930",
+    "encoding": "ascii",
+    "text": "NvAPI_GetGPUIDfromPhysicalGPU for hGpu=0x%X fails with %d"
+  },
+  {
+    "offset": "0x385978",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetPstates for hGpu=0x%X failed with =%d"
+  },
+  {
+    "offset": "0x3859b8",
+    "encoding": "ascii",
+    "text": "NvAPI_QueryGpuCap for hGpu=0x%X failed with=%d"
+  },
+  {
+    "offset": "0x3859f0",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_QueryComputeCaps for hGpu=0x%X failed with =%d"
+  },
+  {
+    "offset": "0x385a38",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetPCIIdentifiers for hGpu=0x%X failed with =%d"
+  },
+  {
+    "offset": "0x385a90",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetFullName for hGpu=0x%X failed with nr=%d"
+  },
+  {
+    "offset": "0x385ad0",
+    "encoding": "ascii",
+    "text": "NvAPI_EnumTCCPhysicalGPUs failed, nr=%d"
+  },
+  {
+    "offset": "0x385b00",
+    "encoding": "ascii",
+    "text": "NvAPI_EnumLogicalGPUs failed, nr=%d"
+  },
+  {
+    "offset": "0x385b30",
+    "encoding": "ascii",
+    "text": "NvAPI_Coproc_GetCoprocInfoEx for hGpu=0x%X failed with nr=%d"
+  },
+  {
+    "offset": "0x385e80",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetAllDisplayIds status=%d"
+  },
+  {
+    "offset": "0x385ec8",
+    "encoding": "ascii",
+    "text": "NvAPI_EnumLogicalGPUs failed with nr=%d"
+  },
+  {
+    "offset": "0x385f30",
+    "encoding": "ascii",
+    "text": "failed NvAPI_InitializeEx.status:%d"
+  },
+  {
+    "offset": "0x385f60",
+    "encoding": "ascii",
+    "text": "failed NvAPI_PCF_ControllerGetInfo. status:%d"
+  },
+  {
+    "offset": "0x385f98",
+    "encoding": "ascii",
+    "text": "failed NvAPI_UnloadEx.status:%d"
+  },
+  {
+    "offset": "0x385fd8",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_SetOptimizationData failed with nr=%d"
+  },
+  {
+    "offset": "0x386018",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_GetFeatureState for 0x%X failed with nr=%d"
+  },
+  {
+    "offset": "0x386058",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_SetFeatureState for 0x%X failed with nr=%d"
+  },
+  {
+    "offset": "0x3861a0",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_GetDriverAndBranchVersion failed with status: 0x%X"
+  },
+  {
+    "offset": "0x386298",
+    "encoding": "ascii",
+    "text": "NVAPI error"
+  },
+  {
+    "offset": "0x386350",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\NvCplPlugin\\plugin\\AppProfiles\\NvApiDrsWrapper.cpp"
+  },
+  {
+    "offset": "0x386418",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_FindProfileByName - cannot find %S"
+  },
+  {
+    "offset": "0x386450",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_FindProfileByName for %S failed with code %d"
+  },
+  {
+    "offset": "0x386498",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_FindProfileByName for %S failed with unknown code %d"
+  },
+  {
+    "offset": "0x3864e8",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_GetNumProfiles failed with code %d"
+  },
+  {
+    "offset": "0x386520",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_EnumProfiles failed with code %d"
+  },
+  {
+    "offset": "0x386558",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_EnumApplications failed with code %d"
+  },
+  {
+    "offset": "0x386590",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_EnumUISettingValues failed with code %d"
+  },
+  {
+    "offset": "0x3865d0",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_CreateApplication for %S(%S) failed with code %d"
+  },
+  {
+    "offset": "0x386618",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_CreateProfile(%S) failed with code %d"
+  },
+  {
+    "offset": "0x386678",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_GetDefaultGlobalProfile failed with code %d"
+  },
+  {
+    "offset": "0x3866b8",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_GetProfileInfo failed with code %d"
+  },
+  {
+    "offset": "0x3866f0",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_GetCurrentGlobalProfile failed with code %d"
+  },
+  {
+    "offset": "0x386730",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_SetCurrentGlobalProfile(%S) failed with code %d"
+  },
+  {
+    "offset": "0x386778",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_RestoreDefaultSettings failed with code %d"
+  },
+  {
+    "offset": "0x3867b8",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_RestoreProfileDefault failed with code %d"
+  },
+  {
+    "offset": "0x3867f8",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_RestoreAllDefaults failed with code %d"
+  },
+  {
+    "offset": "0x386838",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_SaveSettings failed with code %d"
+  },
+  {
+    "offset": "0x386870",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_GetGettingEx failed with %d"
+  },
+  {
+    "offset": "0x3868b8",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_FindProfileByName failed with %d"
+  },
+  {
+    "offset": "0x3868f0",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_SetSettingEx failed with %d"
+  },
+  {
+    "offset": "0x386920",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_DeleteProfileSetting(%S, %d) failed with %d"
+  },
+  {
+    "offset": "0x386960",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_GetProfileInfo failed with %d"
+  },
+  {
+    "offset": "0x386990",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_SetProfileInfo failed with %d"
+  },
+  {
+    "offset": "0x386c70",
+    "encoding": "ascii",
+    "text": "%s : unknown NVAPI setting type %d"
+  },
+  {
+    "offset": "0x386f10",
+    "encoding": "ascii",
+    "text": "called with invalid NVAPI DRS session"
+  },
+  {
+    "offset": "0x387328",
+    "encoding": "ascii",
+    "text": "can't delete setting (%08X), NVAPI returns: %d "
+  },
+  {
+    "offset": "0x387c18",
+    "encoding": "ascii",
+    "text": "Using default GPU ordering from NVAPI: %S"
+  },
+  {
+    "offset": "0x38a200",
+    "encoding": "ascii",
+    "text": "NVAPI physical GPU count: %d"
+  },
+  {
+    "offset": "0x38a398",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetUUID failed for m_vGpus[%zu] with status: 0x%X"
+  },
+  {
+    "offset": "0x38d660",
+    "encoding": "ascii",
+    "text": "Skipping telemetry report of error %s from method %s"
+  },
+  {
+    "offset": "0x38f488",
+    "encoding": "ascii",
+    "text": "nvapi_QueryInterface"
+  },
+  {
+    "offset": "0x38f4a8",
+    "encoding": "ascii",
+    "text": "nvapi_Direct_GetMethod"
+  },
+  {
+    "offset": "0x445d5c",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x382c10",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global"
+  },
+  {
+    "offset": "0x384da0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvApp"
+  },
+  {
+    "offset": "0x386b30",
+    "encoding": "utf-16le",
+    "text": "\\Device\\"
+  },
+  {
+    "offset": "0x3875a0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders"
+  },
+  {
+    "offset": "0x387d70",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\DirectX\\UserGpuPreferences"
+  },
+  {
+    "offset": "0x38b2c0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  },
+  {
+    "offset": "0x38ef80",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x38efd0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x38f2d0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x38f3d0",
+    "encoding": "utf-16le",
+    "text": "NvAPI Direct was not found. Please update your driver."
+  },
+  {
+    "offset": "0x38f4f8",
+    "encoding": "utf-16le",
+    "text": "nvapi64.dll"
+  }
+]

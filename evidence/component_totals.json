@@ -1,0 +1,32 @@
+{
+  "grid-third-party-licenses.txt": {
+    "files": 1,
+    "bytes": 107355,
+    "pe_files": 0
+  },
+  "FrameViewSDK": {
+    "files": 36,
+    "bytes": 27028824,
+    "pe_files": 18
+  },
+  "Installer2": {
+    "files": 473,
+    "bytes": 72315677,
+    "pe_files": 25
+  },
+  "NVIDIA App": {
+    "files": 547,
+    "bytes": 791533828,
+    "pe_files": 84
+  },
+  "NvContainer": {
+    "files": 4,
+    "bytes": 6486619,
+    "pe_files": 3
+  },
+  "NvTelemetry": {
+    "files": 4,
+    "bytes": 13464522,
+    "pe_files": 3
+  }
+}

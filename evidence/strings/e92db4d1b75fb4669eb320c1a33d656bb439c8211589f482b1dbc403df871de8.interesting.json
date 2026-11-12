@@ -1,0 +1,37 @@
+[
+  {
+    "offset": "0x1db58",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NvStream"
+  },
+  {
+    "offset": "0x1eaa8",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NvStreamSrv"
+  },
+  {
+    "offset": "0x1ebf8",
+    "encoding": "ascii",
+    "text": "CNvAudCapInterface::nvaudcap_Audio_GetBuffer: DeviceIoControl failed: error = %lu"
+  },
+  {
+    "offset": "0x20a40",
+    "encoding": "ascii",
+    "text": "Failed to write with new IOCTL, last Error: 0x%x"
+  },
+  {
+    "offset": "0x20a78",
+    "encoding": "ascii",
+    "text": "CNvAudCapInterface::NvAudCapPushMicFrame: Old IOCTL failed to write frame to mic driver, status: %d"
+  },
+  {
+    "offset": "0x21240",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\MMDevices\\Audio\\Render\\%S"
+  },
+  {
+    "offset": "0x26d48",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  }
+]

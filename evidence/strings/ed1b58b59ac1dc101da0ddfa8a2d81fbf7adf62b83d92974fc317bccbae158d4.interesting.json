@@ -1,0 +1,217 @@
+[
+  {
+    "offset": "0x1029b0",
+    "encoding": "ascii",
+    "text": "nvapi_QueryInterface"
+  },
+  {
+    "offset": "0x1029c8",
+    "encoding": "ascii",
+    "text": "nvapi_pepQueryInterface"
+  },
+  {
+    "offset": "0x1055a0",
+    "encoding": "ascii",
+    "text": "localhost"
+  },
+  {
+    "offset": "0x1057c0",
+    "encoding": "ascii",
+    "text": "127.0.0.1"
+  },
+  {
+    "offset": "0x105bc8",
+    "encoding": "ascii",
+    "text": "localhost."
+  },
+  {
+    "offset": "0x105bd8",
+    "encoding": "ascii",
+    "text": ".localhost"
+  },
+  {
+    "offset": "0x105be8",
+    "encoding": "ascii",
+    "text": ".localhost."
+  },
+  {
+    "offset": "0x107c60",
+    "encoding": "ascii",
+    "text": "localhost%s"
+  },
+  {
+    "offset": "0x107e70",
+    "encoding": "ascii",
+    "text": "localhost/"
+  },
+  {
+    "offset": "0x108980",
+    "encoding": "ascii",
+    "text": "cr_in, rewind via set.ioctl_func -> %d"
+  },
+  {
+    "offset": "0x1089a8",
+    "encoding": "ascii",
+    "text": "ioctl callback returned error %d"
+  },
+  {
+    "offset": "0x10a858",
+    "encoding": "ascii",
+    "text": "Negotiate: noauthpersist -> %d, header part: %s"
+  },
+  {
+    "offset": "0x10c040",
+    "encoding": "ascii",
+    "text": "127.0.0.1/"
+  },
+  {
+    "offset": "0x116748",
+    "encoding": "ascii",
+    "text": "XOAUTH2"
+  },
+  {
+    "offset": "0x116750",
+    "encoding": "ascii",
+    "text": "OAUTHBEARER"
+  },
+  {
+    "offset": "0x116928",
+    "encoding": "ascii",
+    "text": "CURLOPT_XOAUTH2_BEARER"
+  },
+  {
+    "offset": "0x123be8",
+    "encoding": "ascii",
+    "text": "NvAPI_Initialize Error: %s"
+  },
+  {
+    "offset": "0x123c08",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_GetDriverAndBranchVersion Error: %s"
+  },
+  {
+    "offset": "0x123c78",
+    "encoding": "ascii",
+    "text": "NvAPI_GetInterfaceVersion Error: %s"
+  },
+  {
+    "offset": "0x123ca0",
+    "encoding": "ascii",
+    "text": "NvAPI InterfaceVersion: %s"
+  },
+  {
+    "offset": "0x123cf0",
+    "encoding": "ascii",
+    "text": "NvAPI_EnumNvidiaDisplayHandle Error: %s"
+  },
+  {
+    "offset": "0x123d20",
+    "encoding": "ascii",
+    "text": "NvAPI_GetAssociatedDisplayOutputId Error: %s"
+  },
+  {
+    "offset": "0x123d50",
+    "encoding": "ascii",
+    "text": "NvAPI_GetAssociatedNvidiaDisplayName (%d) Error: %s"
+  },
+  {
+    "offset": "0x123de8",
+    "encoding": "ascii",
+    "text": "NvAPI_DISP_GetGDIPrimaryDisplayId %u"
+  },
+  {
+    "offset": "0x123e10",
+    "encoding": "ascii",
+    "text": "NvAPI_DISP_GetDisplayHandleFromDisplayId %p"
+  },
+  {
+    "offset": "0x123e40",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetConnectedDisplayIds error status=%x, displayCount=%u"
+  },
+  {
+    "offset": "0x123ea8",
+    "encoding": "ascii",
+    "text": "NvAPI_GetDisplayPortInfo failed: %s"
+  },
+  {
+    "offset": "0x123ed0",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetEDID Error: %s"
+  },
+  {
+    "offset": "0x123f48",
+    "encoding": "ascii",
+    "text": "NvAPI_I2CRead Error: %s"
+  },
+  {
+    "offset": "0x123fd8",
+    "encoding": "ascii",
+    "text": "NvAPI_I2CWrite Error: %s"
+  },
+  {
+    "offset": "0x124030",
+    "encoding": "ascii",
+    "text": "NvAPI_Disp_DpAuxChannelControl (NV_DP_AUXCH_CMD_REQ_TYPE_READ) failed: %s"
+  },
+  {
+    "offset": "0x124130",
+    "encoding": "ascii",
+    "text": "NvAPI_Disp_DpAuxChannelControl (NV_DP_AUXCH_CMD_REQ_TYPE_MOT_I2C_WRITE) failed: %s"
+  },
+  {
+    "offset": "0x124730",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_SetSetting"
+  },
+  {
+    "offset": "0x124748",
+    "encoding": "ascii",
+    "text": "SUCCESS: NvAPI_DRS_GetSetting, Return value: %lu"
+  },
+  {
+    "offset": "0x124798",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_CreateSession"
+  },
+  {
+    "offset": "0x1247b0",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_LoadSettings"
+  },
+  {
+    "offset": "0x1247c8",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_GetCurrentGlobalProfile"
+  },
+  {
+    "offset": "0x124900",
+    "encoding": "ascii",
+    "text": "ERROR: NVAPI init failed!"
+  },
+  {
+    "offset": "0x13db78",
+    "encoding": "ascii",
+    "text": "WSAIoctl"
+  },
+  {
+    "offset": "0x1029de",
+    "encoding": "utf-16le",
+    "text": "envapi64.dll"
+  },
+  {
+    "offset": "0x102c30",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x102c70",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x102eb0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  }
+]

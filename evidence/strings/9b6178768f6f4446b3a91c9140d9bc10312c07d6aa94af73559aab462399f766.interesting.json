@@ -1,0 +1,12 @@
+[
+  {
+    "offset": "0x1a480",
+    "encoding": "ascii",
+    "text": "NVHDA DriverEntry"
+  },
+  {
+    "offset": "0x1a4a0",
+    "encoding": "ascii",
+    "text": "DriverEntry"
+  }
+]

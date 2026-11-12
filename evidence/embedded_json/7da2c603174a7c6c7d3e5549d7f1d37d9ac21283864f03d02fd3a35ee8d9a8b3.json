@@ -1,0 +1,564 @@
+[
+  {
+    "file_offset": "0x1913f0",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#driverUpdateRecommendationRequest",
+      "title": "DriverUpdate",
+      "type": "object",
+      "module": "DriverUpdateRecommendation",
+      "definitions": {
+        "DriverTypeEnum": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "GameReadyDriver",
+            "CreatorReadyDriver"
+          ]
+        },
+        "UpdateStrategyEnum": {
+          "type": "integer",
+          "enum": [
+            2,
+            3,
+            4
+          ],
+          "tsEnumNames": [
+            "WsRecommendedDriver",
+            "WsLeadingEdgeDriver",
+            "WsConservativeDriver"
+          ]
+        },
+        "DriverUpdateRecommendation": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Human-readable update name"
+            },
+            "version": {
+              "type": "string",
+              "description": "Update version in XXX.YY format"
+            },
+            "releaseDateTime": {
+              "type": "string",
+              "description": "Release date/time in ISO 8601 format"
+            },
+            "downloadURL": {
+              "type": "string",
+              "description": "URL to download installer from"
+            },
+            "driverType": {
+              "$ref": "#/definitions/DriverTypeEnum"
+            }
+          },
+          "required": [
+            "name",
+            "version",
+            "releaseDateTime",
+            "downloadURL",
+            "driverType"
+          ]
+        },
+        "DriverInstallHistoryEntry": {
+          "type": "object",
+          "description": "Driver metadata retained by the NVIDIA App UI for the current and previously installed drivers.",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "releaseDateTime": {
+              "type": "string"
+            },
+            "downloadURL": {
+              "type": "string"
+            },
+            "driverType": {
+              "$ref": "#/definitions/DriverTypeEnum"
+            }
+          },
+          "required": [
+            "name",
+            "version",
+            "releaseDateTime",
+            "downloadURL",
+            "driverType"
+          ]
+        },
+        "GPUInfo": {
+          "type": "object",
+          "properties": {
+            "GPU": {
+              "type": "array",
+              "items": {
+                "properties": {
+                  "LongGPUName": {
+                    "type": "string"
+                  },
+                  "ShortGPUName": {
+                    "type": "string"
+                  },
+                  "ActualVRAMSize": {
+                    "type": "string"
+                  },
+                  "GPURAMType": {
+                    "type": "string"
+                  },
+                  "IsQuadro": {
+                    "type": "string"
+                  },
+                  "DeviceId": {
+                    "type": "string"
+                  },
+                  "VendorId": {
+                    "type": "string"
+                  },
+                  "SubSystemId": {
+                    "type": "string"
+                  },
+                  "SubVendorId": {
+                    "type": "string"
+                  },
+                  "GPUArchitecture": {
+                    "type": "string"
+                  },
+                  "GPUArchImplementation": {
+                    "type": "string"
+                  },
+                  "IsPrimary": {
+                    "type": "string"
+                  },
+                  "TensorCores": {
+                    "type": "string"
+                  },
+                  "GpuHandle": {
+                    "type": "string"
+                  },
+                  "SKUMod": {
+                    "type": "string"
+                  },
+                  "Tgp": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "LongGPUName",
+                  "ShortGPUName",
+                  "ActualVRAMSize",
+                  "GPURAMType",
+                  "IsQuadro",
+                  "DeviceId",
+                  "VendorId",
+                  "SubSystemId",
+                  "SubVendorId",
+                  "GPUArchitecture",
+                  "IsPrimary",
+                  "GpuHandle",
+                  "Tgp"
+                ]
+              }
+            },
+            "SLI": {
+              "type": "object",
+              "properties": {
+                "SLISupported": {
+                  "type": "string"
+                },
+                "HasActiveSLITopology": {
+                  "type": "string"
+                },
+                "ActiveTopologyGPUCount": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "SLISupported",
+                "HasActiveSLITopology",
+                "ActiveTopologyGPUCount"
+              ]
+            },
+            "IsOptimus": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "GPU",
+            "SLI",
+            "IsOptimus"
+          ]
+        },
+        "GenericInfo": {
+          "type": "object",
+          "properties": {
+            "PhysicalMemoryCapacity": {
+              "type": "string"
+            },
+            "TotalPhysicalMemory": {
+              "type": "string"
+            },
+            "CurrentResolution": {
+              "type": "string"
+            },
+            "DriverVersion": {
+              "type": "string"
+            },
+            "DriverType": {
+              "$ref": "#/definitions/DriverTypeEnum"
+            },
+            "IsDCHDriverInstalled": {
+              "type": "string"
+            },
+            "MoboType": {
+              "type": "string"
+            },
+            "MinimumDriverVersion": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "PhysicalMemoryCapacity",
+            "TotalPhysicalMemory",
+            "CurrentResolution",
+            "DriverVersion",
+            "IsDCHDriverInstalled",
+            "MoboType",
+            "MinimumDriverVersion"
+          ]
+        },
+        "GetDriverUpdateRecommendation": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "$ref": "#/definitions/DriverUpdateRecommendation"
+              }
+            }
+          }
+        },
+        "SetDriverInstallHistory": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Replaces the native copy of the complete driver installation history retained by the NVIDIA App UI.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "drivers": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/DriverInstallHistoryEntry"
+                },
+                "maxItems": 16
+              }
+            },
+            "required": [
+              "drivers"
+            ]
+          }
+        },
+        "GetDriverInstallHistory": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns the complete driver installation history last published by the NVIDIA App UI.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "drivers": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/DriverInstallHistoryEntry"
+                },
+                "maxItems": 16
+              }
+            },
+            "required": [
+              "drivers"
+            ]
+          }
+        },
+        "GetUserDriverTypePreference": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns user's preference for driver type",
+          "return": {
+            "type": "object",
+            "properties": {
+              "driverType": {
+                "$ref": "#/definitions/DriverTypeEnum"
+              }
+            },
+            "required": [
+              "driverType"
+            ]
+          }
+        },
+        "SetUserDriverTypePreference": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Sets user's preference for driver type",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "driverType": {
+                "$ref": "#/definitions/DriverTypeEnum"
+              }
+            },
+            "required": [
+              "driverType"
+            ]
+          }
+        },
+        "GetUpdateStrategyPreference": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns user's update strategy",
+          "return": {
+            "type": "object",
+            "properties": {
+              "updateStrategy": {
+                "$ref": "#/definitions/UpdateStrategyEnum"
+              }
+            },
+            "required": [
+              "updateStrategy"
+            ]
+          }
+        },
+        "SetUpdateStrategyPreference": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Sets user's update strategy",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "updateStrategy": {
+                "$ref": "#/definitions/UpdateStrategyEnum"
+              }
+            },
+            "required": [
+              "updateStrategy"
+            ]
+          }
+        },
+        "GetAutomaticDriverDownloadEnabled": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Checks if automatic driver update download is enabled",
+          "return": {
+            "type": "object",
+            "properties": {
+              "isEnabled": {
+                "type": "boolean",
+                "description": "true if automatic driver update download is enabled"
+              }
+            },
+            "required": [
+              "isEnabled"
+            ]
+          }
+        },
+        "SetAutomaticDriverDownloadEnabled": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Enables or disables automatic driver update download",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "isEnabled": {
+                "type": "boolean",
+                "description": "Enable or disable automatic driver update download",
+                "default": true
+              }
+            },
+            "required": [
+              "isEnabled"
+            ]
+          }
+        },
+        "StartDriverUpdateCheck": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Starts driver update check if it is not already running"
+        },
+        "DriverUpdateCheckProgress": {
+          "type": "string",
+          "description": "Defines current state of driver update check",
+          "enum": [
+            "started",
+            "finished",
+            "failed",
+            "cancelled"
+          ]
+        },
+        "RegisterDriverUpdateCheckProgressNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "$ref": "#/definitions/DriverUpdateCheckProgress"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "GetGRDEditorPreviewMode": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Checks if GRD editor preview mode is enabled, see also https://jirasw.nvidia.com/browse/OPSTOOLS-2142",
+          "return": {
+            "type": "object",
+            "properties": {
+              "isEnabled": {
+                "type": "boolean",
+                "description": "true if GRD editor preview mode is enabled"
+              }
+            },
+            "required": [
+              "isEnabled"
+            ]
+          }
+        },
+        "GetDriverUpdateNotificationEnabled": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Checks if driver update desktop notifications are enabled",
+          "return": {
+            "type": "object",
+            "properties": {
+              "isEnabled": {
+                "type": "boolean",
+                "description": "true if driver update desktop notifications are enabled"
+              }
+            },
+            "required": [
+              "isEnabled"
+            ]
+          }
+        },
+        "SetDriverUpdateNotificationEnabled": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Enables or disables driver update desktop notifications",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "isEnabled": {
+                "type": "boolean",
+                "description": "Enable or disable driver update desktop notifications",
+                "default": true
+              }
+            },
+            "required": [
+              "isEnabled"
+            ]
+          }
+        },
+        "GetGPUInfo": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "$ref": "#/definitions/GPUInfo"
+          }
+        },
+        "GetGenericInfo": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "$ref": "#/definitions/GenericInfo"
+          }
+        },
+        "GetRewardsNotificationPreference": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Get rewards notification preference",
+          "return": {
+            "type": "object",
+            "properties": {
+              "isEnabled": {
+                "type": "boolean",
+                "description": "true if rewards notification is enabled"
+              }
+            },
+            "required": [
+              "isEnabled"
+            ]
+          }
+        },
+        "SetRewardsNotificationPreference": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Set rewards notification preference",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "isEnabled": {
+                "type": "boolean",
+                "description": "Enable or disable rewards notification",
+                "default": true
+              }
+            },
+            "required": [
+              "isEnabled"
+            ]
+          }
+        },
+        "LanguagePreference": {
+          "type": "object",
+          "properties": {
+            "languageCode": {
+              "type": "string",
+              "minLength": 1
+            },
+            "isSaved": {
+              "type": "boolean"
+            }
+          }
+        },
+        "GetLanguagePreference": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Get the preferred language set by user",
+          "return": {
+            "type": "object",
+            "properties": {
+              "languagePreference": {
+                "$ref": "#/definitions/LanguagePreference"
+              }
+            },
+            "required": [
+              "languagePreference"
+            ]
+          }
+        },
+        "SetLanguagePreference": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Set the prefereed language saved by the user",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "languageCode": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "languageCode"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

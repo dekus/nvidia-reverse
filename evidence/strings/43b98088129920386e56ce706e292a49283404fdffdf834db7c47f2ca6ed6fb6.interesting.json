@@ -1,0 +1,112 @@
+[
+  {
+    "offset": "0xcc0b8",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\ShadowPlay\\NVSPCAPS"
+  },
+  {
+    "offset": "0xceef8",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvApp\\ShadowPlay"
+  },
+  {
+    "offset": "0xcf618",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\ShadowPlay\\NVSPCAPS"
+  },
+  {
+    "offset": "0xcfcb0",
+    "encoding": "ascii",
+    "text": "NVSPCAPS"
+  },
+  {
+    "offset": "0xd15d0",
+    "encoding": "ascii",
+    "text": "CSPLLHooks::CSPLLHooks: HotKey/m_pCursorHelper alloc failure [0x%x/0x%x]"
+  },
+  {
+    "offset": "0xd1630",
+    "encoding": "ascii",
+    "text": "CSPLLHooks::UnInstallLowLevelHooks: m_PumpThreadId exited non-signalled"
+  },
+  {
+    "offset": "0xd16f0",
+    "encoding": "ascii",
+    "text": "CSPLLHooks::SendMessageToWindow: %sMessage Failed ! Msg = %d (error %d)"
+  },
+  {
+    "offset": "0xd1748",
+    "encoding": "ascii",
+    "text": "CSPRawInputHooks::CSPRawInputHooks: NULL param %x"
+  },
+  {
+    "offset": "0xd1788",
+    "encoding": "ascii",
+    "text": "CSPRawInputHooks::CSPRawInputHooks: HotKey allocation failure"
+  },
+  {
+    "offset": "0xd17e0",
+    "encoding": "ascii",
+    "text": "CSPRawInputHooks::SendMessageToWindow: %sMessage Failed ! Msg = %d (error %d)"
+  },
+  {
+    "offset": "0xd1b60",
+    "encoding": "ascii",
+    "text": "CSPRedirectionHelperUWP::StartRedirection: Could not install RI Hook"
+  },
+  {
+    "offset": "0xd1bc0",
+    "encoding": "ascii",
+    "text": "CSPRedirectionHelperUWP::StartRedirection: Could not install LL Hook"
+  },
+  {
+    "offset": "0xf0104",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0xfc082",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeW"
+  },
+  {
+    "offset": "0xfc3f8",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeA"
+  },
+  {
+    "offset": "0xfc7e8",
+    "encoding": "ascii",
+    "text": "SetWindowsHookExA"
+  },
+  {
+    "offset": "0xfc7fc",
+    "encoding": "ascii",
+    "text": "UnhookWindowsHookEx"
+  },
+  {
+    "offset": "0xfc812",
+    "encoding": "ascii",
+    "text": "CallNextHookEx"
+  },
+  {
+    "offset": "0xcc670",
+    "encoding": "utf-16le",
+    "text": "\\\\.\\pipe\\{ED472F67-57E3-48B2-B873-84BC075E6194}"
+  },
+  {
+    "offset": "0xce960",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0xce9b0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0xcec70",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  }
+]

@@ -1,0 +1,161 @@
+[
+  {
+    "file_offset": "0x2b1180",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "description": "json schema for MessageBus config format",
+      "type": "object",
+      "definitions": {
+        "bus_address": {
+          "description": "Bus address which is unique within session",
+          "type": "object",
+          "properties": {
+            "SystemName": {
+              "type": "string"
+            },
+            "ModuleName": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "SystemName",
+            "ModuleName"
+          ]
+        },
+        "peer_filter": {
+          "description": "Filter with bus address + ordered list of user ids. It allows to limit recipients by user. Also specifies the order in which the broadcaster searches for the recipients.",
+          "type": "object",
+          "properties": {
+            "SystemName": {
+              "type": "string"
+            },
+            "ModuleName": {
+              "type": "string"
+            },
+            "AllowedUsers": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "SystemName",
+            "ModuleName",
+            "AllowedUsers"
+          ]
+        },
+        "peer_config": {
+          "description": "Defines role and parameters of a MessageBus peer",
+          "type": "object",
+          "properties": {
+            "AllowCrossSessionCommunication": {
+              "type": "boolean"
+            },
+            "CrossSessionPeers": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/peer_filter"
+              }
+            },
+            "OverrideTargetSession": {
+              "description": "Set to true to override target_session in outgoing messages to AnySession",
+              "type": "boolean"
+            }
+          }
+        },
+        "peer_definition": {
+          "description": "Defines peer config for particular address",
+          "type": "object",
+          "properties": {
+            "Address": {
+              "$ref": "#/definitions/bus_address"
+            },
+            "Config": {
+              "$ref": "#/definitions/peer_config"
+            }
+          },
+          "required": [
+            "Address",
+            "Config"
+          ]
+        }
+      },
+      "properties": {
+        "LocalConnectionSuffix": {
+          "type": "string"
+        },
+        "MessageBusPort": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 65535
+        },
+        "InstallPath": {
+          "type": "string",
+          "description": "Path to a directory that contains MessageBus client library. The path can contain platform-specific {variables} which will be expanded by v3 libraries. See the list of variables in sw/gcomp/dev/src/LocalServices/common/common/FileUtils<platform>"
+        },
+        "LogPath": {
+          "type": "string",
+          "description": "Path to a directory to write log files to. The path can contain platform-specific {variables} which will be expanded by v3 libraries. See the list of variables in sw/gcomp/dev/src/LocalServices/common/common/FileUtils<platform>"
+        },
+        "LogLevel": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 6
+        },
+        "PerSessionInstance": {
+          "type": "boolean"
+        },
+        "DefaultPeerConfig": {
+          "$ref": "#/definitions/peer_config"
+        },
+        "Peers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/peer_definition"
+          }
+        },
+        "OverrideTargetSessionForAllV1Clients": {
+          "description": "Set to true to override target_session in outgoing messages from v1 clients to AnySession",
+          "type": "boolean"
+        },
+        "TargetedMessageWorkaroundForAllV1Clients": {
+          "description": "Set to true to enable compatibility workaround for all v1 clients. The workaround affects all outgoing targeted messages which has no target_session, regardless of the senders role. The broadcaster will look for the recipient in all sessions and send the message to the first matching recipient. ",
+          "type": "boolean"
+        },
+        "EnableSecurityInfo": {
+          "description": "Set to false to disable obtaining process information for MessageBus clients and the MessageBus broadcaster. When this flag is set to false, the broadcaster will not overwrite process information fields in bus messages",
+          "type": "boolean"
+        },
+        "BackgroundLogPruningPeriodSeconds": {
+          "description": "Default is 0 (disabled). When the period is non-zero, NvMessageBusBroadcast will periodically delete MessageBus client logs older than LogPruningAgeThreshold",
+          "type": "integer"
+        },
+        "LogPruningAgeThresholdSeconds": {
+          "description": "Default is 0 (disabled). When the age threshold is non-zero, NvMessageBusBroadcast will periodically delete MessageBus client logs older than LogPruningAgeThreshold",
+          "type": "integer"
+        },
+        "ClientLogSizeLimit": {
+          "description": "Default is 0. When the size limit is not set to 0, the client will rotate the log after reaching the set limit.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "BroadcasterLogSizeLimit": {
+          "description": "Default is 0. When the size limit is not set to 0, the broadcaster will rotate the log after reaching the set limit.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "PerSessionTransportDirectory": {
+          "type": "string",
+          "description": "Absolute path to a directory that contains per-session MessageBus transport files. The path can contain platform-specific {variables} which will be expanded by v3 libraries."
+        }
+      },
+      "required": [
+        "LocalConnectionSuffix",
+        "MessageBusPort",
+        "LogPath",
+        "LogLevel"
+      ]
+    }
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "line": 1156,
+    "text": "            this.appBarService = a, this.layoutService = o, this.lcarsUriActionHandlerService = l, this.performanceMeasureService = c, this.scanApisService = p, this.programsService = s, this.routerHandlerService = q, this.nvAppTelemetryUtilService = Ge, this.telemetryService = Be, this.pluginsNotificationService = Le, this.marqueeAggregateService = Ue, this.ngZone = Ve, this.hostClass = \"nv-app-component-wrapper\", this.isLoading = !0, this.pageHighlightSection = Bt.kA.Discover, this.sectionItems = [], this.itemProperty = {\r"
+  },
+  {
+    "line": 1177,
+    "text": "            }, this.telemetryService.setScreen(d.f3.Home)\r"
+  },
+  {
+    "line": 1191,
+    "text": "              this.nvAppTelemetryUtilService.sendClickEvent(d.EB.LibraryPlay, d.IH.Library, !1, e.type?.drsProfileName)\r"
+  },
+  {
+    "line": 1197,
+    "text": "            this.nvAppTelemetryUtilService.sendClickEvent(d.EB.LibrarySeeAll, d.IH.Library, !1), this.routerHandlerService.routeToGraphics()\r"
+  },
+  {
+    "line": 1200,
+    "text": "            this.nvAppTelemetryUtilService.sendClickEvent(d.EB.LibraryGraphicsSettings, d.IH.Library, !1, e.type?.drsProfileName), this.routerHandlerService.routeToGraphics({\r"
+  },
+  {
+    "line": 1252,
+    "text": "                telemetryId: a.id\r"
+  },
+  {
+    "line": 1291,
+    "text": "            this.nvAppTelemetryUtilService.sendMarqueeElement(a.uri, a.label, d.IH.Marquee, d.tV.Home, e.position, this.marqueeItems[e.position].telemetryId)\r"
+  },
+  {
+    "line": 1300,
+    "text": "              uniqueContent: this.marqueeItems[e.position].telemetryId\r"
+  },
+  {
+    "line": 1301,
+    "text": "            }) : this.nvAppTelemetryUtilService.sendClickEvent(d.EB.MarqueeScroll, d.IH.Marquee, !0, e?.position + \"\")\r"
+  },
+  {
+    "line": 1304,
+    "text": "            this.nvAppTelemetryUtilService.sendResourceLoadErrorEvent(d.vt.Image, this.marqueeItems?.[e]?.marqueeHeroImage ?? S.R$, \"failed to load image\", null, d.mF.Marquee, !0)\r"
+  },
+  {
+    "line": 1357,
+    "text": "                [\"nvSpatialNavigationContainer\", \"\", \"captureAndTransitFocusPolicy\", \"closest\", 3, \"items\", \"template\", \"containerLeftMarginStr\", \"containerTopMarginStr\", \"itemProperty\", \"resizeDebounceTime\", \"containFocus\", \"captureFocusForChild\"],\r"
+  }
+]

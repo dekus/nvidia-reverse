@@ -1,0 +1,80 @@
+{
+  "name": "lightstep_carrier.proto",
+  "package": "lightstep",
+  "message_type": [
+    {
+      "name": "BinaryCarrier",
+      "field": [
+        {
+          "name": "deprecated_text_ctx",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_BYTES"
+        },
+        {
+          "name": "basic_ctx",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".lightstep.BasicTracerCarrier"
+        }
+      ]
+    },
+    {
+      "name": "BasicTracerCarrier",
+      "field": [
+        {
+          "name": "trace_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FIXED64"
+        },
+        {
+          "name": "span_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FIXED64"
+        },
+        {
+          "name": "sampled",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "baggage_items",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".lightstep.BasicTracerCarrier.BaggageItemsEntry"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "BaggageItemsEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ]
+    }
+  ],
+  "options": {
+    "go_package": "lightsteppb"
+  },
+  "syntax": "proto3"
+}

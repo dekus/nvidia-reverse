@@ -1,0 +1,72 @@
+[
+  {
+    "offset": "0x291ac0",
+    "encoding": "ascii",
+    "text": "NvMessageBusBroadcast"
+  },
+  {
+    "offset": "0x292098",
+    "encoding": "ascii",
+    "text": "NvMessageBusBroadcastPlugin.log"
+  },
+  {
+    "offset": "0x292ac0",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeW failed: %u"
+  },
+  {
+    "offset": "0x292ae0",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeW failed"
+  },
+  {
+    "offset": "0x2c1814",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\dev\\src\\MessageBus\\_build\\X64\\Release\\broadcaster\\NvMessageBusBroadcast.pdb"
+  },
+  {
+    "offset": "0x308e62",
+    "encoding": "ascii",
+    "text": "NvMessageBusBroadcast.dll"
+  },
+  {
+    "offset": "0x308e7c",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x309654",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeW"
+  },
+  {
+    "offset": "0x309860",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x2920c0",
+    "encoding": "utf-16le",
+    "text": "NvMessageBusBroadcast logging initialized."
+  },
+  {
+    "offset": "0x292f90",
+    "encoding": "utf-16le",
+    "text": "\\\\.\\pipe\\NvMessageBusBroadcast"
+  },
+  {
+    "offset": "0x2944c0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NvContainer\\MessageBus"
+  },
+  {
+    "offset": "0x33826c",
+    "encoding": "utf-16le",
+    "text": "NvMessageBusBroadcast"
+  },
+  {
+    "offset": "0x338354",
+    "encoding": "utf-16le",
+    "text": "NvMessageBusBroadcast.dll"
+  }
+]

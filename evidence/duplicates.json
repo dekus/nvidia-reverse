@@ -1,0 +1,1295 @@
+[
+  {
+    "sha256": "e792f8a6666c05d723d9c19325aa3429e35df36a72cc4c229dc2cef0876de79d",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0000.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0000.ui.strings"
+    ],
+    "size": 1404
+  },
+  {
+    "sha256": "707a46430a1d5facf52956dc980b95e07a16e376e08eeeeb20ce32ea72d52cec",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0401.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0401.ui.forms"
+    ],
+    "size": 4762
+  },
+  {
+    "sha256": "5d01851f9b6d99e614f148a85082d850076be3037dee1cb57283230d80ccb0b5",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0401.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0401.ui.strings"
+    ],
+    "size": 11974
+  },
+  {
+    "sha256": "79e450b343fddf8f19cf0794e3306b3c105981e80fce7a724d934d9b73b8dd60",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0404.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0404.ui.forms"
+    ],
+    "size": 4614
+  },
+  {
+    "sha256": "ff343d92687646665a58057a2f4faf13aac211a5e9ed5ccbe1d8917e0f35ec86",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0404.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0404.ui.strings"
+    ],
+    "size": 9838
+  },
+  {
+    "sha256": "800aed90a137b5c9e3e1a307777abe38cc7b2c223659312d133a1d3d0e0cce3a",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0405.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0405.ui.forms"
+    ],
+    "size": 4929
+  },
+  {
+    "sha256": "0ba177cf56e3e9dd69942bbfacd4ff4804801b16514333a0ee3814c05cd72527",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0405.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0405.ui.strings"
+    ],
+    "size": 10453
+  },
+  {
+    "sha256": "1a7f55e3080678eed09e1859505a75b565897e5c1e093981dbbb132ea12fabb3",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0406.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0406.ui.forms"
+    ],
+    "size": 4561
+  },
+  {
+    "sha256": "c4888f4dd259d4d86f95c612b5fe4e65ef6dbea5f3e490456043e574f73d01f9",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0406.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0406.ui.strings"
+    ],
+    "size": 10157
+  },
+  {
+    "sha256": "0283dcda0911368446d87ccfd667db3f1e24474e579a93ed8f937001bfd3e639",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0407.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0407.ui.forms"
+    ],
+    "size": 5831
+  },
+  {
+    "sha256": "37ba5928c8bceb9ccfb9595a3fd2e6f4a09a183a94d9f507ecc092bf1d09b83c",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0407.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0407.ui.strings"
+    ],
+    "size": 11097
+  },
+  {
+    "sha256": "bd69319cd00ddec240fbfa08a0e0770cb4675111c8adc95f63e51c46ff25af3d",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0408.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0408.ui.forms"
+    ],
+    "size": 5667
+  },
+  {
+    "sha256": "bb2ca9ff5009bcd4a00d5c1396f368c19424420f475e2631b0c32c88e7c824f1",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0408.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0408.ui.strings"
+    ],
+    "size": 14679
+  },
+  {
+    "sha256": "9d536f194d9a3e52ae6a2f923052cbb269764936a43932e84d5a678bb64db48e",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0409.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0409.ui.forms"
+    ],
+    "size": 4651
+  },
+  {
+    "sha256": "f2f7a2c1ea994c882ca7b4ab250eb23cd12ba28520342fd39e0c78294a221710",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0409.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0409.ui.strings"
+    ],
+    "size": 9796
+  },
+  {
+    "sha256": "fa7d32e6d84d36cfb2035c78eec5aa20c7587655dfefa4549f179cf5c9eac448",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\040a.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\040a.ui.forms"
+    ],
+    "size": 5328
+  },
+  {
+    "sha256": "40094672a819b2f58a2def0b5d4caba7e81f92e6b1cd8e9595c3c347baf3d3cc",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\040a.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\040a.ui.strings"
+    ],
+    "size": 10487
+  },
+  {
+    "sha256": "b43eb4e5383030f70440abb566e5c0bebea670a346ecfaf492608c7e05084b7d",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\040b.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\040b.ui.forms"
+    ],
+    "size": 5901
+  },
+  {
+    "sha256": "88a451aa5611c72aed46ff5ce1bc86af2faa0b70cef5659a0f4ed46dc3ead8eb",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\040b.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\040b.ui.strings"
+    ],
+    "size": 10289
+  },
+  {
+    "sha256": "72b23f5f31b992cc4f200633418ef4b6ac982b0943bba60293e7b990b75d9031",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\040c.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\040c.ui.forms"
+    ],
+    "size": 5439
+  },
+  {
+    "sha256": "6931aea4bfb827c988066c1beefd4badb8d70e2ef16283632f0d60f021d56fba",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\040c.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\040c.ui.strings"
+    ],
+    "size": 10974
+  },
+  {
+    "sha256": "33018eefd734b944be7b85e3d114aafa924071a6415453d35488616495865b5b",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\040d.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\040d.ui.forms"
+    ],
+    "size": 5529
+  },
+  {
+    "sha256": "250d5c39a7a96bc154339c17e1cd6e4f85713a179466d8ae1f886e31dbe04a78",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\040d.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\040d.ui.strings"
+    ],
+    "size": 12065
+  },
+  {
+    "sha256": "c53c0bad4813ec1814bfab3e43238b0e1a3f9954567794322612be692272f29f",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\040e.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\040e.ui.forms"
+    ],
+    "size": 5329
+  },
+  {
+    "sha256": "ac13645f02d4ad88109fc1d021a584835ab2b8563e1eedbe4d51402fd15c1b4a",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\040e.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\040e.ui.strings"
+    ],
+    "size": 10588
+  },
+  {
+    "sha256": "dfa979e539122f01cb273b90ad1b30149773a46f48eaa357fabb0623b0b3e1d3",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0410.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0410.ui.forms"
+    ],
+    "size": 4561
+  },
+  {
+    "sha256": "3d01453aedd0e885d015a712c6c3d28c040e4fe681d3a61b7eadff1921d3a640",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0410.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0410.ui.strings"
+    ],
+    "size": 10680
+  },
+  {
+    "sha256": "4e56a24bcc5733a6b0d004e6d39cac4be002a571cf91207e0e8b9af540213af3",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0411.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0411.ui.forms"
+    ],
+    "size": 4702
+  },
+  {
+    "sha256": "bfa4bdfe951b981b716cbf1ad891caa4d9a03246614f00348e6bb6c62d0e2601",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0411.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0411.ui.strings"
+    ],
+    "size": 11972
+  },
+  {
+    "sha256": "a00f9dbb750dbe3297730ffb9757804da8935cadd819a837d70b63faa2909f69",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0412.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0412.ui.forms"
+    ],
+    "size": 4614
+  },
+  {
+    "sha256": "db01b61a298aa039f564aebde35d1010c3b74844c6bf7619d0e3ac80106bcbbb",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0412.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0412.ui.strings"
+    ],
+    "size": 10774
+  },
+  {
+    "sha256": "fd45c2a0a05d71dc0b62a0cd5b24ac9658cd8dda07f2b9308f7acac89539b37c",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0413.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0413.ui.forms"
+    ],
+    "size": 5467
+  },
+  {
+    "sha256": "60f9c59380d0ec278f9cf7cf4df93637c6167d2cd23e78b382237a3a7b4da2fe",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0413.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0413.ui.strings"
+    ],
+    "size": 10484
+  },
+  {
+    "sha256": "c5f775020667e132742ee37e28e3b3810cafee08c27d4ff253118682caed6f17",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0414.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0414.ui.forms"
+    ],
+    "size": 5328
+  },
+  {
+    "sha256": "413f0c5931aca7918605d6f2e0ed724fcc52960a60bbcced7aee575ddb7ff59c",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0414.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0414.ui.strings"
+    ],
+    "size": 10145
+  },
+  {
+    "sha256": "d2960f56a222be4defd5cbca992ca94b99e9fa338b063ca21314d60f0bbf0970",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0415.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0415.ui.forms"
+    ],
+    "size": 5537
+  },
+  {
+    "sha256": "50fc2ce4144d5c29fc3040e9029f2d6668f9150198b4f386dddc0f3a54126820",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0415.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0415.ui.strings"
+    ],
+    "size": 10486
+  },
+  {
+    "sha256": "68157093b61202ffc456c7947db8cbca6fa11591dae4033cc2943faeb0b0ab24",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0416.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0416.ui.forms"
+    ],
+    "size": 5328
+  },
+  {
+    "sha256": "0c77977e42debdebcb7f4e1e4fad377d2de3fc4002b573105648dee10607eead",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0416.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0416.ui.strings"
+    ],
+    "size": 10325
+  },
+  {
+    "sha256": "631d460061d2ddf2b46e73c1f24440df371ad5b897cf45dc4ad90c4909ecaed0",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0419.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0419.ui.forms"
+    ],
+    "size": 5328
+  },
+  {
+    "sha256": "d11d7577f7c4a3a27a27b378db904f57267f7cc348d1aff09f0a2fc3b405e417",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0419.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0419.ui.strings"
+    ],
+    "size": 13260
+  },
+  {
+    "sha256": "26e4bef4daa970fbc14c459ce58674c9620055a85212cbfdd3ac28dc31312566",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\041b.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\041b.ui.forms"
+    ],
+    "size": 5439
+  },
+  {
+    "sha256": "207f29f6630e0df582957e3dbb6e6f33da2592d42ccd294701841e757722b369",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\041b.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\041b.ui.strings"
+    ],
+    "size": 10615
+  },
+  {
+    "sha256": "1f8325e6640a33b4f3f0d73a1a7f70f6b679c05253bd84447c85cddbd43d70b6",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\041d.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\041d.ui.forms"
+    ],
+    "size": 4561
+  },
+  {
+    "sha256": "b15477e98a2398ecab1414466511fabe95f93ac7147231b1244b29a53db9502a",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\041d.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\041d.ui.strings"
+    ],
+    "size": 10165
+  },
+  {
+    "sha256": "16c66999c73f8404582c08e6b795ec93ac929b30afe89abda8d37f3a70aee8e1",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\041e.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\041e.ui.forms"
+    ],
+    "size": 4614
+  },
+  {
+    "sha256": "6a498518183f702c016a202bf09a5e6f7108e6fd2f2efd66dbcc54c92b453f63",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\041e.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\041e.ui.strings"
+    ],
+    "size": 16825
+  },
+  {
+    "sha256": "1a423ff38e9a916958a09a48db7e76bbc38e442d73b4b7fe22ef890cbe49d357",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\041f.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\041f.ui.forms"
+    ],
+    "size": 5528
+  },
+  {
+    "sha256": "027c4074bccbe8133f531b3fa695e56915a20128486dbf30392c4db26dd7e612",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\041f.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\041f.ui.strings"
+    ],
+    "size": 10303
+  },
+  {
+    "sha256": "02fc6e2ba565868cb5405513a69cecc16f185e5796fcc2225e42f83411479521",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0422.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0422.ui.forms"
+    ],
+    "size": 5529
+  },
+  {
+    "sha256": "f663a2f9a31ad9daf64bcec50017de913b515a9c322ae8618d0057f08ea2781b",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0422.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0422.ui.strings"
+    ],
+    "size": 14158
+  },
+  {
+    "sha256": "43d10703a12296d1b5e52d527f0aec5fdf5e502f0316b65b4d7ad055310bff07",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0424.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0424.ui.forms"
+    ],
+    "size": 5475
+  },
+  {
+    "sha256": "1041b5566447b4c7e4c6bc066fdcf44ca8e8658f05f67832eb332ef2fb0fc9e5",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0424.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0424.ui.strings"
+    ],
+    "size": 10318
+  },
+  {
+    "sha256": "09db2de58ca4229851a82130190d65a8ee98616afbe75005531098a2bcc19561",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0804.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0804.ui.strings"
+    ],
+    "size": 9293
+  },
+  {
+    "sha256": "a19b3a70c5facc077b1ecedff750641b6b1827d23b14b296b056c9fb622c023c",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0809.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0809.ui.strings"
+    ],
+    "size": 9764
+  },
+  {
+    "sha256": "cf6703ad4751117d81c37a53941f0fec63f3a83b68d25e0871405fab03d67f69",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\080a.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\080a.ui.strings"
+    ],
+    "size": 10483
+  },
+  {
+    "sha256": "908745b590e6f742e5851741e14fdba439a9163527afa7413ccfd00bcc73cfdf",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0816.ui.forms",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0816.ui.forms"
+    ],
+    "size": 5475
+  },
+  {
+    "sha256": "dbd5e72f1c084b1e8b3829ab4c69ff40ade815b0f5943fd099848725947a14ac",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\0816.ui.strings",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\0816.ui.strings"
+    ],
+    "size": 10650
+  },
+  {
+    "sha256": "6f4e08ec937078cc811428370f32d9a6509a1d1d6894de8a4c700d2ac4030e2b",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\EULA.txt",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\EULA.txt"
+    ],
+    "size": 22880
+  },
+  {
+    "sha256": "aa73cde03bcedf69ec9a9e4f1fbabd75abcc00f94f01a8e6f3d74334c66b5358",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\NVIDIASans_Bd.ttf",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\NVIDIASans_Bd.ttf",
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\NVIDIASans_Bd.ttf"
+    ],
+    "size": 169412
+  },
+  {
+    "sha256": "2e5c50e0c304ff97e0b218758276386080c6e6de9c224bb66c4d44efee6e062e",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\NVIDIASans_BdIt.ttf",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\NVIDIASans_BdIt.ttf",
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\NVIDIASans_BdIt.ttf"
+    ],
+    "size": 173592
+  },
+  {
+    "sha256": "324ff52b843df060c6cc827bd486a2821aeaf72dec33768b46aef97464e39268",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\NVIDIASans_It.ttf",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\NVIDIASans_It.ttf",
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\NVIDIASans_It.ttf"
+    ],
+    "size": 173372
+  },
+  {
+    "sha256": "4ee22a0ec7297c2362f66226cb907b34191253f4d0ffcfcfd526c9bc3170480f",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\NVIDIASans_Lt.ttf",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\NVIDIASans_Lt.ttf",
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\NVIDIASans_Lt.ttf"
+    ],
+    "size": 170196
+  },
+  {
+    "sha256": "dfa79aa95fc2579be986d3c53ea2fd55139b07b3d7ed13962324d52807388d70",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\NVIDIASans_LtIt.ttf",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\NVIDIASans_LtIt.ttf",
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\NVIDIASans_LtIt.ttf"
+    ],
+    "size": 173832
+  },
+  {
+    "sha256": "0f57f33a2add61528fc11cba0415360d5f20c84e7148b6d713e6b76ec1a663ba",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\NVIDIASans_Md.ttf",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\NVIDIASans_Md.ttf",
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\NVIDIASans_Md.ttf"
+    ],
+    "size": 172212
+  },
+  {
+    "sha256": "a4ef292c477cdb634f6367a8effca948349d43ad1976ad748e116ddf5b91344a",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\NVIDIASans_MdIt.ttf",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\NVIDIASans_MdIt.ttf",
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\NVIDIASans_MdIt.ttf"
+    ],
+    "size": 175304
+  },
+  {
+    "sha256": "c2e260ec3962c9d486e01c9c2e59b736fa3b78efb6e6db5764ddfa3c4e15464e",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\NVIDIASans_Rg.ttf",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\NVIDIASans_Rg.ttf",
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\NVIDIASans_Rg.ttf"
+    ],
+    "size": 170280
+  },
+  {
+    "sha256": "3a6598be9c7a1b9f75892dd056ff23e8a74d7dce103832d9f8a016f5d600b8bb",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\box_checked_disabled.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\box_checked_disabled.png"
+    ],
+    "size": 498
+  },
+  {
+    "sha256": "02ccbafbca906c6588c79c160025f66b06022d0b83092e90cae40b703b258469",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\box_checked_disabled_rtl.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\box_checked_disabled_rtl.png"
+    ],
+    "size": 481
+  },
+  {
+    "sha256": "d6b8a3e450eb4a8cb51da21eba7b1fb2c91aa1980260522644c53fead814942c",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\box_checked_enabled.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\box_checked_enabled.png"
+    ],
+    "size": 492
+  },
+  {
+    "sha256": "163d4da3354b57fcaee03f51fdc0b05eae36d290159df0e5d56387c91dc6817f",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\box_checked_enabled_rtl.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\box_checked_enabled_rtl.png"
+    ],
+    "size": 460
+  },
+  {
+    "sha256": "457925f3a392b2bb7bca884ca563050a2f715016c44c9c2b38a3f5691e9451b4",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\box_partialcheckboxed_enabled.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\box_partialcheckboxed_enabled.png"
+    ],
+    "size": 226
+  },
+  {
+    "sha256": "ee1515a939580dbdeef824fe1fcfb07ed325bba033d6ca4c687b1e0233a25106",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\box_unchecked_disabled.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\box_unchecked_disabled.png"
+    ],
+    "size": 195
+  },
+  {
+    "sha256": "8121d6b2261629b2362149b1e22e4c85bd7d53d0507e1283e67c2167acc5e6fa",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\box_unchecked_enabled.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\box_unchecked_enabled.png"
+    ],
+    "size": 193
+  },
+  {
+    "sha256": "e51c779485c8f2e456e060cffca1b2e5898646b6043f533901db28b6cb866771",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\check.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\check.png"
+    ],
+    "size": 351
+  },
+  {
+    "sha256": "af6bf83c1d59aed83e452f0f76e67bff2a2928f6173c1a3feace12a0f6658769",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\circled_checkmark.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\circled_checkmark.png"
+    ],
+    "size": 1180
+  },
+  {
+    "sha256": "d9afc57e15ceb84bb05fc69a8fcfe720387e412d857dfda6b6951a197279ca12",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\error.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\error.png"
+    ],
+    "size": 978
+  },
+  {
+    "sha256": "4cbc589561de50088e8d7c1b0f21d4e1027ce56c770562f7a3e32bc6acae0af6",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\info.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\info.png"
+    ],
+    "size": 870
+  },
+  {
+    "sha256": "e38e52d2dd81c7bb483b4cde8f1bf04fefff52172058e54073400259464ee300",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\install_bg.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\install_bg.png"
+    ],
+    "size": 37948
+  },
+  {
+    "sha256": "02daded2022f89c9820569a85fa474afb4be26485fbc7889184d40f383b99fd9",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\install_bg_rtl.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\install_bg_rtl.png"
+    ],
+    "size": 37886
+  },
+  {
+    "sha256": "0508eb0a8a4b002f28e2ee9d0dfda9d096b2ff07dec5acc30b99251a67f22a9a",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\presentations_bg.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\presentations_bg.png"
+    ],
+    "size": 1817202
+  },
+  {
+    "sha256": "f2c42e6808fe9b673a3b52d5ddbf1f7cfd99b8774444d5d86c0e4553d0f3a800",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_disabled_large.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_disabled_large.png"
+    ],
+    "size": 698
+  },
+  {
+    "sha256": "cfea8fcc077abdf0a28014e299ca5a6dbf3de1246b85027597d16b3294977520",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_disabled_medium.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_disabled_medium.png"
+    ],
+    "size": 644
+  },
+  {
+    "sha256": "dfb7bde7238a5afe1e68882be0854b29d9c129c1badfc256b332eda648355252",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_disabled_small.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_disabled_small.png"
+    ],
+    "size": 612
+  },
+  {
+    "sha256": "0098361af86a258a1f760e0c7b946a1c270174f0eebb96059b7963ae27fee24c",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_enabled_large.png",
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_focused_large.png",
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_pressed_large.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_enabled_large.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_focused_large.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_pressed_large.png"
+    ],
+    "size": 664
+  },
+  {
+    "sha256": "d8d25a4dfdac8e2420d1c11eb8358d662b0b12b117b007ae9fe7d9012d7c8b00",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_enabled_medium.png",
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_focused_medium.png",
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_pressed_medium.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_enabled_medium.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_focused_medium.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_pressed_medium.png"
+    ],
+    "size": 613
+  },
+  {
+    "sha256": "af98bcd54ee1615311095193cee370898f321f7fa40a62558dd6bb0cfab43e99",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_enabled_small.png",
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_focused_small.png",
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_pressed_small.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_enabled_small.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_focused_small.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_pressed_small.png"
+    ],
+    "size": 579
+  },
+  {
+    "sha256": "c7b71b022236341c3088b4f63f6626040878550d23303a05e22a2fbe92688707",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_hover_large.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_hover_large.png"
+    ],
+    "size": 678
+  },
+  {
+    "sha256": "7545ded92a12d04d6d59522d4dabfbed9f0b9f72dc8c03a97909cde801b6aab9",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_hover_medium.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_hover_medium.png"
+    ],
+    "size": 624
+  },
+  {
+    "sha256": "aec75a8aff23df975a08ce63af1281992862128466b5b21d220166950e28cd93",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_hover_small.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_hover_small.png"
+    ],
+    "size": 592
+  },
+  {
+    "sha256": "91cc76b529a0574859559d67e9ff41bbd8917df6d8b92221d6697c674cf0edef",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\radio_btn_selected.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\radio_btn_selected.png"
+    ],
+    "size": 1546
+  },
+  {
+    "sha256": "00cdb7a8d4b16d5e0cc6ae9c8a7e87ba28f77b691953491d58dd7b7c9b7c7918",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\radio_btn_unselected.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\radio_btn_unselected.png"
+    ],
+    "size": 1186
+  },
+  {
+    "sha256": "0e95f5c39bc9a85313cc0b420b521d8d36b84c3fc2db392d7fb6e3dc3c3cec00",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_disabled_large.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_disabled_large.png"
+    ],
+    "size": 784
+  },
+  {
+    "sha256": "6cf540e8bf4bfc9762aecb730bf5847c0fd46fba0b63aca55b7138d93efee3ee",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_disabled_medium.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_disabled_medium.png"
+    ],
+    "size": 735
+  },
+  {
+    "sha256": "64542bee49fbca09b7aec06fb38e7ccd50f5bb78229e6e8081c56652a12e4147",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_disabled_small.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_disabled_small.png"
+    ],
+    "size": 697
+  },
+  {
+    "sha256": "d79112bc46277c72ddfdc568747bf09089848d0529182faa34ec6ef4afb69040",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_enabled_large.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_enabled_large.png"
+    ],
+    "size": 832
+  },
+  {
+    "sha256": "c182d7a9930655815338eafc17976360884807c55c85a68d8259633e332babe7",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_enabled_medium.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_enabled_medium.png"
+    ],
+    "size": 782
+  },
+  {
+    "sha256": "3ee67cc7fd54b50669e4f1ff01dbaeccb63d46e4ed886d81f0f921bca6e6997c",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_enabled_small.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_enabled_small.png"
+    ],
+    "size": 741
+  },
+  {
+    "sha256": "e55526a4cbb9eb487f57d7850a43a03243be4261535075aa9ee075a4814e960a",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_focused_large.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_focused_large.png"
+    ],
+    "size": 827
+  },
+  {
+    "sha256": "fb2aa35f234489dd4e6c015a6116f5b77bca17a50eef8baf403c2e94f681b527",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_focused_medium.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_focused_medium.png"
+    ],
+    "size": 778
+  },
+  {
+    "sha256": "8b6dc9645ebfeabcb6a13c6d1b9f04147abd4edcbf8494e1e10924f01294b9c7",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_focused_small.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_focused_small.png"
+    ],
+    "size": 741
+  },
+  {
+    "sha256": "e2c49455d630ded95acea7e918a2bcbe0adbe0a9ac3f58e4db8694f40a85c4c6",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_hover_large.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_hover_large.png"
+    ],
+    "size": 671
+  },
+  {
+    "sha256": "09dfdddccedcae4cc44699f848b6b2144f003993256afd7487d8dacc1b8c279f",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_hover_medium.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_hover_medium.png"
+    ],
+    "size": 620
+  },
+  {
+    "sha256": "2459ff6ffcf188176669220a608701d8efbf450c9f0110f4b6814af3cd89eacb",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_hover_small.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_hover_small.png"
+    ],
+    "size": 587
+  },
+  {
+    "sha256": "d32a9e81fedbb6ed7e94d144d7ea8f7edbd5d8fafaa39744ffcd73b543abe562",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_pressed_large.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_pressed_large.png"
+    ],
+    "size": 865
+  },
+  {
+    "sha256": "50ec8c53139e36fce601472d623ea3f0330facc3f1e81facbdbd110acf24d94f",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_pressed_medium.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_pressed_medium.png"
+    ],
+    "size": 817
+  },
+  {
+    "sha256": "9446276e14171abecca8e0be8f68d0f499029c8a5ae0960109e92a56951d9b13",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_pressed_small.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_pressed_small.png"
+    ],
+    "size": 777
+  },
+  {
+    "sha256": "45a5f130aed9a35d09d22fb8678b55d54a3a761ce233759aad70303f3371f229",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\sidebar_current_state.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\sidebar_current_state.png"
+    ],
+    "size": 14354
+  },
+  {
+    "sha256": "149d817df2d85738bc99f71fe5b74b493c56ded74b27f4926e871fb0100d71fd",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\sidebar_current_state_rtl.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\sidebar_current_state_rtl.png"
+    ],
+    "size": 14704
+  },
+  {
+    "sha256": "e45c4b6d2878aac2498015d2428846831c73698d76b88639280280f471963094",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\sidebar_done_state.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\sidebar_done_state.png"
+    ],
+    "size": 669
+  },
+  {
+    "sha256": "cff1cb0f5e10ee5274d1773557194c79cf97294ee2087c29c4ba6f53083deeaf",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\splash.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\splash.png"
+    ],
+    "size": 2652086
+  },
+  {
+    "sha256": "674e5c5513bb3972ff9182a4eee75e2facb76b20ca097b0b5fc6683de77ace20",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\splash_rtl.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\splash_rtl.png"
+    ],
+    "size": 2645776
+  },
+  {
+    "sha256": "5fd61ebb13a7f0331f600502fb981d1bb4fd25e7f23f3a58caf5674dd014ea5e",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\theme.cfg",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\theme.cfg"
+    ],
+    "size": 11522
+  },
+  {
+    "sha256": "79a5a09ced61df80d31623849247ab6f9f8fd28b98f6629dc4490e2d36b4669b",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\uninstall_bg.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\uninstall_bg.png"
+    ],
+    "size": 37820
+  },
+  {
+    "sha256": "15ca88cb5db09b419a3b5fb2be9a390d3150c90262ddd2e0e51a1e5283aa7f30",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\uninstall_bg_rtl.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\uninstall_bg_rtl.png"
+    ],
+    "size": 37823
+  },
+  {
+    "sha256": "4e237de698424bfcb879f53006cc774e5bc8588d50b76549968a4877ad56e914",
+    "paths": [
+      "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\warning.png",
+      "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\warning.png"
+    ],
+    "size": 686
+  },
+  {
+    "sha256": "55e162a4b36be3add2f45f2a644d493b4eacda7aa56886ca7c83e471ab0c6811",
+    "paths": [
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\min_light.png",
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\min_pressed_light.png"
+    ],
+    "size": 196
+  },
+  {
+    "sha256": "e80b535fb17edab95d522f0892a02677c919d77f2ee4b1ee14bc8bbbcad4bfd0",
+    "paths": [
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartlater_btn_enabled.png",
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartlater_btn_enabled_light.png"
+    ],
+    "size": 15423
+  },
+  {
+    "sha256": "8be57d63f7f44fc0e929e9b38c7da173d3974a465a18c0fc6727346f484b055d",
+    "paths": [
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartlater_btn_focused.png",
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartlater_btn_focused_light.png"
+    ],
+    "size": 984
+  },
+  {
+    "sha256": "5b69a220c5ba8048e191b5629dcd0be7fc7bf5ac0ea20d062d5fac769fc8458d",
+    "paths": [
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartlater_btn_hover.png",
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartlater_btn_hover_light.png"
+    ],
+    "size": 984
+  },
+  {
+    "sha256": "294180e0971968a86d52de44bc997a4d5e49172f8baf43f78cc4c721bd368e80",
+    "paths": [
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartlater_btn_pressed.png",
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartlater_btn_pressed_light.png"
+    ],
+    "size": 984
+  },
+  {
+    "sha256": "27924c06b6fb3c0874c85495f0057dbb3b91bd43c9c4ec40daa5ed893bb62577",
+    "paths": [
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartnow_btn_enabled.png",
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartnow_btn_enabled_light.png"
+    ],
+    "size": 15623
+  },
+  {
+    "sha256": "6ca91ee36be6bba1a974f04cac7fb657eb0fbf0063054892353b8ae54feac04e",
+    "paths": [
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartnow_btn_focused.png",
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartnow_btn_focused_light.png"
+    ],
+    "size": 983
+  },
+  {
+    "sha256": "b2587815eacae72405cfee661bc9d9a165736cdaa25f680f795cafaa7230ef98",
+    "paths": [
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartnow_btn_hover.png",
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartnow_btn_hover_light.png"
+    ],
+    "size": 983
+  },
+  {
+    "sha256": "4d96d81d6f83cf644a0cf14066a9ca547967bb3bd8087ba620c7c0094d6415e3",
+    "paths": [
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartnow_btn_pressed.png",
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartnow_btn_pressed_light.png"
+    ],
+    "size": 983
+  },
+  {
+    "sha256": "073e4e717ece44b61e22456d724d33dbd2552640dde8c6902835e3d2f03fef08",
+    "paths": [
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\NvApp\\EULA.txt",
+      "NVIDIA App\\www\\assets\\main\\eula\\EULA.txt"
+    ],
+    "size": 23148
+  },
+  {
+    "sha256": "ce130056f99a0ae7c572c83197ede96a688b0bfa4f04531db12a023caeb6d8cb",
+    "paths": [
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\NvApp\\FunctionalConsent_en-US.txt",
+      "NVIDIA App\\www\\assets\\main\\eula\\FunctionalConsent_en-US.txt"
+    ],
+    "size": 696
+  },
+  {
+    "sha256": "707aa636d174b7d4056baabc134b073d0b792ac1bec447559e3c323afdc68429",
+    "paths": [
+      "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\NvApp\\PrivacyPolicy\\PrivacyPolicy_en-US.htm",
+      "NVIDIA App\\www\\assets\\main\\eula\\PrivacyPolicy\\PrivacyPolicy_en-GB.htm",
+      "NVIDIA App\\www\\assets\\main\\eula\\PrivacyPolicy\\PrivacyPolicy_en-US.htm"
+    ],
+    "size": 168249
+  },
+  {
+    "sha256": "b5b12e4b06e3f99b9cd8b1b64fca5b6faf2e35293885198785ec5e22ff7871ac",
+    "paths": [
+      "NVIDIA App\\CEF\\config\\Diagnostics.json",
+      "NVIDIA App\\CEF\\config\\DriverUpdateRecommendation.json",
+      "NVIDIA App\\CEF\\config\\McpServerPlugin.json",
+      "NVIDIA App\\CEF\\config\\NvAccount.json",
+      "NVIDIA App\\CEF\\config\\NvAppIgoIpcProxy.json",
+      "NVIDIA App\\CEF\\config\\NvDriverDiagnostics.json",
+      "NVIDIA App\\CEF\\config\\NvKVStorage.json",
+      "NVIDIA App\\CEF\\config\\NvLocalizedConfig.json",
+      "NVIDIA App\\CEF\\config\\_OverClockingNvc.json"
+    ],
+    "size": 87
+  },
+  {
+    "sha256": "517840f0c1ffbfd699c1f628e1d37449299d242e55ec13ed4a6ab3dc95a1858a",
+    "paths": [
+      "NVIDIA App\\CEF\\plugins\\NVIDIA App\\MessageBusRouter.dll",
+      "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\MessageBusRouter.dll"
+    ],
+    "size": 1646704
+  },
+  {
+    "sha256": "63b000b70eaea5477e8d30e141f84ccf5391a8d098377768795e694aeda8372f",
+    "paths": [
+      "NVIDIA App\\MessageBus\\NvMessageBusBroadcast.dll",
+      "NvContainer\\plugins\\LocalSystem\\NvMessageBusBroadcast.dll"
+    ],
+    "size": 3520112
+  },
+  {
+    "sha256": "4e3d2c32e15a02b3b7fe488af51feeb44109677f7aa041b71dab434aaedb54dc",
+    "paths": [
+      "NVIDIA App\\MessageBus\\messagebus.conf",
+      "NvContainer\\plugins\\LocalSystem\\messagebus.conf"
+    ],
+    "size": 6411
+  },
+  {
+    "sha256": "9f4b88a1ad2fcb1e39eb5d05eeb0c988add938fa18ce2788e54d330f3a9a7e07",
+    "paths": [
+      "NVIDIA App\\NvLocalizedConfig\\NvLocalizedConfig.json",
+      "NVIDIA App\\Plugins\\aiuser\\McpServerPlugin.json",
+      "NVIDIA App\\Plugins\\localuser\\NvAccount.json",
+      "NVIDIA App\\Plugins\\localuser\\NvApp\\DesktopNotification.json",
+      "NVIDIA App\\Plugins\\localuser\\NvApp\\Diagnostics.json",
+      "NVIDIA App\\Plugins\\oc\\_OverClockingNvc.json",
+      "NVIDIA App\\Plugins\\session\\NvDriverDiagnostics.json"
+    ],
+    "size": 126
+  },
+  {
+    "sha256": "467b6663f2ea2efc0b6f74a5814adbf1018ef141d0a16bd76ad260b15d63fc9e",
+    "paths": [
+      "NVIDIA App\\osc\\Deselect_All_24.9c60743cf04d1b72.svg",
+      "NVIDIA App\\www\\assets\\img\\Deselect_All_24.svg"
+    ],
+    "size": 919
+  },
+  {
+    "sha256": "ccf2b77b27e7f5a297f14e2643131686a1f48bc52c1127baa447f3527408466c",
+    "paths": [
+      "NVIDIA App\\osc\\Marquee_Hero_Image_Gradient.97da07cc527f6200.svg",
+      "NVIDIA App\\www\\assets\\hashed\\Marquee_Hero_Image_Gradient.97da07cc527f6200.svg",
+      "NVIDIA App\\www\\assets\\img\\Marquee_Hero_Image_Gradient.svg"
+    ],
+    "size": 70329
+  },
+  {
+    "sha256": "2c83cfbe96ec803325d6a0ebd62f23ecf44cedf6ecf70e405ecf4152a3f6d1cb",
+    "paths": [
+      "NVIDIA App\\osc\\Marquee_Hero_Image_Gradient_RTL.8f28b6a06d45d190.svg",
+      "NVIDIA App\\www\\assets\\hashed\\Marquee_Hero_Image_Gradient_RTL.8f28b6a06d45d190.svg",
+      "NVIDIA App\\www\\assets\\img\\Marquee_Hero_Image_Gradient_RTL.svg"
+    ],
+    "size": 70333
+  },
+  {
+    "sha256": "b7f4a3ab562048f28dd1fa691601bc43363a61d0f876d16d8316c52e4f32d696",
+    "paths": [
+      "NVIDIA App\\osc\\MaterialIcons-Regular.196fa4a92dd6fa73.ttf",
+      "NVIDIA App\\www\\assets\\hashed\\MaterialIcons-Regular.196fa4a92dd6fa73.ttf"
+    ],
+    "size": 128180
+  },
+  {
+    "sha256": "8c998b4a9c0acbb9fe5dd572c206a5a33fdd5ca2b58db87fc3b893beac85068d",
+    "paths": [
+      "NVIDIA App\\osc\\MaterialIcons-Regular.1e50f5c2ffa6aba4.eot",
+      "NVIDIA App\\www\\assets\\hashed\\MaterialIcons-Regular.1e50f5c2ffa6aba4.eot"
+    ],
+    "size": 143258
+  },
+  {
+    "sha256": "a87d66c91b2e7dc5530aef76c03bd6a3d25ea5826110bf4803b561b811cc8726",
+    "paths": [
+      "NVIDIA App\\osc\\MaterialIcons-Regular.7ea2023eeca07427.woff2",
+      "NVIDIA App\\www\\assets\\hashed\\MaterialIcons-Regular.7ea2023eeca07427.woff2"
+    ],
+    "size": 44300
+  },
+  {
+    "sha256": "c4a1baec300d09e03a8380b85918267ee80faae8e00c6c56b48e2e74b1d9b38d",
+    "paths": [
+      "NVIDIA App\\osc\\MaterialIcons-Regular.db852539204b1a34.woff",
+      "NVIDIA App\\www\\assets\\hashed\\MaterialIcons-Regular.db852539204b1a34.woff"
+    ],
+    "size": 57620
+  },
+  {
+    "sha256": "831ddf9c812c746dcf875070744c55435df2089d75a8e236ad96d161c70b1aba",
+    "paths": [
+      "NVIDIA App\\osc\\NVIDIASans_W_Bd.5aafff8b08f9a971.woff2",
+      "NVIDIA App\\www\\assets\\hashed\\NVIDIASans_W_Bd.5aafff8b08f9a971.woff2"
+    ],
+    "size": 28564
+  },
+  {
+    "sha256": "a90918b3889b1fb0016b598c88fc5fa12766f7b6f36e30fb17376cf7ed654690",
+    "paths": [
+      "NVIDIA App\\osc\\NVIDIASans_W_Md.14ea224b997bf6e0.woff2",
+      "NVIDIA App\\www\\assets\\hashed\\NVIDIASans_W_Md.14ea224b997bf6e0.woff2"
+    ],
+    "size": 29528
+  },
+  {
+    "sha256": "0aef4914785160f74a122c6168793f8726da725cc6f80947418bacd064f33b98",
+    "paths": [
+      "NVIDIA App\\osc\\NVIDIASans_W_Rg.33fb51adcc625f4e.woff2",
+      "NVIDIA App\\www\\assets\\hashed\\NVIDIASans_W_Rg.33fb51adcc625f4e.woff2"
+    ],
+    "size": 29124
+  },
+  {
+    "sha256": "eef05d0e2478631201cdee5f7f10dd92f302db7d004381e95ba2cb6a02bf6a4a",
+    "paths": [
+      "NVIDIA App\\osc\\Select_All_24.5528d1942c3b1881.svg",
+      "NVIDIA App\\www\\assets\\img\\Select_All_24.svg"
+    ],
+    "size": 878
+  },
+  {
+    "sha256": "69cc5690bdcb4a8cd8e05a44f429899f7a36b098e80e4315d83049f7e17acafe",
+    "paths": [
+      "NVIDIA App\\osc\\mobile_marquee_hero_mask_ltr.847d01c9a13bfbfb.webp",
+      "NVIDIA App\\www\\assets\\hashed\\mobile_marquee_hero_mask_ltr.847d01c9a13bfbfb.webp",
+      "NVIDIA App\\www\\assets\\img\\mobile_marquee_hero_mask_ltr.webp"
+    ],
+    "size": 44224
+  },
+  {
+    "sha256": "1428f5b98ee6f731d7c915d3eb3a47408a0bd32bb921d7c15e100cc690c3f4e8",
+    "paths": [
+      "NVIDIA App\\osc\\mobile_marquee_hero_mask_rtl.11d53446b93cdd22.webp",
+      "NVIDIA App\\www\\assets\\hashed\\mobile_marquee_hero_mask_rtl.11d53446b93cdd22.webp",
+      "NVIDIA App\\www\\assets\\img\\mobile_marquee_hero_mask_rtl.webp"
+    ],
+    "size": 43488
+  },
+  {
+    "sha256": "8cd8ddc3809ed790f1b472864158dbdaea5dffa7fe401c7867ed74dce7f78111",
+    "paths": [
+      "NVIDIA App\\www\\assets\\hashed\\ootb-grd-driver-experience.ae47d97afbef711e.jpg",
+      "NVIDIA App\\www\\assets\\img\\ootb-grd-driver-experience.jpg"
+    ],
+    "size": 278211
+  },
+  {
+    "sha256": "b752cb3f8923920a8ea76e3094792a56d4e60bc2fe26a96c06ab07835ce44b64",
+    "paths": [
+      "NVIDIA App\\www\\assets\\hashed\\ootb-grd-ops-experience.98c0923bd68cfd11.jpg",
+      "NVIDIA App\\www\\assets\\img\\ootb-grd-ops-experience.jpg"
+    ],
+    "size": 213473
+  },
+  {
+    "sha256": "02ebc8977708e2e7b7d7a041edeef0b9f6172d3e06260f83e6800408d405e84a",
+    "paths": [
+      "NVIDIA App\\www\\assets\\hashed\\ootb-grd-overlay-experience.a712d389f2f636aa.webp",
+      "NVIDIA App\\www\\assets\\img\\ootb-grd-overlay-experience.webp"
+    ],
+    "size": 881706
+  },
+  {
+    "sha256": "9bd80a21972d61ced733234b49983d791086a03771fb1ec87cd0ac2ee98c2be5",
+    "paths": [
+      "NVIDIA App\\www\\assets\\hashed\\ootb-grd-rewards-experience.d08599b6dfba97ba.webp",
+      "NVIDIA App\\www\\assets\\img\\ootb-grd-rewards-experience.webp"
+    ],
+    "size": 489064
+  },
+  {
+    "sha256": "cfd45010afd331d8c75d976a542b7a62657c1bd73c08de830326e9dc2c1f6081",
+    "paths": [
+      "NVIDIA App\\www\\assets\\hashed\\ootb-nsd-driver-experience.d8406fe99b7df33f.webp",
+      "NVIDIA App\\www\\assets\\img\\ootb-nsd-driver-experience.webp"
+    ],
+    "size": 595830
+  },
+  {
+    "sha256": "64ea849c90d263aa32d001f67955cbfa6a1f40a0540f7847fe7c2537638f969a",
+    "paths": [
+      "NVIDIA App\\www\\assets\\hashed\\ootb-nsd-ops-experience.649207328eda51ff.webp",
+      "NVIDIA App\\www\\assets\\img\\ootb-nsd-ops-experience.webp"
+    ],
+    "size": 232116
+  },
+  {
+    "sha256": "18062827212f79445ec051e5bee95b2654b5bd3522a9ec2b6bd1695bc09dcf21",
+    "paths": [
+      "NVIDIA App\\www\\assets\\hashed\\ootb-nsd-overlay-experience.143ab5b607f0db65.webp",
+      "NVIDIA App\\www\\assets\\img\\ootb-nsd-overlay-experience.webp"
+    ],
+    "size": 705060
+  },
+  {
+    "sha256": "fa004a1748eb5cb8a298f0ecc4f23c71da230681cd4c016bfb7d3c59d920faf9",
+    "paths": [
+      "NVIDIA App\\www\\assets\\hashed\\ootb-nsd-rewards-experience.dc6251a422b0d9bb.webp",
+      "NVIDIA App\\www\\assets\\img\\ootb-nsd-rewards-experience.webp"
+    ],
+    "size": 544304
+  },
+  {
+    "sha256": "298804f9b483f6af329c32a6274446112333575c4456987b2ae2cce48e25aea2",
+    "paths": [
+      "NVIDIA App\\www\\assets\\hashed\\ootb-nwd-driver-experience.5039068ad925bc01.webp",
+      "NVIDIA App\\www\\assets\\img\\ootb-nwd-driver-experience.webp"
+    ],
+    "size": 524008
+  },
+  {
+    "sha256": "1546f26719742d4d1d45360ba1e29bfdb257ad29f10800660f96b3d6a6daabfe",
+    "paths": [
+      "NVIDIA App\\www\\assets\\hashed\\ootb-nwd-ops-experience.5cd200c7395eae61.webp",
+      "NVIDIA App\\www\\assets\\img\\ootb-nwd-ops-experience.webp"
+    ],
+    "size": 437254
+  },
+  {
+    "sha256": "328ca68e6c08114eeae2c00c936951d246419e4ed368b1c53cc9114fb171484d",
+    "paths": [
+      "NVIDIA App\\www\\assets\\hashed\\ootb-nwd-overlay-experience.c38db2b6d23a19d1.webp",
+      "NVIDIA App\\www\\assets\\img\\ootb-nwd-overlay-experience.webp"
+    ],
+    "size": 658816
+  }
+]

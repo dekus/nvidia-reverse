@@ -1,0 +1,582 @@
+[
+  {
+    "path": "NVIDIA App\\CEF\\chrome_100_percent.pak",
+    "sha256": "474ae976b036320473a19732c07b9fe164ff673d45b8541fe07e4bcb78bff1cd",
+    "version": 5,
+    "encoding": 1,
+    "resources": 410,
+    "aliases": 79,
+    "end_offset": 695068,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\chrome_200_percent.pak",
+    "sha256": "5866c4f7e75e77723d81641ff94b35c177ad28d677483da0cb681681b2773093",
+    "version": 5,
+    "encoding": 1,
+    "resources": 410,
+    "aliases": 79,
+    "end_offset": 1094621,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\resources.pak",
+    "sha256": "24c85cc167af80514e9d1c3144ad3ef718e08d010934276a7128b0ba5bb873de",
+    "version": 5,
+    "encoding": 1,
+    "resources": 2887,
+    "aliases": 27,
+    "end_offset": 8688999,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\af.pak",
+    "sha256": "c514fe813e56c4767e9b190acca7a44d6f0f6d7c03dec6c4afb6586f0c89ebb7",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10439,
+    "aliases": 1976,
+    "end_offset": 538998,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\am.pak",
+    "sha256": "fd641fb8513ea2b93a5f34f45a9a8af3596e73dd738207bcc07ecfbd398f4285",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10458,
+    "aliases": 1957,
+    "end_offset": 866444,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\ar.pak",
+    "sha256": "1d11e3b7cae4762d0c35dc83c331813f49a7f9bc492eb63cada01954af8a7d2a",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10383,
+    "aliases": 2032,
+    "end_offset": 953918,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\bg.pak",
+    "sha256": "d2fa3f3e66113fbd7efe891eef6f66915e04dfa8aedbb162cebe27ee7db4d248",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10440,
+    "aliases": 1975,
+    "end_offset": 987762,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\bn.pak",
+    "sha256": "a3f81cf087eb69c505243db32d36fce0f4266d074f22dd6e1742a1311cc8d5c5",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10427,
+    "aliases": 1988,
+    "end_offset": 1269605,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\ca.pak",
+    "sha256": "bc32492cbaa82d9de625548c79f03173ec4db4d3e25d2e5d3099a7d7231f8ff1",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10429,
+    "aliases": 1986,
+    "end_offset": 612377,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\cs.pak",
+    "sha256": "3223737e45b3f06acd90d2ea6b923c99ef3a988f072234328f5cd337d428a219",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10425,
+    "aliases": 1990,
+    "end_offset": 622919,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\da.pak",
+    "sha256": "a2960a7b635fc8a100e325b5ebe0bd696cccaa0af5d77ec1ea2ef3a7ad77471c",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10444,
+    "aliases": 1971,
+    "end_offset": 567958,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\de.pak",
+    "sha256": "d7a8385e3e1bedd61d102be6b19d5e8cf09c814528cfd782c1d3bf62812690b8",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10314,
+    "aliases": 2101,
+    "end_offset": 609935,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\el.pak",
+    "sha256": "889501de74431bc33ca326df8711c46e3def70cd82b1124a44524ee2829167c2",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10426,
+    "aliases": 1989,
+    "end_offset": 1080416,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\en-GB.pak",
+    "sha256": "86c1766ba2e7b86f111445a1f57c5120e1be78a4b6e7b2e124dcd31116c7ccdb",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10541,
+    "aliases": 1874,
+    "end_offset": 492124,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\en-US.pak",
+    "sha256": "fc44badc0f1ee3daa57d905a9e39ae3ee6dbd38049cbd944905630409038ff2b",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10613,
+    "aliases": 1802,
+    "end_offset": 497015,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\es-419.pak",
+    "sha256": "d7088cd07d220af16275befc09c56c2524d4b63a424876ce2f7f5442f56dcaa3",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10443,
+    "aliases": 1972,
+    "end_offset": 598355,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\es.pak",
+    "sha256": "270147cc81547477f181b5c6b75dd8cf46eb124de802de8eb2bc6855d2ef8fe8",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10446,
+    "aliases": 1969,
+    "end_offset": 596806,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\et.pak",
+    "sha256": "21046ded9f9aab82bbc7ff1579fbc80b94bd6da09a3e4817188391d4af1c24be",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10456,
+    "aliases": 1959,
+    "end_offset": 544221,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\fa.pak",
+    "sha256": "af1dd21b0aa302cbebc56d39abd8bcfda981734e04c7ab8040e905cbbbaa193c",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10357,
+    "aliases": 2058,
+    "end_offset": 879421,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\fi.pak",
+    "sha256": "48a5e49251723e3e191c8502ff1b6dedf39e168ac252fcf535b36ad52e9ea8fd",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10346,
+    "aliases": 2069,
+    "end_offset": 552657,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\fil.pak",
+    "sha256": "7117986303e4954ac39bb144ac76bacb450f7be68ae1fde970ee639ad39bd9d8",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10575,
+    "aliases": 1840,
+    "end_offset": 624599,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\fr.pak",
+    "sha256": "4dee926b878d106a3599c1c884bb84dcdd7785836032384420f5fd0c76cea640",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10410,
+    "aliases": 2005,
+    "end_offset": 646732,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\gu.pak",
+    "sha256": "9af5364f7cbe7ef972c0fb9b62bf2c13cb1a9ff4dde1d6fd2ffcacd088adb987",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10441,
+    "aliases": 1974,
+    "end_offset": 1255599,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\he.pak",
+    "sha256": "ad956cf0f663b25c19907bb8737b2342704223ac79f8a85b7a3038d52e9afa7a",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10395,
+    "aliases": 2020,
+    "end_offset": 777593,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\hi.pak",
+    "sha256": "6b2629ccdc38a3c14ee5de4eba558527bbc4c590c87cc9393f9b7e337b8e5efa",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10373,
+    "aliases": 2042,
+    "end_offset": 1330999,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\hr.pak",
+    "sha256": "d2d55568886ef5bb2a073e619f8dbf98a3ff341ce5ba6f3f362224081cc0cdc8",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10462,
+    "aliases": 1953,
+    "end_offset": 600581,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\hu.pak",
+    "sha256": "d3f6a1560e893042b92f40a56b5761790e94a78efda73a26a640dd21997443ae",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10397,
+    "aliases": 2018,
+    "end_offset": 646489,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\id.pak",
+    "sha256": "8f84ac460c88e44518e2c5165d0758e8d0f2c6223cfb5ca6ad5507aae79f67bd",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10424,
+    "aliases": 1991,
+    "end_offset": 535422,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\it.pak",
+    "sha256": "fd236c934edfae7fe10176f9d7a2293838d2cd59f54beb7af689cd61014a51c9",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10429,
+    "aliases": 1986,
+    "end_offset": 594371,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\ja.pak",
+    "sha256": "539e2195c7e7bbf7b2976e9b3b4950bc4a6616a590cf85678bd264387382de1c",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10228,
+    "aliases": 2187,
+    "end_offset": 719063,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\kn.pak",
+    "sha256": "70d9698ad1cb9d78e1eab70e7e1161ca4216399969991922abd0edeae0ecbb01",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10479,
+    "aliases": 1936,
+    "end_offset": 1424332,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\ko.pak",
+    "sha256": "a21b8cb55ed43abd51fb2f97d40208be637b3cb2dae2f55b3abd210722e67951",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10185,
+    "aliases": 2230,
+    "end_offset": 606589,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\lt.pak",
+    "sha256": "160b2da4626a0ce7570460ed48326352f25624753dcc6a6aa90c6906eca15eb5",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10439,
+    "aliases": 1976,
+    "end_offset": 652194,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\lv.pak",
+    "sha256": "70e1736c8d1406513ccf47ad85eec64f46f2ada1a7aab1ddddeb049170152f14",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10472,
+    "aliases": 1943,
+    "end_offset": 651016,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\ml.pak",
+    "sha256": "7f42ec438ff13b97b775146033fce3ee33a73d0806e89b61f6f284a80e1c350b",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10471,
+    "aliases": 1944,
+    "end_offset": 1479560,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\mr.pak",
+    "sha256": "7277f688e1773d68088ce48efabf2dde4386c7cc5cfc579a8e16806eb0e37989",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10394,
+    "aliases": 2021,
+    "end_offset": 1223735,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\ms.pak",
+    "sha256": "95d27fc7023e763c546bf19d9d214b1d1eaef1ea01dab23391fe5fba7361a674",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10476,
+    "aliases": 1939,
+    "end_offset": 560048,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\nb.pak",
+    "sha256": "c135a7f5f35a3533a2da5666768cb78402580ecb41e1309eee580816a8a0ac28",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10446,
+    "aliases": 1969,
+    "end_offset": 543051,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\nl.pak",
+    "sha256": "39bbe7e945c5cedf6a53f88fbc5c298a65e48192fe46c4e6a66c289b0869de1c",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10423,
+    "aliases": 1992,
+    "end_offset": 562204,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\pl.pak",
+    "sha256": "9ad6f0c5b4c3f335b155251b07261f5241a29892667fa607817e48abeae19462",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10444,
+    "aliases": 1971,
+    "end_offset": 627081,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\pt-BR.pak",
+    "sha256": "8e5466e2acbe6e350dc3b0752495dfa44eaf1da8e6054ffba9c320c4277c96d1",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10448,
+    "aliases": 1967,
+    "end_offset": 587941,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\pt-PT.pak",
+    "sha256": "f193c222cfd9cd723dbd7839cf45c14b7749cde5527b552160df819c72b442c1",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10475,
+    "aliases": 1940,
+    "end_offset": 592511,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\ro.pak",
+    "sha256": "31c2568ba713ce7d9b2a784b8bce09b116408a5943171b2baf84b83a2cdd2801",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10446,
+    "aliases": 1969,
+    "end_offset": 612678,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\ru.pak",
+    "sha256": "8badbaff9761b5cfa26a409524c2c85f252ec2166449edb32246a2bee5f914b0",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10272,
+    "aliases": 2143,
+    "end_offset": 1003077,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\sk.pak",
+    "sha256": "6491c4f1c9e8ad0a498cf2a5fe11467fd419fa105622977105915639341f1c27",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10453,
+    "aliases": 1962,
+    "end_offset": 632482,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\sl.pak",
+    "sha256": "97b5ab48cc42512a693fa7887acc7d4f3ea5cdd9e6bbf334fa2940c922e121af",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10427,
+    "aliases": 1988,
+    "end_offset": 607050,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\sr.pak",
+    "sha256": "d53039029b8b60ffca583896abe66e860016bf8b250df689bece5e17c2d86abc",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10458,
+    "aliases": 1957,
+    "end_offset": 929699,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\sv.pak",
+    "sha256": "669fbcc98ccb78259f497e965efbf2ba38e5c0e5ad6d50c588f013c018e03d7a",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10387,
+    "aliases": 2028,
+    "end_offset": 547471,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\sw.pak",
+    "sha256": "c8a7fe1af281b73985da58b66570150c4df27b0425f81068df6949799ada2769",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10443,
+    "aliases": 1972,
+    "end_offset": 576117,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\ta.pak",
+    "sha256": "4019bcfd216e224924e34cb879b8cec6d91fde49d4a362aede9120bc9355543e",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10411,
+    "aliases": 2004,
+    "end_offset": 1475609,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\te.pak",
+    "sha256": "cd3a666d5f0091ac4c6f065b45ab21a30a9fe2a1073f8c6bf6192f123ad8156c",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10476,
+    "aliases": 1939,
+    "end_offset": 1361935,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\th.pak",
+    "sha256": "114d7a817a0c73f2d0bff438eb6a076ad76a8bfb2c561e542aeb699cbf1298ef",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10209,
+    "aliases": 2206,
+    "end_offset": 1144623,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\tr.pak",
+    "sha256": "982728b531abdb1c2e33fc65203bb20e3abac226674b4611d8d609a82a483cb2",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10493,
+    "aliases": 1922,
+    "end_offset": 587129,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\uk.pak",
+    "sha256": "54e5c7d4cb654c880c54051b35ec108dff28621afcc896a7d227d3b01a98c60b",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10362,
+    "aliases": 2053,
+    "end_offset": 1001189,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\ur.pak",
+    "sha256": "04a50bcbedd0760bb9c6e0628d8e520d58e8f9e9655c76349bceea5a891783d5",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10441,
+    "aliases": 1974,
+    "end_offset": 872334,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\vi.pak",
+    "sha256": "f87b6a8530ffa5760367c62260b6bceaeb9148f58ad4041222dbd9592488299e",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10358,
+    "aliases": 2057,
+    "end_offset": 695768,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\zh-CN.pak",
+    "sha256": "dc5703f8267b4343a9d8e6acf5b82a4a52559f494c4555aded02f29cf20ed631",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10297,
+    "aliases": 2118,
+    "end_offset": 503346,
+    "valid_end": true
+  },
+  {
+    "path": "NVIDIA App\\CEF\\locales\\zh-TW.pak",
+    "sha256": "ccaf09ef99e6feda260aee9cd073bd7513223f770422d799d7490a6f16f44fc5",
+    "version": 5,
+    "encoding": 1,
+    "resources": 10251,
+    "aliases": 2164,
+    "end_offset": 500142,
+    "valid_end": true
+  }
+]

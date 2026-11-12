@@ -1,0 +1,2482 @@
+[
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\box_checked_disabled.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\box_checked_disabled_rtl.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\box_checked_enabled.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\box_checked_enabled_rtl.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\box_partialcheckboxed_enabled.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\box_unchecked_disabled.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\box_unchecked_enabled.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\check.png",
+    "width": 32,
+    "height": 32,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\circled_checkmark.png",
+    "width": 64,
+    "height": 64,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\error.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\info.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\install_bg.png",
+    "width": 3160,
+    "height": 2132,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\install_bg_rtl.png",
+    "width": 3160,
+    "height": 2132,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\presentations_bg.png",
+    "width": 3160,
+    "height": 2132,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_disabled_large.png",
+    "width": 476,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_disabled_medium.png",
+    "width": 304,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_disabled_small.png",
+    "width": 212,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_enabled_large.png",
+    "width": 476,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_enabled_medium.png",
+    "width": 304,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_enabled_small.png",
+    "width": 212,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_focused_large.png",
+    "width": 476,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_focused_medium.png",
+    "width": 304,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_focused_small.png",
+    "width": 212,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_hover_large.png",
+    "width": 476,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_hover_medium.png",
+    "width": 304,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_hover_small.png",
+    "width": 212,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_pressed_large.png",
+    "width": 476,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_pressed_medium.png",
+    "width": 304,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\primary_btn_pressed_small.png",
+    "width": 212,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\radio_btn_selected.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\radio_btn_unselected.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_disabled_large.png",
+    "width": 476,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_disabled_medium.png",
+    "width": 304,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_disabled_small.png",
+    "width": 212,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_enabled_large.png",
+    "width": 476,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_enabled_medium.png",
+    "width": 304,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_enabled_small.png",
+    "width": 212,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_focused_large.png",
+    "width": 476,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_focused_medium.png",
+    "width": 304,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_focused_small.png",
+    "width": 212,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_hover_large.png",
+    "width": 476,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_hover_medium.png",
+    "width": 304,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_hover_small.png",
+    "width": 212,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_pressed_large.png",
+    "width": 476,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_pressed_medium.png",
+    "width": 304,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\secondary_btn_pressed_small.png",
+    "width": 212,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\sidebar_current_state.png",
+    "width": 280,
+    "height": 80,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\sidebar_current_state_rtl.png",
+    "width": 280,
+    "height": 80,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\sidebar_done_state.png",
+    "width": 32,
+    "height": 32,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\splash.png",
+    "width": 3160,
+    "height": 2132,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\splash_rtl.png",
+    "width": 3160,
+    "height": 2132,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\uninstall_bg.png",
+    "width": 3160,
+    "height": 2132,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\uninstall_bg_rtl.png",
+    "width": 3160,
+    "height": 2132,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\warning.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\box_checked_disabled.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\box_checked_disabled_rtl.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\box_checked_enabled.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\box_checked_enabled_rtl.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\box_partialcheckboxed_enabled.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\box_unchecked_disabled.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\box_unchecked_enabled.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\check.png",
+    "width": 32,
+    "height": 32,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\circled_checkmark.png",
+    "width": 64,
+    "height": 64,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\error.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\info.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\install_bg.png",
+    "width": 3160,
+    "height": 2132,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\install_bg_rtl.png",
+    "width": 3160,
+    "height": 2132,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\presentations_bg.png",
+    "width": 3160,
+    "height": 2132,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_disabled_large.png",
+    "width": 476,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_disabled_medium.png",
+    "width": 304,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_disabled_small.png",
+    "width": 212,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_enabled_large.png",
+    "width": 476,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_enabled_medium.png",
+    "width": 304,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_enabled_small.png",
+    "width": 212,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_focused_large.png",
+    "width": 476,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_focused_medium.png",
+    "width": 304,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_focused_small.png",
+    "width": 212,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_hover_large.png",
+    "width": 476,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_hover_medium.png",
+    "width": 304,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_hover_small.png",
+    "width": 212,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_pressed_large.png",
+    "width": 476,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_pressed_medium.png",
+    "width": 304,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\primary_btn_pressed_small.png",
+    "width": 212,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\radio_btn_selected.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\radio_btn_unselected.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_disabled_large.png",
+    "width": 476,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_disabled_medium.png",
+    "width": 304,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_disabled_small.png",
+    "width": 212,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_enabled_large.png",
+    "width": 476,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_enabled_medium.png",
+    "width": 304,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_enabled_small.png",
+    "width": 212,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_focused_large.png",
+    "width": 476,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_focused_medium.png",
+    "width": 304,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_focused_small.png",
+    "width": 212,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_hover_large.png",
+    "width": 476,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_hover_medium.png",
+    "width": 304,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_hover_small.png",
+    "width": 212,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_pressed_large.png",
+    "width": 476,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_pressed_medium.png",
+    "width": 304,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\secondary_btn_pressed_small.png",
+    "width": 212,
+    "height": 72,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\sidebar_current_state.png",
+    "width": 280,
+    "height": 80,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\sidebar_current_state_rtl.png",
+    "width": 280,
+    "height": 80,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\sidebar_done_state.png",
+    "width": 32,
+    "height": 32,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\splash.png",
+    "width": 3160,
+    "height": 2132,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\splash_rtl.png",
+    "width": 3160,
+    "height": 2132,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\uninstall_bg.png",
+    "width": 3160,
+    "height": 2132,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\uninstall_bg_rtl.png",
+    "width": 3160,
+    "height": 2132,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{6A60FC95-B715-4D48-B47C-A641FE74BA72}\\warning.png",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\EULA_bg.png",
+    "width": 760,
+    "height": 500,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\Green_btn_Disabled.png",
+    "width": 101,
+    "height": 36,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\Green_btn_Enabled.png",
+    "width": 101,
+    "height": 36,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\Green_btn_Focus.png",
+    "width": 101,
+    "height": 36,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\Green_btn_Hover.png",
+    "width": 101,
+    "height": 36,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\Green_btn_Pressed.png",
+    "width": 101,
+    "height": 36,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\Installer_ELA_Splash_bg1a.png",
+    "width": 3160,
+    "height": 2120,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\Installer_ELA_Splash_bg1a_light.png",
+    "width": 3160,
+    "height": 2120,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\Installer_ELA_Splash_bg2a.png",
+    "width": 3160,
+    "height": 2120,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\Installer_ELA_Splash_bg2a_light.png",
+    "width": 3160,
+    "height": 2120,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\Main_BG.png",
+    "width": 790,
+    "height": 530,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\Main_BG_light.png",
+    "width": 3160,
+    "height": 2120,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\alert-circle.png",
+    "width": 16,
+    "height": 16,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\close.png",
+    "width": 20,
+    "height": 16,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\close_disabled.png",
+    "width": 20,
+    "height": 16,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\close_disabled_light.png",
+    "width": 20,
+    "height": 16,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\close_focus.png",
+    "width": 20,
+    "height": 16,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\close_focus_light.png",
+    "width": 20,
+    "height": 16,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\close_light.png",
+    "width": 20,
+    "height": 16,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\close_pressed.png",
+    "width": 20,
+    "height": 16,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\close_pressed_light.png",
+    "width": 20,
+    "height": 16,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\frame_divider_bar.png",
+    "width": 790,
+    "height": 1,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\gfe-migration_bg.png",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\gfe-migration_bg_RTL.png",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\installer_bg1.png",
+    "width": 430,
+    "height": 188,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\installer_bg2.png",
+    "width": 430,
+    "height": 136,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\min.png",
+    "width": 20,
+    "height": 16,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\min_focus.png",
+    "width": 20,
+    "height": 16,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\min_focus_light.png",
+    "width": 20,
+    "height": 16,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\min_light.png",
+    "width": 20,
+    "height": 16,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\min_pressed.png",
+    "width": 20,
+    "height": 16,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\min_pressed_light.png",
+    "width": 20,
+    "height": 16,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\pre_install_bkg.png",
+    "width": 3160,
+    "height": 2120,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\pre_install_bkg_light.png",
+    "width": 3160,
+    "height": 2120,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\primary_btn_enabled.png",
+    "width": 159,
+    "height": 36,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\primary_btn_enabled_light.png",
+    "width": 159,
+    "height": 36,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\primary_btn_focused.png",
+    "width": 159,
+    "height": 36,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\primary_btn_focused_light.png",
+    "width": 159,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\primary_btn_hover.png",
+    "width": 159,
+    "height": 36,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\primary_btn_hover_light.png",
+    "width": 159,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\primary_btn_pressed.png",
+    "width": 159,
+    "height": 36,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\primary_btn_pressed_light.png",
+    "width": 159,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartlater_btn_enabled.png",
+    "width": 111,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartlater_btn_enabled_light.png",
+    "width": 111,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartlater_btn_focused.png",
+    "width": 111,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartlater_btn_focused_light.png",
+    "width": 111,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartlater_btn_hover.png",
+    "width": 111,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartlater_btn_hover_light.png",
+    "width": 111,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartlater_btn_pressed.png",
+    "width": 111,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartlater_btn_pressed_light.png",
+    "width": 111,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartnow_btn_enabled.png",
+    "width": 103,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartnow_btn_enabled_light.png",
+    "width": 103,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartnow_btn_focused.png",
+    "width": 103,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartnow_btn_focused_light.png",
+    "width": 103,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartnow_btn_hover.png",
+    "width": 103,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartnow_btn_hover_light.png",
+    "width": 103,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartnow_btn_pressed.png",
+    "width": 103,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\restartnow_btn_pressed_light.png",
+    "width": 103,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\secondary_btn_enabled.png",
+    "width": 83,
+    "height": 36,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\secondary_btn_enabled_light.png",
+    "width": 83,
+    "height": 36,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\secondary_btn_focused.png",
+    "width": 83,
+    "height": 36,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\secondary_btn_focused_light.png",
+    "width": 83,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\secondary_btn_hover.png",
+    "width": 83,
+    "height": 36,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\secondary_btn_hover_light.png",
+    "width": 83,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\secondary_btn_pressed.png",
+    "width": 83,
+    "height": 36,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\secondary_btn_pressed_light.png",
+    "width": 83,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\splash.png",
+    "width": 310,
+    "height": 156,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\uninstall_btn_enabled.png",
+    "width": 96,
+    "height": 36,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\uninstall_btn_enabled_light.png",
+    "width": 96,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\uninstall_btn_focused.png",
+    "width": 96,
+    "height": 36,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\uninstall_btn_focused_light.png",
+    "width": 96,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\uninstall_btn_hover.png",
+    "width": 96,
+    "height": 36,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\uninstall_btn_hover_light.png",
+    "width": 96,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\uninstall_btn_pressed.png",
+    "width": 96,
+    "height": 36,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\uninstall_btn_pressed_light.png",
+    "width": 96,
+    "height": 36,
+    "mode": "RGB",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\osc\\DefaultStreamerBackgroundArt.a079e7d7fdd1ed01.jpg",
+    "width": 2560,
+    "height": 1347,
+    "mode": "RGB",
+    "format": "JPEG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\osc\\favicon.ico",
+    "width": 32,
+    "height": 32,
+    "mode": "RGBA",
+    "format": "ICO",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\osc\\mobile_marquee_hero_mask_ltr.847d01c9a13bfbfb.webp",
+    "width": 1920,
+    "height": 620,
+    "mode": "RGBA",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\osc\\mobile_marquee_hero_mask_rtl.11d53446b93cdd22.webp",
+    "width": 1920,
+    "height": 620,
+    "mode": "RGBA",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\favicon.ico",
+    "width": 28,
+    "height": 30,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\img\\icon.png",
+    "width": 16,
+    "height": 16,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\img\\1.25X\\icon1.25.png",
+    "width": 20,
+    "height": 20,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\img\\1.5X\\icon1.5.png",
+    "width": 24,
+    "height": 24,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\img\\2.0X\\icon2.0.png",
+    "width": 32,
+    "height": 32,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\img\\2.5X\\icon2.5.png",
+    "width": 40,
+    "height": 40,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.0X\\close_default_icon10.png",
+    "width": 25,
+    "height": 20,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.0X\\close_disable_icon10.png",
+    "width": 25,
+    "height": 20,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.0X\\close_hover_icon10.png",
+    "width": 25,
+    "height": 20,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.0X\\close_press_icon10.png",
+    "width": 25,
+    "height": 20,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.0X\\maximize_default_icon10.png",
+    "width": 25,
+    "height": 20,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.0X\\maximize_disable_icon10.png",
+    "width": 25,
+    "height": 20,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.0X\\maximize_hover_icon10.png",
+    "width": 25,
+    "height": 20,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.0X\\maximize_press_icon10.png",
+    "width": 25,
+    "height": 20,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.0X\\minimize_default_icon10.png",
+    "width": 25,
+    "height": 20,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.0X\\minimize_disable_icon10.png",
+    "width": 25,
+    "height": 20,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.0X\\minimize_hover_icon10.png",
+    "width": 25,
+    "height": 20,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.0X\\minimize_press_icon10.png",
+    "width": 25,
+    "height": 20,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.0X\\windowmode_default_icon10.png",
+    "width": 25,
+    "height": 20,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.0X\\windowmode_disable_icon10.png",
+    "width": 25,
+    "height": 20,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.0X\\windowmode_hover_icon10.png",
+    "width": 25,
+    "height": 20,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.0X\\windowmode_press_icon10.png",
+    "width": 25,
+    "height": 20,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.25X\\close_default_icon125.png",
+    "width": 32,
+    "height": 25,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.25X\\close_disable_icon125.png",
+    "width": 32,
+    "height": 25,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.25X\\close_hover_icon125.png",
+    "width": 32,
+    "height": 25,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.25X\\close_press_icon125.png",
+    "width": 32,
+    "height": 25,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.25X\\maximize_default_icon125.png",
+    "width": 32,
+    "height": 25,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.25X\\maximize_disable_icon125.png",
+    "width": 32,
+    "height": 25,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.25X\\maximize_hover_icon125.png",
+    "width": 32,
+    "height": 25,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.25X\\maximize_press_icon125.png",
+    "width": 32,
+    "height": 25,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.25X\\minimize_default_icon125.png",
+    "width": 32,
+    "height": 25,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.25X\\minimize_disable_icon125.png",
+    "width": 32,
+    "height": 25,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.25X\\minimize_hover_icon125.png",
+    "width": 32,
+    "height": 25,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.25X\\minimize_press_icon125.png",
+    "width": 32,
+    "height": 25,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.25X\\windowmode_default_icon125.png",
+    "width": 32,
+    "height": 25,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.25X\\windowmode_disable_icon125.png",
+    "width": 32,
+    "height": 25,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.25X\\windowmode_hover_icon125.png",
+    "width": 32,
+    "height": 25,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.25X\\windowmode_press_icon125.png",
+    "width": 32,
+    "height": 25,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.5X\\close_default_icon15.png",
+    "width": 38,
+    "height": 30,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.5X\\close_disable_icon15.png",
+    "width": 38,
+    "height": 30,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.5X\\close_hover_icon15.png",
+    "width": 38,
+    "height": 30,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.5X\\close_press_icon15.png",
+    "width": 38,
+    "height": 30,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.5X\\maximize_default_icon15.png",
+    "width": 38,
+    "height": 30,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.5X\\maximize_disable_icon15.png",
+    "width": 38,
+    "height": 30,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.5X\\maximize_hover_icon15.png",
+    "width": 38,
+    "height": 30,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.5X\\maximize_press_icon15.png",
+    "width": 38,
+    "height": 30,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.5X\\minimize_default_icon15.png",
+    "width": 38,
+    "height": 30,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.5X\\minimize_disable_icon15.png",
+    "width": 38,
+    "height": 30,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.5X\\minimize_hover_icon15.png",
+    "width": 38,
+    "height": 30,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.5X\\minimize_press_icon15.png",
+    "width": 38,
+    "height": 30,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.5X\\windowmode_default_icon15.png",
+    "width": 38,
+    "height": 30,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.5X\\windowmode_disable_icon15.png",
+    "width": 38,
+    "height": 30,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.5X\\windowmode_hover_icon15.png",
+    "width": 38,
+    "height": 30,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\1.5X\\windowmode_press_icon15.png",
+    "width": 38,
+    "height": 30,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.0X\\close_default_icon20.png",
+    "width": 50,
+    "height": 40,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.0X\\close_disable_icon20.png",
+    "width": 50,
+    "height": 40,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.0X\\close_hover_icon20.png",
+    "width": 50,
+    "height": 40,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.0X\\close_press_icon20.png",
+    "width": 50,
+    "height": 40,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.0X\\maximize_default_icon20.png",
+    "width": 50,
+    "height": 40,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.0X\\maximize_disable_icon20.png",
+    "width": 50,
+    "height": 40,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.0X\\maximize_hover_icon20.png",
+    "width": 50,
+    "height": 40,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.0X\\maximize_press_icon20.png",
+    "width": 50,
+    "height": 40,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.0X\\minimize_default_icon20.png",
+    "width": 50,
+    "height": 40,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.0X\\minimize_disable_icon20.png",
+    "width": 50,
+    "height": 40,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.0X\\minimize_hover_icon20.png",
+    "width": 50,
+    "height": 40,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.0X\\minimize_press_icon20.png",
+    "width": 50,
+    "height": 40,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.0X\\windowmode_default_icon20.png",
+    "width": 50,
+    "height": 40,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.0X\\windowmode_disable_icon20.png",
+    "width": 50,
+    "height": 40,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.0X\\windowmode_hover_icon20.png",
+    "width": 50,
+    "height": 40,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.0X\\windowmode_press_icon20.png",
+    "width": 50,
+    "height": 40,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.5X\\close_default_icon25.png",
+    "width": 63,
+    "height": 50,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.5X\\close_disable_icon25.png",
+    "width": 63,
+    "height": 50,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.5X\\close_hover_icon25.png",
+    "width": 63,
+    "height": 50,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.5X\\close_press_icon25.png",
+    "width": 63,
+    "height": 50,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.5X\\maximize_default_icon25.png",
+    "width": 63,
+    "height": 50,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.5X\\maximize_disable_icon25.png",
+    "width": 63,
+    "height": 50,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.5X\\maximize_hover_icon25.png",
+    "width": 63,
+    "height": 50,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.5X\\maximize_press_icon25.png",
+    "width": 63,
+    "height": 50,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.5X\\minimize_default_icon25.png",
+    "width": 63,
+    "height": 50,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.5X\\minimize_disable_icon25.png",
+    "width": 63,
+    "height": 50,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.5X\\minimize_hover_icon25.png",
+    "width": 63,
+    "height": 50,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.5X\\minimize_press_icon25.png",
+    "width": 63,
+    "height": 50,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.5X\\windowmode_default_icon25.png",
+    "width": 63,
+    "height": 50,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.5X\\windowmode_disable_icon25.png",
+    "width": 63,
+    "height": 50,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.5X\\windowmode_hover_icon25.png",
+    "width": 63,
+    "height": 50,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\cefclient\\light\\2.5X\\windowmode_press_icon25.png",
+    "width": 63,
+    "height": 50,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\hashed\\mobile_marquee_hero_mask_ltr.847d01c9a13bfbfb.webp",
+    "width": 1920,
+    "height": 620,
+    "mode": "RGBA",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\hashed\\mobile_marquee_hero_mask_rtl.11d53446b93cdd22.webp",
+    "width": 1920,
+    "height": 620,
+    "mode": "RGBA",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\hashed\\ootb-grd-driver-experience.ae47d97afbef711e.jpg",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "JPEG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\hashed\\ootb-grd-ops-experience.98c0923bd68cfd11.jpg",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "JPEG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\hashed\\ootb-grd-overlay-experience.a712d389f2f636aa.webp",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\hashed\\ootb-grd-rewards-experience.d08599b6dfba97ba.webp",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\hashed\\ootb-nsd-driver-experience.d8406fe99b7df33f.webp",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\hashed\\ootb-nsd-ops-experience.649207328eda51ff.webp",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\hashed\\ootb-nsd-overlay-experience.143ab5b607f0db65.webp",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\hashed\\ootb-nsd-rewards-experience.dc6251a422b0d9bb.webp",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\hashed\\ootb-nwd-driver-experience.5039068ad925bc01.webp",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\hashed\\ootb-nwd-ops-experience.5cd200c7395eae61.webp",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\hashed\\ootb-nwd-overlay-experience.c38db2b6d23a19d1.webp",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\DefaultGameArt.jpg",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "JPEG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\Marquee_Hero_Image_Fallback.webp",
+    "width": 1920,
+    "height": 620,
+    "mode": "RGBA",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\coupons_expandable_banner.webp",
+    "width": 742,
+    "height": 280,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\driver_update_notification_grd_fallback.webp",
+    "width": 364,
+    "height": 180,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\driver_update_notification_nsd_fallback.webp",
+    "width": 364,
+    "height": 180,
+    "mode": "RGBA",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\grd_desktop_notification_icon.webp",
+    "width": 48,
+    "height": 48,
+    "mode": "RGBA",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\grd_marquee_fallback.webp",
+    "width": 3840,
+    "height": 1240,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\mobile_marquee_hero_mask_ltr.webp",
+    "width": 1920,
+    "height": 620,
+    "mode": "RGBA",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\mobile_marquee_hero_mask_rtl.webp",
+    "width": 1920,
+    "height": 620,
+    "mode": "RGBA",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\nsd_marquee_fallback.webp",
+    "width": 1920,
+    "height": 620,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\nwd_marquee_fallback.webp",
+    "width": 1920,
+    "height": 620,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\ootb-grd-driver-experience.jpg",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "JPEG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\ootb-grd-ops-experience.jpg",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "JPEG",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\ootb-grd-overlay-experience.webp",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\ootb-grd-rewards-experience.webp",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\ootb-nsd-driver-experience.webp",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\ootb-nsd-ops-experience.webp",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\ootb-nsd-overlay-experience.webp",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\ootb-nsd-rewards-experience.webp",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\ootb-nwd-discovery-experience.webp",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\ootb-nwd-driver-experience.webp",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\ootb-nwd-ops-experience.webp",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\ootb-nwd-overlay-experience.webp",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGB",
+    "format": "WEBP",
+    "frames": 1
+  },
+  {
+    "path": "NVIDIA App\\www\\assets\\img\\rtx-spark-desktop-notification.png",
+    "width": 364,
+    "height": 180,
+    "mode": "RGBA",
+    "format": "PNG",
+    "frames": 1
+  }
+]

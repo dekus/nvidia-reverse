@@ -1,0 +1,350 @@
+[
+  {
+    "file_offset": "0x225d30",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#OverClockingNvcplugin",
+      "title": "OverClockingNvcPlugin Endpoints",
+      "type": "object",
+      "module": "OverClockingNvc",
+      "definitions": {
+        "SliderSetting": {
+          "type": "object",
+          "properties": {
+            "min": {
+              "type": "integer",
+              "description": "Minimum range value"
+            },
+            "max": {
+              "type": "integer",
+              "description": "Maximum range value"
+            },
+            "current": {
+              "type": "integer",
+              "description": "current value of the slider"
+            },
+            "absolute": {
+              "type": "integer",
+              "description": "Absolute value of the object"
+            },
+            "default": {
+              "type": "integer",
+              "description": "default value of the slider"
+            },
+            "type": {
+              "type": "integer",
+              "description": "Type of the slider",
+              "enum": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "tsEnumNames": [
+                "Unknown",
+                "GpuClock",
+                "MemoryClock",
+                "Voltage",
+                "Power",
+                "Temperature",
+                "Fan"
+              ]
+            },
+            "isSupported": {
+              "type": "boolean",
+              "description": "whether slider is supported on the system or not"
+            }
+          }
+        },
+        "SetManualOCLimits": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "uiGpuId": {
+                "type": "integer"
+              },
+              "sliders": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/SliderSetting"
+                }
+              }
+            },
+            "required": [
+              "uiGpuId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "boolean",
+                "description": "true if successfully set otherwise false"
+              }
+            },
+            "required": [
+              "result"
+            ]
+          }
+        },
+        "StartOcManualScan": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "uiGpuId": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "uiGpuId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "boolean",
+                "description": "true if successfully set otherwise false"
+              }
+            },
+            "required": [
+              "result"
+            ]
+          }
+        },
+        "StopOcManualScan": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "uiGpuId": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "uiGpuId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "boolean",
+                "description": "true if successfully set otherwise false"
+              }
+            },
+            "required": [
+              "result"
+            ]
+          }
+        },
+        "EnableBackgroundOcScan": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "uiGpuId": {
+                "type": "integer"
+              },
+              "enable": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "uiGpuId",
+              "enable"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "boolean",
+                "description": "true if successfully set otherwise false"
+              }
+            },
+            "required": [
+              "result"
+            ]
+          }
+        },
+        "EnableAutotuneOc": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "uiGpuId": {
+                "type": "integer"
+              },
+              "enable": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "uiGpuId",
+              "enable"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "boolean",
+                "description": "true if successfully set otherwise false"
+              }
+            },
+            "required": [
+              "result"
+            ]
+          }
+        },
+        "RestoreOcDefault": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "uiGpuId": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "uiGpuId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "boolean",
+                "description": "true if successfully set otherwise false"
+              }
+            },
+            "required": [
+              "result"
+            ]
+          }
+        },
+        "FanSetting": {
+          "type": "object",
+          "properties": {
+            "index": {
+              "type": "integer",
+              "description": "Fan index"
+            },
+            "autoPower": {
+              "type": "boolean",
+              "description": "Whether Fan is user contolled ot hardware controlled"
+            },
+            "isVisible": {
+              "type": "boolean",
+              "description": "If fan control is Visible on current system"
+            },
+            "sliderSetting": {
+              "$ref": "#/definitions/SliderSetting"
+            }
+          }
+        },
+        "SetFanSettings": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "uiGpuId": {
+                "type": "integer"
+              },
+              "fanSettings": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/FanSetting"
+                }
+              }
+            },
+            "required": [
+              "uiGpuId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "boolean",
+                "description": "true if successfully set otherwise false"
+              }
+            },
+            "required": [
+              "result"
+            ]
+          }
+        },
+        "SetPerfProfile": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "uiGpuId": {
+                "type": "integer"
+              },
+              "profile": {
+                "type": "integer",
+                "description": "Type of the profile",
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "tsEnumNames": [
+                  "Default",
+                  "Custom",
+                  "Silent",
+                  "MaxPerf"
+                ]
+              },
+              "sliders": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/SliderSetting"
+                }
+              },
+              "fanSettings": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/FanSetting"
+                }
+              }
+            },
+            "required": [
+              "uiGpuId",
+              "profile"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "boolean",
+                "description": "true if successfully set otherwise false"
+              }
+            },
+            "required": [
+              "result"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

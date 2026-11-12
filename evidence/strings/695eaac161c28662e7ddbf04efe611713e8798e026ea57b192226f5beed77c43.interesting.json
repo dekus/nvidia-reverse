@@ -1,0 +1,47 @@
+[
+  {
+    "offset": "0xd50da",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0xadf18",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0xae020",
+    "encoding": "utf-16le",
+    "text": "HKEY_CLASSES_ROOT"
+  },
+  {
+    "offset": "0xae044",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0xae068",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0xae090",
+    "encoding": "utf-16le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0xae1a0",
+    "encoding": "utf-16le",
+    "text": "\\registry\\machine\\software\\classes"
+  },
+  {
+    "offset": "0xbb3b6",
+    "encoding": "utf-16le",
+    "text": "hSoftware\\NVIDIA Corporation\\Logging\\Definitions\\LogFilters\\PassFilter"
+  },
+  {
+    "offset": "0xbb4d8",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Logging"
+  }
+]

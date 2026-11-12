@@ -1,0 +1,357 @@
+[
+  {
+    "offset": "0x2522c0",
+    "encoding": "ascii",
+    "text": "NvcPluginStart ignored NvPluginWindow handle"
+  },
+  {
+    "offset": "0x2555b8",
+    "encoding": "ascii",
+    "text": "TelemetryManager cannot be null"
+  },
+  {
+    "offset": "0x256268",
+    "encoding": "ascii",
+    "text": "nv-nvtelemetry-config-path"
+  },
+  {
+    "offset": "0x256290",
+    "encoding": "ascii",
+    "text": "nv-nvtelemetry-binaries-path"
+  },
+  {
+    "offset": "0x256bb8",
+    "encoding": "ascii",
+    "text": "hasRequiredConsent"
+  },
+  {
+    "offset": "0x256bd0",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: hasRequiredConsent is not bool"
+  },
+  {
+    "offset": "0x256c10",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: no member hasFunctionalConsent found or it is not bool"
+  },
+  {
+    "offset": "0x256c70",
+    "encoding": "ascii",
+    "text": "hasFunctionalConsent"
+  },
+  {
+    "offset": "0x256c90",
+    "encoding": "ascii",
+    "text": "hasTechnicalConsent"
+  },
+  {
+    "offset": "0x256ca8",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: hasTechnicalConsent is not bool"
+  },
+  {
+    "offset": "0x256cf0",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: no member hasBehavioralConsent found or it is not bool"
+  },
+  {
+    "offset": "0x256d50",
+    "encoding": "ascii",
+    "text": "hasBehavioralConsent"
+  },
+  {
+    "offset": "0x256dc8",
+    "encoding": "ascii",
+    "text": ": no corresponding member found in enum PrivacySettings"
+  },
+  {
+    "offset": "0x256e28",
+    "encoding": "ascii",
+    "text": "Invalid PrivacySettings value passed: "
+  },
+  {
+    "offset": "0x2573b8",
+    "encoding": "ascii",
+    "text": "consentLevel"
+  },
+  {
+    "offset": "0x257500",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: no member privacySettings found or it is not std::string"
+  },
+  {
+    "offset": "0x257560",
+    "encoding": "ascii",
+    "text": "privacySettings"
+  },
+  {
+    "offset": "0x257578",
+    "encoding": "ascii",
+    "text": "deviceConsent"
+  },
+  {
+    "offset": "0x258478",
+    "encoding": "ascii",
+    "text": "NvMessageBus.dll"
+  },
+  {
+    "offset": "0x25a070",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\common\\NvTelemetryClients\\DiagNvTmEvents.cpp"
+  },
+  {
+    "offset": "0x25a2b8",
+    "encoding": "ascii",
+    "text": "Check gs_telemetry failed"
+  },
+  {
+    "offset": "0x25a930",
+    "encoding": "ascii",
+    "text": "InitializeTelemetry"
+  },
+  {
+    "offset": "0x25a998",
+    "encoding": "ascii",
+    "text": "InitializeTelemetry_2"
+  },
+  {
+    "offset": "0x25aa50",
+    "encoding": "ascii",
+    "text": "InitializeTelemetryStandalone"
+  },
+  {
+    "offset": "0x25ab68",
+    "encoding": "ascii",
+    "text": "InitializeTelemetryStandalone_2"
+  },
+  {
+    "offset": "0x25ac50",
+    "encoding": "ascii",
+    "text": "UninitializeTelemetry"
+  },
+  {
+    "offset": "0x25ad10",
+    "encoding": "ascii",
+    "text": "GetUserTelemetryConsent"
+  },
+  {
+    "offset": "0x25ad30",
+    "encoding": "ascii",
+    "text": "Check m_getUserTelemetryConsent failed"
+  },
+  {
+    "offset": "0x25ad60",
+    "encoding": "ascii",
+    "text": "GetDeviceTelemetryConsent"
+  },
+  {
+    "offset": "0x25ad80",
+    "encoding": "ascii",
+    "text": "Check m_getDeviceTelemetryConsent failed"
+  },
+  {
+    "offset": "0x25adb8",
+    "encoding": "ascii",
+    "text": "SetUserTelemetryConsent"
+  },
+  {
+    "offset": "0x25add8",
+    "encoding": "ascii",
+    "text": "Check m_setUserTelemetryConsent failed"
+  },
+  {
+    "offset": "0x25ae08",
+    "encoding": "ascii",
+    "text": "SetDeviceTelemetryConsent"
+  },
+  {
+    "offset": "0x25ae28",
+    "encoding": "ascii",
+    "text": "Check m_setDeviceTelemetryConsent failed"
+  },
+  {
+    "offset": "0x25ae60",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendEvent"
+  },
+  {
+    "offset": "0x25aea0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendAnonymousEvent"
+  },
+  {
+    "offset": "0x25aef0",
+    "encoding": "ascii",
+    "text": "SubscribeForTelemetryNotifications"
+  },
+  {
+    "offset": "0x25af40",
+    "encoding": "ascii",
+    "text": "UnsubscribeFromTelemetryNotifications"
+  },
+  {
+    "offset": "0x25af90",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendEvent_2"
+  },
+  {
+    "offset": "0x25afd0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendAnonymousEvent_2"
+  },
+  {
+    "offset": "0x25b028",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_2"
+  },
+  {
+    "offset": "0x25b070",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_3"
+  },
+  {
+    "offset": "0x25b090",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_4"
+  },
+  {
+    "offset": "0x25b0b0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_5"
+  },
+  {
+    "offset": "0x25b0d0",
+    "encoding": "ascii",
+    "text": "FreeTelemetryString"
+  },
+  {
+    "offset": "0x25b0e8",
+    "encoding": "ascii",
+    "text": "Check m_freeTelemetryString failed"
+  },
+  {
+    "offset": "0x25b368",
+    "encoding": "ascii",
+    "text": "New Nvtelemetry SDK needed (19.0.0.0 and above) "
+  },
+  {
+    "offset": "0x25fd50",
+    "encoding": "ascii",
+    "text": "Skipping telemetry report of error %s from method %s"
+  },
+  {
+    "offset": "0x261f70",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\common\\NvTelemetryClients\\NvAppClient.cpp"
+  },
+  {
+    "offset": "0x262628",
+    "encoding": "ascii",
+    "text": "DDDataConsentRequestShown"
+  },
+  {
+    "offset": "0x263518",
+    "encoding": "ascii",
+    "text": "ConsentAlreadyPresent"
+  },
+  {
+    "offset": "0x263930",
+    "encoding": "ascii",
+    "text": "Invalid ConsentRequestAction value passed: "
+  },
+  {
+    "offset": "0x263968",
+    "encoding": "ascii",
+    "text": ": no corresponding member found in enum ConsentRequestAction_t"
+  },
+  {
+    "offset": "0x267430",
+    "encoding": "ascii",
+    "text": "Trying to send non-anonymous telemetry anonymized."
+  },
+  {
+    "offset": "0x267490",
+    "encoding": "ascii",
+    "text": "telemetry"
+  },
+  {
+    "offset": "0x267760",
+    "encoding": "ascii",
+    "text": "DisplayDriverTelemetryConsentRequestAction"
+  },
+  {
+    "offset": "0x2a6742",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x2a93f0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VTelemetry@Diagnostics@NvTelemetry@@@std@@"
+  },
+  {
+    "offset": "0x2a9460",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VTelemetry@NvAppClient@NvTelemetry@@@std@@"
+  },
+  {
+    "offset": "0x2aaa80",
+    "encoding": "ascii",
+    "text": ".?AUITelemetry@Diagnostics@NvTelemetry@@"
+  },
+  {
+    "offset": "0x2aaac8",
+    "encoding": "ascii",
+    "text": ".?AVTelemetry@Diagnostics@NvTelemetry@@"
+  },
+  {
+    "offset": "0x2acc30",
+    "encoding": "ascii",
+    "text": ".?AUITelemetry@NvAppClient@NvTelemetry@@"
+  },
+  {
+    "offset": "0x2acc78",
+    "encoding": "ascii",
+    "text": ".?AVTelemetry@NvAppClient@NvTelemetry@@"
+  },
+  {
+    "offset": "0x2ca4d4",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x2593e0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x259430",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x259730",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x25a210",
+    "encoding": "utf-16le",
+    "text": "\\NVIDIA Corporation\\NvTelemetry\\NvTelemetryAPI"
+  },
+  {
+    "offset": "0x25a280",
+    "encoding": "utf-16le",
+    "text": "NvTelemetryAPI64.dll"
+  },
+  {
+    "offset": "0x25d810",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  },
+  {
+    "offset": "0x261ff0",
+    "encoding": "utf-16le",
+    "text": "\\NVIDIA Corporation\\NvTelemetry"
+  }
+]

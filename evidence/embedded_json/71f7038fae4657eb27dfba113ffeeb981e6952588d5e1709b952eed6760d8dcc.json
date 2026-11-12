@@ -1,0 +1,80 @@
+[
+  {
+    "file_offset": "0x148450",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#backgroundprocess",
+      "title": "BackgroundProcess Endpoints",
+      "type": "object",
+      "module": "BackgroundProcess",
+      "definitions": {
+        "RestartProcesses": {
+          "type": "object",
+          "description": "Restarts the list of processes.",
+          "isCommand": true
+        }
+      }
+    }
+  },
+  {
+    "file_offset": "0x148ae0",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for BackgroundProcess plugin config format",
+      "type": "object",
+      "properties": {
+        "timeoutSeconds": {
+          "type": "integer"
+        },
+        "startAtLoad": {
+          "type": "boolean"
+        },
+        "services": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "name"
+            ]
+          }
+        },
+        "processes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "executableDirectoryPath": {
+                "type": "string"
+              },
+              "args": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "args"
+            ]
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "timeoutSeconds",
+        "startAtLoad"
+      ]
+    }
+  }
+]

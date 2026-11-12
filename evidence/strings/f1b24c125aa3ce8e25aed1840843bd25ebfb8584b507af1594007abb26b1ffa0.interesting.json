@@ -1,0 +1,37 @@
+[
+  {
+    "offset": "0x262431",
+    "encoding": "ascii",
+    "text": "8\\\\.\\tgE1"
+  },
+  {
+    "offset": "0x10d6c7e",
+    "encoding": "ascii",
+    "text": "ctor-dtor-privacy"
+  },
+  {
+    "offset": "0x1195213",
+    "encoding": "ascii",
+    "text": "InjectedClassName"
+  },
+  {
+    "offset": "0x1202306",
+    "encoding": "ascii",
+    "text": "ffriend-injection"
+  },
+  {
+    "offset": "0x1203de4",
+    "encoding": "ascii",
+    "text": "fno-friend-injection"
+  },
+  {
+    "offset": "0x121333a",
+    "encoding": "ascii",
+    "text": "Cannot mangle injected class name type."
+  },
+  {
+    "offset": "0x1221098",
+    "encoding": "utf-16le",
+    "text": "InjectedSource"
+  }
+]

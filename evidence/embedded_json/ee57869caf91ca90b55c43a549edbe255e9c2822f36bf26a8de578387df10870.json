@@ -1,0 +1,294 @@
+[
+  {
+    "file_offset": "0x14ce80",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#appdiscoveryplugin",
+      "title": "AppDiscoveryPlugin Endpoints",
+      "type": "object",
+      "module": "AppDiscovery",
+      "definitions": {
+        "ActionStatusEnum": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "tsEnumNames": [
+            "ActionStarted",
+            "ActionRunning",
+            "ActionSuccess",
+            "ActionFailure",
+            "ActionUnknown"
+          ]
+        },
+        "ExeLaunchStatusEnum": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "Success",
+            "Failure",
+            "Unknown"
+          ]
+        },
+        "Status": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "tsEnumNames": [
+            "NotInstalled",
+            "Installed",
+            "Installing",
+            "Uninstalling",
+            "PartiallyInstalled"
+          ]
+        },
+        "AppActionNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "description": "Installation status notifications for a given app",
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "appName": {
+                "type": "string",
+                "description": "Name of the application for which this notification is for"
+              },
+              "action": {
+                "type": "integer",
+                "enum": [
+                  0,
+                  1
+                ],
+                "tsEnumNames": [
+                  "Install",
+                  "Uninstall"
+                ]
+              },
+              "actionStatus": {
+                "$ref": "#/definitions/ActionStatusEnum"
+              }
+            },
+            "required": [
+              "appName",
+              "action",
+              "actionStatus"
+            ]
+          }
+        },
+        "InstallApp": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Name of an application to install."
+              },
+              "exePath": {
+                "type": "string",
+                "description": "Full path to an EXE file which starts an installation"
+              },
+              "registryPath": {
+                "type": "string",
+                "description": "Registry path installer writes after successful installation. Used to verify successful installation"
+              }
+            },
+            "required": [
+              "name",
+              "exePath",
+              "registryPath"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "executionStatus": {
+                "$ref": "#/definitions/ExeLaunchStatusEnum"
+              }
+            },
+            "required": [
+              "executionStatus"
+            ]
+          }
+        },
+        "UninstallApp": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Name of an application to Uninstall."
+              },
+              "registryPath": {
+                "type": "string",
+                "description": "Gives path to registry key which has command for unistallation for an app."
+              }
+            },
+            "required": [
+              "name",
+              "registryPath"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "executionStatus": {
+                "$ref": "#/definitions/ExeLaunchStatusEnum"
+              }
+            },
+            "required": [
+              "executionStatus"
+            ]
+          }
+        },
+        "GetAppStatus": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Name of an application"
+              },
+              "registryPath": {
+                "type": "string",
+                "description": "Path to registry key to read installed version"
+              }
+            },
+            "required": [
+              "name",
+              "registryPath"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "$ref": "#/definitions/Status"
+              },
+              "version": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "GetAppsStatus": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "apps": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "description": "Name of an application"
+                    },
+                    "registryPath": {
+                      "type": "string",
+                      "description": "Gives path to registry key which is used to get installed version"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "registryPath"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "apps"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "apps": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "$ref": "#/definitions/Status"
+                    },
+                    "version": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "status"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "LaunchApp": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Name of an application"
+              },
+              "exePath": {
+                "type": "string",
+                "description": "Full path to EXE file to launch an app"
+              },
+              "registryPath": {
+                "type": "string",
+                "description": "Path to registry key which has full path to an EXE file to launch an app"
+              }
+            },
+            "required": [
+              "name",
+              "exePath",
+              "registryPath"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "launchStatus": {
+                "$ref": "#/definitions/ExeLaunchStatusEnum"
+              }
+            },
+            "required": [
+              "launchStatus"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "file_offset": "0x14c330",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#NvAppIgoIpcProxy",
+      "title": "NvAppIgoIpcProxy Endpoints",
+      "type": "object",
+      "module": "NvAppIgoIpcProxy",
+      "definitions": {
+        "SendMessageViaProxy": {
+          "description": "Send a message that will be broadcast to all subscribers via IpcProxyMessageNotification",
+          "isCommand": true,
+          "persistent": false,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "clientId": {
+                "type": "string",
+                "description": "Identifier of the client sending the message"
+              },
+              "payload": {
+                "type": "string",
+                "description": "JSON string payload to be broadcast"
+              }
+            },
+            "required": [
+              "clientId",
+              "payload"
+            ]
+          }
+        },
+        "IpcProxyMessageNotification": {
+          "description": "Broadcast notification containing the message payload from SendMessage",
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "clientId": {
+                "type": "string",
+                "description": "Identifier of the client that sent the message"
+              },
+              "payload": {
+                "type": "string",
+                "description": "JSON string payload from the original SendMessageViaProxy command"
+              }
+            },
+            "required": [
+              "clientId",
+              "payload"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

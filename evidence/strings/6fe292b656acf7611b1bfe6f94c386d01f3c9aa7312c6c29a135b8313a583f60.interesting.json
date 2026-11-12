@@ -1,0 +1,102 @@
+[
+  {
+    "offset": "0x2db1a0",
+    "encoding": "ascii",
+    "text": "Failed to init nvapi"
+  },
+  {
+    "offset": "0x2db1c0",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_GetDriverAndBranchVersion Failed"
+  },
+  {
+    "offset": "0x2db270",
+    "encoding": "ascii",
+    "text": "Loading nvapi.."
+  },
+  {
+    "offset": "0x2db288",
+    "encoding": "ascii",
+    "text": "nvapiinit successful"
+  },
+  {
+    "offset": "0x2db2c0",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{REDACTED_INSTALLATION_ID}_RISE"
+  },
+  {
+    "offset": "0x2dff20",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{REDACTED_INSTALLATION_ID}_GAssist.ASR"
+  },
+  {
+    "offset": "0x2e5048",
+    "encoding": "ascii",
+    "text": "%s : NVAPI_OK "
+  },
+  {
+    "offset": "0x2e5060",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\Rise\\module\\NvapiWrapper.cpp"
+  },
+  {
+    "offset": "0x2e50f0",
+    "encoding": "ascii",
+    "text": "NvAPI_SubscribeAIAssistant"
+  },
+  {
+    "offset": "0x2e5110",
+    "encoding": "ascii",
+    "text": "NvAPI_RequestAIAssistance"
+  },
+  {
+    "offset": "0x2ebe80",
+    "encoding": "ascii",
+    "text": "Skipping telemetry report of error %s from method %s"
+  },
+  {
+    "offset": "0x2ed1c8",
+    "encoding": "ascii",
+    "text": "nvapi_QueryInterface"
+  },
+  {
+    "offset": "0x2ed1e8",
+    "encoding": "ascii",
+    "text": "nvapi_Direct_GetMethod"
+  },
+  {
+    "offset": "0x38a630",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x2ceda0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x2cedf0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x2cf0f0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x2e9bf0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  },
+  {
+    "offset": "0x2ed110",
+    "encoding": "utf-16le",
+    "text": "NvAPI Direct was not found. Please update your driver."
+  },
+  {
+    "offset": "0x2ed238",
+    "encoding": "utf-16le",
+    "text": "nvapi64.dll"
+  }
+]

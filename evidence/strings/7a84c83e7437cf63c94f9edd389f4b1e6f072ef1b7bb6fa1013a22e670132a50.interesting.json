@@ -1,0 +1,1652 @@
+[
+  {
+    "offset": "0x648490",
+    "encoding": "ascii",
+    "text": "BIO_socket_ioctl"
+  },
+  {
+    "offset": "0x6484a8",
+    "encoding": "ascii",
+    "text": "calling ioctlsocket()"
+  },
+  {
+    "offset": "0x6f21d8",
+    "encoding": "ascii",
+    "text": "localhost/"
+  },
+  {
+    "offset": "0x7144c0",
+    "encoding": "ascii",
+    "text": "nvapi_QueryInterface"
+  },
+  {
+    "offset": "0x7144d8",
+    "encoding": "ascii",
+    "text": "nvapi_Direct_GetMethod"
+  },
+  {
+    "offset": "0x71de78",
+    "encoding": "ascii",
+    "text": "127.0.0.1"
+  },
+  {
+    "offset": "0x71e010",
+    "encoding": "ascii",
+    "text": "\\\\.\\pipe\\"
+  },
+  {
+    "offset": "0x71f678",
+    "encoding": "ascii",
+    "text": "NvMessageBus.dll"
+  },
+  {
+    "offset": "0x727df0",
+    "encoding": "ascii",
+    "text": "localhost"
+  },
+  {
+    "offset": "0x72bda8",
+    "encoding": "ascii",
+    "text": "Check m_telemetry failed"
+  },
+  {
+    "offset": "0x72bdd0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\backend\\NvBackend\\src\\TelemetryManager.cpp"
+  },
+  {
+    "offset": "0x72d460",
+    "encoding": "ascii",
+    "text": "m_telemetry->Send_NvGPUInfo_Event(nvGPUInfo) failed with HRESULT=0x"
+  },
+  {
+    "offset": "0x72d4c0",
+    "encoding": "ascii",
+    "text": "m_telemetry->Send_SHIM_Event(shim, UserInfoToBackendTelemetryFormat(m_userInfo->GetUserInfo())) failed with HRESULT=0x"
+  },
+  {
+    "offset": "0x72d560",
+    "encoding": "ascii",
+    "text": "m_telemetry->Send_GFEInfo_Event(gfeInfo, UserInfoToBackendTelemetryFormat(m_userInfo->GetUserInfo())) failed with HRESULT=0x"
+  },
+  {
+    "offset": "0x72d5e0",
+    "encoding": "ascii",
+    "text": "m_telemetry->Send_InstalledApplications_Event(installedApplications, UserInfoToBackendTelemetryFormat(m_userInfo->GetUserInfo())) failed with HRESULT=0x"
+  },
+  {
+    "offset": "0x72d680",
+    "encoding": "ascii",
+    "text": "m_telemetry->Send_VRDeviceInfo_Event(vrDeviceInfo, UserInfoToBackendTelemetryFormat(m_userInfo->GetUserInfo())) failed with HRESULT=0x"
+  },
+  {
+    "offset": "0x730380",
+    "encoding": "ascii",
+    "text": "NvAPI_GetAssociatedNvidiaDisplayHandle failed with status = "
+  },
+  {
+    "offset": "0x7303f8",
+    "encoding": "ascii",
+    "text": "NvAPI_DISP_GetDisplayIdFromDisplayHandle failed with status = "
+  },
+  {
+    "offset": "0x730528",
+    "encoding": "ascii",
+    "text": "Can't get driver version, NVAPI failed with status = "
+  },
+  {
+    "offset": "0x7305d0",
+    "encoding": "ascii",
+    "text": "NvAPI_EnumPhysicalGPUs failed with status = "
+  },
+  {
+    "offset": "0x730648",
+    "encoding": "ascii",
+    "text": "2nd call to NvAPI_EnumPhysicalGPUs failed with status = "
+  },
+  {
+    "offset": "0x730788",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetConnectedDisplayIds failed with status = "
+  },
+  {
+    "offset": "0x7308d0",
+    "encoding": "ascii",
+    "text": "Second call to NvAPI_GPU_GetConnectedDisplayIds failed with status = "
+  },
+  {
+    "offset": "0x730e10",
+    "encoding": "ascii",
+    "text": "NvAPI_DISP_QueryTrueHDRSupport failed with status = "
+  },
+  {
+    "offset": "0x731428",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_SetTrueHDRParams() failed with status = "
+  },
+  {
+    "offset": "0x731c40",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetTrueHDRState((NV_TRUEHDR_STATE_PARAMS*)&params) failed with status: "
+  },
+  {
+    "offset": "0x732810",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_QueryDeepDVCInfo failed with status = "
+  },
+  {
+    "offset": "0x732a40",
+    "encoding": "ascii",
+    "text": "NvAPI_Set_DeepDVC_Intensity() failed with status = "
+  },
+  {
+    "offset": "0x733070",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetDeepDVCState((NV_DEEPDVC_STATE_PARAMS*)&params) failed "
+  },
+  {
+    "offset": "0x733710",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_QueryDeepDVCSupport failed with status = "
+  },
+  {
+    "offset": "0x7366c0",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetArchInfo failed"
+  },
+  {
+    "offset": "0x73b090",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_GetNvPresentFgxState failed"
+  },
+  {
+    "offset": "0x73d748",
+    "encoding": "ascii",
+    "text": "NvAPI_DISP_GetHyperSamplingSettingsEx() failed with status = "
+  },
+  {
+    "offset": "0x73d788",
+    "encoding": "ascii",
+    "text": "NvAPI_DISP_SetHyperSamplingSettingsEx() failed with status = "
+  },
+  {
+    "offset": "0x73d8e0",
+    "encoding": "ascii",
+    "text": "Second call to NvAPI_DISP_GetHyperSamplingSettingsEx() failed with status = "
+  },
+  {
+    "offset": "0x743d08",
+    "encoding": "ascii",
+    "text": "Check m_nvApiFactory failed"
+  },
+  {
+    "offset": "0x744458",
+    "encoding": "ascii",
+    "text": "Can't get driver version info from NVAPI: "
+  },
+  {
+    "offset": "0x747358",
+    "encoding": "ascii",
+    "text": "Check pNvApiFactory failed"
+  },
+  {
+    "offset": "0x74e7f8",
+    "encoding": "ascii",
+    "text": "Check m_telemetryMgr failed"
+  },
+  {
+    "offset": "0x7558c0",
+    "encoding": "ascii",
+    "text": "0 (NVAPI_OK)"
+  },
+  {
+    "offset": "0x755968",
+    "encoding": "ascii",
+    "text": "-180 (NVAPI_INVALID_CONFIGURATION)"
+  },
+  {
+    "offset": "0x755990",
+    "encoding": "ascii",
+    "text": "-104 (NVAPI_NOT_SUPPORTED)"
+  },
+  {
+    "offset": "0x755d58",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_ClientJpacGetInfo for BB2.0 failed with status = "
+  },
+  {
+    "offset": "0x755ec0",
+    "encoding": "ascii",
+    "text": "Failed to unregister JPAC callback for BB2.0. NvAPI_SYS_ClientRegisterForJpacControlUpdates failed with status = "
+  },
+  {
+    "offset": "0x755f70",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_ClientRegisterForJpacControlUpdates for BB2.0 failed with status = "
+  },
+  {
+    "offset": "0x756080",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_ClientRegisterForJpacControlUpdates for WM2.0 failed with status = "
+  },
+  {
+    "offset": "0x756170",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_ClientJpacGetInfo for WM2.0 failed with status = "
+  },
+  {
+    "offset": "0x756270",
+    "encoding": "ascii",
+    "text": "Failed to unregister JPAC callback for WM2.0. NvAPI_SYS_ClientRegisterForJpacControlUpdates failed with status = "
+  },
+  {
+    "offset": "0x756440",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_ClientJpacSetControl failed with status = "
+  },
+  {
+    "offset": "0x7572b3",
+    "encoding": "ascii",
+    "text": "                \"SendTelemetryForGFESupportedApps\": {"
+  },
+  {
+    "offset": "0x757322",
+    "encoding": "ascii",
+    "text": "                \"UseDRSForTelemetry\": {"
+  },
+  {
+    "offset": "0x757c2c",
+    "encoding": "ascii",
+    "text": "                \"SendTelemetryForGFESupportedApps\","
+  },
+  {
+    "offset": "0x757c60",
+    "encoding": "ascii",
+    "text": "                \"UseDRSForTelemetry\","
+  },
+  {
+    "offset": "0x758c63",
+    "encoding": "ascii",
+    "text": "                \"SendTelemetryForGFESupportedApps\": {"
+  },
+  {
+    "offset": "0x758cd2",
+    "encoding": "ascii",
+    "text": "                \"UseDRSForTelemetry\": {"
+  },
+  {
+    "offset": "0x7596b3",
+    "encoding": "ascii",
+    "text": "                \"SendTelemetryForGFESupportedApps\","
+  },
+  {
+    "offset": "0x7596e7",
+    "encoding": "ascii",
+    "text": "                \"UseDRSForTelemetry\","
+  },
+  {
+    "offset": "0x75a6c3",
+    "encoding": "ascii",
+    "text": "                \"SendTelemetryForGFESupportedApps\": {"
+  },
+  {
+    "offset": "0x75a732",
+    "encoding": "ascii",
+    "text": "                \"UseDRSForTelemetry\": {"
+  },
+  {
+    "offset": "0x75ae3d",
+    "encoding": "ascii",
+    "text": "                \"SendTelemetryForGFESupportedApps\","
+  },
+  {
+    "offset": "0x75ae71",
+    "encoding": "ascii",
+    "text": "                \"UseDRSForTelemetry\","
+  },
+  {
+    "offset": "0x75bda3",
+    "encoding": "ascii",
+    "text": "                \"SendTelemetryForGFESupportedApps\": {"
+  },
+  {
+    "offset": "0x75be12",
+    "encoding": "ascii",
+    "text": "                \"UseDRSForTelemetry\": {"
+  },
+  {
+    "offset": "0x75c5ed",
+    "encoding": "ascii",
+    "text": "                \"SendTelemetryForGFESupportedApps\","
+  },
+  {
+    "offset": "0x75c621",
+    "encoding": "ascii",
+    "text": "                \"UseDRSForTelemetry\","
+  },
+  {
+    "offset": "0x75d5a3",
+    "encoding": "ascii",
+    "text": "                \"SendTelemetryForGFESupportedApps\": {"
+  },
+  {
+    "offset": "0x75d612",
+    "encoding": "ascii",
+    "text": "                \"UseDRSForTelemetry\": {"
+  },
+  {
+    "offset": "0x75de50",
+    "encoding": "ascii",
+    "text": "                \"SendTelemetryForGFESupportedApps\","
+  },
+  {
+    "offset": "0x75de84",
+    "encoding": "ascii",
+    "text": "                \"UseDRSForTelemetry\","
+  },
+  {
+    "offset": "0x75ee33",
+    "encoding": "ascii",
+    "text": "                \"SendTelemetryForGFESupportedApps\": {"
+  },
+  {
+    "offset": "0x75eea2",
+    "encoding": "ascii",
+    "text": "                \"UseDRSForTelemetry\": {"
+  },
+  {
+    "offset": "0x75f742",
+    "encoding": "ascii",
+    "text": "                \"SendTelemetryForGFESupportedApps\","
+  },
+  {
+    "offset": "0x75f776",
+    "encoding": "ascii",
+    "text": "                \"UseDRSForTelemetry\","
+  },
+  {
+    "offset": "0x761673",
+    "encoding": "ascii",
+    "text": "                \"SendTelemetryForGFESupportedApps\": {"
+  },
+  {
+    "offset": "0x7616e2",
+    "encoding": "ascii",
+    "text": "                \"UseDRSForTelemetry\": {"
+  },
+  {
+    "offset": "0x761ba7",
+    "encoding": "ascii",
+    "text": "                \"SendTelemetryForGFESupportedApps\","
+  },
+  {
+    "offset": "0x761bdb",
+    "encoding": "ascii",
+    "text": "                \"UseDRSForTelemetry\","
+  },
+  {
+    "offset": "0x762358",
+    "encoding": "ascii",
+    "text": "SendTelemetryForGFESupportedApps"
+  },
+  {
+    "offset": "0x762420",
+    "encoding": "ascii",
+    "text": "UseDRSForTelemetry"
+  },
+  {
+    "offset": "0x772460",
+    "encoding": "ascii",
+    "text": "Application_ShouldReportTelemetry"
+  },
+  {
+    "offset": "0x77b1f0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\backend\\NvAPI_Support\\src\\DrsLocalCache.cpp"
+  },
+  {
+    "offset": "0x77b278",
+    "encoding": "ascii",
+    "text": "Check m_nvApiFactory != nullptr failed"
+  },
+  {
+    "offset": "0x77b5e0",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_GetDriverAndBranchVersion(&driverVersion, buildBranchString) failed with status = "
+  },
+  {
+    "offset": "0x77b640",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\backend\\NvAPI_Support\\src\\NvAPI_Support.cpp"
+  },
+  {
+    "offset": "0x77b6a0",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_GetDisplayDriverInfo(NV_DISPLAY_DRIVER_INFO_VER2) failed. "
+  },
+  {
+    "offset": "0x77b7e0",
+    "encoding": "ascii",
+    "text": "Nvapi status is NVAPI_NVIDIA_DEVICE_NOT_FOUND. Probably a failure due to headless gpu."
+  },
+  {
+    "offset": "0x77b900",
+    "encoding": "ascii",
+    "text": "NvAPI_Coproc_GetCoprocInfo(reinterpret_cast<NV_COPROC_INFO*>(&coprocInfo)) failed with status = "
+  },
+  {
+    "offset": "0x77b968",
+    "encoding": "ascii",
+    "text": "NvAPI_EnumLogicalGPUs() failed with status = "
+  },
+  {
+    "offset": "0x77b998",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_QueryNodeInfo() failed with status = "
+  },
+  {
+    "offset": "0x77b9d0",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_GetLastDBChangeTime(&timestamp) failed with status = "
+  },
+  {
+    "offset": "0x77bb08",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_LoadSettings(m_session.get()) failed with status = "
+  },
+  {
+    "offset": "0x77bb60",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_GetProfileInfo(m_session.get(), profile, &profileInfo) failed with status = "
+  },
+  {
+    "offset": "0x77bc78",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_CreateSession(&handle) failed with status = "
+  },
+  {
+    "offset": "0x77bcb0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\backend\\NvAPI_Support\\src\\drssupport.cpp"
+  },
+  {
+    "offset": "0x77bd90",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_SetSettingEx(m_session.get(), profile, &drsData, 0, 0) failed with status = "
+  },
+  {
+    "offset": "0x77bde8",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_SaveSettings(m_session.get()) failed with status = "
+  },
+  {
+    "offset": "0x77bea0",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_GetCurrentGlobalProfile(m_session.get(), &profile) failed with status = "
+  },
+  {
+    "offset": "0x77bf10",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_GetSettingEx(m_session.get(), profile, settingId, &drsData, &notUsed) failed with status = "
+  },
+  {
+    "offset": "0x77bfd0",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_GetSettingInfo(m_session.get(), profile, settingId, reinterpret_cast<NVDRS_SETTING_INFO*>(si.get())) failed with status = "
+  },
+  {
+    "offset": "0x77c0a0",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_SetProfileData(m_session.get(), profile, 1, &setting) failed with status = "
+  },
+  {
+    "offset": "0x77c100",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_GetDriverAndBranchVersion(&driverVersion, notUsed) failed with status = "
+  },
+  {
+    "offset": "0x77c490",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\backend\\NvTelemetryClient\\src\\NvTelemetryEvents.cpp"
+  },
+  {
+    "offset": "0x77ca58",
+    "encoding": "ascii",
+    "text": "Telemetry"
+  },
+  {
+    "offset": "0x77cf80",
+    "encoding": "ascii",
+    "text": "Invalid TelemetryOrigin value passed: "
+  },
+  {
+    "offset": "0x77d3f8",
+    "encoding": "ascii",
+    "text": "telemetryOrigin"
+  },
+  {
+    "offset": "0x77dde0",
+    "encoding": "ascii",
+    "text": "NVAPIDisplayId"
+  },
+  {
+    "offset": "0x77ee00",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: no member 'NVAPIDisplayId' found or it is not Int"
+  },
+  {
+    "offset": "0x781220",
+    "encoding": "ascii",
+    "text": "InitializeTelemetry_2"
+  },
+  {
+    "offset": "0x781258",
+    "encoding": "ascii",
+    "text": "UninitializeTelemetry"
+  },
+  {
+    "offset": "0x7812b0",
+    "encoding": "ascii",
+    "text": "Check m_getUserTelemetryConsent failed"
+  },
+  {
+    "offset": "0x7812d8",
+    "encoding": "ascii",
+    "text": "GetDeviceTelemetryConsent"
+  },
+  {
+    "offset": "0x7812f8",
+    "encoding": "ascii",
+    "text": "Check m_getDeviceTelemetryConsent failed"
+  },
+  {
+    "offset": "0x781328",
+    "encoding": "ascii",
+    "text": "SetUserTelemetryConsent"
+  },
+  {
+    "offset": "0x781378",
+    "encoding": "ascii",
+    "text": "GetUserTelemetryConsent"
+  },
+  {
+    "offset": "0x7813b0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendAnonymousEvent"
+  },
+  {
+    "offset": "0x7813f8",
+    "encoding": "ascii",
+    "text": "SubscribeForTelemetryNotifications"
+  },
+  {
+    "offset": "0x781420",
+    "encoding": "ascii",
+    "text": "Check m_setUserTelemetryConsent failed"
+  },
+  {
+    "offset": "0x781448",
+    "encoding": "ascii",
+    "text": "SetDeviceTelemetryConsent"
+  },
+  {
+    "offset": "0x781468",
+    "encoding": "ascii",
+    "text": "Check m_setDeviceTelemetryConsent failed"
+  },
+  {
+    "offset": "0x781498",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendEvent"
+  },
+  {
+    "offset": "0x7814d0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendAnonymousEvent_2"
+  },
+  {
+    "offset": "0x781518",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_2"
+  },
+  {
+    "offset": "0x781558",
+    "encoding": "ascii",
+    "text": "UnsubscribeFromTelemetryNotifications"
+  },
+  {
+    "offset": "0x7815a0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendEvent_2"
+  },
+  {
+    "offset": "0x7815b8",
+    "encoding": "ascii",
+    "text": "FreeTelemetryString"
+  },
+  {
+    "offset": "0x7815d0",
+    "encoding": "ascii",
+    "text": "Check m_freeTelemetryString failed"
+  },
+  {
+    "offset": "0x781640",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_3"
+  },
+  {
+    "offset": "0x781660",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_4"
+  },
+  {
+    "offset": "0x781680",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_5"
+  },
+  {
+    "offset": "0x781700",
+    "encoding": "ascii",
+    "text": "Trying to send non-anonymous telemetry anonymized."
+  },
+  {
+    "offset": "0x7817b8",
+    "encoding": "ascii",
+    "text": "telemetry"
+  },
+  {
+    "offset": "0x788d58",
+    "encoding": "ascii",
+    "text": "nvapi.dll"
+  },
+  {
+    "offset": "0x788e48",
+    "encoding": "ascii",
+    "text": "nvapi64.dll"
+  },
+  {
+    "offset": "0x8068d2",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x807b8a",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x8082e8",
+    "encoding": "ascii",
+    "text": "UnhookWinEvent"
+  },
+  {
+    "offset": "0x8082fa",
+    "encoding": "ascii",
+    "text": "SetWinEventHook"
+  },
+  {
+    "offset": "0x808ea0",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeA"
+  },
+  {
+    "offset": "0x80f8e0",
+    "encoding": "ascii",
+    "text": ".?AU?$default_delete@UINVAPIFactory@NvAPI@GFE@@@std@@"
+  },
+  {
+    "offset": "0x80fa18",
+    "encoding": "ascii",
+    "text": ".?AVNvAPIError@GFE@@"
+  },
+  {
+    "offset": "0x811870",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VTelemetry@gfe_nvbackend@NvTelemetry@@@std@@"
+  },
+  {
+    "offset": "0x811ae0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VTelemetryManager@Telemetry@GFE@@@std@@"
+  },
+  {
+    "offset": "0x812560",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_resource@PEAUINVAPIFactory@NvAPI@GFE@@U?$default_delete@UINVAPIFactory@NvAPI@GFE@@@std@@@std@@"
+  },
+  {
+    "offset": "0x814500",
+    "encoding": "ascii",
+    "text": ".?AV?$EventDataStorage@UInstalledApplications_t@gfe_nvbackend@NvTelemetry@@$MP6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBU123@@Z1?InstalledApplicationsEventDataToJson@23@YA?AV45@0@Z$MP6A?AU123@AEBV45@@Z1?InstalledApplicationsEventDataFromJson@23@YA?AU123@1@Z@SHIM@Backend@GFE@@"
+  },
+  {
+    "offset": "0x814640",
+    "encoding": "ascii",
+    "text": ".?AV?$EventDataStorage@USHIM_t@gfe_nvbackend@NvTelemetry@@$MP6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBU123@@Z1?SHIMEventDataToJson@23@YA?AV45@0@Z$MP6A?AU123@AEBV45@@Z1?SHIMEventDataFromJson@23@YA?AU123@1@Z@SHIM@Backend@GFE@@"
+  },
+  {
+    "offset": "0x8147d0",
+    "encoding": "ascii",
+    "text": ".?AV?$EventDataStorage@UGFEInfo_t@gfe_nvbackend@NvTelemetry@@$MP6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBU123@@Z1?GFEInfoEventDataToJson@23@YA?AV45@0@Z$MP6A?AU123@AEBV45@@Z1?GFEInfoEventDataFromJson@23@YA?AU123@1@Z@SHIM@Backend@GFE@@"
+  },
+  {
+    "offset": "0x8149c0",
+    "encoding": "ascii",
+    "text": ".?AV?$EventDataStorage@UVRDeviceInfo_t@gfe_nvbackend@NvTelemetry@@$MP6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBU123@@Z1?VRDeviceInfoEventDataToJson@23@YA?AV45@0@Z$MP6A?AU123@AEBV45@@Z1?VRDeviceInfoEventDataFromJson@23@YA?AU123@1@Z@SHIM@Backend@GFE@@"
+  },
+  {
+    "offset": "0x814b60",
+    "encoding": "ascii",
+    "text": ".?AV?$ShimEventDataStorage@USHIM_t@gfe_nvbackend@NvTelemetry@@$MP6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBU123@@Z1?SHIMEventDataToJson@23@YA?AV45@0@Z$MP6A?AU123@AEBV45@@Z1?SHIMEventDataFromJson@23@YA?AU123@1@Z@SHIM@Backend@GFE@@"
+  },
+  {
+    "offset": "0x815c50",
+    "encoding": "ascii",
+    "text": ".?AUINvAPIListenerActiveProcessCountChanged@NvAPI@GFE@@"
+  },
+  {
+    "offset": "0x8181c0",
+    "encoding": "ascii",
+    "text": ".?AV_RPCServerStub_UPDT_API_IDaemon_Application_ShouldReportTelemetry@@"
+  },
+  {
+    "offset": "0x8196b8",
+    "encoding": "ascii",
+    "text": ".?AVDRSDBInfo@NvAPI@GFE@@"
+  },
+  {
+    "offset": "0x8196e8",
+    "encoding": "ascii",
+    "text": ".?AUIDRSDBInfo@NvAPI@GFE@@"
+  },
+  {
+    "offset": "0x819718",
+    "encoding": "ascii",
+    "text": ".?AVNVAPIFactory@NvAPI@GFE@@"
+  },
+  {
+    "offset": "0x819748",
+    "encoding": "ascii",
+    "text": ".?AUINVAPI@NvAPI@GFE@@"
+  },
+  {
+    "offset": "0x819770",
+    "encoding": "ascii",
+    "text": ".?AUINVAPIFactory@NvAPI@GFE@@"
+  },
+  {
+    "offset": "0x8197a0",
+    "encoding": "ascii",
+    "text": ".?AVNVAPI@NvAPI@GFE@@"
+  },
+  {
+    "offset": "0x819800",
+    "encoding": "ascii",
+    "text": ".?AUITelemetry@gfe_nvbackend@NvTelemetry@@"
+  },
+  {
+    "offset": "0x819840",
+    "encoding": "ascii",
+    "text": ".?AVTelemetry@gfe_nvbackend@NvTelemetry@@"
+  },
+  {
+    "offset": "0x60e920",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x60e960",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x60ec10",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x60f000",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0x60f048",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0x60f090",
+    "encoding": "utf-16le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0x60f0c0",
+    "encoding": "utf-16le",
+    "text": "HKEY_ROOT"
+  },
+  {
+    "offset": "0x60f0f8",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_CONFIG"
+  },
+  {
+    "offset": "0x714440",
+    "encoding": "utf-16le",
+    "text": "NvAPI Direct was not found. Please update your driver."
+  },
+  {
+    "offset": "0x714520",
+    "encoding": "utf-16le",
+    "text": "nvapi64.dll"
+  },
+  {
+    "offset": "0x71e6c8",
+    "encoding": "utf-16le",
+    "text": "CreateNamedPipe failed with "
+  },
+  {
+    "offset": "0x71e708",
+    "encoding": "utf-16le",
+    "text": "CreateNamedPipe failed"
+  },
+  {
+    "offset": "0x720bc0",
+    "encoding": "utf-16le",
+    "text": "HKLM\\SOFTWARE\\NVIDIA Corporation\\Global\\NvBackend"
+  },
+  {
+    "offset": "0x721230",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NvBackend"
+  },
+  {
+    "offset": "0x7286f0",
+    "encoding": "utf-16le",
+    "text": "NvAPI is not available, falling back to PCI device enumeration: "
+  },
+  {
+    "offset": "0x72bd70",
+    "encoding": "utf-16le",
+    "text": "Creating TelemetryManager"
+  },
+  {
+    "offset": "0x72be58",
+    "encoding": "utf-16le",
+    "text": "Destroying TelemetryManager"
+  },
+  {
+    "offset": "0x72be90",
+    "encoding": "utf-16le",
+    "text": "Cannot get device Id from NvTelemetryAPI: "
+  },
+  {
+    "offset": "0x72bee8",
+    "encoding": "utf-16le",
+    "text": "TelemetryDeviceId: "
+  },
+  {
+    "offset": "0x730e50",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_NvAPI_DISP_QueryTrueHDRSupport for displayId: "
+  },
+  {
+    "offset": "0x7314e0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SYS_SetTrueHDRParams() set realtime AIHDR successfully"
+  },
+  {
+    "offset": "0x731cf0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetTrueHDRState() returned successfully. params - bTrueHDREnabled: "
+  },
+  {
+    "offset": "0x731e08",
+    "encoding": "utf-16le",
+    "text": " nvapi status: "
+  },
+  {
+    "offset": "0x731f80",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_NvAPI_DISP_QueryTrueHDRSupport_V2 for displayId: "
+  },
+  {
+    "offset": "0x732778",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_QueryDeepDVCInfo "
+  },
+  {
+    "offset": "0x732b80",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Set_DeepDVC_Intensity() succeeded to set realtime AIDVC Intensity"
+  },
+  {
+    "offset": "0x7330f0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetDeepDVCState() returned successfully. params - bDeepDVCEnabled: "
+  },
+  {
+    "offset": "0x733748",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_QueryDeepDVCSupport "
+  },
+  {
+    "offset": "0x7367e0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_NGX_GetDriverFeatureSupport() failed. "
+  },
+  {
+    "offset": "0x73b130",
+    "encoding": "utf-16le",
+    "text": "DriverFGX::getFGXDynamicState() - NvAPI_SYS_GetNvPresentState returned - processIdentifier: "
+  },
+  {
+    "offset": "0x73b1f0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SYS_GetNvPresentSystemRequirements failed."
+  },
+  {
+    "offset": "0x73b260",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SYS_GetNvPresentSystemRequirements succeeded."
+  },
+  {
+    "offset": "0x73b2d0",
+    "encoding": "utf-16le",
+    "text": "getFGXDynamicState() NvAPI_SYS_GetNvPresentState did not return valid data"
+  },
+  {
+    "offset": "0x73d590",
+    "encoding": "utf-16le",
+    "text": "Going to call NvAPI_DISP_SetHyperSamplingSettingsEx() displayId = "
+  },
+  {
+    "offset": "0x73d7d0",
+    "encoding": "utf-16le",
+    "text": "NIS2::SetHypersamplingSettingNVAPI() failed. "
+  },
+  {
+    "offset": "0x7416f8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetArchInfo failed: "
+  },
+  {
+    "offset": "0x7417c0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_EnumPhysicalGPUs failed: "
+  },
+  {
+    "offset": "0x741920",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetFullName failed for GPU "
+  },
+  {
+    "offset": "0x7419b0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SYS_GetDriverAndBranchVersion failed: "
+  },
+  {
+    "offset": "0x743e80",
+    "encoding": "utf-16le",
+    "text": "HKLM\\SOFTWARE\\NVIDIA Corporation\\Global\\NVUpdatus"
+  },
+  {
+    "offset": "0x7441a0",
+    "encoding": "utf-16le",
+    "text": "HKLM\\Software\\NVIDIA Corporation\\Global\\NvApp"
+  },
+  {
+    "offset": "0x747770",
+    "encoding": "utf-16le",
+    "text": "Second call to NvAPI_DISP_GetHyperSamplingSettingsEx() failed. "
+  },
+  {
+    "offset": "0x7478e0",
+    "encoding": "utf-16le",
+    "text": "First call to NvAPI_DISP_GetHyperSamplingSettingsEx() failed. "
+  },
+  {
+    "offset": "0x747ec0",
+    "encoding": "utf-16le",
+    "text": "ChooseClassificationResult: r.application->sendTelemetryForGFESupportedApps for r.application->displayName="
+  },
+  {
+    "offset": "0x7480a0",
+    "encoding": "utf-16le",
+    "text": "ChooseClassificationResult: r.application->useDRSForTelemetry for drsData.profileName="
+  },
+  {
+    "offset": "0x74f1a0",
+    "encoding": "utf-16le",
+    "text": "Failed to send telemetry: "
+  },
+  {
+    "offset": "0x7541e0",
+    "encoding": "utf-16le",
+    "text": "Calling NvAPI_NGX_GetNGXOverrideState for processId: "
+  },
+  {
+    "offset": "0x754420",
+    "encoding": "utf-16le",
+    "text": "Getting into retry loop for NvAPI_NGX_GetNGXOverrideState"
+  },
+  {
+    "offset": "0x7544a0",
+    "encoding": "utf-16le",
+    "text": "First call of NvAPI_NGX_GetNGXOverrideState returned all zeros for masks of processId: "
+  },
+  {
+    "offset": "0x754660",
+    "encoding": "utf-16le",
+    "text": "Final call to NvAPI_NGX_GetNGXOverrideState() returned feedbackMaskSR: 0x"
+  },
+  {
+    "offset": "0x762fc0",
+    "encoding": "utf-16le",
+    "text": "UseDRSForTelemetry"
+  },
+  {
+    "offset": "0x762ff0",
+    "encoding": "utf-16le",
+    "text": "sendTelemetryForGFESupportedApps"
+  },
+  {
+    "offset": "0x764080",
+    "encoding": "utf-16le",
+    "text": "PhysXTelemetryCollector::GetPhysXTelemetryInfo()"
+  },
+  {
+    "offset": "0x764330",
+    "encoding": "utf-16le",
+    "text": "NvAPI_CUDA_EnumComputeCapableByTopology() failed. System not PhysX capable."
+  },
+  {
+    "offset": "0x765660",
+    "encoding": "utf-16le",
+    "text": "HKLM\\SOFTWARE\\Valve\\Steam"
+  },
+  {
+    "offset": "0x765dd0",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Electronic Arts"
+  },
+  {
+    "offset": "0x766440",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Ubisoft"
+  },
+  {
+    "offset": "0x766490",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Ubisoft\\Launcher\\Installs"
+  },
+  {
+    "offset": "0x767568",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetSignedGPUID"
+  },
+  {
+    "offset": "0x769a20",
+    "encoding": "utf-16le",
+    "text": "App telemetry reporting response for "
+  },
+  {
+    "offset": "0x769b50",
+    "encoding": "utf-16le",
+    "text": "UPDT_API_IDaemon_Application_ShouldReportTelemetry"
+  },
+  {
+    "offset": "0x76ba00",
+    "encoding": "utf-16le",
+    "text": "HKCU\\SOFTWARE\\NVIDIA Corporation\\NvBackend"
+  },
+  {
+    "offset": "0x76bee0",
+    "encoding": "utf-16le",
+    "text": "HKLM\\Software\\NVIDIA Corporation\\Global\\GFExperience"
+  },
+  {
+    "offset": "0x76c210",
+    "encoding": "utf-16le",
+    "text": "\\NVIDIA Corporation\\NvTelemetry"
+  },
+  {
+    "offset": "0x76c250",
+    "encoding": "utf-16le",
+    "text": "plugin\\NvTelemetry.json"
+  },
+  {
+    "offset": "0x76c3f0",
+    "encoding": "utf-16le",
+    "text": "HKLM\\SOFTWARE\\NVIDIA Corporation\\Global\\WebServices"
+  },
+  {
+    "offset": "0x76c6b0",
+    "encoding": "utf-16le",
+    "text": "HKCU\\Software\\NVIDIA Corporation\\Global\\NvApp\\GFE_Backup"
+  },
+  {
+    "offset": "0x76cb60",
+    "encoding": "utf-16le",
+    "text": "HKCU\\Software\\NVIDIA Corporation\\Global\\NvApp"
+  },
+  {
+    "offset": "0x76cbf0",
+    "encoding": "utf-16le",
+    "text": "HKCU\\SOFTWARE\\NVIDIA Corporation\\Global\\GFExperience"
+  },
+  {
+    "offset": "0x76dcc0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetAppStatistics"
+  },
+  {
+    "offset": "0x772490",
+    "encoding": "utf-16le",
+    "text": "Invalid argument in RPC call 'Application_ShouldReportTelemetry': "
+  },
+  {
+    "offset": "0x772800",
+    "encoding": "utf-16le",
+    "text": "Memory allocation error in RPC call 'Application_ShouldReportTelemetry'"
+  },
+  {
+    "offset": "0x772890",
+    "encoding": "utf-16le",
+    "text": "Exception in RPC call 'Application_ShouldReportTelemetry': "
+  },
+  {
+    "offset": "0x77b490",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\backend\\NvAPI_Support\\src\\NvAPI_Support.cpp"
+  },
+  {
+    "offset": "0x77b550",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Initialize"
+  },
+  {
+    "offset": "0x77b578",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Unload failed with "
+  },
+  {
+    "offset": "0x77b840",
+    "encoding": "utf-16le",
+    "text": "GFE::NvAPI::NvAPISubscription::NvAPISubscriptionstatus = "
+  },
+  {
+    "offset": "0x77ba0e",
+    "encoding": "utf-16le",
+    "text": " Creating NVAPI factory"
+  },
+  {
+    "offset": "0x77ba40",
+    "encoding": "utf-16le",
+    "text": "Destroying NVAPI factory"
+  },
+  {
+    "offset": "0x77bbc0",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\backend\\NvAPI_Support\\src\\drssupport.cpp"
+  },
+  {
+    "offset": "0x77c230",
+    "encoding": "utf-16le",
+    "text": "Calling NvAPI_SYS_GetNvPresentProfileRequirements for unicode profileName: "
+  },
+  {
+    "offset": "0x77c2d0",
+    "encoding": "utf-16le",
+    "text": "Calling NvAPI_SYS_GetNvPresentProfileRequirements for string profileName: "
+  },
+  {
+    "offset": "0x77c370",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SYS_GetNvPresentProfileRequirements failed with status: "
+  },
+  {
+    "offset": "0x77c5f6",
+    "encoding": "utf-16le",
+    "text": "DNvTelemetryAPI64.dll"
+  },
+  {
+    "offset": "0x781c70",
+    "encoding": "utf-16le",
+    "text": "Unknown value for DRSTelemetryContext "
+  },
+  {
+    "offset": "0x782750",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetConnectedDisplayIds failed: "
+  },
+  {
+    "offset": "0x7827b0",
+    "encoding": "utf-16le",
+    "text": "Second call of NvAPI_GPU_GetConnectedDisplayIds failed: "
+  },
+  {
+    "offset": "0x7831a0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall"
+  },
+  {
+    "offset": "0x783210",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Component Based Servicing\\Packages"
+  },
+  {
+    "offset": "0x7832b0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Internet Explorer"
+  },
+  {
+    "offset": "0x783b10",
+    "encoding": "utf-16le",
+    "text": "Error during NvAPI_Coproc_GetCoprocInfo call. Result: "
+  },
+  {
+    "offset": "0x783c00",
+    "encoding": "utf-16le",
+    "text": "Error during NvAPI_SYS_GetDriverAndBranchVersion call. Result: "
+  },
+  {
+    "offset": "0x7852c0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvBackend"
+  },
+  {
+    "offset": "0x7853b0",
+    "encoding": "utf-16le",
+    "text": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion"
+  },
+  {
+    "offset": "0x785580",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\nForce"
+  },
+  {
+    "offset": "0x785b90",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global"
+  },
+  {
+    "offset": "0x785ed0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetDisplayIdByDisplayName"
+  },
+  {
+    "offset": "0x785f80",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetHyperSamplingSettings"
+  },
+  {
+    "offset": "0x7861d0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_SetHyperSamplingSettings"
+  },
+  {
+    "offset": "0x7862c0",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\nvlddmkm (Parameters?) not found, returning clean system status, rc="
+  },
+  {
+    "offset": "0x786af0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_EnumLogicalGPUs failed: "
+  },
+  {
+    "offset": "0x786b30",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPCIEInfos failed: "
+  },
+  {
+    "offset": "0x786bb0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetAllClockFrequencies failed to get frequencies: "
+  },
+  {
+    "offset": "0x786c30",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPstates failed: "
+  },
+  {
+    "offset": "0x786c70",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPerfClocks returned incorrect level count."
+  },
+  {
+    "offset": "0x786ce0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPerfClocks failed: "
+  },
+  {
+    "offset": "0x786d28",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetRamType failed: "
+  },
+  {
+    "offset": "0x786d70",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetRamBusWidth failed: "
+  },
+  {
+    "offset": "0x786db8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetFullName failed: "
+  },
+  {
+    "offset": "0x786e00",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPCIIdentifiers failed: "
+  },
+  {
+    "offset": "0x786e50",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetBusType failed: "
+  },
+  {
+    "offset": "0x786e90",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetValidGpuTopologies failed: "
+  },
+  {
+    "offset": "0x786ee0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetRamBankCount failed: "
+  },
+  {
+    "offset": "0x786f30",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetSystemType failed: "
+  },
+  {
+    "offset": "0x786f80",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_ManufacturingInfo failed: "
+  },
+  {
+    "offset": "0x786fd0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetUEFIInfo failed: "
+  },
+  {
+    "offset": "0x787010",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetVirtualFrameBufferSize failed: "
+  },
+  {
+    "offset": "0x787070",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPhysicalFrameBufferSize failed: "
+  },
+  {
+    "offset": "0x7870d0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetTotalTPCCount failed: "
+  },
+  {
+    "offset": "0x787120",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetShortName failed: "
+  },
+  {
+    "offset": "0x787160",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetVbiosVersionString failed: "
+  },
+  {
+    "offset": "0x7871b8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetGPUInfo failed: "
+  },
+  {
+    "offset": "0x787200",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetTotalSPCount failed: "
+  },
+  {
+    "offset": "0x787250",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetTotalSMCount failed: "
+  },
+  {
+    "offset": "0x787298",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetBusId failed: "
+  },
+  {
+    "offset": "0x7872d0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetGpuCoreCount failed: "
+  },
+  {
+    "offset": "0x787320",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetShaderPipeCount failed: "
+  },
+  {
+    "offset": "0x787370",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetVPECount failed: "
+  },
+  {
+    "offset": "0x7873b0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPartitionCount failed: "
+  },
+  {
+    "offset": "0x787400",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetShaderSubPipeCount failed: "
+  },
+  {
+    "offset": "0x787460",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_QueryWorkstationFeatureSupport for PROVIZ status: "
+  },
+  {
+    "offset": "0x787500",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetQuadroStatus failed: "
+  },
+  {
+    "offset": "0x787550",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetBrandType failed: "
+  },
+  {
+    "offset": "0x7875d0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetBusSlotId failed: "
+  },
+  {
+    "offset": "0x787610",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_QueryGpuFlags failed: "
+  },
+  {
+    "offset": "0x787660",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetCoolerSettings failed: "
+  },
+  {
+    "offset": "0x7876b0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetVbiosSecurityInfo failed: "
+  },
+  {
+    "offset": "0x787700",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetThermalSettings failed: "
+  },
+  {
+    "offset": "0x787750",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetAssociatedNvidiaDisplayName failed: "
+  },
+  {
+    "offset": "0x7877b0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetDisplayFromPhysicalGPU failed: "
+  },
+  {
+    "offset": "0x787810",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetTvEncoderType failed: "
+  },
+  {
+    "offset": "0x787860",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPerfHybridMode failed: "
+  },
+  {
+    "offset": "0x7879b0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetRawFuseData failed: "
+  },
+  {
+    "offset": "0x787a50",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetAllClockFrequencies() status for boost:"
+  },
+  {
+    "offset": "0x787b40",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetAllClockFrequencies() status for base:"
+  },
+  {
+    "offset": "0x787c50",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetConnectorInfo failed: "
+  },
+  {
+    "offset": "0x787e00",
+    "encoding": "utf-16le",
+    "text": "updtDispDevEnumClass::GetEdidNvAPI: Memory allocation error"
+  },
+  {
+    "offset": "0x787e80",
+    "encoding": "utf-16le",
+    "text": "updtDispDevEnumClass::GetEdidNvAPI"
+  },
+  {
+    "offset": "0x7880d0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SYS_ClientJpacGetInfo not supported "
+  },
+  {
+    "offset": "0x788180",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetDisplayDriverBuildTitle failed: "
+  },
+  {
+    "offset": "0x7881e0",
+    "encoding": "utf-16le",
+    "text": "HKLM\\SOFTWARE\\NVIDIA Corporation\\Global\\Espresso"
+  },
+  {
+    "offset": "0x788250",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetDisplayDriverCompileType failed: "
+  },
+  {
+    "offset": "0x7882b0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetDisplayDriverSecurityLevel failed: "
+  },
+  {
+    "offset": "0x7897f0",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Enum\\USB"
+  },
+  {
+    "offset": "0x789860",
+    "encoding": "utf-16le",
+    "text": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{REDACTED_INSTALLATION_ID}_Display.NVIRUSB"
+  },
+  {
+    "offset": "0x789970",
+    "encoding": "utf-16le",
+    "text": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\NVIDIA StereoUSB Driver"
+  },
+  {
+    "offset": "0x78a940",
+    "encoding": "utf-16le",
+    "text": "IdentifyDevice::DeviceIoControl, ErrCode = "
+  },
+  {
+    "offset": "0x78ab20",
+    "encoding": "utf-16le",
+    "text": "DeviceIoControl failed, ErrCode = "
+  },
+  {
+    "offset": "0x78abe0",
+    "encoding": "utf-16le",
+    "text": "IOCTL_STORAGE_QUERY_PROPERTY ec="
+  },
+  {
+    "offset": "0x78ac30",
+    "encoding": "utf-16le",
+    "text": "GetIdentifyCmd::DeviceIoControl, ErrCode = "
+  },
+  {
+    "offset": "0x78ac90",
+    "encoding": "utf-16le",
+    "text": "IOCTL_SCSI_PASS_THROUGH failed ec="
+  },
+  {
+    "offset": "0x78b260",
+    "encoding": "utf-16le",
+    "text": "\\\\.\\Scsi"
+  },
+  {
+    "offset": "0x78c650",
+    "encoding": "utf-16le",
+    "text": "IOCTL_BATTERY_QUERY_TAG failed: "
+  },
+  {
+    "offset": "0x78c770",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v1.1.4322"
+  },
+  {
+    "offset": "0x78c8f0",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Active Setup\\Installed Components\\{78705f0d-e8db-4b2d-8193-982bdda15ecd}"
+  },
+  {
+    "offset": "0x78ca50",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Active Setup\\Installed Components\\{FDC11A6F-17D1-48f9-9EA3-9051954BAA24}"
+  },
+  {
+    "offset": "0x78cbb0",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\NET Framework Setup\\NDP\\v2.0.50727"
+  },
+  {
+    "offset": "0x78cc50",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v3.0"
+  },
+  {
+    "offset": "0x78cce0",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v3.0\\Setup"
+  },
+  {
+    "offset": "0x78cf90",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Client"
+  },
+  {
+    "offset": "0x78d020",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v3.5"
+  },
+  {
+    "offset": "0x78d130",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full"
+  }
+]

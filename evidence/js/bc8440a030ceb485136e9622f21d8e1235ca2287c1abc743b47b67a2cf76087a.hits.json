@@ -1,0 +1,62 @@
+[
+  {
+    "line": 1107,
+    "text": "            this.opsService.getDriverSettingsSupportState().pipe((0, m.pQ)(this.destroyRef)).subscribe(t => {\r"
+  },
+  {
+    "line": 1128,
+    "text": "            this.logger.info(`bbSupported ${n} bbEnabled ${i}`), this.bbSupportedAndEnabled = this.opsState && n && i && !this.opsUtilsService.isDCDisabled(this.opsState) && this.opsState.profileDC?.targetSettings?.length > 0\r"
+  },
+  {
+    "line": 3069,
+    "text": "            return o || (this.logger.info(`There is no key found for ${this.settingData()?.featureName} for optimal value ${n} in ${JSON.stringify(this.settingData()?.featureEnum)}`), this.logger.info(\"Defaulting to first value\"), o = a[0]), this.manage3dSettingsUtilService.getSettingDisplayText(this.settingData().featureName, n, o, this.settingData().featureEnum, this.settingData().constraints, this.settingData().localApplication, this.settingData().isGlobalContext).pipe((0, G.s)(1), (0, we.W)(d => (this.logger.error(\"Failed to resolve OPS optimal display text\", d), (0, V.of)(\"\"))))\r"
+  },
+  {
+    "line": 3085,
+    "text": "            this.manage3dSettingsUtilService.getSettingsDisableNotification().pipe((0, J.p)(t => t.disableNotification.some(n => n.settingName === this.settingData().featureName) && this.settingData().isGlobalContext === t.isGlobalContext), (0, ie.T)(t => t.disableNotification.find(n => n.settingName === this.settingData().featureName).isDisabled), (0, ri.F)(), (0, J.p)(t => this.isDependentSettingToDisable !== t), (0, k.M)(t => {\r"
+  },
+  {
+    "line": 3100,
+    "text": "            (this.settingData()?.featureName === l.JsonTypeSettings.BatteryBoost || this.settingData()?.featureName === l.JsonTypeSettings.WhisperMode) && (this.isFeatureDisabled = !this.settingData()?.isGlobalContext), this.transValueSub?.unsubscribe(), this.transValueSub = this.manage3dSettingsUtilService.getSettingDisplayText(this.settingData().featureName, a, i, this.settingData().featureEnum, this.settingData()?.constraints, this.settingData()?.localApplication, this.settingData()?.isGlobalContext).pipe((0, G.s)(1)).subscribe(o => {\r"
+  },
+  {
+    "line": 3608,
+    "text": "            this.loggingService = t, this.program3dSettingsService = n, this.appConfig = i, this.opsService = a, this.manage3dSettingsUtilService = o, this.appListService = d, this.errorHandlerService = g, this.scanApiService = u, this.performanceMeasureService = f, this.manage3dSettingsTelemetryService = _, this.fingerPrintAndDRSProgramsService = w, this.renderer = O, this.routerHandlerService = x, this.scrollHighlightService = R, this.offlineService = X, this.manage3dSettingsBusyService = oe, this.opsUtilsService = re, this.translateService = Z, this.opsDriverSettingsService = Me, this.appSettingsContainer = e.ebz.required(\"appSettings\"), this.appPreviewElement = (0, e.ebz)(\"appPreview\"), this.scrollContainerElement = (0, e.ebz)(\"scrollContainer\"), this.pageErrorIndicator = e.hFB.required(), this.profileSettingsInfoArray = [], this.isLoading = !0, this.isOpsLoading = !0, this.staticSliderSettings = l.StaticSliderSettings, this.legacyProfileSettings = new Set(Object.values(l.LegacySettings)), this.legacyProfileSettingsInfoArray = [], this.opsEnabled = !1, this.jsonTypeSettings = l.JsonTypeSettings, this.hiddenProgramSettings = [this.staticSliderSettings.WhisperModeProgram, this.jsonTypeSettings.DLSSFG, this.jsonTypeSettings.DLSSRR, this.jsonTypeSettings.DLSSModelPresetProfile, this.jsonTypeSettings.CudaGpuOrdering], this.isDlssSettingsAvailable = !1, this.pageHighlightSection = Oe.kA.Program, this.isFgxSettingsAvailable = !1, this.selectedProfileInfo = {}, this.showHideProgr"
+  },
+  {
+    "line": 3692,
+    "text": "              this.logger.error(`Some error occured while loading settings for the selected profile ${t.drsProfileName} - `, n?.message), this.isLoading = !1, this.manage3dSettingsTelemetryService.send3DSettingsLoadErrorTelemetry(!1, n, this.selectedProfileInfo, t.drsAppSubPath)\r"
+  },
+  {
+    "line": 4235,
+    "text": "            this.loggingService = t, this.dialog = n, this.appBarService = i, this.global3dSettingsService = a, this.program3dSettingsService = o, this.manage3dSettingsUtilService = d, this.telemetryService = g, this.pluginsNotificationService = u, this.pageVisitTelemetryService = f, this.graphicsOutsideUpdateService = _, this.activatedRoute = w, this.router = O, this.offlineShaderCacheService = x, this.renderer = R, this.hostClass = \"nv-app-component-wrapper\", this.saveVisible = !1, this.disableTabAnimation = !0, this.selectedTabIndex = 0, this.errorIndicator = {\r"
+  },
+  {
+    "line": 4238,
+    "text": "            }, this.destroyRef = (0, e.WQX)(e.abz), this.logger = this.loggingService.getLogger(\"nvapp/Manage3dSettingsComponent\"), this.appBarService.setTitle(\"layout.features.manage3dsettings.title\"), this.telemetryService.setScreen(le.f3.Graphics), this.isPreCompilationInProgress = !1\r"
+  },
+  {
+    "line": 4241,
+    "text": "            this.subscribeToActiveTabIndex(), this.refreshGlobalSettings(), this.listenForPageLevelErrors(), this.sendPageEventTelemetry(), this.refresh3dSettingListenerOnDisplayChanges(), this.listenShaderCompilationStatus(), this.listenForRunningCompilation(), this.listenForGlobalSettingsRefresh()\r"
+  },
+  {
+    "line": 4267,
+    "text": "            }).catch(n => this.logger.warn(\"Failed to synchronize the Graphics tab route.\", n)), this.manage3dSettingsUtilService.emitGraphicsSettingsTabChanged(), this.sendPageEventTelemetry()\r"
+  },
+  {
+    "line": 4269,
+    "text": "          sendPageEventTelemetry() {\r"
+  },
+  {
+    "line": 4270,
+    "text": "            const t = this.getActiveTabForPageEventTelemetry(this.selectedTabIndex);\r"
+  },
+  {
+    "line": 4271,
+    "text": "            this.pageVisitTelemetryService.setTabChangedForPageEventTelemetry(t)\r"
+  },
+  {
+    "line": 4273,
+    "text": "          getActiveTabForPageEventTelemetry(t) {\r"
+  }
+]

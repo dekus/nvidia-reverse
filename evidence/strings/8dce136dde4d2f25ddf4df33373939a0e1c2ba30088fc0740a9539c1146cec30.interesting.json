@@ -1,0 +1,637 @@
+[
+  {
+    "offset": "0x29a920",
+    "encoding": "ascii",
+    "text": "NvcPluginStart ignored NvPluginWindow handle"
+  },
+  {
+    "offset": "0x29ad81",
+    "encoding": "ascii",
+    "text": "            \"description\": \"JSON representation of NOCAT frame event in format derived from telemetry generated code\","
+  },
+  {
+    "offset": "0x29ae3f",
+    "encoding": "ascii",
+    "text": "            \"description\": \"Names of the files to attach to telemetry\","
+  },
+  {
+    "offset": "0x29b038",
+    "encoding": "ascii",
+    "text": "DDDataConsentRequest"
+  },
+  {
+    "offset": "0x29b058",
+    "encoding": "ascii",
+    "text": "action=grantConsentToSendDriverTelemetry"
+  },
+  {
+    "offset": "0x29b090",
+    "encoding": "ascii",
+    "text": "action=dismissDriverConsentNotification"
+  },
+  {
+    "offset": "0x29bb60",
+    "encoding": "ascii",
+    "text": "PrivacySettingsChangedNotification"
+  },
+  {
+    "offset": "0x29bd40",
+    "encoding": "ascii",
+    "text": "Failed to request privacy settings, error %s"
+  },
+  {
+    "offset": "0x29bd80",
+    "encoding": "ascii",
+    "text": "Privacy settings request was cancelled, exiting the requester thread"
+  },
+  {
+    "offset": "0x29bdd8",
+    "encoding": "ascii",
+    "text": "Next privacy settings request retry is scheduled on %s."
+  },
+  {
+    "offset": "0x29bfe0",
+    "encoding": "ascii",
+    "text": "GetPrivacySettings responded with error: "
+  },
+  {
+    "offset": "0x29c018",
+    "encoding": "ascii",
+    "text": "Sending GetPrivacySettings request"
+  },
+  {
+    "offset": "0x29c048",
+    "encoding": "ascii",
+    "text": "GetPrivacySettings"
+  },
+  {
+    "offset": "0x29c060",
+    "encoding": "ascii",
+    "text": "Failed to send GetPrivacySettings request"
+  },
+  {
+    "offset": "0x29c190",
+    "encoding": "ascii",
+    "text": "crashNotification.consent"
+  },
+  {
+    "offset": "0x29c2a0",
+    "encoding": "ascii",
+    "text": "Failed to send a SetPrivacySettings request because NvDriverDiagnosticsRequestSender is not attached to plugin"
+  },
+  {
+    "offset": "0x29c328",
+    "encoding": "ascii",
+    "text": "SetPrivacySettings"
+  },
+  {
+    "offset": "0x29c340",
+    "encoding": "ascii",
+    "text": "Sending SetPrivacySettings request"
+  },
+  {
+    "offset": "0x29c370",
+    "encoding": "ascii",
+    "text": "Failed to send a SetPrivacySettings request"
+  },
+  {
+    "offset": "0x29cb78",
+    "encoding": "ascii",
+    "text": "hasRequiredConsent"
+  },
+  {
+    "offset": "0x29cb90",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: hasRequiredConsent is not bool"
+  },
+  {
+    "offset": "0x29cbd0",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: no member hasFunctionalConsent found or it is not bool"
+  },
+  {
+    "offset": "0x29cc30",
+    "encoding": "ascii",
+    "text": "hasFunctionalConsent"
+  },
+  {
+    "offset": "0x29cc50",
+    "encoding": "ascii",
+    "text": "hasTechnicalConsent"
+  },
+  {
+    "offset": "0x29cc68",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: hasTechnicalConsent is not bool"
+  },
+  {
+    "offset": "0x29ccb0",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: no member hasBehavioralConsent found or it is not bool"
+  },
+  {
+    "offset": "0x29cd10",
+    "encoding": "ascii",
+    "text": "hasBehavioralConsent"
+  },
+  {
+    "offset": "0x29cd88",
+    "encoding": "ascii",
+    "text": ": no corresponding member found in enum PrivacySettings"
+  },
+  {
+    "offset": "0x29cde8",
+    "encoding": "ascii",
+    "text": "Invalid PrivacySettings value passed: "
+  },
+  {
+    "offset": "0x29d378",
+    "encoding": "ascii",
+    "text": "consentLevel"
+  },
+  {
+    "offset": "0x29d4c0",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: no member privacySettings found or it is not std::string"
+  },
+  {
+    "offset": "0x29d520",
+    "encoding": "ascii",
+    "text": "privacySettings"
+  },
+  {
+    "offset": "0x29d538",
+    "encoding": "ascii",
+    "text": "deviceConsent"
+  },
+  {
+    "offset": "0x29dab0",
+    "encoding": "ascii",
+    "text": "Privacy status is not available yet. Persisting NOCAT frame to be processed when NvAccount is available."
+  },
+  {
+    "offset": "0x29db30",
+    "encoding": "ascii",
+    "text": "Driver consent prompt is disabled. Processing incoming event immediately."
+  },
+  {
+    "offset": "0x29db90",
+    "encoding": "ascii",
+    "text": "User id is not available, cannot process pending telemetry. NOCAT frames will be processed when NvAccount is available."
+  },
+  {
+    "offset": "0x29dd50",
+    "encoding": "ascii",
+    "text": "Received telemetry user id"
+  },
+  {
+    "offset": "0x29dd70",
+    "encoding": "ascii",
+    "text": "Received privacy settings value"
+  },
+  {
+    "offset": "0x29dd98",
+    "encoding": "ascii",
+    "text": "Processing pending telemetry"
+  },
+  {
+    "offset": "0x29de20",
+    "encoding": "ascii",
+    "text": "Sending NOCAT frame %s to NvTelemetry"
+  },
+  {
+    "offset": "0x29de50",
+    "encoding": "ascii",
+    "text": "Failed to send NOCAT frame %s to NvTelemetry, error: %s"
+  },
+  {
+    "offset": "0x29de98",
+    "encoding": "ascii",
+    "text": "Finished processing pending telemetry"
+  },
+  {
+    "offset": "0x29dec8",
+    "encoding": "ascii",
+    "text": "Processing data consent request action"
+  },
+  {
+    "offset": "0x29def8",
+    "encoding": "ascii",
+    "text": "Requesting privacy settings update"
+  },
+  {
+    "offset": "0x29df28",
+    "encoding": "ascii",
+    "text": "Consent request timed out"
+  },
+  {
+    "offset": "0x29df78",
+    "encoding": "ascii",
+    "text": "Discarding pending telemetry because EULA is not accepted"
+  },
+  {
+    "offset": "0x29e008",
+    "encoding": "ascii",
+    "text": "Finished discarding pending telemetry"
+  },
+  {
+    "offset": "0x29e300",
+    "encoding": "ascii",
+    "text": "Received PrivacySettingsChangedNotification notification"
+  },
+  {
+    "offset": "0x29e348",
+    "encoding": "ascii",
+    "text": "Failed to process PrivacySettingsChangedNotification: %s"
+  },
+  {
+    "offset": "0x29e78f",
+    "encoding": "ascii",
+    "text": "        \"driverTelemetryNotificationTimeoutSeconds\": {"
+  },
+  {
+    "offset": "0x29e8e5",
+    "encoding": "ascii",
+    "text": "        \"driverTelemetryNotificationTimeoutSeconds\","
+  },
+  {
+    "offset": "0x29ec70",
+    "encoding": "ascii",
+    "text": "NvTelemetry"
+  },
+  {
+    "offset": "0x29ec80",
+    "encoding": "ascii",
+    "text": "NvTelemetry.json"
+  },
+  {
+    "offset": "0x29ee20",
+    "encoding": "ascii",
+    "text": "driverTelemetryNotificationTimeoutSeconds"
+  },
+  {
+    "offset": "0x29ef68",
+    "encoding": "ascii",
+    "text": "Creating NvDriverDiagnosticsTelemetry"
+  },
+  {
+    "offset": "0x29efa0",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\NvDriverDiagnostics\\module\\NvDriverDiagnosticsTelemetry.cpp"
+  },
+  {
+    "offset": "0x29f040",
+    "encoding": "ascii",
+    "text": "nvAppClientTelemetry cannot be null"
+  },
+  {
+    "offset": "0x29f070",
+    "encoding": "ascii",
+    "text": "Destroying NvDriverDiagnosticsTelemetry"
+  },
+  {
+    "offset": "0x29f430",
+    "encoding": "ascii",
+    "text": "        \"consentNotificationTriggeredTimestamp\": {"
+  },
+  {
+    "offset": "0x29f48b",
+    "encoding": "ascii",
+    "text": "        \"consentRequestIsComplete\": {"
+  },
+  {
+    "offset": "0x29fa08",
+    "encoding": "ascii",
+    "text": "consentNotificationTriggeredTimestamp"
+  },
+  {
+    "offset": "0x29fa38",
+    "encoding": "ascii",
+    "text": "consentRequestIsComplete"
+  },
+  {
+    "offset": "0x2a2da8",
+    "encoding": "ascii",
+    "text": "NvMessageBus.dll"
+  },
+  {
+    "offset": "0x2a45e0",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\common\\NvTelemetryClients\\NOCAT.cpp"
+  },
+  {
+    "offset": "0x2a4828",
+    "encoding": "ascii",
+    "text": "Check gs_telemetry failed"
+  },
+  {
+    "offset": "0x2a6bf0",
+    "encoding": "ascii",
+    "text": "InitializeTelemetry"
+  },
+  {
+    "offset": "0x2a6c58",
+    "encoding": "ascii",
+    "text": "InitializeTelemetry_2"
+  },
+  {
+    "offset": "0x2a6d10",
+    "encoding": "ascii",
+    "text": "InitializeTelemetryStandalone"
+  },
+  {
+    "offset": "0x2a6e28",
+    "encoding": "ascii",
+    "text": "InitializeTelemetryStandalone_2"
+  },
+  {
+    "offset": "0x2a6f10",
+    "encoding": "ascii",
+    "text": "UninitializeTelemetry"
+  },
+  {
+    "offset": "0x2a6fd0",
+    "encoding": "ascii",
+    "text": "GetUserTelemetryConsent"
+  },
+  {
+    "offset": "0x2a6ff0",
+    "encoding": "ascii",
+    "text": "Check m_getUserTelemetryConsent failed"
+  },
+  {
+    "offset": "0x2a7020",
+    "encoding": "ascii",
+    "text": "GetDeviceTelemetryConsent"
+  },
+  {
+    "offset": "0x2a7040",
+    "encoding": "ascii",
+    "text": "Check m_getDeviceTelemetryConsent failed"
+  },
+  {
+    "offset": "0x2a7078",
+    "encoding": "ascii",
+    "text": "SetUserTelemetryConsent"
+  },
+  {
+    "offset": "0x2a7098",
+    "encoding": "ascii",
+    "text": "Check m_setUserTelemetryConsent failed"
+  },
+  {
+    "offset": "0x2a70c8",
+    "encoding": "ascii",
+    "text": "SetDeviceTelemetryConsent"
+  },
+  {
+    "offset": "0x2a70e8",
+    "encoding": "ascii",
+    "text": "Check m_setDeviceTelemetryConsent failed"
+  },
+  {
+    "offset": "0x2a7120",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendEvent"
+  },
+  {
+    "offset": "0x2a7160",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendAnonymousEvent"
+  },
+  {
+    "offset": "0x2a71b0",
+    "encoding": "ascii",
+    "text": "SubscribeForTelemetryNotifications"
+  },
+  {
+    "offset": "0x2a7200",
+    "encoding": "ascii",
+    "text": "UnsubscribeFromTelemetryNotifications"
+  },
+  {
+    "offset": "0x2a7250",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendEvent_2"
+  },
+  {
+    "offset": "0x2a7290",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendAnonymousEvent_2"
+  },
+  {
+    "offset": "0x2a72e8",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_2"
+  },
+  {
+    "offset": "0x2a7330",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_3"
+  },
+  {
+    "offset": "0x2a7350",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_4"
+  },
+  {
+    "offset": "0x2a7370",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_5"
+  },
+  {
+    "offset": "0x2a7390",
+    "encoding": "ascii",
+    "text": "FreeTelemetryString"
+  },
+  {
+    "offset": "0x2a73a8",
+    "encoding": "ascii",
+    "text": "Check m_freeTelemetryString failed"
+  },
+  {
+    "offset": "0x2ac3d0",
+    "encoding": "ascii",
+    "text": "Skipping telemetry report of error %s from method %s"
+  },
+  {
+    "offset": "0x2ae1e0",
+    "encoding": "ascii",
+    "text": "GetUserConsent"
+  },
+  {
+    "offset": "0x2ae1f8",
+    "encoding": "ascii",
+    "text": "HTTP Telemetry: No ServiceUseCase mapping found"
+  },
+  {
+    "offset": "0x2ae2b8",
+    "encoding": "ascii",
+    "text": "HTTP Telemetry: No ServiceSubUseCase mapping found"
+  },
+  {
+    "offset": "0x2ae320",
+    "encoding": "ascii",
+    "text": "Telemetry pointer cannot be null"
+  },
+  {
+    "offset": "0x2ae348",
+    "encoding": "ascii",
+    "text": "Failed to send HTTP telemetry: %d"
+  },
+  {
+    "offset": "0x2ae950",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\common\\NvTelemetryClients\\NvAppClient.cpp"
+  },
+  {
+    "offset": "0x2af000",
+    "encoding": "ascii",
+    "text": "DDDataConsentRequestShown"
+  },
+  {
+    "offset": "0x2afef8",
+    "encoding": "ascii",
+    "text": "ConsentAlreadyPresent"
+  },
+  {
+    "offset": "0x2b0310",
+    "encoding": "ascii",
+    "text": "Invalid ConsentRequestAction value passed: "
+  },
+  {
+    "offset": "0x2b0348",
+    "encoding": "ascii",
+    "text": ": no corresponding member found in enum ConsentRequestAction_t"
+  },
+  {
+    "offset": "0x2b3e90",
+    "encoding": "ascii",
+    "text": "Trying to send non-anonymous telemetry anonymized."
+  },
+  {
+    "offset": "0x2b3ef0",
+    "encoding": "ascii",
+    "text": "telemetry"
+  },
+  {
+    "offset": "0x2b4088",
+    "encoding": "ascii",
+    "text": "New Nvtelemetry SDK needed (19.0.0.0 and above) "
+  },
+  {
+    "offset": "0x2b4218",
+    "encoding": "ascii",
+    "text": "DisplayDriverTelemetryConsentRequestAction"
+  },
+  {
+    "offset": "0x2f94aa",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x2fbef8",
+    "encoding": "ascii",
+    "text": ".?AVPrivacySettingsChangedNotificationTask@@"
+  },
+  {
+    "offset": "0x2fbf50",
+    "encoding": "ascii",
+    "text": ".?AV?$NvDriverDiagnosticsNotificationTaskBase@VPrivacySettingsChangedNotificationTask@@@@"
+  },
+  {
+    "offset": "0x2fbfd0",
+    "encoding": "ascii",
+    "text": ".?AV?$JSONAsyncNotification@VPrivacySettingsChangedNotificationTask@@@GXP@@"
+  },
+  {
+    "offset": "0x2fc2c0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Associated_state@UTelemetryUserId@INvDriverDiagnosticsTelemetry@@@std@@"
+  },
+  {
+    "offset": "0x2fc3e0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Associated_state@W4PrivacySettings@NvDriverDiagnostics_NvAccount_Schema@@@std@@"
+  },
+  {
+    "offset": "0x2fc6a0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VTelemetry@NvAppClient@NvTelemetry@@@std@@"
+  },
+  {
+    "offset": "0x2fc710",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VNvDriverDiagnosticsTelemetry@@@std@@"
+  },
+  {
+    "offset": "0x2fce90",
+    "encoding": "ascii",
+    "text": ".?AUINvDriverDiagnosticsTelemetry@@"
+  },
+  {
+    "offset": "0x2fced0",
+    "encoding": "ascii",
+    "text": ".?AVNvDriverDiagnosticsTelemetry@@"
+  },
+  {
+    "offset": "0x2fdde8",
+    "encoding": "ascii",
+    "text": ".?AUITelemetry@NOCAT@NvTelemetry@@"
+  },
+  {
+    "offset": "0x2fde28",
+    "encoding": "ascii",
+    "text": ".?AVTelemetry@NOCAT@NvTelemetry@@"
+  },
+  {
+    "offset": "0x300208",
+    "encoding": "ascii",
+    "text": ".?AUITelemetry@NvAppClient@NvTelemetry@@"
+  },
+  {
+    "offset": "0x300250",
+    "encoding": "ascii",
+    "text": ".?AVTelemetry@NvAppClient@NvTelemetry@@"
+  },
+  {
+    "offset": "0x31fe5a",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x2a3ee0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x2a3f30",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x2a4230",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x2a4780",
+    "encoding": "utf-16le",
+    "text": "\\NVIDIA Corporation\\NvTelemetry\\NvTelemetryAPI"
+  },
+  {
+    "offset": "0x2a47f0",
+    "encoding": "utf-16le",
+    "text": "NvTelemetryAPI64.dll"
+  },
+  {
+    "offset": "0x2a9970",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  },
+  {
+    "offset": "0x2ae9d0",
+    "encoding": "utf-16le",
+    "text": "\\NVIDIA Corporation\\NvTelemetry"
+  }
+]

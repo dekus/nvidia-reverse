@@ -1,0 +1,114 @@
+[
+  {
+    "Name": "NVDisplay.Container.exe",
+    "ProcessId": 2776,
+    "ParentProcessId": 1452,
+    "ExecutablePath": null,
+    "CommandLine": null,
+    "CreationDate": "2026-11-11T08:17:05.403995+01:00"
+  },
+  {
+    "Name": "NVDisplay.Container.exe",
+    "ProcessId": 3600,
+    "ParentProcessId": 2776,
+    "ExecutablePath": null,
+    "CommandLine": null,
+    "CreationDate": "2026-11-11T08:17:05.661057+01:00"
+  },
+  {
+    "Name": "nvcontainer.exe",
+    "ProcessId": 4496,
+    "ParentProcessId": 1452,
+    "ExecutablePath": null,
+    "CommandLine": null,
+    "CreationDate": "2026-11-11T08:17:05.749841+01:00"
+  },
+  {
+    "Name": "nvcontainer.exe",
+    "ProcessId": 6388,
+    "ParentProcessId": 4496,
+    "ExecutablePath": null,
+    "CommandLine": null,
+    "CreationDate": "2026-11-11T08:17:06.375136+01:00"
+  },
+  {
+    "Name": "nvcontainer.exe",
+    "ProcessId": 7212,
+    "ParentProcessId": 4496,
+    "ExecutablePath": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\nvcontainer.exe",
+    "CommandLine": "\"C:\\Program Files\\NVIDIA Corporation\\NvContainer\\nvcontainer.exe\" -f \"C:\\ProgramData\\NVIDIA Corporation\\NVIDIA App\\NvContainer\\NvContainerAIUser%d.log\" -d \"C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\AIUser\" -r -l 3 -p 30000   -c",
+    "CreationDate": "2026-11-11T08:17:06.839441+01:00"
+  },
+  {
+    "Name": "nvcontainer.exe",
+    "ProcessId": 7240,
+    "ParentProcessId": 4496,
+    "ExecutablePath": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\nvcontainer.exe",
+    "CommandLine": "\"C:\\Program Files\\NVIDIA Corporation\\NvContainer\\nvcontainer.exe\" -f \"C:\\ProgramData\\NVIDIA Corporation\\NVIDIA App\\NvContainer\\NvContainerUser%dSPUser.log\" -d \"C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\SPUser\" -r -l 3 -p 30000 -st \"C:\\Program Files\\NVIDIA Corporation\\NvContainer\\NvContainerTelemetryApi.dll\" -c",
+    "CreationDate": "2026-11-11T08:17:06.849095+01:00"
+  },
+  {
+    "Name": "nvcontainer.exe",
+    "ProcessId": 7300,
+    "ParentProcessId": 4496,
+    "ExecutablePath": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\nvcontainer.exe",
+    "CommandLine": "\"C:\\Program Files\\NVIDIA Corporation\\NvContainer\\nvcontainer.exe\" -f \"C:\\ProgramData\\NVIDIA Corporation\\NVIDIA App\\NvContainer\\NvContainerUser%d.log\" -d \"C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\User\" -r -l 3 -p 30000   -c",
+    "CreationDate": "2026-11-11T08:17:06.860886+01:00"
+  },
+  {
+    "Name": "nvsphelper64.exe",
+    "ProcessId": 10008,
+    "ParentProcessId": 4496,
+    "ExecutablePath": null,
+    "CommandLine": null,
+    "CreationDate": "2026-11-11T08:17:08.486416+01:00"
+  },
+  {
+    "Name": "NVIDIA Overlay.exe",
+    "ProcessId": 10064,
+    "ParentProcessId": 7240,
+    "ExecutablePath": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe",
+    "CommandLine": "\"C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe\"",
+    "CreationDate": "2026-11-11T08:17:08.493832+01:00"
+  },
+  {
+    "Name": "NVIDIA Overlay.exe",
+    "ProcessId": 11184,
+    "ParentProcessId": 10064,
+    "ExecutablePath": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe",
+    "CommandLine": "\"C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe\" --type=gpu-process --no-sandbox --start-stack-profiler --user-data-dir=\"%USERPROFILE%\" --gpu-preferences=UAAAAAAAAADgAQAMAAAAAAAAAAAAAAAAAABgAAEAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --field-trial-handle=2604,i,15554992582857922937,7226250416100883976,262144 --variations-seed-version --enable-logging=handle --log-file=2608 --mojo-platform-channel-handle=2600 /prefetch:2",
+    "CreationDate": "2026-11-11T08:17:09.06035+01:00"
+  },
+  {
+    "Name": "NVIDIA Overlay.exe",
+    "ProcessId": 11232,
+    "ParentProcessId": 10064,
+    "ExecutablePath": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe",
+    "CommandLine": "\"C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe\" --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --no-sandbox --start-stack-profiler --user-data-dir=\"%USERPROFILE%\" --field-trial-handle=2716,i,15554992582857922937,7226250416100883976,262144 --variations-seed-version --enable-logging=handle --log-file=2820 --mojo-platform-channel-handle=2816 /prefetch:11",
+    "CreationDate": "2026-11-11T08:17:09.072956+01:00"
+  },
+  {
+    "Name": "NVIDIA Overlay.exe",
+    "ProcessId": 10892,
+    "ParentProcessId": 10064,
+    "ExecutablePath": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe",
+    "CommandLine": "\"C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe\" --type=utility --utility-sub-type=storage.mojom.StorageService --lang=en-US --service-sandbox-type=service --no-sandbox --user-data-dir=\"%USERPROFILE%\" --field-trial-handle=2192,i,15554992582857922937,7226250416100883976,262144 --variations-seed-version --enable-logging=handle --log-file=2860 --mojo-platform-channel-handle=2848 /prefetch:13",
+    "CreationDate": "2026-11-11T08:17:09.1242+01:00"
+  },
+  {
+    "Name": "NVIDIA Overlay.exe",
+    "ProcessId": 11872,
+    "ParentProcessId": 10064,
+    "ExecutablePath": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe",
+    "CommandLine": "\"C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe\" --type=renderer --user-data-dir=\"%USERPROFILE%\" --no-sandbox --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=5 --time-ticks-at-unix-epoch=-1794381415119644 --launch-time-ticks=14317990 --field-trial-handle=5072,i,15554992582857922937,7226250416100883976,262144 --variations-seed-version --enable-logging=handle --log-file=5088 --mojo-platform-channel-handle=5084 /prefetch:1",
+    "CreationDate": "2026-11-11T08:17:09.439226+01:00"
+  },
+  {
+    "Name": "NVIDIA Overlay.exe",
+    "ProcessId": 8224,
+    "ParentProcessId": 10064,
+    "ExecutablePath": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe",
+    "CommandLine": "\"C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe\" --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=audio --no-sandbox --video-capture-use-gpu-memory-buffer --user-data-dir=\"%USERPROFILE%\" --field-trial-handle=2796,i,15554992582857922937,7226250416100883976,262144 --variations-seed-version --enable-logging=handle --log-file=3252 --mojo-platform-channel-handle=3780 /prefetch:12",
+    "CreationDate": "2026-11-11T12:10:12.029539+01:00"
+  }
+]

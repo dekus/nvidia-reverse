@@ -1,0 +1,327 @@
+[
+  {
+    "offset": "0x139090",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvApp\\ShadowPlay"
+  },
+  {
+    "offset": "0x13a170",
+    "encoding": "ascii",
+    "text": "NvFBCDLLWrapper::load: Unable to load [%s] %d"
+  },
+  {
+    "offset": "0x13a1a8",
+    "encoding": "ascii",
+    "text": "Unable to load NvFBC dll. Last error from windows = "
+  },
+  {
+    "offset": "0x13a1f8",
+    "encoding": "ascii",
+    "text": "NvFBCDLLWrapper::load"
+  },
+  {
+    "offset": "0x13a218",
+    "encoding": "ascii",
+    "text": "NvFBC_CreateEx"
+  },
+  {
+    "offset": "0x13a230",
+    "encoding": "ascii",
+    "text": "NvFBC_SetGlobalFlags"
+  },
+  {
+    "offset": "0x13a250",
+    "encoding": "ascii",
+    "text": "NvFBC_GetStatusEx"
+  },
+  {
+    "offset": "0x13a268",
+    "encoding": "ascii",
+    "text": "NvFBC_Enable"
+  },
+  {
+    "offset": "0x13a280",
+    "encoding": "ascii",
+    "text": "NvFBCDLLWrapper::load: Unable to load the NvFBC function pointers %d"
+  },
+  {
+    "offset": "0x13a2d8",
+    "encoding": "ascii",
+    "text": "Unable to load the NvFBC function pointers."
+  },
+  {
+    "offset": "0x13a310",
+    "encoding": "ascii",
+    "text": "NvFBC_UnloadNvAPI"
+  },
+  {
+    "offset": "0x13a328",
+    "encoding": "ascii",
+    "text": "NvFBCDLLWrapper::Release: pfnNvFBC_UnloadNvApi failed(%d)"
+  },
+  {
+    "offset": "0x13a370",
+    "encoding": "ascii",
+    "text": "NvFBCDLLWrapper::create: Invalid m_handle"
+  },
+  {
+    "offset": "0x13a3a8",
+    "encoding": "ascii",
+    "text": "NvFBCDLLWrapper::create: getStatus failed 0x%08X"
+  },
+  {
+    "offset": "0x13a3f0",
+    "encoding": "ascii",
+    "text": "NvFBC not supported on this device + driver. NvFBC Getstatus error = "
+  },
+  {
+    "offset": "0x13a448",
+    "encoding": "ascii",
+    "text": "NvFBCDLLWrapper::create"
+  },
+  {
+    "offset": "0x13a468",
+    "encoding": "ascii",
+    "text": "NvFBCDLLWrapper::create: Capture not possible"
+  },
+  {
+    "offset": "0x13a4e0",
+    "encoding": "ascii",
+    "text": "NvFBCDLLWrapper::create: Unable to create an instance of NvFBC at this moment"
+  },
+  {
+    "offset": "0x13a540",
+    "encoding": "ascii",
+    "text": "Unable to create an instance of NvFBC at this moment."
+  },
+  {
+    "offset": "0x13a580",
+    "encoding": "ascii",
+    "text": "NvFBCDLLWrapper::enable: m_pfn_enable failed 0x%08X"
+  },
+  {
+    "offset": "0x13a5c0",
+    "encoding": "ascii",
+    "text": "Unable to enable/ disable NvFBC. NvFBC enable error = "
+  },
+  {
+    "offset": "0x13a608",
+    "encoding": "ascii",
+    "text": "NvFBCDLLWrapper::enable"
+  },
+  {
+    "offset": "0x13a660",
+    "encoding": "ascii",
+    "text": "NvFBCDLLWrapper::getDefaultPath: Unable to get the system reoot environment variable "
+  },
+  {
+    "offset": "0x13a708",
+    "encoding": "ascii",
+    "text": "NvFBCDLLWrapper::getDefaultPath"
+  },
+  {
+    "offset": "0x13a730",
+    "encoding": "ascii",
+    "text": "NvFBCDLLWrapper::getDefaultPath: The systemroot envrionment variable is not set "
+  },
+  {
+    "offset": "0x13a7d0",
+    "encoding": "ascii",
+    "text": "NvFBC64.dll"
+  },
+  {
+    "offset": "0x13a7f0",
+    "encoding": "ascii",
+    "text": "NVFBC_TARGET_ADAPTER"
+  },
+  {
+    "offset": "0x13aca8",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_GENERIC"
+  },
+  {
+    "offset": "0x13acc0",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_INVALID_PARAM"
+  },
+  {
+    "offset": "0x13ace0",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_INVALIDATED_SESSION"
+  },
+  {
+    "offset": "0x13ad08",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_PROTECTED_CONTENT"
+  },
+  {
+    "offset": "0x13ad30",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_DRIVER_FAILURE"
+  },
+  {
+    "offset": "0x13ad50",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_CUDA_FAILURE"
+  },
+  {
+    "offset": "0x13ad70",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_UNSUPPORTED"
+  },
+  {
+    "offset": "0x13ad90",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_HW_ENC_FAILURE"
+  },
+  {
+    "offset": "0x13adb0",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_INCOMPATIBLE_DRIVER"
+  },
+  {
+    "offset": "0x13add8",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_UNSUPPORTED_PLATFORM"
+  },
+  {
+    "offset": "0x13ae00",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_OUT_OF_MEMORY"
+  },
+  {
+    "offset": "0x13ae20",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_INVALID_PTR"
+  },
+  {
+    "offset": "0x13ae40",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_OPT_CAPTURE_FAILURE"
+  },
+  {
+    "offset": "0x13ae68",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_INSUFFICIENT_PRIVILEGES"
+  },
+  {
+    "offset": "0x13ae98",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_INVALID_CALL"
+  },
+  {
+    "offset": "0x13aeb8",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_SYSTEM_ERROR"
+  },
+  {
+    "offset": "0x13aed8",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_INVALID_TARGET"
+  },
+  {
+    "offset": "0x13aef8",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_NVAPI_FAILURE"
+  },
+  {
+    "offset": "0x13af18",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_DYNAMIC_DISABLE"
+  },
+  {
+    "offset": "0x13af40",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_IPC_FAILURE"
+  },
+  {
+    "offset": "0x13af60",
+    "encoding": "ascii",
+    "text": "NVFBC_ERROR_CURSOR_CAPTURE_FAILURE"
+  },
+  {
+    "offset": "0x13b060",
+    "encoding": "ascii",
+    "text": "CFrameProviderFBC::GetStatus: m_NvFBCLoader.load failed"
+  },
+  {
+    "offset": "0x13b0b0",
+    "encoding": "ascii",
+    "text": "CFrameProviderFBC::GetStatus: m_NvFBCLoader.getStatus failed 0x%08X"
+  },
+  {
+    "offset": "0x13b5d8",
+    "encoding": "ascii",
+    "text": "CFrameProviderFBCToDx9::Initialize: m_NvFBCLoader.load failed"
+  },
+  {
+    "offset": "0x13b630",
+    "encoding": "ascii",
+    "text": "CFrameProviderFBCToDx9::Initialize: m_NvFBCLoader.setGlobalFlags failed 0x%08X"
+  },
+  {
+    "offset": "0x13b6b0",
+    "encoding": "ascii",
+    "text": "CFrameProviderFBCToDx9::Initialize: m_NvFBCLoader.create failed 0x%08X"
+  },
+  {
+    "offset": "0x13b708",
+    "encoding": "ascii",
+    "text": "Failed to create NvFBC session"
+  },
+  {
+    "offset": "0x13bad0",
+    "encoding": "ascii",
+    "text": "CFrameProviderFBCToDx9::Initialize: NvFBCToDx9VidSetUp failed 0x%08X"
+  },
+  {
+    "offset": "0x13bca0",
+    "encoding": "ascii",
+    "text": "CFrameProviderFBCToDx9::CaptureFrame: NvFBC does not have support rect copy. Support is yet to be added in FrameProvider layer"
+  },
+  {
+    "offset": "0x13bd40",
+    "encoding": "ascii",
+    "text": "NvFBC does not have support rect copy. Support is yet to be added in FrameProvider layer"
+  },
+  {
+    "offset": "0x13be90",
+    "encoding": "ascii",
+    "text": " NvFBCToDx9VidGrabFrame failed due to protected content"
+  },
+  {
+    "offset": "0x13bed8",
+    "encoding": "ascii",
+    "text": " NvFBCToDx9VidGrabFrame failed due to invalid session"
+  },
+  {
+    "offset": "0x13bf18",
+    "encoding": "ascii",
+    "text": " NvFBCToDx9VidGrabFrame failed"
+  },
+  {
+    "offset": "0x13bf40",
+    "encoding": "ascii",
+    "text": "CFrameProviderFBCToDx9::CaptureFrame: NvFBC does not seem to have provided a valid frame output"
+  },
+  {
+    "offset": "0x13bfb8",
+    "encoding": "ascii",
+    "text": "NvFBC does not seem to have provided a valid frame output"
+  },
+  {
+    "offset": "0x13d1b0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x13d200",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x13d4c0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  }
+]

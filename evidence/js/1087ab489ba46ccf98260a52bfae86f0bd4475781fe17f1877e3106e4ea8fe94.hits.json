@@ -1,0 +1,174 @@
+[
+  {
+    "line": 100,
+    "text": "            this.loggingService = t, this.driverUpdateService = n, this.telemetryUtilsService = r, this.redirectService = a, this.provisUtilService = l, this.disabled = (0, e.hFB)(!1), this.driverTypes = (0, e.hFB)(), this.logger = this.loggingService.getLogger(\"nvapp/DriverPreferenceComponent\")\r"
+  },
+  {
+    "line": 103,
+    "text": "            this.telemetryUtilsService.sendClickEvent(d.EB.DriverSelectionLearnMore, \"\", !0), this.openLearnMoreLinkSub?.unsubscribe(), this.openLearnMoreLinkSub = this.provisUtilService.isPersonasEnabled().subscribe(t => {\r"
+  },
+  {
+    "line": 286,
+    "text": "            this.loggingService = t, this.telemetryUtilsService = n, this.networkStatusService = r, this.highlight = (0, e.hFB)(), this.isImageLoadPossible = !0, this.logger = this.loggingService.getLogger(\"nvapp/ReleaseHighlightContentComponent\")\r"
+  },
+  {
+    "line": 296,
+    "text": "            this.imageError = !0, this.logger.error(\"failed to load the content image\"), this.telemetryUtilsService.sendResourceLoadErrorEvent(d.vt.Icon, this.highlight().svgIcon, \"failed to load icon\", null, d.JZ.ReleaseHighlight, !0)\r"
+  },
+  {
+    "line": 543,
+    "text": "            this.gfwslService = t, this.gfwslParamsService = n, this.appConfig = r, this.endpointFactory = a, this.distributedTracingUtilService = l, this.serviceWorkerService = c, this.dialog = b, this.keyboardMappingService = x, this.translate = P, this.logger = w.getLogger(\"nvapp/DriverArticleService\"), this.endpoint = this.endpointFactory.createEndpoint(), this.endpointRetryConfig = this.appConfig?.gfwsl?.retryConfig ?? {}, this.articleContentEventStream = new Map, this.initServiceWorkerNotifications()\r"
+  },
+  {
+    "line": 568,
+    "text": "          getDriverArticleInformation(t, n, r) {\r"
+  },
+  {
+    "line": 569,
+    "text": "            return this.logger.info(\"getDriverArticleInformation\"), this.gfwslService.onGfwslParamsReady({\r"
+  },
+  {
+    "line": 597,
+    "text": "            return this.getDriverArticleInformation(t, r, n)\r"
+  },
+  {
+    "line": 691,
+    "text": "          initServiceWorkerNotifications() {\r"
+  },
+  {
+    "line": 694,
+    "text": "            this.serviceWorkerSubscription = this.serviceWorkerService.swCacheUpdated.pipe((0, q.p)(n => n.name === t.cacheName && n.data)).subscribe(n => {\r"
+  },
+  {
+    "line": 720,
+    "text": "            this.serviceWorkerSubscription?.unsubscribe()\r"
+  },
+  {
+    "line": 827,
+    "text": "            this.loggingService = t, this.driverArticleService = n, this.hardwareInfoService = r, this.telemetryUtilsService = a, this.marqueeAggregateService = l, this.isRecommendedDriver = (0, e.hFB)(), this.contentElem = (0, e.ebz)(\"driverContent\"), this.isNsdDriverWithEmptyMarquee = !1, this.showReadMorePanel = !0, this.enableAnimation = !1, this.section = \"\", this.logger = this.loggingService.getLogger(\"nvapp/DriverContentComponent\"), this.marqueeTileData = [], this.marqueeGradientOverrides = {\r"
+  },
+  {
+    "line": 862,
+    "text": "            if (n) r = this.grdArticleLink, this.logger.info(\"GRD article link clicked with url\", r), this.telemetryUtilsService.sendClickEvent(d.EB.DriverTypeArticleLink, this.section, !0, this.driverDetails.version);\r"
+  },
+  {
+    "line": 867,
+    "text": "              this.logger.info(\"marquee item link clicked with url\", r), this.telemetryUtilsService.sendMarqueeElement(r, c, this.section, d.tV.Drivers, t.position, this.marqueeTileData[w].telemetryId, this.driverDetails.version, this.telemetryUtilsService.getDriverType(this.driverDetails.driverType))\r"
+  },
+  {
+    "line": 880,
+    "text": "                uniqueContent: this.marqueeTileData[t.position].telemetryId,\r"
+  },
+  {
+    "line": 882,
+    "text": "                driverType: this.telemetryUtilsService.getDriverType(this.driverDetails.driverType)\r"
+  },
+  {
+    "line": 885,
+    "text": "            } else this.telemetryUtilsService.sendClickEvent(d.EB.MarqueeScroll, this.section, !0, t?.position + \"\")\r"
+  },
+  {
+    "line": 889,
+    "text": "            this.telemetryUtilsService.sendResourceLoadErrorEvent(d.vt.Image, this.marqueeTileData?.[t]?.marqueeHeroImage ?? this.marqueeImageOverrides.globalFallbackImageUrl, \"failed to load image\", null, n, !0)\r"
+  },
+  {
+    "line": 906,
+    "text": "              telemetryId: t.linksTo\r"
+  },
+  {
+    "line": 1802,
+    "text": "            this.loggingService = t, this.dialog = n, this.bridgeService = r, this.windowsControlService = a, this.translateService = l, this.componentLoaderService = c, this.driverUpdateService = w, this.driverInstallHistoryService = b, this.telemetryUtilsService = x, this.errorHandlerService = P, this.nvappBridgeService = U, this.keyboardMappingService = N, this.isResumeInstall = !1, this.isCustomInstall = !1, this.installerData = null, this.installerStatus = {\r"
+  },
+  {
+    "line": 1871,
+    "text": "            this.nvappBridgeService.executeWithPluginStatusTelemetry(T.Ts.Nvapp.Driverinstall.InstallAsync, {\r"
+  },
+  {
+    "line": 1876,
+    "text": "              this.logger.info(\"Install Response received\", b), this.userManualCancel = !1, this.installBeforeCancelOnInitialFinishClicked = !1, this.isInstallInitialForm = !1, this.telemetryUtilsService.sendPluginApiStatusTelemetry({\r"
+  },
+  {
+    "line": 1880,
+    "text": "              }), this.tryAgainCase ? (this.show(this.initializeInstallerData(!0), A), (0, D.isEmpty)(this.installablePackageData?.packages) ? this.continueOnExpressClicked = !0 : this.updatePackagesAndContinueInstallation(), this.tryAgainCase = !1, this.sendInstallationTypeTelemetry(n)) : this.showInstallationSelectForm(this.isCustomInstall, r)\r"
+  },
+  {
+    "line": 1882,
+    "text": "              this.tryAgainCase = !1, this.logger.error(\"Install Response failed\", b), b?.code !== G.InstallerAlreadyRunning && this.windowsControlService.enableCloseButton(!0).subscribe(), (b?.code === B._O || b instanceof In.n) && this.errorHandlerService.showOptionalPluginFailErrorDialog(), this.telemetryUtilsService.sendPluginApiStatusTelemetry({\r"
+  },
+  {
+    "line": 1955,
+    "text": "                    this.setDialogModel(this.initializeInstallerData(!0), A), (0, D.isEmpty)(this.installablePackageData?.packages) ? this.continueOnExpressClicked = !0 : this.updatePackagesAndContinueInstallation(), this.sendInstallationTypeTelemetry(t)\r"
+  },
+  {
+    "line": 1961,
+    "text": "          sendInstallationTypeTelemetry(t) {\r"
+  },
+  {
+    "line": 1963,
+    "text": "            n = t ? this.installablePackageData?.cleanInstall ? d.EB.CustomCleanInstall : d.EB.CustomOverInstall : d.EB.ExpressInstall, this.telemetryUtilsService.sendClickEvent(n, d.JZ.DriverInstallation, !0, this.driverDetails?.version)\r"
+  },
+  {
+    "line": 2091,
+    "text": "                  this.setDialogModel(this.initializeInstallerData(!0), A), this.updatePackagesAndContinueInstallation(), this.sendInstallationTypeTelemetry(this.isCustomInstall)\r"
+  },
+  {
+    "line": 2492,
+    "text": "            this.loggingService = t, this.driverInstallationService = n, this.downloaderService = r, this.driverUpdateService = a, this.driverInstallHistoryService = l, this.driverUtilsService = c, this.telemetryUtilsService = w, this.downloadProgressPipe = b, this.errorHandlerService = x, this.fullscreenModalService = P, this.focusMonitor = U, this.sharedStorageService = N, this.offlineService = vi, this.reInstallMoreMenuButton = (0, e.ebz)(\"reInstallMoreMenuButton\"), this.downloadCancelled = (0, e.CGW)(), this.isInstalledDriver = (0, e.hFB)(!1), this.isRecommendedDriverAvailable = (0, e.hFB)(!1), this.isPreviouslyInstalledDriver = (0, e.hFB)(!1), this.downloadProgressStateEnum = p.dJ, this.postProcessingStatusEnum = p.Mo, this.isPostProcessFailedOrUndefined = !1, this.destroyRef = (0, e.WQX)(e.abz), this.logger = this.loggingService.getLogger(\"nvapp/DownloadControlsComponent\")\r"
+  },
+  {
+    "line": 2498,
+    "text": "            this.logger.info(\"Start Download\"), this.driverInstallHistoryService.setPreviouslyInstalledDriverState(this.isPreviouslyInstalledDriver()), this.telemetryUtilsService.sendClickEvent(t ? d.EB.DriverReinstall : d.EB.DriverDownloadStart, this.hierarchy, !0, this.driver?.version), this.offlineService.whenOnline(\"download start\").pipe((0, ne.n)(() => this.invokeStartDownload()), (0, _.pQ)(this.destroyRef)).subscribe({\r"
+  },
+  {
+    "line": 2534,
+    "text": "            this.telemetryUtilsService.sendClickEvent(d.EB.DriverViewDetails, d.JZ.InstalledDriver, !0, this.driver.version), this.fullscreenModalService.open(ke, {\r"
+  },
+  {
+    "line": 2571,
+    "text": "            this.telemetryUtilsService.sendClickEvent(d.EB.DriverDownloadCancel, this.hierarchy, !0, this.driver?.version), this.logger.info(\"Stop Download\"), this.downloaderService.stopDownload(this.driverDownloadCandidateName, this.driver.downloadProgressStatus.taskId).pipe((0, _.pQ)(this.destroyRef)).subscribe(t => {\r"
+  },
+  {
+    "line": 2595,
+    "text": "            const t = this.driverUpdateService.getDriverInstallInfo();\r"
+  },
+  {
+    "line": 2769,
+    "text": "            this.driverUpdateService = t, this.driverUtilsService = n, this.appBarService = r, this.telemetryUtilsService = a, this.telemetryService = l, this.performanceMeasureService = w, this.sidebarNotificationService = b, this.driverInstallHistoryService = x, this.provisUtilService = P, this.a11yAnnouncer = U, this.offlineService = N, this.hostClass = \"nv-app-component-wrapper\", this.driverContainer = (0, e.ebz)(\"driverContainer\"), this.preferencesMenuDriverTypes = [], this.updateCheckStarted = k.hs.started, this.reInstallDriverOption = !1, this.reInstallDownloadControls = !1, this.driversLoading = !0, this.driverHeaderText = \"\", this.previouslyInstalledDriversToBeShown = [], this.destroyRef = (0, e.WQX)(e.abz), this.pageHighlightSection = Ye.kA.Drivers, this.logger = c.getLogger(\"nvapp/DriversComponent\"), this.appBarService.setTitle(\"drivers.title\"), this.telemetryService.setScreen(d.f3.Drivers), this.driverUpdateService.initializeListenersForDrivers()\r"
+  },
+  {
+    "line": 2772,
+    "text": "            this.driverUpdateService.updateFetchOnlyDriverUpdateRecommendation(!1), this.performanceMeasureService.markNvAppPerformanceMarkers([R.mM.NvAppDriverRouteNavigationEnd, R.mM.NvAppDriverDataFetchStart], R.fR.Driver), this.getDriverTypePreference(), this.getDriverData(), this.initMenuEnabledState(), this.driverUpdateService.getUpdateCheckProgressStatus().pipe((0, _.pQ)(this.destroyRef)).subscribe(t => {\r"
+  },
+  {
+    "line": 2778,
+    "text": "            }), this.fetchDriversData(), this.driverUpdateService.getDisableUpdateCheck().pipe((0, _.pQ)(this.destroyRef)).subscribe(t => this.disableCheckForUpdate = t), this.setDriverHeaderText()\r"
+  },
+  {
+    "line": 2787,
+    "text": "            }), this.telemetryUtilsService.sendClickEvent(d.EB.CheckForUpdate, \"\", !0), this.a11yAnnouncer.announce(null, \"drivers.preferences.checkingForUpdates\")\r"
+  },
+  {
+    "line": 2789,
+    "text": "          getDriverData() {\r"
+  },
+  {
+    "line": 2797,
+    "text": "              this.setDriverHeaderText(), this.reInstallDriverOption = !!this.installedDriver?.downloadURL\r"
+  },
+  {
+    "line": 2811,
+    "text": "          getDriverTypePreference() {\r"
+  },
+  {
+    "line": 2812,
+    "text": "            this.provisUtilService.isPersonasEnabled().pipe((0, ne.n)(t => t ? this.driverUpdateService.getUpdateStrategyPreference() : this.driverUpdateService.getDriverTypePreference()), (0, _.pQ)(this.destroyRef)).subscribe(t => this.driverTypePreference = this.isDriverTypeEnum(t) ? k.O6.find(n => n.id === t) : k.WZ.find(n => n.id === t))\r"
+  },
+  {
+    "line": 2817,
+    "text": "          setDriverHeaderText() {\r"
+  },
+  {
+    "line": 2820,
+    "text": "                const n = this.driverUpdateService.getDriverInstallInfo();\r"
+  }
+]

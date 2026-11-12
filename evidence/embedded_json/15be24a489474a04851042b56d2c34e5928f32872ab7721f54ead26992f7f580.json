@@ -1,0 +1,285 @@
+[
+  {
+    "file_offset": "0x12e050",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#NvIGOUtil",
+      "title": "NvIGOUtil Endpoints",
+      "type": "object",
+      "module": "NvIGOUtil",
+      "definitions": {
+        "AccessLevel": {
+          "type": "string",
+          "enum": [
+            "readonly",
+            "standard",
+            "full_access"
+          ],
+          "description": "MCP server access level (readonly = safe tools only, standard = safe + normal, full_access = all tools)"
+        },
+        "ToggleIGO": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Toggle In-game overlay.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "toggle": {
+                "type": "boolean",
+                "description": "Enable/Disable In-game overlay.",
+                "default": false
+              }
+            },
+            "required": [
+              "toggle"
+            ]
+          }
+        },
+        "GetShadowPlaySupported": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets ShadowPlay support state.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "language": {
+                "type": "string",
+                "description": "System language.",
+                "default": "en-us"
+              }
+            },
+            "required": [
+              "language"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "MediaPack": {
+                "type": "boolean",
+                "description": "Media pack information, WindowsN version does not have this pack installed by default."
+              },
+              "GPUSupported": {
+                "type": "boolean",
+                "description": "GPU architecture check (Pascal+ required)."
+              },
+              "DriverVersionSupported": {
+                "type": "boolean",
+                "description": "Driver version check (531.61+ required)."
+              },
+              "OSSupported": {
+                "type": "boolean",
+                "description": "OS version check (Windows 10+ required)."
+              },
+              "RAMSupported": {
+                "type": "boolean",
+                "description": "RAM check (4GB+ required)."
+              },
+              "ShadowPlaySupported": {
+                "type": "boolean",
+                "description": "Overall ShadowPlay support (true if all system requirements pass)."
+              }
+            }
+          }
+        },
+        "GetShadowPlayStatus": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets ShadowPlay Status",
+          "return": {
+            "type": "object",
+            "properties": {
+              "shadowPlayStatus": {
+                "type": "string",
+                "description": "ShadowPlay Status",
+                "default": "disabled",
+                "enum": [
+                  "unknown",
+                  "enabled",
+                  "disabled"
+                ]
+              }
+            }
+          }
+        },
+        "GetFilterPhotoModeState": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets Filter & PhotoMode state.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean",
+                "description": "Filter & Photo mode state."
+              }
+            }
+          }
+        },
+        "SetFilterPhotoMode": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets Filter & PhotoMode state.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean",
+                "description": "Enable/Disable Filter & PhotoMode",
+                "default": false
+              }
+            },
+            "required": [
+              "enable"
+            ]
+          }
+        },
+        "SetGAssistInstall": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Set GAssist install state",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "installed": {
+                "type": "boolean",
+                "description": "True - GAssist installed, false - GAssist uninstalled",
+                "default": false
+              }
+            },
+            "required": [
+              "installed"
+            ]
+          }
+        },
+        "OpenIGO": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Opens IGO L0 menu(default) or Settings page",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "openSettings": {
+                "type": "boolean",
+                "description": "Open IGO Main menu(false) or Settings page(true).",
+                "default": false
+              }
+            },
+            "required": [
+              "openSettings"
+            ]
+          }
+        },
+        "hotkeyEnum": {
+          "type": "string",
+          "description": "Enum of possible Share-specific hotkey actions",
+          "enum": [
+            "OpenIGO",
+            "OpenPerformanceOverlay",
+            "OpenChatUI"
+          ]
+        },
+        "GetHotkeyShortcut": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the keys assigned to a specific ShadowPlay hotkey action",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "hotkey": {
+                "$ref": "#/definitions/hotkeyEnum"
+              }
+            },
+            "required": [
+              "hotkey"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "keys": {
+                "type": "array",
+                "description": "Array of integer values for the keys",
+                "items": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        "SetNvAppReadyForGAssist": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Signal that NVIDIA App is ready for G-Assist function calls",
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "True if event was created/set successfully"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "ToggleMcpServer": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Enable or disable MCP server access for AI agents.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean",
+                "description": "Enable/Disable MCP server for AI agents.",
+                "default": false
+              }
+            },
+            "required": [
+              "enable"
+            ]
+          }
+        },
+        "GetMcpServerStatus": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Get the current enabled/disabled state of the MCP server.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "enabled": {
+                "type": "boolean",
+                "description": "True if the MCP server is running and ready (readiness event signaled)"
+              },
+              "accessLevel": {
+                "$ref": "#/definitions/AccessLevel"
+              }
+            },
+            "required": [
+              "enabled",
+              "accessLevel"
+            ]
+          }
+        },
+        "SetMcpServerAccessLevel": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Persist the MCP server access level (global tier ceiling) to HKLM. On/off is controlled separately by ToggleMcpServer.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "accessLevel": {
+                "$ref": "#/definitions/AccessLevel"
+              }
+            },
+            "required": [
+              "accessLevel"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

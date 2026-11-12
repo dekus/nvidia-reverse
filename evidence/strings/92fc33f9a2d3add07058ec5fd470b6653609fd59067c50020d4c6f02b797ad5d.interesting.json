@@ -1,0 +1,117 @@
+[
+  {
+    "offset": "0xf2a00",
+    "encoding": "ascii",
+    "text": "NvPluginWatchdog"
+  },
+  {
+    "offset": "0xf2b00",
+    "encoding": "ascii",
+    "text": "\\NvPluginWatchdo"
+  },
+  {
+    "offset": "0xf4df0",
+    "encoding": "ascii",
+    "text": "InitTelemetry"
+  },
+  {
+    "offset": "0xf4e00",
+    "encoding": "ascii",
+    "text": "DeInitTelemetry"
+  },
+  {
+    "offset": "0x10bbd8",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\rel\\src\\NvContainer\\_out\\x86_64\\release\\plugins\\watchdog\\NvPluginWatchdog.pdb"
+  },
+  {
+    "offset": "0x120e82",
+    "encoding": "ascii",
+    "text": "NvPluginWatchdog.dll"
+  },
+  {
+    "offset": "0x120e97",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x121b0a",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0xf2de0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\Windows Error Reporting\\LocalDumps\\%ls%ls"
+  },
+  {
+    "offset": "0xf44c0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\%ls\\Watchdog"
+  },
+  {
+    "offset": "0xf5410",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0xf5450",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0xf56d0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0xf5fd0",
+    "encoding": "utf-16le",
+    "text": "--sendtelemetry"
+  },
+  {
+    "offset": "0xf5ff0",
+    "encoding": "utf-16le",
+    "text": "sends telemetry using specified container telemetry helper DLL"
+  },
+  {
+    "offset": "0xf7560",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NvContainer"
+  },
+  {
+    "offset": "0xf7790",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0xf77b8",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0xf77e0",
+    "encoding": "utf-16le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0xf77f8",
+    "encoding": "utf-16le",
+    "text": "HKEY_CLASSES_ROOT"
+  },
+  {
+    "offset": "0xf7820",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_CONFIG"
+  },
+  {
+    "offset": "0x131e14",
+    "encoding": "utf-16le",
+    "text": "NvPluginWatchdog"
+  },
+  {
+    "offset": "0x131ef4",
+    "encoding": "utf-16le",
+    "text": "NvPluginWatchdog.dll"
+  }
+]

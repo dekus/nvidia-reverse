@@ -1,0 +1,751 @@
+[
+  {
+    "path": "FrameViewSDK\\FvContainer\\NvMessageBus.dll",
+    "sha256": "4915c54254d22a538c82ed438a8b01ce3b3ccdb136a9853072d463d436e80ae3",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "description",
+        "type",
+        "definitions",
+        "properties",
+        "required"
+      ]
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\plugins.system\\NvMessageBusBroadcast.dll",
+    "sha256": "e07a2df896f8e081117ae027ac4fce9613118c131030b0ccbbcc5731d750e595",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "description",
+        "type",
+        "definitions",
+        "properties",
+        "required"
+      ]
+    ]
+  },
+  {
+    "path": "Installer2\\InstallerCore\\NvInstallerUtil.dll",
+    "sha256": "e08b544f697e003cda488f09b28210b6339ed333b7d4e95beadb59fa8485b822",
+    "objects": 3,
+    "root_keys": [
+      [
+        "$schema",
+        "title",
+        "type",
+        "properties",
+        "required"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "properties",
+        "required"
+      ],
+      [
+        "$schema",
+        "additionalProperties",
+        "definitions",
+        "description",
+        "properties",
+        "required",
+        "type"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\BackgroundProcess\\BackgroundProcess.dll",
+    "sha256": "71f7038fae4657eb27dfba113ffeeb981e6952588d5e1709b952eed6760d8dcc",
+    "objects": 2,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "properties",
+        "additionalProperties",
+        "required"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\LocalGames.dll",
+    "sha256": "374d54b50b3aff21eeae03752a846bb0d0e16995e4f7fe9c55a69369348fbbde",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\NvCplDisplayPlugin.dll",
+    "sha256": "1ab74d6cff0c2a7e64afdb0f8602c6d3521041d768d935e3cef2ebab69787060",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\NvCplPlugin.dll",
+    "sha256": "ae985824c654f6f05d73819ca800c72007b0b3bff58f2731fca9c5cc51be158b",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\NvPerfMon.dll",
+    "sha256": "391ce3350020cd47f5ab8ab5f14261b64de11d97b93358602dbb73a5a20d13b8",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\NvWorkstation.dll",
+    "sha256": "7b51449052214a12a0dbf001925cd9811c149bc38bf99edf8fd4dee4a1da9b76",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\SystemInfo.dll",
+    "sha256": "e67c0fb8991495fc1795486263042c2af7e3ce9c29fd030ebf20a7cf53958cd4",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\AppDiscovery.dll",
+    "sha256": "ee57869caf91ca90b55c43a549edbe255e9c2822f36bf26a8de578387df10870",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\DriverInstall.dll",
+    "sha256": "429f7cccf4828a0cfd17962a50bb6d5b8bbe14a0666d6d36ca0a7173a4303fa1",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\LoginId.dll",
+    "sha256": "87319cac6eaec67bfab7999494bfbf69d35f4c668f063196f58e22ddcf207f3e",
+    "objects": 2,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ],
+      [
+        "$schema",
+        "type",
+        "properties",
+        "required"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\MessageBusRouter.dll",
+    "sha256": "517840f0c1ffbfd699c1f628e1d37449299d242e55ec13ed4a6ab3dc95a1858a",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "title",
+        "type",
+        "properties",
+        "required"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\NvIGOUtil.dll",
+    "sha256": "15be24a489474a04851042b56d2c34e5928f32872ab7721f54ead26992f7f580",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\NvOc.dll",
+    "sha256": "c1a24f75b1db3cccdeab14906a32154254e03ee1f6f9d74d8cfb0dcb726ef2ee",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\Gallery.dll",
+    "sha256": "5361a2c1993c80499cd6448b5f476d29a2ffee18ce20b4979ea00bcaeba32098",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\GraphicsSetting.dll",
+    "sha256": "ffbc5c554ff6d125a49f830e2e26ff8798a9349ef29e753313e56e0b277f65a9",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\NvCamera.dll",
+    "sha256": "c167a74311e3de18aad10c9c6a930f9fbaf3209c3d32d18c0519844079860e3f",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\Rise.dll",
+    "sha256": "6fe292b656acf7611b1bfe6f94c386d01f3c9aa7312c6c29a135b8313a583f60",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\ShareServer.dll",
+    "sha256": "ea5cc83f0023ad367f1e1be8b8e038c00e364fc1516afb50412742bd9f8ed1f0",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\McpServer\\NvAppCore.dll",
+    "sha256": "5b271506715f51d9690ddbfe95a9e808c1a4d616653d27eadf24da313976bc01",
+    "objects": 1,
+    "root_keys": [
+      [
+        "_comment",
+        "tools"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\MessageBus\\NvMessageBus.dll",
+    "sha256": "348162a5948cd59e8b0ece73c7cdf9faa55d9a9f906879392c1527308b2af85d",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "description",
+        "type",
+        "definitions",
+        "properties",
+        "required"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\MessageBus\\NvMessageBusBroadcast.dll",
+    "sha256": "63b000b70eaea5477e8d30e141f84ccf5391a8d098377768795e694aeda8372f",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "description",
+        "type",
+        "definitions",
+        "properties",
+        "required"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvBackend\\Plugins\\LocalUser\\NvBackend64.dll",
+    "sha256": "7a84c83e7437cf63c94f9edd389f4b1e6f072ef1b7bb6fa1013a22e670132a50",
+    "objects": 8,
+    "root_keys": [
+      [
+        "$schema",
+        "title",
+        "type",
+        "definitions",
+        "properties",
+        "required"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "definitions",
+        "properties",
+        "required"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "definitions",
+        "properties",
+        "required"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "definitions",
+        "properties",
+        "required"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "definitions",
+        "properties",
+        "required"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "definitions",
+        "properties",
+        "required"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "definitions",
+        "properties",
+        "required"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "definitions",
+        "properties",
+        "required"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvLocalizedConfig\\NvLocalizedConfig.dll",
+    "sha256": "fb9958400043be8f32192ef061f98db24ee659f59b0c83410c791edcf5a70200",
+    "objects": 5,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "properties",
+        "required"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "properties",
+        "required"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "definitions",
+        "properties",
+        "required"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "definitions",
+        "properties",
+        "required"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\aiuser\\McpServerPlugin.dll",
+    "sha256": "c8fe52a475cdaececd2e7d1fff2f16ad2c932d9549492727fa3fc459a5a7943e",
+    "objects": 3,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ],
+      [
+        "_comment",
+        "tools"
+      ],
+      [
+        "_comment",
+        "tools"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvAccount.dll",
+    "sha256": "473c1ea63f0a9a923303f7a03315eb285ad48326fd1f23f3e67685bb464dbe44",
+    "objects": 6,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "definitions",
+        "properties",
+        "required"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "properties",
+        "required"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "definitions",
+        "properties",
+        "required"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "properties",
+        "required"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "definitions",
+        "properties",
+        "required"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\DesktopNotification.dll",
+    "sha256": "77b6a40c31dbe8319aa91cfd7921bbdea1b0a247d61986b12ed6efc53cb94089",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\Diagnostics.dll",
+    "sha256": "ef4d98d1b68cf8e60bc51960b9b28be0a4e90b3291cf66953753a03f8fc056a4",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\Downloader.dll",
+    "sha256": "b12df892d47aaeb73f30b9f655a1f7c39541193bc6ec3546b6e982f4e78b2bbe",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "system",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\DriverUpdateRecommendation.dll",
+    "sha256": "7da2c603174a7c6c7d3e5549d7f1d37d9ac21283864f03d02fd3a35ee8d9a8b3",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\NvAppIgoIpcProxy.dll",
+    "sha256": "16b4d31149d89b3ac6f1ada950907521c6b75dc515b1c063b06eb2213a5e6eb5",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\NvKVStorage.dll",
+    "sha256": "8b7452fc80c02e6eedf41fd0c4eeb3d4875adea838010a3cb6afa65dc05dad84",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\oc\\_OverClockingNvc.dll",
+    "sha256": "34bf6504e387f5e00ad3d662b90a2ec23a124794352af02fbcd504d3d573a39d",
+    "objects": 1,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ]
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\session\\NvDriverDiagnostics.dll",
+    "sha256": "8dce136dde4d2f25ddf4df33373939a0e1c2ba30088fc0740a9539c1146cec30",
+    "objects": 4,
+    "root_keys": [
+      [
+        "$schema",
+        "id",
+        "title",
+        "type",
+        "module",
+        "definitions"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "properties",
+        "required"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "properties",
+        "required"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "definitions",
+        "properties",
+        "required"
+      ]
+    ]
+  },
+  {
+    "path": "NvTelemetry\\plugin\\NvTelemetry64.dll",
+    "sha256": "64f71e1b98f1fcea2d38f353e3097108c8a0d5196123d15fd94e25a44f887ee5",
+    "objects": 3,
+    "root_keys": [
+      [
+        "$schema",
+        "title",
+        "type",
+        "properties",
+        "required"
+      ],
+      [
+        "$schema",
+        "title",
+        "type",
+        "properties",
+        "required"
+      ],
+      [
+        "$schema",
+        "additionalProperties",
+        "definitions",
+        "description",
+        "properties",
+        "required",
+        "type"
+      ]
+    ]
+  }
+]

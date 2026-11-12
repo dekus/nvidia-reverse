@@ -1,0 +1,342 @@
+[
+  {
+    "offset": "0x10d470",
+    "encoding": "ascii",
+    "text": "OverRideConsentFeature set true, Uninstaller telemetry disabled"
+  },
+  {
+    "offset": "0x10d704",
+    "encoding": "ascii",
+    "text": "Uninstaller telemetry not enabled"
+  },
+  {
+    "offset": "0x10d88c",
+    "encoding": "ascii",
+    "text": "Uninstaller telemetry enabled"
+  },
+  {
+    "offset": "0x10da14",
+    "encoding": "ascii",
+    "text": "OverRideConsentFeature set true, Installer telemetry disabled"
+  },
+  {
+    "offset": "0x10dacc",
+    "encoding": "ascii",
+    "text": "Enabling installer telemetry as consent was granted"
+  },
+  {
+    "offset": "0x10dc40",
+    "encoding": "ascii",
+    "text": "GeForce initiated install, will continue with enabling telemetry"
+  },
+  {
+    "offset": "0x10de30",
+    "encoding": "ascii",
+    "text": "NvApp is selected for install, enable telemetry after EULA acceptance"
+  },
+  {
+    "offset": "0x10e20c",
+    "encoding": "ascii",
+    "text": "Enabling installer telemetry"
+  },
+  {
+    "offset": "0x10f3ec",
+    "encoding": "ascii",
+    "text": "Skip EULA as consent was granted"
+  },
+  {
+    "offset": "0x10f640",
+    "encoding": "ascii",
+    "text": "New EULA/Functional consent version found in self update package, show EULA"
+  },
+  {
+    "offset": "0x10f738",
+    "encoding": "ascii",
+    "text": "No changes in EULA/Functional consent version for self update package"
+  },
+  {
+    "offset": "0x10f820",
+    "encoding": "ascii",
+    "text": "Show EULA as consent was not granted"
+  },
+  {
+    "offset": "0x110ee0",
+    "encoding": "ascii",
+    "text": "Telemetry enabled"
+  },
+  {
+    "offset": "0x112c94",
+    "encoding": "ascii",
+    "text": "Constraint injection is not implemented, skipping"
+  },
+  {
+    "offset": "0x112d18",
+    "encoding": "ascii",
+    "text": "Overinstall constraint injected for the selected package for install"
+  },
+  {
+    "offset": "0x112e60",
+    "encoding": "ascii",
+    "text": "Overinstall constraint injection failed for the selected package"
+  },
+  {
+    "offset": "0x1152fc",
+    "encoding": "ascii",
+    "text": "Consent location not found"
+  },
+  {
+    "offset": "0x1153cc",
+    "encoding": "ascii",
+    "text": "Deleting the old consent as new EULA is available"
+  },
+  {
+    "offset": "0x14bb4a",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0xfa0c8",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion"
+  },
+  {
+    "offset": "0xfa3ac",
+    "encoding": "utf-16le",
+    "text": "\\Device\\Mup"
+  },
+  {
+    "offset": "0xfb644",
+    "encoding": "utf-16le",
+    "text": "HKEY_CLASSES_ROOT"
+  },
+  {
+    "offset": "0xfb668",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0xfb68c",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0xfb6b4",
+    "encoding": "utf-16le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0xfb890",
+    "encoding": "utf-16le",
+    "text": "\\registry\\machine\\software\\classes"
+  },
+  {
+    "offset": "0xfbe38",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x10cac8",
+    "encoding": "utf-16le",
+    "text": "NvContainer.ContainerTelemetryApiHelper"
+  },
+  {
+    "offset": "0x10cb18",
+    "encoding": "utf-16le",
+    "text": "NvContainer.NvapiMonitor"
+  },
+  {
+    "offset": "0x10cb4c",
+    "encoding": "utf-16le",
+    "text": "NvPlugin.Watchdog"
+  },
+  {
+    "offset": "0x10cba0",
+    "encoding": "utf-16le",
+    "text": "NvTelemetry"
+  },
+  {
+    "offset": "0x10ce60",
+    "encoding": "utf-16le",
+    "text": "NvContainer.ContainerTelemetryApiHelper"
+  },
+  {
+    "offset": "0x10ced4",
+    "encoding": "utf-16le",
+    "text": "NvContainer.NvapiMonitor"
+  },
+  {
+    "offset": "0x10cf08",
+    "encoding": "utf-16le",
+    "text": "NvPlugin.Watchdog"
+  },
+  {
+    "offset": "0x10cf2c",
+    "encoding": "utf-16le",
+    "text": "NvTelemetry"
+  },
+  {
+    "offset": "0x10d050",
+    "encoding": "utf-16le",
+    "text": "CNvAppExtSite::IsConsentFeatureDisabled"
+  },
+  {
+    "offset": "0x10d128",
+    "encoding": "utf-16le",
+    "text": "CNvAppExtSite::IsConsentFeatureDisabled"
+  },
+  {
+    "offset": "0x10d200",
+    "encoding": "utf-16le",
+    "text": "CNvAppExtSite::IsConsentFeatureDisabled"
+  },
+  {
+    "offset": "0x10d308",
+    "encoding": "utf-16le",
+    "text": "CNvAppExtSite::IsConsentFeatureDisabled"
+  },
+  {
+    "offset": "0x10d358",
+    "encoding": "utf-16le",
+    "text": "OverrideConsentFeature"
+  },
+  {
+    "offset": "0x10d3b8",
+    "encoding": "utf-16le",
+    "text": "CNvAppExtSite::DecideEnableInstallerTelemetryOnUninstall"
+  },
+  {
+    "offset": "0x10d510",
+    "encoding": "utf-16le",
+    "text": "CNvAppExtSite::DecideEnableInstallerTelemetryOnUninstall"
+  },
+  {
+    "offset": "0x10d5f8",
+    "encoding": "utf-16le",
+    "text": "CNvAppExtSite::DecideEnableInstallerTelemetryOnUninstall"
+  },
+  {
+    "offset": "0x10d728",
+    "encoding": "utf-16le",
+    "text": "CNvAppExtSite::DecideEnableInstallerTelemetryOnUninstall"
+  },
+  {
+    "offset": "0x10d79c",
+    "encoding": "utf-16le",
+    "text": "EnableTelemetry"
+  },
+  {
+    "offset": "0x10d818",
+    "encoding": "utf-16le",
+    "text": "CNvAppExtSite::DecideEnableInstallerTelemetryOnUninstall"
+  },
+  {
+    "offset": "0x10d8f8",
+    "encoding": "utf-16le",
+    "text": "CNvAppExtSite::DecideEnableInstallerTelemetryOnUninstall"
+  },
+  {
+    "offset": "0x10d9b8",
+    "encoding": "utf-16le",
+    "text": "CNvAppExtSite::DecideEnableInstallerTelemetry"
+  },
+  {
+    "offset": "0x10dafe",
+    "encoding": "utf-16le",
+    "text": "dCNvAppExtSite::DecideEnableInstallerTelemetry"
+  },
+  {
+    "offset": "0x10dbb8",
+    "encoding": "utf-16le",
+    "text": "CNvAppExtSite::DecideEnableInstallerTelemetry"
+  },
+  {
+    "offset": "0x10dd00",
+    "encoding": "utf-16le",
+    "text": "CNvAppExtSite::DecideEnableInstallerTelemetry"
+  },
+  {
+    "offset": "0x10dda8",
+    "encoding": "utf-16le",
+    "text": "CNvAppExtSite::DecideEnableInstallerTelemetry"
+  },
+  {
+    "offset": "0x10dea8",
+    "encoding": "utf-16le",
+    "text": "CNvAppExtSite::DecideEnableInstallerTelemetry"
+  },
+  {
+    "offset": "0x10e18c",
+    "encoding": "utf-16le",
+    "text": "EnableTelemetry"
+  },
+  {
+    "offset": "0x10f058",
+    "encoding": "utf-16le",
+    "text": "FunctionalConsentFileName"
+  },
+  {
+    "offset": "0x10f0ba",
+    "encoding": "utf-16le",
+    "text": "pConsentLocation"
+  },
+  {
+    "offset": "0x110e54",
+    "encoding": "utf-16le",
+    "text": "EnableTelemetry"
+  },
+  {
+    "offset": "0x111a90",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\ShadowPlay\\NVSPCAPS"
+  },
+  {
+    "offset": "0x111bb0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GFExperience"
+  },
+  {
+    "offset": "0x111cb6",
+    "encoding": "utf-16le",
+    "text": "sSOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  },
+  {
+    "offset": "0x111d60",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvApp\\GFE_Backup"
+  },
+  {
+    "offset": "0x1154d8",
+    "encoding": "utf-16le",
+    "text": "CNvAppExtSite::DecideDeleteConsent"
+  },
+  {
+    "offset": "0x115568",
+    "encoding": "utf-16le",
+    "text": "CNvAppExtSite::DecideDeleteConsent"
+  },
+  {
+    "offset": "0x1155c6",
+    "encoding": "utf-16le",
+    "text": "pConsentLocation"
+  },
+  {
+    "offset": "0x115618",
+    "encoding": "utf-16le",
+    "text": "CNvAppExtSite::DecideDeleteConsent"
+  },
+  {
+    "offset": "0x115690",
+    "encoding": "utf-16le",
+    "text": "CNvAppExtSite::DecideDeleteConsent"
+  },
+  {
+    "offset": "0x1211c8",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Logging\\Definitions\\LogFilters\\PassFilter"
+  },
+  {
+    "offset": "0x1212c8",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Logging"
+  }
+]

@@ -1,0 +1,647 @@
+[
+  {
+    "offset": "0x4673f8",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gpu_drv\\installer_core\\installer_core_vs2017\\NVI2\\GFCTelemetryFeedback.cpp"
+  },
+  {
+    "offset": "0x46745c",
+    "encoding": "ascii",
+    "text": "Telemetry reporting disabled"
+  },
+  {
+    "offset": "0x4683d8",
+    "encoding": "ascii",
+    "text": "Exception occurred while populating the localized telemetry endpoints."
+  },
+  {
+    "offset": "0x468420",
+    "encoding": "ascii",
+    "text": "Localized telemetry endpoints are populated successfully"
+  },
+  {
+    "offset": "0x46845c",
+    "encoding": "ascii",
+    "text": "Telemetry type"
+  },
+  {
+    "offset": "0x4684c0",
+    "encoding": "ascii",
+    "text": "Failed to get the localized endpoints for the telemetry. Telemetry reporting is now disabled"
+  },
+  {
+    "offset": "0x468608",
+    "encoding": "ascii",
+    "text": "Installation telemetry sent successfully. Type "
+  },
+  {
+    "offset": "0x468654",
+    "encoding": "ascii",
+    "text": "Failed to send installation telemetry. Status:"
+  },
+  {
+    "offset": "0x468a80",
+    "encoding": "ascii",
+    "text": "Telemetry Arm64 DLL path is :"
+  },
+  {
+    "offset": "0x48d590",
+    "encoding": "ascii",
+    "text": "Exception in OnFeedbackDroppedDueToPrivacySettings. error:"
+  },
+  {
+    "offset": "0x48d6e8",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gpu_drv\\installer_core\\installer_core_vs2017\\NVI2\\NvTelemetryNotificationListener.cpp"
+  },
+  {
+    "offset": "0x48d840",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gpu_drv\\installer_core\\installer_core_vs2017\\NVI2\\NvTelemetryEvents.cpp"
+  },
+  {
+    "offset": "0x48dbe0",
+    "encoding": "ascii",
+    "text": "UninitializeTelemetry"
+  },
+  {
+    "offset": "0x48dc98",
+    "encoding": "ascii",
+    "text": "InitializeTelemetryStandalone_2"
+  },
+  {
+    "offset": "0x48dd00",
+    "encoding": "ascii",
+    "text": "Check m_getUserTelemetryConsent failed"
+  },
+  {
+    "offset": "0x48dd28",
+    "encoding": "ascii",
+    "text": "GetUserTelemetryConsent"
+  },
+  {
+    "offset": "0x48dd68",
+    "encoding": "ascii",
+    "text": "Check m_setUserTelemetryConsent failed"
+  },
+  {
+    "offset": "0x48dd90",
+    "encoding": "ascii",
+    "text": "SetUserTelemetryConsent"
+  },
+  {
+    "offset": "0x48dda8",
+    "encoding": "ascii",
+    "text": "Check m_getDeviceTelemetryConsent failed"
+  },
+  {
+    "offset": "0x48ddd4",
+    "encoding": "ascii",
+    "text": "GetDeviceTelemetryConsent"
+  },
+  {
+    "offset": "0x48de0c",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendEvent"
+  },
+  {
+    "offset": "0x48de24",
+    "encoding": "ascii",
+    "text": "Check m_setDeviceTelemetryConsent failed"
+  },
+  {
+    "offset": "0x48de50",
+    "encoding": "ascii",
+    "text": "SetDeviceTelemetryConsent"
+  },
+  {
+    "offset": "0x48de88",
+    "encoding": "ascii",
+    "text": "SubscribeForTelemetryNotifications"
+  },
+  {
+    "offset": "0x48ded0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendAnonymousEvent"
+  },
+  {
+    "offset": "0x48df0c",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendEvent_2"
+  },
+  {
+    "offset": "0x48df40",
+    "encoding": "ascii",
+    "text": "UnsubscribeFromTelemetryNotifications"
+  },
+  {
+    "offset": "0x48df88",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_2"
+  },
+  {
+    "offset": "0x48dfc8",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendAnonymousEvent_2"
+  },
+  {
+    "offset": "0x48dfe8",
+    "encoding": "ascii",
+    "text": "FreeTelemetryString"
+  },
+  {
+    "offset": "0x48dffc",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_5"
+  },
+  {
+    "offset": "0x48e018",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_4"
+  },
+  {
+    "offset": "0x48e034",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_3"
+  },
+  {
+    "offset": "0x48e0a0",
+    "encoding": "ascii",
+    "text": "Check m_freeTelemetryString failed"
+  },
+  {
+    "offset": "0x48e1c8",
+    "encoding": "ascii",
+    "text": "telemetry"
+  },
+  {
+    "offset": "0x496a60",
+    "encoding": "ascii",
+    "text": "while prepping telemetry for resume"
+  },
+  {
+    "offset": "0x496a84",
+    "encoding": "ascii",
+    "text": "Sending telemetry"
+  },
+  {
+    "offset": "0x496b08",
+    "encoding": "ascii",
+    "text": "Ignoring unknown exception while prepping telemetry for resume"
+  },
+  {
+    "offset": "0x496de0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gpu_drv\\installer_core\\installer_core_vs2017\\NVI2\\Telemetry.cpp"
+  },
+  {
+    "offset": "0x496f18",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gpu_drv\\installer_core\\installer_core_vs2017\\NVI2\\TestHook.cpp"
+  },
+  {
+    "offset": "0x5a1d4a",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x5a4c34",
+    "encoding": "ascii",
+    "text": ".?AW4NvGFCTelemetryFeedbackType@@"
+  },
+  {
+    "offset": "0x5a4c6c",
+    "encoding": "ascii",
+    "text": ".?AW4EventStatus@TelemetryNotificationListener@@"
+  },
+  {
+    "offset": "0x5b70f0",
+    "encoding": "ascii",
+    "text": ".?AV?$GenericSimpleLoggable@W4NvGFCTelemetryFeedbackType@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x5b7148",
+    "encoding": "ascii",
+    "text": ".?AV?$GenericSimpleLoggable@W4EventStatus@TelemetryNotificationListener@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x5b71e8",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count@VTelemetryNotificationListener@@@std@@"
+  },
+  {
+    "offset": "0x5b79c8",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@ABW4EventStatus@TelemetryNotificationListener@@V?$Chain@AAY0CP@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x5b7e70",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AAY0CC@$$CBDV?$Chain@ABW4NvGFCTelemetryFeedbackType@@V?$Chain@AAY0P@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x5dbc58",
+    "encoding": "ascii",
+    "text": ".?AUITelemetryNotificationListener@Installer@NvTelemetry@@"
+  },
+  {
+    "offset": "0x5dbc9c",
+    "encoding": "ascii",
+    "text": ".?AVTelemetryNotificationListener@@"
+  },
+  {
+    "offset": "0x5dbd18",
+    "encoding": "ascii",
+    "text": ".?AUITelemetry@Installer@NvTelemetry@@"
+  },
+  {
+    "offset": "0x5dbe2c",
+    "encoding": "ascii",
+    "text": ".?AVTelemetry@Installer@NvTelemetry@@"
+  },
+  {
+    "offset": "0x66a286",
+    "encoding": "ascii",
+    "text": "Allows to inject constraint to the existing listWW"
+  },
+  {
+    "offset": "0x66d876",
+    "encoding": "ascii",
+    "text": "INVInstallerTest provides a hook into internal state for testingWW"
+  },
+  {
+    "offset": "0x66da92",
+    "encoding": "ascii",
+    "text": "INVInstallerTest2 provides additional hooks to internal state for testingW"
+  },
+  {
+    "offset": "0x66db1a",
+    "encoding": "ascii",
+    "text": "INVInstallerTest3 provides additional hooks to internal state for testingW'"
+  },
+  {
+    "offset": "0x66db92",
+    "encoding": "ascii",
+    "text": "INVInstallerTest4 provides additional hooks to internal state for testingW*"
+  },
+  {
+    "offset": "0x43cb48",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x43ce80",
+    "encoding": "utf-16le",
+    "text": "HKLM\\SOFTWARE\\NVIDIA Corporation"
+  },
+  {
+    "offset": "0x43cee8",
+    "encoding": "utf-16le",
+    "text": "HKCU\\SOFTWARE\\NVIDIA Corporation"
+  },
+  {
+    "offset": "0x43d500",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion"
+  },
+  {
+    "offset": "0x43d640",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\SharedDLLs"
+  },
+  {
+    "offset": "0x43d9d0",
+    "encoding": "utf-16le",
+    "text": "\\registry\\machine\\software\\classes"
+  },
+  {
+    "offset": "0x43df30",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall"
+  },
+  {
+    "offset": "0x44d120",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Logging\\Definitions\\LogFilters\\PassFilter"
+  },
+  {
+    "offset": "0x44d240",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Logging"
+  },
+  {
+    "offset": "0x4574d0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Installer2"
+  },
+  {
+    "offset": "0x4630f8",
+    "encoding": "utf-16le",
+    "text": "HKEY_CLASSES_ROOT"
+  },
+  {
+    "offset": "0x463128",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0x463150",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0x463174",
+    "encoding": "utf-16le",
+    "text": "HKEY_PERFORMANCE_DATA"
+  },
+  {
+    "offset": "0x4631a0",
+    "encoding": "utf-16le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0x4631b8",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_CONFIG"
+  },
+  {
+    "offset": "0x4631e0",
+    "encoding": "utf-16le",
+    "text": "HKEY_DYN_DATA"
+  },
+  {
+    "offset": "0x4651d0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce"
+  },
+  {
+    "offset": "0x467188",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gpu_drv\\installer_core\\installer_core_vs2017\\NVI2\\GFCTelemetryFeedback.h"
+  },
+  {
+    "offset": "0x467286",
+    "encoding": "utf-16le",
+    "text": " CGFCTelemetryFeedback::GetStringValue"
+  },
+  {
+    "offset": "0x4672fc",
+    "encoding": "utf-16le",
+    "text": "NVI2.GFCTelemetryFeedback"
+  },
+  {
+    "offset": "0x467330",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gpu_drv\\installer_core\\installer_core_vs2017\\NVI2\\GFCTelemetryFeedback.cpp"
+  },
+  {
+    "offset": "0x467480",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::CGFCTelemetryFeedback"
+  },
+  {
+    "offset": "0x467520",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::GetPackageName"
+  },
+  {
+    "offset": "0x467570",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::GetInstallerElapsedTimeMs"
+  },
+  {
+    "offset": "0x4675d8",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::GetPackageVersion"
+  },
+  {
+    "offset": "0x467690",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::GetDeviceNames"
+  },
+  {
+    "offset": "0x467720",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::BuildCommandLineBlock"
+  },
+  {
+    "offset": "0x4677c8",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::BuildRebootRequiredBlock"
+  },
+  {
+    "offset": "0x467868",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::BuildInvocationTypeBlock"
+  },
+  {
+    "offset": "0x4679c0",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::BuildInstallTypeBlock"
+  },
+  {
+    "offset": "0x467ae8",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::BuildCleanInstallBlock"
+  },
+  {
+    "offset": "0x467b60",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::BuildAvailableSubpackagesBlock"
+  },
+  {
+    "offset": "0x467c0e",
+    "encoding": "utf-16le",
+    "text": "eCGFCTelemetryFeedback::BuildSubpackagePhaseBlock"
+  },
+  {
+    "offset": "0x467ca0",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::BuildInstalledSubpackageBlock"
+  },
+  {
+    "offset": "0x467da8",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::BuildNvGpuBlock"
+  },
+  {
+    "offset": "0x467e08",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::GenerateGUID"
+  },
+  {
+    "offset": "0x467e68",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::PrepForResume"
+  },
+  {
+    "offset": "0x467eb8",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::GetInstanceId"
+  },
+  {
+    "offset": "0x468030",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::IsTelemetryEnabled"
+  },
+  {
+    "offset": "0x46808c",
+    "encoding": "utf-16le",
+    "text": "EnableTelemetry"
+  },
+  {
+    "offset": "0x468328",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::GetLocalizedEndpoints"
+  },
+  {
+    "offset": "0x468470",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::SendTelemetry"
+  },
+  {
+    "offset": "0x468544",
+    "encoding": "utf-16le",
+    "text": "NvTelemetry_WD"
+  },
+  {
+    "offset": "0x468580",
+    "encoding": "utf-16le",
+    "text": "NvTelemetryConfig.json"
+  },
+  {
+    "offset": "0x468688",
+    "encoding": "utf-16le",
+    "text": "NvTelemetry.log"
+  },
+  {
+    "offset": "0x4687f8",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::BuildPackageTypeBlock"
+  },
+  {
+    "offset": "0x4688b0",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::IsPointingToStaging"
+  },
+  {
+    "offset": "0x468908",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::GetNewDeviceId"
+  },
+  {
+    "offset": "0x4689e0",
+    "encoding": "utf-16le",
+    "text": "CGFCTelemetryFeedback::GetArm64DeviceId"
+  },
+  {
+    "offset": "0x46af30",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Installer2\\Devices"
+  },
+  {
+    "offset": "0x471ac0",
+    "encoding": "utf-16le",
+    "text": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce"
+  },
+  {
+    "offset": "0x471b30",
+    "encoding": "utf-16le",
+    "text": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnceEx"
+  },
+  {
+    "offset": "0x471c18",
+    "encoding": "utf-16le",
+    "text": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\"
+  },
+  {
+    "offset": "0x471c88",
+    "encoding": "utf-16le",
+    "text": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnceEx\\"
+  },
+  {
+    "offset": "0x47e90e",
+    "encoding": "utf-16le",
+    "text": "eCGFCTelemetryFeedback::~CGFCTelemetryFeedback"
+  },
+  {
+    "offset": "0x47edc0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA_RebootNeeded_{CE1CA72E-7C77-4b69-A5D3-2C4CFCD625FD}"
+  },
+  {
+    "offset": "0x4816b8",
+    "encoding": "utf-16le",
+    "text": "CNVInstaller::SendTelemetry"
+  },
+  {
+    "offset": "0x48d406",
+    "encoding": "utf-16le",
+    "text": ":TelemetryNotificationListener::OnFeedbackSent"
+  },
+  {
+    "offset": "0x48d468",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gpu_drv\\installer_core\\installer_core_vs2017\\NVI2\\NvTelemetryNotificationListener.cpp"
+  },
+  {
+    "offset": "0x48d5d0",
+    "encoding": "utf-16le",
+    "text": "TelemetryNotificationListener::OnFeedbackDroppedDueToPrivacySettings"
+  },
+  {
+    "offset": "0x48d688",
+    "encoding": "utf-16le",
+    "text": "TelemetryNotificationListener::OnFeedbackFailed"
+  },
+  {
+    "offset": "0x4960c8",
+    "encoding": "utf-16le",
+    "text": "CTelemetry::~CTelemetry"
+  },
+  {
+    "offset": "0x4960f8",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gpu_drv\\installer_core\\installer_core_vs2017\\NVI2\\Telemetry.h"
+  },
+  {
+    "offset": "0x4962f8",
+    "encoding": "utf-16le",
+    "text": "NVI2.Telemetry"
+  },
+  {
+    "offset": "0x496cc4",
+    "encoding": "utf-16le",
+    "text": "CTelemetry::GetNewDeviceId"
+  },
+  {
+    "offset": "0x496cfc",
+    "encoding": "utf-16le",
+    "text": "CTelemetry::CTelemetry"
+  },
+  {
+    "offset": "0x496d30",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gpu_drv\\installer_core\\installer_core_vs2017\\NVI2\\Telemetry.cpp"
+  },
+  {
+    "offset": "0x496e38",
+    "encoding": "utf-16le",
+    "text": "CTelemetry::GetInstanceId"
+  },
+  {
+    "offset": "0x496e6c",
+    "encoding": "utf-16le",
+    "text": "CTelemetry::PrepForResume"
+  },
+  {
+    "offset": "0x496ea0",
+    "encoding": "utf-16le",
+    "text": "CTelemetry::GenerateGUID"
+  },
+  {
+    "offset": "0x496ed4",
+    "encoding": "utf-16le",
+    "text": "CTelemetry::IsTelemetryEnabled"
+  }
+]

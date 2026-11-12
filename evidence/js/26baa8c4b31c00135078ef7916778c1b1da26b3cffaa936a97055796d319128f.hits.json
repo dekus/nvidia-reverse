@@ -1,0 +1,214 @@
+[
+  {
+    "line": 44,
+    "text": "            return e.Njj(p.processFunctionalConsent(r, d))\r"
+  },
+  {
+    "line": 55,
+    "text": "            this.loggingService = t, this.nvAccountInterfaceService = a, this.dataConsentService = i, this.deviceConsents = [], this.logger = t.getLogger(\"nvapp/PreferencesPrivacyComponent\")\r"
+  },
+  {
+    "line": 61,
+    "text": "            this.getPrivacySettingsSub?.unsubscribe(), this.getPrivacySettingsSub = (0, B.zV)([this.dataConsentService.getDeviceConsents(), this.dataConsentService.getDeviceTechnicalConsent()]).subscribe(([t, a]) => {\r"
+  },
+  {
+    "line": 62,
+    "text": "              this.logger.info(\"Received privacy consents \", t), this.logger.info(\"Received technical consent \", a), this.deviceConsents = t, this.technicalConsent = a\r"
+  },
+  {
+    "line": 63,
+    "text": "            }, t => this.logger.error(\"Error occurred while getting consents from observables \", t))\r"
+  },
+  {
+    "line": 65,
+    "text": "          processFunctionalConsent(t, a) {\r"
+  },
+  {
+    "line": 66,
+    "text": "            this.deviceConsents[a].checked = !t.checked, 1 === a && (t.checked || (this.technicalConsent.checked = !1), this.technicalConsent.disabled = !t.checked, this.updatePrivacySettings(this.deviceConsents[1].checked ? D.E.RequiredFunctional : D.E.RequiredOnly))\r"
+  },
+  {
+    "line": 68,
+    "text": "          processTechnicalConsent(t) {\r"
+  },
+  {
+    "line": 69,
+    "text": "            this.technicalConsent.checked = !t.checked, this.updatePrivacySettings(this.technicalConsent.checked ? D.E.RequiredFunctionalTechnical : D.E.RequiredFunctional)\r"
+  },
+  {
+    "line": 95,
+    "text": "                [1, \"consent\"],\r"
+  },
+  {
+    "line": 96,
+    "text": "                [1, \"error-consent\", 3, \"change\", \"disabled\", \"checked\", \"nvAppAnnouncer\", \"associatedMessage\"],\r"
+  },
+  {
+    "line": 97,
+    "text": "                [1, \"consent-info\"],\r"
+  },
+  {
+    "line": 99,
+    "text": "                [1, \"font-body2\", \"consent-desc\"],\r"
+  },
+  {
+    "line": 104,
+    "text": "                  return i.processTechnicalConsent(i.technicalConsent)\r"
+  },
+  {
+    "line": 105,
+    "text": "                }), e.j41(7, \"div\", 4)(8, \"span\", 5), e.EFF(9), e.nI1(10, \"translate\"), e.k0s(), e.j41(11, \"span\", 6), e.EFF(12), e.nI1(13, \"translate\"), e.k0s()()()()), 2 & a && (e.R7$(2), e.SpI(\" \", e.bMT(3, 7, \"preferences.about.privacy.title\"), \" \"), e.R7$(2), e.Dyx(i.deviceConsents), e.R7$(2), e.Y8G(\"disabled\", i.technicalConsent.disabled)(\"checked\", i.technicalConsent.checked)(\"nvAppAnnouncer\", i.technicalConsent.checked)(\"associatedMessage\", i.technicalConsent.header), e.R7$(3), e.JRh(e.bMT(10, 9, i.technicalConsent.header)), e.R7$(3), e.SpI(\"\", e.bMT(13, 11, i.technicalConsent.desc), \" \"))\r"
+  },
+  {
+    "line": 108,
+    "text": "              styles: [\".privacy-container[_ngcontent-%COMP%]{padding-bottom:16px}.privacy-container[_ngcontent-%COMP%]   .consent[_ngcontent-%COMP%]{padding:0 16px;margin-bottom:12px}.privacy-container[_ngcontent-%COMP%]   .error-consent[_ngcontent-%COMP%]{padding-left:58px}.privacy-container[_ngcontent-%COMP%]   .consent-info[_ngcontent-%COMP%]{display:flex;flex-direction:column;margin-top:12px}\"]\r"
+  },
+  {
+    "line": 240,
+    "text": "            this.loggingService = t, this.downloaderService = a, this.releaseHighlightsService = i, this.nvAppTelemetryUtilService = r, this.pluginsNotificationService = d, this.preferenceService = p, this.betaEnable = e.ebz.required(\"betaEnable\", {\r"
+  },
+  {
+    "line": 254,
+    "text": "              this.nvAppTelemetryUtilService.sendSettingChangeEvent(s.RS.BetaBuild, this.isBetaEnabled ? s.GC.OptIn : s.GC.OptOut, s.ih.About, !0), this.logger.info(\"modified update channel\")\r"
+  },
+  {
+    "line": 256,
+    "text": "              this.logger.error(\"Error occurred in capturing event click for beta Update Channel set  \", t), this.nvAppTelemetryUtilService.sendSettingChangeEvent(s.RS.BetaBuild, this.isBetaEnabled ? s.GC.OptIn : s.GC.OptOut, s.ih.About, !0, t?.message ?? \"failed to update beta channel preference\")\r"
+  },
+  {
+    "line": 533,
+    "text": "          setDriverUpdate() {\r"
+  },
+  {
+    "line": 535,
+    "text": "              this.logger.info(\"Driver Update Notification set success\", t), this.preferenceService.sendSettingChangeTelemetry(s.RS.DriverUpdateNotification, this.isDriverUpdateEnabled ? s.GC.Enabled : s.GC.Disabled, s.ih.Notifications)\r"
+  },
+  {
+    "line": 537,
+    "text": "              this.logger.error(\"Error while setting Driver Update Notification\", t), this.preferenceService.sendSettingChangeTelemetry(s.RS.DriverUpdateNotification, this.isDriverUpdateEnabled ? s.GC.Enabled : s.GC.Disabled, s.ih.Notifications, t?.message ?? \"Failed to set driver update notification\")\r"
+  },
+  {
+    "line": 542,
+    "text": "              this.logger.info(\"Reward notification preference set success\", t), this.preferenceService.sendSettingChangeTelemetry(s.RS.RewardsNotification, this.isRewardNotificationEnabled ? s.GC.Enabled : s.GC.Disabled, s.ih.Notifications)\r"
+  },
+  {
+    "line": 544,
+    "text": "              this.logger.error(\"Error while setting reward notification preference\", t), this.preferenceService.sendSettingChangeTelemetry(s.RS.RewardsNotification, this.isRewardNotificationEnabled ? s.GC.Enabled : s.GC.Disabled, s.ih.Notifications, t?.message ?? \"Failed to set reward notification preference\")\r"
+  },
+  {
+    "line": 552,
+    "text": "              this.logger.info(\"Drive Update value to set\", this.isDriverUpdateEnabled), this.setDriverUpdate()\r"
+  },
+  {
+    "line": 567,
+    "text": "                this.logger.info(\"Display Mode preference value to set\", t), this.preferenceService.sendSettingChangeTelemetry(s.RS.DisplayModeNotification, this.isDisplayModeNotificationEnabled ? s.GC.Enabled : s.GC.Disabled, s.ih.Notifications)\r"
+  },
+  {
+    "line": 570,
+    "text": "                this.logger.error(\"Error occurred in capturing event click for Display Mode preference\", t), this.preferenceService.sendSettingChangeTelemetry(s.RS.DisplayModeNotification, this.isDisplayModeNotificationEnabled ? s.GC.Enabled : s.GC.Disabled, s.ih.Notifications, t?.message ?? \"Failed to set display mode notification preference\")\r"
+  },
+  {
+    "line": 742,
+    "text": "              this.preferenceService.sendSettingChangeTelemetry(s.RS.AddScanLocation, s.GC.PathAdded, s.ih.System)\r"
+  },
+  {
+    "line": 744,
+    "text": "              this.logger.error(\"Error while adding location\", t), this.preferenceService.sendSettingChangeTelemetry(s.RS.AddScanLocation, s.GC.PathAdded, s.ih.System, t?.message ?? \"failed to add new path\")\r"
+  },
+  {
+    "line": 749,
+    "text": "              this.preferenceService.sendSettingChangeTelemetry(s.RS.RemoveScanLocation, s.GC.PathRemoved, s.ih.System)\r"
+  },
+  {
+    "line": 751,
+    "text": "              this.logger.error(\"Error while removing location\", a), this.preferenceService.sendSettingChangeTelemetry(s.RS.AddScanLocation, s.GC.PathAdded, s.ih.System, a?.message ?? \"failed to remove existing path\")\r"
+  },
+  {
+    "line": 813,
+    "text": "            this.loggingService = t, this.bridgeService = a, this.convertUTCToTimeAgoPipe = i, this.dialog = r, this.nvAppTelemetryUtilService = d, this.keyboardMappingService = p, this.lastRefreshTime$ = new dt.m(1), this.logger = t.getLogger(\"nvapp/PreferenceGamesScanService\")\r"
+  },
+  {
+    "line": 822,
+    "text": "            return this.bridgeService.executeCommand(Q.VL, i).pipe((0, C.T)(r => (this.logger.info(\"last application scan time\", r.timestamp), this.lastRefreshTime$.next(r.timestamp), this.nvAppTelemetryUtilService.sendPluginApiStatusTelemetry({\r"
+  },
+  {
+    "line": 827,
+    "text": "            }), r.timestamp)), (0, F.W)(r => (this.logger.error(\"error fetching last application scan time::\", r), this.nvAppTelemetryUtilService.sendPluginApiStatusTelemetry({\r"
+  },
+  {
+    "line": 924,
+    "text": "            this.loggingService = t, this.gamesScanLocationService = a, this.translateService = i, this.appListService = r, this.preferenceGamesScanService = d, this.preferenceService = p, this.opsService = N, this.nvAppTelemetryUtilService = J, this.localeService = on, this.hardwareService = rn, this.scanLocationFeature = l.Yw, this.searchPaths = [], this.graphicsSettingsEnabled = !1, this.isScanning = !1, this.supportedGamesLink = l.GO, this.opsSupported = !1, this.localGamePluginNotfoundError = !1, this.destroyRef = (0, e.WQX)(e.abz), this.logger = t.getLogger(\"nvapp/PreferenceGameScanComponent\")\r"
+  },
+  {
+    "line": 1011,
+    "text": "            this.isScanning ? this.logger.error(\"Scanning already in progress\") : (this.nvAppTelemetryUtilService.sendClickEvent(s.EB.ScanNow, s.ih.System, !0, \"\"), this.appListService.initiateScan(!0))\r"
+  },
+  {
+    "line": 1071,
+    "text": "            this.loggingService = t, this.localeService = a, this.languagePreferenceService = i, this.telemetryUtilService = r, this.userLanguage = null, this.languageFeatureSection = l.Ey, this.logger = t.getLogger(\"nvapp/LanguagePreferenceComponent\")\r"
+  },
+  {
+    "line": 1081,
+    "text": "            this.setLocale(i), this.sendLanguageChangeTelemetry(t)\r"
+  },
+  {
+    "line": 1101,
+    "text": "          sendLanguageChangeTelemetry(t) {\r"
+  },
+  {
+    "line": 1102,
+    "text": "            this.telemetryUtilService.sendSettingChangeEvent(s.L4.AppLanguage, t, s.ih.System), this.logger.info(`Language change telemetry sent: ${t}`)\r"
+  },
+  {
+    "line": 1178,
+    "text": "          sendSettingChangeTelemetry() {\r"
+  },
+  {
+    "line": 1179,
+    "text": "            const t = this.appThemeService.getThemeValToSendInTelemetry();\r"
+  },
+  {
+    "line": 1180,
+    "text": "            this.preferenceService.sendSettingChangeTelemetry(s.RS.AppTheme, t, s.ih.System)\r"
+  },
+  {
+    "line": 1189,
+    "text": "                  this.selectedTheme = d, this.sendSettingChangeTelemetry()\r"
+  },
+  {
+    "line": 1502,
+    "text": "            const t = this.getDriverAutoDownloadPreference(),\r"
+  },
+  {
+    "line": 1518,
+    "text": "          getDriverAutoDownloadPreference() {\r"
+  },
+  {
+    "line": 1608,
+    "text": "            this.loggingService = t, this.appBarService = a, this.preferenceGamesScanService = i, this.telemetryService = r, this.pageVisitTelemetryService = d, this.route = p, this.appConfig = N, this.className = \"nv-app-component-wrapper nested-tab-group-component\", this.disableTabAnimation = !0, this.enableOptimus = !1, this.selectedTabIndex = 0, this.tabGroup = e.ebz.required(\"tabGroup\"), this.unsubscribe$ = new tt.B7, this.pageHighlightSection = at.kA.Settings, this.enableOptimus = this.appConfig?.featureEnablement?.optimus?.enabled, this.logger = t.getLogger(\"nvapp/PreferencesComponent\"), this.appBarService.setTitle(\"toolbar.settings\"), this.telemetryService.setScreen(s.f3.Settings)\r"
+  },
+  {
+    "line": 1613,
+    "text": "            }), this.updateActiveTabIndex(), this.sendPageEventTelemetry()\r"
+  },
+  {
+    "line": 1624,
+    "text": "            this.logger.info(t.index), this.selectedTabIndex = t.index, this.sendPageEventTelemetry()\r"
+  },
+  {
+    "line": 1626,
+    "text": "          sendPageEventTelemetry() {\r"
+  },
+  {
+    "line": 1627,
+    "text": "            const t = this.getActiveTabForPageEventTelemetry(this.selectedTabIndex);\r"
+  },
+  {
+    "line": 1628,
+    "text": "            this.pageVisitTelemetryService.setTabChangedForPageEventTelemetry(t)\r"
+  },
+  {
+    "line": 1630,
+    "text": "          getActiveTabForPageEventTelemetry(t) {\r"
+  }
+]

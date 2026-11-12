@@ -1,0 +1,5161 @@
+[
+  {
+    "file_offset": "0x2ecd60",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#NvCplDisplayplugin",
+      "title": "NvCplDisplayPlugin Endpoints",
+      "type": "object",
+      "module": "NvCplDisplayPlugin",
+      "definitions": {
+        "RAMType": {
+          "type": "integer",
+          "description": "Enum channel of the update",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            14,
+            15,
+            16
+          ],
+          "tsEnumNames": [
+            "UNKNOWN",
+            "SDRAM",
+            "DDR1",
+            "DDR2",
+            "GDDR2",
+            "GDDR3",
+            "GDDR4",
+            "DDR3",
+            "GDDR5",
+            "GDDR5X",
+            "HBM1",
+            "HBM2",
+            "SDDR4",
+            "GDDR6",
+            "GDDR6X",
+            "GDDR7"
+          ]
+        },
+        "BusType": {
+          "type": "integer",
+          "description": "Enum channel of the update",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "tsEnumNames": [
+            "UNKNOWN",
+            "AGP",
+            "PCI",
+            "FPCI",
+            "PCI_EXPRESS",
+            "PCI_EXPRESS_GEN2",
+            "PCI_EXPRESS_GEN3",
+            "PCI_EXPRESS_GEN4",
+            "PCI_EXPRESS_GEN5",
+            "PCI_EXPRESS_GEN6",
+            "AXI"
+          ]
+        },
+        "MaxQType": {
+          "type": "integer",
+          "description": "Enum MaxQ type",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "No",
+            "On",
+            "Yes"
+          ]
+        },
+        "KmdResponse": {
+          "type": "integer",
+          "description": "DDS KMD Response",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "tsEnumNames": [
+            "Response_Ok",
+            "Response_MultiHead",
+            "Response_MultiHeadInactive",
+            "Response_IGpuUnavailable",
+            "Response_IGpuInternalHeadUnavailable",
+            "Response_IGpuInternalHeadRecovered",
+            "Response_ConnectedDisplay"
+          ]
+        },
+        "SRType": {
+          "type": "integer",
+          "description": "Type of self refresh technology detected",
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "tsEnumNames": [
+            "PSR_Unknown",
+            "Sideband",
+            "PSR_Supported",
+            "PSR_Failed"
+          ]
+        },
+        "MuxState": {
+          "type": "integer",
+          "description": "IGPU or DGPU",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "State_Invalid",
+            "State_IGPU",
+            "State_DGPU"
+          ]
+        },
+        "GPUInfo": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "number",
+              "description": "unique identifier for Gpu"
+            },
+            "cudaCore": {
+              "type": "number",
+              "description": "CUDA cores"
+            },
+            "isNvidiaGpu": {
+              "type": "boolean",
+              "description": "true if GPU is NVIDIA"
+            },
+            "longGPUName": {
+              "type": "string",
+              "description": "Long GPU Name"
+            },
+            "coreClock": {
+              "type": "number",
+              "description": "Core clock"
+            },
+            "memoryDataRate": {
+              "type": "number",
+              "description": "Memory Data Rate"
+            },
+            "memoryInterface": {
+              "type": "number",
+              "description": "Memory Interface"
+            },
+            "memoryBandwidth": {
+              "type": "number",
+              "description": "Memory Bandwidth"
+            },
+            "ramType": {
+              "$ref": "#/definitions/RAMType"
+            },
+            "totalAvailableGraphicsMemory": {
+              "type": "number",
+              "description": "Total available graphics memory"
+            },
+            "dedicatedVideoMemory": {
+              "type": "number",
+              "description": "Dedicated video memory"
+            },
+            "systemVideoMemory": {
+              "type": "number",
+              "description": "System video memory"
+            },
+            "sharedSystemMemory": {
+              "type": "number",
+              "description": "Shared system memory"
+            },
+            "videoBIOSVersion": {
+              "type": "string",
+              "description": "Video BIOS version"
+            },
+            "irq": {
+              "type": "number",
+              "description": "IRQ"
+            },
+            "bus": {
+              "type": "number",
+              "description": "Bus"
+            },
+            "busType": {
+              "$ref": "#/definitions/BusType"
+            },
+            "deviceId": {
+              "type": "string",
+              "description": "Device id"
+            },
+            "partNumber": {
+              "type": "string",
+              "description": "Part Number"
+            },
+            "maxQTechnology": {
+              "$ref": "#/definitions/MaxQType"
+            },
+            "maxGpuPower": {
+              "type": "integer"
+            },
+            "isResizableBar": {
+              "type": "boolean"
+            }
+          }
+        },
+        "MosaicType": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "tsEnumNames": [
+            "MOSAIC_NONE",
+            "SLIMOSAIC",
+            "SURROUND",
+            "BASE_MOSAIC",
+            "NEXTGENSURROUND"
+          ]
+        },
+        "SurroundResolutionFlags": {
+          "type": "object",
+          "description": "Surround resolution flags (NV_SURROUND_*)",
+          "properties": {
+            "isCurrent": {
+              "type": "boolean",
+              "description": "NV_SURROUND_CURRENT - currently applied surround resolution"
+            },
+            "isDefault": {
+              "type": "boolean",
+              "description": "NV_SURROUND_DEFAULT - default 3 resolutions returned by display driver"
+            },
+            "isMosaicResolution": {
+              "type": "boolean",
+              "description": "NV_SURROUND_MOSAIC_RESOLUTION - grid wide resolution"
+            },
+            "isBezelCorrected": {
+              "type": "boolean",
+              "description": "NV_SURROUND_BEZEL_CORRECTED - bezel corrected resolution"
+            },
+            "isActiveResolution": {
+              "type": "boolean",
+              "description": "NV_SURROUND_ACTIVE_RESOLUTION - resolution is visible to OS and user (and also to be shown in main surround resolution list)"
+            },
+            "isRecommended": {
+              "type": "boolean",
+              "description": "NV_SURROUND_RECOMMENDED - recommended (max) surround resolution"
+            }
+          },
+          "required": [
+            "isCurrent",
+            "isDefault",
+            "isMosaicResolution",
+            "isBezelCorrected",
+            "isActiveResolution",
+            "isRecommended"
+          ]
+        },
+        "SurroundResolution": {
+          "type": "object",
+          "description": "Single surround resolution entry (width, height, flags)",
+          "properties": {
+            "width": {
+              "type": "integer",
+              "description": "Resolution width in pixels"
+            },
+            "height": {
+              "type": "integer",
+              "description": "Resolution height in pixels"
+            },
+            "flags": {
+              "$ref": "#/definitions/SurroundResolutionFlags"
+            }
+          },
+          "required": [
+            "width",
+            "height",
+            "flags"
+          ]
+        },
+        "SurroundResolutions": {
+          "type": "object",
+          "description": "List of surround resolutions (SURROUND_RESOLUTIONS struct)",
+          "properties": {
+            "resolution": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/SurroundResolution"
+              }
+            }
+          },
+          "required": [
+            "resolution"
+          ]
+        },
+        "RotationType": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "tsEnumNames": [
+            "Rotation0",
+            "Rotation90",
+            "Rotation180",
+            "Rotation270"
+          ]
+        },
+        "MosaicGridDisplay": {
+          "type": "object",
+          "properties": {
+            "displayId": {
+              "type": "integer",
+              "description": "DisplayID of the display"
+            },
+            "overlapX": {
+              "type": "integer",
+              "description": "(+overlap, -gap)"
+            },
+            "overlapY": {
+              "type": "integer",
+              "description": "(+overlap, -gap)"
+            },
+            "rotation": {
+              "$ref": "#/definitions/RotationType"
+            }
+          },
+          "required": [
+            "displayId",
+            "overlapX",
+            "overlapY",
+            "rotation"
+          ]
+        },
+        "MosaicGridDisplaySettings": {
+          "type": "object",
+          "properties": {
+            "width": {
+              "type": "integer",
+              "description": "per display width"
+            },
+            "height": {
+              "type": "integer",
+              "description": "per display height"
+            },
+            "bpp": {
+              "type": "integer",
+              "description": "bits per pixel"
+            },
+            "freq": {
+              "type": "integer",
+              "description": "display frequency"
+            },
+            "rrx1k": {
+              "type": "integer",
+              "description": "fractional refresh rate"
+            }
+          },
+          "required": [
+            "width",
+            "height",
+            "bpp",
+            "freq",
+            "rrx1k"
+          ]
+        },
+        "MosaicGridTopo": {
+          "type": "object",
+          "properties": {
+            "rows": {
+              "type": "integer",
+              "description": "Number of rows"
+            },
+            "columns": {
+              "type": "integer",
+              "description": "Number of columns"
+            },
+            "displayCount": {
+              "type": "integer",
+              "description": "Number of display details"
+            },
+            "applyWithBezelCorrect": {
+              "type": "integer",
+              "description": "When enabling and doing the modeset, do we switch to the bezel-corrected resolution"
+            },
+            "immersiveGaming": {
+              "type": "integer",
+              "description": "Enable as immersive gaming instead of Mosaic SLI (for Quadro-boards only)"
+            },
+            "mosaicType": {
+              "$ref": "#/definitions/MosaicType"
+            },
+            "isAutoconfiguredMultiTileDisplay": {
+              "type": "boolean",
+              "description": "to check whether it is a tile display or not for quadro"
+            },
+            "useTopologyWithMaxGpus": {
+              "type": "boolean",
+              "description": "this overwrites the existing policy of selecting GPU topology of Mosaic/SLI Mosaic"
+            },
+            "displays": {
+              "type": "array",
+              "description": "Displays are done as [(row * columns) + column]",
+              "items": {
+                "$ref": "#/definitions/MosaicGridDisplay"
+              }
+            },
+            "displaySettings": {
+              "$ref": "#/definitions/MosaicGridDisplaySettings"
+            }
+          },
+          "required": [
+            "rows",
+            "columns",
+            "displayCount",
+            "applyWithBezelCorrect",
+            "immersiveGaming",
+            "mosaicType",
+            "isAutoconfiguredMultiTileDisplay",
+            "useTopologyWithMaxGpus",
+            "displays",
+            "displaySettings"
+          ]
+        },
+        "GetDirect3DfeatureLevel": {
+          "type": "object",
+          "isCommand": true,
+          "description": "returns per-GPU feature level",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer",
+                "maximum": 4294967295,
+                "minimum": 0,
+                "description": "Index of GPU for which information is required."
+              }
+            },
+            "required": [
+              "gpuIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "featureLevel": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "FeatureLevel"
+          ]
+        },
+        "GetGPUInformation": {
+          "type": "object",
+          "isCommand": true,
+          "description": "returns all GPU information",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer",
+                "maximum": 4294967295,
+                "minimum": 0,
+                "description": "Index of GPU for which information is required."
+              }
+            },
+            "required": [
+              "gpuIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "gpu": {
+                "$ref": "#/definitions/GPUInfo"
+              }
+            },
+            "required": [
+              "gpu"
+            ]
+          }
+        },
+        "ECCModeStatus": {
+          "type": "object",
+          "description": "ECC Mode status of all the ECC Supported GPUs",
+          "properties": {
+            "gpuId": {
+              "type": "integer",
+              "description": "GPU Id"
+            },
+            "eccModeStatus": {
+              "type": "boolean",
+              "description": "ECC Mode Status value"
+            }
+          },
+          "required": [
+            "gpuId",
+            "eccModeStatus"
+          ]
+        },
+        "IsECCModeSupported": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns whether ECC Mode setting is supported on the system.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "isSupported": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "GetECCModeStatus": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns the ECC Mode Status of all the GPUs which support ECC.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "eccModeStatus": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/ECCModeStatus"
+                }
+              }
+            },
+            "required": [
+              "eccModeStatus"
+            ]
+          }
+        },
+        "ECCModeResult": {
+          "type": "integer",
+          "description": "ECC Mode Return Value",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "ECCMODE_SUCCESS",
+            "ECCMODE_FAIL"
+          ]
+        },
+        "SetECCModeStatus": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Sets the ECC Mode Status of all the GPUs which support ECC.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "eccModeStatus": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/ECCModeStatus"
+                }
+              },
+              "isRestartRequired": {
+                "type": "boolean",
+                "description": "ECC Mode Status value"
+              }
+            },
+            "required": [
+              "eccModeStatus",
+              "isRestartRequired"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "eccModeResult": {
+                "$ref": "#/definitions/ECCModeResult"
+              }
+            }
+          }
+        },
+        "SuperResolutionValue": {
+          "type": "integer",
+          "description": "Super Resolution Value",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "tsEnumNames": [
+            "SuperResValue_Off",
+            "SuperResValue_1",
+            "SuperResValue_2",
+            "SuperResValue_3",
+            "SuperResValue_4",
+            "SuperResValue_Auto"
+          ]
+        },
+        "SuperResolutionStatus": {
+          "type": "integer",
+          "description": "Enum MaxQ type",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "tsEnumNames": [
+            "SuperResStatus_Off",
+            "SuperResStatus_1",
+            "SuperResStatus_2",
+            "SuperResStatus_3",
+            "SuperResStatus_4"
+          ]
+        },
+        "SuperResolutionInfo": {
+          "type": "object",
+          "properties": {
+            "isSupported": {
+              "type": "boolean"
+            },
+            "superResolutionValue": {
+              "$ref": "#/definitions/SuperResolutionValue"
+            },
+            "superResolutionStatus": {
+              "$ref": "#/definitions/SuperResolutionStatus"
+            }
+          }
+        },
+        "GetSuperResolutionInfo": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "type": "object",
+            "properties": {
+              "SuperResolutionInfoValue": {
+                "$ref": "#/definitions/SuperResolutionInfo"
+              }
+            }
+          }
+        },
+        "GetSuperResolutionCurrentStatus": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "type": "object",
+            "properties": {
+              "superResStatus": {
+                "$ref": "#/definitions/SuperResolutionStatus"
+              }
+            }
+          }
+        },
+        "SetSuperResolutionValue": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns current profile setting value.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "superResolutionValue": {
+                "$ref": "#/definitions/SuperResolutionValue"
+              }
+            }
+          }
+        },
+        "SuperResolutionGpuUtilization": {
+          "type": "integer",
+          "description": "Preferred GPU utilization",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "SuperResGpuUtil_Low",
+            "SuperResGpuUtil_Medium",
+            "SuperResGpuUtil_High"
+          ]
+        },
+        "GetSuperResolutionGpuUtilization": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "type": "object",
+            "properties": {
+              "superResolutionGpuUtilization": {
+                "$ref": "#/definitions/SuperResolutionGpuUtilization"
+              }
+            }
+          }
+        },
+        "SetSuperResolutionGpuUtilization": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Sets VSR GPU utilization value.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "superResolutionGpuUtilization": {
+                "$ref": "#/definitions/SuperResolutionGpuUtilization"
+              }
+            }
+          }
+        },
+        "SuperResolutionIndicator": {
+          "type": "integer",
+          "description": "VSR indicator status",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "SuperResIndicator_Off",
+            "SuperResIndicator_On"
+          ]
+        },
+        "DisableVSROnGameLaunch": {
+          "type": "integer",
+          "description": "Indicates what to do with VSR when game is launched",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "DisableVSROnGameLaunch_Off",
+            "DisableVSROnGameLaunch_On"
+          ]
+        },
+        "HDRIndicator": {
+          "type": "integer",
+          "description": "HDR indicator status",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "HDRIndicator_Off",
+            "HDRIndicator_On"
+          ]
+        },
+        "DisableHDROnGameLaunch": {
+          "type": "integer",
+          "description": "Indicates what to do with HDR when game is launched",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "DisableHDROnGameLaunch_Off",
+            "DisableHDROnGameLaunch_On"
+          ]
+        },
+        "GetSuperResolutionIndicatorStatus": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "type": "object",
+            "properties": {
+              "superResolutionIndicator": {
+                "$ref": "#/definitions/SuperResolutionIndicator"
+              }
+            }
+          }
+        },
+        "GetRTXVideoFlags": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "type": "object",
+            "properties": {
+              "superResolutionIndicator": {
+                "$ref": "#/definitions/SuperResolutionIndicator"
+              },
+              "disableVSROnGameLaunch": {
+                "$ref": "#/definitions/DisableVSROnGameLaunch"
+              },
+              "hdrIndicator": {
+                "$ref": "#/definitions/HDRIndicator"
+              },
+              "disableHDROnGameLaunch": {
+                "$ref": "#/definitions/DisableHDROnGameLaunch"
+              }
+            }
+          }
+        },
+        "SetRTXVSRFlags": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Sets VSR indicator value.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "superResolutionIndicator": {
+                "$ref": "#/definitions/SuperResolutionIndicator"
+              },
+              "disableVSROnGameLaunch": {
+                "$ref": "#/definitions/DisableVSROnGameLaunch"
+              }
+            }
+          }
+        },
+        "SetRTXHDRFlags": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Sets what to do with HDR when game is launched",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "hdrIndicator": {
+                "$ref": "#/definitions/HDRIndicator"
+              },
+              "disableHDROnGameLaunch": {
+                "$ref": "#/definitions/DisableHDROnGameLaunch"
+              }
+            }
+          }
+        },
+        "SetSuperResolutionIndicatorStatus": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Sets VSR indicator value.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "superResolutionIndicator": {
+                "$ref": "#/definitions/SuperResolutionIndicator"
+              }
+            }
+          }
+        },
+        "GetHDRIndicatorStatus": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "type": "object",
+            "properties": {
+              "hdrIndicator": {
+                "$ref": "#/definitions/HDRIndicator"
+              }
+            }
+          }
+        },
+        "SetHDRIndicatorStatus": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Sets HDR indicator value.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "hdrIndicator": {
+                "$ref": "#/definitions/HDRIndicator"
+              }
+            }
+          }
+        },
+        "GetDisableVSROnGameLaunchStatus": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "type": "object",
+            "properties": {
+              "disableVSROnGameLaunch": {
+                "$ref": "#/definitions/DisableVSROnGameLaunch"
+              }
+            }
+          }
+        },
+        "SetDisableVSROnGameLaunchStatus": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Sets what to do with VSR when game is launched",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "disableVSROnGameLaunch": {
+                "$ref": "#/definitions/DisableVSROnGameLaunch"
+              }
+            }
+          }
+        },
+        "GetDisableHDROnGameLaunchStatus": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "type": "object",
+            "properties": {
+              "disableHDROnGameLaunch": {
+                "$ref": "#/definitions/DisableHDROnGameLaunch"
+              }
+            }
+          }
+        },
+        "SetDisableHDROnGameLaunchStatus": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Sets what to do with HDR when game is launched",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "disableHDROnGameLaunch": {
+                "$ref": "#/definitions/DisableHDROnGameLaunch"
+              }
+            }
+          }
+        },
+        "RestoreDefaultVideoSettings": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns current profile setting value."
+        },
+        "HDRErrorCodeInfo": {
+          "type": "integer",
+          "description": "Enum MaxQ type",
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "tsEnumNames": [
+            "SUCCESS",
+            "NO_HDR_DISPLAY_CONNECTED",
+            "ENABLE_HDR_FROM_WINDOWS",
+            "SURROUND_ENABLED"
+          ]
+        },
+        "HDRInfo": {
+          "type": "object",
+          "properties": {
+            "isSupported": {
+              "type": "boolean"
+            },
+            "hdrValue": {
+              "type": "boolean"
+            },
+            "hdrPeakBrightness": {
+              "type": "integer"
+            },
+            "hdrPeakBrightnessMax": {
+              "type": "integer"
+            },
+            "hdrPeakBrightnessMin": {
+              "type": "integer"
+            },
+            "hdrMiddleGray": {
+              "type": "integer"
+            },
+            "hdrSaturation": {
+              "type": "integer"
+            },
+            "hdrContrast": {
+              "type": "integer"
+            },
+            "hdrErrorCodeInfo": {
+              "$ref": "#/definitions/HDRErrorCodeInfo"
+            },
+            "hdrStatus": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "isSupported",
+            "hdrValue",
+            "hdrPeakBrightness",
+            "hdrPeakBrightnessMax",
+            "hdrPeakBrightnessMin",
+            "hdrMiddleGray",
+            "hdrSaturation",
+            "hdrContrast",
+            "hdrErrorCodeInfo",
+            "hdrStatus"
+          ]
+        },
+        "GetHDRInfo": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "type": "object",
+            "properties": {
+              "HDRInfoValue": {
+                "$ref": "#/definitions/HDRInfo"
+              }
+            }
+          }
+        },
+        "GetHDRCurrentStatus": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "type": "object",
+            "properties": {
+              "hdrStatus": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "SetHDRValue": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Sets HDR state",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "hdrValue": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "SetHDRInfo": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Sets HDR Info.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "HDRInfoValue": {
+                "$ref": "#/definitions/HDRInfo"
+              }
+            }
+          }
+        },
+        "RegisterDisplayChangeNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Register Display Change notification "
+        },
+        "GetGpuCount": {
+          "type": "object",
+          "isCommand": true,
+          "description": "returns total number of GPU in system",
+          "return": {
+            "type": "object",
+            "properties": {
+              "gpuCount": {
+                "type": "number"
+              }
+            }
+          },
+          "required": [
+            "gpuCount"
+          ]
+        },
+        "LaunchApplication": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Launches Legacy Nvidia Control Panel application",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "clsId": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "clsId"
+            ]
+          }
+        },
+        "IsControlPanelClientInstalled": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns Control Panel Client Installation state",
+          "return": {
+            "type": "object",
+            "properties": {
+              "isClientInstalled": {
+                "type": "boolean"
+              }
+            }
+          },
+          "required": [
+            "isClientInstalled"
+          ]
+        },
+        "OutPutColorFormat": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "tsEnumNames": [
+            "RGB",
+            "YCBCR422",
+            "YCBCR444",
+            "YCBCR420",
+            "UNKNOWN"
+          ]
+        },
+        "GSyncCapabilities": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "tsEnumNames": [
+            "GsyncUltimate",
+            "GSyncCapable",
+            "GSyncCompatible",
+            "VRR",
+            "NotSupported",
+            "BasicVRR"
+          ]
+        },
+        "GlobalGsyncState": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "tsEnumNames": [
+            "Off",
+            "FullscreenOnly",
+            "FullscreenAndWindowed",
+            "NotAvailable"
+          ]
+        },
+        "TvFormat": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ],
+          "tsEnumNames": [
+            "None",
+            "NonHD",
+            "SD576i",
+            "SD480i",
+            "ED480p",
+            "ED576p",
+            "HD720p",
+            "HD1080i",
+            "HD1080p",
+            "HD720p50",
+            "HD1080p24",
+            "HD1080i50",
+            "HD1080p50",
+            "UHD4Kp30",
+            "UHD4Kp25",
+            "UHD4Kp24",
+            "UHD4Kp24Smpte",
+            "UHD4Kp303840",
+            "UHD4Kp253840",
+            "UHD4Kp243840",
+            "UHD4Kp503840",
+            "UHD4Kp603840",
+            "UHD4Kp304096",
+            "UHD4Kp254096",
+            "UHD4Kp244096",
+            "UHD4Kp504096",
+            "UHD4Kp604096",
+            "UHD8Kp247680",
+            "UHD8Kp257680",
+            "UHD8Kp307680",
+            "UHD8Kp487680",
+            "UHD8Kp507680",
+            "UHD8Kp607680",
+            "UHD8Kp1007680",
+            "UHD8Kp1207680",
+            "Invalid"
+          ]
+        },
+        "ConnectorType": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "tsEnumNames": [
+            "CT_VGA",
+            "CT_DVI",
+            "CT_COMPOSITE",
+            "CT_SVIDEO",
+            "CT_COMPONENT",
+            "CT_HDMI",
+            "CT_DISPLAYPORT",
+            "CT_USBC",
+            "CT_LVDS",
+            "CT_AUTO",
+            "CT_UNKNOWN"
+          ]
+        },
+        "DesktopColorDepth": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            -1
+          ],
+          "tsEnumNames": [
+            "bit_8",
+            "bit_10",
+            "bit_16",
+            "bit_16_HDR",
+            "bit_16_WCG",
+            "bit_Default"
+          ]
+        },
+        "DeviceType": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "tsEnumNames": [
+            "None",
+            "Crt",
+            "Internal",
+            "Tv",
+            "Dvi"
+          ]
+        },
+        "ResolutionFlags": {
+          "type": "object",
+          "properties": {
+            "isInterlaced": {
+              "type": "boolean"
+            },
+            "isHD": {
+              "type": "boolean"
+            },
+            "isSupported": {
+              "type": "boolean"
+            },
+            "isCustom": {
+              "type": "boolean"
+            },
+            "isCurrent": {
+              "type": "boolean"
+            },
+            "isNative": {
+              "type": "boolean"
+            },
+            "isRecommended": {
+              "type": "boolean"
+            },
+            "isCloneSupported": {
+              "type": "boolean"
+            },
+            "isHD_3D": {
+              "type": "boolean"
+            },
+            "isBezelCorrected": {
+              "type": "boolean"
+            },
+            "isSurround": {
+              "type": "boolean"
+            },
+            "isChecked": {
+              "type": "boolean"
+            },
+            "isBlindlyExposedHD": {
+              "type": "boolean"
+            },
+            "isCustomUnderscan": {
+              "type": "boolean"
+            },
+            "isDefaultUnderscan": {
+              "type": "boolean"
+            },
+            "isScalingFactor12000": {
+              "type": "boolean"
+            },
+            "isScalingFactor15000": {
+              "type": "boolean"
+            },
+            "isScalingFactor17777": {
+              "type": "boolean"
+            },
+            "isScalingFactor20000": {
+              "type": "boolean"
+            },
+            "isScalingFactor22500": {
+              "type": "boolean"
+            },
+            "isScalingFactor30000": {
+              "type": "boolean"
+            },
+            "isScalingFactor40000": {
+              "type": "boolean"
+            },
+            "isScalingFactor60000": {
+              "type": "boolean"
+            },
+            "isScalingFactor90000": {
+              "type": "boolean"
+            },
+            "isScalingFactor5000": {
+              "type": "boolean"
+            },
+            "isScalingFactor6667": {
+              "type": "boolean"
+            },
+            "isScalingFactor7500": {
+              "type": "boolean"
+            },
+            "isScalingFactor7693": {
+              "type": "boolean"
+            },
+            "isScalingFactor8500": {
+              "type": "boolean"
+            },
+            "isScalingFactor5883": {
+              "type": "boolean"
+            },
+            "isDLDSRFactor": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "isInterlaced",
+            "isHD",
+            "isSupported",
+            "isCustom",
+            "isCurrent",
+            "isNative",
+            "isRecommended",
+            "isCloneSupported",
+            "isHD_3D",
+            "isBezelCorrected",
+            "isSurround",
+            "isChecked",
+            "isBlindlyExposedHD",
+            "isCustomUnderscan",
+            "isDefaultUnderscan",
+            "isScalingFactor12000",
+            "isScalingFactor15000",
+            "isScalingFactor17777",
+            "isScalingFactor20000",
+            "isScalingFactor22500",
+            "isScalingFactor30000",
+            "isScalingFactor40000",
+            "isScalingFactor60000",
+            "isScalingFactor90000",
+            "isScalingFactor5000",
+            "isScalingFactor6667",
+            "isScalingFactor7500",
+            "isScalingFactor7693",
+            "isScalingFactor8500",
+            "isScalingFactor5883",
+            "isDLDSRFactor"
+          ]
+        },
+        "Resolution": {
+          "type": "object",
+          "properties": {
+            "horizontal": {
+              "type": "integer"
+            },
+            "vertical": {
+              "type": "integer"
+            },
+            "flags": {
+              "$ref": "#/definitions/ResolutionFlags"
+            },
+            "tvFormat": {
+              "$ref": "#/definitions/TvFormat"
+            },
+            "refreshRate": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "horizontal",
+            "vertical",
+            "flags",
+            "refreshRate",
+            "tvFormat"
+          ]
+        },
+        "Position": {
+          "type": "object",
+          "properties": {
+            "X": {
+              "type": "integer"
+            },
+            "Y": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "X",
+            "Y"
+          ]
+        },
+        "HDCPStatus": {
+          "type": "object",
+          "properties": {
+            "isUnavailable": {
+              "type": "boolean"
+            },
+            "isInvalidDisplayID": {
+              "type": "boolean"
+            },
+            "isInvalidDisplay": {
+              "type": "boolean"
+            },
+            "isInvalidDisplayMode": {
+              "type": "boolean"
+            },
+            "isInvalidGpu": {
+              "type": "boolean"
+            },
+            "isInvalidGpuMode": {
+              "type": "boolean"
+            },
+            "isAbortUntrust": {
+              "type": "boolean"
+            },
+            "isAbortLinkFailure": {
+              "type": "boolean"
+            },
+            "isAbortKsvLength": {
+              "type": "boolean"
+            },
+            "isAbortKsvSignature": {
+              "type": "boolean"
+            },
+            "isAbortSrmSignature": {
+              "type": "boolean"
+            },
+            "isAbortSrmRemoved": {
+              "type": "boolean"
+            },
+            "isAbortSrmRevoked": {
+              "type": "boolean"
+            },
+            "isAbortRepeaterNoReady": {
+              "type": "boolean"
+            },
+            "isAbortTopologyError": {
+              "type": "boolean"
+            },
+            "isAbortBadDisplay": {
+              "type": "boolean"
+            },
+            "isAbortDeviceRevoked": {
+              "type": "boolean"
+            },
+            "isAbortDeviceInvalid": {
+              "type": "boolean"
+            },
+            "isAbortHopLimitExceeded": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "isUnavailable",
+            "isInvalidDisplayID",
+            "isInvalidDisplay",
+            "isInvalidDisplayMode",
+            "isInvalidGpu",
+            "isInvalidGpuMode",
+            "isAbortUntrust",
+            "isAbortLinkFailure",
+            "isAbortKsvLength",
+            "isAbortKsvSignature",
+            "isAbortSrmSignature",
+            "isAbortSrmRemoved",
+            "isAbortSrmRevoked",
+            "isAbortRepeaterNoReady",
+            "isAbortTopologyError",
+            "isAbortBadDisplay",
+            "isAbortDeviceRevoked",
+            "isAbortDeviceInvalid",
+            "isAbortHopLimitExceeded"
+          ]
+        },
+        "HDCPLinkStatus": {
+          "type": "object",
+          "properties": {
+            "isRepeaterPresent": {
+              "type": "boolean"
+            },
+            "isDebuggerDetected": {
+              "type": "boolean"
+            },
+            "isHDCPOn": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "isRepeaterPresent",
+            "isDebuggerDetected",
+            "isHDCPOn"
+          ]
+        },
+        "HDCPState": {
+          "type": "object",
+          "properties": {
+            "hdcpStatus": {
+              "$ref": "#/definitions/HDCPStatus"
+            },
+            "hdcpLinkStatus": {
+              "$ref": "#/definitions/HDCPLinkStatus"
+            },
+            "isSupported": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "isSupported"
+          ]
+        },
+        "PulsarLowFpsRange": {
+          "type": "object",
+          "properties": {
+            "min": {
+              "type": "integer",
+              "description": "Minimum value of Pulsar low FPS slider"
+            },
+            "max": {
+              "type": "integer",
+              "description": "Maximum value of Pulsar low FPS slider"
+            },
+            "current": {
+              "type": "integer",
+              "description": "Current value of Pulsar low FPS slider"
+            }
+          },
+          "required": [
+            "min",
+            "max",
+            "current"
+          ]
+        },
+        "PulsarState": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Whether G-SYNC Pulsar is enabled"
+            },
+            "lowFps": {
+              "$ref": "#/definitions/PulsarLowFpsRange"
+            },
+            "canUsePulsar": {
+              "type": "boolean",
+              "description": "Whether G-SYNC Pulsar can be used in the current runtime state"
+            }
+          },
+          "required": [
+            "enabled",
+            "lowFps"
+          ]
+        },
+        "AmbientAdaptiveState": {
+          "type": "object",
+          "properties": {
+            "brightnessEnabled": {
+              "type": "boolean",
+              "description": "Whether ambient adaptive brightness is enabled"
+            },
+            "colorEnabled": {
+              "type": "boolean",
+              "description": "Whether ambient adaptive color is enabled"
+            }
+          },
+          "required": [
+            "brightnessEnabled",
+            "colorEnabled"
+          ]
+        },
+        "GsyncState": {
+          "type": "object",
+          "properties": {
+            "gsyncType": {
+              "$ref": "#/definitions/GSyncCapabilities"
+            },
+            "enabled": {
+              "type": "boolean"
+            },
+            "pulsar": {
+              "$ref": "#/definitions/PulsarState"
+            }
+          },
+          "required": [
+            "gsyncType",
+            "enabled"
+          ]
+        },
+        "LogicalDisplayType": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "tsEnumNames": [
+            "None",
+            "CloneDisplay",
+            "SurroundDisplay",
+            "MosaicDisplay"
+          ]
+        },
+        "DisplayPhysicalInformation": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "connectorType": {
+              "$ref": "#/definitions/ConnectorType"
+            },
+            "deviceType": {
+              "$ref": "#/definitions/DeviceType"
+            },
+            "nvDisplayId": {
+              "type": "integer"
+            },
+            "gpuId": {
+              "type": "integer"
+            },
+            "isTileDisplay": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "name",
+            "connectorType",
+            "deviceType",
+            "nvDisplayId",
+            "gpuId"
+          ]
+        },
+        "DisplaylogicalInformation": {
+          "type": "object",
+          "properties": {
+            "currentResolution": {
+              "$ref": "#/definitions/Resolution"
+            },
+            "position": {
+              "$ref": "#/definitions/Position"
+            },
+            "index": {
+              "type": "integer"
+            },
+            "gpuIndex": {
+              "type": "integer"
+            },
+            "identifier": {
+              "type": "integer"
+            },
+            "hdcpState": {
+              "$ref": "#/definitions/HDCPState"
+            },
+            "gsyncState": {
+              "$ref": "#/definitions/GsyncState"
+            },
+            "rotationState": {
+              "$ref": "#/definitions/RotationType"
+            },
+            "isAdvanceColorSettingsSupported": {
+              "type": "boolean"
+            },
+            "isClonePrimary": {
+              "type": "boolean"
+            },
+            "logicalDisplayType": {
+              "$ref": "#/definitions/LogicalDisplayType"
+            },
+            "nvDisplayId": {
+              "type": "integer"
+            },
+            "gpuId": {
+              "type": "integer"
+            },
+            "isHideModeEnabled": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "currentResolution",
+            "position",
+            "index",
+            "gpuIndex",
+            "identifier",
+            "rotationState",
+            "isClonePrimary",
+            "logicalDisplayType",
+            "nvDisplayId",
+            "gpuId",
+            "hdcpState",
+            "gsyncState"
+          ]
+        },
+        "Surface": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "displays": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/DisplaylogicalInformation"
+              }
+            }
+          },
+          "required": [
+            "id",
+            "displays"
+          ]
+        },
+        "Topology": {
+          "type": "object",
+          "properties": {
+            "surfaces": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Surface"
+              }
+            }
+          },
+          "required": [
+            "surfaces"
+          ]
+        },
+        "DisplaysState": {
+          "type": "object",
+          "properties": {
+            "topology": {
+              "$ref": "#/definitions/Topology"
+            },
+            "inactiveDisplays": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/DisplayPhysicalInformation"
+              }
+            }
+          },
+          "required": [
+            "topology",
+            "inactiveDisplays"
+          ]
+        },
+        "GetDisplaysState": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns topology and inactive displays information.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "displaysState": {
+                "$ref": "#/definitions/DisplaysState"
+              }
+            },
+            "required": [
+              "displaysState"
+            ]
+          }
+        },
+        "SetDisplaysState": {
+          "isCommand": true,
+          "type": "object",
+          "description": "configures the display Topology and returns the topology if the topology validation is successful ",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "topology": {
+                "$ref": "#/definitions/Topology"
+              }
+            },
+            "required": [
+              "topology"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "isValidationSuccess": {
+                "type": "boolean"
+              },
+              "displaysState": {
+                "$ref": "#/definitions/DisplaysState"
+              }
+            },
+            "required": [
+              "isValidationSuccess"
+            ]
+          }
+        },
+        "GetDebugModeStatus": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns the ECC Mode Status of all the GPUs which support ECC.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "debugModeStatus": {
+                "type": "boolean"
+              },
+              "isSupported": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "debugModeStatus"
+            ]
+          }
+        },
+        "SetDebugModeStatus": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns current profile setting value.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "debugModeStatus": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "IsDebugModeSupported": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns whether Debug Mode feature is supported.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "isSupported": {
+                "type": "boolean",
+                "description": "Is Debug Mode Supported on this system or not."
+              }
+            }
+          }
+        },
+        "Display": {
+          "type": "object",
+          "properties": {
+            "currentResolution": {
+              "$ref": "#/definitions/Resolution"
+            },
+            "name": {
+              "type": "string"
+            },
+            "index": {
+              "type": "integer"
+            },
+            "identifier": {
+              "type": "integer"
+            },
+            "desktopColorDepth": {
+              "$ref": "#/definitions/DesktopColorDepth"
+            },
+            "outPutColorFormat": {
+              "$ref": "#/definitions/OutPutColorFormat"
+            },
+            "hdcpState": {
+              "$ref": "#/definitions/HDCPState"
+            },
+            "gsyncState": {
+              "$ref": "#/definitions/GsyncState"
+            },
+            "connectorType": {
+              "$ref": "#/definitions/ConnectorType"
+            },
+            "deviceType": {
+              "$ref": "#/definitions/DeviceType"
+            },
+            "rotationState": {
+              "$ref": "#/definitions/RotationType"
+            },
+            "isAdvanceColorSettingsSupported": {
+              "type": "boolean"
+            },
+            "desktopColorDepthCurrentIndex": {
+              "type": "number"
+            },
+            "isHideModeEnabled": {
+              "type": "boolean"
+            },
+            "isClonePrimary": {
+              "type": "boolean"
+            },
+            "isTileDisplay": {
+              "type": "boolean"
+            },
+            "logicalDisplayType": {
+              "$ref": "#/definitions/LogicalDisplayType"
+            },
+            "nvDisplayId": {
+              "type": "integer"
+            },
+            "cloneGroupId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "name",
+            "index",
+            "identifier",
+            "desktopColorDepth",
+            "outPutColorFormat",
+            "hdcpState",
+            "gsyncState",
+            "connectorType",
+            "deviceType",
+            "rotationState",
+            "isClonePrimary",
+            "logicalDisplayType",
+            "nvDisplayId",
+            "cloneGroupId"
+          ]
+        },
+        "GPU": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "index": {
+              "type": "integer"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "displays": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Display"
+              }
+            }
+          },
+          "required": [
+            "index",
+            "name",
+            "displays"
+          ]
+        },
+        "PhysicalGPU": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "displays": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/DisplayPhysicalInformation"
+              }
+            }
+          },
+          "required": [
+            "name",
+            "id",
+            "displays"
+          ]
+        },
+        "GetDisplayResolutionList": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns the complete resolution list of a particular display.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "resolutions": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/Resolution"
+                }
+              }
+            },
+            "required": [
+              "resolutions"
+            ]
+          }
+        },
+        "GetGpuAndDisplayInformation": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns the complete GPU and display information.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "gpus": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/GPU"
+                }
+              }
+            },
+            "required": [
+              "gpus"
+            ]
+          }
+        },
+        "GetIGpuAndDisplayInformation": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns the complete IGPU and display information.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "gpus": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/GPU"
+                }
+              }
+            },
+            "required": [
+              "gpus"
+            ]
+          }
+        },
+        "GetGpuAndDisplaysPhysicalInformation": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns GPU's and its connected displasy physical properties.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "physicalGpus": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/PhysicalGPU"
+                }
+              }
+            },
+            "required": [
+              "physicalGpus"
+            ]
+          }
+        },
+        "RestoreDisplaySettings": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex"
+            ]
+          }
+        },
+        "SetResolution": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "resolution": {
+                "$ref": "#/definitions/Resolution"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "resolution"
+            ]
+          }
+        },
+        "SetRotation": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "rotation": {
+                "$ref": "#/definitions/RotationType"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "rotation"
+            ]
+          }
+        },
+        "RevertState": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Revert last applied setting state"
+        },
+        "CancelState": {
+          "isCommand": true,
+          "type": "object",
+          "description": "cancels the dirty changes"
+        },
+        "CommitState": {
+          "isCommand": true,
+          "type": "object",
+          "description": "applies the dirty changes"
+        },
+        "IdentifyDisplays": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "isAllDisplays": {
+                "type": "boolean"
+              },
+              "showSpanIdentifiers": {
+                "type": "boolean",
+                "description": "Show span identifiers.\nThe identifiers are calculated from a different algorithm than the usual monitor identifiers.\nWhen this is true we use nvcpl's surround dialog's logic,\notherwise we use the sumd page identify logic.\nThis will work irrespective of surround being enabled or disabled."
+              },
+              "hideIdentifiers": {
+                "type": "boolean",
+                "description": "Hide any identifiers currently shown"
+              },
+              "monitorIdentifiers": {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                }
+              }
+            },
+            "required": [
+              "monitorIdentifiers"
+            ]
+          }
+        },
+        "GetSystemCapabilities": {
+          "type": "object",
+          "isCommand": true,
+          "description": "returns System capabilities.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "isAdvancedOptimus": {
+                "type": "boolean"
+              },
+              "isMsHybridSystem": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "isAdvancedOptimus",
+              "isMsHybridSystem"
+            ]
+          }
+        },
+        "GetGlobalGsyncState": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns system's global gsyncState",
+          "return": {
+            "type": "object",
+            "properties": {
+              "globalGsyncState": {
+                "$ref": "#/definitions/GlobalGsyncState"
+              }
+            },
+            "required": [
+              "globalGsyncState"
+            ]
+          }
+        },
+        "SetGlobalGsyncState": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "globalGsyncState": {
+                "$ref": "#/definitions/GlobalGsyncState"
+              }
+            },
+            "required": [
+              "globalGsyncState"
+            ]
+          }
+        },
+        "GetGsyncIndicator": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns G-SYNC indicator value saved in DRSDB",
+          "return": {
+            "type": "object",
+            "properties": {
+              "isEnabled": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "isEnabled"
+            ]
+          }
+        },
+        "SetGsyncIndicator": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "isEnabled": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "isEnabled"
+            ]
+          }
+        },
+        "RestoreGlobalGsyncState": {
+          "isCommand": true,
+          "type": "object",
+          "description": "set and returns system's global gsyncState",
+          "return": {
+            "type": "object",
+            "properties": {
+              "globalGsyncState": {
+                "$ref": "#/definitions/GlobalGsyncState"
+              }
+            },
+            "required": [
+              "globalGsyncState"
+            ]
+          }
+        },
+        "GetDisplayGsyncState": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns per display gsyncState",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "gsyncState": {
+                "$ref": "#/definitions/GsyncState"
+              }
+            },
+            "required": [
+              "gsyncState"
+            ]
+          }
+        },
+        "SetDisplayGsyncState": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "enabled": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "enabled"
+            ]
+          }
+        },
+        "SetDisplayPulsarInfo": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets per-display G-SYNC Pulsar state (enabled and / or low FPS) for the given display.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "pulsar": {
+                "$ref": "#/definitions/PulsarState"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "pulsar"
+            ]
+          }
+        },
+        "GetDisplayAmbientAdaptiveInfo": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns per-display Ambient Adaptive Brightness and Color state for the given display.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "isSupported": {
+                "type": "boolean",
+                "description": "Whether Ambient Adaptive feature is supported"
+              },
+              "ambientAdaptive": {
+                "$ref": "#/definitions/AmbientAdaptiveState"
+              }
+            },
+            "required": [
+              "isSupported"
+            ]
+          }
+        },
+        "SetDisplayAmbientAdaptiveBrightnessInfo": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets per-display Ambient Adaptive Brightness state for the given display.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "brightnessEnabled": {
+                "type": "boolean",
+                "description": "Whether ambient adaptive brightness is enabled"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "brightnessEnabled"
+            ]
+          }
+        },
+        "SetDisplayAmbientAdaptiveColorInfo": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets per-display Ambient Adaptive Color state for the given display.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "colorEnabled": {
+                "type": "boolean",
+                "description": "Whether ambient adaptive color is enabled"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "colorEnabled"
+            ]
+          }
+        },
+        "DynamicRange": {
+          "type": "integer",
+          "description": "Output dynamic range",
+          "enum": [
+            -1,
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "Invalid",
+            "VESA",
+            "CEA",
+            "AUTO"
+          ]
+        },
+        "OutputColorDepth": {
+          "type": "integer",
+          "description": "Output color depth",
+          "enum": [
+            -1,
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "tsEnumNames": [
+            "Invalid",
+            "BPC_6",
+            "BPC_8",
+            "BPC_10",
+            "BPC_12",
+            "BPC_16"
+          ]
+        },
+        "GetIsColorSettingsOsControlled": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "isColorSettingsOsControlled": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "isColorSettingsOsControlled"
+            ]
+          }
+        },
+        "SetIsColorSettingsOsControlled": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "isColorSettingsOsControlled": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "isColorSettingsOsControlled"
+            ]
+          }
+        },
+        "GetColorEnhancementInfo": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns desktop color information",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "dynamicRangeCurrentValue": {
+                "$ref": "#/definitions/DynamicRange"
+              },
+              "dynamicRangePossibleValues": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/DynamicRange"
+                }
+              },
+              "outputColorDepthCurrentValue": {
+                "$ref": "#/definitions/OutputColorDepth"
+              },
+              "outputColorDepthPossibleValues": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/OutputColorDepth"
+                }
+              },
+              "outputColorFormatCurrentValue": {
+                "$ref": "#/definitions/OutPutColorFormat"
+              },
+              "outputColorFormatPossibleValues": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/OutPutColorFormat"
+                }
+              },
+              "desktopColorDepthCurrentValue": {
+                "$ref": "#/definitions/DesktopColorDepth"
+              },
+              "desktopColorDepthPossibleValues": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/DesktopColorDepth"
+                }
+              }
+            },
+            "required": [
+              "dynamicRangeCurrentValue",
+              "dynamicRangePossibleValues",
+              "outputColorDepthCurrentValue",
+              "outputColorDepthPossibleValues",
+              "outputColorFormatCurrentValue",
+              "outputColorFormatPossibleValues",
+              "desktopColorDepthCurrentValue",
+              "desktopColorDepthPossibleValues"
+            ]
+          }
+        },
+        "AdvancedColorCombination": {
+          "type": "object",
+          "description": "Represents a valid color combination for Advanced Color Settings.",
+          "properties": {
+            "outputColorFormat": {
+              "$ref": "#/definitions/OutPutColorFormat"
+            },
+            "dynamicRange": {
+              "$ref": "#/definitions/DynamicRange"
+            },
+            "outputColorDepth": {
+              "$ref": "#/definitions/OutputColorDepth"
+            },
+            "desktopColorDepth": {
+              "$ref": "#/definitions/DesktopColorDepth"
+            }
+          },
+          "required": [
+            "outputColorFormat",
+            "dynamicRange",
+            "outputColorDepth",
+            "desktopColorDepth"
+          ]
+        },
+        "GetAdvancedColorCombinationInfo": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns valid advanced color setting combinations",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "currentColorCombination": {
+                "$ref": "#/definitions/AdvancedColorCombination"
+              },
+              "possibleColorCombinations": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/AdvancedColorCombination"
+                }
+              }
+            },
+            "required": [
+              "currentColorCombination",
+              "possibleColorCombinations"
+            ]
+          }
+        },
+        "SetAdvancedColorCombinationInfo": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "colorCombination": {
+                "$ref": "#/definitions/AdvancedColorCombination"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "colorCombination"
+            ]
+          }
+        },
+        "SetDynamicRange": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "dynamicRange": {
+                "$ref": "#/definitions/DynamicRange"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "dynamicRange"
+            ]
+          }
+        },
+        "SetOutputColorFormat": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "outputColorFormat": {
+                "$ref": "#/definitions/OutPutColorFormat"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "outputColorFormat"
+            ]
+          }
+        },
+        "SetDesktopColorDepth": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "desktopColorDepth": {
+                "$ref": "#/definitions/DesktopColorDepth"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "desktopColorDepth"
+            ]
+          }
+        },
+        "SetOutputColorDepth": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "outputColorDepth": {
+                "$ref": "#/definitions/OutputColorDepth"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "outputColorDepth"
+            ]
+          }
+        },
+        "ChannelComponents": {
+          "type": "object",
+          "properties": {
+            "red": {
+              "type": "integer"
+            },
+            "green": {
+              "type": "integer"
+            },
+            "blue": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "red",
+            "green",
+            "blue"
+          ]
+        },
+        "ColorCombinationInfo": {
+          "type": "object",
+          "properties": {
+            "contrastValue": {
+              "$ref": "#/definitions/ChannelComponents"
+            },
+            "contrastMinValue": {
+              "$ref": "#/definitions/ChannelComponents"
+            },
+            "contrastMaxValue": {
+              "$ref": "#/definitions/ChannelComponents"
+            },
+            "brightnessValue": {
+              "$ref": "#/definitions/ChannelComponents"
+            },
+            "brightnessMinValue": {
+              "$ref": "#/definitions/ChannelComponents"
+            },
+            "brightnessMaxValue": {
+              "$ref": "#/definitions/ChannelComponents"
+            },
+            "gammaValue": {
+              "$ref": "#/definitions/ChannelComponents"
+            },
+            "gammaMinValue": {
+              "$ref": "#/definitions/ChannelComponents"
+            },
+            "gammaMaxValue": {
+              "$ref": "#/definitions/ChannelComponents"
+            }
+          },
+          "required": [
+            "contrastValue",
+            "contrastMinValue",
+            "contrastMaxValue",
+            "brightnessValue",
+            "brightnessMinValue",
+            "brightnessMaxValue",
+            "gammaValue",
+            "gammaMinValue",
+            "gammaMaxValue"
+          ]
+        },
+        "GetDesktopColorCombinationInfo": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns per display gsyncState",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "colorCombinationInfo": {
+                "$ref": "#/definitions/ColorCombinationInfo"
+              }
+            },
+            "required": [
+              "colorCombinationInfo"
+            ]
+          }
+        },
+        "GetDigitalVibranceInfo": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns digital vibrance for display",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "digitalVibranceValue": {
+                "type": "integer"
+              },
+              "digitalVibranceMin": {
+                "type": "integer"
+              },
+              "digitalVibranceMax": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "digitalVibranceValue",
+              "digitalVibranceMin",
+              "digitalVibranceMax"
+            ]
+          }
+        },
+        "SetDigitalVibrance": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "digitalVibranceValue": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "digitalVibranceValue"
+            ]
+          }
+        },
+        "GetHueInfo": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns hue for display",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "hueValue": {
+                "type": "integer"
+              },
+              "hueMin": {
+                "type": "integer"
+              },
+              "hueMax": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "hueValue",
+              "hueMin",
+              "hueMax"
+            ]
+          }
+        },
+        "SetHue": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "hueValue": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "hueValue"
+            ]
+          }
+        },
+        "SetColorCombinationInfo": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "brightnessInfo": {
+                "$ref": "#/definitions/ChannelComponents"
+              },
+              "contrastInfo": {
+                "$ref": "#/definitions/ChannelComponents"
+              },
+              "gammaInfo": {
+                "$ref": "#/definitions/ChannelComponents"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "brightnessInfo",
+              "contrastInfo",
+              "gammaInfo"
+            ]
+          }
+        },
+        "ColorAccuracyMode": {
+          "type": "integer",
+          "description": "Color accuracy mode",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "tsEnumNames": [
+            "Invalid",
+            "Auto",
+            "Reference",
+            "Accurate",
+            "Enhanced"
+          ]
+        },
+        "SetColorAccuracyMode": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "colorAccuracyMode": {
+                "$ref": "#/definitions/ColorAccuracyMode"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "colorAccuracyMode"
+            ]
+          }
+        },
+        "RestoreColorAccuracyMode": {
+          "isCommand": true,
+          "type": "object",
+          "description": "set and returns system's global gsyncState",
+          "return": {
+            "type": "object",
+            "properties": {
+              "colorAccuracyMode": {
+                "$ref": "#/definitions/ColorAccuracyMode"
+              }
+            },
+            "required": [
+              "colorAccuracyMode"
+            ]
+          }
+        },
+        "GetColorAccuracyMode": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns per display color accuracy mode",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "colorAccuracyMode": {
+                "$ref": "#/definitions/ColorAccuracyMode"
+              }
+            },
+            "required": [
+              "colorAccuracyMode"
+            ]
+          }
+        },
+        "CustomTimingOperations": {
+          "type": "object",
+          "description": "Custom timing details",
+          "properties": {
+            "TestSet": {
+              "type": "boolean"
+            },
+            "TestRevert": {
+              "type": "boolean"
+            },
+            "TestSave": {
+              "type": "boolean"
+            },
+            "TestCalculate": {
+              "type": "boolean"
+            },
+            "TestForEdid": {
+              "type": "boolean"
+            },
+            "TestForOutputType": {
+              "type": "boolean"
+            },
+            "DeleteByValue": {
+              "type": "boolean"
+            },
+            "DeleteByIndex": {
+              "type": "boolean"
+            }
+          }
+        },
+        "TimingFormula": {
+          "type": "integer",
+          "description": "enum for timing formula",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "tsEnumNames": [
+            "Auto",
+            "GTF",
+            "DMT",
+            "CVT",
+            "CVTRB",
+            "Manual",
+            "OverrideEIA861"
+          ]
+        },
+        "ScalingType": {
+          "type": "integer",
+          "description": "enum for Scaling types",
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "tsEnumNames": [
+            "Monitor",
+            "Adapter",
+            "Centered",
+            "FixedAspect"
+          ]
+        },
+        "ScalingMethod": {
+          "type": "integer",
+          "description": "enum for Scalinng methods",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "tsEnumNames": [
+            "None",
+            "FullScreen",
+            "FixedAspect",
+            "NoScale",
+            "IntegerScaling"
+          ]
+        },
+        "ScalingMode": {
+          "type": "integer",
+          "description": "enum for Scaling mode",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "None",
+            "Gpu",
+            "Display"
+          ]
+        },
+        "ScalingSettings": {
+          "type": "object",
+          "properties": {
+            "scalingMethod": {
+              "$ref": "#/definitions/ScalingMethod"
+            },
+            "scalingMode": {
+              "$ref": "#/definitions/ScalingMode"
+            }
+          },
+          "required": [
+            "scalingMethod",
+            "scalingMode"
+          ]
+        },
+        "ScalingSettingsPossibleValue": {
+          "type": "object",
+          "properties": {
+            "scalingMethod": {
+              "$ref": "#/definitions/ScalingMethod"
+            },
+            "supportedScalingModeList": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ScalingMode"
+              }
+            }
+          },
+          "required": [
+            "scalingMethod",
+            "scalingMode"
+          ]
+        },
+        "GetScalingSettings": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Get scaling settings",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "scalingSettingsCurrent": {
+                "$ref": "#/definitions/ScalingSettings"
+              },
+              "scalingSettingsPossibleValues": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/ScalingSettings"
+                }
+              },
+              "isOverrideScalingEnabled": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "scalingSettingsPossibleValues",
+              "isOverrideScalingEnabled",
+              "scalingSettingsCurrent"
+            ]
+          }
+        },
+        "SetScalingSettings": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Set scaling settings",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "scalingSettings": {
+                "$ref": "#/definitions/ScalingSettings"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "scalingSettings"
+            ]
+          }
+        },
+        "SetScalingOverride": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Set scaling override",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "isOverrideScalingEnabled": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "isOverrideScalingEnabled"
+            ]
+          }
+        },
+        "CustomTiming": {
+          "type": "object",
+          "description": "Custom timing details",
+          "properties": {
+            "logicalX": {
+              "type": "integer"
+            },
+            "logicalY": {
+              "type": "integer"
+            },
+            "frontEndX": {
+              "type": "integer"
+            },
+            "frontEndY": {
+              "type": "integer"
+            },
+            "backEndX": {
+              "type": "integer"
+            },
+            "backEndY": {
+              "type": "integer"
+            },
+            "scalingType": {
+              "$ref": "#/definitions/ScalingType"
+            },
+            "isInterlaced": {
+              "type": "boolean"
+            },
+            "requestedRefresh": {
+              "type": "number"
+            },
+            "actualRefresh": {
+              "type": "number"
+            },
+            "timingFormula": {
+              "$ref": "#/definitions/TimingFormula"
+            },
+            "horizontalSyncWidth": {
+              "type": "integer"
+            },
+            "horizontalFP": {
+              "type": "integer"
+            },
+            "horizontalTotal": {
+              "type": "integer"
+            },
+            "isHorizontalPolarityPositive": {
+              "type": "boolean"
+            },
+            "verticalSyncWidth": {
+              "type": "integer"
+            },
+            "verticalFP": {
+              "type": "integer"
+            },
+            "verticalTotal": {
+              "type": "integer"
+            },
+            "isVerticalPolarityPositive": {
+              "type": "boolean"
+            },
+            "actualPixelClock": {
+              "type": "number"
+            },
+            "isCeTiming": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "logicalX",
+            "logicalY",
+            "frontEndX",
+            "frontEndY",
+            "backEndX",
+            "backEndY",
+            "scalingType",
+            "isInterlaced",
+            "requestedRefresh",
+            "actualRefresh",
+            "timingFormula",
+            "horizontalSyncWidth",
+            "horizontalFP",
+            "horizontalTotal",
+            "isHorizontalPolarityPositive",
+            "verticalSyncWidth",
+            "verticalFP",
+            "verticalTotal",
+            "isVerticalPolarityPositive",
+            "actualPixelClock",
+            "isCeTiming"
+          ]
+        },
+        "CustomResolutionOperation": {
+          "type": "integer",
+          "description": "Custom resolution operation flags matching NVCPLAPI_ENUM_CT_OP",
+          "enum": [
+            1,
+            2,
+            3
+          ],
+          "tsEnumNames": [
+            "Set",
+            "Revert",
+            "Save"
+          ]
+        },
+        "FetchCustomTiming": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "customTimingsList": {
+                "type": "array",
+                "description": "Array of custom timings",
+                "items": {
+                  "type": "integer"
+                }
+              }
+            },
+            "required": [
+              "customTimingsList"
+            ]
+          }
+        },
+        "CustomResolutionLocalCacheActions": {
+          "type": "integer",
+          "description": "Possible actions for local Custom resolution cache",
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "tsEnumNames": [
+            "ClearCache",
+            "RefreshCache",
+            "AddResolution",
+            "FlushToStorage"
+          ]
+        },
+        "PerformActionOnCustomResolutionLocalCache": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "customDisplayResolution": {
+                "$ref": "#/definitions/Resolution"
+              },
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "customResolutionLocalCacheActions": {
+                "$ref": "#/definitions/CustomResolutionLocalCacheActions"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "customResolutionLocalCacheActions",
+              "customDisplayResolution"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "success": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "success"
+            ]
+          }
+        },
+        "ContentType": {
+          "type": "integer",
+          "description": "Content types reported to display",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "tsEnumNames": [
+            "Auto",
+            "Video",
+            "Desktop",
+            "Photo",
+            "Movie",
+            "Game"
+          ]
+        },
+        "GetContentTypeInfo": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "contentType": {
+                "$ref": "#/definitions/ContentType"
+              },
+              "contentTypeSupportedList": {
+                "type": "array",
+                "description": "Array of supported content types",
+                "items": {
+                  "$ref": "#/definitions/ContentType"
+                }
+              }
+            },
+            "required": [
+              "contentTypeSupportedList"
+            ]
+          }
+        },
+        "SetContentType": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "contentType": {
+                "$ref": "#/definitions/ContentType"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "contentType"
+            ]
+          }
+        },
+        "GetIsUpscalingFactorsEnabled": {
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "enabled": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "enabled"
+            ]
+          }
+        },
+        "DisplayLuid": {
+          "type": "object",
+          "properties": {
+            "hiPart": {
+              "type": "integer"
+            },
+            "lowPart": {
+              "type": "integer"
+            }
+          }
+        },
+        "GetDisplayLuid": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "displayLuid": {
+                "$ref": "#/definitions/DisplayLuid"
+              }
+            },
+            "required": [
+              "displayLuid"
+            ]
+          }
+        },
+        "RestoreDisplayScaling": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex"
+            ]
+          }
+        },
+        "RestoreDisplayColorSettings": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex"
+            ]
+          }
+        },
+        "GetIsInfoFrameEnabled": {
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "enabled": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "enabled"
+            ]
+          }
+        },
+        "Rectangle": {
+          "type": "object",
+          "properties": {
+            "top": {
+              "type": "number"
+            },
+            "left": {
+              "type": "number"
+            },
+            "right": {
+              "type": "number"
+            },
+            "bottom": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "top",
+            "left",
+            "right",
+            "bottom"
+          ]
+        },
+        "ScreenSize": {
+          "type": "object",
+          "properties": {
+            "horizontal": {
+              "type": "number"
+            },
+            "vertical": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "horizontal",
+            "vertical"
+          ]
+        },
+        "ScalingPreviewInfo": {
+          "type": "object",
+          "properties": {
+            "scanoutRectangle": {
+              "$ref": "#/definitions/Rectangle"
+            },
+            "rasterRectangle": {
+              "$ref": "#/definitions/Rectangle"
+            },
+            "screenSize": {
+              "$ref": "#/definitions/ScreenSize"
+            }
+          },
+          "required": [
+            "scanoutRectangle",
+            "rasterRectangle",
+            "screenSize"
+          ]
+        },
+        "GetScalingPreviewInfo": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer"
+              },
+              "displayIndex": {
+                "type": "integer"
+              },
+              "resolution": {
+                "$ref": "#/definitions/Resolution"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "resolution"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "scalingPreviewInfo": {
+                "$ref": "#/definitions/ScalingPreviewInfo"
+              }
+            },
+            "required": [
+              "scalingPreviewInfo"
+            ]
+          }
+        },
+        "GetSurroundOrMosaicConfig": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns SurroundOrMosaicConfig",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "mosaicType": {
+                "$ref": "#/definitions/MosaicType"
+              }
+            },
+            "required": [
+              "mosaicType"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "MosaicGridTopoValue": {
+                "$ref": "#/definitions/MosaicGridTopo"
+              }
+            },
+            "required": [
+              "MosaicGridTopoValue"
+            ]
+          }
+        },
+        "SetSurroundOrMosaicConfig": {
+          "isCommand": true,
+          "type": "object",
+          "description": "returns SurroundOrMosaicConfig",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "MosaicGridTopoValue": {
+                "$ref": "#/definitions/MosaicGridTopo"
+              }
+            },
+            "required": [
+              "MosaicGridTopoValue"
+            ]
+          }
+        },
+        "GetSurroundResolution": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets surround resolution list (NVCPLAPI_SETTING_SURROUND_RESOLUTION)",
+          "return": {
+            "type": "object",
+            "properties": {
+              "surroundResolutions": {
+                "$ref": "#/definitions/SurroundResolutions"
+              }
+            },
+            "required": [
+              "surroundResolutions"
+            ]
+          }
+        },
+        "SetSurroundResolution": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets surround resolution list (NVCPLAPI_SETTING_SURROUND_RESOLUTION)",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "surroundResolutions": {
+                "$ref": "#/definitions/SurroundResolutions"
+              }
+            },
+            "required": [
+              "surroundResolutions"
+            ]
+          }
+        },
+        "GetDDSState": {
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "bIsSupported": {
+                "type": "boolean"
+              },
+              "bIsAutomatic": {
+                "type": "boolean",
+                "description": "system is in auto mode or not"
+              },
+              "MuxState": {
+                "$ref": "#/definitions/MuxState"
+              },
+              "kmdResponse": {
+                "$ref": "#/definitions/KmdResponse"
+              },
+              "srType": {
+                "$ref": "#/definitions/SRType"
+              }
+            },
+            "required": [
+              "bIsSupported",
+              "bIsAutomatic",
+              "MuxState",
+              "kmdResponse",
+              "srType"
+            ]
+          }
+        },
+        "SetDDSState": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "bIsAutomatic": {
+                "type": "boolean",
+                "description": "system is in auto mode or not"
+              },
+              "MuxState": {
+                "$ref": "#/definitions/MuxState"
+              }
+            },
+            "required": [
+              "bIsAutomatic",
+              "MuxState"
+            ]
+          }
+        },
+        "DDSBlockingAppPresent": {
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "bBlockingAppPresent": {
+                "type": "boolean",
+                "description": "at least 1 blocking app present"
+              }
+            }
+          }
+        },
+        "ACPowerConnected": {
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "bAcConnected": {
+                "type": "boolean",
+                "desceription": "AC power is connected to the system, else running on DC"
+              }
+            }
+          }
+        },
+        "UIElemType": {
+          "type": "integer",
+          "description": "UI Element which we are referring to",
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "tsEnumNames": [
+            "DDSTrayIcon",
+            "DDSDesktopNotification",
+            "SurroundConfineTaskbarToSingleDisplay",
+            "SurroundMaximizeWindowsAcrossAllDisplays"
+          ]
+        },
+        "UIElemState": {
+          "type": "integer",
+          "description": "UI Element state",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "DISABLE",
+            "ENABLE"
+          ]
+        },
+        "SetUIState": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "uiElem": {
+                "$ref": "#/definitions/UIElemType"
+              },
+              "state": {
+                "$ref": "#/definitions/UIElemState"
+              }
+            },
+            "required": [
+              "uiElem",
+              "state"
+            ]
+          }
+        },
+        "GetUIState": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "uiElem": {
+                "$ref": "#/definitions/UIElemType"
+              }
+            },
+            "required": [
+              "uiElem"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "state": {
+                "$ref": "#/definitions/UIElemState"
+              },
+              "isSupported": {
+                "type": "boolean",
+                "description": "Whether the UI element is in a supported state"
+              }
+            },
+            "required": [
+              "state"
+            ]
+          }
+        },
+        "DisableAllMosaicGroups": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Disables all mosaic groups"
+        },
+        "GetDDSBlockingApps": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Returns a list of applications currently blocking Dynamic Display Switching",
+          "return": {
+            "type": "object",
+            "properties": {
+              "appList": {
+                "type": "array",
+                "description": "Array of application names that are blocking DDS",
+                "items": {
+                  "type": "string",
+                  "description": "Name of the application that is blocking DDS"
+                }
+              }
+            },
+            "required": [
+              "appList"
+            ]
+          }
+        },
+        "MosaicDisplayConfig": {
+          "type": "object",
+          "properties": {
+            "displayCount": {
+              "type": "integer"
+            },
+            "displayIds": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            },
+            "errorFlags": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            },
+            "displaySettingsCount": {
+              "type": "integer"
+            },
+            "displaySettings": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/MosaicGridDisplaySettings"
+              }
+            },
+            "mosaicType": {
+              "$ref": "#/definitions/MosaicType"
+            },
+            "rows": {
+              "type": "integer"
+            },
+            "columns": {
+              "type": "integer"
+            },
+            "isPlusN": {
+              "type": "boolean"
+            },
+            "useTopologyWithMaxGpus": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "displayCount",
+            "displayIds",
+            "errorFlags",
+            "displaySettingsCount",
+            "displaySettings",
+            "mosaicType",
+            "rows",
+            "columns",
+            "isPlusN",
+            "useTopologyWithMaxGpus"
+          ]
+        },
+        "GetMosaicDisplaySettings": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "mosaicDisplayConfigIn": {
+                "$ref": "#/definitions/MosaicDisplayConfig"
+              }
+            },
+            "required": [
+              "mosaicDisplayConfigIn"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "mosaicDisplayConfigOut": {
+                "$ref": "#/definitions/MosaicDisplayConfig"
+              }
+            },
+            "required": [
+              "mosaicDisplayConfigOut"
+            ]
+          }
+        },
+        "ExtendAllDisplays": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Extend all displays"
+        },
+        "SpanIdentifier": {
+          "type": "object",
+          "properties": {
+            "displayId": {
+              "type": "integer"
+            },
+            "identifier": {
+              "type": "integer"
+            }
+          }
+        },
+        "GetSpanIdentifiers": {
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "spanIdentifiers": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/SpanIdentifier"
+                }
+              }
+            },
+            "required": [
+              "spanIdentifiers"
+            ]
+          }
+        },
+        "HotkeyType": {
+          "type": "integer",
+          "description": "Types of hotkeys supported",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "ToggleSurround",
+            "ToggleSurroundResolution",
+            "BezelPeeking"
+          ]
+        },
+        "HotkeyState": {
+          "type": "object",
+          "properties": {
+            "hotkeyType": {
+              "$ref": "#/definitions/HotkeyType"
+            },
+            "hotkeyValue": {
+              "type": "integer",
+              "description": "Hotkey value in WM_GETHOTKEY format"
+            },
+            "isEnabled": {
+              "type": "boolean",
+              "description": "Whether the hotkey is enabled or not"
+            }
+          },
+          "required": [
+            "hotkeyType",
+            "hotkeyValue",
+            "isEnabled"
+          ]
+        },
+        "GetHotkeyStates": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Returns the state of all hotkeys ",
+          "return": {
+            "type": "object",
+            "properties": {
+              "hotkeyStates": {
+                "type": "array",
+                "description": "Array of hotkey states",
+                "items": {
+                  "$ref": "#/definitions/HotkeyState"
+                }
+              },
+              "globalHotKeysEnabled": {
+                "type": "boolean",
+                "description": "Global hotkey state. Individual hotkeys will work only if this is enabled."
+              }
+            },
+            "required": [
+              "hotkeyStates"
+            ]
+          }
+        },
+        "SetHotkeyStates": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets the state of one or more hotkeys",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "hotkeyStates": {
+                "type": "array",
+                "description": "Array of hotkey states to set.",
+                "items": {
+                  "$ref": "#/definitions/HotkeyState"
+                }
+              },
+              "globalHotKeysEnabled": {
+                "type": "boolean",
+                "description": "Global hotkey state. Individual hotkeys will work only if this is enabled."
+              }
+            },
+            "required": [
+              "hotkeyStates"
+            ]
+          }
+        },
+        "PerfCountRestrictionInfo": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Returns admin status and perf counter access flag",
+          "return": {
+            "type": "object",
+            "properties": {
+              "isCurrentUserAdmin": {
+                "type": "boolean"
+              },
+              "isNonAdminPerfCounterAccessAllowed": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "isCurrentUserAdmin",
+              "isNonAdminPerfCounterAccessAllowed"
+            ]
+          }
+        },
+        "SetIsNonAdminPerfCounterAccessAllowed": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "isNonAdminPerfCounterAccessAllowed": {
+                "type": "boolean"
+              }
+            }
+          },
+          "required": [
+            "isNonAdminPerfCounterAccessAllowed"
+          ]
+        },
+        "GetSpanBezelOverlapLimits": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Returns the surround bezel overlap limits. Call only if surround is enabled. When surround disabled don't enforce any limits",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "displaySettings": {
+                "$ref": "#/definitions/MosaicGridDisplaySettings"
+              },
+              "rows": {
+                "type": "integer",
+                "description": "Number of rows"
+              },
+              "columns": {
+                "type": "integer",
+                "description": "Number of columns"
+              }
+            },
+            "required": [
+              "displaySettings",
+              "rows",
+              "columns"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "overlapXMin": {
+                "type": "integer",
+                "description": "Minimum horizontal bezel overlap"
+              },
+              "overlapXMax": {
+                "type": "integer",
+                "description": "Maximum horizontal bezel overlap"
+              },
+              "overlapYMin": {
+                "type": "integer",
+                "description": "Minimum vertical bezel overlap"
+              },
+              "overlapYMax": {
+                "type": "integer",
+                "description": "Maximum vertical bezel overlap"
+              }
+            },
+            "required": [
+              "overlapXMin",
+              "overlapXMax",
+              "overlapYMin",
+              "overlapYMax"
+            ]
+          }
+        },
+        "ShowBezelPreviewImage": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Shows bezel preview image with the specified configuration",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "rows": {
+                "type": "integer",
+                "description": "Number of rows in the mosaic grid"
+              },
+              "columns": {
+                "type": "integer",
+                "description": "Number of columns in the mosaic grid"
+              },
+              "displays": {
+                "type": "array",
+                "description": "Array of mosaic grid display configurations",
+                "items": {
+                  "$ref": "#/definitions/MosaicGridDisplay"
+                }
+              },
+              "displayIdPairs": {
+                "type": "array",
+                "description": "Nested array where each sub-array contains a pair of display IDs. For 1xn, nx1 surround the array will only have a single pair. for 2x2 surround the array will have 2 pairs.",
+                "items": {
+                  "type": "array",
+                  "description": "Pair of Display ID. The pair together represents a bezel edge. If this is not sent or is empty then hide existing bezel previews",
+                  "items": {
+                    "type": "integer",
+                    "description": "Display ID"
+                  }
+                }
+              }
+            },
+            "required": [
+              "rows",
+              "columns",
+              "displays"
+            ]
+          }
+        },
+        "GetCustomResolutions": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets all custom resolutions for a display ",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer",
+                "description": "Index of the GPU (0-based)"
+              },
+              "displayIndex": {
+                "type": "integer",
+                "description": "Index of the display (0-based)"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "customResolutions": {
+                "type": "array",
+                "description": "Array of all custom resolutions",
+                "items": {
+                  "$ref": "#/definitions/CustomTiming"
+                }
+              }
+            },
+            "required": [
+              "customResolutions"
+            ]
+          }
+        },
+        "PerformCustomResolutionOperation": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Performs custom resolution operations (Set, Revert, Save) using flag-based pattern matching NvCplApiCTTest",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer",
+                "description": "Index of the GPU (0-based)"
+              },
+              "displayIndex": {
+                "type": "integer",
+                "description": "Index of the display (0-based)"
+              },
+              "operation": {
+                "$ref": "#/definitions/CustomResolutionOperation"
+              },
+              "customTiming": {
+                "$ref": "#/definitions/CustomTiming"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "operation"
+            ]
+          }
+        },
+        "DeleteCustomResolution": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Deletes a custom resolution using NvCplApiCTDelete",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer",
+                "description": "Index of the GPU (0-based)"
+              },
+              "displayIndex": {
+                "type": "integer",
+                "description": "Index of the display (0-based)"
+              },
+              "customTiming": {
+                "$ref": "#/definitions/CustomTiming"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "customTiming"
+            ]
+          }
+        },
+        "GetSelectedCustomResolution": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets all selected custom resolutions for a display",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer",
+                "description": "Index of the GPU (0-based)"
+              },
+              "displayIndex": {
+                "type": "integer",
+                "description": "Index of the display (0-based)"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "selectedResolutions": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/Resolution"
+                }
+              }
+            },
+            "required": [
+              "selectedResolutions"
+            ]
+          }
+        },
+        "CalculateCustomTiming": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Calculates custom timing parameters using NvCplApiCTCalc",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer",
+                "description": "Index of the GPU (0-based)"
+              },
+              "displayIndex": {
+                "type": "integer",
+                "description": "Index of the display (0-based)"
+              },
+              "customTiming": {
+                "$ref": "#/definitions/CustomTiming"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "customTiming"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "customTiming": {
+                "$ref": "#/definitions/CustomTiming"
+              }
+            },
+            "required": [
+              "customTiming"
+            ]
+          }
+        },
+        "SaveSelectedCustomResolution": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Adds a resolution for a display device to the cache holding persisted unsupported resolutions using NVCPLAPI_HELPER_AddUnsupportedResolutionToCache",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer",
+                "description": "Index of the GPU (0-based)"
+              },
+              "displayIndex": {
+                "type": "integer",
+                "description": "Index of the display (0-based)"
+              },
+              "selectedResolutions": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/Resolution"
+                }
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "selectedResolutions"
+            ]
+          }
+        },
+        "IsLegalDisclaimerAccepted": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Checks if the custom resolution legal disclaimer has been accepted by reading the registry key 'CustomRezLegalAccepted'",
+          "parameters": {
+            "type": "object",
+            "properties": {}
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "isAccepted": {
+                "type": "boolean",
+                "description": "True if the legal disclaimer has been accepted (registry value is 1), false otherwise"
+              }
+            },
+            "required": [
+              "isAccepted"
+            ]
+          }
+        },
+        "SetLegalDisclaimerAccepted": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Sets the custom resolution legal disclaimer as accepted by writing the registry key 'CustomRezLegalAccepted' to 1",
+          "parameters": {
+            "type": "object",
+            "properties": {}
+          }
+        },
+        "GetEnableHiddenResolutions": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Gets the state of 'Enable resolutions not exposed by display' checkbox using NVCPLAPI_SETTING_MISC_HIDE_MODES. Returns true if hidden resolutions are enabled (checkbox checked), false otherwise",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer",
+                "description": "Index of the GPU (0-based)"
+              },
+              "displayIndex": {
+                "type": "integer",
+                "description": "Index of the display (0-based)"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "isEnabled": {
+                "type": "boolean",
+                "description": "True if hidden resolutions are enabled (checkbox checked), false if disabled (checkbox unchecked)"
+              }
+            },
+            "required": [
+              "isEnabled"
+            ]
+          }
+        },
+        "SetEnableHiddenResolutions": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Sets the state of 'Enable resolutions not exposed by display' checkbox using NVCPLAPI_SETTING_MISC_HIDE_MODES. Set true to enable hidden resolutions (check checkbox), false to disable (uncheck)",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "gpuIndex": {
+                "type": "integer",
+                "description": "Index of the GPU (0-based)"
+              },
+              "displayIndex": {
+                "type": "integer",
+                "description": "Index of the display (0-based)"
+              },
+              "isEnabled": {
+                "type": "boolean",
+                "description": "True to enable hidden resolutions (check checkbox), false to disable (uncheck)"
+              }
+            },
+            "required": [
+              "gpuIndex",
+              "displayIndex",
+              "isEnabled"
+            ]
+          }
+        },
+        "GetContextMenuVisibility": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Gets the visibility state of the NVIDIA App context menu by reading the registry key 'ContextUIPolicy'. Returns true if the context menu is visible (value is 1), false if hidden (value is 0)",
+          "parameters": {
+            "type": "object",
+            "properties": {}
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "isVisible": {
+                "type": "boolean",
+                "description": "True if the context menu is visible (registry value is 1), false otherwise"
+              }
+            },
+            "required": [
+              "isVisible"
+            ]
+          }
+        },
+        "SetContextMenuVisibility": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Sets the visibility of the NVIDIA App context menu by writing the registry key 'ContextUIPolicy'. Pass true to show, false to hide",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "isVisible": {
+                "type": "boolean",
+                "description": "True to show the context menu (sets registry value to 1), false to hide (sets registry value to 0)"
+              }
+            },
+            "required": [
+              "isVisible"
+            ]
+          }
+        },
+        "IsGpuMemoryAllocationSupported": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns whether GPU memory allocation is supported on this system.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "isSupported": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "isSupported"
+            ]
+          }
+        },
+        "GpuMemoryAllocationInfo": {
+          "type": "object",
+          "description": "GPU memory allocation information. Allocation values are in MiB.",
+          "properties": {
+            "currentAllocation": {
+              "type": "integer",
+              "description": "Requested GPU memory allocation stored in firmware, in MiB. Equals activeAllocation when no restart is pending."
+            },
+            "activeAllocation": {
+              "type": "integer",
+              "description": "GPU memory allocation in effect in firmware, in MiB."
+            },
+            "minAllocation": {
+              "type": "integer",
+              "description": "Firmware-provided minimum GPU memory allocation in MiB."
+            },
+            "maxAllocation": {
+              "type": "integer",
+              "description": "Maximum GPU memory allocation from the NDUP SKU fallback in MiB."
+            },
+            "defaultAllocation": {
+              "type": "integer",
+              "description": "Default GPU memory allocation from the NDUP SKU fallback in MiB."
+            },
+            "stepAllocation": {
+              "type": "integer",
+              "description": "Firmware-provided GPU memory allocation step size in MiB."
+            },
+            "restoreAvailable": {
+              "type": "boolean",
+              "description": "Whether the requested allocation differs from the packaged NDUP default for this system-memory SKU."
+            },
+            "restorePending": {
+              "type": "boolean",
+              "description": "Whether the packaged NDUP default is requested and will become active after restart."
+            },
+            "totalSystemMemoryGB": {
+              "type": "integer",
+              "description": "Total physically installed system memory in GB."
+            },
+            "intelligentCarveoutSupported": {
+              "type": "boolean",
+              "description": "Whether Intelligent Carveout is supported on this system."
+            },
+            "currentIntelligentCarveoutEnabled": {
+              "type": "boolean",
+              "description": "Requested Intelligent Carveout state. Equals activeIntelligentCarveoutEnabled unless a pending write has been made."
+            },
+            "activeIntelligentCarveoutEnabled": {
+              "type": "boolean",
+              "description": "Effective Intelligent Carveout runtime state."
+            }
+          },
+          "required": [
+            "currentAllocation",
+            "activeAllocation",
+            "minAllocation",
+            "maxAllocation",
+            "defaultAllocation",
+            "stepAllocation",
+            "restoreAvailable",
+            "restorePending",
+            "totalSystemMemoryGB",
+            "intelligentCarveoutSupported",
+            "currentIntelligentCarveoutEnabled",
+            "activeIntelligentCarveoutEnabled"
+          ]
+        },
+        "GetGpuMemoryAllocationInfo": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns GPU memory allocation information for supported N1X UMA systems.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "gpuMemoryAllocationInfo": {
+                "$ref": "#/definitions/GpuMemoryAllocationInfo"
+              }
+            },
+            "required": [
+              "gpuMemoryAllocationInfo"
+            ]
+          }
+        },
+        "SetGpuMemoryAllocation": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Writes requested GPU memory allocation to firmware. Change takes effect after restart.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "allocation": {
+                "type": "integer",
+                "description": "Requested GPU memory allocation in MiB."
+              },
+              "restartSystemNow": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "allocation",
+              "restartSystemNow"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "writeSucceeded": {
+                "type": "boolean"
+              },
+              "restartInitiated": {
+                "type": "boolean"
+              },
+              "errorCode": {
+                "type": "string",
+                "enum": [
+                  "None",
+                  "AuthDenied",
+                  "RestartRejected",
+                  "WriteFailed"
+                ]
+              }
+            },
+            "required": [
+              "writeSucceeded",
+              "restartInitiated",
+              "errorCode"
+            ]
+          }
+        },
+        "RestoreGpuMemoryAllocation": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Restores the GPU memory allocation to the packaged NDUP default for the system-memory SKU. Change takes effect after restart.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "restartSystemNow": {
+                "type": "boolean",
+                "description": "Whether to restart the system immediately after restoring the packaged NDUP default allocation."
+              }
+            },
+            "required": [
+              "restartSystemNow"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "writeSucceeded": {
+                "type": "boolean"
+              },
+              "restartInitiated": {
+                "type": "boolean"
+              },
+              "errorCode": {
+                "type": "string",
+                "enum": [
+                  "None",
+                  "AuthDenied",
+                  "RestartRejected",
+                  "WriteFailed"
+                ]
+              }
+            },
+            "required": [
+              "writeSucceeded",
+              "restartInitiated",
+              "errorCode"
+            ]
+          }
+        },
+        "SetIntelligentCarveout": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Enables or disables Intelligent Carveout. Change may require driver restart or system restart to take effect.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "enabled": {
+                "type": "boolean"
+              },
+              "restartSystemNow": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "enabled",
+              "restartSystemNow"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "writeSucceeded": {
+                "type": "boolean"
+              },
+              "restartInitiated": {
+                "type": "boolean"
+              },
+              "errorCode": {
+                "type": "string",
+                "enum": [
+                  "None",
+                  "NotSupported",
+                  "AuthDenied",
+                  "RestartRejected",
+                  "WriteFailed"
+                ]
+              }
+            },
+            "required": [
+              "writeSucceeded",
+              "restartInitiated",
+              "errorCode"
+            ]
+          }
+        },
+        "GpuUtilizationPreferenceValue": {
+          "type": "integer",
+          "description": "Native GPU utilization YieldPct preference value.",
+          "enum": [
+            0,
+            10,
+            20,
+            50
+          ],
+          "tsEnumNames": [
+            "NoPriority",
+            "ForegroundAppPriority",
+            "Balanced",
+            "BackgroundAppPriority"
+          ]
+        },
+        "GpuUtilizationPreferenceErrorCode": {
+          "type": "string",
+          "enum": [
+            "None",
+            "NotSupported",
+            "InvalidArgument",
+            "AuthDenied",
+            "WriteFailed"
+          ]
+        },
+        "GpuUtilizationPreferenceInfo": {
+          "type": "object",
+          "description": "GPU utilization preference information returned by UXD.",
+          "properties": {
+            "isSupported": {
+              "type": "boolean"
+            },
+            "currentYieldPct": {
+              "type": "integer",
+              "description": "Exact native YieldPct readback. Non-preset values are preserved."
+            },
+            "defaultYieldPct": {
+              "type": "integer",
+              "description": "Native default YieldPct."
+            },
+            "minYieldPct": {
+              "type": "integer",
+              "description": "Native minimum YieldPct."
+            },
+            "maxYieldPct": {
+              "type": "integer",
+              "description": "Native maximum YieldPct."
+            },
+            "stepYieldPct": {
+              "type": "integer",
+              "description": "Native YieldPct increment."
+            },
+            "supportedPreferences": {
+              "type": "array",
+              "description": "Native preference values reported as supported by UXD.",
+              "items": {
+                "$ref": "#/definitions/GpuUtilizationPreferenceValue"
+              }
+            }
+          },
+          "required": [
+            "isSupported",
+            "currentYieldPct",
+            "defaultYieldPct",
+            "minYieldPct",
+            "maxYieldPct",
+            "stepYieldPct",
+            "supportedPreferences"
+          ]
+        },
+        "IsGpuUtilizationPreferenceSupported": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns whether GPU utilization preference is supported on this system.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "isSupported": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "isSupported"
+            ]
+          }
+        },
+        "GetGpuUtilizationPreferenceInfo": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns the exact GPU utilization preference state reported by UXD.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "gpuUtilizationPreferenceInfo": {
+                "$ref": "#/definitions/GpuUtilizationPreferenceInfo"
+              }
+            },
+            "required": [
+              "gpuUtilizationPreferenceInfo"
+            ]
+          }
+        },
+        "SetGpuUtilizationPreference": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Sets a GPU utilization YieldPct value.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "yieldPct": {
+                "type": "integer",
+                "description": "GPU utilization YieldPct requested by NvApp."
+              }
+            },
+            "required": [
+              "yieldPct"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "writeSucceeded": {
+                "type": "boolean"
+              },
+              "errorCode": {
+                "$ref": "#/definitions/GpuUtilizationPreferenceErrorCode"
+              }
+            },
+            "required": [
+              "writeSucceeded",
+              "errorCode"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

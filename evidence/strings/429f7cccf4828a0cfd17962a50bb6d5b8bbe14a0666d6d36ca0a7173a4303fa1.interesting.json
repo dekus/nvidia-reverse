@@ -1,0 +1,57 @@
+[
+  {
+    "offset": "0x157280",
+    "encoding": "ascii",
+    "text": "Skipping telemetry report of error %s from method %s"
+  },
+  {
+    "offset": "0x194aac",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeW"
+  },
+  {
+    "offset": "0x1968fe",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x14fe90",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Installer2"
+  },
+  {
+    "offset": "0x150178",
+    "encoding": "utf-16le",
+    "text": "-enableTelemetry:true"
+  },
+  {
+    "offset": "0x151ab0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x151b00",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x151e00",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x152390",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvApp"
+  },
+  {
+    "offset": "0x154090",
+    "encoding": "utf-16le",
+    "text": "\\\\.\\Pipe\\{69C5C770-94D5-4603-99D7-81F2284E78F3}"
+  },
+  {
+    "offset": "0x154ee0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  }
+]

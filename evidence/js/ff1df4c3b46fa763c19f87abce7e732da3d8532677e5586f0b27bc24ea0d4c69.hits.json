@@ -1,0 +1,214 @@
+[
+  {
+    "line": 386,
+    "text": "            this.restoreOcSub || (this.restoreOcSub = this.perfTuningService.checkConsentAndRestoreOc().pipe((0, J.j)(() => {\r"
+  },
+  {
+    "line": 487,
+    "text": "            this.perfTuningService.resetStopScanButton(), this.autoTuneSub || (this.autoTuneSub = this.perfTuningService.checkConsentAndEnableBgOcScan(e.checked).pipe((0, J.j)(() => {\r"
+  },
+  {
+    "line": 704,
+    "text": "            e !== Y.vy.Unknown && (e === Y.vy.Fan ? s = this.fanSettings : a = this.sliderLimits.filter(l => l.type === e)), s = s.filter(l => l.sliderSetting.isSupported), a = a.filter(l => l.isSupported), this.applyPerfLimitSub || (this.applyPerfLimitSub = this.perfLimitersService.checkConsentAndSetPerfLimits(a, s, n, e).pipe((0, J.j)(() => {\r"
+  },
+  {
+    "line": 1141,
+    "text": "            this.loggingService = e, this.appBarService = n, this.telemetryService = i, this.nvcplSystemInfoService = a, this.systemDetailsService = s, this.performanceMeasureService = l, this.multiDisplaysSupportService = p, this.gpuEnumService = m, this.destroyRef = (0, t.WQX)(t.abz), this.disableTabAnimation = !0, this.selectedTabIndex = 0, this.myRigFeature = Hi.PE, this.isLoading = !1, this.viewDetailsButtonText = \"system.overview.viewRigDetails\", this.gpuInfo = [], this.pageHighlightSection = oe.kA.Overview, this.logger = e.getLogger(\"nvapp/SystemOverviewComponent\"), this.appBarService.setTitle(\"preferences.system\"), this.telemetryService.setScreen(P.f3.System), this.loadingSpinner = this.systemDetailsService.getLoadingSpinner()\r"
+  },
+  {
+    "line": 1303,
+    "text": "            this.dialogRef = n, this.windowsSettingsService = i, this.videoService = s, this.translate = l, this.telemetryService = p, this.statusString = \"\", this.errorString = \"\", this.hdrErrors = z.FO, this.destroyRef = (0, t.WQX)(t.abz), this.throttle$ = new ot.B7, this.isDirty = !1, this.setSettingInProcess = !1, this.peakBrightnessMaxRenderThreshold = B.IR, this.middleGraySliderMin = B.oE, this.middleGraySliderMax = B.Yx, this.saturationContrastMin = B.Zo, this.saturationContrastMax = B.D6, this.sliderStepSize = B.lz, this.logger = e.getLogger(\"nvapp/HdrDialogComponent\"), this.oldState = {\r"
+  },
+  {
+    "line": 1320,
+    "text": "              this.logger.info(\"set the HDR setting in backend \", this.newState), this.videoService.setHdrState(this.newState), this.setSettingInProcess = !1\r"
+  },
+  {
+    "line": 1348,
+    "text": "            this.logger.info(\"Apply button clicked\"), this.isDirty && !this.setSettingInProcess ? this.commitSetting() : JSON.stringify(this.newState) !== JSON.stringify(this.oldState) && (this.logger.info(\"set the settings and then commit\"), this.videoService.setHdrState(this.newState), this.commitSetting()), this.dialogRef.close()\r"
+  },
+  {
+    "line": 1360,
+    "text": "          sendTelemetry() {\r"
+  },
+  {
+    "line": 1372,
+    "text": "            this.telemetryService.push(new P.IU(e))\r"
+  },
+  {
+    "line": 1375,
+    "text": "            this.isDirty = !0, this.setSettingInProcess = !0, this.logger.info(\"setting change in progress\"), this.throttle$.next()\r"
+  },
+  {
+    "line": 1378,
+    "text": "            this.logger.info(\"Settings changed, applying new settings:\", this.newState), this.videoService.applyStateChange(this.videoService.getHdrState()), this.sendTelemetry()\r"
+  },
+  {
+    "line": 1502,
+    "text": "            this.dialogRef = n, this.videoService = a, this.translate = s, this.telemetryService = l, this.qualityChips = B.Wc, this.statusString = \"\", this.qualityMinValue = B.cL, this.qualityMaxValue = B.ij, this.gpuUtilMinValue = B.B_, this.gpuUtilMaxValue = B.XW, this.stepValue = B.lz, this.destroyRef = (0, t.WQX)(t.abz), this.throttle$ = new ot.B7, this.isDirty = !1, this.logger = e.getLogger(\"nvapp/VsrDialogComponent\"), this.oldState = {\r"
+  },
+  {
+    "line": 1555,
+    "text": "            this.logger.info(\"Apply button clicked\"), this.isDirty && (this.logger.info(\"Settings changed, applying new settings:\", this.newState), this.videoService.applyStateChange(this.videoService.getVsrState()), this.sendTelemetry()), this.dialogRef.close()\r"
+  },
+  {
+    "line": 1560,
+    "text": "          sendTelemetry() {\r"
+  },
+  {
+    "line": 1568,
+    "text": "            this.telemetryService.push(new P.vK(e))\r"
+  },
+  {
+    "line": 4398,
+    "text": "            return this.nvAppBridgeService.executeWithPluginStatusTelemetry(La).pipe((0, v.T)(e => (this.logger.info(\"GetHotkeyStatesDisplayAndToggle\", {\r"
+  },
+  {
+    "line": 4431,
+    "text": "            return this.nvAppBridgeService.executeWithPluginStatusTelemetry(Ua, e).pipe((0, w.n)(n => (this.logger.info(\"SetHotkeyStates Successfully \", {\r"
+  },
+  {
+    "line": 5819,
+    "text": "            this.matDialog = n, this.translateService = i, this.settingInfoModalService = a, this.telemetryUtilsService = s, this.displaysService = l, this.multiDisplaysSupportService = p, this.manageDisplayModeService = m, this.keyboardMappingService = _, this.surroundService = O, this.hardwareInfoService = I, this.enableSurround = (0, t.hFB)(), this.isGsyncAvailable = !1, this.panelSummary = \"\", this.isExpanded = !1, this.displayModeTypes = u.iI, this.displayModeSelected = u.iI.Automatic, this.isSumdDirty$ = new xt.c, this.isSurroundDialogOpenAlreadyInProgress = !1, this.destroyRef = (0, t.WQX)(t.abz), this.displayHeaders = j.H, this.logger = e.getLogger(\"nvapp/DisplayGlobalSettingsComponent\")\r"
+  },
+  {
+    "line": 5827,
+    "text": "              n && this.isDdsSupported && this.displaysService.sendDisplayModeStateTelemetry(n)\r"
+  },
+  {
+    "line": 5862,
+    "text": "            this.settingInfoModalService.openDialogWithData(e, this.keyboardMappingService.isKeyboardInUse), this.telemetryUtilsService.sendClickEvent(P.EB.GSyncUpsellDialog, `${P.d3.System_Displays}`, !0)\r"
+  },
+  {
+    "line": 5955,
+    "text": "            this.keyboardMappingService.isMouseOrKeyboardSpaceOrEnterEvent(e) && (e.stopImmediatePropagation(), e.preventDefault(), this.displaysService.restoreGlobalGsyncState(this.isGsyncAvailable, this.isSurroundAvailable && !this.isQuadro), this.telemetryUtilsService.sendClickEvent(P.EB.RestoreGlobalDisplaySettings, `${P.d3.System_Displays}`, !0))\r"
+  },
+  {
+    "line": 6034,
+    "text": "            }), this.telemetryUtilsService.sendClickEvent(P.EB.GSyncSettingInfo, `${P.d3.System_Displays}`, !0)\r"
+  },
+  {
+    "line": 8108,
+    "text": "            this.translateService = n, this.displayService = i, this.dialog = a, this.telemetryUtilsService = s, this.multiDisplaysSupportService = l, this.keyboardMappingService = p, this.customResolutionService = m, this.outsideGraphicsUpdateService = _, this.settingInfoModalService = O, this.isExpanded = (0, t.geq)(!1), this.displayData = t.hFB.required(), this._gsyncGlobalState = u.nX.NotAvailable, this.panelSummary = \"\", this.globalGSyncEnabled = !1, this.gsyncTypes = u.rc, this.rotationListMap = d.D0, this.connectorTypeString = \"\", this.connectorIcon = \"\", this.resolutionGroupMap = new Map, this.hdcpStausText = \"\", this.disableRotation = !1, this.disableResolution = !1, this.panelSummaryResolutionLabel = \"\", this.panelSummaryRefreshRateLabel = \"\", this.destroyRef = (0, t.WQX)(t.abz), this.isSumdDirty$ = new xt.c, this.displayHeaders = j.H, this.compareRefreshRates = Jt.JZ, this.LogicalDisplayType = u.QE, this.isDsrEnabled = null, this.showLegacyPerDisplayGsyncToggle = !1, this.showPureGsyncGlobalStatus = !1, this.showDisplayControlsBlock = !1, this.showPulsarBlock = !1, this.pulsarControlsDisabled = !1, this.logger = e.getLogger(\"nvapp/DisplayPropertiesPanelComponent\")\r"
+  },
+  {
+    "line": 8321,
+    "text": "            }), this.telemetryUtilsService.sendClickEvent(P.EB.HDCPInfoDialog, `${P.d3.System_Displays}/${this.displayData().name}`, !0)\r"
+  },
+  {
+    "line": 8563,
+    "text": "            this.translateService = n, this.displayService = i, this.settingInfoModalService = a, this.nvAppTelemetryUtilService = s, this.keyboardMappingService = l, this.displayData = t.hFB.required(), this.previewCanvasElement = t.ebz.required(\"previewCanvasElement\"), this.scalingPreviewContainer = (0, t.ebz)(\"scalingPreviewContainer\"), this.scalingUIResolutionList = [], this.showPreviewError = !1, this.displayHeaders = j.H, this.compareResolutions = Jt.aK, this.compareRefreshRates = Jt.JZ, this.dispSizeM_X = 1, this.dispSizeM_Y = 1, this.destroyRef = (0, t.WQX)(t.abz), this.logger = e.getLogger(\"nvapp/DisplayScalingPreviewComponent\"), this.rcOut = this.rcCtrl\r"
+  },
+  {
+    "line": 8662,
+    "text": "            this.selectedResolution = e, this.currentRefreshRate = this.selectedResolution.refreshRates[0] ?? {}, this.setSelectedScalingPreviewResolutionToDB(), this.updateScalingPreview().subscribe(C.l, C.l), this.nvAppTelemetryUtilService.sendSettingChangeEvent(d.ER, `${this.selectedResolution.horizontal} x ${this.selectedResolution.vertical} x ${this.currentRefreshRate.value}`, `${P.d3.System_Displays}/${this.displayData().name}`, !0)\r"
+  },
+  {
+    "line": 8665,
+    "text": "            this.currentRefreshRate = e, this.setSelectedScalingPreviewResolutionToDB(), this.updateScalingPreview().subscribe(C.l, C.l), this.nvAppTelemetryUtilService.sendSettingChangeEvent(d.fF, `${this.selectedResolution.horizontal} x ${this.selectedResolution.vertical} x ${this.currentRefreshRate.value}`, `${P.d3.System_Displays}/${this.displayData().name}`, !0)\r"
+  },
+  {
+    "line": 8777,
+    "text": "            this.settingInfoModalService.openDialogWithData(n, this.keyboardMappingService.isKeyboardInUse), this.nvAppTelemetryUtilService.sendClickEvent(P.EB.ScalingPreviewInfoDialog, `${P.d3.System_Displays}/${this.displayData().name}`, !0)\r"
+  },
+  {
+    "line": 8891,
+    "text": "            this.translateService = n, this.displayUtilService = i, this.settingInfoModalService = a, this.nvAppTelemetryUtilService = s, this.multiDisplaysSupportService = l, this.keyboardMappingService = p, this.isExpanded = (0, t.geq)(!1), this.displayData = t.hFB.required(), this.scalingPreviewComponent = (0, t.ebz)(he), this.chips = (0, t.dtW)(Q.Jl), this.panelSummary = \"\", this.scalingMetaDataList = [], this.ScalingMethod = u.Z$, this.isSumdDirty$ = new xt.c, this.displayHeaders = j.H, this.logger = e.getLogger(\"nvapp/DisplayScalingPanelComponent\")\r"
+  },
+  {
+    "line": 8961,
+    "text": "              this.logger.info(\"Successfully applied scaling\"), this.nvAppTelemetryUtilService.sendSettingChangeEvent(e, n, `${P.d3.System_Displays}/${this.displayData().name}`, !0), this.blurAllChips()\r"
+  },
+  {
+    "line": 8963,
+    "text": "              this.logger.error(`Failed to apply scaling: ${i}`), this.nvAppTelemetryUtilService.sendSettingChangeEvent(e, n, `${P.d3.System_Displays}/${this.displayData().name}`, !0, i && i.message ? i.message : \"\"), this.blurAllChips()\r"
+  },
+  {
+    "line": 8974,
+    "text": "              this.logger.info(\"Successfully applied scaling overrides\"), this.nvAppTelemetryUtilService.sendSettingChangeEvent(d.p5, this.scalingSetting.isOverrideScalingEnabled ? P.T8.TRUE : P.T8.FALSE, `${P.d3.System_Displays}/${this.displayData().name}`, !0)\r"
+  },
+  {
+    "line": 8976,
+    "text": "              this.logger.error(`Failed to apply scaling overrides: ${e}`), this.nvAppTelemetryUtilService.sendSettingChangeEvent(d.p5, this.scalingSetting.isOverrideScalingEnabled ? P.T8.TRUE : P.T8.FALSE, `${P.d3.System_Displays}/${this.displayData().name}`, !0, e && e.message ? e.message : \"\")\r"
+  },
+  {
+    "line": 8999,
+    "text": "            }), this.nvAppTelemetryUtilService.sendClickEvent(P.EB.ScalingModeInfoDialog, `${P.d3.System_Displays}/${this.displayData().name}`, !0)\r"
+  },
+  {
+    "line": 9006,
+    "text": "            }), this.nvAppTelemetryUtilService.sendClickEvent(P.EB.ScalingDeviceInfoDialog, `${P.d3.System_Displays}/${this.displayData().name}`, !0)\r"
+  },
+  {
+    "line": 9474,
+    "text": "            this.translateService = n, this.displaysService = i, this.displaySearchService = a, this.settingInfoModalService = s, this.nvAppTelemetryUtilService = l, this.multiDisplaysSupportService = p, this.keyboardMappingService = m, this.isExpanded = (0, t.geq)(!1), this.displayData = t.hFB.required(), this.panelSummary = \"\", this.isColorSettingsOsControlled = !0, this.disableOutputColorSettings = !1, this.desktopColorDepthList = [], this.outputColorDepthList = [], this.outputColorFormatList = [], this.dynamicRangeList = [], this.advancedColorCombinations = [], this.currentColorCombinationFromApi = null, this.overrideColorToReferenceMode = !1, this.colorAccuracyMode = \"\", this.colorChannelList = d._N, this.selectedChannel = u.Zt.All, this.currentBrightnessValue = 0, this.currentContrastValue = 0, this.currentGammaValue = 0, this.selectedChannelData = Ln, this.colorChannelInfo = null, this.showDesktopColorDepth = !1, this.showOutputColorDepth = !1, this.showOutPutColorFormat = !1, this.showDynamicRange = !1, this.currentDigitalVibranceValue = 0, this.digitalVibranceData = Un, this.currentHueValue = 0, this.hueData = Bn, this.showContentType = !0, this.contentTypeList = [], this.colorMetrics = d.Zw, this.throttle$ = new ot.B7, this.digitalVibranceThrottle$ = new ot.B7, this.hueThrottle$ = new ot.B7, this.colorSliderKeyDown = !1, this.lastChangedColorSetting = null, this._storedColorChannel = new tt.m(1), this.panelSummaryOutputColorSettings = new ot.B7, this.panelSummaryCol"
+  },
+  {
+    "line": 9622,
+    "text": "            null != e && (this.selectedChannel = e, this.setSelectedColorChannelToDB(), this.setSelectedChannelData(), this.nvAppTelemetryUtilService.sendSettingChangeEvent(d.Dj, e.toString(), `${P.d3.System_Displays}/${this.displayData().name}`, !0))\r"
+  },
+  {
+    "line": 9743,
+    "text": "              this.colorSliderKeyDown || (this.displayData().refreshColorCombinationInfo(), this.lastChangedColorSetting && (this.nvAppTelemetryUtilService.sendSettingChangeEvent(this.lastChangedColorSetting.settingType, this.lastChangedColorSetting.value.toString(), `${P.d3.System_Displays}/${this.displayData().name}`, !0), this.lastChangedColorSetting = null))\r"
+  },
+  {
+    "line": 9866,
+    "text": "            this.stopEventBubble(e), this.showColorSettingsInfoPopup(cl), this.nvAppTelemetryUtilService.sendClickEvent(P.EB.ColorAccuracyModeInfoDialog, `${P.d3.System_Displays}/${this.displayData().name}`, !0)\r"
+  },
+  {
+    "line": 9869,
+    "text": "            this.stopEventBubble(e), this.showColorSettingsInfoPopup(dl), this.nvAppTelemetryUtilService.sendClickEvent(P.EB.OutputColorSettingsInfoDialog, `${P.d3.System_Displays}/${this.displayData().name}`, !0)\r"
+  },
+  {
+    "line": 9872,
+    "text": "            this.stopEventBubble(e), this.showColorSettingsInfoPopup(ul), this.nvAppTelemetryUtilService.sendClickEvent(P.EB.ContentTypeInfoDialog, `${P.d3.System_Displays}/${this.displayData().name}`, !0)\r"
+  },
+  {
+    "line": 9875,
+    "text": "            this.stopEventBubble(e), this.showColorSettingsInfoPopup(gl), this.nvAppTelemetryUtilService.sendClickEvent(P.EB.ColorChannelInfoDialog, `${P.d3.System_Displays}/${this.displayData().name}`, !0)\r"
+  },
+  {
+    "line": 10170,
+    "text": "            return this.logger.info(\"Checking GPU Memory Allocation support\"), this.nvAppBridgeService.executeWithPluginStatusTelemetry(it.ml, {}, {}, !0, !1).pipe((0, v.T)(e => e.isSupported), (0, x.M)(e => this.logger.info(\"GPU Memory Allocation supported:\", e)), (0, k.W)(e => (this.logger.error(\"Error checking GPU Memory Allocation support\", e), (0, b.of)(!1))))\r"
+  },
+  {
+    "line": 10173,
+    "text": "            return this.logger.info(\"Fetching GPU Memory Allocation info\"), this.nvAppBridgeService.executeWithPluginStatusTelemetry(it.U2, {}, {}, !0, !1).pipe((0, v.T)(e => e.gpuMemoryAllocationInfo), (0, x.M)(e => this.logger.info(\"GPU Memory Allocation info received\", e)), (0, k.W)(e => (this.logger.error(\"Error fetching GPU Memory Allocation info\", e), (0, Ct.$)(() => e))))\r"
+  },
+  {
+    "line": 10179,
+    "text": "            }), this.nvAppBridgeService.executeWithPluginStatusTelemetry(it.Wf, {\r"
+  },
+  {
+    "line": 10187,
+    "text": "            }), this.nvAppBridgeService.executeWithPluginStatusTelemetry(it.cb, {\r"
+  },
+  {
+    "line": 10238,
+    "text": "            return this.nvAppBridgeService.executeWithPluginStatusTelemetry(it.mk, {}, {}, !0, !0).pipe((0, v.T)(e => e.isSupported))\r"
+  },
+  {
+    "line": 10270,
+    "text": "            return this.nvAppBridgeService.executeWithPluginStatusTelemetry(it.Wk, {}, {}, !0, !0).pipe((0, v.T)(e => e.gpuUtilizationPreferenceInfo))\r"
+  },
+  {
+    "line": 10273,
+    "text": "            return this.nvAppBridgeService.executeWithPluginStatusTelemetry(it.GY, {\r"
+  },
+  {
+    "line": 10619,
+    "text": "            this.loggingService = e, this.advancedService = n, this.dialog = i, this.nvcplSystemInfoService = a, this.translateService = s, this.telemetryUtilService = l, this.gpuEnumService = p, this.gpuDisplayInfo = [], this.eccSettingsFeature = lt.Di, this.destroyRef = (0, t.WQX)(t.abz), this.logger = this.loggingService.getLogger(\"nvapp/ECCSettingsComponent\")\r"
+  },
+  {
+    "line": 10665,
+    "text": "            this.logger.info(\"Opening ECC configuration dialog\"), this.telemetryUtilService.sendClickEvent(op.EB.ECCConfigurationDialog, ap.ih.System, !0), this.dialog.open(Kl, {\r"
+  },
+  {
+    "line": 11734,
+    "text": "            this.loggingService = e, this.appBarService = n, this.windowService = i, this.displaysService = a, this.videoService = s, this.pageVisitTelemetryService = l, this.systemUtilService = p, this.hardwareInfoService = m, this.multiDisplaySupportService = _, this.route = O, this.router = I, this.cdr = W, this.appConfig = zt, this.hostClass = \"nv-app-component-wrapper nested-tab-group-component\", this.destroyRef = (0, t.WQX)(t.abz), this.disableTabAnimation = !0, this.selectedTabIndex = 0, this.systemTabList = [], this.systemTabs = ft.c, this.isLoading = !1, this.overviewTabTitle = \"\", this.isActiveDisplayConnected = !1, this.videoSupported$ = new tt.m(1), this.displaysSupported$ = new tt.m(1), this.logger = this.loggingService.getLogger(\"nvapp/SystemComponent\"), this.appBarService.setTitle(\"preferences.system\"), this.loadingSpinner = new be.k\r"
+  },
+  {
+    "line": 11772,
+    "text": "              this.pageVisitTelemetryService.setTabChangedForPageEventTelemetry(n)\r"
+  }
+]

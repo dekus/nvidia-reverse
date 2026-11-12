@@ -1,0 +1,247 @@
+[
+  {
+    "offset": "0xf4c0",
+    "encoding": "ascii",
+    "text": "FvSDK_x64.dll"
+  },
+  {
+    "offset": "0xf9e0",
+    "encoding": "ascii",
+    "text": "FvSDK Test Client help:"
+  },
+  {
+    "offset": "0xfe30",
+    "encoding": "ascii",
+    "text": "        Ex: FvSDKTestClient.exe --benchmark_mode --benchmark_time 60"
+  },
+  {
+    "offset": "0x10320",
+    "encoding": "ascii",
+    "text": "FvSDKTestSuite::TestCases::InitializeFvSDKSession"
+  },
+  {
+    "offset": "0x10640",
+    "encoding": "ascii",
+    "text": "FvSDKTestSuite::TestCases::DeinitializeFvSDKSession"
+  },
+  {
+    "offset": "0x107f8",
+    "encoding": "ascii",
+    "text": "FvSDKTestSuite::TestCases::TestCase001"
+  },
+  {
+    "offset": "0x10820",
+    "encoding": "ascii",
+    "text": "FvSDKTestSuite::TestCases::TestCase002"
+  },
+  {
+    "offset": "0x10b58",
+    "encoding": "ascii",
+    "text": "FvSDKBenchmarkPerFrameDataT"
+  },
+  {
+    "offset": "0x10ba8",
+    "encoding": "ascii",
+    "text": "FvSDKTestSuite::TestCases::TestCase003"
+  },
+  {
+    "offset": "0x10c60",
+    "encoding": "ascii",
+    "text": "FvSDKTestSuite::TestCases::TestCase004"
+  },
+  {
+    "offset": "0x10f18",
+    "encoding": "ascii",
+    "text": "FvSDKTestSuite::TestCases::TestCase005"
+  },
+  {
+    "offset": "0x11060",
+    "encoding": "ascii",
+    "text": "FvSDKTestSuite::TestCases::TestCase006"
+  },
+  {
+    "offset": "0x11088",
+    "encoding": "ascii",
+    "text": "FvSDKTestSuite::TestCases::BenchmarkingTest"
+  },
+  {
+    "offset": "0x111d0",
+    "encoding": "ascii",
+    "text": "FvSDK has no data to report."
+  },
+  {
+    "offset": "0x11240",
+    "encoding": "ascii",
+    "text": "FvSDKFrameSummaryDataT"
+  },
+  {
+    "offset": "0x11448",
+    "encoding": "ascii",
+    "text": "FvSDKRenderLatencyDataT"
+  },
+  {
+    "offset": "0x11460",
+    "encoding": "ascii",
+    "text": "FvSDKCPUDataT"
+  },
+  {
+    "offset": "0x11480",
+    "encoding": "ascii",
+    "text": "FvSDKGPUDataT"
+  },
+  {
+    "offset": "0x11a38",
+    "encoding": "ascii",
+    "text": "FvSDKGPUFanSpeedDataT"
+  },
+  {
+    "offset": "0x11a50",
+    "encoding": "ascii",
+    "text": "FvSDKIndividualTGPDataT"
+  },
+  {
+    "offset": "0x11a68",
+    "encoding": "ascii",
+    "text": "FvSDKTGPDataT"
+  },
+  {
+    "offset": "0x11b90",
+    "encoding": "ascii",
+    "text": "FvSDKPerFrameStreamDataT"
+  },
+  {
+    "offset": "0x120f4",
+    "encoding": "ascii",
+    "text": "FvSDKTestClient_Public.pdb"
+  },
+  {
+    "offset": "0xf4d0",
+    "encoding": "utf-16le",
+    "text": "FvSDK_x64.dll"
+  },
+  {
+    "offset": "0xf8f0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x10360",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDKTestClient\\Public\\FvSDKTestClient\\FvSDKTestClient\\TestCases.cpp"
+  },
+  {
+    "offset": "0x104a0",
+    "encoding": "utf-16le",
+    "text": "(status == FV_SUCCESS) && \"ERROR: FvSDK_Initialize failed!\""
+  },
+  {
+    "offset": "0x10520",
+    "encoding": "utf-16le",
+    "text": "(status == FV_SUCCESS) && \"ERROR: FvSDK_CreateSession failed!\""
+  },
+  {
+    "offset": "0x105a0",
+    "encoding": "utf-16le",
+    "text": "(status == FV_SDK_SESSION_IN_PROGRESS) && \"ERROR: FvSDK_StartSession failed!\""
+  },
+  {
+    "offset": "0x10680",
+    "encoding": "utf-16le",
+    "text": "(status == FV_SUCCESS) && \"ERROR: FvSDK_StopSession failed!\""
+  },
+  {
+    "offset": "0x10700",
+    "encoding": "utf-16le",
+    "text": "(status == FV_SUCCESS) && \"ERROR: FvSDK_DestroySession failed!\""
+  },
+  {
+    "offset": "0x10780",
+    "encoding": "utf-16le",
+    "text": "(status == FV_SUCCESS) && \"ERROR: FvSDK_Shutdown failed!\""
+  },
+  {
+    "offset": "0x10850",
+    "encoding": "utf-16le",
+    "text": "(status == FV_SUCCESS) && \"ERROR: FvSDK_StartBenchmark failed!\""
+  },
+  {
+    "offset": "0x108d0",
+    "encoding": "utf-16le",
+    "text": "(status == FV_SUCCESS) && \"ERROR: FvSDK_StopBenchmark failed!\""
+  },
+  {
+    "offset": "0x10950",
+    "encoding": "utf-16le",
+    "text": "(status == FV_SUCCESS || status == FV_NO_DATA) && \"ERROR: FvSDK_ReadBenchmarkData failed!\""
+  },
+  {
+    "offset": "0x10a10",
+    "encoding": "utf-16le",
+    "text": "(status == FV_SUCCESS) && \"ERROR: FvSDK_ReadBenchmarkData failed!\""
+  },
+  {
+    "offset": "0x10bd0",
+    "encoding": "utf-16le",
+    "text": "(status == FV_NOT_IMPLEMENTED) && \"ERROR: FvSDK_StartBenchmark failed!\""
+  },
+  {
+    "offset": "0x10c90",
+    "encoding": "utf-16le",
+    "text": "(status == FV_BENCHMARK_IN_PROGRESS) && \"ERROR: FvSDK_StartBenchmark failed!\""
+  },
+  {
+    "offset": "0x10d30",
+    "encoding": "utf-16le",
+    "text": "(status == FV_BENCHMARK_IN_PROGRESS) && \"ERROR: FvSDK_ReadBenchmarkData failed!\""
+  },
+  {
+    "offset": "0x10de0",
+    "encoding": "utf-16le",
+    "text": "(status == FV_BENCHMARK_NOT_STARTED) && \"ERROR: FvSDK_StopBenchmark failed!\""
+  },
+  {
+    "offset": "0x10e80",
+    "encoding": "utf-16le",
+    "text": "(status == FV_NOT_IMPLEMENTED) && \"ERROR: FvSDK_ReadBenchmarkData failed!\""
+  },
+  {
+    "offset": "0x10f40",
+    "encoding": "utf-16le",
+    "text": "(status == FV_SDK_SESSION_NOT_STARTED) && \"ERROR: FvSDK_StopSession failed!\""
+  },
+  {
+    "offset": "0x10fe0",
+    "encoding": "utf-16le",
+    "text": "(status == FV_SUCCESS) && \"ERROR: FvSDK_StartSession failed!\""
+  },
+  {
+    "offset": "0x110c0",
+    "encoding": "utf-16le",
+    "text": "(status == FV_SUCCESS || status == FV_BENCHMARK_IN_PROGRESS) && \"ERROR: FvSDK_StartBenchmark failed!\""
+  },
+  {
+    "offset": "0x11a80",
+    "encoding": "utf-16le",
+    "text": "(status == FV_SUCCESS) && \"ERROR: FvSDK_EnableMetrics failed!\""
+  },
+  {
+    "offset": "0x11b00",
+    "encoding": "utf-16le",
+    "text": "(status == FV_SUCCESS) && \"ERROR: FvSDK_GetPerFrameDataPipe failed!\""
+  },
+  {
+    "offset": "0x15590",
+    "encoding": "utf-16le",
+    "text": "FVSDKTestClientPublic"
+  },
+  {
+    "offset": "0x15614",
+    "encoding": "utf-16le",
+    "text": "FvSDKTestClientPublic"
+  },
+  {
+    "offset": "0x15714",
+    "encoding": "utf-16le",
+    "text": "FvSDKTestClientPublic"
+  }
+]

@@ -1,0 +1,2562 @@
+[
+  {
+    "offset": "0x1530",
+    "encoding": "ascii",
+    "text": "?VerifyPrimarySignatureCN@FvSDK@@YAHPAX0PAH@Z"
+  },
+  {
+    "offset": "0x155e",
+    "encoding": "ascii",
+    "text": "?VerifySingleSignature@FvSDK@@YAHPAU_NVWINTRUST_DATA@1@PAX1PAH@Z"
+  },
+  {
+    "offset": "0x159f",
+    "encoding": "ascii",
+    "text": "?driverCompatibleIds@FvSDK@@3PAPB_WA"
+  },
+  {
+    "offset": "0x15c4",
+    "encoding": "ascii",
+    "text": "?nvCreateProcessA@FvSDK@@YAHPBDPADPAX2HK202H2@Z"
+  },
+  {
+    "offset": "0x15f4",
+    "encoding": "ascii",
+    "text": "?nvCreateProcessAsUserA@FvSDK@@YAHPAXPBDPAD00HK010H0@Z"
+  },
+  {
+    "offset": "0x162b",
+    "encoding": "ascii",
+    "text": "?nvCreateProcessAsUserW@FvSDK@@YAHPAXPB_WPA_W00HK010H0@Z"
+  },
+  {
+    "offset": "0x1664",
+    "encoding": "ascii",
+    "text": "?nvCreateProcessW@FvSDK@@YAHPB_WPA_WPAX2HK202H2@Z"
+  },
+  {
+    "offset": "0x1696",
+    "encoding": "ascii",
+    "text": "?nvDetectDisplayDriverModuleLocationW@FvSDK@@YAPA_WPB_W@Z"
+  },
+  {
+    "offset": "0x16d0",
+    "encoding": "ascii",
+    "text": "?nvDetectDisplayDriverModuleRegistrationW@FvSDK@@YAPA_WPB_W@Z"
+  },
+  {
+    "offset": "0x170e",
+    "encoding": "ascii",
+    "text": "?nvGetDisplayDriverRegkeyW@FvSDK@@YAPA_WXZ"
+  },
+  {
+    "offset": "0x1739",
+    "encoding": "ascii",
+    "text": "?nvGetDisplayDriverStoreW@FvSDK@@YAPA_WXZ"
+  },
+  {
+    "offset": "0x1763",
+    "encoding": "ascii",
+    "text": "?nvGetDriverRegkeyW@FvSDK@@YAPA_WW4NvidiaDriverType@1@@Z"
+  },
+  {
+    "offset": "0x179c",
+    "encoding": "ascii",
+    "text": "?nvGetDriverStoreW@FvSDK@@YAPA_WW4NvidiaDriverType@1@@Z"
+  },
+  {
+    "offset": "0x17d4",
+    "encoding": "ascii",
+    "text": "?nvGetSystemDirectoryW@FvSDK@@YAPA_WXZ"
+  },
+  {
+    "offset": "0x17fb",
+    "encoding": "ascii",
+    "text": "?nvGetSystemModuleHandleA@FvSDK@@YAPAUHINSTANCE__@@PBD@Z"
+  },
+  {
+    "offset": "0x1834",
+    "encoding": "ascii",
+    "text": "?nvGetSystemModuleHandleW@FvSDK@@YAPAUHINSTANCE__@@PB_W@Z"
+  },
+  {
+    "offset": "0x186e",
+    "encoding": "ascii",
+    "text": "?nvLoadDisplayDriverModuleExA@FvSDK@@YAPAUHINSTANCE__@@PBDK@Z"
+  },
+  {
+    "offset": "0x18ac",
+    "encoding": "ascii",
+    "text": "?nvLoadDisplayDriverModuleExW@FvSDK@@YAPAUHINSTANCE__@@PB_WK@Z"
+  },
+  {
+    "offset": "0x18eb",
+    "encoding": "ascii",
+    "text": "?nvLoadLibraryFromTrustedLocationExA@FvSDK@@YAPAUHINSTANCE__@@PBDK@Z"
+  },
+  {
+    "offset": "0x1930",
+    "encoding": "ascii",
+    "text": "?nvLoadLibraryFromTrustedLocationExW@FvSDK@@YAPAUHINSTANCE__@@PB_WK@Z"
+  },
+  {
+    "offset": "0x1976",
+    "encoding": "ascii",
+    "text": "?nvLoadSignedLibraryExA@FvSDK@@YAPAUHINSTANCE__@@PBDKH@Z"
+  },
+  {
+    "offset": "0x19af",
+    "encoding": "ascii",
+    "text": "?nvLoadSignedLibraryExW@FvSDK@@YAPAUHINSTANCE__@@PB_WKH@Z"
+  },
+  {
+    "offset": "0x19e9",
+    "encoding": "ascii",
+    "text": "?nvLoadSystemLibraryExA@FvSDK@@YAPAUHINSTANCE__@@PBDK@Z"
+  },
+  {
+    "offset": "0x1a21",
+    "encoding": "ascii",
+    "text": "?nvLoadSystemLibraryExW@FvSDK@@YAPAUHINSTANCE__@@PB_WK@Z"
+  },
+  {
+    "offset": "0x1a5a",
+    "encoding": "ascii",
+    "text": "?nvLoadWVTCryptModule@FvSDK@@YAHXZ"
+  },
+  {
+    "offset": "0x1a7d",
+    "encoding": "ascii",
+    "text": "?nvReleaseSecureLoadLibraryResources@FvSDK@@YAXXZ"
+  },
+  {
+    "offset": "0x1aaf",
+    "encoding": "ascii",
+    "text": "?nvSafeLocalFree@FvSDK@@YAXPAX@Z"
+  },
+  {
+    "offset": "0x1ad0",
+    "encoding": "ascii",
+    "text": "?nvShellExecuteA@FvSDK@@YAPAUHINSTANCE__@@PAUHWND__@@PBD111HH@Z"
+  },
+  {
+    "offset": "0x1b10",
+    "encoding": "ascii",
+    "text": "?nvShellExecuteExA@FvSDK@@YAHPAU_SHELLEXECUTEINFOA@@H@Z"
+  },
+  {
+    "offset": "0x1b48",
+    "encoding": "ascii",
+    "text": "?nvShellExecuteExW@FvSDK@@YAHPAU_SHELLEXECUTEINFOW@@H@Z"
+  },
+  {
+    "offset": "0x1b80",
+    "encoding": "ascii",
+    "text": "?nvShellExecuteW@FvSDK@@YAPAUHINSTANCE__@@PAUHWND__@@PB_W111HH@Z"
+  },
+  {
+    "offset": "0x1bc1",
+    "encoding": "ascii",
+    "text": "?nvVerifyFileSignatureA@FvSDK@@YAHPBDPAH@Z"
+  },
+  {
+    "offset": "0x1bec",
+    "encoding": "ascii",
+    "text": "?nvVerifyFileSignatureW@FvSDK@@YAHPB_WPAH@Z"
+  },
+  {
+    "offset": "0x1c3e",
+    "encoding": "ascii",
+    "text": "??_C@_0O@BPMBGLDJ@FvSDK_x86?4dll@"
+  },
+  {
+    "offset": "0x1cb7",
+    "encoding": "ascii",
+    "text": "?FvSDK_AlignLatencyMonitoringRect@@YA?AW4FvStatus@@PAUFvSession__@@@Z"
+  },
+  {
+    "offset": "0x1cfd",
+    "encoding": "ascii",
+    "text": "?FvSDK_CreateSession@@YA?AW4FvStatus@@PAPAUFvSession__@@@Z"
+  },
+  {
+    "offset": "0x1d38",
+    "encoding": "ascii",
+    "text": "?FvSDK_DestroySession@@YA?AW4FvStatus@@PAUFvSession__@@@Z"
+  },
+  {
+    "offset": "0x1d72",
+    "encoding": "ascii",
+    "text": "?FvSDK_EnableMetrics2@@YA?AW4FvStatus@@PAUFvSession__@@UFvMetricParams@@@Z"
+  },
+  {
+    "offset": "0x1dbd",
+    "encoding": "ascii",
+    "text": "?FvSDK_EnableMetrics@@YA?AW4FvStatus@@PAUFvSession__@@PAW4_FvMetricType@@I@Z"
+  },
+  {
+    "offset": "0x1e0a",
+    "encoding": "ascii",
+    "text": "?FvSDK_GetPerFrameDataPipe@@YA?AW4FvStatus@@PAUFvSession__@@PAPAX@Z"
+  },
+  {
+    "offset": "0x1e4e",
+    "encoding": "ascii",
+    "text": "?FvSDK_Initialize@@YA?AW4FvStatus@@XZ"
+  },
+  {
+    "offset": "0x1e74",
+    "encoding": "ascii",
+    "text": "?FvSDK_ReadBenchmarkData@@YA?AW4FvStatus@@PAUFvSession__@@PAUSamples_v1@@I@Z"
+  },
+  {
+    "offset": "0x1ec1",
+    "encoding": "ascii",
+    "text": "?FvSDK_ReadBenchmarkPerFrameData@@YA?AW4FvStatus@@PAUFvSession__@@PAUSamples_v1@@I@Z"
+  },
+  {
+    "offset": "0x1f16",
+    "encoding": "ascii",
+    "text": "?FvSDK_ReadData@@YA?AW4FvStatus@@PAUFvSession__@@PAUSamples_v1@@I@Z"
+  },
+  {
+    "offset": "0x1f5a",
+    "encoding": "ascii",
+    "text": "?FvSDK_ResetSampling@@YA?AW4FvStatus@@PAUFvSession__@@PAW4_FvMetricType@@I@Z"
+  },
+  {
+    "offset": "0x1fa7",
+    "encoding": "ascii",
+    "text": "?FvSDK_SampleData@@YA?AW4FvStatus@@PAUFvSession__@@W4_FvSampleDataFlags@@@Z"
+  },
+  {
+    "offset": "0x1ff3",
+    "encoding": "ascii",
+    "text": "?FvSDK_Shutdown@@YA?AW4FvStatus@@XZ"
+  },
+  {
+    "offset": "0x2017",
+    "encoding": "ascii",
+    "text": "?FvSDK_StartBenchmark@@YA?AW4FvStatus@@PAUFvSession__@@W4_FvBenchmarkFlags@@@Z"
+  },
+  {
+    "offset": "0x2066",
+    "encoding": "ascii",
+    "text": "?FvSDK_StartSession@@YA?AW4FvStatus@@PAUFvSession__@@@Z"
+  },
+  {
+    "offset": "0x209e",
+    "encoding": "ascii",
+    "text": "?FvSDK_StopBenchmark@@YA?AW4FvStatus@@PAUFvSession__@@@Z"
+  },
+  {
+    "offset": "0x20d7",
+    "encoding": "ascii",
+    "text": "?FvSDK_StopSession@@YA?AW4FvStatus@@PAUFvSession__@@@Z"
+  },
+  {
+    "offset": "0x2147",
+    "encoding": "ascii",
+    "text": "?g_fvsdk_HModule@@3PAUHINSTANCE__@@A"
+  },
+  {
+    "offset": "0x2872",
+    "encoding": "ascii",
+    "text": "??_C@_0O@BPMBGLDJ@FvSDK_x86?4dll@"
+  },
+  {
+    "offset": "0x35a7",
+    "encoding": "ascii",
+    "text": "?FvSDK_AlignLatencyMonitoringRect@@YA?AW4FvStatus@@PAUFvSession__@@@Z"
+  },
+  {
+    "offset": "0x35ed",
+    "encoding": "ascii",
+    "text": "?FvSDK_CreateSession@@YA?AW4FvStatus@@PAPAUFvSession__@@@Z"
+  },
+  {
+    "offset": "0x3628",
+    "encoding": "ascii",
+    "text": "?FvSDK_DestroySession@@YA?AW4FvStatus@@PAUFvSession__@@@Z"
+  },
+  {
+    "offset": "0x3662",
+    "encoding": "ascii",
+    "text": "?FvSDK_EnableMetrics2@@YA?AW4FvStatus@@PAUFvSession__@@UFvMetricParams@@@Z"
+  },
+  {
+    "offset": "0x36ad",
+    "encoding": "ascii",
+    "text": "?FvSDK_EnableMetrics@@YA?AW4FvStatus@@PAUFvSession__@@PAW4_FvMetricType@@I@Z"
+  },
+  {
+    "offset": "0x36fa",
+    "encoding": "ascii",
+    "text": "?FvSDK_GetPerFrameDataPipe@@YA?AW4FvStatus@@PAUFvSession__@@PAPAX@Z"
+  },
+  {
+    "offset": "0x373e",
+    "encoding": "ascii",
+    "text": "?FvSDK_Initialize@@YA?AW4FvStatus@@XZ"
+  },
+  {
+    "offset": "0x3764",
+    "encoding": "ascii",
+    "text": "?FvSDK_ReadBenchmarkData@@YA?AW4FvStatus@@PAUFvSession__@@PAUSamples_v1@@I@Z"
+  },
+  {
+    "offset": "0x37b1",
+    "encoding": "ascii",
+    "text": "?FvSDK_ReadBenchmarkPerFrameData@@YA?AW4FvStatus@@PAUFvSession__@@PAUSamples_v1@@I@Z"
+  },
+  {
+    "offset": "0x3806",
+    "encoding": "ascii",
+    "text": "?FvSDK_ReadData@@YA?AW4FvStatus@@PAUFvSession__@@PAUSamples_v1@@I@Z"
+  },
+  {
+    "offset": "0x384a",
+    "encoding": "ascii",
+    "text": "?FvSDK_ResetSampling@@YA?AW4FvStatus@@PAUFvSession__@@PAW4_FvMetricType@@I@Z"
+  },
+  {
+    "offset": "0x3897",
+    "encoding": "ascii",
+    "text": "?FvSDK_SampleData@@YA?AW4FvStatus@@PAUFvSession__@@W4_FvSampleDataFlags@@@Z"
+  },
+  {
+    "offset": "0x38e3",
+    "encoding": "ascii",
+    "text": "?FvSDK_Shutdown@@YA?AW4FvStatus@@XZ"
+  },
+  {
+    "offset": "0x3907",
+    "encoding": "ascii",
+    "text": "?FvSDK_StartBenchmark@@YA?AW4FvStatus@@PAUFvSession__@@W4_FvBenchmarkFlags@@@Z"
+  },
+  {
+    "offset": "0x3956",
+    "encoding": "ascii",
+    "text": "?FvSDK_StartSession@@YA?AW4FvStatus@@PAUFvSession__@@@Z"
+  },
+  {
+    "offset": "0x398e",
+    "encoding": "ascii",
+    "text": "?FvSDK_StopBenchmark@@YA?AW4FvStatus@@PAUFvSession__@@@Z"
+  },
+  {
+    "offset": "0x39c7",
+    "encoding": "ascii",
+    "text": "?FvSDK_StopSession@@YA?AW4FvStatus@@PAUFvSession__@@@Z"
+  },
+  {
+    "offset": "0x3a7a",
+    "encoding": "ascii",
+    "text": "?VerifyPrimarySignatureCN@FvSDK@@YAHPAX0PAH@Z"
+  },
+  {
+    "offset": "0x3aa8",
+    "encoding": "ascii",
+    "text": "?VerifySingleSignature@FvSDK@@YAHPAU_NVWINTRUST_DATA@1@PAX1PAH@Z"
+  },
+  {
+    "offset": "0x3ae9",
+    "encoding": "ascii",
+    "text": "?driverCompatibleIds@FvSDK@@3PAPB_WA"
+  },
+  {
+    "offset": "0x3b47",
+    "encoding": "ascii",
+    "text": "?g_fvsdk_HModule@@3PAUHINSTANCE__@@A"
+  },
+  {
+    "offset": "0x3b6c",
+    "encoding": "ascii",
+    "text": "?nvCreateProcessA@FvSDK@@YAHPBDPADPAX2HK202H2@Z"
+  },
+  {
+    "offset": "0x3b9c",
+    "encoding": "ascii",
+    "text": "?nvCreateProcessAsUserA@FvSDK@@YAHPAXPBDPAD00HK010H0@Z"
+  },
+  {
+    "offset": "0x3bd3",
+    "encoding": "ascii",
+    "text": "?nvCreateProcessAsUserW@FvSDK@@YAHPAXPB_WPA_W00HK010H0@Z"
+  },
+  {
+    "offset": "0x3c0c",
+    "encoding": "ascii",
+    "text": "?nvCreateProcessW@FvSDK@@YAHPB_WPA_WPAX2HK202H2@Z"
+  },
+  {
+    "offset": "0x3c3e",
+    "encoding": "ascii",
+    "text": "?nvDetectDisplayDriverModuleLocationW@FvSDK@@YAPA_WPB_W@Z"
+  },
+  {
+    "offset": "0x3c78",
+    "encoding": "ascii",
+    "text": "?nvDetectDisplayDriverModuleRegistrationW@FvSDK@@YAPA_WPB_W@Z"
+  },
+  {
+    "offset": "0x3cb6",
+    "encoding": "ascii",
+    "text": "?nvGetDisplayDriverRegkeyW@FvSDK@@YAPA_WXZ"
+  },
+  {
+    "offset": "0x3ce1",
+    "encoding": "ascii",
+    "text": "?nvGetDisplayDriverStoreW@FvSDK@@YAPA_WXZ"
+  },
+  {
+    "offset": "0x3d0b",
+    "encoding": "ascii",
+    "text": "?nvGetDriverRegkeyW@FvSDK@@YAPA_WW4NvidiaDriverType@1@@Z"
+  },
+  {
+    "offset": "0x3d44",
+    "encoding": "ascii",
+    "text": "?nvGetDriverStoreW@FvSDK@@YAPA_WW4NvidiaDriverType@1@@Z"
+  },
+  {
+    "offset": "0x3d7c",
+    "encoding": "ascii",
+    "text": "?nvGetSystemDirectoryW@FvSDK@@YAPA_WXZ"
+  },
+  {
+    "offset": "0x3da3",
+    "encoding": "ascii",
+    "text": "?nvGetSystemModuleHandleA@FvSDK@@YAPAUHINSTANCE__@@PBD@Z"
+  },
+  {
+    "offset": "0x3ddc",
+    "encoding": "ascii",
+    "text": "?nvGetSystemModuleHandleW@FvSDK@@YAPAUHINSTANCE__@@PB_W@Z"
+  },
+  {
+    "offset": "0x3e16",
+    "encoding": "ascii",
+    "text": "?nvLoadDisplayDriverModuleExA@FvSDK@@YAPAUHINSTANCE__@@PBDK@Z"
+  },
+  {
+    "offset": "0x3e54",
+    "encoding": "ascii",
+    "text": "?nvLoadDisplayDriverModuleExW@FvSDK@@YAPAUHINSTANCE__@@PB_WK@Z"
+  },
+  {
+    "offset": "0x3e93",
+    "encoding": "ascii",
+    "text": "?nvLoadLibraryFromTrustedLocationExA@FvSDK@@YAPAUHINSTANCE__@@PBDK@Z"
+  },
+  {
+    "offset": "0x3ed8",
+    "encoding": "ascii",
+    "text": "?nvLoadLibraryFromTrustedLocationExW@FvSDK@@YAPAUHINSTANCE__@@PB_WK@Z"
+  },
+  {
+    "offset": "0x3f1e",
+    "encoding": "ascii",
+    "text": "?nvLoadSignedLibraryExA@FvSDK@@YAPAUHINSTANCE__@@PBDKH@Z"
+  },
+  {
+    "offset": "0x3f57",
+    "encoding": "ascii",
+    "text": "?nvLoadSignedLibraryExW@FvSDK@@YAPAUHINSTANCE__@@PB_WKH@Z"
+  },
+  {
+    "offset": "0x3f91",
+    "encoding": "ascii",
+    "text": "?nvLoadSystemLibraryExA@FvSDK@@YAPAUHINSTANCE__@@PBDK@Z"
+  },
+  {
+    "offset": "0x3fc9",
+    "encoding": "ascii",
+    "text": "?nvLoadSystemLibraryExW@FvSDK@@YAPAUHINSTANCE__@@PB_WK@Z"
+  },
+  {
+    "offset": "0x4002",
+    "encoding": "ascii",
+    "text": "?nvLoadWVTCryptModule@FvSDK@@YAHXZ"
+  },
+  {
+    "offset": "0x4025",
+    "encoding": "ascii",
+    "text": "?nvReleaseSecureLoadLibraryResources@FvSDK@@YAXXZ"
+  },
+  {
+    "offset": "0x4057",
+    "encoding": "ascii",
+    "text": "?nvSafeLocalFree@FvSDK@@YAXPAX@Z"
+  },
+  {
+    "offset": "0x4078",
+    "encoding": "ascii",
+    "text": "?nvShellExecuteA@FvSDK@@YAPAUHINSTANCE__@@PAUHWND__@@PBD111HH@Z"
+  },
+  {
+    "offset": "0x40b8",
+    "encoding": "ascii",
+    "text": "?nvShellExecuteExA@FvSDK@@YAHPAU_SHELLEXECUTEINFOA@@H@Z"
+  },
+  {
+    "offset": "0x40f0",
+    "encoding": "ascii",
+    "text": "?nvShellExecuteExW@FvSDK@@YAHPAU_SHELLEXECUTEINFOW@@H@Z"
+  },
+  {
+    "offset": "0x4128",
+    "encoding": "ascii",
+    "text": "?nvShellExecuteW@FvSDK@@YAPAUHINSTANCE__@@PAUHWND__@@PB_W111HH@Z"
+  },
+  {
+    "offset": "0x4169",
+    "encoding": "ascii",
+    "text": "?nvVerifyFileSignatureA@FvSDK@@YAHPBDPAH@Z"
+  },
+  {
+    "offset": "0x4194",
+    "encoding": "ascii",
+    "text": "?nvVerifyFileSignatureW@FvSDK@@YAHPB_WPAH@Z"
+  },
+  {
+    "offset": "0x63b8",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDKStatic\\Win32\\Public_Release\\nvSecureLoadLibrary.obj"
+  },
+  {
+    "offset": "0x8528",
+    "encoding": "ascii",
+    "text": "FvSDK::NvidiaDisplayDriver"
+  },
+  {
+    "offset": "0x8551",
+    "encoding": "ascii",
+    "text": "FvSDK::driverCompatibleIds"
+  },
+  {
+    "offset": "0x857a",
+    "encoding": "ascii",
+    "text": "FvSDK::hModSetupapi"
+  },
+  {
+    "offset": "0x859c",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnSetupDiGetClassDevsW"
+  },
+  {
+    "offset": "0x85c9",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnSetupDiEnumDeviceInfo"
+  },
+  {
+    "offset": "0x85f7",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnSetupDiGetDeviceInterfaceDetailW"
+  },
+  {
+    "offset": "0x8630",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnSetupDiGetDeviceRegistryPropertyW"
+  },
+  {
+    "offset": "0x866a",
+    "encoding": "ascii",
+    "text": "FvSDK::DEVPKEY_Device_DriverInfPath"
+  },
+  {
+    "offset": "0x869c",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnSetupDiGetDevicePropertyW"
+  },
+  {
+    "offset": "0x86ce",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnSetupDiDestroyDeviceInfoList"
+  },
+  {
+    "offset": "0x8703",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnSetupGetInfDriverStoreLocationW"
+  },
+  {
+    "offset": "0x873b",
+    "encoding": "ascii",
+    "text": "FvSDK::hModShell32"
+  },
+  {
+    "offset": "0x875c",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnSHGetFolderPath"
+  },
+  {
+    "offset": "0x8780",
+    "encoding": "ascii",
+    "text": "FvSDK::eWindowsVistaBuild"
+  },
+  {
+    "offset": "0x87a4",
+    "encoding": "ascii",
+    "text": "FvSDK::eWindows7Build"
+  },
+  {
+    "offset": "0x87c3",
+    "encoding": "ascii",
+    "text": "#FvSDK::eWindows8Build"
+  },
+  {
+    "offset": "0x87e3",
+    "encoding": "ascii",
+    "text": "7FvSDK::eWindows10RS1DriverStoreSwitch"
+  },
+  {
+    "offset": "0x8813",
+    "encoding": "ascii",
+    "text": "BFvSDK::eWindows10RS4Build"
+  },
+  {
+    "offset": "0x883c",
+    "encoding": "ascii",
+    "text": "FvSDK::hModCrypt32"
+  },
+  {
+    "offset": "0x885d",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCryptMsgClose"
+  },
+  {
+    "offset": "0x8883",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCertCloseStore"
+  },
+  {
+    "offset": "0x88aa",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCertFreeCertificateContext"
+  },
+  {
+    "offset": "0x88dd",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCertFindCertificateInStore"
+  },
+  {
+    "offset": "0x8910",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCryptMsgGetParam"
+  },
+  {
+    "offset": "0x8939",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCryptQueryObject"
+  },
+  {
+    "offset": "0x8962",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCertGetNameStringA"
+  },
+  {
+    "offset": "0x898d",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCryptDecodeObjectEx"
+  },
+  {
+    "offset": "0x89b9",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCertGetIssuerCertificateFromStore"
+  },
+  {
+    "offset": "0x89f3",
+    "encoding": "ascii",
+    "text": "FvSDK::hModAdvapi32"
+  },
+  {
+    "offset": "0x8a15",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnRegOpenKeyExW"
+  },
+  {
+    "offset": "0x8a3b",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnRegEnumValueW"
+  },
+  {
+    "offset": "0x8a61",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnRegQueryValueExW"
+  },
+  {
+    "offset": "0x8a8a",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnRegCloseKey"
+  },
+  {
+    "offset": "0x8aae",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnOpenSCManagerW"
+  },
+  {
+    "offset": "0x8ad5",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnOpenServiceW"
+  },
+  {
+    "offset": "0x8afa",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnQueryServiceConfigW"
+  },
+  {
+    "offset": "0x8b26",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnQueryServiceStatus"
+  },
+  {
+    "offset": "0x8b51",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCloseServiceHandle"
+  },
+  {
+    "offset": "0x8b7c",
+    "encoding": "ascii",
+    "text": "FvSDK::hModOle32"
+  },
+  {
+    "offset": "0x8b9b",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnStringFromGUID2"
+  },
+  {
+    "offset": "0x8bc3",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCreateProcessAsUserW"
+  },
+  {
+    "offset": "0x8bf0",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCreateProcessAsUserA"
+  },
+  {
+    "offset": "0x8c1d",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnShellExecuteA"
+  },
+  {
+    "offset": "0x8c43",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnShellExecuteW"
+  },
+  {
+    "offset": "0x8c69",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnShellExecuteExA"
+  },
+  {
+    "offset": "0x8c91",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnShellExecuteExW"
+  },
+  {
+    "offset": "0x8cb9",
+    "encoding": "ascii",
+    "text": "FvSDK::hModWinTrust"
+  },
+  {
+    "offset": "0x8cdb",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnWinVerifyTrust"
+  },
+  {
+    "offset": "0x8d02",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnWTHelperProvDataFromStateData"
+  },
+  {
+    "offset": "0x8d38",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnWTHelperGetProvSignerFromChain"
+  },
+  {
+    "offset": "0x8d6f",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnWTHelperGetProvCertFromChain"
+  },
+  {
+    "offset": "0x8da4",
+    "encoding": "ascii",
+    "text": "FvSDK::hModGDI32"
+  },
+  {
+    "offset": "0x8dc3",
+    "encoding": "ascii",
+    "text": "FvSDK::hModCryptBase"
+  },
+  {
+    "offset": "0x8de6",
+    "encoding": "ascii",
+    "text": "FvSDK::hModCryptNet"
+  },
+  {
+    "offset": "0x8e08",
+    "encoding": "ascii",
+    "text": "FvSDK::hModAsn1"
+  },
+  {
+    "offset": "0x8e26",
+    "encoding": "ascii",
+    "text": "FvSDK::hModDrvstore"
+  },
+  {
+    "offset": "0x8e48",
+    "encoding": "ascii",
+    "text": "FvSDK::hModDEVOBJ"
+  },
+  {
+    "offset": "0x8e68",
+    "encoding": "ascii",
+    "text": "FvSDK::hModWldp"
+  },
+  {
+    "offset": "0x8e86",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnD3DKMTEnumAdapters2"
+  },
+  {
+    "offset": "0x8eb2",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnD3DKMTEnumAdapters3"
+  },
+  {
+    "offset": "0x8ede",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnD3DKMTQueryAdapterInfo"
+  },
+  {
+    "offset": "0x8f59",
+    "encoding": "ascii",
+    "text": "FvSDK::osVersionInfo"
+  },
+  {
+    "offset": "0x8f7c",
+    "encoding": "ascii",
+    "text": "FvSDK::bTrustAnyLocation"
+  },
+  {
+    "offset": "0x9162",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DDDI_QUERYREGISTRY_DRIVERSTOREPATH"
+  },
+  {
+    "offset": "0x9281",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DDDI_QUERYREGISTRY_STATUS_SUCCESS"
+  },
+  {
+    "offset": "0x9603",
+    "encoding": "ascii",
+    "text": "CERT_ENHKEY_USAGE"
+  },
+  {
+    "offset": "0x975d",
+    "encoding": "ascii",
+    "text": "PCERT_ENHKEY_USAGE"
+  },
+  {
+    "offset": "0x9b3b",
+    "encoding": "ascii",
+    "text": "HKEY__"
+  },
+  {
+    "offset": "0xa40d",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnStringFromGUID2"
+  },
+  {
+    "offset": "0xa42f",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnRegOpenKeyExW"
+  },
+  {
+    "offset": "0xa44f",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnWTHelperGetProvCertFromChain"
+  },
+  {
+    "offset": "0xa47e",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnD3DKMTQueryAdapterInfo"
+  },
+  {
+    "offset": "0xa4a7",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnWTHelperProvDataFromStateData"
+  },
+  {
+    "offset": "0xa4d7",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_ENUMADAPTERS2"
+  },
+  {
+    "offset": "0xa4ff",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnShellExecuteExW"
+  },
+  {
+    "offset": "0xa521",
+    "encoding": "ascii",
+    "text": "FvSDK::_NVCERT_STRONG_SIGN_SERIALIZED_INFO"
+  },
+  {
+    "offset": "0xa554",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnRegEnumValueW"
+  },
+  {
+    "offset": "0xa574",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnRegQueryValueExW"
+  },
+  {
+    "offset": "0xa597",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnOpenServiceW"
+  },
+  {
+    "offset": "0xa5b6",
+    "encoding": "ascii",
+    "text": "FvSDK::NVWINTRUST_DATA"
+  },
+  {
+    "offset": "0xa5d5",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DDDI_QUERYREGISTRY_STATUS"
+  },
+  {
+    "offset": "0xa604",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DKMT_QUERYADAPTERINFO"
+  },
+  {
+    "offset": "0xa62e",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DDDI_QUERYREGISTRY_TYPE"
+  },
+  {
+    "offset": "0xa65a",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCreateProcessAsUserW"
+  },
+  {
+    "offset": "0xa681",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnShellExecuteExA"
+  },
+  {
+    "offset": "0xa6a3",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnOpenSCManagerW"
+  },
+  {
+    "offset": "0xa6c4",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCertFreeCertificateContext"
+  },
+  {
+    "offset": "0xa6f1",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCertGetNameStringA"
+  },
+  {
+    "offset": "0xa716",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnSetupDiGetDeviceRegistryPropertyW"
+  },
+  {
+    "offset": "0xa74a",
+    "encoding": "ascii",
+    "text": "FvSDK::NvidiaDriverType"
+  },
+  {
+    "offset": "0xa76a",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_QUERYADAPTERINFO"
+  },
+  {
+    "offset": "0xa795",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DKMT_ENUMADAPTERS2"
+  },
+  {
+    "offset": "0xa7bc",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCryptMsgClose"
+  },
+  {
+    "offset": "0xa7dc",
+    "encoding": "ascii",
+    "text": "FvSDK::_NVCERT_STRONG_SIGN_PARA"
+  },
+  {
+    "offset": "0xa804",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCertGetIssuerCertificateFromStore"
+  },
+  {
+    "offset": "0xa838",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCertCloseStore"
+  },
+  {
+    "offset": "0xa859",
+    "encoding": "ascii",
+    "text": "FvSDK::LPSHELLEXECUTEINFOA"
+  },
+  {
+    "offset": "0xa87c",
+    "encoding": "ascii",
+    "text": "FvSDK::NVWINTRUST_SIGNATURE_SETTINGS"
+  },
+  {
+    "offset": "0xa8a9",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_QUERY_DEVICE_IDS"
+  },
+  {
+    "offset": "0xa8d4",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_QUERY_DEVICE_IDS::_NV_D3DKMT_DEVICE_IDS"
+  },
+  {
+    "offset": "0xa916",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCryptMsgGetParam"
+  },
+  {
+    "offset": "0xa939",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_ENUMADAPTERS_FILTER"
+  },
+  {
+    "offset": "0xa967",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCryptDecodeObjectEx"
+  },
+  {
+    "offset": "0xa98d",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DDDI_QUERYREGISTRY_TYPE"
+  },
+  {
+    "offset": "0xa9ba",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnSetupDiGetDeviceInterfaceDetailW"
+  },
+  {
+    "offset": "0xa9ed",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DKMT_ENUMADAPTERS_FILTER"
+  },
+  {
+    "offset": "0xaa1a",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCertFindCertificateInStore"
+  },
+  {
+    "offset": "0xaa47",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnIsWow64Process"
+  },
+  {
+    "offset": "0xaa68",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_ADAPTERINFO"
+  },
+  {
+    "offset": "0xaa8e",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnQueryServiceConfigW"
+  },
+  {
+    "offset": "0xaab4",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCryptQueryObject"
+  },
+  {
+    "offset": "0xaad7",
+    "encoding": "ascii",
+    "text": "FvSDK::SHELLEXECUTEINFOW"
+  },
+  {
+    "offset": "0xaaf8",
+    "encoding": "ascii",
+    "text": "FvSDK::NVPCERT_STRONG_SIGN_SERIALIZED_INFO"
+  },
+  {
+    "offset": "0xab2b",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DKMT_QUERY_DEVICE_IDS"
+  },
+  {
+    "offset": "0xab55",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnSetupDiGetDevicePropertyW"
+  },
+  {
+    "offset": "0xab81",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnD3DKMTEnumAdapters3"
+  },
+  {
+    "offset": "0xaba7",
+    "encoding": "ascii",
+    "text": "FvSDK::_NVWINTRUST_DATA"
+  },
+  {
+    "offset": "0xabc7",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCloseServiceHandle"
+  },
+  {
+    "offset": "0xabec",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnSetupDiDestroyDeviceInfoList"
+  },
+  {
+    "offset": "0xac1b",
+    "encoding": "ascii",
+    "text": "FvSDK::SHELLEXECUTEINFOA"
+  },
+  {
+    "offset": "0xac3c",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DKMT_ADAPTERINFO"
+  },
+  {
+    "offset": "0xac61",
+    "encoding": "ascii",
+    "text": "FvSDK::KnownWindowsBuildNumbers"
+  },
+  {
+    "offset": "0xac89",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DKMT_ENUMADAPTERS3"
+  },
+  {
+    "offset": "0xacb0",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnShellExecuteA"
+  },
+  {
+    "offset": "0xacd0",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnD3DKMTEnumAdapters2"
+  },
+  {
+    "offset": "0xacf6",
+    "encoding": "ascii",
+    "text": "FvSDK::_NVWINTRUST_SIGNATURE_SETTINGS_"
+  },
+  {
+    "offset": "0xad25",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCreateProcessAsUserA"
+  },
+  {
+    "offset": "0xad4c",
+    "encoding": "ascii",
+    "text": "FvSDK::LPSHELLEXECUTEINFOW"
+  },
+  {
+    "offset": "0xad6f",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnWinVerifyTrust"
+  },
+  {
+    "offset": "0xad90",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnSetupDiGetClassDevsW"
+  },
+  {
+    "offset": "0xadb7",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnSetupGetInfDriverStoreLocationW"
+  },
+  {
+    "offset": "0xade9",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnSetupDiEnumDeviceInfo"
+  },
+  {
+    "offset": "0xae11",
+    "encoding": "ascii",
+    "text": "FvSDK::NVPCERT_STRONG_SIGN_PARA"
+  },
+  {
+    "offset": "0xae39",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnSHGetFolderPath_W"
+  },
+  {
+    "offset": "0xae5d",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DDDI_QUERYREGISTRY_STATUS"
+  },
+  {
+    "offset": "0xae8b",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnShellExecuteW"
+  },
+  {
+    "offset": "0xaeab",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnWTHelperGetProvSignerFromChain"
+  },
+  {
+    "offset": "0xaedc",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnQueryServiceStatus"
+  },
+  {
+    "offset": "0xaf01",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_ENUMADAPTERS3"
+  },
+  {
+    "offset": "0xaf29",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnRegCloseKey"
+  },
+  {
+    "offset": "0xe5f2",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDKStatic\\nvSecureLoadLibrary.cpp"
+  },
+  {
+    "offset": "0xe726",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\tools\\ddk\\wddmv2\\official\\22621\\Include\\10.0.22621.0\\um\\winioctl.h"
+  },
+  {
+    "offset": "0xefaa",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDKStatic\\nvSecureLoadLibrary.h"
+  },
+  {
+    "offset": "0x11b1c",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDKStatic\\Win32\\Public_Release\\nvSecureLoadLibrary.obj"
+  },
+  {
+    "offset": "0x13f01",
+    "encoding": "ascii",
+    "text": "FvSDK::ContainsPathSeparator"
+  },
+  {
+    "offset": "0x1434f",
+    "encoding": "ascii",
+    "text": "FvSDK::CreateSHFolderFilePath"
+  },
+  {
+    "offset": "0x144d0",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnSHGetFolderPath"
+  },
+  {
+    "offset": "0x14948",
+    "encoding": "ascii",
+    "text": "FvSDK::CreateSystemFilePath"
+  },
+  {
+    "offset": "0x14ddd",
+    "encoding": "ascii",
+    "text": "FvSDK::CreateUnicodeStringFromAscii"
+  },
+  {
+    "offset": "0x154cf",
+    "encoding": "ascii",
+    "text": "FvSDK::DetectModulePathFromKernelModeService"
+  },
+  {
+    "offset": "0x157d2",
+    "encoding": "ascii",
+    "text": "FvSDK::hModAdvapi32"
+  },
+  {
+    "offset": "0x161ef",
+    "encoding": "ascii",
+    "text": "FvSDK::DetectModulePathFromKernelModeServices"
+  },
+  {
+    "offset": "0x164b6",
+    "encoding": "ascii",
+    "text": "FvSDK::hModSetupapi"
+  },
+  {
+    "offset": "0x16d90",
+    "encoding": "ascii",
+    "text": "FvSDK::DetectModulePathFromRegistryValueNames"
+  },
+  {
+    "offset": "0x170de",
+    "encoding": "ascii",
+    "text": "FvSDK::hModAdvapi32"
+  },
+  {
+    "offset": "0x17b16",
+    "encoding": "ascii",
+    "text": "FvSDK::DetectModulePathFromRegistryValues"
+  },
+  {
+    "offset": "0x1803b",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnRegOpenKeyExW"
+  },
+  {
+    "offset": "0x18071",
+    "encoding": "ascii",
+    "text": "FvSDK::hModAdvapi32"
+  },
+  {
+    "offset": "0x1887c",
+    "encoding": "ascii",
+    "text": "FvSDK::FindDotExt"
+  },
+  {
+    "offset": "0x18ff9",
+    "encoding": "ascii",
+    "text": "FvSDK::FindNvidiaDevice"
+  },
+  {
+    "offset": "0x1936e",
+    "encoding": "ascii",
+    "text": "FvSDK::hModSetupapi"
+  },
+  {
+    "offset": "0x19ff1",
+    "encoding": "ascii",
+    "text": "FvSDK::GetDriverStorePathFromQAI"
+  },
+  {
+    "offset": "0x1a58b",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnD3DKMTEnumAdapters3"
+  },
+  {
+    "offset": "0x1a5c7",
+    "encoding": "ascii",
+    "text": "FvSDK::hModGDI32"
+  },
+  {
+    "offset": "0x1c328",
+    "encoding": "ascii",
+    "text": "FvSDK::IsNvidiaSubordinatePublicKey"
+  },
+  {
+    "offset": "0x1cce2",
+    "encoding": "ascii",
+    "text": "FvSDK::IsPathToModule"
+  },
+  {
+    "offset": "0x1d1f7",
+    "encoding": "ascii",
+    "text": "FvSDK::IsPeNvidiaSigned"
+  },
+  {
+    "offset": "0x1d7aa",
+    "encoding": "ascii",
+    "text": "FvSDK::IsTrustedLocation"
+  },
+  {
+    "offset": "0x1da61",
+    "encoding": "ascii",
+    "text": "FvSDK::bTrustAnyLocation"
+  },
+  {
+    "offset": "0x1e4ae",
+    "encoding": "ascii",
+    "text": "FvSDK::IsWindowsBuildOrGreater"
+  },
+  {
+    "offset": "0x1e72e",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnRegOpenKeyExW"
+  },
+  {
+    "offset": "0x1e764",
+    "encoding": "ascii",
+    "text": "FvSDK::hModAdvapi32"
+  },
+  {
+    "offset": "0x1ee0c",
+    "encoding": "ascii",
+    "text": "FvSDK::LoadSystemLibraryInternal"
+  },
+  {
+    "offset": "0x1f4fd",
+    "encoding": "ascii",
+    "text": "FvSDK::QueryRegistryValueFromKey"
+  },
+  {
+    "offset": "0x1f72a",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnRegQueryValueExW"
+  },
+  {
+    "offset": "0x1f763",
+    "encoding": "ascii",
+    "text": "FvSDK::hModAdvapi32"
+  },
+  {
+    "offset": "0x217f3",
+    "encoding": "ascii",
+    "text": "FvSDK::ValidateCreateProcessParameters"
+  },
+  {
+    "offset": "0x222cf",
+    "encoding": "ascii",
+    "text": "FvSDK::VerifyPrimarySignatureCN"
+  },
+  {
+    "offset": "0x22d42",
+    "encoding": "ascii",
+    "text": "FvSDK::VerifySingleSignature"
+  },
+  {
+    "offset": "0x23b8f",
+    "encoding": "ascii",
+    "text": "FvSDK::_preloadSystemDlls"
+  },
+  {
+    "offset": "0x2453a",
+    "encoding": "ascii",
+    "text": "FvSDK::nvCreateProcessA"
+  },
+  {
+    "offset": "0x24ece",
+    "encoding": "ascii",
+    "text": "FvSDK::nvCreateProcessAsUserA"
+  },
+  {
+    "offset": "0x2522e",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCreateProcessAsUserA"
+  },
+  {
+    "offset": "0x2526b",
+    "encoding": "ascii",
+    "text": "FvSDK::hModAdvapi32"
+  },
+  {
+    "offset": "0x258fc",
+    "encoding": "ascii",
+    "text": "FvSDK::nvCreateProcessAsUserW"
+  },
+  {
+    "offset": "0x25bca",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCreateProcessAsUserW"
+  },
+  {
+    "offset": "0x25c07",
+    "encoding": "ascii",
+    "text": "FvSDK::hModAdvapi32"
+  },
+  {
+    "offset": "0x260bc",
+    "encoding": "ascii",
+    "text": "FvSDK::nvCreateProcessW"
+  },
+  {
+    "offset": "0x26e8c",
+    "encoding": "ascii",
+    "text": "FvSDK::nvDetectDisplayDriverModuleLocationW"
+  },
+  {
+    "offset": "0x291da",
+    "encoding": "ascii",
+    "text": "FvSDK::nvDetectDisplayDriverModuleRegistrationW"
+  },
+  {
+    "offset": "0x2aac9",
+    "encoding": "ascii",
+    "text": "FvSDK::nvGetDisplayDriverRegkeyW"
+  },
+  {
+    "offset": "0x2abf8",
+    "encoding": "ascii",
+    "text": "FvSDK::nvGetDisplayDriverStoreW"
+  },
+  {
+    "offset": "0x2b083",
+    "encoding": "ascii",
+    "text": "FvSDK::nvGetDriverRegkeyW"
+  },
+  {
+    "offset": "0x2b2a3",
+    "encoding": "ascii",
+    "text": "FvSDK::hModSetupapi"
+  },
+  {
+    "offset": "0x2be45",
+    "encoding": "ascii",
+    "text": "FvSDK::nvGetDriverStoreW"
+  },
+  {
+    "offset": "0x2c2d7",
+    "encoding": "ascii",
+    "text": "FvSDK::hModSetupapi"
+  },
+  {
+    "offset": "0x2cca2",
+    "encoding": "ascii",
+    "text": "FvSDK::nvGetSystemDirectoryW"
+  },
+  {
+    "offset": "0x2d0b0",
+    "encoding": "ascii",
+    "text": "FvSDK::nvGetSystemModuleHandleA"
+  },
+  {
+    "offset": "0x2d5fc",
+    "encoding": "ascii",
+    "text": "FvSDK::nvGetSystemModuleHandleW"
+  },
+  {
+    "offset": "0x2da25",
+    "encoding": "ascii",
+    "text": "FvSDK::nvLoadDisplayDriverModuleExA"
+  },
+  {
+    "offset": "0x2df98",
+    "encoding": "ascii",
+    "text": "FvSDK::nvLoadDisplayDriverModuleExW"
+  },
+  {
+    "offset": "0x2e35c",
+    "encoding": "ascii",
+    "text": "FvSDK::nvLoadLibraryFromTrustedLocationExA"
+  },
+  {
+    "offset": "0x2e6ca",
+    "encoding": "ascii",
+    "text": "FvSDK::nvLoadLibraryFromTrustedLocationExW"
+  },
+  {
+    "offset": "0x2ec15",
+    "encoding": "ascii",
+    "text": "FvSDK::nvLoadSignedLibraryExA"
+  },
+  {
+    "offset": "0x2f6b6",
+    "encoding": "ascii",
+    "text": "FvSDK::nvLoadSignedLibraryExW"
+  },
+  {
+    "offset": "0x3000d",
+    "encoding": "ascii",
+    "text": "FvSDK::nvLoadSystemLibraryExA"
+  },
+  {
+    "offset": "0x307bf",
+    "encoding": "ascii",
+    "text": "FvSDK::nvLoadSystemLibraryExW"
+  },
+  {
+    "offset": "0x3114c",
+    "encoding": "ascii",
+    "text": "FvSDK::nvLoadWVTCryptModule"
+  },
+  {
+    "offset": "0x31186",
+    "encoding": "ascii",
+    "text": "FvSDK::hModCrypt32"
+  },
+  {
+    "offset": "0x31a2b",
+    "encoding": "ascii",
+    "text": "FvSDK::nvReleaseSecureLoadLibraryResources"
+  },
+  {
+    "offset": "0x31a64",
+    "encoding": "ascii",
+    "text": "FvSDK::hModWldp"
+  },
+  {
+    "offset": "0x31a92",
+    "encoding": "ascii",
+    "text": "FvSDK::hModDEVOBJ"
+  },
+  {
+    "offset": "0x31ac2",
+    "encoding": "ascii",
+    "text": "FvSDK::hModDrvstore"
+  },
+  {
+    "offset": "0x31af4",
+    "encoding": "ascii",
+    "text": "FvSDK::hModAsn1"
+  },
+  {
+    "offset": "0x31b22",
+    "encoding": "ascii",
+    "text": "FvSDK::hModCryptNet"
+  },
+  {
+    "offset": "0x31b54",
+    "encoding": "ascii",
+    "text": "FvSDK::hModCryptBase"
+  },
+  {
+    "offset": "0x31b87",
+    "encoding": "ascii",
+    "text": "FvSDK::hModGDI32"
+  },
+  {
+    "offset": "0x31bb6",
+    "encoding": "ascii",
+    "text": "FvSDK::hModWinTrust"
+  },
+  {
+    "offset": "0x31be8",
+    "encoding": "ascii",
+    "text": "FvSDK::hModCrypt32"
+  },
+  {
+    "offset": "0x31c19",
+    "encoding": "ascii",
+    "text": "FvSDK::hModOle32"
+  },
+  {
+    "offset": "0x31c48",
+    "encoding": "ascii",
+    "text": "FvSDK::hModAdvapi32"
+  },
+  {
+    "offset": "0x31c7a",
+    "encoding": "ascii",
+    "text": "FvSDK::hModShell32"
+  },
+  {
+    "offset": "0x31cab",
+    "encoding": "ascii",
+    "text": "FvSDK::hModSetupapi"
+  },
+  {
+    "offset": "0x321dd",
+    "encoding": "ascii",
+    "text": "FvSDK::nvSafeLocalFree"
+  },
+  {
+    "offset": "0x32526",
+    "encoding": "ascii",
+    "text": "FvSDK::nvShellExecuteA"
+  },
+  {
+    "offset": "0x32749",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnShellExecuteA"
+  },
+  {
+    "offset": "0x3277f",
+    "encoding": "ascii",
+    "text": "FvSDK::hModShell32"
+  },
+  {
+    "offset": "0x32dbf",
+    "encoding": "ascii",
+    "text": "FvSDK::nvShellExecuteExA"
+  },
+  {
+    "offset": "0x32f02",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnShellExecuteExA"
+  },
+  {
+    "offset": "0x32f3a",
+    "encoding": "ascii",
+    "text": "FvSDK::hModShell32"
+  },
+  {
+    "offset": "0x33445",
+    "encoding": "ascii",
+    "text": "FvSDK::nvShellExecuteExW"
+  },
+  {
+    "offset": "0x33502",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnShellExecuteExW"
+  },
+  {
+    "offset": "0x3353a",
+    "encoding": "ascii",
+    "text": "FvSDK::hModShell32"
+  },
+  {
+    "offset": "0x3390c",
+    "encoding": "ascii",
+    "text": "FvSDK::nvShellExecuteW"
+  },
+  {
+    "offset": "0x33a9d",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnShellExecuteW"
+  },
+  {
+    "offset": "0x33ad3",
+    "encoding": "ascii",
+    "text": "FvSDK::hModShell32"
+  },
+  {
+    "offset": "0x33ea0",
+    "encoding": "ascii",
+    "text": "FvSDK::nvVerifyFileSignatureA"
+  },
+  {
+    "offset": "0x347da",
+    "encoding": "ascii",
+    "text": "FvSDK::nvVerifyFileSignatureW"
+  },
+  {
+    "offset": "0x34c37",
+    "encoding": "ascii",
+    "text": "FvSDK::hModAdvapi32"
+  },
+  {
+    "offset": "0x35cb3",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDKStatic\\Public_Release\\FvSDK_x86.pdb"
+  },
+  {
+    "offset": "0x392b1",
+    "encoding": "ascii",
+    "text": "?driverCompatibleIds@FvSDK@@3PAPB_WA"
+  },
+  {
+    "offset": "0x3933a",
+    "encoding": "ascii",
+    "text": "?DEVPKEY_Device_DriverInfPath@FvSDK@@3U_DEVPROPKEY@@B"
+  },
+  {
+    "offset": "0x39677",
+    "encoding": "ascii",
+    "text": "?nvGetSystemModuleHandleW@FvSDK@@YAPAUHINSTANCE__@@PB_W@Z"
+  },
+  {
+    "offset": "0x396b1",
+    "encoding": "ascii",
+    "text": "?nvGetSystemModuleHandleA@FvSDK@@YAPAUHINSTANCE__@@PBD@Z"
+  },
+  {
+    "offset": "0x396ea",
+    "encoding": "ascii",
+    "text": "?nvLoadSystemLibraryExW@FvSDK@@YAPAUHINSTANCE__@@PB_WK@Z"
+  },
+  {
+    "offset": "0x39723",
+    "encoding": "ascii",
+    "text": "?nvLoadSystemLibraryExA@FvSDK@@YAPAUHINSTANCE__@@PBDK@Z"
+  },
+  {
+    "offset": "0x3975b",
+    "encoding": "ascii",
+    "text": "?nvLoadLibraryFromTrustedLocationExW@FvSDK@@YAPAUHINSTANCE__@@PB_WK@Z"
+  },
+  {
+    "offset": "0x397a1",
+    "encoding": "ascii",
+    "text": "?nvLoadLibraryFromTrustedLocationExA@FvSDK@@YAPAUHINSTANCE__@@PBDK@Z"
+  },
+  {
+    "offset": "0x397e6",
+    "encoding": "ascii",
+    "text": "?nvLoadSignedLibraryExW@FvSDK@@YAPAUHINSTANCE__@@PB_WKH@Z"
+  },
+  {
+    "offset": "0x39820",
+    "encoding": "ascii",
+    "text": "?nvLoadSignedLibraryExA@FvSDK@@YAPAUHINSTANCE__@@PBDKH@Z"
+  },
+  {
+    "offset": "0x39859",
+    "encoding": "ascii",
+    "text": "?nvVerifyFileSignatureW@FvSDK@@YAHPB_WPAH@Z"
+  },
+  {
+    "offset": "0x39885",
+    "encoding": "ascii",
+    "text": "?nvVerifyFileSignatureA@FvSDK@@YAHPBDPAH@Z"
+  },
+  {
+    "offset": "0x398b0",
+    "encoding": "ascii",
+    "text": "?nvReleaseSecureLoadLibraryResources@FvSDK@@YAXXZ"
+  },
+  {
+    "offset": "0x398e2",
+    "encoding": "ascii",
+    "text": "?nvCreateProcessA@FvSDK@@YAHPBDPADPAX2HK202H2@Z"
+  },
+  {
+    "offset": "0x39912",
+    "encoding": "ascii",
+    "text": "?nvCreateProcessW@FvSDK@@YAHPB_WPA_WPAX2HK202H2@Z"
+  },
+  {
+    "offset": "0x39944",
+    "encoding": "ascii",
+    "text": "?nvCreateProcessAsUserA@FvSDK@@YAHPAXPBDPAD00HK010H0@Z"
+  },
+  {
+    "offset": "0x3997b",
+    "encoding": "ascii",
+    "text": "?nvCreateProcessAsUserW@FvSDK@@YAHPAXPB_WPA_W00HK010H0@Z"
+  },
+  {
+    "offset": "0x399b4",
+    "encoding": "ascii",
+    "text": "?nvShellExecuteA@FvSDK@@YAPAUHINSTANCE__@@PAUHWND__@@PBD111HH@Z"
+  },
+  {
+    "offset": "0x399f4",
+    "encoding": "ascii",
+    "text": "?nvShellExecuteW@FvSDK@@YAPAUHINSTANCE__@@PAUHWND__@@PB_W111HH@Z"
+  },
+  {
+    "offset": "0x39a35",
+    "encoding": "ascii",
+    "text": "?nvShellExecuteExA@FvSDK@@YAHPAU_SHELLEXECUTEINFOA@@H@Z"
+  },
+  {
+    "offset": "0x39a6d",
+    "encoding": "ascii",
+    "text": "?nvShellExecuteExW@FvSDK@@YAHPAU_SHELLEXECUTEINFOW@@H@Z"
+  },
+  {
+    "offset": "0x39aa5",
+    "encoding": "ascii",
+    "text": "?nvLoadDisplayDriverModuleExW@FvSDK@@YAPAUHINSTANCE__@@PB_WK@Z"
+  },
+  {
+    "offset": "0x39ae4",
+    "encoding": "ascii",
+    "text": "?nvLoadDisplayDriverModuleExA@FvSDK@@YAPAUHINSTANCE__@@PBDK@Z"
+  },
+  {
+    "offset": "0x39b22",
+    "encoding": "ascii",
+    "text": "?nvDetectDisplayDriverModuleLocationW@FvSDK@@YAPA_WPB_W@Z"
+  },
+  {
+    "offset": "0x39b5c",
+    "encoding": "ascii",
+    "text": "?nvGetDisplayDriverRegkeyW@FvSDK@@YAPA_WXZ"
+  },
+  {
+    "offset": "0x39b87",
+    "encoding": "ascii",
+    "text": "?nvGetDisplayDriverStoreW@FvSDK@@YAPA_WXZ"
+  },
+  {
+    "offset": "0x39bb1",
+    "encoding": "ascii",
+    "text": "?nvGetSystemDirectoryW@FvSDK@@YAPA_WXZ"
+  },
+  {
+    "offset": "0x39bd8",
+    "encoding": "ascii",
+    "text": "?nvSafeLocalFree@FvSDK@@YAXPAX@Z"
+  },
+  {
+    "offset": "0x39bf9",
+    "encoding": "ascii",
+    "text": "?ContainsPathSeparator@FvSDK@@YAHPB_W@Z"
+  },
+  {
+    "offset": "0x39c21",
+    "encoding": "ascii",
+    "text": "?CreateUnicodeStringFromAscii@FvSDK@@YAPA_WPBD@Z"
+  },
+  {
+    "offset": "0x39c52",
+    "encoding": "ascii",
+    "text": "?CreateSystemFilePath@FvSDK@@YAPA_WPB_W@Z"
+  },
+  {
+    "offset": "0x39c7c",
+    "encoding": "ascii",
+    "text": "?CreateSHFolderFilePath@FvSDK@@YAPA_WHPB_W@Z"
+  },
+  {
+    "offset": "0x39ca9",
+    "encoding": "ascii",
+    "text": "?IsTrustedLocation@FvSDK@@YAHPB_W@Z"
+  },
+  {
+    "offset": "0x39ccd",
+    "encoding": "ascii",
+    "text": "?ValidateCreateProcessParameters@FvSDK@@YAHPB_W0H@Z"
+  },
+  {
+    "offset": "0x39d01",
+    "encoding": "ascii",
+    "text": "?IsWindowsBuildOrGreater@FvSDK@@YAHK@Z"
+  },
+  {
+    "offset": "0x39d28",
+    "encoding": "ascii",
+    "text": "?LoadSystemLibraryInternal@FvSDK@@YAPAUHINSTANCE__@@QB_WK@Z"
+  },
+  {
+    "offset": "0x39d64",
+    "encoding": "ascii",
+    "text": "?GetDriverStorePathFromQAI@FvSDK@@YAXQA_W@Z"
+  },
+  {
+    "offset": "0x39d90",
+    "encoding": "ascii",
+    "text": "?IsPeNvidiaSigned@FvSDK@@YAHPBU_CERT_CONTEXT@@@Z"
+  },
+  {
+    "offset": "0x39dc1",
+    "encoding": "ascii",
+    "text": "?_preloadSystemDlls@FvSDK@@YAHH@Z"
+  },
+  {
+    "offset": "0x39de3",
+    "encoding": "ascii",
+    "text": "?IsNvidiaSubordinatePublicKey@FvSDK@@YAHPBU_CRYPT_BIT_BLOB@@@Z"
+  },
+  {
+    "offset": "0x39e22",
+    "encoding": "ascii",
+    "text": "?VerifyPrimarySignatureCN@FvSDK@@YAHPAX0PAH@Z"
+  },
+  {
+    "offset": "0x39e50",
+    "encoding": "ascii",
+    "text": "?VerifySingleSignature@FvSDK@@YAHPAU_NVWINTRUST_DATA@1@PAX1PAH@Z"
+  },
+  {
+    "offset": "0x39e91",
+    "encoding": "ascii",
+    "text": "?nvLoadWVTCryptModule@FvSDK@@YAHXZ"
+  },
+  {
+    "offset": "0x39eb4",
+    "encoding": "ascii",
+    "text": "?FindDotExt@FvSDK@@YAPB_WQB_W@Z"
+  },
+  {
+    "offset": "0x39ed4",
+    "encoding": "ascii",
+    "text": "?IsPathToModule@FvSDK@@YAHQB_W0@Z"
+  },
+  {
+    "offset": "0x39ef6",
+    "encoding": "ascii",
+    "text": "?FindNvidiaDevice@FvSDK@@YAHW4NvidiaDriverType@1@PAPAXPAU_SP_DEVINFO_DATA@@@Z"
+  },
+  {
+    "offset": "0x39f44",
+    "encoding": "ascii",
+    "text": "?DetectModulePathFromKernelModeServices@FvSDK@@YAPA_WQB_WW4NvidiaDriverType@1@@Z"
+  },
+  {
+    "offset": "0x39f95",
+    "encoding": "ascii",
+    "text": "?DetectModulePathFromRegistryValues@FvSDK@@YAPA_WQB_WQAUHKEY__@@0PBQB_W@Z"
+  },
+  {
+    "offset": "0x39fdf",
+    "encoding": "ascii",
+    "text": "?DetectModulePathFromRegistryValueNames@FvSDK@@YAPA_WQB_WQAUHKEY__@@PBQB_W@Z"
+  },
+  {
+    "offset": "0x3a02c",
+    "encoding": "ascii",
+    "text": "?nvDetectDisplayDriverModuleRegistrationW@FvSDK@@YAPA_WPB_W@Z"
+  },
+  {
+    "offset": "0x3a06a",
+    "encoding": "ascii",
+    "text": "?nvGetDriverRegkeyW@FvSDK@@YAPA_WW4NvidiaDriverType@1@@Z"
+  },
+  {
+    "offset": "0x3a0a3",
+    "encoding": "ascii",
+    "text": "?nvGetDriverStoreW@FvSDK@@YAPA_WW4NvidiaDriverType@1@@Z"
+  },
+  {
+    "offset": "0x3a0db",
+    "encoding": "ascii",
+    "text": "?QueryRegistryValueFromKey@FvSDK@@YAJPAUHKEY__@@PB_WPAKPAPAE@Z"
+  },
+  {
+    "offset": "0x3a11a",
+    "encoding": "ascii",
+    "text": "?DetectModulePathFromKernelModeService@FvSDK@@YAPA_WPB_W0@Z"
+  },
+  {
+    "offset": "0x3a204",
+    "encoding": "ascii",
+    "text": "?hModSetupapi@FvSDK@@3PAUHINSTANCE__@@A"
+  },
+  {
+    "offset": "0x3a22c",
+    "encoding": "ascii",
+    "text": "?pfnSetupDiGetClassDevsW@FvSDK@@3P6GPAXPBU_GUID@@PB_WPAUHWND__@@K@ZA"
+  },
+  {
+    "offset": "0x3a271",
+    "encoding": "ascii",
+    "text": "?pfnSetupDiEnumDeviceInfo@FvSDK@@3P6GHPAXKPAU_SP_DEVINFO_DATA@@@ZA"
+  },
+  {
+    "offset": "0x3a2b4",
+    "encoding": "ascii",
+    "text": "?pfnSetupDiGetDeviceInterfaceDetailW@FvSDK@@3P6GHPAXPAU_SP_DEVICE_INTERFACE_DATA@@PAU_SP_DEVICE_INTERFACE_DETAIL_DATA_W@@KPAKPAU_SP_DEVINFO_DATA@@@ZA"
+  },
+  {
+    "offset": "0x3a34a",
+    "encoding": "ascii",
+    "text": "?pfnSetupDiGetDeviceRegistryPropertyW@FvSDK@@3P6GHPAXPAU_SP_DEVINFO_DATA@@KPAKPAEK2@ZA"
+  },
+  {
+    "offset": "0x3a3a1",
+    "encoding": "ascii",
+    "text": "?pfnSetupDiGetDevicePropertyW@FvSDK@@3P6GHPAXPAU_SP_DEVINFO_DATA@@PBU_DEVPROPKEY@@PAKPAEK3K@ZA"
+  },
+  {
+    "offset": "0x3a400",
+    "encoding": "ascii",
+    "text": "?pfnSetupDiDestroyDeviceInfoList@FvSDK@@3P6GHPAX@ZA"
+  },
+  {
+    "offset": "0x3a434",
+    "encoding": "ascii",
+    "text": "?pfnSetupGetInfDriverStoreLocationW@FvSDK@@3P6GHPB_WPAU_SP_ALTPLATFORM_INFO_V2@@0PA_WKPAK@ZA"
+  },
+  {
+    "offset": "0x3a491",
+    "encoding": "ascii",
+    "text": "?hModShell32@FvSDK@@3PAUHINSTANCE__@@A"
+  },
+  {
+    "offset": "0x3a4b8",
+    "encoding": "ascii",
+    "text": "?pfnSHGetFolderPath@FvSDK@@3P6GJPAUHWND__@@HPAXKPA_W@ZA"
+  },
+  {
+    "offset": "0x3a4f0",
+    "encoding": "ascii",
+    "text": "?hModCrypt32@FvSDK@@3PAUHINSTANCE__@@A"
+  },
+  {
+    "offset": "0x3a517",
+    "encoding": "ascii",
+    "text": "?pfnCryptMsgClose@FvSDK@@3P6GHPAX@ZA"
+  },
+  {
+    "offset": "0x3a53c",
+    "encoding": "ascii",
+    "text": "?pfnCertCloseStore@FvSDK@@3P6GHPAXK@ZA"
+  },
+  {
+    "offset": "0x3a563",
+    "encoding": "ascii",
+    "text": "?pfnCertFreeCertificateContext@FvSDK@@3P6GHPBU_CERT_CONTEXT@@@ZA"
+  },
+  {
+    "offset": "0x3a5a4",
+    "encoding": "ascii",
+    "text": "?pfnCertFindCertificateInStore@FvSDK@@3P6GPBU_CERT_CONTEXT@@PAXKKKPBXPBU2@@ZA"
+  },
+  {
+    "offset": "0x3a5f2",
+    "encoding": "ascii",
+    "text": "?pfnCryptMsgGetParam@FvSDK@@3P6GHPAXKK0PAK@ZA"
+  },
+  {
+    "offset": "0x3a620",
+    "encoding": "ascii",
+    "text": "?pfnCryptQueryObject@FvSDK@@3P6GHKPBXKKKPAK11PAPAX2PAPBX@ZA"
+  },
+  {
+    "offset": "0x3a65c",
+    "encoding": "ascii",
+    "text": "?pfnCertGetNameStringA@FvSDK@@3P6GKPBU_CERT_CONTEXT@@KKPAXPADK@ZA"
+  },
+  {
+    "offset": "0x3a69e",
+    "encoding": "ascii",
+    "text": "?pfnCryptDecodeObjectEx@FvSDK@@3P6GHKPBDPBEKKPAU_CRYPT_DECODE_PARA@@PAXPAK@ZA"
+  },
+  {
+    "offset": "0x3a6ec",
+    "encoding": "ascii",
+    "text": "?pfnCertGetIssuerCertificateFromStore@FvSDK@@3P6GPBU_CERT_CONTEXT@@PAXPBU2@1PAK@ZA"
+  },
+  {
+    "offset": "0x3a73f",
+    "encoding": "ascii",
+    "text": "?hModAdvapi32@FvSDK@@3PAUHINSTANCE__@@A"
+  },
+  {
+    "offset": "0x3a767",
+    "encoding": "ascii",
+    "text": "?pfnRegOpenKeyExW@FvSDK@@3P6GJPAUHKEY__@@PB_WKKPAPAU2@@ZA"
+  },
+  {
+    "offset": "0x3a7a1",
+    "encoding": "ascii",
+    "text": "?pfnRegEnumValueW@FvSDK@@3P6GJPAUHKEY__@@KPA_WPAK22PAE2@ZA"
+  },
+  {
+    "offset": "0x3a7dc",
+    "encoding": "ascii",
+    "text": "?pfnRegQueryValueExW@FvSDK@@3P6GJPAUHKEY__@@PB_WPAK2PAE2@ZA"
+  },
+  {
+    "offset": "0x3a818",
+    "encoding": "ascii",
+    "text": "?pfnRegCloseKey@FvSDK@@3P6GJPAUHKEY__@@@ZA"
+  },
+  {
+    "offset": "0x3a843",
+    "encoding": "ascii",
+    "text": "?pfnOpenSCManagerW@FvSDK@@3P6GPAUSC_HANDLE__@@PB_W0K@ZA"
+  },
+  {
+    "offset": "0x3a87b",
+    "encoding": "ascii",
+    "text": "?pfnOpenServiceW@FvSDK@@3P6GPAUSC_HANDLE__@@PAU2@PB_WK@ZA"
+  },
+  {
+    "offset": "0x3a8b5",
+    "encoding": "ascii",
+    "text": "?pfnQueryServiceConfigW@FvSDK@@3P6GHPAUSC_HANDLE__@@PAU_QUERY_SERVICE_CONFIGW@@KPAK@ZA"
+  },
+  {
+    "offset": "0x3a90c",
+    "encoding": "ascii",
+    "text": "?pfnQueryServiceStatus@FvSDK@@3P6GHPAUSC_HANDLE__@@PAU_SERVICE_STATUS@@@ZA"
+  },
+  {
+    "offset": "0x3a957",
+    "encoding": "ascii",
+    "text": "?pfnCloseServiceHandle@FvSDK@@3P6GHPAUSC_HANDLE__@@@ZA"
+  },
+  {
+    "offset": "0x3a98e",
+    "encoding": "ascii",
+    "text": "?hModOle32@FvSDK@@3PAUHINSTANCE__@@A"
+  },
+  {
+    "offset": "0x3a9b3",
+    "encoding": "ascii",
+    "text": "?pfnStringFromGUID2@FvSDK@@3P6GHABU_GUID@@PA_WH@ZA"
+  },
+  {
+    "offset": "0x3a9e6",
+    "encoding": "ascii",
+    "text": "?pfnCreateProcessAsUserW@FvSDK@@3P6GHPAXPB_WPA_WPAU_SECURITY_ATTRIBUTES@@3HK01PAU_STARTUPINFOW@@PAU_PROCESS_INFORMATION@@@ZA"
+  },
+  {
+    "offset": "0x3aa63",
+    "encoding": "ascii",
+    "text": "?pfnCreateProcessAsUserA@FvSDK@@3P6GHPAXPBDPADPAU_SECURITY_ATTRIBUTES@@3HK01PAU_STARTUPINFOA@@PAU_PROCESS_INFORMATION@@@ZA"
+  },
+  {
+    "offset": "0x3aade",
+    "encoding": "ascii",
+    "text": "?pfnShellExecuteA@FvSDK@@3P6GPAUHINSTANCE__@@PAUHWND__@@PBD111H@ZA"
+  },
+  {
+    "offset": "0x3ab21",
+    "encoding": "ascii",
+    "text": "?pfnShellExecuteW@FvSDK@@3P6GPAUHINSTANCE__@@PAUHWND__@@PB_W111H@ZA"
+  },
+  {
+    "offset": "0x3ab65",
+    "encoding": "ascii",
+    "text": "?pfnShellExecuteExA@FvSDK@@3P6GHPAU_SHELLEXECUTEINFOA@@@ZA"
+  },
+  {
+    "offset": "0x3aba0",
+    "encoding": "ascii",
+    "text": "?pfnShellExecuteExW@FvSDK@@3P6GHPAU_SHELLEXECUTEINFOW@@@ZA"
+  },
+  {
+    "offset": "0x3abdb",
+    "encoding": "ascii",
+    "text": "?hModWinTrust@FvSDK@@3PAUHINSTANCE__@@A"
+  },
+  {
+    "offset": "0x3ac03",
+    "encoding": "ascii",
+    "text": "?pfnWinVerifyTrust@FvSDK@@3P6GJPAUHWND__@@PAU_GUID@@PAX@ZA"
+  },
+  {
+    "offset": "0x3ac3e",
+    "encoding": "ascii",
+    "text": "?pfnWTHelperProvDataFromStateData@FvSDK@@3P6GPAU_CRYPT_PROVIDER_DATA@@PAX@ZA"
+  },
+  {
+    "offset": "0x3ac8b",
+    "encoding": "ascii",
+    "text": "?pfnWTHelperGetProvSignerFromChain@FvSDK@@3P6GPAU_CRYPT_PROVIDER_SGNR@@PAU_CRYPT_PROVIDER_DATA@@KHK@ZA"
+  },
+  {
+    "offset": "0x3acf2",
+    "encoding": "ascii",
+    "text": "?pfnWTHelperGetProvCertFromChain@FvSDK@@3P6GPAU_CRYPT_PROVIDER_CERT@@PAU_CRYPT_PROVIDER_SGNR@@K@ZA"
+  },
+  {
+    "offset": "0x3ad55",
+    "encoding": "ascii",
+    "text": "?hModGDI32@FvSDK@@3PAUHINSTANCE__@@A"
+  },
+  {
+    "offset": "0x3ad7a",
+    "encoding": "ascii",
+    "text": "?hModCryptBase@FvSDK@@3PAUHINSTANCE__@@A"
+  },
+  {
+    "offset": "0x3ada3",
+    "encoding": "ascii",
+    "text": "?hModCryptNet@FvSDK@@3PAUHINSTANCE__@@A"
+  },
+  {
+    "offset": "0x3adcb",
+    "encoding": "ascii",
+    "text": "?hModAsn1@FvSDK@@3PAUHINSTANCE__@@A"
+  },
+  {
+    "offset": "0x3adef",
+    "encoding": "ascii",
+    "text": "?hModDrvstore@FvSDK@@3PAUHINSTANCE__@@A"
+  },
+  {
+    "offset": "0x3ae17",
+    "encoding": "ascii",
+    "text": "?hModDEVOBJ@FvSDK@@3PAUHINSTANCE__@@A"
+  },
+  {
+    "offset": "0x3ae3d",
+    "encoding": "ascii",
+    "text": "?hModWldp@FvSDK@@3PAUHINSTANCE__@@A"
+  },
+  {
+    "offset": "0x3ae61",
+    "encoding": "ascii",
+    "text": "?pfnD3DKMTEnumAdapters2@FvSDK@@3P6GJPBU_NV_D3DKMT_ENUMADAPTERS2@1@@ZA"
+  },
+  {
+    "offset": "0x3aea7",
+    "encoding": "ascii",
+    "text": "?pfnD3DKMTEnumAdapters3@FvSDK@@3P6GJPBU_NV_D3DKMT_ENUMADAPTERS3@1@@ZA"
+  },
+  {
+    "offset": "0x3aeed",
+    "encoding": "ascii",
+    "text": "?pfnD3DKMTQueryAdapterInfo@FvSDK@@3P6GJPBU_NV_D3DKMT_QUERYADAPTERINFO@1@@ZA"
+  },
+  {
+    "offset": "0x3af39",
+    "encoding": "ascii",
+    "text": "?ret@?1??_preloadSystemDlls@FvSDK@@YAHH@Z@4HA"
+  },
+  {
+    "offset": "0x3b150",
+    "encoding": "ascii",
+    "text": "?dwBuildNumber@?1??LoadSystemLibraryInternal@FvSDK@@YAPAUHINSTANCE__@@QB_WK@Z@4KA"
+  },
+  {
+    "offset": "0x3b3ac",
+    "encoding": "ascii",
+    "text": "?osVersionInfo@FvSDK@@3U_OSVERSIONINFOEXW@@A"
+  },
+  {
+    "offset": "0x3b3d9",
+    "encoding": "ascii",
+    "text": "?bTrustAnyLocation@FvSDK@@3HA"
+  },
+  {
+    "offset": "0x3bd35",
+    "encoding": "ascii",
+    "text": "?validUmds@?1??GetUMDPathFromLoadedDLLs@FvSDK@@YAXQA_W@Z@4PAPB_WA"
+  },
+  {
+    "offset": "0x3bfd2",
+    "encoding": "ascii",
+    "text": "?bIsWow64Process@?1??DetectWow64Process@FvSDK@@YAHPAH@Z@4HA"
+  },
+  {
+    "offset": "0x3c00e",
+    "encoding": "ascii",
+    "text": "?pfnIsWow64Process@?1??DetectWow64Process@FvSDK@@YAHPAH@Z@4P6GHPAX0@ZA"
+  },
+  {
+    "offset": "0x3c0f7",
+    "encoding": "ascii",
+    "text": "?dwCurrentBuildNumber@?1??IsWindowsBuildOrGreater@FvSDK@@YAHK@Z@4KA"
+  },
+  {
+    "offset": "0x3cac8",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDKStatic\\Win32\\Public_Release\\main.obj"
+  },
+  {
+    "offset": "0x3e085",
+    "encoding": "ascii",
+    "text": "g_fvsdk_HModule"
+  },
+  {
+    "offset": "0x422ee",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\tools\\ddk\\wddmv2\\official\\22621\\Include\\10.0.22621.0\\um\\winioctl.h"
+  },
+  {
+    "offset": "0x42344",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDKStatic\\main.cpp"
+  },
+  {
+    "offset": "0x432bb",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDKStatic\\Private\\FvSDK.h"
+  },
+  {
+    "offset": "0x4404c",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDKStatic\\nvSecureLoadLibrary.h"
+  },
+  {
+    "offset": "0x44712",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Common\\Develop.h"
+  },
+  {
+    "offset": "0x4571a",
+    "encoding": "ascii",
+    "text": "FvSDK_AlignLatencyMonitoringRect"
+  },
+  {
+    "offset": "0x45983",
+    "encoding": "ascii",
+    "text": "FvSDK_CreateSession"
+  },
+  {
+    "offset": "0x45be0",
+    "encoding": "ascii",
+    "text": "FvSDK_DestroySession"
+  },
+  {
+    "offset": "0x45e29",
+    "encoding": "ascii",
+    "text": "FvSDK_EnableMetrics2"
+  },
+  {
+    "offset": "0x460e0",
+    "encoding": "ascii",
+    "text": "FvSDK_EnableMetrics"
+  },
+  {
+    "offset": "0x463fc",
+    "encoding": "ascii",
+    "text": "FvSDK_GetPerFrameDataPipe"
+  },
+  {
+    "offset": "0x468d7",
+    "encoding": "ascii",
+    "text": "FvSDK_Initialize"
+  },
+  {
+    "offset": "0x46dda",
+    "encoding": "ascii",
+    "text": "FvSDK_ReadBenchmarkData"
+  },
+  {
+    "offset": "0x470f5",
+    "encoding": "ascii",
+    "text": "FvSDK_ReadBenchmarkPerFrameData"
+  },
+  {
+    "offset": "0x47418",
+    "encoding": "ascii",
+    "text": "FvSDK_ReadData"
+  },
+  {
+    "offset": "0x4772b",
+    "encoding": "ascii",
+    "text": "FvSDK_ResetSampling"
+  },
+  {
+    "offset": "0x47a33",
+    "encoding": "ascii",
+    "text": "FvSDK_SampleData"
+  },
+  {
+    "offset": "0x47d85",
+    "encoding": "ascii",
+    "text": "FvSDK_Shutdown"
+  },
+  {
+    "offset": "0x47fb1",
+    "encoding": "ascii",
+    "text": "FvSDK_StartBenchmark"
+  },
+  {
+    "offset": "0x4825e",
+    "encoding": "ascii",
+    "text": "FvSDK_StartSession"
+  },
+  {
+    "offset": "0x484bf",
+    "encoding": "ascii",
+    "text": "FvSDK_StopBenchmark"
+  },
+  {
+    "offset": "0x4871c",
+    "encoding": "ascii",
+    "text": "FvSDK_StopSession"
+  },
+  {
+    "offset": "0x488d1",
+    "encoding": "ascii",
+    "text": "FvSDK_x86.dll"
+  },
+  {
+    "offset": "0x4893b",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDKStatic\\Public_Release\\FvSDK_x86.pdb"
+  },
+  {
+    "offset": "0x49433",
+    "encoding": "ascii",
+    "text": "?g_fvsdk_HModule@@3PAUHINSTANCE__@@A"
+  },
+  {
+    "offset": "0x49491",
+    "encoding": "ascii",
+    "text": "?FvSDK_Initialize@@YA?AW4FvStatus@@XZ"
+  },
+  {
+    "offset": "0x494b7",
+    "encoding": "ascii",
+    "text": "?FvSDK_CreateSession@@YA?AW4FvStatus@@PAPAUFvSession__@@@Z"
+  },
+  {
+    "offset": "0x494f2",
+    "encoding": "ascii",
+    "text": "?FvSDK_StartSession@@YA?AW4FvStatus@@PAUFvSession__@@@Z"
+  },
+  {
+    "offset": "0x4952a",
+    "encoding": "ascii",
+    "text": "?FvSDK_EnableMetrics@@YA?AW4FvStatus@@PAUFvSession__@@PAW4_FvMetricType@@I@Z"
+  },
+  {
+    "offset": "0x49577",
+    "encoding": "ascii",
+    "text": "?FvSDK_EnableMetrics2@@YA?AW4FvStatus@@PAUFvSession__@@UFvMetricParams@@@Z"
+  },
+  {
+    "offset": "0x495c2",
+    "encoding": "ascii",
+    "text": "?FvSDK_SampleData@@YA?AW4FvStatus@@PAUFvSession__@@W4_FvSampleDataFlags@@@Z"
+  },
+  {
+    "offset": "0x4960e",
+    "encoding": "ascii",
+    "text": "?FvSDK_ResetSampling@@YA?AW4FvStatus@@PAUFvSession__@@PAW4_FvMetricType@@I@Z"
+  },
+  {
+    "offset": "0x4965b",
+    "encoding": "ascii",
+    "text": "?FvSDK_ReadData@@YA?AW4FvStatus@@PAUFvSession__@@PAUSamples_v1@@I@Z"
+  },
+  {
+    "offset": "0x4969f",
+    "encoding": "ascii",
+    "text": "?FvSDK_AlignLatencyMonitoringRect@@YA?AW4FvStatus@@PAUFvSession__@@@Z"
+  },
+  {
+    "offset": "0x496e5",
+    "encoding": "ascii",
+    "text": "?FvSDK_StartBenchmark@@YA?AW4FvStatus@@PAUFvSession__@@W4_FvBenchmarkFlags@@@Z"
+  },
+  {
+    "offset": "0x49734",
+    "encoding": "ascii",
+    "text": "?FvSDK_StopBenchmark@@YA?AW4FvStatus@@PAUFvSession__@@@Z"
+  },
+  {
+    "offset": "0x4976d",
+    "encoding": "ascii",
+    "text": "?FvSDK_ReadBenchmarkData@@YA?AW4FvStatus@@PAUFvSession__@@PAUSamples_v1@@I@Z"
+  },
+  {
+    "offset": "0x497ba",
+    "encoding": "ascii",
+    "text": "?FvSDK_ReadBenchmarkPerFrameData@@YA?AW4FvStatus@@PAUFvSession__@@PAUSamples_v1@@I@Z"
+  },
+  {
+    "offset": "0x4980f",
+    "encoding": "ascii",
+    "text": "?FvSDK_GetPerFrameDataPipe@@YA?AW4FvStatus@@PAUFvSession__@@PAPAX@Z"
+  },
+  {
+    "offset": "0x49853",
+    "encoding": "ascii",
+    "text": "?FvSDK_StopSession@@YA?AW4FvStatus@@PAUFvSession__@@@Z"
+  },
+  {
+    "offset": "0x4988a",
+    "encoding": "ascii",
+    "text": "?FvSDK_DestroySession@@YA?AW4FvStatus@@PAUFvSession__@@@Z"
+  },
+  {
+    "offset": "0x498c4",
+    "encoding": "ascii",
+    "text": "?FvSDK_Shutdown@@YA?AW4FvStatus@@XZ"
+  },
+  {
+    "offset": "0x49952",
+    "encoding": "ascii",
+    "text": "?nvVerifyFileSignatureW@FvSDK@@YAHPB_WPAH@Z"
+  },
+  {
+    "offset": "0x49999",
+    "encoding": "ascii",
+    "text": "?fvDLLName@?4??FvSDK_Initialize@@YA?AW4FvStatus@@XZ@4PBDB"
+  },
+  {
+    "offset": "0x499d3",
+    "encoding": "ascii",
+    "text": "??_C@_0O@BPMBGLDJ@FvSDK_x86?4dll@"
+  },
+  {
+    "offset": "0x499f5",
+    "encoding": "ascii",
+    "text": "?wFvDLLName@?4??FvSDK_Initialize@@YA?AW4FvStatus@@XZ@4PB_WB"
+  },
+  {
+    "offset": "0x358c4",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x35904",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x35bcf",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x488ed",
+    "encoding": "utf-16le",
+    "text": "FvSDK_x86.dll"
+  }
+]

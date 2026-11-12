@@ -1,0 +1,57 @@
+[
+  {
+    "FullName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\AIUser\\NVIDIA App",
+    "LinkType": "SymbolicLink",
+    "Target": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\Plugins\\aiuser"
+  },
+  {
+    "FullName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\LocalSystem\\NvCpl",
+    "LinkType": "Junction",
+    "Target": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvCpl\\Plugins\\LocalSystem"
+  },
+  {
+    "FullName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\LocalSystem\\NvTelemetry",
+    "LinkType": "Junction",
+    "Target": "C:\\Program Files\\NVIDIA Corporation\\NvTelemetry\\plugin"
+  },
+  {
+    "FullName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\LocalSystem\\ShadowPlay",
+    "LinkType": "Junction",
+    "Target": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\ShadowPlay\\Plugins\\LocalSystem"
+  },
+  {
+    "FullName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\LocalSystem\\Watchdog",
+    "LinkType": "Junction",
+    "Target": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\Watchdog"
+  },
+  {
+    "FullName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\Session\\NvCpl",
+    "LinkType": "SymbolicLink",
+    "Target": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvCpl\\Plugins\\Session"
+  },
+  {
+    "FullName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\Session\\NVIDIA App",
+    "LinkType": "Junction",
+    "Target": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\Plugins\\session"
+  },
+  {
+    "FullName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\SPUser\\nvspcaps",
+    "LinkType": "SymbolicLink",
+    "Target": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\ShadowPlay\\nvspcaps"
+  },
+  {
+    "FullName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\User\\NvBackend",
+    "LinkType": "Junction",
+    "Target": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvBackend\\Plugins\\LocalUser"
+  },
+  {
+    "FullName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\User\\NVIDIA App",
+    "LinkType": "Junction",
+    "Target": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\Plugins\\localuser"
+  },
+  {
+    "FullName": "C:\\Program Files\\NVIDIA Corporation\\NvTelemetry\\plugin\\NvLocalizedConfig",
+    "LinkType": "Junction",
+    "Target": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvLocalizedConfig"
+  }
+]

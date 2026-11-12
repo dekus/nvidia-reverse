@@ -1,0 +1,152 @@
+[
+  {
+    "offset": "0x32a50",
+    "encoding": "ascii",
+    "text": "NvMessageBus.dll"
+  },
+  {
+    "offset": "0x34d18",
+    "encoding": "ascii",
+    "text": "Global\\FVSDKSharedMemory"
+  },
+  {
+    "offset": "0x3a115",
+    "encoding": "ascii",
+    "text": "FvSDKServiceTriggerProvider"
+  },
+  {
+    "offset": "0x3a14c",
+    "encoding": "ascii",
+    "text": "FvSDK_x64.pdb"
+  },
+  {
+    "offset": "0x3f362",
+    "encoding": "ascii",
+    "text": "FvSDK_x64.dll"
+  },
+  {
+    "offset": "0x43e18",
+    "encoding": "ascii",
+    "text": ".?AVFvSDKBenchmarkWrapper@FvSDK@@"
+  },
+  {
+    "offset": "0x34ac0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x34e80",
+    "encoding": "utf-16le",
+    "text": "FvSDK::FvClientCtx::StartSession"
+  },
+  {
+    "offset": "0x34fc0",
+    "encoding": "utf-16le",
+    "text": "FvSDK::FvClientCtx::StopSession"
+  },
+  {
+    "offset": "0x35000",
+    "encoding": "utf-16le",
+    "text": "FvSDK::FvClientCtx::SampleData"
+  },
+  {
+    "offset": "0x35480",
+    "encoding": "utf-16le",
+    "text": "FvSDK::FvClientCtx::EnableMetrics"
+  },
+  {
+    "offset": "0x354d0",
+    "encoding": "utf-16le",
+    "text": "FvSDK::FvClientCtx::EnableMetrics2"
+  },
+  {
+    "offset": "0x35518",
+    "encoding": "utf-16le",
+    "text": "FvSDK::FvClientCtx::ReadData"
+  },
+  {
+    "offset": "0x35630",
+    "encoding": "utf-16le",
+    "text": "FvSDK::FvClientCtx::ResetSampling"
+  },
+  {
+    "offset": "0x35680",
+    "encoding": "utf-16le",
+    "text": "FvSDK::FvClientCtx::AlignLatencyMonitoringRect"
+  },
+  {
+    "offset": "0x35930",
+    "encoding": "utf-16le",
+    "text": "FvSDK::FvClientCtx::StartBenchmark"
+  },
+  {
+    "offset": "0x35980",
+    "encoding": "utf-16le",
+    "text": "FvSDK::FvClientCtx::StopBenchmark"
+  },
+  {
+    "offset": "0x35a00",
+    "encoding": "utf-16le",
+    "text": "FvSDK::FvClientCtx::ReadBenchmarkData"
+  },
+  {
+    "offset": "0x35b60",
+    "encoding": "utf-16le",
+    "text": "FvSDK::FvClientCtx::ReadBenchmarkPerFrameData"
+  },
+  {
+    "offset": "0x35eb0",
+    "encoding": "utf-16le",
+    "text": "FvSDK::FvClientCtx::GetPerFrameDataPipe"
+  },
+  {
+    "offset": "0x36418",
+    "encoding": "utf-16le",
+    "text": "FvSDKClient%d"
+  },
+  {
+    "offset": "0x36470",
+    "encoding": "utf-16le",
+    "text": "[INSTALL STATE] %S blocked: FvSDK Installation in progress (m_bInstallInProgress=true)"
+  },
+  {
+    "offset": "0x36520",
+    "encoding": "utf-16le",
+    "text": "[INSTALL STATE] %S blocked: FvSDK update completed finished (m_bInstallFinished=true). Client should restart."
+  },
+  {
+    "offset": "0x36a10",
+    "encoding": "utf-16le",
+    "text": "Global\\FVSDK_EvtInstallStart"
+  },
+  {
+    "offset": "0x36ce0",
+    "encoding": "utf-16le",
+    "text": "Global\\FVSDK_EvtInstallFinish"
+  },
+  {
+    "offset": "0x37200",
+    "encoding": "utf-16le",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::StopBenchmark"
+  },
+  {
+    "offset": "0x374e0",
+    "encoding": "utf-16le",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::ReadSystemData"
+  },
+  {
+    "offset": "0x37660",
+    "encoding": "utf-16le",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::OnMessage"
+  },
+  {
+    "offset": "0x37cf0",
+    "encoding": "utf-16le",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::PipeWriteCsvHeader"
+  },
+  {
+    "offset": "0x37dd0",
+    "encoding": "utf-16le",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::StartPerFrameDataPipe"
+  }
+]

@@ -1,0 +1,2706 @@
+[
+  {
+    "file_offset": "0x36da90",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#NvCplplugin",
+      "title": "NvCplPlugin Endpoints",
+      "type": "object",
+      "module": "NvCplPlugin",
+      "definitions": {
+        "ProfileSettingType": {
+          "type": "integer",
+          "description": "Defines possible profile setting types",
+          "enum": [
+            -1,
+            0,
+            1,
+            2,
+            3
+          ],
+          "tsEnumNames": [
+            "type_invalid",
+            "type_integer",
+            "type_string",
+            "type_boolean",
+            "type_json_string"
+          ]
+        },
+        "HwSupportType": {
+          "type": "integer",
+          "description": "Hardware support flag",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "UNKNOWN",
+            "SUPPORTED",
+            "UNSUPPORTED"
+          ]
+        },
+        "ConstraintType": {
+          "type": "integer",
+          "description": "constraint for hard and soft requirements",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "tsEnumNames": [
+            "Unknown",
+            "GpuUnsupported",
+            "DriverUnsupported",
+            "HardwareSchedulingUnavailable",
+            "GraphicsApiUnsupported",
+            "DenyListed",
+            "x86Unsupported",
+            "SRModelDenyListed",
+            "RRModelDenyListed",
+            "FGMultiFrameCountUnsupported",
+            "FGUIRModelDriverUnsupported",
+            "DynamicFGDriverUnsupported",
+            "DynamicFGSLUnsupported",
+            "DLSSPinnedSLVersionUnsupported"
+          ]
+        },
+        "DLSSSupportState": {
+          "type": "integer",
+          "description": "DLSS Overrides support states",
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "tsEnumNames": [
+            "ScanDetectSupported",
+            "NGXDetectSupported",
+            "ScanDetectUnknown",
+            "NGXDetectUnknown"
+          ]
+        },
+        "GraphicsApi": {
+          "type": "integer",
+          "description": "Graphics API",
+          "enum": [
+            -1,
+            1,
+            2,
+            3,
+            8,
+            10,
+            64,
+            128,
+            256
+          ],
+          "tsEnumNames": [
+            "Unknown",
+            "OpenGL",
+            "DX9",
+            "DX10",
+            "DX10_1",
+            "DX11",
+            "OpenCL",
+            "DX12",
+            "Vulkan"
+          ]
+        },
+        "ProfileSetting": {
+          "type": "object",
+          "properties": {
+            "SettingType": {
+              "$ref": "#/definitions/ProfileSettingType"
+            },
+            "enumId": {
+              "type": "integer",
+              "description": "setting enum needs to used in communicating with backend"
+            },
+            "drsEnumId": {
+              "type": "string",
+              "description": "DRS enum id to map this setting to ops setting"
+            },
+            "isSupported": {
+              "type": "boolean",
+              "description": "setting is supported or not"
+            },
+            "hwSupport": {
+              "$ref": "#/definitions/HwSupportType"
+            },
+            "isDynamic": {
+              "type": "boolean",
+              "description": "setting possible values are dynamic or not"
+            }
+          }
+        },
+        "TextureFilteringTrilinearValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_TRILINEAR_OPT_ON",
+            "NVCPLAPI_VALUE_TRILINEAR_OPT_OFF"
+          ],
+          "description": "setting currentValue"
+        },
+        "TextureFilteringTrilinearData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "CudaGpusData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "CudaGpuOrderingData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "VerticalSyncValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_VERTICAL_SYNC_APPCONTROLLED",
+            "NVCPLAPI_VALUE_VERTICAL_SYNC_FORCEOFF",
+            "NVCPLAPI_VALUE_VERTICAL_SYNC_FORCEON",
+            "NVCPLAPI_VALUE_VERTICAL_SYNC_FORCEON_INTERVAL2",
+            "NVCPLAPI_VALUE_VERTICAL_SYNC_AUTO",
+            "NVCPLAPI_VALUE_VERTICAL_SYNC_AUTO_INTERVAL2",
+            "NVCPLAPI_VALUE_VERTICAL_SYNC_SMOOTH",
+            "NVCPLAPI_VALUE_VERTICAL_SYNC_VRR_ENABLE",
+            "NVCPLAPI_VALUE_VERTICAL_SYNC_VRR_NONE",
+            "NVCPLAPI_VALUE_VERTICAL_SYNC_VIRTUAL"
+          ],
+          "description": "setting currentValue"
+        },
+        "VerticalSyncData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "TexturefilteringAnisotropicFilterOptData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "TexturefilteringAnisotropicSampleOptData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "TripleBufferingData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "MultiFrameSampleAAData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "AntialiasingFXAAData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "AntialiasingGammaCorrectionData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "GpuScalingData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "ThreadedOptimizationValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_OGL_THREADING_OPTIMIZATION_AUTO",
+            "NVCPLAPI_VALUE_OGL_THREADING_OPTIMIZATION_ON",
+            "NVCPLAPI_VALUE_OGL_THREADING_OPTIMIZATION_OFF"
+          ],
+          "description": "setting currentValue"
+        },
+        "ThreadedOptimizationData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "EnableOverlayValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_OGL_OVERLAYSUPPORT_OFF",
+            "NVCPLAPI_VALUE_OGL_OVERLAYSUPPORT_ON"
+          ],
+          "description": "setting currentValue"
+        },
+        "EnableOverlayData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "ExportedpixeltypesValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_OGL_OVERLAY_PIXEL_NONE",
+            "NVCPLAPI_VALUE_OGL_OVERLAY_PIXEL_CI",
+            "NVCPLAPI_VALUE_OGL_OVERLAY_PIXEL_RGBA",
+            "NVCPLAPI_VALUE_OGL_OVERLAY_PIXEL_CI_AND_RGBA"
+          ],
+          "description": "setting currentValue"
+        },
+        "ExportedpixeltypesData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "ShaderCacheValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "tsEnumNames": [
+            "NVAPPAPI_VALUE_SHADER_CACHE_SIZE_DISABLED",
+            "NVAPPAPI_VALUE_SHADER_CACHE_SIZE_128",
+            "NVAPPAPI_VALUE_SHADER_CACHE_SIZE_256",
+            "NVAPPAPI_VALUE_SHADER_CACHE_SIZE_512",
+            "NVAPPAPI_VALUE_SHADER_CACHE_SIZE_1GB",
+            "NVAPPAPI_VALUE_SHADER_CACHE_SIZE_5GB",
+            "NVAPPAPI_VALUE_SHADER_CACHE_SIZE_10GB",
+            "NVAPPAPI_VALUE_SHADER_CACHE_SIZE_100GB",
+            "NVAPPAPI_VALUE_SHADER_CACHE_SIZE_Unlimited",
+            "NVAPPAPI_VALUE_SHADER_CACHE_SIZE_DEFAULT"
+          ],
+          "description": "setting currentValue"
+        },
+        "ShaderCacheData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "PreCompileShaderValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "tsEnumNames": [
+            "NVAPPAPI_VALUE_PRE_COMPILE_SHADER_OFF",
+            "NVAPPAPI_VALUE_PRE_COMPILE_SHADER_SLOW",
+            "NVAPPAPI_VALUE_PRE_COMPILE_SHADER_MEDIUM",
+            "NVAPPAPI_VALUE_PRE_COMPILE_SHADER_FAST"
+          ],
+          "description": "setting currentValue"
+        },
+        "PreCompileShaderData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "VirtualRealityPreRenderedFramesValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_MAX_VIRTUAL_REALITY_PRE_RENDERED_FRAMES_NONE",
+            "NVCPLAPI_VALUE_MAX_VIRTUAL_REALITY_PRE_RENDERED_FRAMES_ONE",
+            "NVCPLAPI_VALUE_MAX_VIRTUAL_REALITY_PRE_RENDERED_FRAMES_TWO",
+            "NVCPLAPI_VALUE_MAX_VIRTUAL_REALITY_PRE_RENDERED_FRAMES_THREE",
+            "NVCPLAPI_VALUE_MAX_VIRTUAL_REALITY_PRE_RENDERED_FRAMES_FOUR"
+          ],
+          "description": "setting currentValue"
+        },
+        "VirtualRealityPreRenderedFramesData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "PreferredRefreshRateValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_PREFERRED_REFRATE_APP_CONTROL",
+            "NVCPLAPI_VALUE_PREFERRED_REFRATE_OVERRIDE"
+          ],
+          "description": "setting currentValue"
+        },
+        "PreferredRefreshRateData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "PowerManagementModeValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_POWER_MANAGEMENT_MODE_ADAPTIVE",
+            "NVCPLAPI_VALUE_POWER_MANAGEMENT_MODE_MAX",
+            "NVCPLAPI_VALUE_POWER_MANAGEMENT_MODE_DRIVER_CONTROLLED",
+            "NVCPLAPI_VALUE_POWER_MANAGEMENT_MODE_PREFER_CONSISTENT_PERFORMANCE",
+            "NVCPLAPI_VALUE_POWER_MANAGEMENT_MODE_OPTIMAL_POWER"
+          ],
+          "description": "setting currentValue"
+        },
+        "PowerManagementModeData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "OpenGlVulkanPresentMethodValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_OGL_VULKAN_PRESENT_METHOD_PREFER_DISABLED",
+            "NVCPLAPI_VALUE_OGL_VULKAN_PRESENT_METHOD_PREFER_ENABLED",
+            "NVCPLAPI_VALUE_OGL_VULKAN_PRESENT_METHOD_AUTO"
+          ],
+          "description": "setting currentValue"
+        },
+        "OpenGlVulkanPresentMethodData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "CudaSysmemFallbackPolicyValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_CUDA_SYSMEM_FALLBACK_POLICY_DEFAULT_VAL",
+            "NVCPLAPI_VALUE_CUDA_SYSMEM_FALLBACK_POLICY_DISALLOW_SYSMEM_FALLBACK_VAL",
+            "NVCPLAPI_VALUE_CUDA_SYSMEM_FALLBACK_POLICY_ALLOW_SYSMEM_FALLBACK_VAL"
+          ],
+          "description": "setting currentValue"
+        },
+        "CudaSysmemFallbackPolicyData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "ResizableBarValue": {
+          "type": "integer",
+          "enum": [
+            1,
+            0,
+            2
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_RESIZABLE_BAR_AUTO",
+            "NVCPLAPI_VALUE_RESIZABLE_BAR_FORCE_DISABLE",
+            "NVCPLAPI_VALUE_RESIZABLE_BAR_FORCE_ENABLE"
+          ],
+          "description": "setting currentValue"
+        },
+        "ResizableBarData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "OpenGlGdiCompatibilityValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_OGL_GDI_COMPATIBILITY_PREFER_DISABLED",
+            "NVCPLAPI_VALUE_OGL_GDI_COMPATIBILITY_PREFER_ENABLED",
+            "NVCPLAPI_VALUE_OGL_GDI_COMPATIBILITY_AUTO"
+          ],
+          "description": "setting currentValue"
+        },
+        "OpenGlGdiCompatibilityData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "AnisotropicFilteringValue": {
+          "type": "integer",
+          "enum": [
+            1048576,
+            1,
+            2,
+            4,
+            8,
+            16
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_ANISOTROPIC_APP_CONTROLLED",
+            "NVCPLAPI_VALUE_ANISOTROPIC_OFF",
+            "NVCPLAPI_VALUE_ANISOTROPIC_2X",
+            "NVCPLAPI_VALUE_ANISOTROPIC_4X",
+            "NVCPLAPI_VALUE_ANISOTROPIC_8X",
+            "NVCPLAPI_VALUE_ANISOTROPIC_16X"
+          ],
+          "description": "setting currentValue"
+        },
+        "AnisotropicFilteringData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "TextureFilteringNegativeMethodValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_TEXTURE_FILTERING_LOD_NO_ALLOW",
+            "NVCPLAPI_VALUE_TEXTURE_FILTERING_LOD_NO_CLAMP"
+          ],
+          "description": "setting currentValue"
+        },
+        "TextureFilteringNegativeMethodData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "TextureFilteringQualityValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_D3D_PERFORMANCE_HIQUAL",
+            "NVCPLAPI_VALUE_D3D_PERFORMANCE_QUAL",
+            "NVCPLAPI_VALUE_D3D_PERFORMANCE_PERF",
+            "NVCPLAPI_VALUE_D3D_PERFORMANCE_HIPERF"
+          ],
+          "description": "setting currentValue"
+        },
+        "TextureFilteringQualityData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "OpenGLRenderingGPUData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "ImageSharpeningToggleValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_IMAGE_SHARPENING_TOGGLE_DISABLED",
+            "NVCPLAPI_VALUE_IMAGE_SHARPENING_TOGGLE_ENABLED"
+          ],
+          "description": "setting currentValue"
+        },
+        "ImageSharpeningToggleData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "ImageSharpeningAllowValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            15
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_SHARPENING_ALLOW_DISABLED",
+            "NVCPLAPI_VALUE_SHARPENING_ALLOW_ENABLED"
+          ],
+          "description": "setting currentValue"
+        },
+        "ImageSharpeningAllowData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "ImageSharpeningNoiseGrainData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "ImageSharpeningData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "MaxFrameRateData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "MaxFrameRateFPSData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "BackgroundAppMaxFrameRateData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "BackgroundAppMaxFrameRateFPSData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "WhisperModeProgramValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_WHISPER_MODE_FPS_OFF",
+            "NVCPLAPI_VALUE_WHISPER_MODE_FPS_ON"
+          ],
+          "description": "setting currentValue"
+        },
+        "WhisperModeProgramData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "SilkSmoothnessValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_SILK_SMOOTHNESS_VALUE_LOW",
+            "NVCPLAPI_VALUE_SILK_SMOOTHNESS_VALUE_MEDIUM",
+            "NVCPLAPI_VALUE_SILK_SMOOTHNESS_VALUE_HIGH",
+            "NVCPLAPI_VALUE_SILK_SMOOTHNESS_VALUE_ULTRA",
+            "NVCPLAPI_VALUE_SILK_SMOOTHNESS_VALUE_OFF"
+          ],
+          "description": "setting currentValue"
+        },
+        "SilkSmoothnessData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "LowLatencyModeValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_LATENCY_MODE_BEST_PERFORMANCE",
+            "NVCPLAPI_VALUE_LATENCY_MODE_LOW_LATENCY",
+            "NVCPLAPI_VALUE_LATENCY_MODE_LOWEST_LATENCY"
+          ],
+          "description": "setting currentValue"
+        },
+        "LowLatencyModeData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "VirtualRealityVrssValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_VR_AUTOVRS_OFF",
+            "NVCPLAPI_VALUE_VR_AUTOVRS_FORCED",
+            "NVCPLAPI_VALUE_VR_AUTOVRS_ADAPTIVE"
+          ],
+          "description": "setting currentValue"
+        },
+        "VirtualRealityVrssData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "MaxqDynamicBoostValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_AUTOFL_DB_OFF",
+            "NVCPLAPI_VALUE_AUTOFL_DB_ON"
+          ],
+          "description": "setting currentValue"
+        },
+        "MaxqDynamicBoostData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "AutoDisplaySwitchingValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_AUTO_DISPLAYMUX_INDICATOR_OFF",
+            "NVCPLAPI_VALUE_AUTO_DISPLAYMUX_INDICATOR_ON"
+          ],
+          "description": "setting currentValue"
+        },
+        "AutoDisplaySwitchingData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "WhisperModeGlobalValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_WHISPER_MODE_ALLOW_DISABLED",
+            "NVCPLAPI_VALUE_WHISPER_MODE_ALLOW_ENABLED"
+          ],
+          "description": "setting currentValue"
+        },
+        "WhisperModeGlobalData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "MonitorTechnologyValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_MT_GSYNC_ON",
+            "NVCPLAPI_VALUE_MT_GSYNC_FORCE_OFF",
+            "NVCPLAPI_VALUE_MT_VRR_OFF",
+            "NVCPLAPI_VALUE_MT_ULMB_ON",
+            "NVCPLAPI_VALUE_MT_FIXED_REFRESH"
+          ],
+          "description": "setting currentValue"
+        },
+        "MonitorTechnologyData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "PowerManagementPanelValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_POWER_MANAGEMENT_PANEL_OFF",
+            "NVCPLAPI_VALUE_POWER_MANAGEMENT_PANEL_SELF_REFRESH_MODE"
+          ],
+          "description": "setting currentValue"
+        },
+        "PowerManagementPanelData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "StereoEnableValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_ENABLE_STEREO_OFF",
+            "NVCPLAPI_VALUE_ENABLE_STEREO_ON"
+          ],
+          "description": "setting currentValue"
+        },
+        "StereoEnableData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "StereoDisplayModeValue": {
+          "type": "integer",
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "tsEnumNames": [
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_MODE_DIN",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_MODE_DIN_NV_IR",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_MODE_DP_INBAND",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_GENERIC",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_GENERIC_NV_IR",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_DDC_GLASSES",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_NV_CLONE",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_NV_CLONE_DLP",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_BLUELINE",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_VERTICAL_INTERLACE",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_COLOR_INTERLEAVE",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_HORIZONTAL_INTERLACE",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_SUBFIELD",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_SIDEFIELD",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_SEEFRONT",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_3D_DLP",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_3D_DLP_NV_IR",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_3D_DLP_INV",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_3D_DLP_INV_NV_IR",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_TRIDELITY_SL_SV",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_TRIDELITY_MV",
+            "NVAPPAPI_VALUE_STEREO_DISPLAY_PLANAR_MIRROR"
+          ],
+          "description": "setting currentValue"
+        },
+        "StereoDisplayModeData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "StereoSwapEyeValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_ENABLE_OGL_STEREO_SWAP_EYES_OFF",
+            "NVCPLAPI_VALUE_ENABLE_OGL_STEREO_SWAP_EYES_ON"
+          ],
+          "description": "setting currentValue"
+        },
+        "StereoSwapEyeData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "StereoSwapModeValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_STEREO_SWAP_APPLICATION_CONTROL",
+            "NVCPLAPI_VALUE_STEREO_SWAP_PER_EYE",
+            "NVCPLAPI_VALUE_STEREO_SWAP_PER_EYE_PAIR"
+          ],
+          "description": "setting currentValue"
+        },
+        "StereoSwapModeData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "AntialiasingModeValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_AA_APPCONTROL_MODE_OFF",
+            "NVCPLAPI_VALUE_AA_APPCONTROL_MODE_ON",
+            "NVCPLAPI_VALUE_AA_APPCONTROL_MODE_ENHANCE",
+            "NVCPLAPI_VALUE_AA_APPCONTROL_MODE_FORCE_OFF"
+          ],
+          "description": "setting currentValue"
+        },
+        "AntialiasingModeData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "SLIMultiGPURenderingModeValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            4,
+            3,
+            61443
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_SLI_MGPU_AUTORENDER",
+            "NVCPLAPI_VALUE_SLI_MGPU_FORCE_SINGLE",
+            "NVCPLAPI_VALUE_SLI_MGPU_FORCE_2_AFR",
+            "NVCPLAPI_VALUE_SLI_MGPU_FORCE_2_AFR2"
+          ],
+          "description": "setting currentValue"
+        },
+        "SLIMultiGPURenderingModeData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "DeepColorFor3DApplicationsValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_OGL_DEEP_COLOR_3D_DISABLE",
+            "NVCPLAPI_VALUE_OGL_DEEP_COLOR_3D_ENABLE"
+          ],
+          "description": "setting currentValue"
+        },
+        "DeepColorFor3DApplicationsData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "AntialiasingSettingValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            1048576,
+            14,
+            16,
+            24,
+            25,
+            26,
+            41,
+            42,
+            43
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_ANTI_ALIASING_METHOD_NONE",
+            "NVCPLAPI_VALUE_ANTI_ALIASING_METHOD_APP_CONTROLLED",
+            "NVCPLAPI_VALUE_ANTI_ALIASING_METHOD_MULTISAMPLE_2X_DIAGONAL",
+            "NVCPLAPI_VALUE_ANTI_ALIASING_METHOD_MULTISAMPLE_4X",
+            "NVCPLAPI_VALUE_ANTI_ALIASING_METHOD_MIXEDSAMPLE_8SX",
+            "NVCPLAPI_VALUE_ANTI_ALIASING_METHOD_MULTISAMPLE_8X",
+            "NVCPLAPI_VALUE_ANTI_ALIASING_METHOD_MIXEDSAMPLE_16X",
+            "NVCPLAPI_VALUE_ANTI_ALIASING_METHOD_MIXEDSAMPLE_32X",
+            "NVCPLAPI_VALUE_ANTI_ALIASING_METHOD_MIXEDSAMPLE_64X",
+            "NVCPLAPI_VALUE_ANTI_ALIASING_METHOD_MIXEDSAMPLE_128X"
+          ],
+          "description": "setting currentValue"
+        },
+        "AntialiasingSettingData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "AntialiasingTransparencyValue": {
+          "type": "integer",
+          "enum": [
+            0,
+            3,
+            5,
+            1,
+            2,
+            4,
+            8
+          ],
+          "tsEnumNames": [
+            "NVCPLAPI_VALUE_TRANSPARENCY_ANTI_ALIASING_OFF",
+            "NVCPLAPI_VALUE_TRANSPARENCY_ANTI_ALIASING_MULTI_SAMPLING",
+            "NVCPLAPI_VALUE_TRANSPARENCY_ANTI_ALIASING_SUPER_SAMPLING",
+            "NVCPLAPI_VALUE_TRANSPARENCY_ANTI_ALIASING_1X",
+            "NVCPLAPI_VALUE_TRANSPARENCY_ANTI_ALIASING_2X",
+            "NVCPLAPI_VALUE_TRANSPARENCY_ANTI_ALIASING_4X",
+            "NVCPLAPI_VALUE_TRANSPARENCY_ANTI_ALIASING_8X"
+          ],
+          "description": "setting currentValue"
+        },
+        "AntialiasingTransparencyData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "BatteryBoostVersionEnum": {
+          "type": "integer",
+          "description": "BatteryBoost Version",
+          "enum": [
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "V1",
+            "V2"
+          ]
+        },
+        "WhisperModeVersionEnum": {
+          "type": "integer",
+          "description": "WhisperMode Version",
+          "enum": [
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "V1",
+            "V2"
+          ]
+        },
+        "BatteryBoostValue": {
+          "type": "object",
+          "description": "BatteryBoost Value",
+          "properties": {
+            "version": {
+              "$ref": "#/definitions/BatteryBoostVersionEnum"
+            },
+            "enabled": {
+              "type": "boolean"
+            },
+            "frameRate": {
+              "type": "integer",
+              "description": "Frame rate - V1: Frame rate limit, V2: NA"
+            }
+          }
+        },
+        "WhisperModeValue": {
+          "type": "object",
+          "description": "WhisperMode Value",
+          "properties": {
+            "version": {
+              "$ref": "#/definitions/WhisperModeVersionEnum"
+            },
+            "enabled": {
+              "type": "boolean"
+            },
+            "frameRate": {
+              "type": "integer",
+              "description": "Frame rate - V1: Frame rate limit, V2: Minimum frame rate."
+            },
+            "fanVolume": {
+              "type": "integer",
+              "description": "Fan volume - V1: enum, V2: NA",
+              "enum": [
+                1,
+                2,
+                3
+              ],
+              "tsEnumNames": [
+                "QUIETER",
+                "QUIET",
+                "BALANCED"
+              ]
+            }
+          }
+        },
+        "PerformanceModeOverrideEnum": {
+          "type": "integer",
+          "description": "DLSS Performance Mode Overrides",
+          "enum": [
+            3,
+            0,
+            1,
+            2,
+            5,
+            4,
+            6
+          ],
+          "tsEnumNames": [
+            "Default",
+            "Performance",
+            "Balanced",
+            "Quality",
+            "UltraPerformance",
+            "Dlaa",
+            "Custom"
+          ]
+        },
+        "ModelOverrideEnum": {
+          "type": "integer",
+          "description": "DLSS Model Overrides. Latest value provided by NVAPI",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16777215
+          ],
+          "tsEnumNames": [
+            "Default",
+            "PresetA",
+            "PresetB",
+            "PresetC",
+            "PresetD",
+            "PresetE",
+            "PresetF",
+            "PresetJ",
+            "PresetK",
+            "PresetL",
+            "PresetM",
+            "PresetN",
+            "PresetO",
+            "Latest"
+          ]
+        },
+        "FGUIRModelOverrideEnum": {
+          "type": "integer",
+          "description": "DLSS Model Overrides for FG UIR Feature",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            16777214
+          ],
+          "tsEnumNames": [
+            "OFF",
+            "PresetA",
+            "PresetB",
+            "PresetC",
+            "Latest"
+          ]
+        },
+        "MultiFrameEnum": {
+          "type": "integer",
+          "description": "DLSS MultiFrame Count",
+          "enum": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "tsEnumNames": [
+            "OFF",
+            "VALUE_3X",
+            "VALUE_4X",
+            "VALUE_5X",
+            "VALUE_6X",
+            "VALUE_7X",
+            "VALUE_8X"
+          ]
+        },
+        "DynamicFGModeEnum": {
+          "type": "integer",
+          "description": "DLSS Dynamic FG Mode",
+          "enum": [
+            0,
+            2,
+            4
+          ],
+          "tsEnumNames": [
+            "OFF",
+            "FIXED",
+            "DYNAMIC"
+          ]
+        },
+        "DLSSModelPresetProfileTypeEnum": {
+          "type": "integer",
+          "description": "DLSS Model Preset Profile Type",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "Default",
+            "Latest",
+            "Custom"
+          ]
+        },
+        "ExtendedEnabledValue": {
+          "type": "object",
+          "description": "Enabled value with drs enum id",
+          "properties": {
+            "drsEnumId": {
+              "type": "string",
+              "description": "DRS enum id to map this setting to ops setting"
+            },
+            "value": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "drsEnumId",
+            "value"
+          ]
+        },
+        "ExtendedPerformanceModeOverride": {
+          "type": "object",
+          "description": "Performance Mode Override with drs enum id",
+          "properties": {
+            "drsEnumId": {
+              "type": "string",
+              "description": "DRS enum id to map this setting to ops setting"
+            },
+            "value": {
+              "$ref": "#/definitions/PerformanceModeOverrideEnum"
+            }
+          },
+          "required": [
+            "drsEnumId",
+            "value"
+          ]
+        },
+        "ExtendedScalingValue": {
+          "type": "object",
+          "description": "Scaling setting with drs enum id",
+          "properties": {
+            "drsEnumId": {
+              "type": "string",
+              "description": "DRS enum id to map this setting to ops setting"
+            },
+            "value": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "drsEnumId",
+            "value"
+          ]
+        },
+        "ExtendedModelOverride": {
+          "type": "object",
+          "description": "Model override with drs enum id",
+          "properties": {
+            "drsEnumId": {
+              "type": "string",
+              "description": "DRS enum id to map this setting to ops setting"
+            },
+            "value": {
+              "$ref": "#/definitions/ModelOverrideEnum"
+            }
+          },
+          "required": [
+            "drsEnumId",
+            "value"
+          ]
+        },
+        "ExtendedFGUIRModelOverride": {
+          "type": "object",
+          "description": "FG UIR model override with drs enum id",
+          "properties": {
+            "drsEnumId": {
+              "type": "string",
+              "description": "DRS enum id to map this setting to ops setting"
+            },
+            "value": {
+              "$ref": "#/definitions/FGUIRModelOverrideEnum"
+            }
+          },
+          "required": [
+            "drsEnumId",
+            "value"
+          ]
+        },
+        "ExtendedMultiFrameCount": {
+          "type": "object",
+          "description": "Multi frame count with drs enum id",
+          "properties": {
+            "drsEnumId": {
+              "type": "string",
+              "description": "DRS enum id to map this setting to ops setting"
+            },
+            "value": {
+              "$ref": "#/definitions/MultiFrameEnum"
+            }
+          },
+          "required": [
+            "drsEnumId",
+            "value"
+          ]
+        },
+        "ExtendedDLSSModelPresetProfileType": {
+          "type": "object",
+          "description": "DLSS Model Preset Profile Type with drs enum id",
+          "properties": {
+            "drsEnumId": {
+              "type": "string",
+              "description": "DRS enum id to map this setting to ops setting"
+            },
+            "value": {
+              "$ref": "#/definitions/DLSSModelPresetProfileTypeEnum"
+            }
+          },
+          "required": [
+            "drsEnumId",
+            "value"
+          ]
+        },
+        "ExtendedDynamicFGMode": {
+          "type": "object",
+          "description": "Dynamic FG Mode with drs enum id",
+          "properties": {
+            "drsEnumId": {
+              "type": "string",
+              "description": "DRS enum id to map this setting to ops setting"
+            },
+            "value": {
+              "$ref": "#/definitions/DynamicFGModeEnum"
+            }
+          },
+          "required": [
+            "drsEnumId",
+            "value"
+          ]
+        },
+        "ExtendedDynamicFGTargetFrameRate": {
+          "type": "object",
+          "description": "Dynamic FG Target Frame Rate with drs enum id",
+          "properties": {
+            "drsEnumId": {
+              "type": "string",
+              "description": "DRS enum id to map this setting to ops setting"
+            },
+            "value": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "drsEnumId",
+            "value"
+          ]
+        },
+        "DLSSSRValue": {
+          "type": "object",
+          "description": "DLSS Super Resolution Overrides Value",
+          "properties": {
+            "enabled": {
+              "$ref": "#/definitions/ExtendedEnabledValue"
+            },
+            "supportState": {
+              "$ref": "#/definitions/DLSSSupportState"
+            },
+            "performanceModeOverride": {
+              "$ref": "#/definitions/ExtendedPerformanceModeOverride"
+            },
+            "scaling": {
+              "$ref": "#/definitions/ExtendedScalingValue"
+            },
+            "modelOverride": {
+              "$ref": "#/definitions/ExtendedModelOverride"
+            },
+            "useGlobal": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "enabled",
+            "supportState",
+            "performanceModeOverride",
+            "scaling",
+            "modelOverride"
+          ]
+        },
+        "DLSSRRValue": {
+          "type": "object",
+          "description": "DLSS Ray reconstuction Overrides Value",
+          "properties": {
+            "enabled": {
+              "$ref": "#/definitions/ExtendedEnabledValue"
+            },
+            "supportState": {
+              "$ref": "#/definitions/DLSSSupportState"
+            },
+            "performanceModeOverride": {
+              "$ref": "#/definitions/ExtendedPerformanceModeOverride"
+            },
+            "scaling": {
+              "$ref": "#/definitions/ExtendedScalingValue"
+            },
+            "modelOverride": {
+              "$ref": "#/definitions/ExtendedModelOverride"
+            },
+            "useGlobal": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "enabled",
+            "supportState",
+            "performanceModeOverride",
+            "scaling",
+            "modelOverride"
+          ]
+        },
+        "DLSSFGValue": {
+          "type": "object",
+          "description": "DLSS Frame Generation Overrides Value",
+          "properties": {
+            "enabled": {
+              "$ref": "#/definitions/ExtendedEnabledValue"
+            },
+            "supportState": {
+              "$ref": "#/definitions/DLSSSupportState"
+            },
+            "multiFrameCount": {
+              "$ref": "#/definitions/ExtendedMultiFrameCount"
+            },
+            "useGlobal": {
+              "type": "boolean"
+            },
+            "modelOverride": {
+              "$ref": "#/definitions/ExtendedFGUIRModelOverride"
+            },
+            "dynamicFGMode": {
+              "$ref": "#/definitions/ExtendedDynamicFGMode"
+            },
+            "dynamicFGTargetFrameRate": {
+              "$ref": "#/definitions/ExtendedDynamicFGTargetFrameRate"
+            },
+            "dynamicFGMultiFrameCount": {
+              "$ref": "#/definitions/ExtendedMultiFrameCount"
+            },
+            "slVersion": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "enabled",
+            "supportState",
+            "multiFrameCount"
+          ]
+        },
+        "FGXValue": {
+          "type": "object",
+          "description": "missing 'useGlobal' means profile value should be used otherwise useGlobal must be always true. useGlobal with false is undefined behavior.",
+          "properties": {
+            "enabled": {
+              "$ref": "#/definitions/ExtendedEnabledValue"
+            },
+            "useGlobal": {
+              "type": "boolean"
+            },
+            "allowedGfxApi": {
+              "type": "array",
+              "description": "Array of supported Graphics API",
+              "items": {
+                "$ref": "#/definitions/GraphicsApi"
+              }
+            }
+          }
+        },
+        "DLSSModelPresetProfileValue": {
+          "type": "object",
+          "description": "DLSS Model Preset Profile Overrides Value",
+          "properties": {
+            "profileType": {
+              "$ref": "#/definitions/ExtendedDLSSModelPresetProfileType"
+            },
+            "useGlobal": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "profileType"
+          ]
+        },
+        "AIDVCValue": {
+          "type": "object",
+          "description": "AIDVC Value.missing 'useGlobal' means useGlobal=false. useGlobal must be always true, useGlobal with false is undefined behavior.",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "intensity": {
+              "type": "integer"
+            },
+            "saturation": {
+              "type": "integer"
+            },
+            "offlineSupported": {
+              "type": "boolean"
+            },
+            "useGlobal": {
+              "type": "boolean"
+            }
+          }
+        },
+        "AIHDRValue": {
+          "type": "object",
+          "description": "AIHDR Value.missing 'useGlobal' means useGlobal=false. useGlobal must be always true, useGlobal with false is undefined behavior.",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "peakBrightness": {
+              "type": "integer"
+            },
+            "peakBrightnessMin": {
+              "type": "integer"
+            },
+            "peakBrightnessMax": {
+              "type": "integer"
+            },
+            "middleGrey": {
+              "type": "integer"
+            },
+            "saturation": {
+              "type": "integer"
+            },
+            "contrast": {
+              "type": "integer"
+            },
+            "useGlobal": {
+              "type": "boolean"
+            }
+          }
+        },
+        "ImageScalingResolution": {
+          "type": "object",
+          "description": "NIS2 Resolution",
+          "properties": {
+            "percent": {
+              "type": "integer",
+              "description": "Scaling factor"
+            },
+            "resolution": {
+              "type": "string",
+              "description": "Resolution string"
+            }
+          }
+        },
+        "ImageScalingValue": {
+          "type": "object",
+          "description": "ImageScalingValue value.missing 'useGlobal' means useGlobal=false. useGlobal must be always true, useGlobal with false is undefined behavior.",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "indicatorValue": {
+              "type": "boolean"
+            },
+            "sharpen": {
+              "type": "integer",
+              "description": "Sharpness value"
+            },
+            "hyperSamplingResolutionCreated": {
+              "type": "boolean",
+              "description": "true if hypersmapling resolutions are already created on system"
+            },
+            "selectedResolutionIndex": {
+              "type": "integer"
+            },
+            "resolutions": {
+              "type": "array",
+              "description": "Array of resolution and scaling factor",
+              "items": {
+                "$ref": "#/definitions/ImageScalingResolution"
+              }
+            },
+            "useGlobal": {
+              "type": "boolean"
+            }
+          }
+        },
+        "BatteryBoostData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "WhisperModeData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "ImageScalingData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "PhysXGpu": {
+          "type": "object",
+          "description": "PhysX GPU Name",
+          "properties": {
+            "gpuName": {
+              "type": "string",
+              "description": "PhysX Setting values"
+            },
+            "dedicatedPhysX": {
+              "type": "boolean",
+              "description": "Dedicated PhysX GPU value"
+            }
+          },
+          "required": [
+            "gpuName",
+            "dedicatedPhysX"
+          ]
+        },
+        "PhysXValue": {
+          "type": "object",
+          "properties": {
+            "physXGpu": {
+              "type": "array",
+              "description": "Array of physX processor",
+              "items": {
+                "$ref": "#/definitions/PhysXGpu"
+              }
+            },
+            "recommendedGpu": {
+              "type": "string",
+              "description": "Recommended GPU String"
+            },
+            "physXIndicator": {
+              "type": "boolean",
+              "description": "PhysX indicator"
+            }
+          },
+          "required": [
+            "physXGpu"
+          ]
+        },
+        "PhysXData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "DSRFactorInformation": {
+          "type": "object",
+          "description": "DSR Factor Information",
+          "properties": {
+            "factorValue": {
+              "type": "integer",
+              "description": "DSR Factor Value"
+            },
+            "isSelected": {
+              "type": "boolean",
+              "description": "DSR Factor Selected or not"
+            },
+            "isDLDSRFactor": {
+              "type": "boolean",
+              "description": "Is current DL DSR Factor or not"
+            },
+            "resolution": {
+              "type": "string",
+              "description": "Hyper Sample Resolution string"
+            }
+          }
+        },
+        "DSRFactorValue": {
+          "type": "object",
+          "properties": {
+            "smoothness": {
+              "type": "integer",
+              "description": "Smoothness value"
+            },
+            "factorInformation": {
+              "type": "array",
+              "description": "Array of factor information and resolution",
+              "items": {
+                "$ref": "#/definitions/DSRFactorInformation"
+              }
+            }
+          }
+        },
+        "DSRFactorData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "AIDVCData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "AIHDRData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "DLSSSRData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "DLSSRRData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "DLSSFGData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "FGXData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "DLSSModelPresetProfileData": {
+          "type": "object",
+          "properties": {
+            "SettingInfo": {
+              "$ref": "#/definitions/ProfileSetting"
+            }
+          }
+        },
+        "ProfileSettingsInfo": {
+          "type": "object",
+          "properties": {
+            "CudaGpus": {
+              "$ref": "#/definitions/CudaGpusData"
+            },
+            "CudaGpuOrdering": {
+              "$ref": "#/definitions/CudaGpuOrderingData"
+            },
+            "VerticalSync": {
+              "$ref": "#/definitions/VerticalSyncData"
+            },
+            "TextureFilteringTrilinear": {
+              "$ref": "#/definitions/TextureFilteringTrilinearData"
+            },
+            "TexturefilteringAnisotropicFilterOpt": {
+              "$ref": "#/definitions/TexturefilteringAnisotropicFilterOptData"
+            },
+            "TexturefilteringAnisotropicSampleOpt": {
+              "$ref": "#/definitions/TexturefilteringAnisotropicSampleOptData"
+            },
+            "TripleBuffering": {
+              "$ref": "#/definitions/TripleBufferingData"
+            },
+            "MultiFrameSampleAA": {
+              "$ref": "#/definitions/MultiFrameSampleAAData"
+            },
+            "AntialiasingFXAA": {
+              "$ref": "#/definitions/AntialiasingFXAAData"
+            },
+            "AntialiasingGammaCorrection": {
+              "$ref": "#/definitions/AntialiasingGammaCorrectionData"
+            },
+            "GpuScaling": {
+              "$ref": "#/definitions/GpuScalingData"
+            },
+            "ThreadedOptimization": {
+              "$ref": "#/definitions/ThreadedOptimizationData"
+            },
+            "EnableOverlay": {
+              "$ref": "#/definitions/EnableOverlayData"
+            },
+            "Exportedpixeltypes": {
+              "$ref": "#/definitions/ExportedpixeltypesData"
+            },
+            "ShaderCache": {
+              "$ref": "#/definitions/ShaderCacheData"
+            },
+            "PreCompileShader": {
+              "$ref": "#/definitions/PreCompileShaderData"
+            },
+            "VirtualRealityPreRenderedFrames": {
+              "$ref": "#/definitions/VirtualRealityPreRenderedFramesData"
+            },
+            "PreferredRefreshRate": {
+              "$ref": "#/definitions/PreferredRefreshRateData"
+            },
+            "PowerManagementMode": {
+              "$ref": "#/definitions/PowerManagementModeData"
+            },
+            "OpenGlVulkanPresentMethod": {
+              "$ref": "#/definitions/OpenGlVulkanPresentMethodData"
+            },
+            "CudaSysmemFallbackPolicy": {
+              "$ref": "#/definitions/CudaSysmemFallbackPolicyData"
+            },
+            "ResizableBar": {
+              "$ref": "#/definitions/ResizableBarData"
+            },
+            "OpenGlGdiCompatibility": {
+              "$ref": "#/definitions/OpenGlGdiCompatibilityData"
+            },
+            "AnisotropicFiltering": {
+              "$ref": "#/definitions/AnisotropicFilteringData"
+            },
+            "TextureFilteringNegativeMethod": {
+              "$ref": "#/definitions/TextureFilteringNegativeMethodData"
+            },
+            "TextureFilteringQuality": {
+              "$ref": "#/definitions/TextureFilteringQualityData"
+            },
+            "OpenGLRenderingGPU": {
+              "$ref": "#/definitions/OpenGLRenderingGPUData"
+            },
+            "ImageSharpening": {
+              "$ref": "#/definitions/ImageSharpeningData"
+            },
+            "ImageSharpeningToggle": {
+              "$ref": "#/definitions/ImageSharpeningToggleData"
+            },
+            "ImageSharpeningAllow": {
+              "$ref": "#/definitions/ImageSharpeningAllowData"
+            },
+            "ImageSharpeningNoiseGrain": {
+              "$ref": "#/definitions/ImageSharpeningNoiseGrainData"
+            },
+            "MaxFrameRate": {
+              "$ref": "#/definitions/MaxFrameRateData"
+            },
+            "MaxFrameRateFPS": {
+              "$ref": "#/definitions/MaxFrameRateFPSData"
+            },
+            "BackgroundAppMaxFrameRate": {
+              "$ref": "#/definitions/BackgroundAppMaxFrameRateData"
+            },
+            "BackgroundAppMaxFrameRateFPS": {
+              "$ref": "#/definitions/BackgroundAppMaxFrameRateFPSData"
+            },
+            "WhisperModeProgram": {
+              "$ref": "#/definitions/WhisperModeProgramData"
+            },
+            "SilkSmoothness": {
+              "$ref": "#/definitions/SilkSmoothnessData"
+            },
+            "LowLatencyMode": {
+              "$ref": "#/definitions/LowLatencyModeData"
+            },
+            "VirtualRealityVrss": {
+              "$ref": "#/definitions/VirtualRealityVrssData"
+            },
+            "MaxqDynamicBoost": {
+              "$ref": "#/definitions/MaxqDynamicBoostData"
+            },
+            "AutoDisplaySwitching": {
+              "$ref": "#/definitions/AutoDisplaySwitchingData"
+            },
+            "WhisperModeGlobal": {
+              "$ref": "#/definitions/WhisperModeGlobalData"
+            },
+            "MonitorTechnology": {
+              "$ref": "#/definitions/MonitorTechnologyData"
+            },
+            "PowerManagementPanel": {
+              "$ref": "#/definitions/PowerManagementPanelData"
+            },
+            "StereoEnable": {
+              "$ref": "#/definitions/StereoEnableData"
+            },
+            "StereoSwapEye": {
+              "$ref": "#/definitions/StereoSwapEyeData"
+            },
+            "StereoDisplayMode": {
+              "$ref": "#/definitions/StereoDisplayModeData"
+            },
+            "StereoSwapMode": {
+              "$ref": "#/definitions/StereoSwapModeData"
+            },
+            "AntialiasingMode": {
+              "$ref": "#/definitions/AntialiasingModeData"
+            },
+            "SLIMultiGPURenderingMode": {
+              "$ref": "#/definitions/SLIMultiGPURenderingModeData"
+            },
+            "DeepColorFor3DApplications": {
+              "$ref": "#/definitions/DeepColorFor3DApplicationsData"
+            },
+            "AntialiasingSetting": {
+              "$ref": "#/definitions/AntialiasingSettingData"
+            },
+            "AntialiasingTransparency": {
+              "$ref": "#/definitions/AntialiasingTransparencyData"
+            },
+            "BatteryBoost": {
+              "$ref": "#/definitions/BatteryBoostData"
+            },
+            "WhisperMode": {
+              "$ref": "#/definitions/WhisperModeData"
+            },
+            "ImageScaling": {
+              "$ref": "#/definitions/ImageScalingData"
+            },
+            "DSRFactor": {
+              "$ref": "#/definitions/DSRFactorData"
+            },
+            "PhysX": {
+              "$ref": "#/definitions/PhysXData"
+            },
+            "AIDVC": {
+              "$ref": "#/definitions/AIDVCData"
+            },
+            "AIHDR": {
+              "$ref": "#/definitions/AIHDRData"
+            },
+            "DLSSSR": {
+              "$ref": "#/definitions/DLSSSRData"
+            },
+            "DLSSRR": {
+              "$ref": "#/definitions/DLSSRRData"
+            },
+            "DLSSFG": {
+              "$ref": "#/definitions/DLSSFGData"
+            },
+            "DLSSMF": {
+              "$ref": "#/definitions/DLSSFGData"
+            },
+            "FGX": {
+              "$ref": "#/definitions/FGXData"
+            },
+            "DLSSModelPresetProfile": {
+              "$ref": "#/definitions/DLSSModelPresetProfileData"
+            }
+          }
+        },
+        "GetProfileSettingsInfo": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "$ref": "#/definitions/ProfileSettingsInfo"
+          },
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "clearCache": {
+                "type": "boolean",
+                "description": "clears the plugin cache for support state refresh"
+              }
+            }
+          }
+        },
+        "ProfileSettingValue": {
+          "type": "object",
+          "properties": {
+            "SettingType": {
+              "$ref": "#/definitions/ProfileSettingType"
+            },
+            "IntegerValue": {
+              "type": "integer"
+            },
+            "StringValue": {
+              "type": "string"
+            },
+            "JsonStringValue": {
+              "type": "string",
+              "description": "Stringified Json"
+            },
+            "IsUserModified": {
+              "type": "integer"
+            },
+            "IsDisabled": {
+              "type": "boolean"
+            },
+            "errorCode": {
+              "type": "integer",
+              "description": "Error code when isDisabled is true."
+            },
+            "constraints": {
+              "type": "array",
+              "description": "error constraint for hard and soft requirements",
+              "items": {
+                "$ref": "#/definitions/ConstraintType"
+              }
+            }
+          }
+        },
+        "ProfileSettingValueId": {
+          "type": "object",
+          "properties": {
+            "SettingId": {
+              "type": "integer"
+            },
+            "SettingType": {
+              "$ref": "#/definitions/ProfileSettingType"
+            },
+            "IntegerValue": {
+              "type": "integer"
+            },
+            "StringValue": {
+              "type": "string"
+            }
+          }
+        },
+        "SettingInfo": {
+          "type": "object",
+          "properties": {
+            "SettingEnum": {
+              "type": "integer"
+            },
+            "SettingValue": {
+              "$ref": "#/definitions/ProfileSettingValue"
+            },
+            "SettingDefaultValue": {
+              "$ref": "#/definitions/ProfileSettingValue"
+            }
+          }
+        },
+        "GetProfileInfo": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns all settings information in Profile.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ProfileName": {
+                "type": "string",
+                "minLength": 1
+              },
+              "ApplicationId": {
+                "type": "integer"
+              },
+              "CmsId": {
+                "type": "integer"
+              },
+              "refreshSupportInfo": {
+                "type": "boolean",
+                "description": "whether we need to requery the supportinfo"
+              }
+            }
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "profileSettingInfo": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/SettingInfo"
+                }
+              }
+            }
+          }
+        },
+        "GetProfileSettingValue": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns profile setting current value.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ProfileName": {
+                "type": "string",
+                "minLength": 1
+              },
+              "ProfileSettingEnum": {
+                "type": "integer"
+              },
+              "ApplicationId": {
+                "type": "integer"
+              },
+              "CmsId": {
+                "type": "integer"
+              }
+            }
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "SettingValue": {
+                "$ref": "#/definitions/ProfileSettingValue"
+              }
+            }
+          }
+        },
+        "GetProfileSettingDefaultValue": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns current profile setting default value.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ProfileName": {
+                "type": "string",
+                "minLength": 1
+              },
+              "ProfileSettingEnum": {
+                "type": "integer"
+              },
+              "ApplicationId": {
+                "type": "integer"
+              },
+              "CmsId": {
+                "type": "integer"
+              }
+            }
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "SettingDefaultValue": {
+                "$ref": "#/definitions/ProfileSettingValue"
+              }
+            }
+          }
+        },
+        "GetProfileNameFromExe": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns profile name from exe name.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ExeName": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "ProfileName": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "SetProfileSettingValue": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns current profile setting value.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ProfileName": {
+                "type": "string",
+                "minLength": 1
+              },
+              "ProfileSettingEnum": {
+                "type": "integer"
+              },
+              "ApplicationId": {
+                "type": "integer"
+              },
+              "CmsId": {
+                "type": "integer"
+              },
+              "SettingValue": {
+                "$ref": "#/definitions/ProfileSettingValue"
+              }
+            }
+          }
+        },
+        "ApplyProfileSettings": {
+          "type": "object",
+          "isCommand": true,
+          "description": "apply pending changes to the NVDRS DB settings"
+        },
+        "GetProfileJsonStringSettingPossibleValues": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns possible values for a given profile in Json string format",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ProfileSettingEnum": {
+                "type": "integer"
+              },
+              "ApplicationId": {
+                "type": "integer"
+              },
+              "CmsId": {
+                "type": "integer"
+              }
+            }
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "values": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "GetProfileStringSettingPossibleValues": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns possible values for a given profile string setting",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ProfileSettingEnum": {
+                "type": "integer"
+              }
+            }
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "values": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "GetProfileScalarSettingPossibleValues": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns possible values for a given profile string setting",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ProfileSettingEnum": {
+                "type": "integer"
+              }
+            }
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "values": {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        },
+        "RestoreDefaultForProfile": {
+          "type": "object",
+          "isCommand": true,
+          "description": "restores default values for a given profile",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ProfileName": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "RestoreDefaultForAllProfiles": {
+          "type": "object",
+          "isCommand": true,
+          "description": "restores default values for all DRS profiles"
+        },
+        "ClearShaderCache": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Clears shader cache"
+        },
+        "RunPreCompileShaderTool": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Run osc tool immmediately for shader compilation"
+        },
+        "StopPreCompileShaderTool": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Stop osc tool immmediately for shader compilation"
+        },
+        "GetShaderCompilerTaskLastRunTime": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Get the last run time of NVIDIA Shader Compiler scheduled task",
+          "return": {
+            "type": "object",
+            "properties": {
+              "lastRunTime": {
+                "type": "string",
+                "description": "Last run time in YYYY-MM-DD HH:MM:SS format, or 'Never' if task hasn't run, or empty string on error"
+              }
+            }
+          }
+        },
+        "GetProgramProfileNames": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns all DRS program profiles",
+          "return": {
+            "type": "object",
+            "properties": {
+              "profileNames": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "DrsApplication": {
+          "type": "object",
+          "properties": {
+            "launcherName": {
+              "type": "string",
+              "description": "launcher name of application"
+            },
+            "friendlyName": {
+              "type": "string",
+              "description": "friendly name of application"
+            },
+            "appName": {
+              "type": "string",
+              "description": "name of application"
+            },
+            "findFileName": {
+              "type": "string",
+              "description": "find file name of application"
+            },
+            "isMetro": {
+              "type": "boolean",
+              "description": "true for metro application"
+            }
+          }
+        },
+        "ProfileAndApps": {
+          "type": "object",
+          "properties": {
+            "profileName": {
+              "type": "string",
+              "description": "name of the profile"
+            },
+            "Apps": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/DrsApplication"
+              },
+              "description": "Array of applications, associated with a given profile"
+            }
+          }
+        },
+        "GetProfilesAndApplicationsInfo": {
+          "type": "object",
+          "isCommand": true,
+          "description": "returns per-profile list of all DRS applications",
+          "return": {
+            "type": "object",
+            "properties": {
+              "profilesAndApps": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/ProfileAndApps"
+                }
+              }
+            }
+          }
+        },
+        "GetGlobalProfileNames": {
+          "type": "object",
+          "isCommand": true,
+          "description": "returns list of all global profiles",
+          "return": {
+            "type": "object",
+            "properties": {
+              "profileNames": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "CreateNewProfile": {
+          "type": "object",
+          "isCommand": true,
+          "description": "creates new program profiles, associates given applications and sets given settings",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ProfileName": {
+                "type": "string",
+                "minLength": 1
+              },
+              "Applications": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "DeleteProfile": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Deletes manually added profile",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ProfileName": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "GetDynamicBoost": {
+          "type": "object",
+          "isCommand": true,
+          "description": "returns Dynamic boost related information",
+          "return": {
+            "type": "object",
+            "properties": {
+              "isDynamicBoost": {
+                "type": "boolean"
+              }
+            }
+          },
+          "required": [
+            "isDynamicBoost"
+          ]
+        },
+        "GpuActivityTrayIconState": {
+          "type": "object",
+          "properties": {
+            "isGpuActivityTrayIconSupported": {
+              "type": "boolean",
+              "description": "Indicates if toggle is visible to user"
+            },
+            "isToggleSupported": {
+              "type": "boolean",
+              "description": "When false, user is not allowed to toggle"
+            },
+            "isToggleOn": {
+              "type": "boolean",
+              "description": "Indicates if toggle state is on"
+            }
+          },
+          "required": [
+            "isGpuActivityTrayIconSupported",
+            "isToggleSupported",
+            "isToggleOn"
+          ]
+        },
+        "GetGpuActivityTrayIconState": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "$ref": "#/definitions/GpuActivityTrayIconState"
+          }
+        },
+        "ToggleGpuActivityTrayIcon": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Toggle GpuActivity (GPU Activity) tray icon. If 'checked' not provided, flips current state."
+        },
+        "PrecompilationStatus": {
+          "type": "integer",
+          "description": "Precompilation status enum",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "PreCompilationInProgress",
+            "PreCompilationComplete"
+          ]
+        },
+        "CheckPrecompilationStatus": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Starts monitoring NvOSC.exe process and sends notifications about precompilation status"
+        },
+        "PrecompilationStatusNotification": {
+          "type": "object",
+          "isCommand": true,
+          "persistent": true,
+          "description": "Notification sent when shader precompilation status changes",
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "$ref": "#/definitions/PrecompilationStatus"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

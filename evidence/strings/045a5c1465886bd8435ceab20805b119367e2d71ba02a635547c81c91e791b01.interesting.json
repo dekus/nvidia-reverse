@@ -1,0 +1,167 @@
+[
+  {
+    "offset": "0xc2580",
+    "encoding": "ascii",
+    "text": "nvapi_Direct_GetMethod"
+  },
+  {
+    "offset": "0xc2598",
+    "encoding": "ascii",
+    "text": "nvapi_QueryInterface"
+  },
+  {
+    "offset": "0xd3a18",
+    "encoding": "ascii",
+    "text": "Global\\FVSDKSharedMemory"
+  },
+  {
+    "offset": "0xd59c8",
+    "encoding": "ascii",
+    "text": "\\\\.\\root\\cimv2"
+  },
+  {
+    "offset": "0xd8778",
+    "encoding": "ascii",
+    "text": "NvMessageBus.dll"
+  },
+  {
+    "offset": "0xdc388",
+    "encoding": "ascii",
+    "text": "ctlPowerTelemetryGet"
+  },
+  {
+    "offset": "0xf3f72",
+    "encoding": "ascii",
+    "text": "ctlPowerTelemetryGet"
+  },
+  {
+    "offset": "0xf4c34",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0xfb6a0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@UBatteryData_Info_Struct@FVSDK_EVENTS@@@std@@"
+  },
+  {
+    "offset": "0xfb700",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@UGLAMRect_Info_Struct@FVSDK_EVENTS@@@std@@"
+  },
+  {
+    "offset": "0xfb760",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@UGLAMMouse_Info_2_Struct_Part5@FVSDK_EVENTS@@@std@@"
+  },
+  {
+    "offset": "0xfb7c0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@UGPUData_Info_Struct@FVSDK_EVENTS@@@std@@"
+  },
+  {
+    "offset": "0xfb850",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@UStats2_Info_Struct@FVSDK_EVENTS@@@std@@"
+  },
+  {
+    "offset": "0xfb960",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@UGLAMData_Info_4_Struct@FVSDK_EVENTS@@@std@@"
+  },
+  {
+    "offset": "0xc2500",
+    "encoding": "utf-16le",
+    "text": "NvAPI Direct was not found. Please update your driver."
+  },
+  {
+    "offset": "0xc25e0",
+    "encoding": "utf-16le",
+    "text": "nvapi64.dll"
+  },
+  {
+    "offset": "0xc2850",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0xc2b20",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0xc2b60",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0xd4520",
+    "encoding": "utf-16le",
+    "text": "Setting PresentMon to FvSDK state"
+  },
+  {
+    "offset": "0xd4c70",
+    "encoding": "utf-16le",
+    "text": "Global\\FVSDK_EvtBenchmarkDataReady"
+  },
+  {
+    "offset": "0xd5fe0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0xdb5e0",
+    "encoding": "utf-16le",
+    "text": "Oc::NvapiAdapter::initialize failed!"
+  },
+  {
+    "offset": "0xdb630",
+    "encoding": "utf-16le",
+    "text": "Legacy GPU detected, falling back to NvAPIs"
+  },
+  {
+    "offset": "0xdb690",
+    "encoding": "utf-16le",
+    "text": "Oc::NvapiAdapter::getNumberOfGPUs failed!"
+  },
+  {
+    "offset": "0xdb778",
+    "encoding": "utf-16le",
+    "text": "NvAPI Fans: %d"
+  },
+  {
+    "offset": "0xdb7a0",
+    "encoding": "utf-16le",
+    "text": "takeSample in legacy NvAPI mode"
+  },
+  {
+    "offset": "0xdb828",
+    "encoding": "utf-16le",
+    "text": "NvAPI Fan speed %d: %d"
+  },
+  {
+    "offset": "0xdc668",
+    "encoding": "utf-16le",
+    "text": "NvapiAdapter::getNumFans()"
+  },
+  {
+    "offset": "0xdc6a0",
+    "encoding": "utf-16le",
+    "text": "(status != NVAPI_OK for NvAPI_GPU_ClientFanCoolersGetInfo(), status: %d)"
+  },
+  {
+    "offset": "0xdc738",
+    "encoding": "utf-16le",
+    "text": "Oc::NvapiAdapter::getNumFans"
+  },
+  {
+    "offset": "0xdc808",
+    "encoding": "utf-16le",
+    "text": "Oc::NvapiAdapter::getFanRpm"
+  },
+  {
+    "offset": "0x10685c",
+    "encoding": "utf-16le",
+    "text": "FVSDK/Analytic"
+  }
+]

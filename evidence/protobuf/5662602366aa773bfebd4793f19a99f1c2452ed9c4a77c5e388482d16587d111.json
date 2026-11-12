@@ -1,0 +1,3912 @@
+{
+  "name": "ipc.proto",
+  "package": "AnselIpc",
+  "message_type": [
+    {
+      "name": "IpcVersionRequest"
+    },
+    {
+      "name": "IpcVersionResponse",
+      "field": [
+        {
+          "name": "major",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT32",
+          "default_value": "7"
+        },
+        {
+          "name": "minor",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT32",
+          "default_value": "6"
+        },
+        {
+          "name": "patch",
+          "number": 3,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT32",
+          "default_value": "0"
+        }
+      ]
+    },
+    {
+      "name": "AnselReadyRequest",
+      "field": [
+        {
+          "name": "creationCounter",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT32"
+        }
+      ]
+    },
+    {
+      "name": "AnselReadyResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "AnselStatusReportRequest",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        },
+        {
+          "name": "data",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.AnselStatusReportRequest.OneofOptionalData"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "OneofOptionalData",
+          "field": [
+            {
+              "name": "integerValue",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT32",
+              "oneof_index": 0
+            },
+            {
+              "name": "stringValue",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING",
+              "oneof_index": 0
+            },
+            {
+              "name": "floatValue",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_FLOAT",
+              "oneof_index": 0
+            },
+            {
+              "name": "boolValue",
+              "number": 4,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_BOOL",
+              "oneof_index": 0
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AnselStatusReportResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "SetStyleTransferEnabledRequest",
+      "field": [
+        {
+          "name": "enabled",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "SetStyleTransferEnabledResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "SetStyleTransferStyleRequest",
+      "field": [
+        {
+          "name": "fullyQualifiedPath",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "SetStyleTransferStyleResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "GetStyleTransferModelListRequest"
+    },
+    {
+      "name": "GetStyleTransferModelListResponse",
+      "field": [
+        {
+          "name": "models",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetStyleTransferModelListResponse.ModelDescription"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "ModelDescription",
+          "field": [
+            {
+              "name": "id",
+              "number": 1,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "localizedName",
+              "number": 2,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_STRING"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SetStyleTransferModelRequest",
+      "field": [
+        {
+          "name": "modelId",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "SetStyleTransferModelResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "StyleTransferStatusRequest",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "StyleTransferStatusResponse"
+    },
+    {
+      "name": "StyleTransferSideloadChoiceRequest",
+      "field": [
+        {
+          "name": "packageSizeInBytes",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT32"
+        }
+      ]
+    },
+    {
+      "name": "StyleTransferSideloadChoiceResponse",
+      "field": [
+        {
+          "name": "choice",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.SideloadChoice"
+        }
+      ]
+    },
+    {
+      "name": "StyleTransferSideloadProgressRequest"
+    },
+    {
+      "name": "StyleTransferSideloadProgressResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.SideloadProgress"
+        },
+        {
+          "name": "progress",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "UIReadyRequest",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "UIReadyResponse"
+    },
+    {
+      "name": "UIDescButton",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "text",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "UIDescSlider",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "text",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "minValue",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "maxValue",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "value",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "interval",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        }
+      ]
+    },
+    {
+      "name": "UIDescEdit",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "text",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "allowedType",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.EditAllowedType"
+        },
+        {
+          "name": "data",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "UIDescBoolean",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "text",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "set",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "UIDescLabel",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "text",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "MapFieldEntry",
+      "field": [
+        {
+          "name": "key",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "value",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "UIDescList",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "text",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "values",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.MapFieldEntry"
+        },
+        {
+          "name": "selected",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "type",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.ListSelectionType"
+        }
+      ]
+    },
+    {
+      "name": "UIDescPulldown",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "text",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "controlIdList",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "AddUIElementRequest",
+      "field": [
+        {
+          "name": "requestId",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "controlType",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.ControlType"
+        },
+        {
+          "name": "visible",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "uiDescButton",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIDescButton",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiDescSlider",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIDescSlider",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiDescEdit",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIDescEdit",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiDescBoolean",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIDescBoolean",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiDescLabel",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIDescLabel",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiDescList",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIDescList",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiDescPulldown",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIDescPulldown",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "controlDescription"
+        }
+      ]
+    },
+    {
+      "name": "AddUIElementResponse",
+      "field": [
+        {
+          "name": "requestId",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "status",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        },
+        {
+          "name": "uiDescButton",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIDescButton",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiDescSlider",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIDescSlider",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiDescEdit",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIDescEdit",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiDescBoolean",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIDescBoolean",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiDescLabel",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIDescLabel",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiDescList",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIDescList",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiDescPulldown",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIDescPulldown",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "controlDescription"
+        }
+      ]
+    },
+    {
+      "name": "UIControlChangedRequest",
+      "field": [
+        {
+          "name": "uiDescButton",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIDescButton",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiDescSlider",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIDescSlider",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiDescEdit",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIDescEdit",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiDescBoolean",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIDescBoolean",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiDescLabel",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIDescLabel",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiDescList",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIDescList",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "controlDescription"
+        }
+      ]
+    },
+    {
+      "name": "UIControlChangedResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "UIControlRemoveAllRequest"
+    },
+    {
+      "name": "UIControlRemoveAllResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "UIControlRemoveRequest",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "UIControlRemoveResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "UIControlSetVisibilityRequest",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "visible",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "UIControlSetVisibilityResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "UIControlGetVisibilityRequest",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "UIControlGetVisibilityResponse",
+      "field": [
+        {
+          "name": "visible",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "GetGameSpecificControlsRequest"
+    },
+    {
+      "name": "GetSettingsRequest"
+    },
+    {
+      "name": "GetSettingsResponse",
+      "field": [
+        {
+          "name": "settings",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetSettingsResponse.Setting"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "Setting",
+          "field": [
+            {
+              "name": "name",
+              "number": 1,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_STRING"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GetFeatureSetRequest",
+      "field": [
+        {
+          "name": "requestorsIPCVersion",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.IpcVersionResponse"
+        }
+      ]
+    },
+    {
+      "name": "GetFeatureSetResponse",
+      "field": [
+        {
+          "name": "sdkDetected",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "modsAvailable",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "restyleAvailable",
+          "number": 3,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "allowOffline",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "SetCMSInfoRequest",
+      "field": [
+        {
+          "name": "cmsid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "shortName",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "SetCMSInfoResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "GetEnabledFeatureSetRequest"
+    },
+    {
+      "name": "GetEnabledFeatureSetResponse",
+      "field": [
+        {
+          "name": "modsAvailable",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "IsAnselModdingAvailableRequest"
+    },
+    {
+      "name": "IsAnselModdingAvailableResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "IsAnselSDKIntegrationAvailableRequest"
+    },
+    {
+      "name": "IsAnselSDKIntegrationAvailableResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "ScreenResolutionChangedRequest"
+    },
+    {
+      "name": "ScreenResolutionChangedResponse"
+    },
+    {
+      "name": "SetGridOfThirdsEnabledRequest",
+      "field": [
+        {
+          "name": "enabled",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "SetGridOfThirdsEnabledResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "GetProcessInfoRequest"
+    },
+    {
+      "name": "GetProcessInfoResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        },
+        {
+          "name": "processId",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "processPath",
+          "number": 3,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "SetAnselEnabledRequest",
+      "field": [
+        {
+          "name": "major",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "minor",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "patch",
+          "number": 3,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "enabled",
+          "number": 4,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "leaveFiltersEnabled",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "pauseApplication",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "SetAnselEnabledResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "GetAnselEnabledRequest"
+    },
+    {
+      "name": "GetAnselEnabledResponse",
+      "field": [
+        {
+          "name": "enabled",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "GetAnselShotPermissionsRequest"
+    },
+    {
+      "name": "GetAnselShotPermissionsResponse",
+      "field": [
+        {
+          "name": "isIntegrationDetected",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "isHDRAllowed",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "isShotAllowed",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "SetLangIdRequest",
+      "field": [
+        {
+          "name": "lang",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "subLang",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "SetLangIdResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "GetFOVRangeRequest"
+    },
+    {
+      "name": "GetFOVRangeResponse",
+      "field": [
+        {
+          "name": "minFov",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "maxFov",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_FLOAT"
+        }
+      ]
+    },
+    {
+      "name": "SetFOVRequest",
+      "field": [
+        {
+          "name": "fov",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_FLOAT"
+        }
+      ]
+    },
+    {
+      "name": "SetFOVResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "GetCurrentFOVRequest"
+    },
+    {
+      "name": "GetCurrentFOVResponse",
+      "field": [
+        {
+          "name": "fov",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_FLOAT"
+        }
+      ]
+    },
+    {
+      "name": "GetRollRangeRequest"
+    },
+    {
+      "name": "GetRollRangeResponse",
+      "field": [
+        {
+          "name": "minRoll",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "maxRoll",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_FLOAT"
+        }
+      ]
+    },
+    {
+      "name": "SetRollRequest",
+      "field": [
+        {
+          "name": "roll",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_FLOAT"
+        }
+      ]
+    },
+    {
+      "name": "SetRollResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "UpdateRollRequest",
+      "field": [
+        {
+          "name": "roll",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_FLOAT"
+        }
+      ]
+    },
+    {
+      "name": "UpdateRollResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "UpdateFovRequest",
+      "field": [
+        {
+          "name": "fov",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_FLOAT"
+        }
+      ]
+    },
+    {
+      "name": "UpdateFovResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "GetScreenResolutionRequest"
+    },
+    {
+      "name": "GetScreenResolutionResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        },
+        {
+          "name": "xResolution",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "yResolution",
+          "number": 3,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "CaptureShotRequest",
+      "field": [
+        {
+          "name": "type",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.ShotTypeIPC"
+        },
+        {
+          "name": "highresMultiplier",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "horizontal360Resolution",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "generateThumbnail",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "isExr",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "highresEnhance",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "CaptureShotStartedResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        },
+        {
+          "name": "totalShotCount",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "CaptureShotProgressResponse",
+      "field": [
+        {
+          "name": "currentShot",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "CaptureShotFinishedResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "CaptureShotProcessingFinishedResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        },
+        {
+          "name": "absoluteFilePath",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "EstimateCaptureRequest",
+      "field": [
+        {
+          "name": "type",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.ShotTypeIPC"
+        },
+        {
+          "name": "highresMultiplier",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "horizontal360Resolution",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "generateThumbnail",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "isExr",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "highresEnhance",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "EstimateCaptureResponse",
+      "field": [
+        {
+          "name": "inputDatasetSizeTotalInBytes",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT64"
+        },
+        {
+          "name": "inputDatasetFrameCount",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT64"
+        },
+        {
+          "name": "inputDatasetFrameSizeInBytes",
+          "number": 3,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT64"
+        },
+        {
+          "name": "stitcherMemoryRequirementsInBytes",
+          "number": 4,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT64"
+        },
+        {
+          "name": "outputResolutionX",
+          "number": 5,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT64"
+        },
+        {
+          "name": "outputResolutionY",
+          "number": 6,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT64"
+        },
+        {
+          "name": "outputMPixels",
+          "number": 7,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT64"
+        },
+        {
+          "name": "outputSizeInBytes",
+          "number": 8,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT64"
+        }
+      ]
+    },
+    {
+      "name": "AbortCaptureRequest"
+    },
+    {
+      "name": "AbortCaptureResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "GetHighresResolutionListRequest"
+    },
+    {
+      "name": "GetHighresResolutionListResponse",
+      "field": [
+        {
+          "name": "resolutions",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetHighresResolutionListResponse.HighresResolution"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "HighresResolution",
+          "field": [
+            {
+              "name": "multiplier",
+              "number": 1,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "xResolution",
+              "number": 2,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "yResolution",
+              "number": 3,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_INT32"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Get360ResolutionRangeRequest"
+    },
+    {
+      "name": "Get360ResolutionRangeResponse",
+      "field": [
+        {
+          "name": "minimumXResolution",
+          "number": 3,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "maximumXResolution",
+          "number": 4,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "GetFilterListRequest"
+    },
+    {
+      "name": "GetFilterListResponse",
+      "field": [
+        {
+          "name": "filterIdList",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "filterNameList",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "ResetEntireStackRequest"
+    },
+    {
+      "name": "ResetEntireStackResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "ResetFilterValuesRequest",
+      "field": [
+        {
+          "name": "stackIdx",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "ResetFilterValuesResponse",
+      "field": [
+        {
+          "name": "stackIdx",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "status",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "ResetAllFilterValuesRequest"
+    },
+    {
+      "name": "SetFilterRequest",
+      "field": [
+        {
+          "name": "filterId",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "stackIdx",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "SetFilterResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        },
+        {
+          "name": "stackIdx",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "filterProperties",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.FilterProperties"
+        }
+      ]
+    },
+    {
+      "name": "SetFilterAndAttributesRequest",
+      "field": [
+        {
+          "name": "filterId",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "stackIdx",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "intControlIds",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "intValues",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "uintControlIds",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "uintValues",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "floatControlIds",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "floatValues",
+          "number": 8,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "boolControlIds",
+          "number": 9,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "boolValues",
+          "number": 10,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "SetFilterAndAttributesResponse",
+      "field": [
+        {
+          "name": "setFilterResponse",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetFilterResponse"
+        },
+        {
+          "name": "attributeControlIds",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "setFilterAttributeResponses",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetFilterAttributeResponse"
+        }
+      ]
+    },
+    {
+      "name": "InsertFilterRequest",
+      "field": [
+        {
+          "name": "filterId",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "stackIdx",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "InsertFilterResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        },
+        {
+          "name": "stackIdx",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "filterProperties",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.FilterProperties"
+        }
+      ]
+    },
+    {
+      "name": "RemoveFilterRequest",
+      "field": [
+        {
+          "name": "stackIdx",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "RemoveFilterResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "MoveFilterRequest",
+      "field": [
+        {
+          "name": "desiredStackIndices",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        }
+      ]
+    },
+    {
+      "name": "MoveFilterResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "GetStackInfoRequest"
+    },
+    {
+      "name": "GetStackInfoResponse",
+      "field": [
+        {
+          "name": "filterIds",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "FilterProperties",
+      "field": [
+        {
+          "name": "filterId",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "filterDisplayName",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "controls",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.FilterProperties.ControlDescription"
+        },
+        {
+          "name": "filterDisplayNameEnglish",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "ValuesFloat",
+          "field": [
+            {
+              "name": "current",
+              "number": 1,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_FLOAT"
+            },
+            {
+              "name": "default",
+              "number": 2,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_FLOAT"
+            },
+            {
+              "name": "minimum",
+              "number": 3,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_FLOAT"
+            },
+            {
+              "name": "maximum",
+              "number": 4,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_FLOAT"
+            },
+            {
+              "name": "stepSize",
+              "number": 5,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_FLOAT"
+            },
+            {
+              "name": "stepSizeUi",
+              "number": 6,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_FLOAT"
+            },
+            {
+              "name": "minValueUi",
+              "number": 7,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_FLOAT"
+            },
+            {
+              "name": "maxValueUi",
+              "number": 8,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_FLOAT"
+            },
+            {
+              "name": "displayName",
+              "number": 9,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ]
+        },
+        {
+          "name": "ValuesInt",
+          "field": [
+            {
+              "name": "current",
+              "number": 1,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "default",
+              "number": 2,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "minimum",
+              "number": 3,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "maximum",
+              "number": 4,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "stepSize",
+              "number": 5,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_UINT32"
+            },
+            {
+              "name": "stepSizeUi",
+              "number": 6,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_UINT32"
+            },
+            {
+              "name": "minValueUi",
+              "number": 7,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "maxValueUi",
+              "number": 8,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "displayName",
+              "number": 9,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ]
+        },
+        {
+          "name": "ValuesUInt",
+          "field": [
+            {
+              "name": "current",
+              "number": 1,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_UINT32"
+            },
+            {
+              "name": "default",
+              "number": 2,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_UINT32"
+            },
+            {
+              "name": "minimum",
+              "number": 3,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_UINT32"
+            },
+            {
+              "name": "maximum",
+              "number": 4,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_UINT32"
+            },
+            {
+              "name": "stepSize",
+              "number": 5,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_UINT32"
+            },
+            {
+              "name": "stepSizeUi",
+              "number": 6,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_UINT32"
+            },
+            {
+              "name": "minValueUi",
+              "number": 7,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_UINT32"
+            },
+            {
+              "name": "maxValueUi",
+              "number": 8,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_UINT32"
+            },
+            {
+              "name": "displayName",
+              "number": 9,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ]
+        },
+        {
+          "name": "ValuesBool",
+          "field": [
+            {
+              "name": "current",
+              "number": 1,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_BOOL"
+            },
+            {
+              "name": "default",
+              "number": 2,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_BOOL"
+            },
+            {
+              "name": "minimum",
+              "number": 3,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_BOOL"
+            },
+            {
+              "name": "maximum",
+              "number": 4,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_BOOL"
+            },
+            {
+              "name": "displayName",
+              "number": 5,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ]
+        },
+        {
+          "name": "ControlDescription",
+          "field": [
+            {
+              "name": "controlId",
+              "number": 1,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "displayName",
+              "number": 2,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "minValueUi",
+              "number": 3,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_FLOAT"
+            },
+            {
+              "name": "maxValueUi",
+              "number": 4,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_FLOAT"
+            },
+            {
+              "name": "type",
+              "number": 5,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_ENUM",
+              "type_name": ".AnselIpc.ControlType"
+            },
+            {
+              "name": "valuesFloat",
+              "number": 6,
+              "label": "LABEL_REPEATED",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".AnselIpc.FilterProperties.ValuesFloat"
+            },
+            {
+              "name": "valuesBool",
+              "number": 7,
+              "label": "LABEL_REPEATED",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".AnselIpc.FilterProperties.ValuesBool"
+            },
+            {
+              "name": "valuesInt",
+              "number": 8,
+              "label": "LABEL_REPEATED",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".AnselIpc.FilterProperties.ValuesInt"
+            },
+            {
+              "name": "valuesUInt",
+              "number": 9,
+              "label": "LABEL_REPEATED",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".AnselIpc.FilterProperties.ValuesUInt"
+            },
+            {
+              "name": "uiPrecision",
+              "number": 10,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "uiMeasurementUnit",
+              "number": 11,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "labelsUi",
+              "number": 12,
+              "label": "LABEL_REPEATED",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "tooltip",
+              "number": 13,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "displayNameEnglish",
+              "number": 14,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GetFilterInfoRequest",
+      "field": [
+        {
+          "name": "stackIdx",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "GetFilterInfoResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        },
+        {
+          "name": "stackIdx",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "filterProperties",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.FilterProperties"
+        }
+      ]
+    },
+    {
+      "name": "IsAnselAvailableRequest"
+    },
+    {
+      "name": "IsAnselAvailableResponse",
+      "field": [
+        {
+          "name": "available",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "SetFilterAttributeRequest",
+      "field": [
+        {
+          "name": "filterId",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "stackIdx",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "controlId",
+          "number": 3,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "floatValue",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "boolValue",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "uintValue",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "intValue",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "SetFilterAttributeResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "MouseEventRequest",
+      "field": [
+        {
+          "name": "absoluteX",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "absoluteY",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "deltaX",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "deltaY",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "keyState",
+          "number": 5,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "KeyboardEventRequest",
+      "field": [
+        {
+          "name": "key",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "state",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.State"
+        }
+      ]
+    },
+    {
+      "name": "InputEventRequest",
+      "field": [
+        {
+          "name": "message",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "wParam",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "lParam",
+          "number": 3,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "isDeltaCoords",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "leftStickXValue",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "leftStickYValue",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "rightStickXValue",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "rightStickYValue",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "leftTriggerValue",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "rightTriggerValue",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        }
+      ]
+    },
+    {
+      "name": "InputEventResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "LogFilenameResponse",
+      "field": [
+        {
+          "name": "filename",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "ReportErrorResponse",
+      "field": [
+        {
+          "name": "type",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.ErrorType"
+        },
+        {
+          "name": "code",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "filename",
+          "number": 3,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "line",
+          "number": 4,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "reason",
+          "number": 5,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "SetHighQualityRequest",
+      "field": [
+        {
+          "name": "setting",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "SetHighQualityResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".AnselIpc.Status"
+        }
+      ]
+    },
+    {
+      "name": "AnselIPCRequest",
+      "field": [
+        {
+          "name": "setAnselEnabledRequest",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetAnselEnabledRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "captureShotRequest",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.CaptureShotRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "getFilterListRequest",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetFilterListRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "getHighresResolutionListRequest",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetHighresResolutionListRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "abortCaptureRequest",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.AbortCaptureRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "get360ResolutionRangeRequest",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.Get360ResolutionRangeRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "getFOVRangeRequest",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetFOVRangeRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "setFOVRequest",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetFOVRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "getRollRangeRequest",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetRollRangeRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "setRollRequest",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetRollRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "getAnselEnabledRequest",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetAnselEnabledRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "getCurrentFOVRequest",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetCurrentFOVRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "setFilterRequest",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetFilterRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "setFilterAttributeRequest",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetFilterAttributeRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "isAnselAvailableRequest",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.IsAnselAvailableRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "screenResolutionChangedRequest",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.ScreenResolutionChangedRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "getAnselShotPermissionsRequest",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetAnselShotPermissionsRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "inputEventRequest",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.InputEventRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "setLangIdRequest",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetLangIdRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "getFilterInfoRequest",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetFilterInfoRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "resetFilterValuesRequest",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.ResetFilterValuesRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "resetAllFilterValuesRequest",
+          "number": 24,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.ResetAllFilterValuesRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "isAnselSDKIntegrationAvailableRequest",
+          "number": 25,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.IsAnselSDKIntegrationAvailableRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "ipcVersionRequest",
+          "number": 26,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.IpcVersionRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "addUIElementRequest",
+          "number": 27,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.AddUIElementRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiReadyRequest",
+          "number": 28,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIReadyRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiControlChangedRequest",
+          "number": 29,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIControlChangedRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiControlRemoveRequest",
+          "number": 30,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIControlRemoveRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiControlSetVisibilityRequest",
+          "number": 31,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIControlSetVisibilityRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiControlGetVisibilityRequest",
+          "number": 32,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIControlGetVisibilityRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "getProcessInfoRequest",
+          "number": 33,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetProcessInfoRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "getScreenResolutionRequest",
+          "number": 34,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetScreenResolutionRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "isAnselModdingAvailableRequest",
+          "number": 35,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.IsAnselModdingAvailableRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "setGridOfThirdsEnabledRequest",
+          "number": 36,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetGridOfThirdsEnabledRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "resetEntireStackRequest",
+          "number": 37,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.ResetEntireStackRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "getFeatureSetRequest",
+          "number": 38,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetFeatureSetRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "setStyleTransferEnabledRequest",
+          "number": 39,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetStyleTransferEnabledRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "setStyleTransferStyleRequest",
+          "number": 40,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetStyleTransferStyleRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "getStyleTransferModelListRequest",
+          "number": 41,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetStyleTransferModelListRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "setStyleTransferModelRequest",
+          "number": 42,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetStyleTransferModelRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "styleTransferStatusRequest",
+          "number": 43,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.StyleTransferStatusRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "insertFilterRequest",
+          "number": 44,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.InsertFilterRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "removeFilterRequest",
+          "number": 45,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.RemoveFilterRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "moveFilterRequest",
+          "number": 46,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.MoveFilterRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "getStackInfoRequest",
+          "number": 47,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetStackInfoRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "estimateCaptureRequest",
+          "number": 48,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.EstimateCaptureRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiControlRemoveAllRequest",
+          "number": 49,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIControlRemoveAllRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "getSettingsRequest",
+          "number": 50,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetSettingsRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "anselStatusReportRequest",
+          "number": 51,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.AnselStatusReportRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "styleTransferSideloadChoiceRequest",
+          "number": 52,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.StyleTransferSideloadChoiceRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "styleTransferSideloadProgressRequest",
+          "number": 53,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.StyleTransferSideloadProgressRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "updateRollRequest",
+          "number": 54,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UpdateRollRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "getGameSpecificControlsRequest",
+          "number": 55,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetGameSpecificControlsRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "getEnabledFeatureSetRequest",
+          "number": 56,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetEnabledFeatureSetRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "updateFovRequest",
+          "number": 57,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UpdateFovRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "anselReadyRequest",
+          "number": 58,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.AnselReadyRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "setHighQualityRequest",
+          "number": 59,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetHighQualityRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "setFilterAndAttributesRequest",
+          "number": 60,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetFilterAndAttributesRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "setCMSInfoRequest",
+          "number": 61,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetCMSInfoRequest",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "request"
+        }
+      ]
+    },
+    {
+      "name": "AnselIPCResponse",
+      "field": [
+        {
+          "name": "getFilterListResponse",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetFilterListResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "getHighresResolutionListResponse",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetHighresResolutionListResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "captureShotStartedResponse",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.CaptureShotStartedResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "captureShotFinishedResponse",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.CaptureShotFinishedResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "captureShotProcessingFinishedResponse",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.CaptureShotProcessingFinishedResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "get360ResolutionRangeResponse",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.Get360ResolutionRangeResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "getFOVRangeResponse",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetFOVRangeResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "setFOVResponse",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetFOVResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "getRollRangeResponse",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetRollRangeResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "setRollResponse",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetRollResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "setAnselEnabledResponse",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetAnselEnabledResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "abortCaptureResponse",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.AbortCaptureResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "getAnselEnabledResponse",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetAnselEnabledResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "getCurrentFOVResponse",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetCurrentFOVResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "captureShotProgressResponse",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.CaptureShotProgressResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "logFilenameResponse",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.LogFilenameResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "setFilterResponse",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetFilterResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "setFilterAttributeResponse",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetFilterAttributeResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "isAnselAvailableResponse",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.IsAnselAvailableResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "screenResolutionChangedResponse",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.ScreenResolutionChangedResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "getAnselShotPermissionsResponse",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetAnselShotPermissionsResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "inputEventResponse",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.InputEventResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "setLangIdResponse",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetLangIdResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "getFilterInfoResponse",
+          "number": 24,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetFilterInfoResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "resetFilterValuesResponse",
+          "number": 25,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.ResetFilterValuesResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "isAnselSDKIntegrationAvailableResponse",
+          "number": 26,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.IsAnselSDKIntegrationAvailableResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "ipcVersionResponse",
+          "number": 27,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.IpcVersionResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "addUIElementResponse",
+          "number": 28,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.AddUIElementResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiReadyResponse",
+          "number": 29,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIReadyResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiControlChangedResponse",
+          "number": 30,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIControlChangedResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiControlRemoveResponse",
+          "number": 31,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIControlRemoveResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiControlSetVisibilityResponse",
+          "number": 32,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIControlSetVisibilityResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiControlGetVisibilityResponse",
+          "number": 33,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIControlGetVisibilityResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "getProcessInfoResponse",
+          "number": 34,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetProcessInfoResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "getScreenResolutionResponse",
+          "number": 35,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetScreenResolutionResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "isAnselModdingAvailableResponse",
+          "number": 36,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.IsAnselModdingAvailableResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "setGridOfThirdsEnabledResponse",
+          "number": 37,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetGridOfThirdsEnabledResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "resetEntireStackResponse",
+          "number": 38,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.ResetEntireStackResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "getFeatureSetResponse",
+          "number": 39,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetFeatureSetResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "setStyleTransferEnabledResponse",
+          "number": 40,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetStyleTransferEnabledResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "setStyleTransferStyleResponse",
+          "number": 41,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetStyleTransferStyleResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "getStyleTransferModelListResponse",
+          "number": 42,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetStyleTransferModelListResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "setStyleTransferModelResponse",
+          "number": 43,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetStyleTransferModelResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "styleTransferStatusResponse",
+          "number": 44,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.StyleTransferStatusResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "moveFilterResponse",
+          "number": 45,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.MoveFilterResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "getStackInfoResponse",
+          "number": 46,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetStackInfoResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "insertFilterResponse",
+          "number": 47,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.InsertFilterResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "removeFilterResponse",
+          "number": 48,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.RemoveFilterResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "reportErrorResponse",
+          "number": 49,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.ReportErrorResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "estimateCaptureResponse",
+          "number": 50,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.EstimateCaptureResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "uiControlRemoveAllResponse",
+          "number": 51,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UIControlRemoveAllResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "getSettingsResponse",
+          "number": 52,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetSettingsResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "anselStatusReportResponse",
+          "number": 53,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.AnselStatusReportResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "styleTransferSideloadChoiceResponse",
+          "number": 54,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.StyleTransferSideloadChoiceResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "styleTransferSideloadProgressResponse",
+          "number": 55,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.StyleTransferSideloadProgressResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "updateRollResponse",
+          "number": 56,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UpdateRollResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "getEnabledFeatureSetResponse",
+          "number": 57,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.GetEnabledFeatureSetResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "updateFovResponse",
+          "number": 58,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.UpdateFovResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "anselReadyResponse",
+          "number": 59,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.AnselReadyResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "setHighQualityResponse",
+          "number": 60,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetHighQualityResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "setFilterAndAttributesResponse",
+          "number": 61,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetFilterAndAttributesResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "setCMSInfoResponse",
+          "number": 62,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.SetCMSInfoResponse",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "response"
+        }
+      ]
+    },
+    {
+      "name": "AnselIPCMessage",
+      "field": [
+        {
+          "name": "request",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.AnselIPCRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "response",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".AnselIpc.AnselIPCResponse",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "message"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "ErrorType",
+      "value": [
+        {
+          "name": "kFatal",
+          "number": 1
+        },
+        {
+          "name": "kNonFatal",
+          "number": 2
+        }
+      ]
+    },
+    {
+      "name": "Status",
+      "value": [
+        {
+          "name": "kOk",
+          "number": 1
+        },
+        {
+          "name": "kFailed",
+          "number": 2
+        },
+        {
+          "name": "kStarted",
+          "number": 3
+        },
+        {
+          "name": "kFailedToStart",
+          "number": 4
+        },
+        {
+          "name": "kNoSpaceLeft",
+          "number": 5
+        },
+        {
+          "name": "kPermissionDenied",
+          "number": 6
+        },
+        {
+          "name": "kInvalidRequest",
+          "number": 7
+        },
+        {
+          "name": "kFailedToProcess",
+          "number": 8
+        },
+        {
+          "name": "kProcessDeclined",
+          "number": 9
+        },
+        {
+          "name": "kAlreadyEnabled",
+          "number": 10
+        },
+        {
+          "name": "kAlreadyDisabled",
+          "number": 11
+        },
+        {
+          "name": "kOutOfRange",
+          "number": 12
+        },
+        {
+          "name": "kAlreadySet",
+          "number": 13
+        },
+        {
+          "name": "kIncompatibleVersion",
+          "number": 14
+        },
+        {
+          "name": "kDisabled",
+          "number": 15
+        },
+        {
+          "name": "kOkAnsel",
+          "number": 16
+        },
+        {
+          "name": "kOkModsOnly",
+          "number": 17
+        },
+        {
+          "name": "kEffectRequiresDepth",
+          "number": 18
+        },
+        {
+          "name": "kErrorParsingFile",
+          "number": 19
+        },
+        {
+          "name": "kCouldntSaveFile",
+          "number": 20
+        },
+        {
+          "name": "kShotWithUISaved",
+          "number": 21
+        },
+        {
+          "name": "kUnableToSaveShotWithUI",
+          "number": 22
+        },
+        {
+          "name": "kFailedToFinishCapture",
+          "number": 23
+        },
+        {
+          "name": "kFailedToSaveShotFailedCreateDiretory",
+          "number": 24
+        },
+        {
+          "name": "kFailedToSaveShotNoSpaceLeft",
+          "number": 25
+        },
+        {
+          "name": "kProcessingCompleted",
+          "number": 26
+        },
+        {
+          "name": "kNFilesRemainingToProcess",
+          "number": 27
+        },
+        {
+          "name": "kShotSaved",
+          "number": 28
+        },
+        {
+          "name": "kProcessingFile",
+          "number": 29
+        },
+        {
+          "name": "kFailedToSaveShot",
+          "number": 30
+        },
+        {
+          "name": "kStyleCantStartDownload",
+          "number": 31
+        },
+        {
+          "name": "kStyleDownloading",
+          "number": 32
+        },
+        {
+          "name": "kStyleInstallSuccess",
+          "number": 33
+        },
+        {
+          "name": "kStyleInstallFailed",
+          "number": 34
+        },
+        {
+          "name": "kStyleComputeCapTooLow",
+          "number": 35
+        },
+        {
+          "name": "kStyleCouldntLoadLibrestyle",
+          "number": 36
+        },
+        {
+          "name": "kStyleNoModelFound",
+          "number": 37
+        },
+        {
+          "name": "kStyleNotEnoughVRAM",
+          "number": 38
+        },
+        {
+          "name": "kStyleFailedToLoadStyle",
+          "number": 39
+        },
+        {
+          "name": "kStyleFailedToInitalizeStyleTransfer",
+          "number": 40
+        },
+        {
+          "name": "kStyleUnspecifiedNetwork",
+          "number": 41
+        },
+        {
+          "name": "kStyleUnspecifiedStyle",
+          "number": 42
+        },
+        {
+          "name": "kStyleAnselSessionRequired",
+          "number": 43
+        }
+      ]
+    },
+    {
+      "name": "ControlType",
+      "value": [
+        {
+          "name": "kControlSlider",
+          "number": 1
+        },
+        {
+          "name": "kControlBoolean",
+          "number": 2
+        },
+        {
+          "name": "kControlButton",
+          "number": 3
+        },
+        {
+          "name": "kControlList",
+          "number": 4
+        },
+        {
+          "name": "kControlEdit",
+          "number": 5
+        },
+        {
+          "name": "kControlLabel",
+          "number": 6
+        },
+        {
+          "name": "kControlPulldown",
+          "number": 7
+        },
+        {
+          "name": "kControlColorPicker",
+          "number": 8
+        }
+      ]
+    },
+    {
+      "name": "SideloadChoice",
+      "value": [
+        {
+          "name": "kYes",
+          "number": 1
+        },
+        {
+          "name": "kNo",
+          "number": 2
+        }
+      ]
+    },
+    {
+      "name": "SideloadProgress",
+      "value": [
+        {
+          "name": "kSideloadProgressIdle",
+          "number": 1
+        },
+        {
+          "name": "kSideloadProgressDownloading",
+          "number": 2
+        },
+        {
+          "name": "kSideloadProgressInstalling",
+          "number": 3
+        },
+        {
+          "name": "kSideloadProgressOk",
+          "number": 4
+        },
+        {
+          "name": "kSideloadProgressFailed",
+          "number": 5
+        }
+      ]
+    },
+    {
+      "name": "State",
+      "value": [
+        {
+          "name": "kStateUp",
+          "number": 1
+        },
+        {
+          "name": "kStateDown",
+          "number": 2
+        }
+      ]
+    },
+    {
+      "name": "ShotTypeIPC",
+      "value": [
+        {
+          "name": "kRegular",
+          "number": 0
+        },
+        {
+          "name": "kRegularStereo",
+          "number": 1
+        },
+        {
+          "name": "kHighres",
+          "number": 2
+        },
+        {
+          "name": "kPanorama360Mono",
+          "number": 3
+        },
+        {
+          "name": "kPanorama360Stereo",
+          "number": 4
+        }
+      ]
+    },
+    {
+      "name": "EditAllowedType",
+      "value": [
+        {
+          "name": "kInt",
+          "number": 0
+        },
+        {
+          "name": "kUint",
+          "number": 1
+        },
+        {
+          "name": "kFloat",
+          "number": 2
+        },
+        {
+          "name": "kAlphaonly",
+          "number": 3
+        },
+        {
+          "name": "kAny",
+          "number": 4
+        }
+      ]
+    },
+    {
+      "name": "ListSelectionType",
+      "value": [
+        {
+          "name": "kFlyout",
+          "number": 1
+        },
+        {
+          "name": "kCombobox",
+          "number": 2
+        }
+      ]
+    }
+  ]
+}

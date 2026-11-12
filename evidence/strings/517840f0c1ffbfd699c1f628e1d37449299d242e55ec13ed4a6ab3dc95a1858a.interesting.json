@@ -1,0 +1,37 @@
+[
+  {
+    "offset": "0x143b40",
+    "encoding": "ascii",
+    "text": "MessageBusRouter,Downloader,Diagnostics,NvAccount,NvLocalizedConfig,OverClockingNvc,DesktopNotification,NvDriverDiagnostics,DriverUpdateRecommendation,NvKVStorage,NvAppIgoIpcProxy,McpServer"
+  },
+  {
+    "offset": "0x146dc0",
+    "encoding": "ascii",
+    "text": "NvMessageBus.dll"
+  },
+  {
+    "offset": "0x18b512",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x144290",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x1442e0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x1445e0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x148bc0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  }
+]

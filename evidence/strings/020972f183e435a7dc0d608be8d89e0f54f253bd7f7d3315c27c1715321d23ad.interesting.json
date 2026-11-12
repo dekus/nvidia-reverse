@@ -1,0 +1,97 @@
+[
+  {
+    "offset": "0xf5278",
+    "encoding": "ascii",
+    "text": "cplushook.dll"
+  },
+  {
+    "offset": "0xf52d1",
+    "encoding": "ascii",
+    "text": "libapi2hook.dll"
+  },
+  {
+    "offset": "0xf52e1",
+    "encoding": "ascii",
+    "text": "libinject.dll"
+  },
+  {
+    "offset": "0xf52ef",
+    "encoding": "ascii",
+    "text": "libinject2.dll"
+  },
+  {
+    "offset": "0xf531e",
+    "encoding": "ascii",
+    "text": "libwinhook.dll"
+  },
+  {
+    "offset": "0xf53c4",
+    "encoding": "ascii",
+    "text": "windowsapihookdll32.dll"
+  },
+  {
+    "offset": "0xf53dc",
+    "encoding": "ascii",
+    "text": "windowsapihookdll64.dll"
+  },
+  {
+    "offset": "0xfc7b7",
+    "encoding": "ascii",
+    "text": "\\\\.\\pipe\\crashpad_%lu_"
+  },
+  {
+    "offset": "0xfc7d9",
+    "encoding": "ascii",
+    "text": "CreateNamedPipe"
+  },
+  {
+    "offset": "0x109d62",
+    "encoding": "ascii",
+    "text": "DisableHook"
+  },
+  {
+    "offset": "0x109db4",
+    "encoding": "ascii",
+    "text": "GetApplyHookResult"
+  },
+  {
+    "offset": "0x109e80",
+    "encoding": "ascii",
+    "text": "InjectDumpForHungInput_ExportThunk"
+  },
+  {
+    "offset": "0x109f68",
+    "encoding": "ascii",
+    "text": "SetUploadConsent_ExportThunk"
+  },
+  {
+    "offset": "0x10abbc",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeW"
+  },
+  {
+    "offset": "0xf8400",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Classes"
+  },
+  {
+    "offset": "0xf91c2",
+    "encoding": "utf-16le",
+    "text": "Microsoft\\SOFTWARE\\Microsoft\\Shared Tools\\MSInfo"
+  },
+  {
+    "offset": "0xf9c9e",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Policies\\"
+  },
+  {
+    "offset": "0xf9dac",
+    "encoding": "utf-16le",
+    "text": "Software\\"
+  },
+  {
+    "offset": "0xf9fe0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  }
+]

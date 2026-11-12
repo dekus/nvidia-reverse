@@ -1,0 +1,1437 @@
+[
+  {
+    "offset": "0x93a0",
+    "encoding": "ascii",
+    "text": "NaTelemetrymanag_3"
+  },
+  {
+    "offset": "0x7f6ef",
+    "encoding": "ascii",
+    "text": "; PDB File Name : C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\shadowplay2\\server\\win7_amd64_release\\_nvspcaps64.pdb"
+  },
+  {
+    "offset": "0x7f92f",
+    "encoding": "ascii",
+    "text": "; File Name   : C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\ShadowPlay\\NVSPCAPS\\_nvspcaps64.dll"
+  },
+  {
+    "offset": "0x1b9bc8",
+    "encoding": "ascii",
+    "text": "; Exported entry   1. NvPluginGetInfo"
+  },
+  {
+    "offset": "0x1b9bf3",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x3bdd31",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo_0"
+  },
+  {
+    "offset": "0x711b47",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeW"
+  },
+  {
+    "offset": "0x729cc8",
+    "encoding": "ascii",
+    "text": "D3D11CreateDevice"
+  },
+  {
+    "offset": "0xed127a",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeA"
+  },
+  {
+    "offset": "0xf3dd94",
+    "encoding": "ascii",
+    "text": "aD3d11createdev"
+  },
+  {
+    "offset": "0xf417b4",
+    "encoding": "ascii",
+    "text": "aNvfbcUnloaddll"
+  },
+  {
+    "offset": "0xf4181c",
+    "encoding": "ascii",
+    "text": "aNvfbcUnloadnva"
+  },
+  {
+    "offset": "0xf4187d",
+    "encoding": "ascii",
+    "text": "aNvfbcdllCreate_0"
+  },
+  {
+    "offset": "0xf418c5",
+    "encoding": "ascii",
+    "text": "aNvfbcdllCreate"
+  },
+  {
+    "offset": "0xf4190c",
+    "encoding": "ascii",
+    "text": "aNvfbcdllChecka_0"
+  },
+  {
+    "offset": "0xf41943",
+    "encoding": "ascii",
+    "text": "aNvfbcdllChecka"
+  },
+  {
+    "offset": "0xf41977",
+    "encoding": "ascii",
+    "text": "aNvfbcdllInitia_2"
+  },
+  {
+    "offset": "0xf419ad",
+    "encoding": "ascii",
+    "text": "aNvfbcdllInitia_1"
+  },
+  {
+    "offset": "0xf41a0a",
+    "encoding": "ascii",
+    "text": "aNvfbcCreateex"
+  },
+  {
+    "offset": "0xf41a4a",
+    "encoding": "ascii",
+    "text": "aNvfbcdllInitia_0"
+  },
+  {
+    "offset": "0xf41a92",
+    "encoding": "ascii",
+    "text": "aNvfbcdllInitia"
+  },
+  {
+    "offset": "0xf41ad8",
+    "encoding": "ascii",
+    "text": "aNvfbcdllLoadnv"
+  },
+  {
+    "offset": "0xf41b6e",
+    "encoding": "ascii",
+    "text": "aNvfbcGetstatus"
+  },
+  {
+    "offset": "0xf41cbd",
+    "encoding": "ascii",
+    "text": "aNvfbcSetglobal"
+  },
+  {
+    "offset": "0xf452cc",
+    "encoding": "ascii",
+    "text": "??_7ITelemetry@ShadowPlay@NvTelemetry@@6B@"
+  },
+  {
+    "offset": "0xf47b8a",
+    "encoding": "ascii",
+    "text": "??_7Telemetry@ShadowPlay@NvTelemetry@@6B@"
+  },
+  {
+    "offset": "0xf4927a",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeA"
+  },
+  {
+    "offset": "0xf4f6f0",
+    "encoding": "ascii",
+    "text": "aNvtelemetryapi"
+  },
+  {
+    "offset": "0xf4ff2a",
+    "encoding": "ascii",
+    "text": "aCommonTelemetr"
+  },
+  {
+    "offset": "0xf5d8c4",
+    "encoding": "ascii",
+    "text": "aFreetelemetrys"
+  },
+  {
+    "offset": "0xf5d92b",
+    "encoding": "ascii",
+    "text": "aNvtelemetrysen_6"
+  },
+  {
+    "offset": "0xf5d995",
+    "encoding": "ascii",
+    "text": "aNvtelemetrysen_5"
+  },
+  {
+    "offset": "0xf5d9fe",
+    "encoding": "ascii",
+    "text": "aNvtelemetrysen_4"
+  },
+  {
+    "offset": "0xf5daad",
+    "encoding": "ascii",
+    "text": "aNvtelemetrysen_3"
+  },
+  {
+    "offset": "0xf5db3a",
+    "encoding": "ascii",
+    "text": "aNvtelemetrysen_2"
+  },
+  {
+    "offset": "0xf5dbec",
+    "encoding": "ascii",
+    "text": "aNvtelemetrysen_1"
+  },
+  {
+    "offset": "0xf5dde3",
+    "encoding": "ascii",
+    "text": "aNvtelemetrysen_0"
+  },
+  {
+    "offset": "0xf5de93",
+    "encoding": "ascii",
+    "text": "aNvtelemetrysen"
+  },
+  {
+    "offset": "0xf5fe2c",
+    "encoding": "ascii",
+    "text": "aTelemetry"
+  },
+  {
+    "offset": "0xf65313",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag_15"
+  },
+  {
+    "offset": "0xf6535c",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag_2"
+  },
+  {
+    "offset": "0xf65393",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag_0"
+  },
+  {
+    "offset": "0xf653db",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag"
+  },
+  {
+    "offset": "0xf6540f",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag_10"
+  },
+  {
+    "offset": "0xf65458",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag_9"
+  },
+  {
+    "offset": "0xf6548f",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag_3"
+  },
+  {
+    "offset": "0xf654de",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag_4"
+  },
+  {
+    "offset": "0xf65557",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag_6"
+  },
+  {
+    "offset": "0xf655c8",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag_17"
+  },
+  {
+    "offset": "0xf6563c",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag_11"
+  },
+  {
+    "offset": "0xf656c1",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag_5"
+  },
+  {
+    "offset": "0xf6573d",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag_16"
+  },
+  {
+    "offset": "0xf657d4",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag_14"
+  },
+  {
+    "offset": "0xf6587e",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag_12"
+  },
+  {
+    "offset": "0xf65902",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag_7"
+  },
+  {
+    "offset": "0xf659de",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag_13"
+  },
+  {
+    "offset": "0xf65a5b",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag_1"
+  },
+  {
+    "offset": "0xf67f7e",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag_18"
+  },
+  {
+    "offset": "0xf67fb5",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag_8"
+  },
+  {
+    "offset": "0xf754e4",
+    "encoding": "ascii",
+    "text": "aNvfbcEventSign"
+  },
+  {
+    "offset": "0xf972a6",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsN_0"
+  },
+  {
+    "offset": "0xf972dc",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsN"
+  },
+  {
+    "offset": "0xf97311",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsH_1"
+  },
+  {
+    "offset": "0xf9734e",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsH_0"
+  },
+  {
+    "offset": "0xf9739d",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsH"
+  },
+  {
+    "offset": "0xf973d9",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsD_4"
+  },
+  {
+    "offset": "0xf97416",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsD_3"
+  },
+  {
+    "offset": "0xf97453",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsD_2"
+  },
+  {
+    "offset": "0xf974a3",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsD_1"
+  },
+  {
+    "offset": "0xf974e0",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsR_3"
+  },
+  {
+    "offset": "0xf9751e",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsR_2"
+  },
+  {
+    "offset": "0xf9755b",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsR_1"
+  },
+  {
+    "offset": "0xf975ab",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsR_0"
+  },
+  {
+    "offset": "0xf975e8",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsR"
+  },
+  {
+    "offset": "0xf97623",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsU_2"
+  },
+  {
+    "offset": "0xf97659",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsL_7"
+  },
+  {
+    "offset": "0xf97690",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsL_6"
+  },
+  {
+    "offset": "0xf9770c",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsL_5"
+  },
+  {
+    "offset": "0xf97769",
+    "encoding": "ascii",
+    "text": "aCreatenvapidll"
+  },
+  {
+    "offset": "0xf977bc",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsL_4"
+  },
+  {
+    "offset": "0xf9784d",
+    "encoding": "ascii",
+    "text": "aNvapidllmonito"
+  },
+  {
+    "offset": "0xf97893",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsL_3"
+  },
+  {
+    "offset": "0xf978c9",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsU_1"
+  },
+  {
+    "offset": "0xf97930",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsU_0"
+  },
+  {
+    "offset": "0xf97978",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsU"
+  },
+  {
+    "offset": "0xf979ac",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsL_2"
+  },
+  {
+    "offset": "0xf979fb",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsL_1"
+  },
+  {
+    "offset": "0xf97a4b",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsL_0"
+  },
+  {
+    "offset": "0xf97a9a",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsL"
+  },
+  {
+    "offset": "0xf97ad5",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsF"
+  },
+  {
+    "offset": "0xf97b22",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_1"
+  },
+  {
+    "offset": "0xf97b58",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_0"
+  },
+  {
+    "offset": "0xf97ba1",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsW_1"
+  },
+  {
+    "offset": "0xf97bd7",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsW_0"
+  },
+  {
+    "offset": "0xf97c0d",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsW"
+  },
+  {
+    "offset": "0xf992b9",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_12"
+  },
+  {
+    "offset": "0xf99302",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_11"
+  },
+  {
+    "offset": "0xf9933a",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_10"
+  },
+  {
+    "offset": "0xf99383",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_15"
+  },
+  {
+    "offset": "0xf993ba",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_9"
+  },
+  {
+    "offset": "0xf99403",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_31"
+  },
+  {
+    "offset": "0xf9944c",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_30"
+  },
+  {
+    "offset": "0xf99495",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_29"
+  },
+  {
+    "offset": "0xf994cd",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_7"
+  },
+  {
+    "offset": "0xf99515",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_6"
+  },
+  {
+    "offset": "0xf9954b",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_5"
+  },
+  {
+    "offset": "0xf99582",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_4"
+  },
+  {
+    "offset": "0xf995b8",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_3"
+  },
+  {
+    "offset": "0xf99600",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_2"
+  },
+  {
+    "offset": "0xf99637",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_1"
+  },
+  {
+    "offset": "0xf9967f",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_0"
+  },
+  {
+    "offset": "0xf996c7",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG"
+  },
+  {
+    "offset": "0xf9970e",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_8"
+  },
+  {
+    "offset": "0xf99835",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_20"
+  },
+  {
+    "offset": "0xf9986d",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_19"
+  },
+  {
+    "offset": "0xf998a4",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_16"
+  },
+  {
+    "offset": "0xf998db",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_17"
+  },
+  {
+    "offset": "0xf99924",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_18"
+  },
+  {
+    "offset": "0xf9995c",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_15"
+  },
+  {
+    "offset": "0xf99993",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_14"
+  },
+  {
+    "offset": "0xf999dc",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_13"
+  },
+  {
+    "offset": "0xf99a26",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI"
+  },
+  {
+    "offset": "0xf99b30",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_5"
+  },
+  {
+    "offset": "0xf99b78",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_12"
+  },
+  {
+    "offset": "0xf99bc2",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_11"
+  },
+  {
+    "offset": "0xf99bf9",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_10"
+  },
+  {
+    "offset": "0xf99c43",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_9"
+  },
+  {
+    "offset": "0xf99c79",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_8"
+  },
+  {
+    "offset": "0xf99caf",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_7"
+  },
+  {
+    "offset": "0xf99cf8",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_6"
+  },
+  {
+    "offset": "0xf99d2e",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_28"
+  },
+  {
+    "offset": "0xf99d77",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_4"
+  },
+  {
+    "offset": "0xf99dbf",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_3"
+  },
+  {
+    "offset": "0xf99e08",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_27"
+  },
+  {
+    "offset": "0xf99e5f",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_26"
+  },
+  {
+    "offset": "0xf99e9e",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_25"
+  },
+  {
+    "offset": "0xf99edc",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsD_0"
+  },
+  {
+    "offset": "0xf99f20",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsD"
+  },
+  {
+    "offset": "0xf99f74",
+    "encoding": "ascii",
+    "text": "aNvapiDrsLoadse"
+  },
+  {
+    "offset": "0xf99fc2",
+    "encoding": "ascii",
+    "text": "aNvapiDrsCreate"
+  },
+  {
+    "offset": "0xf9b846",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_24"
+  },
+  {
+    "offset": "0xf9b890",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_23"
+  },
+  {
+    "offset": "0xf9b8c7",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_22"
+  },
+  {
+    "offset": "0xf9b910",
+    "encoding": "ascii",
+    "text": "aNvapiD3d11Wksr"
+  },
+  {
+    "offset": "0xf9b945",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsR_5"
+  },
+  {
+    "offset": "0xf9b97b",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsR_4"
+  },
+  {
+    "offset": "0xf9b9c3",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_35"
+  },
+  {
+    "offset": "0xf9b9fa",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_34"
+  },
+  {
+    "offset": "0xf9ba32",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_42"
+  },
+  {
+    "offset": "0xf9ba7b",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_41"
+  },
+  {
+    "offset": "0xf9bab3",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_40"
+  },
+  {
+    "offset": "0xf9bafc",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_39"
+  },
+  {
+    "offset": "0xf9bb34",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_38"
+  },
+  {
+    "offset": "0xf9bb6b",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_37"
+  },
+  {
+    "offset": "0xf9bbb4",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_36"
+  },
+  {
+    "offset": "0xf9bbfe",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_2"
+  },
+  {
+    "offset": "0xf9bc46",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsI_21"
+  },
+  {
+    "offset": "0xf9bc8f",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsS"
+  },
+  {
+    "offset": "0xf9bd9f",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsL_8"
+  },
+  {
+    "offset": "0xf9bde7",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_33"
+  },
+  {
+    "offset": "0xf9be30",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_32"
+  },
+  {
+    "offset": "0xf9be68",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_21"
+  },
+  {
+    "offset": "0xf9be9f",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_20"
+  },
+  {
+    "offset": "0xf9bee9",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_19"
+  },
+  {
+    "offset": "0xf9bf20",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_18"
+  },
+  {
+    "offset": "0xf9bf58",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_17"
+  },
+  {
+    "offset": "0xf9bf8f",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_16"
+  },
+  {
+    "offset": "0xf9bfc6",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_14"
+  },
+  {
+    "offset": "0xfa1bb2",
+    "encoding": "ascii",
+    "text": "aScreenshothkey_0"
+  },
+  {
+    "offset": "0xfa1c02",
+    "encoding": "ascii",
+    "text": "aGfeoverlayhkey_0"
+  },
+  {
+    "offset": "0xfa1c52",
+    "encoding": "ascii",
+    "text": "aFpsoverlayhkey_0"
+  },
+  {
+    "offset": "0xfab9ea",
+    "encoding": "ascii",
+    "text": "aEnablenvenclog"
+  },
+  {
+    "offset": "0xfaba36",
+    "encoding": "ascii",
+    "text": "aNvenclogosec"
+  },
+  {
+    "offset": "0xfb1f03",
+    "encoding": "ascii",
+    "text": "aNvfbcDll"
+  },
+  {
+    "offset": "0xfb565e",
+    "encoding": "ascii",
+    "text": "aNvencodeapicre"
+  },
+  {
+    "offset": "0xfb730d",
+    "encoding": "ascii",
+    "text": "aMictogglehkey_0"
+  },
+  {
+    "offset": "0xfb7354",
+    "encoding": "ascii",
+    "text": "aIrtogglehkey_0"
+  },
+  {
+    "offset": "0xfb73e2",
+    "encoding": "ascii",
+    "text": "aAnseluihkey_0"
+  },
+  {
+    "offset": "0xfb7548",
+    "encoding": "ascii",
+    "text": "aScreenshothkey_1"
+  },
+  {
+    "offset": "0xfb7590",
+    "encoding": "ascii",
+    "text": "aGfeoverlayhkey_1"
+  },
+  {
+    "offset": "0xfb75d8",
+    "encoding": "ascii",
+    "text": "aFpsoverlayhkey_1"
+  },
+  {
+    "offset": "0xfb7656",
+    "encoding": "ascii",
+    "text": "aCamerahkey_0"
+  },
+  {
+    "offset": "0xfb769a",
+    "encoding": "ascii",
+    "text": "aMicptthkey_0"
+  },
+  {
+    "offset": "0xfb76de",
+    "encoding": "ascii",
+    "text": "aGamecasthkey_0"
+  },
+  {
+    "offset": "0xfb7712",
+    "encoding": "ascii",
+    "text": "aDvrhkey_0"
+  },
+  {
+    "offset": "0xfb7753",
+    "encoding": "ascii",
+    "text": "aManualhkey_0"
+  },
+  {
+    "offset": "0xfb7eff",
+    "encoding": "ascii",
+    "text": "aNvencgetencode"
+  },
+  {
+    "offset": "0xfb99c4",
+    "encoding": "ascii",
+    "text": "aScreenshothkey_2"
+  },
+  {
+    "offset": "0xfb9a0c",
+    "encoding": "ascii",
+    "text": "aGfeoverlayhkey_2"
+  },
+  {
+    "offset": "0xfb9a54",
+    "encoding": "ascii",
+    "text": "aFpsoverlayhkey_2"
+  },
+  {
+    "offset": "0xfb9c3d",
+    "encoding": "ascii",
+    "text": "aChatptthkey_0"
+  },
+  {
+    "offset": "0xfb9f83",
+    "encoding": "ascii",
+    "text": "aFspresethkey_0"
+  },
+  {
+    "offset": "0xfb9fc9",
+    "encoding": "ascii",
+    "text": "aFstogglehkey_0"
+  },
+  {
+    "offset": "0xfbbb9c",
+    "encoding": "ascii",
+    "text": "aNvspcaps"
+  },
+  {
+    "offset": "0xfbf438",
+    "encoding": "ascii",
+    "text": "aNvspcaps64Exe"
+  },
+  {
+    "offset": "0xfbf47d",
+    "encoding": "ascii",
+    "text": "aNvspcapsExe"
+  },
+  {
+    "offset": "0xfbf695",
+    "encoding": "ascii",
+    "text": "aIsnvfbcenabled_0"
+  },
+  {
+    "offset": "0xfbf6cb",
+    "encoding": "ascii",
+    "text": "aIsnvfbcenabled"
+  },
+  {
+    "offset": "0xfc775d",
+    "encoding": "ascii",
+    "text": "aNvapi64Dll"
+  },
+  {
+    "offset": "0xfc7838",
+    "encoding": "ascii",
+    "text": "aNvapiDirectGet"
+  },
+  {
+    "offset": "0xfc788d",
+    "encoding": "ascii",
+    "text": "aNvapiQueryinte"
+  },
+  {
+    "offset": "0xfc79e3",
+    "encoding": "ascii",
+    "text": "aNvapiDirectWas"
+  },
+  {
+    "offset": "0xfdd313",
+    "encoding": "ascii",
+    "text": "aTelemetrymanag_15"
+  },
+  {
+    "offset": "0x102336b",
+    "encoding": "ascii",
+    "text": "??_R1A@?0A@EA@ITelemetry@ShadowPlay@NvTelemetry@@8"
+  },
+  {
+    "offset": "0x1023418",
+    "encoding": "ascii",
+    "text": "??_R2ITelemetry@ShadowPlay@NvTelemetry@@8"
+  },
+  {
+    "offset": "0x1023520",
+    "encoding": "ascii",
+    "text": "??_R3ITelemetry@ShadowPlay@NvTelemetry@@8"
+  },
+  {
+    "offset": "0x10236ca",
+    "encoding": "ascii",
+    "text": "??_R4ITelemetry@ShadowPlay@NvTelemetry@@6B@"
+  },
+  {
+    "offset": "0x1025c6a",
+    "encoding": "ascii",
+    "text": "??_R1A@?0A@EA@Telemetry@ShadowPlay@NvTelemetry@@8"
+  },
+  {
+    "offset": "0x1025d60",
+    "encoding": "ascii",
+    "text": "??_R2Telemetry@ShadowPlay@NvTelemetry@@8"
+  },
+  {
+    "offset": "0x1025e54",
+    "encoding": "ascii",
+    "text": "??_R3Telemetry@ShadowPlay@NvTelemetry@@8"
+  },
+  {
+    "offset": "0x112b737",
+    "encoding": "ascii",
+    "text": "??_R4Telemetry@ShadowPlay@NvTelemetry@@6B@"
+  },
+  {
+    "offset": "0x112be9b",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsG_13"
+  },
+  {
+    "offset": "0x112bebb",
+    "encoding": "ascii",
+    "text": "aCspnvapiutilsN_1"
+  },
+  {
+    "offset": "0x1a51bb7",
+    "encoding": "ascii",
+    "text": "aNvplugingetinf"
+  },
+  {
+    "offset": "0x1a51beb",
+    "encoding": "ascii",
+    "text": "aNvspcaps64Dll"
+  },
+  {
+    "offset": "0x1a51c26",
+    "encoding": "ascii",
+    "text": "; Export Ordinals Table for _nvspcaps64.dll"
+  },
+  {
+    "offset": "0x1a51c94",
+    "encoding": "ascii",
+    "text": "; Export Names Table for _nvspcaps64.dll"
+  },
+  {
+    "offset": "0x1a51d07",
+    "encoding": "ascii",
+    "text": "; Export Address Table for _nvspcaps64.dll"
+  },
+  {
+    "offset": "0x1a51ef0",
+    "encoding": "ascii",
+    "text": "; Export directory for _nvspcaps64.dll"
+  },
+  {
+    "offset": "0x1a7f4f7",
+    "encoding": "ascii",
+    "text": "aAvtelemetrySha"
+  },
+  {
+    "offset": "0x1a7f562",
+    "encoding": "ascii",
+    "text": "(0000000180394890struct NvTelemetry::ShadowPlay::ITelemetry"
+  },
+  {
+    "offset": "0x1a7f5c0",
+    "encoding": "ascii",
+    "text": "(00000001803948D8class NvTelemetry::ShadowPlay::Telemetry"
+  },
+  {
+    "offset": "0x1a7f640",
+    "encoding": "ascii",
+    "text": "??_R0?AVTelemetry@ShadowPlay@NvTelemetry@@@8"
+  },
+  {
+    "offset": "0x1a7f6a8",
+    "encoding": "ascii",
+    "text": "aAuitelemetrySh"
+  },
+  {
+    "offset": "0x1a7f712",
+    "encoding": "ascii",
+    "text": "(0000000180394890struct NvTelemetry::ShadowPlay::ITelemetry"
+  },
+  {
+    "offset": "0x1a7f792",
+    "encoding": "ascii",
+    "text": "??_R0?AUITelemetry@ShadowPlay@NvTelemetry@@@8"
+  },
+  {
+    "offset": "0x1de5998",
+    "encoding": "ascii",
+    "text": "__imp_CreateNamedPipeW"
+  },
+  {
+    "offset": "0x1e11d5f",
+    "encoding": "ascii",
+    "text": "__imp_CreateNamedPipeA"
+  },
+  {
+    "offset": "0x1e1bf35",
+    "encoding": "ascii",
+    "text": "__imp_D3D11CreateDevice"
+  },
+  {
+    "offset": "0x1e4d548",
+    "encoding": "ascii",
+    "text": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\ShadowPlay\\NVSPCAPS\\_nvspcaps64.dll"
+  },
+  {
+    "offset": "0x1e63ea5",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\shadowplay2\\server\\win7_amd64_release\\_nvspcaps64.pdb"
+  },
+  {
+    "offset": "0x2293917",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x2375642",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: _debugger_hook_dummy @ 0x180227BCE"
+  },
+  {
+    "offset": "0x2377323",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x1801E115B, global_locale @ 0x1801E115B, _RTC_ErrorReportFunc @ 0x1801E115B, _RTC_ErrorReportFuncW @ 0x1801E115B, ?_pnhHeap@@3P6AH_K@ZA @ 0x1801E115B, _pfnAllocHook @ 0x1801E115B, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x1801E115B, _pfnReportHook @ 0x1801E115B, _ImageBase @ 0x1801E115B, _ThrowImageBase @ 0x1801E115B, abort_action @ 0x1801E115B, _pctype @ 0x1801E115B, _pwctype @ 0x1801E115B, _crtheap @ 0x1801E115B, __lconv @ 0x1801E115B"
+  },
+  {
+    "offset": "0x23a98c7",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x18028DBD7, global_locale @ 0x18028DBD7, _RTC_ErrorReportFunc @ 0x18028DBD7, _RTC_ErrorReportFuncW @ 0x18028DBD7, ?_pnhHeap@@3P6AH_K@ZA @ 0x18028DBD7, _pfnAllocHook @ 0x18028DBD7, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x18028DBD7, _pfnReportHook @ 0x18028DBD7, _ImageBase @ 0x18028DBD7, _ThrowImageBase @ 0x18028DBD7, abort_action @ 0x18028DBD7, _pctype @ 0x18028DBD7, _pwctype @ 0x18028DBD7, _crtheap @ 0x18028DBD7, __lconv @ 0x18028DBD7"
+  },
+  {
+    "offset": "0x23b31ca",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x180299297, global_locale @ 0x180299297, _RTC_ErrorReportFunc @ 0x180299297, _RTC_ErrorReportFuncW @ 0x180299297, ?_pnhHeap@@3P6AH_K@ZA @ 0x180299297, _pfnAllocHook @ 0x180299297, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x180299297, _pfnReportHook @ 0x180299297, _ImageBase @ 0x180299297, _ThrowImageBase @ 0x180299297, abort_action @ 0x180299297, _pctype @ 0x180299297, _pwctype @ 0x180299297, _crtheap @ 0x180299297, __lconv @ 0x180299297"
+  },
+  {
+    "offset": "0x23b905a",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x18029ADF7, global_locale @ 0x18029ADF7, _RTC_ErrorReportFunc @ 0x18029ADF7, _RTC_ErrorReportFuncW @ 0x18029ADF7, ?_pnhHeap@@3P6AH_K@ZA @ 0x18029ADF7, _pfnAllocHook @ 0x18029ADF7, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x18029ADF7, _pfnReportHook @ 0x18029ADF7, _ImageBase @ 0x18029ADF7, _ThrowImageBase @ 0x18029ADF7, abort_action @ 0x18029ADF7, _pctype @ 0x18029ADF7, _pwctype @ 0x18029ADF7, _crtheap @ 0x18029ADF7, __lconv @ 0x18029ADF7"
+  },
+  {
+    "offset": "0x23b980c",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x18029A4EF, global_locale @ 0x18029A4EF, _RTC_ErrorReportFunc @ 0x18029A4EF, _RTC_ErrorReportFuncW @ 0x18029A4EF, ?_pnhHeap@@3P6AH_K@ZA @ 0x18029A4EF, _pfnAllocHook @ 0x18029A4EF, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x18029A4EF, _pfnReportHook @ 0x18029A4EF, _ImageBase @ 0x18029A4EF, _ThrowImageBase @ 0x18029A4EF, abort_action @ 0x18029A4EF, _pctype @ 0x18029A4EF, _pwctype @ 0x18029A4EF, _crtheap @ 0x18029A4EF, __lconv @ 0x18029A4EF"
+  },
+  {
+    "offset": "0x23b99fe",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x18029A4E3, global_locale @ 0x18029A4E3, _RTC_ErrorReportFunc @ 0x18029A4E3, _RTC_ErrorReportFuncW @ 0x18029A4E3, ?_pnhHeap@@3P6AH_K@ZA @ 0x18029A4E3, _pfnAllocHook @ 0x18029A4E3, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x18029A4E3, _pfnReportHook @ 0x18029A4E3, _ImageBase @ 0x18029A4E3, _ThrowImageBase @ 0x18029A4E3, abort_action @ 0x18029A4E3, _pctype @ 0x18029A4E3, _pwctype @ 0x18029A4E3, _crtheap @ 0x18029A4E3, __lconv @ 0x18029A4E3"
+  },
+  {
+    "offset": "0x23bb4ce",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x1802A7147, global_locale @ 0x1802A7147, _RTC_ErrorReportFunc @ 0x1802A7147, _RTC_ErrorReportFuncW @ 0x1802A7147, ?_pnhHeap@@3P6AH_K@ZA @ 0x1802A7147, _pfnAllocHook @ 0x1802A7147, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x1802A7147, _pfnReportHook @ 0x1802A7147, _ImageBase @ 0x1802A7147, _ThrowImageBase @ 0x1802A7147, abort_action @ 0x1802A7147, _pctype @ 0x1802A7147, _pwctype @ 0x1802A7147, _crtheap @ 0x1802A7147, __lconv @ 0x1802A7147"
+  },
+  {
+    "offset": "0x23bb6c0",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x1802A56D3, global_locale @ 0x1802A56D3, _RTC_ErrorReportFunc @ 0x1802A56D3, _RTC_ErrorReportFuncW @ 0x1802A56D3, ?_pnhHeap@@3P6AH_K@ZA @ 0x1802A56D3, _pfnAllocHook @ 0x1802A56D3, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x1802A56D3, _pfnReportHook @ 0x1802A56D3, _ImageBase @ 0x1802A56D3, _ThrowImageBase @ 0x1802A56D3, abort_action @ 0x1802A56D3, _pctype @ 0x1802A56D3, _pwctype @ 0x1802A56D3, _crtheap @ 0x1802A56D3, __lconv @ 0x1802A56D3"
+  },
+  {
+    "offset": "0x23bbb00",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x1802A0AC7, global_locale @ 0x1802A0AC7, _RTC_ErrorReportFunc @ 0x1802A0AC7, _RTC_ErrorReportFuncW @ 0x1802A0AC7, ?_pnhHeap@@3P6AH_K@ZA @ 0x1802A0AC7, _pfnAllocHook @ 0x1802A0AC7, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x1802A0AC7, _pfnReportHook @ 0x1802A0AC7, _ImageBase @ 0x1802A0AC7, _ThrowImageBase @ 0x1802A0AC7, abort_action @ 0x1802A0AC7, _pctype @ 0x1802A0AC7, _pwctype @ 0x1802A0AC7, _crtheap @ 0x1802A0AC7, __lconv @ 0x1802A0AC7"
+  },
+  {
+    "offset": "0x23c15e8",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x1802915C7, global_locale @ 0x1802915C7, _RTC_ErrorReportFunc @ 0x1802915C7, _RTC_ErrorReportFuncW @ 0x1802915C7, ?_pnhHeap@@3P6AH_K@ZA @ 0x1802915C7, _pfnAllocHook @ 0x1802915C7, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x1802915C7, _pfnReportHook @ 0x1802915C7, _ImageBase @ 0x1802915C7, _ThrowImageBase @ 0x1802915C7, abort_action @ 0x1802915C7, _pctype @ 0x1802915C7, _pwctype @ 0x1802915C7, _crtheap @ 0x1802915C7, __lconv @ 0x1802915C7"
+  },
+  {
+    "offset": "0x23c3c12",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x1802AB1E7, global_locale @ 0x1802AB1E7, _RTC_ErrorReportFunc @ 0x1802AB1E7, _RTC_ErrorReportFuncW @ 0x1802AB1E7, ?_pnhHeap@@3P6AH_K@ZA @ 0x1802AB1E7, _pfnAllocHook @ 0x1802AB1E7, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x1802AB1E7, _pfnReportHook @ 0x1802AB1E7, _ImageBase @ 0x1802AB1E7, _ThrowImageBase @ 0x1802AB1E7, abort_action @ 0x1802AB1E7, _pctype @ 0x1802AB1E7, _pwctype @ 0x1802AB1E7, _crtheap @ 0x1802AB1E7, __lconv @ 0x1802AB1E7"
+  },
+  {
+    "offset": "0x23c3e14",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x1802AB1DB, global_locale @ 0x1802AB1DB, _RTC_ErrorReportFunc @ 0x1802AB1DB, _RTC_ErrorReportFuncW @ 0x1802AB1DB, ?_pnhHeap@@3P6AH_K@ZA @ 0x1802AB1DB, _pfnAllocHook @ 0x1802AB1DB, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x1802AB1DB, _pfnReportHook @ 0x1802AB1DB, _ImageBase @ 0x1802AB1DB, _ThrowImageBase @ 0x1802AB1DB, abort_action @ 0x1802AB1DB, _pctype @ 0x1802AB1DB, _pwctype @ 0x1802AB1DB, _crtheap @ 0x1802AB1DB, __lconv @ 0x1802AB1DB"
+  },
+  {
+    "offset": "0x23c50e3",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x1802B50C1, global_locale @ 0x1802B50C1, _RTC_ErrorReportFunc @ 0x1802B50C1, _RTC_ErrorReportFuncW @ 0x1802B50C1, ?_pnhHeap@@3P6AH_K@ZA @ 0x1802B50C1, _pfnAllocHook @ 0x1802B50C1, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x1802B50C1, _pfnReportHook @ 0x1802B50C1, _ImageBase @ 0x1802B50C1, _ThrowImageBase @ 0x1802B50C1, abort_action @ 0x1802B50C1, _pctype @ 0x1802B50C1, _pwctype @ 0x1802B50C1, _crtheap @ 0x1802B50C1, __lconv @ 0x1802B50C1"
+  },
+  {
+    "offset": "0x23c52d4",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x1802B50B9, global_locale @ 0x1802B50B9, _RTC_ErrorReportFunc @ 0x1802B50B9, _RTC_ErrorReportFuncW @ 0x1802B50B9, ?_pnhHeap@@3P6AH_K@ZA @ 0x1802B50B9, _pfnAllocHook @ 0x1802B50B9, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x1802B50B9, _pfnReportHook @ 0x1802B50B9, _ImageBase @ 0x1802B50B9, _ThrowImageBase @ 0x1802B50B9, abort_action @ 0x1802B50B9, _pctype @ 0x1802B50B9, _pwctype @ 0x1802B50B9, _crtheap @ 0x1802B50B9, __lconv @ 0x1802B50B9"
+  },
+  {
+    "offset": "0x23c54c6",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x1802B50B1, global_locale @ 0x1802B50B1, _RTC_ErrorReportFunc @ 0x1802B50B1, _RTC_ErrorReportFuncW @ 0x1802B50B1, ?_pnhHeap@@3P6AH_K@ZA @ 0x1802B50B1, _pfnAllocHook @ 0x1802B50B1, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x1802B50B1, _pfnReportHook @ 0x1802B50B1, _ImageBase @ 0x1802B50B1, _ThrowImageBase @ 0x1802B50B1, abort_action @ 0x1802B50B1, _pctype @ 0x1802B50B1, _pwctype @ 0x1802B50B1, _crtheap @ 0x1802B50B1, __lconv @ 0x1802B50B1"
+  },
+  {
+    "offset": "0x23c7c12",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x1802B595B, global_locale @ 0x1802B595B, _RTC_ErrorReportFunc @ 0x1802B595B, _RTC_ErrorReportFuncW @ 0x1802B595B, ?_pnhHeap@@3P6AH_K@ZA @ 0x1802B595B, _pfnAllocHook @ 0x1802B595B, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x1802B595B, _pfnReportHook @ 0x1802B595B, _ImageBase @ 0x1802B595B, _ThrowImageBase @ 0x1802B595B, abort_action @ 0x1802B595B, _pctype @ 0x1802B595B, _pwctype @ 0x1802B595B, _crtheap @ 0x1802B595B, __lconv @ 0x1802B595B"
+  },
+  {
+    "offset": "0x23c7e14",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x1802B594F, global_locale @ 0x1802B594F, _RTC_ErrorReportFunc @ 0x1802B594F, _RTC_ErrorReportFuncW @ 0x1802B594F, ?_pnhHeap@@3P6AH_K@ZA @ 0x1802B594F, _pfnAllocHook @ 0x1802B594F, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x1802B594F, _pfnReportHook @ 0x1802B594F, _ImageBase @ 0x1802B594F, _ThrowImageBase @ 0x1802B594F, abort_action @ 0x1802B594F, _pctype @ 0x1802B594F, _pwctype @ 0x1802B594F, _crtheap @ 0x1802B594F, __lconv @ 0x1802B594F"
+  },
+  {
+    "offset": "0x23cde14",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x1802992A3, global_locale @ 0x1802992A3, _RTC_ErrorReportFunc @ 0x1802992A3, _RTC_ErrorReportFuncW @ 0x1802992A3, ?_pnhHeap@@3P6AH_K@ZA @ 0x1802992A3, _pfnAllocHook @ 0x1802992A3, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x1802992A3, _pfnReportHook @ 0x1802992A3, _ImageBase @ 0x1802992A3, _ThrowImageBase @ 0x1802992A3, abort_action @ 0x1802992A3, _pctype @ 0x1802992A3, _pwctype @ 0x1802992A3, _crtheap @ 0x1802992A3, __lconv @ 0x1802992A3"
+  },
+  {
+    "offset": "0x23cf1f4",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x1802B6F87, global_locale @ 0x1802B6F87, _RTC_ErrorReportFunc @ 0x1802B6F87, _RTC_ErrorReportFuncW @ 0x1802B6F87, ?_pnhHeap@@3P6AH_K@ZA @ 0x1802B6F87, _pfnAllocHook @ 0x1802B6F87, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x1802B6F87, _pfnReportHook @ 0x1802B6F87, _ImageBase @ 0x1802B6F87, _ThrowImageBase @ 0x1802B6F87, abort_action @ 0x1802B6F87, _pctype @ 0x1802B6F87, _pwctype @ 0x1802B6F87, _crtheap @ 0x1802B6F87, __lconv @ 0x1802B6F87"
+  },
+  {
+    "offset": "0x23efd9d",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x1802B50C9, global_locale @ 0x1802B50C9, _RTC_ErrorReportFunc @ 0x1802B50C9, _RTC_ErrorReportFuncW @ 0x1802B50C9, ?_pnhHeap@@3P6AH_K@ZA @ 0x1802B50C9, _pfnAllocHook @ 0x1802B50C9, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x1802B50C9, _pfnReportHook @ 0x1802B50C9, _ImageBase @ 0x1802B50C9, _ThrowImageBase @ 0x1802B50C9, abort_action @ 0x1802B50C9, _pctype @ 0x1802B50C9, _pwctype @ 0x1802B50C9, _crtheap @ 0x1802B50C9, __lconv @ 0x1802B50C9"
+  },
+  {
+    "offset": "0x243b0e3",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x1802B50C1, global_locale @ 0x1802B50C1, _RTC_ErrorReportFunc @ 0x1802B50C1, _RTC_ErrorReportFuncW @ 0x1802B50C1, ?_pnhHeap@@3P6AH_K@ZA @ 0x1802B50C1, _pfnAllocHook @ 0x1802B50C1, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x1802B50C1, _p"
+  },
+  {
+    "offset": "0x25f57fc",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x1802B6FD3, global_locale @ 0x1802B6FD3, _RTC_ErrorReportFunc @ 0x1802B6FD3, _RTC_ErrorReportFuncW @ 0x1802B6FD3, ?_pnhHeap@@3P6AH_K@ZA @ 0x1802B6FD3, _pfnAllocHook @ 0x1802B6FD3, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x1802B6FD3, _pfnReportHook @ 0x1802B6FD3, _ImageBase @ 0x1802B6FD3, _ThrowImageBase @ 0x1802B6FD3, abort_action @ 0x1802B6FD3, _pctype @ 0x1802B6FD3, _pwctype @ 0x1802B6FD3, _crtheap @ 0x1802B6FD3, __lconv @ 0x1802B6FD3"
+  },
+  {
+    "offset": "0x25f5e14",
+    "encoding": "ascii",
+    "text": "4 defined bytes match; Xref candidates: NFS_LineSize @ 0x18029859F, global_locale @ 0x18029859F, _RTC_ErrorReportFunc @ 0x18029859F, _RTC_ErrorReportFuncW @ 0x18029859F, ?_pnhHeap@@3P6AH_K@ZA @ 0x18029859F, _pfnAllocHook @ 0x18029859F, ?_pfnDumpClient@@3P6AXPEAX_K@ZEA @ 0x18029859F, _pfnReportHook @ 0x18029859F, _ImageBase @ 0x18029859F, _ThrowImageBase @ 0x18029859F, abort_action @ 0x18029859F, _pctype @ 0x18029859F, _pwctype @ 0x18029859F, _crtheap @ 0x18029859F, __lconv @ 0x18029859F"
+  },
+  {
+    "offset": "0x25f920a",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeW"
+  },
+  {
+    "offset": "0x25fd3a1",
+    "encoding": "ascii",
+    "text": "D3D11CreateDevice"
+  },
+  {
+    "offset": "0x25fdd7f",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeA"
+  },
+  {
+    "offset": "0x266f20a",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeW"
+  },
+  {
+    "offset": "0x26e720a",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeW"
+  },
+  {
+    "offset": "0x275d20a",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeW"
+  },
+  {
+    "offset": "0x299b9f1",
+    "encoding": "ascii",
+    "text": "$$ HKEY__.unused"
+  },
+  {
+    "offset": "0x299ba07",
+    "encoding": "ascii",
+    "text": "$$ HKEY__"
+  },
+  {
+    "offset": "0x2e45202",
+    "encoding": "ascii",
+    "text": "elemetry@ShadowPlay@NvTelemetry@@6B@"
+  },
+  {
+    "offset": "0x2e45399",
+    "encoding": "ascii",
+    "text": "Telemetry@ShadowPlay@NvTelemetry@@6B@"
+  },
+  {
+    "offset": "0x2e47ceb",
+    "encoding": "ascii",
+    "text": "Telemetry@ShadowPlay@NvTelemetry@@@8"
+  },
+  {
+    "offset": "0x2e49c4c",
+    "encoding": "ascii",
+    "text": "Telemetry@ShadowPlay@NvTelemetry@@@8"
+  },
+  {
+    "offset": "0x2e4b826",
+    "encoding": "ascii",
+    "text": "elemetry@ShadowPlay@NvTelemetry@@8"
+  },
+  {
+    "offset": "0x2e4b9a9",
+    "encoding": "ascii",
+    "text": "Telemetry@ShadowPlay@NvTelemetry@@8"
+  },
+  {
+    "offset": "0x2e4d2f8",
+    "encoding": "ascii",
+    "text": "elemetry@ShadowPlay@NvTelemetry@@8"
+  },
+  {
+    "offset": "0x2e4d47b",
+    "encoding": "ascii",
+    "text": "Telemetry@ShadowPlay@NvTelemetry@@8"
+  },
+  {
+    "offset": "0x2e51dd6",
+    "encoding": "ascii",
+    "text": "elemetry@ShadowPlay@NvTelemetry@@8"
+  },
+  {
+    "offset": "0x2e51f59",
+    "encoding": "ascii",
+    "text": "Telemetry@ShadowPlay@NvTelemetry@@8"
+  },
+  {
+    "offset": "0x2e53957",
+    "encoding": "ascii",
+    "text": "elemetry@ShadowPlay@NvTelemetry@@6B@"
+  },
+  {
+    "offset": "0x2e53aee",
+    "encoding": "ascii",
+    "text": "Telemetry@ShadowPlay@NvTelemetry@@6B@"
+  },
+  {
+    "offset": "0x2e59e7e",
+    "encoding": "ascii",
+    "text": "D3D11CreateDevice"
+  },
+  {
+    "offset": "0x2e5faf9",
+    "encoding": "ascii",
+    "text": "D3D11CreateDevice"
+  },
+  {
+    "offset": "0x2e65427",
+    "encoding": "ascii",
+    "text": "telemetrySh"
+  },
+  {
+    "offset": "0x2e677d7",
+    "encoding": "ascii",
+    "text": "telemetrySha"
+  },
+  {
+    "offset": "0x2e6d716",
+    "encoding": "ascii",
+    "text": "mmonTelemetr"
+  },
+  {
+    "offset": "0x2e6ffe6",
+    "encoding": "ascii",
+    "text": "NaCreatenvapidll"
+  },
+  {
+    "offset": "0x2e73f3e",
+    "encoding": "ascii",
+    "text": "nvapiutilsD"
+  },
+  {
+    "offset": "0x2e7536b",
+    "encoding": "ascii",
+    "text": "nvenclog"
+  },
+  {
+    "offset": "0x2e772df",
+    "encoding": "ascii",
+    "text": "telemetrys"
+  },
+  {
+    "offset": "0x2e7f382",
+    "encoding": "ascii",
+    "text": "telemetryapi"
+  },
+  {
+    "offset": "0x2e87fe4",
+    "encoding": "ascii",
+    "text": "NaTelemetrymanag_4"
+  }
+]

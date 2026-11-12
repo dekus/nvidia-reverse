@@ -1,0 +1,116 @@
+{
+  "name": "google/api/http.proto",
+  "package": "google.api",
+  "message_type": [
+    {
+      "name": "Http",
+      "field": [
+        {
+          "name": "rules",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.api.HttpRule"
+        }
+      ]
+    },
+    {
+      "name": "HttpRule",
+      "field": [
+        {
+          "name": "selector",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "get",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        },
+        {
+          "name": "put",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        },
+        {
+          "name": "post",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        },
+        {
+          "name": "delete",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        },
+        {
+          "name": "patch",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        },
+        {
+          "name": "custom",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.api.CustomHttpPattern",
+          "oneof_index": 0
+        },
+        {
+          "name": "body",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "additional_bindings",
+          "number": 11,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.api.HttpRule"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "pattern"
+        }
+      ]
+    },
+    {
+      "name": "CustomHttpPattern",
+      "field": [
+        {
+          "name": "kind",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "path",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "options": {
+    "java_package": "com.google.api",
+    "java_outer_classname": "HttpProto",
+    "java_multiple_files": true,
+    "go_package": "google.golang.org/genproto/googleapis/api/annotations;annotations",
+    "cc_enable_arenas": true,
+    "objc_class_prefix": "GAPI"
+  },
+  "syntax": "proto3"
+}

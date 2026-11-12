@@ -1,0 +1,47 @@
+[
+  {
+    "offset": "0x15769f",
+    "encoding": "ascii",
+    "text": "      \"description\": \"Indicates multiplier/divider mode for the housesync signal. (syncSource needs to be set as NVAPI_GSYNC_SYNC_SOURCE_HOUSESYNC)\","
+  },
+  {
+    "offset": "0x157d86",
+    "encoding": "ascii",
+    "text": "          \"description\": \"Gpu ID (also referreed to as the NvApi Gpu handle)\""
+  },
+  {
+    "offset": "0x1581bc",
+    "encoding": "ascii",
+    "text": "          \"description\": \"Indicates if house sync is an output (valid only when syncSource is NVAPI_GSYNC_SYNC_SOURCE_VSYNC on P2061 boards)\""
+  },
+  {
+    "offset": "0x1638d0",
+    "encoding": "ascii",
+    "text": "Skipping telemetry report of error %s from method %s"
+  },
+  {
+    "offset": "0x1a7822",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x1614f0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  },
+  {
+    "offset": "0x165c60",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x165cb0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x165fb0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "path": "FrameViewSDK\\etw_fcat\\NVFTVRDLL64.dll",
+  "sha256": "e75c2edcbb5f06c10e5a57afd50bc8c26f9374c3d2a28c8b54db8bc6e30134a8",
+  "method": "Capstone linear sweep over raw bytes of all IMAGE_SCN_MEM_EXECUTE sections; skipdata enabled; no reachability proof",
+  "sections": [],
+  "utc": "2026-11-11T21:40:10.751090+00:00",
+  "instructions": 0,
+  "skipdata_bytes": 0,
+  "calls": 0,
+  "api_reference_counts": {},
+  "complete_linear_sweep": true
+}

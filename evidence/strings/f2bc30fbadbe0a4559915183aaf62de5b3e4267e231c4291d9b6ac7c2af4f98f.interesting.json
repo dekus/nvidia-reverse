@@ -1,0 +1,37 @@
+[
+  {
+    "offset": "0xd5578",
+    "encoding": "ascii",
+    "text": "127.0.0.1"
+  },
+  {
+    "offset": "0xd5720",
+    "encoding": "ascii",
+    "text": "\\\\.\\pipe\\"
+  },
+  {
+    "offset": "0xe5d60",
+    "encoding": "ascii",
+    "text": "Application_ShouldReportTelemetry"
+  },
+  {
+    "offset": "0xf82e4",
+    "encoding": "ascii",
+    "text": "Application_ShouldReportTelemetry"
+  },
+  {
+    "offset": "0xf9a54",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeA"
+  },
+  {
+    "offset": "0xd5dd8",
+    "encoding": "utf-16le",
+    "text": "CreateNamedPipe failed with "
+  },
+  {
+    "offset": "0xd5e18",
+    "encoding": "utf-16le",
+    "text": "CreateNamedPipe failed"
+  }
+]

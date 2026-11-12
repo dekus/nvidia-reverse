@@ -1,0 +1,570 @@
+[
+  {
+    "file_offset": "0x245fa0",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#NvPerfMonPlugin",
+      "title": "NvPerfMonPlugin Endpoints",
+      "type": "object",
+      "module": "NvPerfMon",
+      "definitions": {
+        "GpuFanPerfMetrics": {
+          "type": "object",
+          "properties": {
+            "fanSpeed": {
+              "type": "number",
+              "description": "gpu fan speed in RPM"
+            }
+          }
+        },
+        "GpusPerfStats": {
+          "type": "object",
+          "properties": {
+            "gpuIndex": {
+              "type": "integer",
+              "description": "indicate gpu index"
+            },
+            "gpuUtil": {
+              "type": "number",
+              "description": "gpu utilization in percentage"
+            },
+            "vramClock": {
+              "type": "number",
+              "description": "GPU memory clock"
+            },
+            "gpuVoltage": {
+              "type": "number",
+              "description": "GPU voltage in percentage"
+            },
+            "gpuTemp": {
+              "type": "number",
+              "description": "gpu temperature"
+            },
+            "gpuClock": {
+              "type": "number",
+              "description": "gpu frequency"
+            },
+            "gpuFanSpeed": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/GpuFanPerfMetrics"
+              }
+            }
+          }
+        },
+        "EnablePerfStatsNotification": {
+          "type": "object",
+          "isCommand": true,
+          "description": "enable/disable sending performance matrix notification",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "isEnable": {
+                "type": "boolean",
+                "description": "whether to enable perf stats notification"
+              },
+              "intervalMS": {
+                "type": "integer",
+                "description": "polling interval in milisec"
+              }
+            },
+            "required": [
+              "isEnable",
+              "intervalMS"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "boolean",
+                "description": "true if successfully stated otherwise false"
+              }
+            },
+            "required": [
+              "result"
+            ]
+          }
+        },
+        "RegisterPerfStatsNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "perf stats notifications ",
+          "return": {
+            "type": "object",
+            "properties": {
+              "gpusPerfStats": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/GpusPerfStats"
+                }
+              },
+              "fps": {
+                "type": "number",
+                "description": "average FPS for current app"
+              },
+              "fps1pc": {
+                "type": "number",
+                "description": "FPS 1% Low for current app"
+              },
+              "fpsdispavg": {
+                "type": "number",
+                "description": "Disp Avg FPS for current app"
+              },
+              "fpsdisp1pc": {
+                "type": "number",
+                "description": "Disp FPS 1% Low for current app"
+              },
+              "renderLatency": {
+                "type": "number",
+                "description": "Render Latency"
+              },
+              "renderingPresentLatency": {
+                "type": "number",
+                "description": "Render Present Latency"
+              },
+              "gpuPower": {
+                "type": "number",
+                "description": "tgpWatts"
+              },
+              "cpuUtil": {
+                "type": "number",
+                "description": "cpu Utilization"
+              },
+              "cpuPower": {
+                "type": "number",
+                "description": "CPU Power in Watts"
+              },
+              "cpuFreq": {
+                "type": "number",
+                "description": "CPU Frequency in MHz"
+              },
+              "cpuPkgTemp": {
+                "type": "number",
+                "description": "CPU Package Temperature in Celsius"
+              },
+              "gSyncLamp": {
+                "type": "object",
+                "properties": {
+                  "lamEnabled": {
+                    "type": "boolean",
+                    "description": "true if LAM is enabled otherwise false"
+                  },
+                  "pcDisplayLatency": {
+                    "type": "number",
+                    "description": "PC Display latency"
+                  },
+                  "avgPcDisplayLatency": {
+                    "type": "number",
+                    "description": "Avarage PC Display latency"
+                  },
+                  "avgPCLatency": {
+                    "type": "number",
+                    "description": "Average PC Latency"
+                  },
+                  "mouseLatency": {
+                    "type": "object",
+                    "properties": {
+                      "latency": {
+                        "type": "number"
+                      },
+                      "latencySource": {
+                        "type": "number",
+                        "description": "1 indicate latency is coming from mouse lookup table, 0 indicate LAM module latency value"
+                      },
+                      "unverifiedFW": {
+                        "type": "number",
+                        "description": "1 indicate unverified FW, 0 indicate verified FW"
+                      }
+                    }
+                  },
+                  "avgMouseLatency": {
+                    "type": "object",
+                    "properties": {
+                      "latency": {
+                        "type": "number"
+                      },
+                      "polledActuation": {
+                        "type": "number",
+                        "description": " 1 indicate if avg mouse latency adjustment is being applied or not"
+                      }
+                    }
+                  },
+                  "monitorLatency": {
+                    "type": "number"
+                  },
+                  "systemLatency": {
+                    "type": "number",
+                    "description": " E2E system latency"
+                  },
+                  "avgSystemLatency": {
+                    "type": "number",
+                    "description": " avarage E2E system latency"
+                  },
+                  "reflexMonitorPosition": {
+                    "type": "object",
+                    "properties": {
+                      "width": {
+                        "type": "number"
+                      },
+                      "height": {
+                        "type": "number"
+                      },
+                      "topleftx": {
+                        "type": "number"
+                      },
+                      "toplefty": {
+                        "type": "number"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "SetProcessId": {
+          "type": "object",
+          "isCommand": true,
+          "description": "set the process id of application, plugin would send the perf. metrics for given process",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "processId": {
+                "type": "integer",
+                "description": "process id of application"
+              }
+            },
+            "required": [
+              "processId"
+            ]
+          }
+        },
+        "SetMetricSampleSize": {
+          "type": "object",
+          "isCommand": true,
+          "description": "set the sample size of the metrics, plugin would send the perf. metrics based on the sample size",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "sampleSize": {
+                "type": "integer",
+                "description": "sample size of metrics"
+              }
+            },
+            "required": [
+              "sampleSize"
+            ]
+          }
+        },
+        "ResetAverageMetrics": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Reset average metrics calculation from FvSDK"
+        },
+        "FilePath": {
+          "type": "object",
+          "properties": {
+            "logpath": {
+              "type": "string",
+              "description": "Default value of logging file path"
+            }
+          }
+        },
+        "GetDefaultLoggingPath": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Return default path of perfmetrics logging",
+          "return": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "$ref": "#/definitions/FilePath"
+              }
+            },
+            "required": [
+              "path"
+            ]
+          }
+        },
+        "LoggingToggle": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Start/stop Perfmetrics logging and set log path",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean",
+                "description": "status of perfmetrics logging"
+              },
+              "path": {
+                "type": "string",
+                "description": "path of the log file"
+              }
+            },
+            "required": [
+              "enable"
+            ]
+          }
+        },
+        "AlignLatencyMonitoringRectangle": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Align Latency Monitoring Rectangle from FvSDK"
+        },
+        "GetRLAMonitorSupport": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Check for RLA Monitor",
+          "return": {
+            "type": "object",
+            "properties": {
+              "supported": {
+                "type": "boolean",
+                "description": "Defines if RLA Monitor is supported"
+              }
+            },
+            "required": [
+              "supported"
+            ]
+          }
+        },
+        "ShowFlashIndicator": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Set Flash Indicator Visibilty",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "isVisible": {
+                "type": "boolean",
+                "description": "visibility of Reflex Flash Indicator"
+              }
+            },
+            "required": [
+              "isVisible"
+            ]
+          }
+        },
+        "SetFlashIndicatorSize": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Set Flash Indicator size",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "size": {
+                "type": "boolean",
+                "description": "Small size if false else large"
+              }
+            },
+            "required": [
+              "size"
+            ]
+          }
+        },
+        "GpuInfo": {
+          "type": "object",
+          "properties": {
+            "index": {
+              "type": "integer",
+              "description": "Index of GPU"
+            },
+            "Name": {
+              "type": "string",
+              "description": "Name of the GPU"
+            }
+          }
+        },
+        "GetGpuInfo": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Provides information about OverClocking support",
+          "return": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "boolean",
+                "description": "true if success otherwise false"
+              },
+              "gpus": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/GpuInfo"
+                }
+              }
+            },
+            "required": [
+              "result",
+              "gpus"
+            ]
+          }
+        },
+        "powerStatusNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Power status updates. 0-AC , 1-DC, 2-Short term power supply like UPS, 3-Unknown or out of range",
+          "return": {
+            "type": "object",
+            "properties": {
+              "powerStatus": {
+                "type": "integer",
+                "description": "power status. 0-AC, 1-DC",
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "tsEnumNames": [
+                  "AC",
+                  "DC",
+                  "UPS_LIKE",
+                  "Unknown"
+                ]
+              }
+            }
+          }
+        },
+        "CheckRLASupportedDriver": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Check for RLA supported Driver version ",
+          "return": {
+            "type": "object",
+            "properties": {
+              "supported": {
+                "type": "boolean",
+                "description": "Defines if Driver supports RLA feature"
+              },
+              "driverVersion": {
+                "type": "number",
+                "description": "Driver version"
+              }
+            },
+            "required": [
+              "supported",
+              "driverVersion"
+            ]
+          }
+        },
+        "NGXOverrideErrFeedback": {
+          "description": "error feedback bits for override features",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "dlssOverrideFlagErrFailed": {
+                "type": "boolean",
+                "description": "failed"
+              },
+              "dlssOverrideFlagErrDenied": {
+                "type": "boolean",
+                "description": "denied"
+              },
+              "dlssOverrideFlagErrDRS": {
+                "type": "boolean",
+                "description": "drs error"
+              },
+              "dlssOverrideFlagErrNotFound": {
+                "type": "boolean",
+                "description": "dll not found string"
+              },
+              "dlssOverrideFlagErrDllLoad": {
+                "type": "boolean",
+                "description": "dll load error"
+              }
+            }
+          }
+        },
+        "GetNGXOverrideState": {
+          "isCommand": true,
+          "description": "Gets NGXOverride SR state.",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "processId": {
+                "type": "integer",
+                "description": "processId of the application."
+              },
+              "cmsId": {
+                "type": "integer",
+                "description": "cmsId of the application."
+              }
+            },
+            "required": [
+              "processId",
+              "cmsId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "dlssOverrideFlagEvaluateSR": {
+                "type": "boolean",
+                "description": "override engaged SR"
+              },
+              "dlssOverrideFlagEvaluateRR": {
+                "type": "boolean",
+                "description": "override engaged RR"
+              },
+              "dlssOverrideFlagEvaluateFG": {
+                "type": "boolean",
+                "description": "override engaged FG"
+              },
+              "errFeedbackSR": {
+                "type": "array",
+                "description": "Array of SR error feedback",
+                "items": {
+                  "$ref": "#/definitions/NGXOverrideErrFeedback"
+                }
+              },
+              "errFeedbackRR": {
+                "type": "array",
+                "description": "Array of RR error feedback",
+                "items": {
+                  "$ref": "#/definitions/NGXOverrideErrFeedback"
+                }
+              },
+              "errFeedbackFG": {
+                "type": "array",
+                "description": "Array of FG error feedback",
+                "items": {
+                  "$ref": "#/definitions/NGXOverrideErrFeedback"
+                }
+              },
+              "performanceMode": {
+                "type": "integer",
+                "description": "Applied Performance Mode Override setting value"
+              },
+              "renderPreset": {
+                "type": "integer",
+                "description": "Applied Override Feature Preset value"
+              },
+              "frameGenerationCount": {
+                "type": "integer",
+                "description": "Applied FG Frame Count value"
+              },
+              "scalingRatio": {
+                "type": "integer",
+                "description": "Applied Perf Scaling Factor value"
+              },
+              "frameGenerationPreset": {
+                "type": "integer",
+                "description": "Applied FG Preset value"
+              },
+              "frameGenerationMode": {
+                "type": "integer",
+                "description": "Applied FG Mode value"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

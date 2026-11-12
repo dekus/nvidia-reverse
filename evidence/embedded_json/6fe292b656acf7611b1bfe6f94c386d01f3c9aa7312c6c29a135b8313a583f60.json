@@ -1,0 +1,808 @@
+[
+  {
+    "file_offset": "0x2cf260",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#RisePlugin",
+      "title": "RisePlugin Endpoints",
+      "type": "object",
+      "module": "Rise",
+      "definitions": {
+        "RiseSupported": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "True if supported/installed, false otherwise."
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "RiseRequestCompletion": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "content": {
+                "type": "string",
+                "description": "Request typed or spoken by the user"
+              },
+              "contentType": {
+                "type": "integer",
+                "description": "Type of message",
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ],
+                "tsEnumNames": [
+                  "NV_RISE_CONTENT_TYPE_INVALID",
+                  "NV_RISE_CONTENT_TYPE_TEXT",
+                  "NV_RISE_CONTENT_TYPE_GRAPH",
+                  "NV_RISE_CONTENT_TYPE_CUSTOM_BEHAVIOR",
+                  "NV_RISE_CONTENT_TYPE_CUSTOM_BEHAVIOR_RESULT",
+                  "NV_RISE_CONTENT_TYPE_INSTALLING",
+                  "NV_RISE_CONTENT_TYPE_PROGRESS_UPDATE",
+                  "NV_RISE_CONTENT_TYPE_READY",
+                  "NV_RISE_CONTENT_TYPE_DOWNLOAD_REQUEST",
+                  "NV_RISE_CONTENT_TYPE_UPDATE_INFO"
+                ]
+              },
+              "isThinkingModeOn": {
+                "type": "boolean",
+                "description": "True if thinking mode is ON, false otherwise."
+              },
+              "nvAppSettings": {
+                "type": "string",
+                "description": "json string of NvApp settings and their current values"
+              }
+            },
+            "required": [
+              "content",
+              "contentType",
+              "nvAppSettings"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "True if the request has been performed successfully, false otherwise."
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "RiseRegister": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean",
+                "description": "True to register, false otherwise"
+              }
+            },
+            "required": [
+              "enable"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "True if the request has been performed successfully, false otherwise."
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "RiseGameNotification": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "bLaunched": {
+                "type": "boolean",
+                "description": "True for game launch, false for exit"
+              },
+              "gameName": {
+                "type": "string",
+                "description": "Title of the game"
+              },
+              "exePath": {
+                "type": "string",
+                "description": "Full executable path of the game"
+              },
+              "pid": {
+                "type": "integer",
+                "description": "Process ID of the game"
+              }
+            },
+            "required": [
+              "bLaunched",
+              "gameName",
+              "exePath",
+              "pid"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "True if the request has been performed successfully, false otherwise."
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "RiseUpdatesNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Completion tokens received as they are generated",
+          "return": {
+            "type": "object",
+            "properties": {
+              "resultTokens": {
+                "type": "string",
+                "description": "Latest tokens obtained."
+              },
+              "contentType": {
+                "type": "integer",
+                "description": "Type of message",
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ],
+                "tsEnumNames": [
+                  "NV_RISE_CONTENT_TYPE_INVALID",
+                  "NV_RISE_CONTENT_TYPE_TEXT",
+                  "NV_RISE_CONTENT_TYPE_GRAPH",
+                  "NV_RISE_CONTENT_TYPE_CUSTOM_BEHAVIOR",
+                  "NV_RISE_CONTENT_TYPE_CUSTOM_BEHAVIOR_RESULT",
+                  "NV_RISE_CONTENT_TYPE_INSTALLING",
+                  "NV_RISE_CONTENT_TYPE_PROGRESS_UPDATE",
+                  "NV_RISE_CONTENT_TYPE_READY",
+                  "NV_RISE_CONTENT_TYPE_DOWNLOAD_REQUEST",
+                  "NV_RISE_CONTENT_TYPE_UPDATE_INFO"
+                ]
+              },
+              "completed": {
+                "type": "boolean",
+                "description": "Confirms completion of message of type contentType"
+              }
+            }
+          }
+        },
+        "SaveCSV": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "csvData": {
+                "type": "string",
+                "description": "CSV data to be saved"
+              },
+              "ugcFolderPath": {
+                "type": "string",
+                "description": "Path of the user's UGC folder"
+              }
+            },
+            "required": [
+              "csvData",
+              "ugcFolderPath"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "True if the request has been performed successfully, false otherwise."
+              },
+              "folderPath": {
+                "type": "string",
+                "description": "GAssist folder path where chart data is saved."
+              }
+            },
+            "required": [
+              "status",
+              "folderPath"
+            ]
+          }
+        },
+        "VqVoiceQuerySupported": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "True if supported/installed, false otherwise."
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "VqResisterVoiceQuery": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "create": {
+                "type": "boolean",
+                "description": "True to create, false to destroy voice query session"
+              },
+              "useRiseAsr": {
+                "type": "boolean",
+                "description": "True to use RISE ASR, false to use legacy Voice Query API (default: false)"
+              }
+            },
+            "required": [
+              "create"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "True if the request has been performed successfully, false otherwise."
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "VqVoiceQueryResultNotfication": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Voice query result notification  - Text output from ASR",
+          "return": {
+            "type": "object",
+            "properties": {
+              "queryText": {
+                "type": "string",
+                "description": "Text output from ASR."
+              },
+              "queryResultCode": {
+                "type": "integer",
+                "description": "Voice Query result HRESULT error code"
+              },
+              "responseType": {
+                "type": "integer",
+                "description": "Type of result",
+                "enum": [
+                  0
+                ],
+                "tsEnumNames": [
+                  "NvVqApi_VoiceQueryResponse_ASRText"
+                ]
+              },
+              "isFinal": {
+                "type": "boolean",
+                "description": "Indicates if this is the final ASR result"
+              }
+            }
+          }
+        },
+        "VqMicDeviceChangedNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Voice query mic device changed notification",
+          "return": {
+            "type": "object",
+            "properties": {
+              "bConnected": {
+                "type": "boolean",
+                "description": "True  if mic device plugged in. False if unplugged"
+              },
+              "index": {
+                "type": "integer",
+                "description": "Mic device index in the system enumeration"
+              },
+              "micId": {
+                "type": "string",
+                "description": "Mic device id"
+              }
+            }
+          }
+        },
+        "VqSetVoiceQuery": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "vqMode": {
+                "type": "integer",
+                "description": "Set Voice Query mode",
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "tsEnumNames": [
+                  "NvVqApi_VoiceQueryMode_Start",
+                  "NvVqApi_VoiceQueryMode_Stop",
+                  "NvVqApi_VoiceQueryMode_StartAutoStop",
+                  "NvVqApi_VoiceQueryMode_StartWakeWord",
+                  "NvVqApi_VoiceQueryMode_StopWakeWord"
+                ]
+              },
+              "micId": {
+                "type": "string",
+                "description": "Microphone source. If empty, system default mic to be used"
+              },
+              "voiceLangId": {
+                "type": "string",
+                "description": "Voice language id. Keep empty for auto detect"
+              },
+              "textLangId": {
+                "type": "string",
+                "description": "Text language. if empty, default would be english"
+              }
+            },
+            "required": [
+              "vqMode",
+              "micId",
+              "voiceLangId",
+              "textLangId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "True if the request has been performed successfully, false otherwise."
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "VqSetVoicePlayback": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "textLangId": {
+                "type": "string",
+                "description": "Text language. if empty, default would be english"
+              },
+              "voiceLangId": {
+                "type": "string",
+                "description": "Voice language id. Keep empty for auto detect"
+              },
+              "voiceCharacterId": {
+                "type": "string",
+                "description": "Voice Character id. If empty, system default mic to be used"
+              },
+              "text": {
+                "type": "string",
+                "description": "Text string to playback as voice"
+              }
+            },
+            "required": [
+              "textLangId",
+              "voiceLangId",
+              "voiceCharacterId",
+              "text"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "True if the request has been performed successfully, false otherwise."
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "VqMicDeviceInfo": {
+          "type": "object",
+          "description": "Enumerated mic device info",
+          "properties": {
+            "index": {
+              "type": "integer",
+              "description": "Mic device index from system mic enumeration"
+            },
+            "micId": {
+              "type": "string",
+              "description": "Mic device name from system mic enumeration"
+            },
+            "micState": {
+              "type": "integer",
+              "description": "Mic device state from system mic enumeration"
+            },
+            "isSystemDefault": {
+              "type": "boolean",
+              "description": "True if mice is currently a system default mic. False otherwise"
+            }
+          }
+        },
+        "VqEnumMicDevices": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Voice query mic enumeration",
+          "return": {
+            "type": "object",
+            "properties": {
+              "MicDevices": {
+                "type": "array",
+                "description": "Array of enumerated mic devices",
+                "items": {
+                  "$ref": "#/definitions/VqMicDeviceInfo"
+                }
+              }
+            },
+            "required": [
+              "MicDevices"
+            ]
+          }
+        },
+        "VqLanguageInfo": {
+          "type": "object",
+          "description": "Voice Query  supported language info",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Language name"
+            },
+            "bASRTextSupport": {
+              "type": "boolean",
+              "description": "True if language supported for ASR text output. False otherwise."
+            },
+            "bASRVoiceSupport": {
+              "type": "boolean",
+              "description": "True if language supported for ASR voice input. False otherwise."
+            },
+            "bTTSTextSupport": {
+              "type": "boolean",
+              "description": "True if language supported for TTS text input. False otherwise."
+            },
+            "bTTSVoiceSupport": {
+              "type": "boolean",
+              "description": "True if language supported for TTS voice output. False otherwise."
+            }
+          }
+        },
+        "VqEnumLanguages": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Voice query supported languages enumeration",
+          "return": {
+            "type": "object",
+            "properties": {
+              "Languages": {
+                "type": "array",
+                "description": "Array of enumerated mic devices",
+                "items": {
+                  "$ref": "#/definitions/VqLanguageInfo"
+                }
+              }
+            },
+            "required": [
+              "Languages"
+            ]
+          }
+        },
+        "VqVoiceCharacterInfo": {
+          "type": "object",
+          "description": "Voice Query  supported voice character info",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Voice character name"
+            },
+            "bFemale": {
+              "type": "boolean",
+              "description": "FALSE - Male Voice character. TRUE - Female Voice character"
+            }
+          }
+        },
+        "VqEnumVoiceCharacters": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Voice query supported voice characters enumeration",
+          "return": {
+            "type": "object",
+            "properties": {
+              "Characters": {
+                "type": "array",
+                "description": "Array of enumerated voice characters",
+                "items": {
+                  "$ref": "#/definitions/VqVoiceCharacterInfo"
+                }
+              }
+            },
+            "required": [
+              "Characters"
+            ]
+          }
+        },
+        "VqPrepareMic": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Prepare microphone without triggering 'in use' indicator for reduced latency. Call before showing mic icon. NVBug 5734067",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "micId": {
+                "type": "string",
+                "description": "Microphone device id to prepare. If empty, system default mic to be used"
+              }
+            },
+            "required": [
+              "micId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "True if the request has been performed successfully, false otherwise."
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "VqTeardownMic": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Teardown/finalize microphone when no longer needed. Call before G-Assist disable or when changing microphone. NVBug 5734067",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "micId": {
+                "type": "string",
+                "description": "Microphone device id to teardown. If empty, system default mic to be used"
+              }
+            },
+            "required": [
+              "micId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "True if the request has been performed successfully, false otherwise."
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "GameAssistSupported": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "True if supported/installed, false otherwise."
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "GameAssistCreateSession": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "create": {
+                "type": "boolean",
+                "description": "True to create, false to destroy game assist session"
+              },
+              "gameName": {
+                "type": "string",
+                "description": "Title of the game"
+              },
+              "pid": {
+                "type": "integer",
+                "description": "Process ID of the game"
+              }
+            },
+            "required": [
+              "create",
+              "gameName",
+              "pid"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "True if the request has been performed successfully, false otherwise."
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "GameAssistQueryResponseNotfication": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Game Assist Query Response notification",
+          "return": {
+            "type": "object",
+            "properties": {
+              "responseText": {
+                "type": "string",
+                "description": "Response text from Game Assist."
+              },
+              "queryResultCode": {
+                "type": "integer",
+                "description": "Query result HRESULT error code"
+              },
+              "responseType": {
+                "type": "integer",
+                "description": "Type of result: ResponseChunk - Regular text output from the LLM, CitationChunk - Citation/epilog chunk to the original response, Sentinel - Sentinel token (end of response)",
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ],
+                "tsEnumNames": [
+                  "NvGameAssistApi_QueryResponse_ResponseChunk",
+                  "NvGameAssistApi_QueryResponse_CitationChunk",
+                  "NvGameAssistApi_QueryResponse_Sentinel",
+                  "NvGameAssistApi_QueryResponse_GameAssistReady",
+                  "NvGameAssistApi_QueryResponse_Fail",
+                  "NvGameAssistApi_QueryResponse_UnsupportedQuery",
+                  "NvGameAssistApi_QueryResponse_AlertNotification",
+                  "NvGameAssistApi_QueryResponse_ClearOngoingStream",
+                  "NvGameAssistApi_QueryResponse_SpecialMessage"
+                ]
+              }
+            }
+          }
+        },
+        "GameAssistSubmitQuery": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "queryText": {
+                "type": "string",
+                "description": "User prompt text for game assist"
+              }
+            },
+            "required": [
+              "queryText"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "True if the request has been performed successfully, false otherwise."
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "EnsureNvAppReadyForGAssist": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Ensure NVIDIA App is running and ready for G-Assist commands",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "launchIfNotReady": {
+                "type": "boolean",
+                "description": "Launch NVIDIA App if not already running",
+                "default": true
+              },
+              "timeoutMs": {
+                "type": "integer",
+                "description": "Timeout in milliseconds to wait for NVIDIA App to be ready",
+                "default": 10000
+              }
+            },
+            "required": [
+              "launchIfNotReady",
+              "timeoutMs"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "True if NvApp is ready, false if timeout or error"
+              },
+              "errorMessage": {
+                "type": "string",
+                "description": "Error message if status is false"
+              },
+              "wasAlreadyLaunched": {
+                "type": "boolean",
+                "description": "True if NvApp was already launched, false otherwise"
+              }
+            },
+            "required": [
+              "status",
+              "wasAlreadyLaunched"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

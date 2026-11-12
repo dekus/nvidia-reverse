@@ -1,0 +1,14 @@
+{
+  "snapshot_date": "2026-11-11",
+  "http_sys_mcp": {
+    "observed_registration": "HTTP://127.0.0.1:13508:127.0.0.1/MCP/",
+    "address": "127.0.0.1",
+    "port": 13508,
+    "path": "/MCP/",
+    "associated_component": "NvContainer AIUser / MCP plugin group",
+    "transport": "HTTP.sys",
+    "lan_exposure_established": false,
+    "raw_system_wide_dump_included": false,
+    "interpretation": "A loopback registration was observed. A process-filtered TCP snapshot is not a complete enumeration of HTTP.sys registrations. No requests were sent to this endpoint during the general collection."
+  }
+}

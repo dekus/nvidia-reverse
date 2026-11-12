@@ -1,0 +1,1623 @@
+[
+  {
+    "file_offset": "0x5bf250",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#nvcamera",
+      "title": "NvCamera Endpoints",
+      "type": "object",
+      "module": "NvCamera",
+      "definitions": {
+        "AnselStatusEnum": {
+          "type": "string",
+          "description": "Ansel status mapped as string",
+          "enum": [
+            "ok",
+            "failed",
+            "started",
+            "failedToStart",
+            "noSpace",
+            "permissionDenied",
+            "invalidRequest",
+            "failedToProcess",
+            "processDeclined",
+            "alreadyEnabled",
+            "alreadyDisabled",
+            "outOfRange",
+            "alreadySet",
+            "incompatibleVersion",
+            "disabled",
+            "okAnsel",
+            "okModsOnly",
+            "failedToFinishCapture",
+            "failedToSaveShotFailedCreateDiretory",
+            "failedToSaveShotNoSpaceLeft",
+            "processingCompleted",
+            "shotSaved",
+            "processingFile",
+            "failedToSaveShot"
+          ]
+        },
+        "CaptureTypes": {
+          "type": "string",
+          "enum": [
+            "regular",
+            "stereoRegular",
+            "highRes",
+            "sphericalPanorama",
+            "stereoSphericalPanorama"
+          ]
+        },
+        "FeaturesSupported": {
+          "type": "string",
+          "enum": [
+            "sdk",
+            "mods",
+            "styleTransfer",
+            "allowOffline",
+            "none"
+          ]
+        },
+        "MinMax": {
+          "type": "object",
+          "properties": {
+            "min": {
+              "type": "integer"
+            },
+            "max": {
+              "type": "integer"
+            }
+          }
+        },
+        "NvCameraResponseNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "anselEnabledResponse": {
+                "type": "object",
+                "description": "Capture control changed notification",
+                "properties": {
+                  "capture": {
+                    "$ref": "#/definitions/AnselStatusEnum"
+                  }
+                }
+              },
+              "ipcVersion": {
+                "type": "object",
+                "description": "Capture control changed notification",
+                "properties": {
+                  "compatible": {
+                    "type": "boolean"
+                  },
+                  "anselVersion": {
+                    "type": "string"
+                  },
+                  "shareVersion": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "compatible",
+                  "anselVersion",
+                  "shareVersion"
+                ]
+              },
+              "anselEnabledStatus": {
+                "type": "object",
+                "description": "Get Ansel Enabled Response notification",
+                "properties": {
+                  "anselStatus": {
+                    "type": "string",
+                    "enum": [
+                      "notEnabled",
+                      "enabled"
+                    ]
+                  }
+                },
+                "required": [
+                  "anselStatus"
+                ]
+              },
+              "anselEnabledState": {
+                "type": "object",
+                "description": "Get Ansel Enabled Response notification",
+                "properties": {
+                  "anselState": {
+                    "type": "string",
+                    "enum": [
+                      "notAvailable",
+                      "available",
+                      "notEnabled",
+                      "enabled"
+                    ],
+                    "description": "notAvailable/available indicate nvcamera is on MBus. notEnabled/enabled indicate ansel session"
+                  }
+                }
+              },
+              "procInfo": {
+                "type": "object",
+                "description": "Game proc info (pid/path) notification",
+                "properties": {
+                  "procId": {
+                    "type": "integer",
+                    "description": "PID of game"
+                  },
+                  "procPath": {
+                    "type": "string",
+                    "description": "Full path of game exe"
+                  }
+                }
+              },
+              "captureTypesList": {
+                "type": "object",
+                "description": "Supported capture type by NvCamera",
+                "properties": {
+                  "exrAllowed": {
+                    "type": "boolean",
+                    "description": "Is EXR allowed"
+                  },
+                  "captures": {
+                    "type": "array",
+                    "description": "Array of supported types [up to 5]",
+                    "items": {
+                      "$ref": "#/definitions/CaptureTypes"
+                    }
+                  }
+                }
+              },
+              "sdkIntegration": {
+                "type": "object",
+                "description": "Get whether SDK is integrated",
+                "properties": {
+                  "sdkIntegrationAvailable": {
+                    "type": "boolean",
+                    "description": "True or False"
+                  }
+                }
+              },
+              "rollRange": {
+                "$ref": "#/definitions/MinMax"
+              },
+              "fovRange": {
+                "$ref": "#/definitions/MinMax"
+              },
+              "setRollFovResponse": {
+                "type": "object",
+                "description": "Set fov status response",
+                "properties": {
+                  "status": {
+                    "$ref": "#/definitions/AnselStatusEnum"
+                  },
+                  "response": {
+                    "type": "string",
+                    "enum": [
+                      "roll",
+                      "fov"
+                    ]
+                  }
+                }
+              },
+              "fovValue": {
+                "type": "object",
+                "description": "Current fov value",
+                "properties": {
+                  "fov": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "fov"
+                ]
+              },
+              "screenResolution": {
+                "type": "object",
+                "description": "Game resolution width/height of game",
+                "properties": {
+                  "width": {
+                    "type": "integer"
+                  },
+                  "height": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "highResResolutions": {
+                "type": "object",
+                "description": "Array of supported resolutions for highRes type",
+                "properties": {
+                  "resolutionArray": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "multiplier": {
+                          "type": "integer"
+                        },
+                        "width": {
+                          "type": "integer",
+                          "minimum": 0
+                        },
+                        "height": {
+                          "type": "integer",
+                          "minimum": 0
+                        }
+                      },
+                      "required": [
+                        "multiplier"
+                      ]
+                    }
+                  }
+                }
+              },
+              "panoramaResolutions": {
+                "type": "object",
+                "description": "Supported resolutions as minX/maxX range for 360 capture type as ",
+                "properties": {
+                  "minX": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "maxX": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "minX",
+                  "maxX"
+                ]
+              },
+              "captureShotStarted": {
+                "type": "object",
+                "description": "Capture shot started successfully or not with shot count",
+                "properties": {
+                  "status": {
+                    "$ref": "#/definitions/AnselStatusEnum"
+                  },
+                  "shotCount": {
+                    "type": "integer"
+                  },
+                  "screenshot": {
+                    "type": "string"
+                  }
+                }
+              },
+              "captureShotProgress": {
+                "type": "object",
+                "description": "Capture shot progress status",
+                "properties": {
+                  "currentShot": {
+                    "type": "integer"
+                  },
+                  "screenshot": {
+                    "type": "string"
+                  }
+                }
+              },
+              "captureShotFinished": {
+                "type": "object",
+                "description": "Capture shot finished status",
+                "properties": {
+                  "status": {
+                    "$ref": "#/definitions/AnselStatusEnum"
+                  },
+                  "captureType": {
+                    "$ref": "#/definitions/CaptureTypes"
+                  },
+                  "captureStatus": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "status",
+                  "captureType",
+                  "captureStatus"
+                ]
+              },
+              "captureShotProcessingFinished": {
+                "type": "object",
+                "description": "Capture shot finished status",
+                "properties": {
+                  "captureType": {
+                    "$ref": "#/definitions/CaptureTypes"
+                  },
+                  "path": {
+                    "type": "string"
+                  },
+                  "captureStatus": {
+                    "type": "string"
+                  },
+                  "status": {
+                    "$ref": "#/definitions/AnselStatusEnum"
+                  }
+                },
+                "required": [
+                  "captureType",
+                  "path",
+                  "captureStatus",
+                  "status"
+                ]
+              },
+              "captureShotCancel": {
+                "type": "object",
+                "description": "Cancel the capture in progress",
+                "properties": {
+                  "status": {
+                    "$ref": "#/definitions/AnselStatusEnum"
+                  }
+                }
+              },
+              "features": {
+                "type": "object",
+                "description": "Array of available feature set",
+                "properties": {
+                  "featureSet": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/definitions/FeaturesSupported"
+                    }
+                  }
+                }
+              },
+              "filtersList": {
+                "type": "object",
+                "description": "Filter list details as id/name pairs",
+                "properties": {
+                  "filtersListArray": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "resetFilter": {
+                "type": "object",
+                "description": "Status of reset filter IPC",
+                "properties": {
+                  "status": {
+                    "$ref": "#/definitions/AnselStatusEnum"
+                  }
+                }
+              },
+              "insertFilter": {
+                "type": "object",
+                "description": "Status of insert filter IPC",
+                "properties": {
+                  "status": {
+                    "$ref": "#/definitions/AnselStatusEnum"
+                  }
+                }
+              },
+              "removeFilter": {
+                "type": "object",
+                "description": "Status of remove filter IPC",
+                "properties": {
+                  "status": {
+                    "$ref": "#/definitions/AnselStatusEnum"
+                  }
+                }
+              },
+              "moveFilter": {
+                "type": "object",
+                "description": "Status of move filter IPC",
+                "properties": {
+                  "status": {
+                    "$ref": "#/definitions/AnselStatusEnum"
+                  }
+                }
+              },
+              "setFilterAttribute": {
+                "type": "object",
+                "description": "Status of setFilterAttribute",
+                "properties": {
+                  "status": {
+                    "$ref": "#/definitions/AnselStatusEnum"
+                  }
+                }
+              },
+              "filterStackInfo": {
+                "type": "object",
+                "description": "Array of filter ids in the stack",
+                "properties": {
+                  "ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "resetEntireStack": {
+                "type": "object",
+                "description": "Status of reset entire stack IPC",
+                "properties": {
+                  "status": {
+                    "$ref": "#/definitions/AnselStatusEnum"
+                  }
+                }
+              },
+              "anselStatusReport": {
+                "type": "object",
+                "description": "ansel status report",
+                "properties": {
+                  "statusStrings": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "status": {
+                    "$ref": "#/definitions/AnselStatusEnum"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NvCameraFilterResponseNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "filterDetails": {
+                "type": "object",
+                "description": "Filter information details",
+                "properties": {
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "status": {
+                        "$ref": "#/definitions/AnselStatusEnum"
+                      },
+                      "stackIdx": {
+                        "type": "integer",
+                        "description": "Index in the stack at this filter is applied"
+                      },
+                      "id": {
+                        "type": "string",
+                        "description": "Filter id specified as name of the filter"
+                      },
+                      "filterDisplayName": {
+                        "type": "string",
+                        "description": "Display name of the filter"
+                      }
+                    }
+                  },
+                  "controls": {
+                    "type": "array",
+                    "description": "Sub controls of the filter. There could be multiple controls for each filter. So its an array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer",
+                          "description": "ID for the current control"
+                        },
+                        "displayName": {
+                          "type": "string",
+                          "description": "Name for the current control"
+                        },
+                        "controlType": {
+                          "type": "string",
+                          "description": "Type(slider/bool etc..) for the current control"
+                        },
+                        "tooltip": {
+                          "type": "string",
+                          "description": "Info for the current control"
+                        },
+                        "measureUnit": {
+                          "type": "string",
+                          "description": "Measure unit for the current control"
+                        },
+                        "dataType": {
+                          "type": "string",
+                          "enum": [
+                            "float",
+                            "int",
+                            "uint",
+                            "bool"
+                          ],
+                          "description": "Data representation for the current control"
+                        },
+                        "minValue": {
+                          "type": "array",
+                          "description": "Array of control min values",
+                          "items": {
+                            "type": "number"
+                          }
+                        },
+                        "maxValue": {
+                          "type": "array",
+                          "description": "Array of control max values",
+                          "items": {
+                            "type": "number"
+                          }
+                        },
+                        "defaultValue": {
+                          "type": "array",
+                          "description": "Array of control default values",
+                          "items": {
+                            "type": "number"
+                          }
+                        },
+                        "currentValue": {
+                          "type": "array",
+                          "description": "Array of control current values",
+                          "items": {
+                            "type": "number"
+                          }
+                        },
+                        "stepSize": {
+                          "type": "array",
+                          "description": "Array of control step size",
+                          "items": {
+                            "type": "number"
+                          }
+                        },
+                        "uiStepSize": {
+                          "type": "array",
+                          "description": "Array of control step size",
+                          "items": {
+                            "type": "number"
+                          }
+                        },
+                        "uiMinValueV1": {
+                          "type": "array",
+                          "description": "Array of UI min value",
+                          "items": {
+                            "type": "number"
+                          }
+                        },
+                        "uiMaxValueV1": {
+                          "type": "array",
+                          "description": "Array of UI max value",
+                          "items": {
+                            "type": "number"
+                          }
+                        },
+                        "uiDisplayNameV1": {
+                          "type": "array",
+                          "description": "Array of UI display names",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "dataLabels": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "uiMinValue": {
+                          "type": "number"
+                        },
+                        "uiMaxValue": {
+                          "type": "number"
+                        },
+                        "defaultId": {
+                          "description": "Default ID for pulldown/radio-button controls",
+                          "type": "number"
+                        },
+                        "currentId": {
+                          "description": "Current ID for pulldown/radio-button controls",
+                          "type": "number"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NvCameraUIControlNotificationData": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "updateFovValue": {
+                "type": "object",
+                "description": "Update game FOV value",
+                "properties": {
+                  "currentFovValue": {
+                    "type": "array",
+                    "maxItems": 4,
+                    "items": {
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+              "updateRollValue": {
+                "type": "object",
+                "description": "Update game FOV value",
+                "properties": {
+                  "currentRollValue": {
+                    "type": "array",
+                    "maxItems": 4,
+                    "items": {
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+              "uiControlSetVisibility": {
+                "type": "object",
+                "description": "Notify whether control is visible",
+                "properties": {
+                  "id": {
+                    "type": "integer"
+                  },
+                  "visible": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "visible"
+                ]
+              },
+              "uiControlGetVisibility": {
+                "type": "object",
+                "description": "Notify whether control is visible",
+                "properties": {
+                  "id": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "uiControlRemoveAllRequest": {
+                "type": "object",
+                "description": "Remove all UI controls",
+                "properties": {
+                  "removeAllControls": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "uiControlRemove": {
+                "type": "object",
+                "description": "Remove UI control for given ids",
+                "properties": {
+                  "ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+              "nvCameraReady": {
+                "type": "object",
+                "description": "NvCamera ready notification with the DX creation counter",
+                "properties": {
+                  "deviceCreationCounter": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "deviceCreationCounter"
+                ]
+              },
+              "addUIElement": {
+                "type": "object",
+                "description": "Add UI control request",
+                "properties": {
+                  "controlType": {
+                    "type": "string"
+                  },
+                  "controlId": {
+                    "type": "integer"
+                  },
+                  "displayName": {
+                    "type": "string"
+                  },
+                  "visible": {
+                    "type": "boolean"
+                  },
+                  "minValue": {
+                    "type": "array",
+                    "description": "Array of control min values",
+                    "items": {
+                      "type": "number"
+                    }
+                  },
+                  "maxValue": {
+                    "type": "array",
+                    "description": "Array of control max values",
+                    "items": {
+                      "type": "number"
+                    }
+                  },
+                  "defaultValue": {
+                    "type": "array",
+                    "description": "Array of control default values",
+                    "items": {
+                      "type": "number"
+                    }
+                  },
+                  "currentValue": {
+                    "type": "array",
+                    "description": "Array of control current values",
+                    "items": {
+                      "type": "number"
+                    }
+                  },
+                  "stepSize": {
+                    "type": "array",
+                    "description": "Array of control step size",
+                    "items": {
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+              "anselStatusReport": {
+                "type": "object",
+                "description": "ansel status report",
+                "properties": {
+                  "statusStrings": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "status": {
+                    "$ref": "#/definitions/AnselStatusEnum"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NgxAIUpResNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "ngxAIUpResProgress": {
+                "type": "object",
+                "description": "Progress info for AI UpRes",
+                "properties": {
+                  "progress": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 100
+                  }
+                }
+              },
+              "ngxAIUpResError": {
+                "type": "object",
+                "description": "AI UpRes failed notification",
+                "properties": {
+                  "ngxErrorType": {
+                    "type": "string"
+                  }
+                }
+              },
+              "ngxAIUpResCaptureDone": {
+                "type": "object",
+                "description": "AI UpRes success notification",
+                "properties": {
+                  "ngxAIUpResStatus": {
+                    "type": "string",
+                    "enum": [
+                      "success"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "SetAnselEnable": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Set Capture control",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "sessionEnable": {
+                "type": "boolean",
+                "description": "Enable ansel session"
+              },
+              "pauseOnEnable": {
+                "type": "boolean",
+                "description": "Pause game when enable ansel session"
+              },
+              "leaveFiltersOn": {
+                "type": "boolean",
+                "description": "Leave filters applied for freestyle"
+              }
+            },
+            "required": [
+              "sessionEnable"
+            ]
+          }
+        },
+        "GetFeatureSet": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the available features for the game"
+        },
+        "GetProcessInfo": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the game process info as PID and name"
+        },
+        "GetNvCameraConfig": {
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "ipcEnabled": {
+                "type": "boolean",
+                "description": "Sets IPC enabled/disable regkey"
+              },
+              "freestyleEnabled": {
+                "type": "boolean",
+                "description": "Sets freestyle enable/disable regkey"
+              }
+            },
+            "required": [
+              "ipcEnabled",
+              "freestyleEnabled"
+            ]
+          }
+        },
+        "GetVersion": {
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "version": {
+                "type": "string",
+                "description": "Returns version info"
+              }
+            },
+            "required": [
+              "version"
+            ]
+          }
+        },
+        "AnselUIReady": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Notify nvcamera that Ansel UI is up and ready"
+        },
+        "GetAnselCaptureTypes": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the list of capture types from Ansel"
+        },
+        "GetAnselEnabledStatus": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Bool value of capture control enabled/disabled"
+        },
+        "SetLanguage": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Set language of GFE to Ansel",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "langId": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "langId"
+            ]
+          }
+        },
+        "SetNvCameraConfig": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Set language of GFE to Ansel",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ipcEnable": {
+                "type": "boolean",
+                "description": "Sets IPC enabled/disable regkey"
+              },
+              "freestyleEnable": {
+                "type": "boolean",
+                "description": "Sets freestyle enable/disable regkey"
+              }
+            }
+          }
+        },
+        "CaptureScreenshot": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Captures the specified type of screenshot",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "captureType": {
+                "type": "string",
+                "description": "Specifies the type of capture to be taken"
+              },
+              "resolutionMultiplier": {
+                "type": "integer",
+                "description": "Specifies the multiplier for highRes capture"
+              },
+              "width": {
+                "type": "integer",
+                "description": "Specifies the capture width"
+              },
+              "height": {
+                "type": "integer",
+                "description": "Specifies the capture height"
+              },
+              "panoramaWidth": {
+                "type": "integer",
+                "description": "Specifies the width for 360 capture"
+              },
+              "panoramaHeight": {
+                "type": "integer",
+                "description": "Specifies the height for 360 capture"
+              },
+              "saveAsExr": {
+                "type": "boolean",
+                "description": "Specifies HDR capture enable/disable"
+              },
+              "enhance": {
+                "type": "boolean",
+                "description": "Specifies the enhance mode for highRes"
+              }
+            },
+            "required": [
+              "captureType",
+              "saveAsExr"
+            ]
+          }
+        },
+        "GetCaptureResolutions": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the supported resolution list for a capture type",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "captureType": {
+                "$ref": "#/definitions/CaptureTypes"
+              }
+            },
+            "required": [
+              "captureType"
+            ]
+          }
+        },
+        "SetFilter": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets the specified filter at given stackId",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean",
+                "description": "Set or reset filter"
+              },
+              "stackId": {
+                "type": "integer",
+                "description": "Index in stack that this filter will be applied"
+              },
+              "filterId": {
+                "type": "string",
+                "description": "Full qualified name of the filter to be applied"
+              }
+            },
+            "required": [
+              "enable"
+            ]
+          }
+        },
+        "GetCurrentFilterInfo": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the current filter info",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "stackId": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "stackId"
+            ]
+          }
+        },
+        "ResetFilter": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Resets either all filters or a filter specified in stackId. Either of these params is required",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "resetAll": {
+                "type": "boolean",
+                "description": "Resets all filters"
+              },
+              "stackId": {
+                "type": "integer",
+                "description": "Reset a single filter at give stack index"
+              }
+            },
+            "required": [
+              "stackId"
+            ]
+          }
+        },
+        "InsertFilter": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Insert a given filter id at specified ",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "stackId": {
+                "type": "integer"
+              },
+              "filterId": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "stackId",
+              "filterId"
+            ]
+          }
+        },
+        "RemoveFilter": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Removes a filter at given stack index",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "stackId": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "stackId"
+            ]
+          }
+        },
+        "MoveFilter": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Moves the filter list as per the order list",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "filterOrder": {
+                "type": "array",
+                "description": "Array of current indices in the order that need to be set",
+                "items": {
+                  "type": "integer"
+                }
+              }
+            },
+            "required": [
+              "filterOrder"
+            ]
+          }
+        },
+        "GetFilterStackInfo": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the current filter stack info"
+        },
+        "ResetFilterStack": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Reset the entire filter stack"
+        },
+        "SetFilterAttribute": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Set filter control attributes",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "filter": {
+                "type": "string",
+                "description": "Filter for which controls need to be changed"
+              },
+              "controlId": {
+                "type": "integer"
+              },
+              "controlType": {
+                "type": "integer"
+              },
+              "stackId": {
+                "type": "integer"
+              },
+              "dataType": {
+                "type": "string"
+              },
+              "values": {
+                "type": "array",
+                "description": "Array of control current values",
+                "items": {
+                  "type": "number",
+                  "description": "Values needs to be number (0, 1) for  boolean"
+                }
+              }
+            },
+            "required": [
+              "filter",
+              "controlId",
+              "controlType",
+              "dataType",
+              "values"
+            ]
+          }
+        },
+        "SetFilterAndAttributes": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Set filter and its control attributes",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "filterId": {
+                "type": "string",
+                "description": "Filter for which controls need to be changed"
+              },
+              "stackIdx": {
+                "type": "integer",
+                "description": "At what position the filter is to be applied"
+              },
+              "controls": {
+                "type": "array",
+                "description": "Array of controls for the above filter",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "type": {
+                      "type": "integer",
+                      "description": "Is it a slider/boolean etc?"
+                    },
+                    "values": {
+                      "type": "array",
+                      "items": {
+                        "type": "number",
+                        "description": "Values needs to be number (0, 1) for  boolean"
+                      }
+                    },
+                    "dataType": {
+                      "type": "string",
+                      "description": "Is the control value a string/boolean/float/integer etc?"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "type",
+                    "values",
+                    "dataType"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "filterId",
+              "stackIdx",
+              "controls"
+            ]
+          }
+        },
+        "CancelCapture": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Cancel the capture in progress"
+        },
+        "SetCameraControlFovRoll": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Set camera controls fov or roll",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "setFovRollEnable": {
+                "type": "boolean",
+                "description": "Set to true"
+              },
+              "setRollValue": {
+                "type": "integer"
+              },
+              "setFovValue": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "setFovRollEnable"
+            ]
+          }
+        },
+        "GetCameraControlFov": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Get current fov for camera",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "setFovRollEnable": {
+                "type": "boolean",
+                "description": "Set to false to get current FOV"
+              }
+            },
+            "required": [
+              "setFovRollEnable"
+            ]
+          }
+        },
+        "GetCameraRangeFovRoll": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Get range of values for fov and roll",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "getCameraRoll": {
+                "type": "boolean",
+                "description": "Request for roll range"
+              },
+              "getCameraFov": {
+                "type": "boolean",
+                "description": "Request for fov range"
+              }
+            }
+          }
+        },
+        "SetCameraGridOfThirds": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Set grid of thirds to the game view",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "enableGoT": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "enableGoT"
+            ]
+          }
+        },
+        "SetAnselRedirection": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets ansel input redirection",
+          "parameters": {
+            "$ref": "#/definitions/AnselRedirectionParams"
+          }
+        },
+        "SendEnableRedirectionToSP": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Send input parameters to nvcamera",
+          "parameters": {
+            "$ref": "#/definitions/AnselRedirectionParams"
+          }
+        },
+        "MouseEventToNvcamera": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Send mouse event to nvcamera",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "eventName": {
+                "type": "string"
+              },
+              "button": {
+                "type": "integer"
+              },
+              "coordinateX": {
+                "type": "integer"
+              },
+              "coordinateY": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "eventName"
+            ]
+          }
+        },
+        "KeyboardEventToNvcamera": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Send keyboard event to nvcamera",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "eventName": {
+                "type": "string"
+              },
+              "keyCode": {
+                "type": "integer"
+              },
+              "code": {
+                "type": "string"
+              },
+              "shiftKey": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "eventName"
+            ]
+          }
+        },
+        "GetFreestyleWhitelisted": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the freestyle whitelist value for requested game name",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "profileName": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "profileName"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "description": "Returned True if game is whitelisted, false otherwise",
+            "properties": {
+              "freestyleWhitelisted": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "GetNvCameraOnBusStatus": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the status whether NvCamera is on MBus"
+        },
+        "StartNgxAIUpRes": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Start NGX AI SuperRes for given input file",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "inputFile": {
+                "type": "string"
+              },
+              "upResEffect": {
+                "type": "integer"
+              },
+              "upResScale": {
+                "type": "integer"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "inputFile",
+              "upResEffect",
+              "upResScale",
+              "width",
+              "height"
+            ]
+          }
+        },
+        "CancelNgxAIUpRes": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Cancel the AI UpRes that is in progress",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "cancelAIUpRes": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "AnselRedirectionParams": {
+          "type": "object",
+          "properties": {
+            "enable": {
+              "type": "boolean"
+            },
+            "mode": {
+              "type": "string",
+              "enum": [
+                "windowedSDK",
+                "fullscreenSDK",
+                "windowedNoSDK",
+                "fullscreenNoSDK"
+              ]
+            },
+            "hid": {
+              "type": "string",
+              "enum": [
+                "mouse",
+                "keyboard",
+                "gamepad"
+              ]
+            }
+          }
+        },
+        "AnselShotSavedNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Indicates Ansel shot has been saved",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "captureMode": {
+                "type": "string",
+                "description": "Ansel screenshot"
+              },
+              "path": {
+                "type": "string",
+                "description": "Fully-quantified path to the screenshot"
+              }
+            },
+            "required": [
+              "captureMode",
+              "path"
+            ]
+          }
+        },
+        "SetCMSInfo": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets CMS info to NvCamera for engraving in captured images",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "cmsId": {
+                "type": "string"
+              },
+              "shortName": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "cmsId",
+              "shortName"
+            ]
+          }
+        },
+        "SetLcarsClientId": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets LCARS config (client ID and version) used for chroma queries",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "clientId": {
+                "type": "string",
+                "description": "LCARS client ID from the product config"
+              },
+              "clientVersion": {
+                "type": "string",
+                "description": "Product version string for NV-Client-Version header"
+              }
+            },
+            "required": [
+              "clientId",
+              "clientVersion"
+            ]
+          }
+        },
+        "ChromaDataNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Push notification with chroma app metadata when a game starts",
+          "return": {
+            "type": "object",
+            "properties": {
+              "cmsId": {
+                "type": "integer",
+                "description": "CMS ID of the game"
+              },
+              "pid": {
+                "type": "integer",
+                "description": "Process ID of the game"
+              },
+              "profileName": {
+                "type": "string",
+                "description": "DRS profile name of the game"
+              },
+              "id": {
+                "type": "string",
+                "description": "App ID from the chroma server response"
+              },
+              "title": {
+                "type": "string",
+                "description": "App title from the chroma server response"
+              },
+              "nvidiaTech": {
+                "type": "object",
+                "description": "NVIDIA technology support flags",
+                "properties": {
+                  "FREESTYLE": {
+                    "type": "boolean"
+                  },
+                  "PHOTO_MODE": {
+                    "type": "boolean"
+                  },
+                  "RTXDVC": {
+                    "type": "boolean"
+                  },
+                  "HIGHLIGHTS": {
+                    "type": "boolean"
+                  },
+                  "HDR": {
+                    "type": "boolean"
+                  },
+                  "NGX": {
+                    "type": "boolean"
+                  },
+                  "REFLEX": {
+                    "type": "boolean"
+                  },
+                  "REFLEXFLASHINDICATOR": {
+                    "type": "boolean"
+                  },
+                  "REFLEXFIAUTO": {
+                    "type": "boolean"
+                  },
+                  "REFLEXSTATS": {
+                    "type": "boolean"
+                  },
+                  "GAMEASSIST": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

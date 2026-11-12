@@ -1,0 +1,577 @@
+[
+  {
+    "offset": "0x41d730",
+    "encoding": "ascii",
+    "text": "NvcPluginStart ignored NvPluginWindow handle"
+  },
+  {
+    "offset": "0x426fb8",
+    "encoding": "ascii",
+    "text": "SetLoggedinUserDetailsForTelemetry failed with result: %d"
+  },
+  {
+    "offset": "0x429e18",
+    "encoding": "ascii",
+    "text": "hasRequiredConsent"
+  },
+  {
+    "offset": "0x429e30",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: hasRequiredConsent is not bool"
+  },
+  {
+    "offset": "0x429e70",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: no member hasFunctionalConsent found or it is not bool"
+  },
+  {
+    "offset": "0x429ed0",
+    "encoding": "ascii",
+    "text": "hasFunctionalConsent"
+  },
+  {
+    "offset": "0x429ef0",
+    "encoding": "ascii",
+    "text": "hasTechnicalConsent"
+  },
+  {
+    "offset": "0x429f08",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: hasTechnicalConsent is not bool"
+  },
+  {
+    "offset": "0x429f50",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: no member hasBehavioralConsent found or it is not bool"
+  },
+  {
+    "offset": "0x429fb0",
+    "encoding": "ascii",
+    "text": "hasBehavioralConsent"
+  },
+  {
+    "offset": "0x42a028",
+    "encoding": "ascii",
+    "text": ": no corresponding member found in enum PrivacySettings"
+  },
+  {
+    "offset": "0x42a070",
+    "encoding": "ascii",
+    "text": "Invalid PrivacySettings value passed: "
+  },
+  {
+    "offset": "0x42a5f8",
+    "encoding": "ascii",
+    "text": "consentLevel"
+  },
+  {
+    "offset": "0x42a740",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: no member privacySettings found or it is not std::string"
+  },
+  {
+    "offset": "0x42a7a0",
+    "encoding": "ascii",
+    "text": "privacySettings"
+  },
+  {
+    "offset": "0x42a7b8",
+    "encoding": "ascii",
+    "text": "deviceConsent"
+  },
+  {
+    "offset": "0x42c950",
+    "encoding": "ascii",
+    "text": "NvMessageBus.dll"
+  },
+  {
+    "offset": "0x42d860",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\Downloader\\update_framework\\common\\Telemetry\\NvTelemetryEvents.cpp"
+  },
+  {
+    "offset": "0x42dd88",
+    "encoding": "ascii",
+    "text": "Check gs_telemetry failed"
+  },
+  {
+    "offset": "0x42ebb8",
+    "encoding": "ascii",
+    "text": "InitializeTelemetry"
+  },
+  {
+    "offset": "0x42ec20",
+    "encoding": "ascii",
+    "text": "InitializeTelemetry_2"
+  },
+  {
+    "offset": "0x42ece0",
+    "encoding": "ascii",
+    "text": "InitializeTelemetryStandalone"
+  },
+  {
+    "offset": "0x42edf8",
+    "encoding": "ascii",
+    "text": "InitializeTelemetryStandalone_2"
+  },
+  {
+    "offset": "0x42eee0",
+    "encoding": "ascii",
+    "text": "UninitializeTelemetry"
+  },
+  {
+    "offset": "0x42efa0",
+    "encoding": "ascii",
+    "text": "GetUserTelemetryConsent"
+  },
+  {
+    "offset": "0x42efc0",
+    "encoding": "ascii",
+    "text": "Check m_getUserTelemetryConsent failed"
+  },
+  {
+    "offset": "0x42eff0",
+    "encoding": "ascii",
+    "text": "GetDeviceTelemetryConsent"
+  },
+  {
+    "offset": "0x42f010",
+    "encoding": "ascii",
+    "text": "Check m_getDeviceTelemetryConsent failed"
+  },
+  {
+    "offset": "0x42f048",
+    "encoding": "ascii",
+    "text": "SetUserTelemetryConsent"
+  },
+  {
+    "offset": "0x42f068",
+    "encoding": "ascii",
+    "text": "Check m_setUserTelemetryConsent failed"
+  },
+  {
+    "offset": "0x42f098",
+    "encoding": "ascii",
+    "text": "SetDeviceTelemetryConsent"
+  },
+  {
+    "offset": "0x42f0b8",
+    "encoding": "ascii",
+    "text": "Check m_setDeviceTelemetryConsent failed"
+  },
+  {
+    "offset": "0x42f0f0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendEvent"
+  },
+  {
+    "offset": "0x42f130",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendAnonymousEvent"
+  },
+  {
+    "offset": "0x42f180",
+    "encoding": "ascii",
+    "text": "SubscribeForTelemetryNotifications"
+  },
+  {
+    "offset": "0x42f1d0",
+    "encoding": "ascii",
+    "text": "UnsubscribeFromTelemetryNotifications"
+  },
+  {
+    "offset": "0x42f220",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendEvent_2"
+  },
+  {
+    "offset": "0x42f260",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendAnonymousEvent_2"
+  },
+  {
+    "offset": "0x42f2b8",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_2"
+  },
+  {
+    "offset": "0x42f300",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_3"
+  },
+  {
+    "offset": "0x42f320",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_4"
+  },
+  {
+    "offset": "0x42f340",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_5"
+  },
+  {
+    "offset": "0x42f360",
+    "encoding": "ascii",
+    "text": "FreeTelemetryString"
+  },
+  {
+    "offset": "0x42f378",
+    "encoding": "ascii",
+    "text": "Check m_freeTelemetryString failed"
+  },
+  {
+    "offset": "0x42f4d0",
+    "encoding": "ascii",
+    "text": "Trying to send non-anonymous telemetry anonymized."
+  },
+  {
+    "offset": "0x42f558",
+    "encoding": "ascii",
+    "text": "telemetry"
+  },
+  {
+    "offset": "0x42fe10",
+    "encoding": "ascii",
+    "text": "Failed to set user details for telemetry: %s"
+  },
+  {
+    "offset": "0x430570",
+    "encoding": "ascii",
+    "text": "NvTelemetry"
+  },
+  {
+    "offset": "0x430600",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\Downloader\\update_framework\\update_framework_sdk\\TelemetryProvider.cpp"
+  },
+  {
+    "offset": "0x4306e8",
+    "encoding": "ascii",
+    "text": "NvTelemetry.json"
+  },
+  {
+    "offset": "0x430700",
+    "encoding": "ascii",
+    "text": "Returning nullptr because telemetry creation fails"
+  },
+  {
+    "offset": "0x431140",
+    "encoding": "ascii",
+    "text": "??0UpdateFrameworkController@ComponentUpdateMgr@UpdateFramework@@QEAA@AEBV?$shared_ptr@VIExceptionEventHandler@UpdateFramework@@@std@@V?$shared_ptr@VIComponentProfileCatalogFactory@ProfileCatalog@Persistence@UpdateFramework@@@4@V?$shared_ptr@VIPluginManagerFactory@PluginMgr@UpdateFramework@@@4@AEBVpath@filesystem@4@V?$shared_ptr@VITelemetryProviderFactory@Common@UpdateFramework@@@4@@Z"
+  },
+  {
+    "offset": "0x431318",
+    "encoding": "ascii",
+    "text": "Could not instantiate telemetry object. Exception %s"
+  },
+  {
+    "offset": "0x431490",
+    "encoding": "ascii",
+    "text": "?SetLoggedinUserDetailsForTelemetry@UpdateFrameworkController@ComponentUpdateMgr@UpdateFramework@@UEAA?AW4UpdateFrameworkResult@3@AEBUUserInfo@3NvTelemetry@@@Z"
+  },
+  {
+    "offset": "0x432368",
+    "encoding": "ascii",
+    "text": "Cleaning up TelemetryObject..."
+  },
+  {
+    "offset": "0x432390",
+    "encoding": "ascii",
+    "text": "CleanupTelemetry"
+  },
+  {
+    "offset": "0x4323a8",
+    "encoding": "ascii",
+    "text": "Failed to acquire telemetry lock during cleanup: %s"
+  },
+  {
+    "offset": "0x4323f0",
+    "encoding": "ascii",
+    "text": "Cleanup timeout exceeded after TelemetryObject; continuing remaining cleanup"
+  },
+  {
+    "offset": "0x432d50",
+    "encoding": "ascii",
+    "text": " pathToNvTelemetryDllParent - "
+  },
+  {
+    "offset": "0x432d78",
+    "encoding": "ascii",
+    "text": "m_telemetryObject is null for telemetryOwnerVersion - "
+  },
+  {
+    "offset": "0x432dc0",
+    "encoding": "ascii",
+    "text": "We dont know if user is not logged in or not yet. So no UserInfo for telemetry while constructing UpdateFrameworkTelemetry. User info may get set later"
+  },
+  {
+    "offset": "0x432e80",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\Downloader\\update_framework\\common\\Telemetry\\UpdateFrameworkTelemetry.cpp"
+  },
+  {
+    "offset": "0x432f30",
+    "encoding": "ascii",
+    "text": "User is logged in. Setting UserInfo for telemetry"
+  },
+  {
+    "offset": "0x432f70",
+    "encoding": "ascii",
+    "text": "User is not logged in. No UserInfo for telemetry"
+  },
+  {
+    "offset": "0x43a090",
+    "encoding": "ascii",
+    "text": "_telemetry is null, cannot send telemetry for Send_DownloadStarted_Event"
+  },
+  {
+    "offset": "0x43a0f0",
+    "encoding": "ascii",
+    "text": "Failed to send telemetry for download start of - %s for taskId - %s"
+  },
+  {
+    "offset": "0x43ad70",
+    "encoding": "ascii",
+    "text": "Failed to send telemetry for download success of - %s for taskId - %s"
+  },
+  {
+    "offset": "0x43add0",
+    "encoding": "ascii",
+    "text": "_telemetry is null, cannot send telemetry for Send_DownloadSuccess_Event for %s of %s"
+  },
+  {
+    "offset": "0x43ae40",
+    "encoding": "ascii",
+    "text": "_telemetry is null, cannot send telemetry for Send_DownloadCancelled_Event for %s of %s"
+  },
+  {
+    "offset": "0x43aeb0",
+    "encoding": "ascii",
+    "text": "_telemetry is null, cannot send telemetry for Send_DownloadFailed_Event for %s of %s"
+  },
+  {
+    "offset": "0x43cfa0",
+    "encoding": "ascii",
+    "text": "_telemetry is null, cannot send telemetry for Send_HttpCallResult_Event"
+  },
+  {
+    "offset": "0x43d020",
+    "encoding": "ascii",
+    "text": "Failed to send telemetry for http call result for download of url - %s"
+  },
+  {
+    "offset": "0x43e740",
+    "encoding": "ascii",
+    "text": "_telemetry is null, cannot send telemetry for Send_PostProcessing_Event"
+  },
+  {
+    "offset": "0x43e800",
+    "encoding": "ascii",
+    "text": "Failed to send telemetry for post processing of - %s for taskId - %s"
+  },
+  {
+    "offset": "0x441010",
+    "encoding": "ascii",
+    "text": "??0UpdateCheckManager@UpdateCheck@UpdateFramework@@QEAA@V?$shared_ptr@VIComponentProfileCatalogFactory@ProfileCatalog@Persistence@UpdateFramework@@@std@@V?$shared_ptr@VIPluginManagerFactory@PluginMgr@UpdateFramework@@@4@V?$shared_ptr@VIRetryAwareHttpRequestFactory@Http@UpdateFramework@@@4@V?$shared_ptr@UIUpdateFrameworkTelemetry@UpdateFramework@NvTelemetry@@@4@AEBV?$shared_ptr@VIExceptionEventHandler@UpdateFramework@@@4@AEBVpath@filesystem@4@@Z"
+  },
+  {
+    "offset": "0x441990",
+    "encoding": "ascii",
+    "text": "??0UpdateCheckHttpEventsHandler@UpdateCheck@UpdateFramework@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV34@0V?$shared_ptr@VIUpdateCheckListener@UpdateCheck@UpdateFramework@@@4@V?$shared_ptr@VIPluginAdapter@PluginMgr@UpdateFramework@@@4@V?$shared_ptr@UIUpdateFrameworkTelemetry@UpdateFramework@NvTelemetry@@@4@AEBV?$shared_ptr@VIExceptionEventHandler@UpdateFramework@@@4@@Z"
+  },
+  {
+    "offset": "0x441ef0",
+    "encoding": "ascii",
+    "text": "_telemetry is null, cannot send telemetry for Send_UpgradeAvailable_Event for %s"
+  },
+  {
+    "offset": "0x441f60",
+    "encoding": "ascii",
+    "text": "Failed to send telemetry for upgrade available for %s with installed version - %s and upgrade version - %s"
+  },
+  {
+    "offset": "0x4424e0",
+    "encoding": "ascii",
+    "text": "_telemetry is null, cannot send telemetry for Send_HttpCallResult_Event for %s"
+  },
+  {
+    "offset": "0x442540",
+    "encoding": "ascii",
+    "text": "Failed to send telemetry for http success for %s for update checkupgrade version - %s"
+  },
+  {
+    "offset": "0x444fc0",
+    "encoding": "ascii",
+    "text": "Skipping telemetry report of error %s from method %s"
+  },
+  {
+    "offset": "0x449158",
+    "encoding": "ascii",
+    "text": "localhost"
+  },
+  {
+    "offset": "0x449460",
+    "encoding": "ascii",
+    "text": "127.0.0.1"
+  },
+  {
+    "offset": "0x44bf70",
+    "encoding": "ascii",
+    "text": "cr_in, rewind via set.ioctl_func -> %d"
+  },
+  {
+    "offset": "0x44bfa0",
+    "encoding": "ascii",
+    "text": "ioctl callback returned error %d"
+  },
+  {
+    "offset": "0x44e7b0",
+    "encoding": "ascii",
+    "text": "localhost."
+  },
+  {
+    "offset": "0x44e7c0",
+    "encoding": "ascii",
+    "text": ".localhost"
+  },
+  {
+    "offset": "0x44e7d0",
+    "encoding": "ascii",
+    "text": ".localhost."
+  },
+  {
+    "offset": "0x44fb10",
+    "encoding": "ascii",
+    "text": "%s: user=%s, passwd=%s, sasl_authzid=%s, oauth_bearer=%s, source=%d"
+  },
+  {
+    "offset": "0x44fd50",
+    "encoding": "ascii",
+    "text": "localhost/"
+  },
+  {
+    "offset": "0x44fd60",
+    "encoding": "ascii",
+    "text": "127.0.0.1/"
+  },
+  {
+    "offset": "0x450ed8",
+    "encoding": "ascii",
+    "text": "Negotiate: noauthpersist -> %d, header part: %s"
+  },
+  {
+    "offset": "0x45e7e0",
+    "encoding": "ascii",
+    "text": "XOAUTH2"
+  },
+  {
+    "offset": "0x45e7f0",
+    "encoding": "ascii",
+    "text": "OAUTHBEARER"
+  },
+  {
+    "offset": "0x45ea18",
+    "encoding": "ascii",
+    "text": "CURLOPT_XOAUTH2_BEARER"
+  },
+  {
+    "offset": "0x4d4551",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x4dd478",
+    "encoding": "ascii",
+    "text": ".?AUITelemetry@UpdateFramework@NvTelemetry@@"
+  },
+  {
+    "offset": "0x4dd4c8",
+    "encoding": "ascii",
+    "text": ".?AVTelemetry@UpdateFramework@NvTelemetry@@"
+  },
+  {
+    "offset": "0x4ddb70",
+    "encoding": "ascii",
+    "text": ".?AVITelemetryProvider@Common@UpdateFramework@@"
+  },
+  {
+    "offset": "0x4ddbc0",
+    "encoding": "ascii",
+    "text": ".?AVITelemetryProviderFactory@Common@UpdateFramework@@"
+  },
+  {
+    "offset": "0x4ddc18",
+    "encoding": "ascii",
+    "text": ".?AVTelemetryProvider@Common@UpdateFramework@@"
+  },
+  {
+    "offset": "0x4ddc70",
+    "encoding": "ascii",
+    "text": ".?AVTelemetryProviderFactory@Common@UpdateFramework@@"
+  },
+  {
+    "offset": "0x4ddcd0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VUpdateFrameworkTelemetry@UpdateFramework@NvTelemetry@@@std@@"
+  },
+  {
+    "offset": "0x4ddd50",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VTelemetryProvider@Common@UpdateFramework@@@std@@"
+  },
+  {
+    "offset": "0x4dddc0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VTelemetryProviderFactory@Common@UpdateFramework@@@std@@"
+  },
+  {
+    "offset": "0x4dea50",
+    "encoding": "ascii",
+    "text": ".?AUIUpdateFrameworkTelemetry@UpdateFramework@NvTelemetry@@"
+  },
+  {
+    "offset": "0x4deab0",
+    "encoding": "ascii",
+    "text": ".?AVUpdateFrameworkTelemetry@UpdateFramework@NvTelemetry@@"
+  },
+  {
+    "offset": "0x51ad80",
+    "encoding": "ascii",
+    "text": "WSAIoctl"
+  },
+  {
+    "offset": "0x51aeca",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x41cff0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x41d040",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x41d340",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x42da30",
+    "encoding": "utf-16le",
+    "text": "\\NVIDIA Corporation\\NvTelemetry\\NvTelemetryAPI"
+  },
+  {
+    "offset": "0x42daa0",
+    "encoding": "utf-16le",
+    "text": "NvTelemetryAPI64.dll"
+  },
+  {
+    "offset": "0x443070",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  }
+]

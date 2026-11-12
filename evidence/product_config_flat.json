@@ -1,0 +1,366 @@
+[
+  {
+    "key": "gfwsl.server",
+    "value": "https://gfwsl.geforce.com/"
+  },
+  {
+    "key": "gfwsl.cacheRefreshTime",
+    "value": 43200000
+  },
+  {
+    "key": "vrs.server",
+    "value": ""
+  },
+  {
+    "key": "vrs.portNumbers.0",
+    "value": 2259
+  },
+  {
+    "key": "vrs.portNumbers.1",
+    "value": 6460
+  },
+  {
+    "key": "vrs.portNumbers.2",
+    "value": 4358
+  },
+  {
+    "key": "vrs.portNumbers.3",
+    "value": 9096
+  },
+  {
+    "key": "vrs.portNumbers.4",
+    "value": 8090
+  },
+  {
+    "key": "starfleet.url",
+    "value": ""
+  },
+  {
+    "key": "starfleet.logoutUrl",
+    "value": "https://static-login.nvidia.com/service/default/noir/logout"
+  },
+  {
+    "key": "starfleet.keyValueServiceUrl",
+    "value": "https://userstore.nvidia.com/v1"
+  },
+  {
+    "key": "starfleet.redirectUrl",
+    "value": "http://localhost:{portnumber}"
+  },
+  {
+    "key": "starfleet.portNumbers.0",
+    "value": 2259
+  },
+  {
+    "key": "starfleet.portNumbers.1",
+    "value": 6460
+  },
+  {
+    "key": "starfleet.portNumbers.2",
+    "value": 4358
+  },
+  {
+    "key": "starfleet.portNumbers.3",
+    "value": 9096
+  },
+  {
+    "key": "starfleet.portNumbers.4",
+    "value": 8090
+  },
+  {
+    "key": "starfleet.portNumbers.5",
+    "value": 6545
+  },
+  {
+    "key": "starfleet.portNumbers.6",
+    "value": 2259
+  },
+  {
+    "key": "starfleet.portNumbers.7",
+    "value": 7119
+  },
+  {
+    "key": "starfleet.portNumbers.8",
+    "value": 3287
+  },
+  {
+    "key": "starfleet.portNumbers.9",
+    "value": 5639
+  },
+  {
+    "key": "starfleet.portNumbers.10",
+    "value": 8870
+  },
+  {
+    "key": "starfleet.onCompleteRedirectUrl",
+    "value": "https://static-login.nvidia.com/service/default/noir/result"
+  },
+  {
+    "key": "starfleet.httpServerDuration",
+    "value": 1800000
+  },
+  {
+    "key": "starfleet.clientTokenRefreshDuration",
+    "value": 2332800000
+  },
+  {
+    "key": "starfleet.clientTokenRefreshDurationInPercentage",
+    "value": 30
+  },
+  {
+    "key": "starfleet.idTokenRefreshUnderDuration",
+    "value": 60000
+  },
+  {
+    "key": "starfleet.useNvAccountForUserConsent",
+    "value": true
+  },
+  {
+    "key": "lcars.serverUrl",
+    "value": ""
+  },
+  {
+    "key": "lcars.serverUrlCDN",
+    "value": "https://public.games.geforce.com/graphql"
+  },
+  {
+    "key": "lcars.appsRefreshTime",
+    "value": 43200000
+  },
+  {
+    "key": "redirect.serverUrl",
+    "value": ""
+  },
+  {
+    "key": "driver.allowInstallCheckErrorDetailsLink",
+    "value": "https://nvidia.custhelp.com/app/answers/detail/a_id/3814"
+  },
+  {
+    "key": "gfservices.server",
+    "value": "https://ops-gx.nvidia.com/"
+  },
+  {
+    "key": "otelTracerConfig.exportConfig.accessToken",
+    "value": "EEdnetVL0JJ5Wt2/hZor1SAIprMQ926Zyyh3fCATtlc8ZDzAx7EE/fsS93UhoPWXQgsorfkTApfopEuLYbQ="
+  },
+  {
+    "key": "otelTracerConfig.exportConfig.collectorUrl",
+    "value": "https://prod.otel.kaizen.nvidia.com/traces/otlp/v0.9"
+  },
+  {
+    "key": "otelTracerConfig.exportConfig.componentName",
+    "value": "nvapp-prod"
+  },
+  {
+    "key": "otelTracerConfig.apiTracingConfig.urlRegex.0",
+    "value": "https://events.(gfestage|gfe|gx).nvidia.(com|cn)"
+  },
+  {
+    "key": "otelTracerConfig.apiTracingConfig.urlRegex.1",
+    "value": "https://(stg.login|login).nvidia.(com|cn)"
+  },
+  {
+    "key": "otelTracerConfig.apiTracingConfig.urlRegex.2",
+    "value": "https://gx-target-(experiments|survey|rconfig)-frontend-api.gx.nvidia.(com|cn)"
+  },
+  {
+    "key": "otelTracerConfig.apiTracingConfig.urlRegex.3",
+    "value": "https://(public.games|staging.games|games).geforce.com"
+  },
+  {
+    "key": "featureEnablement.consoleLogging.enabled",
+    "value": true
+  },
+  {
+    "key": "featureEnablement.remoteLogging.enabled",
+    "value": false
+  },
+  {
+    "key": "featureEnablement.nvSearch.enabled",
+    "value": false
+  },
+  {
+    "key": "featureEnablement.actionCards.enabled",
+    "value": true
+  },
+  {
+    "key": "featureEnablement.actionCards.graphicsSettings.enabled",
+    "value": true
+  },
+  {
+    "key": "featureEnablement.actionCards.rewards.enabled",
+    "value": true
+  },
+  {
+    "key": "featureEnablement.programSettings.enabled",
+    "value": true
+  },
+  {
+    "key": "featureEnablement.ootb.enabled",
+    "value": true
+  },
+  {
+    "key": "featureEnablement.logininfo.enabled",
+    "value": true
+  },
+  {
+    "key": "featureEnablement.ops.enabled",
+    "value": true
+  },
+  {
+    "key": "featureEnablement.previouslyInstalledDrivers.enabled",
+    "value": true
+  },
+  {
+    "key": "featureEnablement.workstation.enabled",
+    "value": true
+  },
+  {
+    "key": "featureEnablement.workstation.personas.enabled",
+    "value": true
+  },
+  {
+    "key": "featureEnablement.gAssist.enabled",
+    "value": true
+  },
+  {
+    "key": "featureEnablement.surround.enabled",
+    "value": true
+  },
+  {
+    "key": "featureEnablement.optimus.enabled",
+    "value": false
+  },
+  {
+    "key": "featureEnablement.spotlight.enabled",
+    "value": true
+  },
+  {
+    "key": "jsEvents.server",
+    "value": ""
+  },
+  {
+    "key": "survey.server",
+    "value": ""
+  },
+  {
+    "key": "survey.containerBaseUrl",
+    "value": ""
+  },
+  {
+    "key": "cloudVariables.server",
+    "value": ""
+  },
+  {
+    "key": "aem.server",
+    "value": ""
+  },
+  {
+    "key": "exception.isExceptionEnabled",
+    "value": true
+  },
+  {
+    "key": "nvAccount.consentRefreshPeriodSeconds",
+    "value": 86400
+  },
+  {
+    "key": "nvAccount.telemetryClientIds.0",
+    "value": "37592259939409600"
+  },
+  {
+    "key": "nvAccount.telemetryClientIds.1",
+    "value": "45706024761384475"
+  },
+  {
+    "key": "nvAccount.telemetryClientIds.2",
+    "value": "40715460351432177"
+  },
+  {
+    "key": "nvAccount.telemetryClientIds.3",
+    "value": "90705384256131517"
+  },
+  {
+    "key": "nvAccount.telemetryClientIds.4",
+    "value": "27374659873456987"
+  },
+  {
+    "key": "nvAccount.telemetryClientIds.5",
+    "value": "72385204517992235"
+  },
+  {
+    "key": "nvAccount.telemetryClientIds.6",
+    "value": "12546161697959406"
+  },
+  {
+    "key": "nvAccount.telemetryClientIds.7",
+    "value": "44951455890061760"
+  },
+  {
+    "key": "nvAccount.telemetryClientIds.8",
+    "value": "22562802798123727"
+  },
+  {
+    "key": "nvAccount.telemetryClientIds.9",
+    "value": "39015107060299402"
+  },
+  {
+    "key": "nvAccount.telemetryClientIds.10",
+    "value": "95110488246328146"
+  },
+  {
+    "key": "nvAccount.telemetryClientIds.11",
+    "value": "51462192262044226"
+  },
+  {
+    "key": "nvAccount.telemetryClientIds.12",
+    "value": "8262642837281853"
+  },
+  {
+    "key": "nvLocalizedConfig.localizationServiceUrl",
+    "value": "https://localized-config-api.gx.nvidia.com/v1"
+  },
+  {
+    "key": "nvLocalizedConfig.validityDurationSeconds",
+    "value": 86400
+  },
+  {
+    "key": "nvDriverDiagnostics.driverTelemetryNotificationTimeoutSeconds",
+    "value": 86400
+  },
+  {
+    "key": "nvDriverDiagnostics.cloudVariablesRefreshPeriodSeconds",
+    "value": 86400
+  },
+  {
+    "key": "nvDriverDiagnostics.dialogEnabled",
+    "value": true
+  },
+  {
+    "key": "searchConfig.lazySearch.enabled",
+    "value": false
+  },
+  {
+    "key": "searchConfig.preSpinnerWaitDuration",
+    "value": 500
+  },
+  {
+    "key": "ahlCloudSync.serverUrl",
+    "value": "https://release.nv-ahl.nvidia.com/"
+  },
+  {
+    "key": "networkHttpEndpointRetryConfig.exponentialBackoffFirstRetryInterval",
+    "value": 1000
+  },
+  {
+    "key": "networkHttpEndpointRetryConfig.exponentGrowthFactor",
+    "value": 1
+  },
+  {
+    "key": "minimumOfflineToOnlineRefreshInterval",
+    "value": 300000
+  },
+  {
+    "key": "splitState.enabled",
+    "value": false
+  }
+]

@@ -1,0 +1,6 @@
+[
+  {
+    "line": 1733,
+    "text": "            this.gAssistUIDetectedHotkey.unregister(), this.asrUIDetectedHotkey.unregister(), a && (this.mouseMoveListener && a.removeEventListener(\"mousemove\", this.mouseMoveListener), this.mouseLeaveListener && a.removeEventListener(\"mouseleave\", this.mouseLeaveListener)), document.removeEventListener(\"keyup\", this.onKeyUp), document.removeEventListener(\"keydown\", this.onKeyDown), this.aiChatboxService.sendChatboxSessionTelemetry(this.isASRReady, this.isASRUsed, this.isNonInteractiveModeUsed, this.riseService.getIsMicIconUsed(), this.isRepositioned, this.isResized, this.isSettingsOpened, this.isChatCleared, this.isFeatureToggleUsed, this.riseService.getIsChartRecieved(), this.isPinModeUsed, this.riseService.getQueryTimeOutCounter(), this.riseService.getASRTimeOutCounter()), this.riseService.shutDownASR(), this.aiChatboxService.setPinMode(G.ug.UnPinned)\r"
+  }
+]

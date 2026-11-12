@@ -1,0 +1,52 @@
+{
+  "path": "FrameViewSDK\\bin\\FrameViewKMD.sys",
+  "sha256": "f768f331ecd2ed3eb121ca28569e8c7c52561c6f8b1c40e8c8f1b2185c200e02",
+  "method": "Capstone linear sweep over raw bytes of all IMAGE_SCN_MEM_EXECUTE sections; skipdata enabled; no reachability proof",
+  "sections": [
+    {
+      "name": ".text",
+      "raw_bytes": 4608,
+      "processed_bytes": 4608,
+      "instructions": 1497,
+      "skipdata_bytes": 0
+    },
+    {
+      "name": "INIT",
+      "raw_bytes": 1024,
+      "processed_bytes": 1024,
+      "instructions": 411,
+      "skipdata_bytes": 42
+    }
+  ],
+  "utc": "2026-11-11T21:40:10.755686+00:00",
+  "instructions": 1908,
+  "skipdata_bytes": 42,
+  "calls": 74,
+  "api_reference_counts": {
+    "ntoskrnl.exe!ExAllocatePoolWithTag": 1,
+    "ntoskrnl.exe!ExFreePoolWithTag": 1,
+    "HAL.dll!HalSetBusDataByOffset": 1,
+    "HAL.dll!HalGetBusDataByOffset": 1,
+    "ntoskrnl.exe!EtwWriteTransfer": 1,
+    "ntoskrnl.exe!IofCompleteRequest": 1,
+    "ntoskrnl.exe!KeDelayExecutionThread": 1,
+    "ntoskrnl.exe!KeWaitForSingleObject": 1,
+    "ntoskrnl.exe!ObfDereferenceObject": 1,
+    "ntoskrnl.exe!IoDeleteDevice": 2,
+    "ntoskrnl.exe!IoCreateDevice": 1,
+    "ntoskrnl.exe!PsCreateSystemThread": 1,
+    "ntoskrnl.exe!ObReferenceObjectByHandle": 1,
+    "ntoskrnl.exe!ZwClose": 1,
+    "ntoskrnl.exe!EtwRegister": 1,
+    "ntoskrnl.exe!EtwUnregister": 1,
+    "ntoskrnl.exe!_purecall": 1,
+    "ntoskrnl.exe!__C_specific_handler": 1,
+    "ntoskrnl.exe!strncmp": 1,
+    "ntoskrnl.exe!RtlCopyUnicodeString": 1,
+    "WDFLDR.SYS!WdfVersionBind": 1,
+    "WDFLDR.SYS!WdfVersionUnbind": 1,
+    "WDFLDR.SYS!WdfVersionBindClass": 1,
+    "WDFLDR.SYS!WdfVersionUnbindClass": 1
+  },
+  "complete_linear_sweep": true
+}

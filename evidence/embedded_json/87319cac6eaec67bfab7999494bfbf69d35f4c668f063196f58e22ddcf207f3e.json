@@ -1,0 +1,106 @@
+[
+  {
+    "file_offset": "0x151020",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#loginId",
+      "title": "loginId Endpoints",
+      "type": "object",
+      "module": "LoginId",
+      "definitions": {
+        "AppInfo": {
+          "type": "object",
+          "properties": {
+            "applicationName": {
+              "type": "string"
+            },
+            "idpId": {
+              "type": "string"
+            },
+            "loginHint": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "applicationName",
+            "idpId",
+            "loginHint"
+          ]
+        },
+        "AddAppInfoToPersistence": {
+          "description": "Adds App Information to persistence, if persistence file not present it will be created If App Information exists already, it will be Updated.",
+          "isCommand": true,
+          "persistent": false,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "appInfo": {
+                "$ref": "#/definitions/AppInfo"
+              }
+            },
+            "required": [
+              "appInfo"
+            ]
+          }
+        },
+        "DeleteAppInfoFromPersistence": {
+          "description": "Deletes App Information from persistence if persistence exists and it contains the app entry.",
+          "isCommand": true,
+          "persistent": false,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "appName": {
+                "description": "Name of the app for which entry needs to be deleted",
+                "type": "string"
+              }
+            },
+            "required": [
+              "appName"
+            ]
+          }
+        },
+        "GetAllAppInfoFromPersistence": {
+          "description": "Fetches information for all apps from persistence.",
+          "isCommand": true,
+          "persistent": false,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "AppsInfo": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/AppInfo"
+                },
+                "description": "Array of all nodes, if no persistence then nothing will be returned"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "file_offset": "0x1521b0",
+    "object": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "properties": {
+        "KeyValueArray": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object"
+            }
+          ]
+        }
+      },
+      "required": [
+        "KeyValueArray"
+      ]
+    }
+  }
+]

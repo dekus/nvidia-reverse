@@ -1,0 +1,62 @@
+[
+  {
+    "offset": "0xac870",
+    "encoding": "ascii",
+    "text": "App logging hooks successfully initialized"
+  },
+  {
+    "offset": "0x37da1b0",
+    "encoding": "ascii",
+    "text": "nvapi_Direct_GetMethod"
+  },
+  {
+    "offset": "0x37da1c8",
+    "encoding": "ascii",
+    "text": "nvapi_QueryInterface"
+  },
+  {
+    "offset": "0x37dca30",
+    "encoding": "ascii",
+    "text": "cudaGetDriverEntryPoint_ptsz"
+  },
+  {
+    "offset": "0x37dd090",
+    "encoding": "ascii",
+    "text": "cudaGetDriverEntryPoint"
+  },
+  {
+    "offset": "0x3800a63",
+    "encoding": "ascii",
+    "text": "NVSDK_NGX_SetTelemetryEvaluateCallback"
+  },
+  {
+    "offset": "0xac7a0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NGXCore"
+  },
+  {
+    "offset": "0x37da140",
+    "encoding": "utf-16le",
+    "text": "NvAPI Direct was not found. Please update your driver."
+  },
+  {
+    "offset": "0x37da210",
+    "encoding": "utf-16le",
+    "text": "nvapi64.dll"
+  },
+  {
+    "offset": "0x37da480",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x37da750",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x37da790",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  }
+]

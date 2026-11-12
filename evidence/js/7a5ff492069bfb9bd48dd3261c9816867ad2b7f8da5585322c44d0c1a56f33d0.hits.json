@@ -1,0 +1,174 @@
+[
+  {
+    "line": 208,
+    "text": "          supportsWebSocket: function() {\r"
+  },
+  {
+    "line": 209,
+    "text": "            return !!window.WebSocket\r"
+  },
+  {
+    "line": 238,
+    "text": "          createWebSocket: function(n) {\r"
+  },
+  {
+    "line": 239,
+    "text": "            return new WebSocket(n)\r"
+  },
+  {
+    "line": 1416,
+    "text": "          return o.default.supportsWebSocket()\r"
+  },
+  {
+    "line": 1418,
+    "text": "          return o.default.createWebSocket(s)\r"
+  },
+  {
+    "line": 1452,
+    "text": "              return h._responder = l, h._pendingPostRequests = [], h._websocket = void 0, h._connectionPromise = void 0, h._responseHandlers = [], h._isTerminated = !1, h._retryCount = 0, h._retryLimit = 1, h._readyCheckCount = 0, h._readyCheckLimit = 10, h._openState = 0, h._onclose = h.tearDown.bind(h), h._onopenTimeout = 0, h\r"
+  },
+  {
+    "line": 1460,
+    "text": "                      for ((0, C.info)(h._name, \"[websocketopen]\"), h._openState = 1; h._pendingPostRequests.length > 0;) h.post(h._pendingPostRequests.shift());\r"
+  },
+  {
+    "line": 1464,
+    "text": "                    } else 0 === l.readyState ? ++h._readyCheckCount > h._readyCheckLimit ? ((0, C.warn)(h._name, \"WebSocket connection issue. We have waited for \" + (h._readyCheckCount - 1) + \" samples, without any connection.\"), h.clearRetry(), c.reject({\r"
+  },
+  {
+    "line": 1466,
+    "text": "                    }), h.tearDown()) : ((0, C.info)(h._name, \"WebSocket connection is still opening, will let it continue (\" + h._readyCheckCount + \")...\"), h._onopenTimeout = h._resetOnopenTimeout(l, c)) : (0, C.info)(h._name, \"WebSocket connection attempts have ended with state (\" + l.readyState + \").\")\r"
+  },
+  {
+    "line": 1480,
+    "text": "                  (0, C.warn)(h._name, \"[websocketerror]: Error from WebSocket. \" + u.type + \".\"), h.clearRetry(), c.reject(u), h.trigger(new w.MessageTransportStateEvent(w.MessageTransportStateEventTypes.ERROR, h._name, {\r"
+  },
+  {
+    "line": 1487,
+    "text": "                  u.code > 1e3 ? (0, C.warn)(h._name, \"[websocketclose]: \" + u.code) : (0, C.debug)(h._name, \"[websocketclose]: \" + u.code), h._responder && h._responder.onSocketClose && h._responder.onSocketClose(u), h.clearRetry(), h._removeSocketHandlers(l || h._websocket), h._openState = 0, h.trigger(new w.MessageTransportStateEvent(w.MessageTransportStateEventTypes.CLOSE, h._name, {\r"
+  },
+  {
+    "line": 1498,
+    "text": "                })), (0, C.warn)(this._name, \"[websocketerror]: Possible Unexpected Error from WebSocket. \" + l.type + \", \" + l.detail), this.clearRetry(), this._removeSocketHandlers(this._websocket)\r"
+  },
+  {
+    "line": 1510,
+    "text": "                if ((0, C.debug)(this._name, \"[websocket:setup] \" + l + \".\"), this.tearDown(), this._isTerminated = !1, this._connectionPromise = c, R.default.addCloseHandler(this._onclose), this._websocket = A.create(l), this._addSocketHandlers(this._websocket, this._connectionPromise), u && this._retryCount++ < this._retryLimit) {\r"
+  },
+  {
+    "line": 1513,
+    "text": "                    h._websocket && 0 === h._websocket.readyState && ((0, C.debug)(h._name, \"[websocket:FF-timeout]\"), (0, C.debug)(h._name, \"Our connection on Firefox to the wss endpoint has timed out. Let's try that again.\"), h._removeSocketHandlers(h._websocket), h.setUp(l, c)), clearTimeout(k)\r"
+  },
+  {
+    "line": 1520,
+    "text": "                (0, C.debug)(this._name, \"[websocket:setupWithSocket] \" + l.url + \".\"), this.tearDown(), this._isTerminated = !1, this._connectionPromise = c, R.default.addCloseHandler(this._onclose), this._websocket = l, this._addSocketHandlers(this._websocket, this._connectionPromise)\r"
+  },
+  {
+    "line": 1525,
+    "text": "                (0, C.debug)(this._name, \"[websocket:sever]\"), this._websocket && (l && this.post(l), this._removeSocketHandlers(this._websocket), this.tearDown())\r"
+  },
+  {
+    "line": 1530,
+    "text": "                if (this._pendingPostRequests.length = 0, void 0 !== this._websocket && !this._isTerminated) {\r"
+  },
+  {
+    "line": 1531,
+    "text": "                  (0, C.debug)(this._name, \"[teardown] >>\"), (0, C.debug)(this._name, \"[WebSocket(\" + this._websocket.url + \")] close() >>\");\r"
+  },
+  {
+    "line": 1533,
+    "text": "                    this._websocket.close()\r"
+  },
+  {
+    "line": 1535,
+    "text": "                    (0, C.warn)(this._name, \"Attempt to close WebSocket failed: \" + l.message + \".\"), this._removeSocketHandlers(this._websocket)\r"
+  },
+  {
+    "line": 1537,
+    "text": "                    this._websocket && (0, C.debug)(this._name, \"<< [WebSocket(\" + this._websocket.url + \")] close()\")\r"
+  },
+  {
+    "line": 1540,
+    "text": "                for (this._websocket = void 0, this._isTerminated = !0, this._openState = 0; this._responseHandlers.length > 0;) this._responseHandlers.shift();\r"
+  },
+  {
+    "line": 1559,
+    "text": "                if (void 0 === this._websocket || 1 !== this._openState) return (void 0 === this._websocket || 2 !== this._websocket.readyState && 3 !== this._websocket.readyState) && !this._isTerminated && (this._pendingPostRequests.push(l), !0);\r"
+  },
+  {
+    "line": 1561,
+    "text": "                  return (0, C.debug)(this._name, \"[websocket-post]: \" + (0, s.default)(l, null, 2)), this._websocket.send((0, s.default)(l)), !0\r"
+  },
+  {
+    "line": 1572,
+    "text": "                  if (null === h) return (0, C.warn)(this._name, \"Determined websocket response not in correct format. Aborting message handle.\"), !0;\r"
+  },
+  {
+    "line": 1573,
+    "text": "                  if ((0, C.debug)(this._name, \"[websocket-response]: \" + (0, s.default)(h, null, 2)), void 0 !== h.isAvailable) return \"boolean\" == typeof h.isAvailable && h.isAvailable ? (this._responder && this._responder.onStreamAvailable(h), !0) : (this._responder && this._responder.onStreamUnavailable(h), !0);\r"
+  },
+  {
+    "line": 1584,
+    "text": "                      if (\"NetConnection.Connect.Success\" === v.code) return this._websocket.onerror = this._onUnexpectedSocketError.bind(this), this._connectionPromise.resolve(this), !0;\r"
+  },
+  {
+    "line": 1620,
+    "text": "                return console.warn(\"The default WebSocket port on the server has changed from 8083 to 443 for secure connections.\"), 443;\r"
+  },
+  {
+    "line": 1623,
+    "text": "                return console.warn(\"The default WebSocket port on the server has changed from 8081 to 5080 or 80 for secure connections.\"), 5080\r"
+  },
+  {
+    "line": 1900,
+    "text": "                if (null === c) return (0, w.warn)(this._name, \"Determined websocket response not in correct format. Aborting message handle.\"), !0;\r"
+  },
+  {
+    "line": 3613,
+    "text": "        } : N ? (s = (o = new N).port2, o.port1.onmessage = U, t = _(s.postMessage, s, 1)) : T.addEventListener && \"function\" == typeof postMessage && !T.importScripts ? (t = function(R) {\r"
+  },
+  {
+    "line": 3614,
+    "text": "          T.postMessage(R + \"\", \"*\")\r"
+  },
+  {
+    "line": 3801,
+    "text": "                return void 0 !== this._websocket && 1 === this._openState && (this.post({\r"
+  },
+  {
+    "line": 3916,
+    "text": "                if (null === k) return (0, n.warn)(this._name, \"Determined websocket response not in correct format. Aborting message handle.\"), !0;\r"
+  },
+  {
+    "line": 4035,
+    "text": "                if (null === v) return (0, n.warn)(this._name, \"Determined websocket response not in correct format. Aborting message handle.\"), !0;\r"
+  },
+  {
+    "line": 4426,
+    "text": "              \"video\" === F.kind ? (L.video = F.getSettings(), te.video = F.getConstraints()) : \"audio\" === F.kind && (L.audio = F.getSettings(), te.audio = F.getConstraints())\r"
+  },
+  {
+    "line": 4574,
+    "text": "                }), this._gum(this._options), this._setViewIfNotExist(this._view, this._options.mediaElementId), F.resolve(this)) : F.reject(\"Cannot create WebRTC playback instance. Your environment does not support WebRTC and/or WebSockets.\"), F.promise\r"
+  },
+  {
+    "line": 4583,
+    "text": "                }), this._streamFuture.resolve(F), z.resolve(this)) : z.reject(\"Cannot create WebRTC playback instance. Your environment does not support WebRTC and/or WebSockets.\"), z.promise\r"
+  },
+  {
+    "line": 5543,
+    "text": "                d ? d.sendToSharedObject(this._name, E, a) : f(this._name, \"No WebSocket connection available!\")\r"
+  },
+  {
+    "line": 5904,
+    "text": "                  if (P.connectionParams && !R.isSupported())(0, h.warn)(k, \"Could not resolve HLSSubscriber instance with connection params. WebSocket support is required.\"), q.reject(k, \"Could not resolve HLSSubscriber instance with connection params. WebSocket support is required.\");\r"
+  },
+  {
+    "line": 5915,
+    "text": "                      (0, h.error)(k, Z.message), q.reject(k, \"Could not set up WebSocket for authentication with connectionParams: \" + Z.message)\r"
+  },
+  {
+    "line": 6184,
+    "text": "                } else Q.reject(\"Cannot create WebRTC playback instance. Your environment does not support WebRTC and/or WebSockets.\");\r"
+  }
+]

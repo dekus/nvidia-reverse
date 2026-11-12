@@ -1,0 +1,47 @@
+[
+  {
+    "offset": "0x1507f0",
+    "encoding": "ascii",
+    "text": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{REDACTED_INSTALLATION_ID}_RISE"
+  },
+  {
+    "offset": "0x151e70",
+    "encoding": "ascii",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0x151e88",
+    "encoding": "ascii",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0x156e50",
+    "encoding": "ascii",
+    "text": "Skipping telemetry report of error %s from method %s"
+  },
+  {
+    "offset": "0x1983ce",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x1512d0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x151320",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x151620",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x154e40",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  }
+]

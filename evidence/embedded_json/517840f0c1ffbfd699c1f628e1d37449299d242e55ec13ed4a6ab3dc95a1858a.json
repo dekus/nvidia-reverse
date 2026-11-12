@@ -1,0 +1,16 @@
+[
+  {
+    "file_offset": "0x144d00",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for MessageBusRouter plugin config format",
+      "type": "object",
+      "properties": {
+        "ModuleName": {
+          "type": "string"
+        }
+      },
+      "required": []
+    }
+  }
+]

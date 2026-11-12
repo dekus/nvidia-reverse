@@ -1,0 +1,3582 @@
+[
+  {
+    "file_offset": "0x74ed50",
+    "object": {
+      "$schema": "http://json-schema.org/draft-04/hyper-schema",
+      "id": "#shareServer",
+      "title": "Share Endpoints",
+      "type": "object",
+      "module": "ShareServer",
+      "definitions": {
+        "SetCaptureSupported": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets capture supported state",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "supported": {
+                "type": "boolean",
+                "description": "Flag indicating all capturing is disabled"
+              }
+            },
+            "required": [
+              "supported"
+            ]
+          }
+        },
+        "SDKPermissions": {
+          "type": "string",
+          "description": "Permission values for SDK (unknown assumes implicit mustAsk)",
+          "enum": [
+            "granted",
+            "mustAsk",
+            "denied"
+          ]
+        },
+        "Codec": {
+          "type": "string",
+          "description": "Codec",
+          "default": "H264/HEVC",
+          "enum": [
+            "H264/HEVC",
+            "AV1",
+            "H265"
+          ]
+        },
+        "CustomOverlayTypeEnum": {
+          "type": "string",
+          "description": "Enum of custom overlay types",
+          "enum": [
+            "custom",
+            "customA",
+            "customB",
+            "customC"
+          ]
+        },
+        "OverlaySizeEnum": {
+          "type": "string",
+          "description": "Enum of possible indicator overlay sizes",
+          "enum": [
+            "small",
+            "medium",
+            "large"
+          ]
+        },
+        "OverlayPositionEnum": {
+          "type": "string",
+          "description": "Enum of possible indicator overlay positions. Not all positions apply to each indicator.",
+          "enum": [
+            "leftTop",
+            "leftCenter",
+            "leftBottom",
+            "rightTop",
+            "rightCenter",
+            "rightBottom",
+            "centerTop",
+            "centerCenter",
+            "centerBottom",
+            "floatingRandom",
+            "floatingBorder",
+            "none"
+          ]
+        },
+        "IndicatorEnum": {
+          "type": "string",
+          "description": "Enum of possible Share-specific indicator overlay types. The \"comments\" value defined only for completeness and not wired up.",
+          "enum": [
+            "record",
+            "gamecast",
+            "fps",
+            "viewer",
+            "rig",
+            "webcam",
+            "comments"
+          ]
+        },
+        "Resolution": {
+          "type": "string",
+          "description": "Resolution",
+          "default": "In-game",
+          "enum": [
+            "In-game",
+            "4320p 8K",
+            "2160p 4K",
+            "1440p HD",
+            "1080p HD",
+            "720p HD",
+            "480p",
+            "360p",
+            "240p",
+            "Exact"
+          ]
+        },
+        "MicModeEnum": {
+          "type": "string",
+          "description": "Enum of possible MIC mode",
+          "enum": [
+            "on",
+            "off",
+            "alwayson",
+            "ptt"
+          ]
+        },
+        "CaptureModeEnum": {
+          "type": "string",
+          "description": "Enum of possible capture type",
+          "enum": [
+            "manual",
+            "dvr",
+            "gameCast",
+            "highlight",
+            "gearRecord",
+            "gearHighlight",
+            "lastMode",
+            "screenshot"
+          ]
+        },
+        "SDKScopeType": {
+          "type": "string",
+          "description": "Type of SDK object/scope to apply permissions",
+          "enum": [
+            "highlights",
+            "highlightsRecordVideo",
+            "highlightsRecordScreenshot"
+          ]
+        },
+        "DeviceStateTypeEnum": {
+          "type": "string",
+          "description": "Enum of possible device state",
+          "enum": [
+            "plugged_in",
+            "plugged_out",
+            "enabled",
+            "disabled"
+          ]
+        },
+        "DeviceTypeEnum": {
+          "type": "string",
+          "description": "Enum of possible device type",
+          "enum": [
+            "mic",
+            "webcam"
+          ]
+        },
+        "CloudSessionStateType": {
+          "type": "string",
+          "description": "Enum of possible Cloud Session State type",
+          "enum": [
+            "unknown",
+            "started",
+            "stopped",
+            "paused",
+            "resumed"
+          ]
+        },
+        "hotkeyEnum": {
+          "type": "string",
+          "description": "Enum of possible Share-specific hotkey actions",
+          "enum": [
+            "OpenIGO",
+            "OpenFreestyle",
+            "OpenAnsel",
+            "PTT",
+            "FPS",
+            "Screenshot",
+            "DVRSave",
+            "RecordToggle",
+            "BroadcastToggle",
+            "BroadcastPauseToggle",
+            "CameraToggle",
+            "OverlayToggle",
+            "CustomOverlayA",
+            "CustomOverlayB",
+            "CustomOverlayC",
+            "CommentsToggle",
+            "MicToggle",
+            "DVRToggle",
+            "FreestyleToggle",
+            "FreestylePresentCycle",
+            "FreeStyleToggleStyle1",
+            "FreeStyleToggleStyle2",
+            "FreeStyleToggleStyle3",
+            "NativeKeyboardInputDialog",
+            "ConnectGfnBroadcastToggle",
+            "StatisticsToggle",
+            "QuitGame",
+            "PMOCOverlay",
+            "PMOCFontSizeCycle",
+            "PMOCOverlayCycle",
+            "PMOCResetAverageMetrics",
+            "PMOCLoggingToggle",
+            "InStreamPaste",
+            "ChatUIToggle",
+            "ChatPTT"
+          ]
+        },
+        "GAssistFeatureState": {
+          "type": "integer",
+          "description": "Enum of possible GAssist feature states",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "SPFeatureState_Unknown",
+            "SPFeatureState_Start",
+            "SPFeatureState_Stop"
+          ]
+        },
+        "Highlight": {
+          "type": "object",
+          "description": "Data for a generated Higlight",
+          "properties": {
+            "id": {
+              "type": "integer",
+              "description": "Internal identifier value of the Highlight"
+            },
+            "definitionId": {
+              "type": "string",
+              "description": "Application-sourced definition identifier of the Highlight"
+            },
+            "name": {
+              "type": "string",
+              "description": "Application-sourced name of the Highlight"
+            },
+            "groupId": {
+              "type": "string",
+              "description": "Application-sourced group identifier that the Highlight belongs to"
+            },
+            "type": {
+              "type": "string",
+              "description": "Type of the highlight",
+              "enum": [
+                "screenshot",
+                "video"
+              ]
+            },
+            "path": {
+              "type": "string",
+              "description": "Fully-quantified path of the Highlight"
+            },
+            "tags": {
+              "type": "integer",
+              "description": "Application-sourced tag values for the Highlight"
+            },
+            "significance": {
+              "type": "integer",
+              "description": "Application-sourced significance values for the Highlight"
+            },
+            "videoLengthSeconds": {
+              "type": "integer",
+              "description": "Length of the video, in seconds (defined only if Highlight type is video, videos less than 1 second report as 0)",
+              "minimum": 0
+            }
+          }
+        },
+        "HighlightAppInfo": {
+          "type": "object",
+          "description": "DRS-sourced information about an application",
+          "properties": {
+            "appShortName": {
+              "type": "string",
+              "description": "DRS-sourced short name of the application for the Highlight"
+            },
+            "name": {
+              "type": "string",
+              "description": "DRS-sourced name of the application for the Highlight"
+            },
+            "profileName": {
+              "type": "string",
+              "description": "DRS-sourced profile name of the application for the Highlight"
+            }
+          }
+        },
+        "RegisterHotkeyNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "hotkey": {
+                "$ref": "#/definitions/hotkeyEnum"
+              },
+              "state": {
+                "type": "string",
+                "description": "Hotkey state"
+              }
+            },
+            "required": [
+              "hotkey"
+            ]
+          }
+        },
+        "RegisterGeneralNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "screenshotSaved": {
+                "type": "object",
+                "description": "Screenshot saved notification",
+                "properties": {
+                  "result": {
+                    "type": "integer",
+                    "default": 0,
+                    "description": "result"
+                  }
+                }
+              },
+              "shadowPlayRestarted": {
+                "type": "string",
+                "description": "ShadowPlay restarted notification"
+              },
+              "captureFailed": {
+                "type": "object",
+                "description": "Notification when ShadowPlay capture failed",
+                "properties": {
+                  "result": {
+                    "type": "integer",
+                    "default": 0,
+                    "description": "result"
+                  },
+                  "captureMode": {
+                    "$ref": "#/definitions/CaptureModeEnum"
+                  }
+                }
+              },
+              "cloudSessionState": {
+                "type": "object",
+                "description": "Notification when cloud session state changes",
+                "properties": {
+                  "state": {
+                    "$ref": "#/definitions/CloudSessionStateType"
+                  }
+                }
+              },
+              "freeStyleAnselState": {
+                "type": "object",
+                "description": "Notification when freeStyle Ansel State is toggled",
+                "properties": {
+                  "enable": {
+                    "type": "boolean",
+                    "description": "flag for the state"
+                  }
+                }
+              },
+              "disableHDR": {
+                "type": "object",
+                "description": "Notification when ShadowPlay disable HDR Warning",
+                "properties": {
+                  "captureMode": {
+                    "$ref": "#/definitions/CaptureModeEnum"
+                  }
+                }
+              },
+              "galleryIsFull": {
+                "type": "boolean",
+                "description": "Notification for the state of the space in the gallery"
+              },
+              "diskSpaceIsLow": {
+                "type": "boolean",
+                "description": "Notification for the state of the space on the gallery disk"
+              },
+              "hotkeyChanged": {
+                "type": "object",
+                "description": "Recording saved notification",
+                "properties": {
+                  "hotkey": {
+                    "$ref": "#/definitions/hotkeyEnum"
+                  }
+                }
+              },
+              "gameExited": {
+                "type": "object",
+                "description": "Game exit notification",
+                "properties": {
+                  "exitAppPID": {
+                    "type": "integer",
+                    "default": 0,
+                    "description": "Process id of the game"
+                  }
+                }
+              },
+              "deviceChange": {
+                "type": "object",
+                "description": "MIC/WebCam plug in/out notification",
+                "properties": {
+                  "device": {
+                    "$ref": "#/definitions/DeviceTypeEnum"
+                  },
+                  "state": {
+                    "$ref": "#/definitions/DeviceStateTypeEnum"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                }
+              },
+              "protectedContentRunning": {
+                "type": "object",
+                "description": "Protected Content running notification",
+                "properties": {
+                  "appname": {
+                    "type": "string"
+                  }
+                }
+              },
+              "gassistInstallState": {
+                "type": "object",
+                "description": "Notification when GAssist is installed/uninstalled",
+                "properties": {
+                  "installed": {
+                    "type": "boolean",
+                    "description": "flag for the state"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "SetTelemtryInfoToShadowPlay": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "userId": {
+                "type": "string",
+                "description": "userId of logged in user"
+              },
+              "externalUserId": {
+                "type": "string",
+                "description": "externalUserId of logged in user"
+              },
+              "idpId": {
+                "type": "string",
+                "description": "idpId of logged in user account"
+              }
+            }
+          },
+          "required": [
+            "userId",
+            "externalUserId",
+            "idpId"
+          ]
+        },
+        "RegisterCaptureStateChangeNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "captureMode": {
+                "$ref": "#/definitions/CaptureModeEnum"
+              },
+              "recordingState": {
+                "type": "string",
+                "description": "Capture state",
+                "enum": [
+                  "available",
+                  "started",
+                  "auto_pause",
+                  "user_pause",
+                  "user_pause_auto_pause",
+                  "last",
+                  "error",
+                  "saved",
+                  "restarted_notifier",
+                  "resumed_notifier",
+                  "notifier_none",
+                  "invalid",
+                  "enabled",
+                  "disabled"
+                ]
+              },
+              "captureMethod": {
+                "type": "string",
+                "description": "Indicates whether media is captured using Recode or transcode"
+              },
+              "recordWidth": {
+                "type": "integer",
+                "description": "Indicates width of the captured media"
+              },
+              "recordHeight": {
+                "type": "integer",
+                "description": "Indicates height of the captured media"
+              },
+              "recordFramerate": {
+                "type": "integer",
+                "description": "Indicates framerate of the captured media"
+              },
+              "recordCodec": {
+                "type": "string",
+                "description": "Indicates target codec for the captured media"
+              },
+              "colorSpaceRange": {
+                "type": "string",
+                "description": "Indicates media color space viz SDR, HDR."
+              },
+              "errorType": {
+                "type": "string",
+                "description": "Indicating type of error"
+              },
+              "errorDetails": {
+                "type": "string",
+                "description": "Additional information specific to the CaptureEvent error"
+              }
+            }
+          }
+        },
+        "RegisterWindowStateChangeNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "windowMsg": {
+                "type": "string",
+                "description": "Type of notification"
+              },
+              "direction": {
+                "type": "string",
+                "description": "Indicates entering/leaving fullscreen"
+              }
+            }
+          }
+        },
+        "RegisterBroadcastSessionNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "sessionEvent": {
+                "type": "string",
+                "description": "Broadcast session event"
+              },
+              "titleSource": {
+                "type": "string",
+                "description": "Game name"
+              },
+              "spTelemetryName": {
+                "type": "string",
+                "description": "Telemetry name"
+              }
+            }
+          }
+        },
+        "CaptureSavedNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Indicates Recording has been saved",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "captureMode": {
+                "$ref": "#/definitions/CaptureModeEnum"
+              },
+              "path": {
+                "type": "string",
+                "description": "Fully-quantified path to the recording"
+              }
+            }
+          },
+          "required": [
+            "captureMode",
+            "path"
+          ]
+        },
+        "HighlightSavedNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Indicates Highlights has been saved",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "app": {
+                "$ref": "#/definitions/HighlightAppInfo"
+              },
+              "highlight": {
+                "$ref": "#/definitions/Highlight"
+              },
+              "unannounced": {
+                "type": "boolean",
+                "description": "flag indicating to hide notification on HL capture"
+              },
+              "sdkVersion": {
+                "type": "string",
+                "description": "SDK version"
+              }
+            }
+          },
+          "required": [
+            "highlight"
+          ]
+        },
+        "HighlightCaptureFailureNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Indicates Highlight capture failed",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "highlight": {
+                "$ref": "#/definitions/Highlight"
+              },
+              "errorCode": {
+                "type": "integer",
+                "description": "Error code indicating highlight capture failure"
+              }
+            }
+          },
+          "required": [
+            "highlight"
+          ]
+        },
+        "SDKPermissionsArray": {
+          "type": "array",
+          "description": "Array of GFE SDK Permission Scopes and their corresponding settings",
+          "items": {
+            "type": "object",
+            "properties": {
+              "scope": {
+                "$ref": "#/definitions/SDKScopeType"
+              },
+              "permission": {
+                "$ref": "#/definitions/SDKPermissions"
+              }
+            }
+          }
+        },
+        "RegisterSDKNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "createInstance": {
+                "type": "object",
+                "description": "SDK Create Instance notification",
+                "properties": {
+                  "app": {
+                    "$ref": "#/definitions/HighlightAppInfo"
+                  },
+                  "sdkVersion": {
+                    "type": "string",
+                    "description": "SDK version"
+                  }
+                }
+              },
+              "destroyInstance": {
+                "type": "object",
+                "description": "SDK Destroy Instance notification",
+                "properties": {
+                  "app": {
+                    "$ref": "#/definitions/HighlightAppInfo"
+                  }
+                },
+                "sdkVersion": {
+                  "type": "string",
+                  "description": "SDK version"
+                }
+              },
+              "openGroup": {
+                "type": "boolean",
+                "description": "Indicates highlights group was opened by SDK application"
+              },
+              "closeGroup": {
+                "type": "boolean",
+                "description": "Indicates highlights group was closed by SDK application"
+              },
+              "actionStatus": {
+                "type": "object",
+                "description": "Indicates status of SDK API call",
+                "properties": {
+                  "action": {
+                    "type": "string",
+                    "description": "API name"
+                  },
+                  "status": {
+                    "type": "string",
+                    "description": "SDK API call status"
+                  },
+                  "statusInternalCode": {
+                    "type": "integer",
+                    "description": "Internal code of SDK API call status"
+                  },
+                  "app": {
+                    "$ref": "#/definitions/HighlightAppInfo"
+                  }
+                }
+              },
+              "requestPermissions": {
+                "type": "object",
+                "description": "Permissions request",
+                "properties": {
+                  "app": {
+                    "$ref": "#/definitions/HighlightAppInfo"
+                  },
+                  "scopes": {
+                    "type": "array",
+                    "description": "Scopes",
+                    "items": {
+                      "$ref": "#/definitions/SDKScopeType"
+                    }
+                  }
+                }
+              },
+              "updatePermissions": {
+                "type": "object",
+                "description": "Permissions request",
+                "properties": {
+                  "app": {
+                    "$ref": "#/definitions/HighlightAppInfo"
+                  },
+                  "permissions": {
+                    "$ref": "#/definitions/SDKPermissionsArray"
+                  }
+                },
+                "required": [
+                  "app",
+                  "permissions"
+                ]
+              },
+              "manualRecordRunning": {
+                "type": "object",
+                "description": "Indicates manual record is running with another game",
+                "properties": {
+                  "manualRecordGameName": {
+                    "type": "string",
+                    "description": "Manual record game"
+                  },
+                  "gameName": {
+                    "type": "string",
+                    "description": "SDK Game"
+                  }
+                }
+              },
+              "broadcastRunning": {
+                "type": "object",
+                "description": "Indicates broadcast is running with another game",
+                "properties": {
+                  "broadcastGameName": {
+                    "type": "string",
+                    "description": "Broadcast record game"
+                  },
+                  "gameName": {
+                    "type": "string",
+                    "description": "SDK Game"
+                  }
+                }
+              },
+              "highlightSessionStatus": {
+                "type": "object",
+                "description": "Indicates Highlights Session is enabled",
+                "properties": {
+                  "enable": {
+                    "type": "boolean",
+                    "description": "Enable Flag"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "RegisterAppNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Notifications from app lifetime events",
+          "return": {
+            "type": "object",
+            "properties": {
+              "appStarted": {
+                "type": "object",
+                "description": "Triggered when a SP-enabled game or application starts up",
+                "properties": {
+                  "pid": {
+                    "type": "integer",
+                    "description": "Process ID of the app"
+                  },
+                  "cmsId": {
+                    "type": "integer",
+                    "description": "CMS ID of the app"
+                  },
+                  "ChromaAppId": {
+                    "type": "string",
+                    "description": "Chroma App ID of the app"
+                  },
+                  "profileName": {
+                    "type": "string",
+                    "description": "Profile name of the app"
+                  },
+                  "DRSAppName": {
+                    "type": "string",
+                    "description": "DRS App name of the app"
+                  },
+                  "shortName": {
+                    "type": "string",
+                    "description": "OPS short name of the app"
+                  },
+                  "localId": {
+                    "type": "integer",
+                    "description": "Local ID of the app"
+                  }
+                }
+              },
+              "appStopped": {
+                "type": "object",
+                "description": "Triggered when a SP-enabled game or application starts up",
+                "properties": {
+                  "pid": {
+                    "type": "integer",
+                    "description": "Process ID of the app"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "GetInitData": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets all data OSC needs on initialization",
+          "return": {
+            "type": "object",
+            "properties": {
+              "micMode": {
+                "$ref": "#/definitions/MicModeEnum"
+              },
+              "coplayEnabled": {
+                "type": "boolean",
+                "description": "coplay enable stat"
+              },
+              "captureState": {
+                "type": "string",
+                "description": "capture state"
+              },
+              "desktopCaptureSupported": {
+                "type": "boolean"
+              },
+              "desktopCaptureUnsupportedReason": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "2KBroadcastSupported": {
+                "type": "boolean"
+              },
+              "captureSupported": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "GetMainView": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets all data OSC needs on generating main view",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "fetchPartial": {
+                "type": "boolean",
+                "description": "If true, will only return the first 3 items, webcamPreset, webcamShown, micPresentCount. False will return all fields",
+                "default": false
+              }
+            },
+            "required": [
+              "fetchPartial"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "webcamPresent": {
+                "type": "boolean",
+                "description": "webcam present"
+              },
+              "webcamShown": {
+                "type": "boolean",
+                "description": "coplay enable stat"
+              },
+              "captureState": {
+                "type": "string",
+                "description": "capture state"
+              },
+              "desktopCaptureSupported": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "OpenOsc": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "open": {
+                "type": "boolean",
+                "description": "Toggles Osc",
+                "default": false
+              }
+            },
+            "required": [
+              "open"
+            ]
+          }
+        },
+        "Launch": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Launch/shutdown ShadowPlay",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "launch": {
+                "type": "boolean",
+                "description": "Enable/Disable ShadowPlay",
+                "default": false
+              }
+            },
+            "required": [
+              "launch"
+            ]
+          }
+        },
+        "SetOverlayReady": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Notify overlay readinness to shadowplay",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "bReady": {
+                "type": "boolean",
+                "description": "True - Overlay Ready, false - Overlay not ready",
+                "default": false
+              }
+            },
+            "required": [
+              "bReady"
+            ]
+          }
+        },
+        "GetShadowPlaySupported": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets ShadowPlay support state",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "language": {
+                "type": "string",
+                "description": "Gets ShadowPlay Supported",
+                "default": "en-us"
+              }
+            },
+            "required": [
+              "language"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "MediaPack": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "GetShadowPlayStatus": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets ShadowPlay run state",
+          "return": {
+            "type": "object",
+            "properties": {
+              "launch": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "Get4KSupport": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets 4K Support",
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "Quality": {
+          "type": "string",
+          "description": "Quality",
+          "default": "Good",
+          "enum": [
+            "UltraGood",
+            "VeryGood",
+            "Good",
+            "Average",
+            "Custom",
+            "GamecastYTLUltraGood",
+            "GamecastYTLVeryGood",
+            "GamecastYTLGood",
+            "GamecastYTLAverage",
+            "GamecastUltraGood",
+            "GamecastVeryGood",
+            "GamecastGood",
+            "GamecastAverage",
+            "GamecastFBLVeryGood",
+            "GamecastFBLGood",
+            "GamecastFBLAverage"
+          ]
+        },
+        "GetSupportedBitrates": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the bitrate values for a specific recording quality and resolution",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "quality": {
+                "$ref": "#/definitions/Quality"
+              },
+              "resolution": {
+                "$ref": "#/definitions/Resolution"
+              }
+            },
+            "required": [
+              "quality",
+              "resolution"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "bitrateBpsMin": {
+                "type": "integer"
+              },
+              "bitrateBpsMax": {
+                "type": "integer"
+              },
+              "bitrateBpsDefault": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "GetSupportedBitratesFramerates": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the bitrate and framerate values for a specific recording quality, resolution and codec",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "quality": {
+                "$ref": "#/definitions/Quality"
+              },
+              "resolution": {
+                "$ref": "#/definitions/Resolution"
+              },
+              "codec": {
+                "$ref": "#/definitions/Codec"
+              },
+              "framerate": {
+                "type": "integer",
+                "minimum": 30
+              }
+            },
+            "required": [
+              "quality",
+              "resolution",
+              "codec"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "bitrateBpsMin": {
+                "type": "integer"
+              },
+              "bitrateBpsMax": {
+                "type": "integer"
+              },
+              "bitrateBpsDefault": {
+                "type": "integer"
+              },
+              "fpsDefault": {
+                "type": "integer"
+              },
+              "supportedFPSCount": {
+                "type": "integer"
+              },
+              "fpsList": {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        },
+        "GetSupportedResolutions": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the list of supported resolutions",
+          "return": {
+            "type": "object",
+            "properties": {
+              "resolutions": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/Resolution"
+                }
+              }
+            }
+          }
+        },
+        "GetSupportedResolutionsCodecs": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the list of supported resolutions and codecs and default codec",
+          "return": {
+            "type": "object",
+            "properties": {
+              "resolutions": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/Resolution"
+                }
+              },
+              "codecs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/Codec"
+                }
+              },
+              "defaultCodec": {
+                "type": "string",
+                "description": "Indicates default video codec"
+              }
+            }
+          }
+        },
+        "GetSupportedFramerates": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the list of supported framerates",
+          "return": {
+            "type": "object",
+            "properties": {
+              "framerates": {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        },
+        "GetQualityDefaultData": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the default resolution and framerate values for a specific recording quality",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "quality": {
+                "$ref": "#/definitions/Quality"
+              }
+            },
+            "required": [
+              "quality"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "resolution": {
+                "$ref": "#/definitions/Resolution"
+              },
+              "framerate": {
+                "type": "integer",
+                "description": "Default framerate"
+              }
+            }
+          }
+        },
+        "GetCaptureState": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets Capture State",
+          "return": {
+            "type": "object",
+            "properties": {
+              "state": {
+                "type": "string",
+                "description": "ShadowPlay Capture state"
+              }
+            }
+          }
+        },
+        "GetCaptureProcessInfo": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets Process Info",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "appType": {
+                "type": "string",
+                "enum": [
+                  "capture",
+                  "in-focus",
+                  "last-proc"
+                ]
+              }
+            },
+            "required": [
+              "appType"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "profileName": {
+                "type": "string",
+                "description": "Game profile name"
+              },
+              "shortName": {
+                "type": "string",
+                "description": "Game short name"
+              },
+              "DRSAppName": {
+                "type": "string",
+                "description": "Game DRS name"
+              },
+              "pid": {
+                "type": "integer",
+                "description": "Process ID of the game"
+              },
+              "cmsId": {
+                "type": "integer",
+                "description": "CMS ID of the game"
+              },
+              "ChromaAppId": {
+                "type": "string",
+                "description": "Chroma App ID of the game"
+              }
+            }
+          }
+        },
+        "GetCaptureControlPIDMode": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets if it is valid to do capture control under PID mode",
+          "return": {
+            "type": "object",
+            "properties": {
+              "valid": {
+                "type": "boolean",
+                "description": "Indicates valid PID mode"
+              }
+            }
+          }
+        },
+        "GetScreenshotSupport": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets screenshot support",
+          "return": {
+            "type": "object",
+            "properties": {
+              "support": {
+                "type": "boolean",
+                "description": "Indicates screenshot support"
+              }
+            }
+          }
+        },
+        "CaptureScreenshot": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Captures screenshot"
+        },
+        "CaptureCustomScreenshot": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "controller": {
+                "type": "string",
+                "description": "who is triggering the screenshot"
+              },
+              "screenshotName": {
+                "type": "string",
+                "description": "Name of screenshot file"
+              },
+              "slotId": {
+                "type": "integer",
+                "description": "Freestyle Slot Id"
+              }
+            },
+            "required": [
+              "controller"
+            ]
+          },
+          "description": "Captures screenshot with custom name"
+        },
+        "CustomScreenshotNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "type": "string",
+                "description": "Saved screenshot path"
+              }
+            }
+          }
+        },
+        "GetFreestylePreviewBasePath": {
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "previewBasePath": {
+                "type": "string",
+                "description": "Base folder of freestyle preview"
+              }
+            },
+            "required": [
+              "previewBasePath"
+            ]
+          }
+        },
+        "SessionIds": {
+          "type": "string",
+          "description": "Possible session types to start a recording with",
+          "enum": [
+            "instantReplay",
+            "manualRecord",
+            "highlights",
+            "gear"
+          ]
+        },
+        "StartDiskCapture": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Starts a capture session muxed to disk",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "sessionId": {
+                "$ref": "#/definitions/SessionIds"
+              }
+            },
+            "required": [
+              "sessionId"
+            ]
+          }
+        },
+        "StopAndSaveDiskCapture": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Stops and finalized recording the capture session to disk",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "sessionId": {
+                "$ref": "#/definitions/SessionIds"
+              }
+            },
+            "required": [
+              "sessionId"
+            ]
+          }
+        },
+        "StartBufferedCapture": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Start recording video to a circular buffer from which to save clips",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "sessionId": {
+                "$ref": "#/definitions/SessionIds"
+              }
+            },
+            "required": [
+              "sessionId"
+            ]
+          }
+        },
+        "StopBufferedCapture": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Stop and flush the circular video buffer",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "sessionId": {
+                "$ref": "#/definitions/SessionIds"
+              }
+            },
+            "required": [
+              "sessionId"
+            ]
+          }
+        },
+        "SaveBufferedCaptureClip": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Saves video clip from the circular buffer",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "sessionId": {
+                "$ref": "#/definitions/SessionIds"
+              },
+              "deltaStartMs": {
+                "type": "integer"
+              },
+              "deltaStopMs": {
+                "type": "integer"
+              },
+              "clipName": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "sessionId",
+              "deltaStartMs",
+              "deltaStopMs",
+              "clipName"
+            ]
+          }
+        },
+        "EDGEEvent": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "event": {
+                "type": "object",
+                "description": "EDGE event"
+              }
+            }
+          }
+        },
+        "GetInstantReplayEnableStatus": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the enable/disable state of Instant Replay",
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "Indicates enable/disable state of Instant Replay"
+              }
+            }
+          }
+        },
+        "GetInstantReplayRunningStatus": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the running state of Instant Replay",
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "Indicates running state of Instant Replay"
+              }
+            }
+          }
+        },
+        "GetInstantReplaySettings": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the Instant Replay settings",
+          "return": {
+            "type": "object",
+            "properties": {
+              "quality": {
+                "type": "string",
+                "description": "Indicates video record quality"
+              },
+              "resolution": {
+                "type": "string",
+                "description": "Indicates video record resolution"
+              },
+              "framerate": {
+                "type": "integer",
+                "description": "Indicates video record framerate"
+              },
+              "bitrateBps": {
+                "type": "integer",
+                "description": "Indicates video record bitrate"
+              },
+              "replayLengthSeconds": {
+                "type": "integer",
+                "description": "Indicates Instant Replay video length"
+              },
+              "codec": {
+                "type": "string",
+                "description": "Indicates video record codec"
+              }
+            }
+          }
+        },
+        "SetInstantReplaySettings": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Saves Instant Replay settings",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "quality": {
+                "$ref": "#/definitions/Quality"
+              },
+              "replayLengthSeconds": {
+                "type": "integer",
+                "minimum": 15,
+                "maximum": 1200
+              },
+              "resolution": {
+                "$ref": "#/definitions/Resolution"
+              },
+              "framerate": {
+                "type": "integer"
+              },
+              "bitrateBps": {
+                "type": "integer"
+              },
+              "codec": {
+                "$ref": "#/definitions/Codec"
+              }
+            }
+          }
+        },
+        "EnableInstantReplay": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Enables Instant Replay",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "enable"
+            ]
+          }
+        },
+        "SaveInstantReplay": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Saves Instant Replay"
+        },
+        "GetLastInstantReplayLength": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the length of the last Instant Replay recording, in seconds",
+          "return": {
+            "type": "object",
+            "properties": {
+              "lengthSeconds": {
+                "type": "integer",
+                "description": "Instant replay length"
+              }
+            }
+          }
+        },
+        "GetInstantReplayCustomizeData": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "quality": {
+                "$ref": "#/definitions/Quality"
+              },
+              "resolution": {
+                "$ref": "#/definitions/Resolution"
+              }
+            },
+            "required": [
+              "quality",
+              "resolution"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "resolutions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "framerates": {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                }
+              },
+              "replayLengthSeconds": {
+                "type": "integer",
+                "description": "Instant replay buffer length"
+              },
+              "quality": {
+                "type": "string",
+                "description": "Indicates video record quality"
+              },
+              "resolution": {
+                "type": "string",
+                "description": "Indicates video record resolution"
+              },
+              "framerate": {
+                "type": "integer",
+                "description": "Indicates video record framereate"
+              },
+              "current": {
+                "type": "integer",
+                "description": "Indicates current bitrate"
+              },
+              "min": {
+                "type": "integer",
+                "description": "Indicates min bitrate"
+              },
+              "max": {
+                "type": "integer",
+                "description": "Indicates max bitrate"
+              },
+              "default": {
+                "type": "integer",
+                "description": "Indicates defaulit bitrate"
+              }
+            }
+          }
+        },
+        "GetRecordEnableStatus": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the enable/disable state of Manual Record",
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "Indicates enable/disable state of Manual Record"
+              }
+            }
+          }
+        },
+        "GetRecordRunningStatus": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the running state of Manual Record",
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "Indicates running state of Manual Record"
+              }
+            }
+          }
+        },
+        "EnableRecord": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Enables/disables Manual Record",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "enable"
+            ]
+          }
+        },
+        "GetRecordSettings": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the Record settings",
+          "return": {
+            "type": "object",
+            "properties": {
+              "quality": {
+                "type": "string",
+                "description": "Indicates video record quality"
+              },
+              "resolution": {
+                "type": "string",
+                "description": "Indicates video record resolution"
+              },
+              "framerate": {
+                "type": "integer",
+                "description": "Indicates video record framereate"
+              },
+              "bitrateBps": {
+                "type": "integer",
+                "description": "Indicates video record bitrate"
+              }
+            }
+          }
+        },
+        "SetRecordSettings": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets the Record settings",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "quality": {
+                "$ref": "#/definitions/Quality"
+              },
+              "resolution": {
+                "$ref": "#/definitions/Resolution"
+              },
+              "framerate": {
+                "type": "integer",
+                "minimum": 30
+              },
+              "bitrateBps": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "quality"
+            ]
+          }
+        },
+        "GetRecordCustomizeData": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets data for OSC's Manual Record Customize view",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "quality": {
+                "$ref": "#/definitions/Quality"
+              },
+              "resolution": {
+                "$ref": "#/definitions/Resolution"
+              }
+            },
+            "required": [
+              "quality",
+              "resolution"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "resolutions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "framerates": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "quality": {
+                "type": "string",
+                "description": "Indicates video record quality"
+              },
+              "resolution": {
+                "type": "string",
+                "description": "Indicates video record resolution"
+              },
+              "framerate": {
+                "type": "integer",
+                "description": "Indicates video record framerate"
+              },
+              "current": {
+                "type": "integer",
+                "description": "Indicates current bitrate"
+              },
+              "min": {
+                "type": "integer",
+                "description": "Indicates min bitrate"
+              },
+              "max": {
+                "type": "integer",
+                "description": "Indicates max bitrate"
+              },
+              "default": {
+                "type": "integer",
+                "description": "Indicates defaulit bitrate"
+              }
+            }
+          }
+        },
+        "EnableBroadcast": {
+          "description": "Enables/disables Broadcast",
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean",
+                "description": "Enables/disables Broadcast",
+                "default": false
+              }
+            },
+            "required": [
+              "enable"
+            ]
+          }
+        },
+        "PauseBroadcast": {
+          "description": "Pauses/resumes Broadcast",
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "pause": {
+                "type": "boolean",
+                "description": "Pauses/Resumes Broadcast",
+                "default": false
+              }
+            },
+            "required": [
+              "pause"
+            ]
+          }
+        },
+        "GetBroadcastEnableStatus": {
+          "description": "Gets the enable/disable state of Broadcast",
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "Indicates enable/disable state of Broadcast"
+              }
+            }
+          }
+        },
+        "GetBroadcastRunningStatus": {
+          "description": "Gets the running state of Broadcast",
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean",
+                "description": "Indicates running state of Broadcast"
+              }
+            }
+          }
+        },
+        "GetBroadcastSupported": {
+          "description": "Gets the support state of Broadcast",
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "support": {
+                "type": "boolean",
+                "description": "Indicates support state of Broadcast"
+              }
+            }
+          }
+        },
+        "Provider": {
+          "type": "string",
+          "description": "Indicates broadcast provider/destination",
+          "default": "Always Ask",
+          "enum": [
+            "Always Ask",
+            "Twitch",
+            "YouTube Live",
+            "Facebook Live",
+            "Do Not Broadcast"
+          ]
+        },
+        "GetBroadcastSettings": {
+          "description": "Gets the Broadcast settings",
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "provider": {
+                "$ref": "#/definitions/Provider"
+              },
+              "quality": {
+                "$ref": "#/definitions/Quality"
+              },
+              "resolution": {
+                "$ref": "#/definitions/Resolution"
+              },
+              "framerate": {
+                "type": "integer",
+                "description": "Indicates broadcast framerate",
+                "enum": [
+                  30,
+                  60
+                ],
+                "tsEnumNames": [
+                  "_30",
+                  "_60"
+                ]
+              },
+              "bitrateBps": {
+                "type": "integer",
+                "description": "Indicates broadcast bitrate",
+                "minimum": 1
+              }
+            }
+          }
+        },
+        "SetBroadcastSettings": {
+          "description": "Sets the Broadcast settings",
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "provider": {
+                "$ref": "#/definitions/Provider"
+              },
+              "quality": {
+                "$ref": "#/definitions/Quality"
+              },
+              "resolution": {
+                "$ref": "#/definitions/Resolution"
+              },
+              "framerate": {
+                "type": "integer",
+                "description": "Indicates broadcast framerate",
+                "enum": [
+                  30,
+                  60
+                ]
+              },
+              "bitrateBps": {
+                "type": "integer",
+                "description": "Indicates broadcast bitrate",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "quality",
+              "provider"
+            ]
+          }
+        },
+        "SetBroadcastSession": {
+          "description": "Sets the Broadcast settings",
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "integer",
+                "description": "Indicates data for configuration (0) or live (1)",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "provider": {
+                "$ref": "#/definitions/Provider"
+              },
+              "url": {
+                "type": "string",
+                "description": "Broadcast URL"
+              },
+              "port": {
+                "type": "integer",
+                "description": "Port number of the URL",
+                "minimum": 1
+              }
+            },
+            "required": [
+              "provider",
+              "type"
+            ]
+          }
+        },
+        "GetBroadcastPreferredProviderSetting": {
+          "description": "Gets the preferred broadcast provider/destination setting",
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "provider": {
+                "$ref": "#/definitions/Provider"
+              }
+            }
+          }
+        },
+        "SetBroadcastPreferredProviderSetting": {
+          "description": "Sets the preferred broadcast provider/destination setting",
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "provider": {
+                "$ref": "#/definitions/Provider"
+              }
+            },
+            "required": [
+              "provider"
+            ]
+          }
+        },
+        "GetBroadcastLastProvider": {
+          "description": "Gets the last broadcast provider/destination used",
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "provider": {
+                "$ref": "#/definitions/Provider"
+              }
+            }
+          }
+        },
+        "SetBroadcastLastProvider": {
+          "description": "Sets the last broadcast provider/destination used",
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "provider": {
+                "$ref": "#/definitions/Provider"
+              }
+            },
+            "required": [
+              "provider"
+            ]
+          }
+        },
+        "GetBroadcastTitle": {
+          "description": "Gets the title of the broadcast",
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "description": "Title of the broadcast"
+              }
+            }
+          }
+        },
+        "GetBroadcast2K": {
+          "description": "Gets 2K Broadcast support information",
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "support": {
+                "type": "boolean",
+                "description": "Indicates 2K broadcasting is supported"
+              },
+              "enabled": {
+                "type": "boolean",
+                "description": "Indicates 2K broadcasting is enabled"
+              }
+            }
+          }
+        },
+        "GetBroadcastFacebookLiveSupport": {
+          "description": "Gets Facebook Live broadcast support information",
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "support": {
+                "type": "boolean",
+                "description": "Indicates Facebook LiveK broadcasting is supported"
+              }
+            }
+          }
+        },
+        "GetBroadcastIngestServer": {
+          "description": "Gets Broadcast Twitch Ingest server information",
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "server": {
+                "type": "string",
+                "description": "Name of Ingest Server"
+              }
+            }
+          }
+        },
+        "SetBroadcastIngestServer": {
+          "description": "Sets Broadcast Twitch Ingest server information",
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "server": {
+                "type": "string",
+                "description": "Name of Ingest Server"
+              }
+            },
+            "required": [
+              "server"
+            ]
+          }
+        },
+        "SetBroadcastViewerCountImage": {
+          "description": "Sets the image to be used as the broadcast viewer count",
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "image": {
+                "type": "string",
+                "description": "Image as bitmap data"
+              },
+              "imageWidth": {
+                "type": "integer",
+                "description": "Image as bitmap data",
+                "minimum": 1
+              },
+              "imageHeight": {
+                "type": "integer",
+                "description": "Image as bitmap data",
+                "minimum": 1
+              }
+            },
+            "required": [
+              "image",
+              "imageWidth",
+              "imageHeight"
+            ]
+          }
+        },
+        "SetBroadcastViewerMax": {
+          "description": "Sets maximum number of broadcast viewers",
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "count": {
+                "type": "integer",
+                "description": "Number of maximum viewers allowed",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "count"
+            ]
+          }
+        },
+        "GetRecordBroadcastConcurrencySupport": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the Manual Record Concurrency support with Broadcast",
+          "return": {
+            "type": "object",
+            "properties": {
+              "support": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "GetRecordGamestreamConcurrencySupport": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the Manual Record Concurrency support with Gamecast",
+          "return": {
+            "type": "object",
+            "properties": {
+              "support": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "GetDesktopCaptureEnabled": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Get Desktop Capture enable state",
+          "return": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "SetDesktopCaptureEnabled": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets Desktop Capture enable state",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "enable"
+            ]
+          }
+        },
+        "GetDesktopCaptureSupported": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets if Desktop Capture is supported",
+          "return": {
+            "type": "object",
+            "properties": {
+              "support": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "GetDesktopCaptureSupportReason": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the supported reasons for Desktop Capture. This is an extended version of /ShadowPlay/v.1.0/DesktopCapture/Support.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "support": {
+                "type": "boolean"
+              },
+              "desktopCaptureUnsupportedReason": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "GetHevcSupportedState": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Get HEVC Supported state",
+          "return": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "GetAudioMode": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets Audio mode",
+          "return": {
+            "type": "object",
+            "properties": {
+              "mode": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "SetAudioMode": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets Audio mode",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "mode": {
+                "type": "string",
+                "enum": [
+                  "off",
+                  "game",
+                  "mic",
+                  "both"
+                ]
+              }
+            },
+            "required": [
+              "mode"
+            ]
+          }
+        },
+        "GetAudioSettings": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets Audio settings",
+          "return": {
+            "type": "object",
+            "properties": {
+              "systemVolumePercent": {
+                "type": "integer"
+              },
+              "separateTracks": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "SetAudioSettings": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets Audio settings",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "systemVolumePercent": {
+                "type": "integer",
+                "maximum": 100,
+                "minimum": 0
+              },
+              "separateTracks": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "systemVolumePercent",
+              "separateTracks"
+            ]
+          }
+        },
+        "GetMicCount": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets Microphone count, Returns {present:Integer} for number of microphones present (0 or more)",
+          "return": {
+            "type": "object",
+            "properties": {
+              "present": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "GetMicMode": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets Microphone mode",
+          "return": {
+            "type": "object",
+            "properties": {
+              "mode": {
+                "$ref": "#/definitions/MicModeEnum"
+              }
+            }
+          }
+        },
+        "SetMicMode": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets Microphone mode",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "mode": {
+                "$ref": "#/definitions/MicModeEnum"
+              }
+            },
+            "required": [
+              "mode"
+            ]
+          }
+        },
+        "GetMicSettings": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets Microphone settings",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "index": {
+                "type": "integer",
+                "minimum": -1
+              }
+            },
+            "required": [
+              "index"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "index": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "id": {
+                "type": "string"
+              },
+              "muted": {
+                "type": "boolean"
+              },
+              "enabled": {
+                "type": "boolean"
+              },
+              "volumePercent": {
+                "type": "integer"
+              },
+              "boostPercent": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "SetMicSettings": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets Microphone settings",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "index": {
+                "type": "integer"
+              },
+              "muted": {
+                "type": "boolean"
+              },
+              "volumePercent": {
+                "type": "integer"
+              },
+              "boostPercent": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "index",
+              "muted",
+              "volumePercent",
+              "boostPercent"
+            ]
+          }
+        },
+        "MicPTTMode": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Set Microphone PTT Mode",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "mode": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "mode"
+            ]
+          }
+        },
+        "EnableWebcam": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Enables/disables the webcam",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "ToggleWebcam": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Toggles Webcam between show/hide"
+        },
+        "GetWebcamEnable": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets webcam enable state",
+          "return": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "GetWebcamShown": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets if webcam overlay is shown",
+          "return": {
+            "type": "object",
+            "properties": {
+              "shown": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "GetWebcamPresent": {
+          "isCommand": true,
+          "type": "object",
+          "description": " Gets webcam presence",
+          "return": {
+            "type": "object",
+            "properties": {
+              "present": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "GetWebcamPreviewState": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets if webcam preview is enabled",
+          "return": {
+            "type": "object",
+            "properties": {
+              "enabled": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "EnableWebcamPreview": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Enables/disables the webcam preview",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "enable"
+            ]
+          }
+        },
+        "HighlightDefinition": {
+          "type": "object",
+          "description": "Application-defined data about a Highlight type",
+          "properties": {
+            "definitionId": {
+              "type": "string",
+              "description": "Application-sourced definition identifier of the Highlight"
+            },
+            "name": {
+              "type": "string",
+              "description": "Application-sourced name of the Highlight"
+            },
+            "userEnabled": {
+              "type": "boolean",
+              "description": "Defines if the user has enabled this type of highlight"
+            },
+            "tags": {
+              "type": "integer",
+              "description": "Application-sourced tag values for the Highlight"
+            },
+            "significance": {
+              "type": "integer",
+              "description": "Application-sourced significance values for the Highlight"
+            }
+          }
+        },
+        "GetHighlightsActive": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Checks if a GFE SDK Highlight session is active",
+          "return": {
+            "type": "object",
+            "properties": {
+              "active": {
+                "type": "boolean",
+                "description": "Flag indicating if there is an active Highlight session"
+              }
+            },
+            "required": [
+              "active"
+            ]
+          }
+        },
+        "GetHighlightsEnable": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Checks if the Highlight feature is enabled",
+          "return": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean",
+                "description": "Flag indicating Highlights enable state"
+              }
+            },
+            "required": [
+              "enable"
+            ]
+          }
+        },
+        "SetHighlightsEnable": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets Highlights enable state",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean",
+                "description": "Flag indicating Highlights enable state"
+              }
+            },
+            "required": [
+              "enable"
+            ]
+          }
+        },
+        "GetSDKInstanceActive": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Checks if an active GFE SDK instance exists",
+          "return": {
+            "type": "object",
+            "properties": {
+              "active": {
+                "type": "boolean",
+                "description": "Flag indicating active SDK instance"
+              }
+            },
+            "required": [
+              "active"
+            ]
+          }
+        },
+        "GetSDKPermissions": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets permissions of GFE SDK",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "app": {
+                "$ref": "#/definitions/HighlightAppInfo"
+              }
+            },
+            "required": [
+              "app"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "permissions": {
+                "$ref": "#/definitions/SDKPermissionsArray"
+              }
+            },
+            "required": [
+              "permissions"
+            ]
+          }
+        },
+        "SetSDKPermissions": {
+          "isCommand": true,
+          "type": "object",
+          "description": "sets permissions of GFE SDK",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "app": {
+                "$ref": "#/definitions/HighlightAppInfo"
+              },
+              "permissions": {
+                "$ref": "#/definitions/SDKPermissionsArray"
+              }
+            },
+            "required": [
+              "app",
+              "permissions"
+            ]
+          }
+        },
+        "NotifyAppOverlayState": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sends a notification to SDK-integrate app of overlay state",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "open": {
+                "type": "boolean",
+                "description": "Open or closed state of overlay"
+              },
+              "state": {
+                "type": "string",
+                "description": "The type of overlay UI in the current state",
+                "enum": [
+                  "main",
+                  "permission",
+                  "highlightsSummary"
+                ]
+              }
+            },
+            "required": [
+              "open",
+              "state"
+            ]
+          }
+        },
+        "GetHighlightsConfig": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets list of application-defined Highlights and their enable state",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "app": {
+                "$ref": "#/definitions/HighlightAppInfo"
+              }
+            },
+            "required": [
+              "app"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "highlightDefinitions": {
+                "type": "array",
+                "description": "Array of highlight definitions",
+                "items": {
+                  "$ref": "#/definitions/HighlightDefinition"
+                }
+              }
+            },
+            "required": [
+              "highlightDefinitions"
+            ]
+          }
+        },
+        "SetHighlightsConfig": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets enable/disable state of Highlights for a specific application/game",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "app": {
+                "$ref": "#/definitions/HighlightAppInfo"
+              },
+              "highlightDefinitions": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/HighlightDefinition"
+                }
+              }
+            },
+            "required": [
+              "app",
+              "highlightDefinitions"
+            ]
+          }
+        },
+        "GetApplicationConfigs": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets Highlight and SDK Permission settings for all tracked SDK-integrated applications",
+          "return": {
+            "type": "object",
+            "properties": {
+              "apps": {
+                "type": "array",
+                "description": "Array of applications and their Highlights information",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "app": {
+                      "$ref": "#/definitions/HighlightAppInfo"
+                    },
+                    "permissions": {
+                      "$ref": "#/definitions/SDKPermissionsArray"
+                    },
+                    "highlights": {
+                      "type": "array",
+                      "description": "Array Highlights information for this application",
+                      "items": {
+                        "$ref": "#/definitions/HighlightDefinition"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "required": [
+              "apps"
+            ]
+          }
+        },
+        "GetHotkeyShortcut": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the keys assigned to a specific ShadowPlay hotkey action",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "hotkey": {
+                "$ref": "#/definitions/hotkeyEnum"
+              }
+            },
+            "required": [
+              "hotkey"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "keys": {
+                "type": "array",
+                "description": "Array of integer values for the keys",
+                "items": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        "SetHotkeyShortcut": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets the keys assigned to a specific ShadowPlay hotkey action",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "hotkey": {
+                "$ref": "#/definitions/hotkeyEnum"
+              },
+              "keys": {
+                "type": "array",
+                "description": "Array of integer values for the keys",
+                "items": {
+                  "type": "number"
+                }
+              }
+            },
+            "required": [
+              "hotkey",
+              "keys"
+            ]
+          }
+        },
+        "ResetHotkeysToDefault": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Resets all Hotkeys to default value"
+        },
+        "GetHotkeyMonitoring": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Determines if hotkey monitoring is enabled",
+          "return": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean",
+                "description": "Defines if monitoring is enabled"
+              }
+            }
+          }
+        },
+        "Init": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Initialize all the members requiring SystemInfo",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "osType": {
+                "type": "string"
+              },
+              "browserType": {
+                "type": "string"
+              },
+              "areHotkeysOverridden": {
+                "type": "boolean"
+              },
+              "overriddenHotkeysList": {
+                "type": "array",
+                "description": "Array of integer values for the keys",
+                "items": {
+                  "type": "number"
+                }
+              }
+            },
+            "required": [
+              "osType",
+              "areHotkeysOverridden",
+              "overriddenHotkeysList"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "success": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "success"
+            ]
+          }
+        },
+        "SetHotkeyMonitoring": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Defines if hotkey monitoring is enabled",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean",
+                "description": "Defines if monitoring is enabled"
+              }
+            },
+            "required": [
+              "enable"
+            ]
+          }
+        },
+        "SetHotkeyDynamicEnable": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Defines if hotkeys should be dynamically enabled",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean",
+                "description": "Defines if monitoring is enabled"
+              },
+              "keys": {
+                "type": "array",
+                "description": "Array of hotkeys to toggle for dynamic enable",
+                "items": {
+                  "$ref": "#/definitions/hotkeyEnum"
+                }
+              }
+            },
+            "required": [
+              "enable",
+              "keys"
+            ]
+          }
+        },
+        "GetIndicatorSupported": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets if an Indicator Overlay is supported",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "$ref": "#/definitions/IndicatorEnum"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "support": {
+                "type": "boolean",
+                "description": "Defines if the indicator is supported"
+              }
+            }
+          }
+        },
+        "GetIndicatorOverlaySettings": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the Indicator Overlay Settings",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "$ref": "#/definitions/IndicatorEnum"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean",
+                "description": "Defines if monitoring is enabled"
+              },
+              "position": {
+                "$ref": "#/definitions/OverlayPositionEnum"
+              },
+              "size": {
+                "$ref": "#/definitions/OverlaySizeEnum"
+              }
+            }
+          }
+        },
+        "SetIndicatorOverlaySettings": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets an indicator overlay settings",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "$ref": "#/definitions/IndicatorEnum"
+              },
+              "enable": {
+                "type": "boolean",
+                "description": "Defines if monitoring is enabled"
+              },
+              "position": {
+                "$ref": "#/definitions/OverlayPositionEnum"
+              },
+              "size": {
+                "$ref": "#/definitions/OverlaySizeEnum"
+              }
+            },
+            "required": [
+              "id",
+              "enable",
+              "position"
+            ]
+          }
+        },
+        "GetCustomOverlayDefaultPath": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the default path of the Custom Overlays",
+          "return": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string",
+                "description": "Fully quantified path of a folder"
+              }
+            }
+          }
+        },
+        "GetCustomOverlaySupport": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets Custom Overlays support state",
+          "return": {
+            "type": "object",
+            "properties": {
+              "supportType": {
+                "type": "string",
+                "description": "Level of custom overlay support",
+                "enum": [
+                  "none",
+                  "single",
+                  "multiple"
+                ]
+              }
+            }
+          }
+        },
+        "GetCustomOverlayPath": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the default path of a Custom Overlay",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "$ref": "#/definitions/CustomOverlayTypeEnum"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string",
+                "description": "Fully quantified path of a folder"
+              }
+            }
+          }
+        },
+        "SetCustomOverlayPath": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets the default path of a Custom Overlay",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "$ref": "#/definitions/CustomOverlayTypeEnum"
+              },
+              "path": {
+                "type": "string",
+                "description": "Fully quantified path of a folder"
+              }
+            },
+            "required": [
+              "id",
+              "path"
+            ]
+          }
+        },
+        "GetCustomOverlayEnable": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the default path of a Custom Overlay",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "$ref": "#/definitions/CustomOverlayTypeEnum"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean",
+                "description": "Enable state of the Custom Overlay"
+              }
+            }
+          }
+        },
+        "SetCustomOverlayEnable": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets the default path of a Custom Overlay",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "$ref": "#/definitions/CustomOverlayTypeEnum"
+              },
+              "enable": {
+                "type": "boolean",
+                "description": "Enable state of the Custom Overlay"
+              }
+            },
+            "required": [
+              "id",
+              "enable"
+            ]
+          }
+        },
+        "GetCustomOverlayDisplay": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets the display state of a Custom Overlay",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "$ref": "#/definitions/CustomOverlayTypeEnum"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "display": {
+                "type": "boolean",
+                "description": "Display state of the Custom Overlay"
+              }
+            }
+          }
+        },
+        "SelectCustomOverlay": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Select a  Custom Overlay",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer",
+                "description": "ID of Custom Overlay"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        },
+        "EnableCustomOverlay": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Enable/Disable Custom Overlay feature",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean",
+                "description": "State of the Custom Overlay feature"
+              }
+            },
+            "required": [
+              "enable"
+            ]
+          }
+        },
+        "GetNvCameraToggleState": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets GameFilter/PhotoMode state.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "enable"
+            ]
+          }
+        },
+        "SetNvCameraToggleState": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets GameFilter/PhotoMode state.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "enable"
+            ]
+          }
+        },
+        "InternalErrorCodeEnum": {
+          "type": "integer",
+          "description": "Enum defining status",
+          "enum": [
+            0,
+            1,
+            -2147467263,
+            -2147467262,
+            -2147467261,
+            -2147467260,
+            -2147467259,
+            -2147468113,
+            -2147024894,
+            -2147024893,
+            -2147024890,
+            -2147024883,
+            -2147024882,
+            -2147024809,
+            -2147023436,
+            -2147024673,
+            -2146959359,
+            -1,
+            -2,
+            -3,
+            -4,
+            -5,
+            -6,
+            -7,
+            -8,
+            -9,
+            -10,
+            -11,
+            -12,
+            -13,
+            -14,
+            -15,
+            -16,
+            -17,
+            -18,
+            -19,
+            -20,
+            -21,
+            -22,
+            -2147220959,
+            -2147220958,
+            -2147220957,
+            -2147220956,
+            -2147220955,
+            -2147220954,
+            -2147220953,
+            -2147220952,
+            -2147220951,
+            -2147220950,
+            -2147220949,
+            -2147220948,
+            -2147220947,
+            -2147220946,
+            -2147220945,
+            -2147220944,
+            -2147220943,
+            -2147220942,
+            -2147220941,
+            -2147220940,
+            -2147220926,
+            -2147220938,
+            -2147220937,
+            -2147483637,
+            -2147019873,
+            -2147418113,
+            -2146897916
+          ],
+          "tsEnumNames": [
+            "GXP_Success_Ok",
+            "GXP_Success_NoError",
+            "GXP_Error_NotImplemented",
+            "GXP_Error_NoInterface",
+            "GXP_Error_InvalidPointer",
+            "GXP_Error_Abort",
+            "GXP_Error_Fail",
+            "GXP_Error_Unexpected",
+            "GXP_Error_FileNotFound",
+            "GXP_Error_PathNotFound",
+            "GXP_Error_InvalidHandle",
+            "GXP_Error_InvalidData",
+            "GXP_Error_OutOfMemory",
+            "GXP_Error_InvalidArg",
+            "GXP_Error_TimeOut",
+            "GXP_Error_FileTooLarge",
+            "GXP_Error_MaxStartAttempts",
+            "ShadowPlay_OSC_ERR_GENERIC",
+            "ShadowPlay_OSC_ERR_INVALID_VER",
+            "ShadowPlay_OSC_ERR_CLIENT_UNINITIALIZED",
+            "ShadowPlay_OSC_ERR_SERVER_NOT_CONNECTED",
+            "ShadowPlay_OSC_ERR_SERVER_TIME_OUT",
+            "ShadowPlay_OSC_ERR_SERVER_CANNOT_CONNECT",
+            "ShadowPlay_OSC_ERR_STREAM_NOT_FOUND",
+            "ShadowPlay_OSC_ERR_INVALID_FORMAT",
+            "ShadowPlay_OSC_ERR_INVALID_PARAMETERS",
+            "ShadowPlay_OSC_ERR_DX",
+            "ShadowPlay_OSC_ERR_MMF",
+            "ShadowPlay_OSC_ERR_INSUFFICIENT_BUFFER",
+            "ShadowPlay_OSC_ERR_NO_IMPLEMENTATION",
+            "ShadowPlay_OSC_ERR_STREAM_LOCKED",
+            "ShadowPlay_OSC_ERR_ALREADY_REGISTERED",
+            "ShadowPlay_OSC_ERR_ALREADY_CREATED",
+            "ShadowPlay_OSC_ERR_PROTOBUF",
+            "ShadowPlay_OSC_ERR_NOTAVAILABLE",
+            "ShadowPlay_OSC_ERR_OUT_OF_MEMORY",
+            "ShadowPlay_OSC_ERR_ABANDONED",
+            "ShadowPlay_OSC_ERR_INVALID_CALL",
+            "ShadowPlay_OSC_ERR_NO_VALID_GAME_RUNNING",
+            "ShadowPlay_E_SERVER_NOT_RUNNING",
+            "ShadowPlay_E_UNKNOWN_PROP_NAME",
+            "ShadowPlay_E_INVALID_PROP_FORMAT",
+            "ShadowPlay_E_INVALID_PROP_VALUE",
+            "ShadowPlay_E_UNKNOWN_CMD_NAME",
+            "ShadowPlay_E_INVALID_CMD_FORMAT",
+            "ShadowPlay_E_INVALID_CMD_VERSION",
+            "ShadowPlay_E_NOT_READY",
+            "ShadowPlay_E_SERVER_IN_EXCLUSIVE_MODE",
+            "ShadowPlay_E_SERVER_IN_GAMECAST_MODE",
+            "ShadowPlay_E_CANNOT_CLAIM_H264_LICENSE",
+            "ShadowPlay_E_FAIL_SYSTEM_REQUIREMENTS_OS",
+            "ShadowPlay_E_FAIL_SYSTEM_REQUIREMENTS_RAM",
+            "ShadowPlay_E_FAIL_SYSTEM_REQUIREMENTS_GPU",
+            "ShadowPlay_E_FAIL_ENABLE_SHADOWPLAY",
+            "ShadowPlayE_FAIL_ENABLE_NVFBC",
+            "ShadowPlay_E_FAIL_SYSTEM_REQUIREMENTS_DRIVER",
+            "ShadowPlay_E_FAIL_ENABLE_NVFBC_TIMEOUT",
+            "ShadowPlay_E_FAIL_ENABLE_OSC",
+            "ShadowPlay_E_FAIL_ENABLE_HELPER",
+            "ShadowPlay_E_FAIL_NO_GALLERY_SPACE",
+            "ShadowPlay_E_FAIL_NO_DISC_SPACE",
+            "ShadowPlay_E_FAIL_CAPTURE_DISABLED",
+            "ShadowPlay_E_BOUNDS",
+            "ShadowPlay_E_NOT_VALID_STATE",
+            "ShadowPlay_E_UNEXPECTED",
+            "GXP_Error_HotkeyInUse"
+          ]
+        },
+        "ToggleAutoHighlight": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Toggle AutoHighlight",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "toggle": {
+                "type": "boolean",
+                "description": "Flag indicating enable/disable AHL"
+              }
+            },
+            "required": [
+              "toggle"
+            ]
+          }
+        },
+        "DisableRecordSpecialCase": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Control Recording",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "specialCase": {
+                "type": "integer",
+                "description": "Enum indicating to disable recording of SDK Highlights"
+              }
+            },
+            "required": [
+              "specialCase"
+            ]
+          }
+        },
+        "GetIf4KRecordingFallbackAvailable": {
+          "type": "object",
+          "isCommand": true,
+          "legacyCommand": "QUERY_IS_4K_RECORDING_FALLBACK_AVAILABLE",
+          "return": {
+            "type": "boolean"
+          }
+        },
+        "GetExportedGFESettingsData": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Returns exported GFE settings",
+          "return": {
+            "type": "object",
+            "properties": {
+              "isValidGFEDataFound": {
+                "type": "boolean"
+              },
+              "gfeData": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "isValidGFEDataFound"
+            ]
+          }
+        },
+        "SyncShadowPlaySettings": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sync ShadowPlay Settings with handling GFE migration if applicable",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "isGFEMigration": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "isGFEMigration"
+            ]
+          }
+        },
+        "HandleHighlightsGfeConfig": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Migrate Highlights config and permissions data from a GFE backup"
+        },
+        "GAssistToggle": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "systemAssistEnable": {
+                "$ref": "#/definitions/GAssistFeatureState"
+              },
+              "gameAssistEnable": {
+                "$ref": "#/definitions/GAssistFeatureState"
+              },
+              "voiceQueryEnable": {
+                "$ref": "#/definitions/GAssistFeatureState"
+              }
+            },
+            "required": [
+              "systemAssistEnable",
+              "gameAssistEnable",
+              "voiceQueryEnable"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

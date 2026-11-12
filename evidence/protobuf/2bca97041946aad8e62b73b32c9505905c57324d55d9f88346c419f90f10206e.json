@@ -1,0 +1,834 @@
+{
+  "name": "sdk.proto",
+  "message_type": [
+    {
+      "name": "LocalePair",
+      "field": [
+        {
+          "name": "localeCode",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "localizedString",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "ScopePermission",
+      "field": [
+        {
+          "name": "scope",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "permission",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT32"
+        }
+      ]
+    },
+    {
+      "name": "CreateSDKInstanceRequest",
+      "field": [
+        {
+          "name": "client",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "gameName",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "clientGfeVersion",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "scopes",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "clientPID",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_UINT64"
+        },
+        {
+          "name": "clientProcessName",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "clientProcessPath",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "targetProcessPID",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT64"
+        },
+        {
+          "name": "targetProcessName",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "targetProcessPath",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "DestroySDKInstanceRequest"
+    },
+    {
+      "name": "IsClientAliveRequest"
+    },
+    {
+      "name": "GetUILanguageRequest"
+    },
+    {
+      "name": "OpenGroupRequest",
+      "field": [
+        {
+          "name": "groupId",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "groupDescriptionLocalePairs",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".LocalePair"
+        }
+      ]
+    },
+    {
+      "name": "CloseGroupRequest",
+      "field": [
+        {
+          "name": "groupId",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "destroyHighlights",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "GetNumberOfHighlightsInGroupRequest",
+      "field": [
+        {
+          "name": "groupId",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "tagFilter",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "significanceFilter",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "SetScreenshotHighlightRequest",
+      "field": [
+        {
+          "name": "groupId",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "highlightId",
+          "number": 3,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "SetVideoHighlightRequest",
+      "field": [
+        {
+          "name": "groupId",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "highlightId",
+          "number": 3,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "startDelta",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "endDelta",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "baseTimeStamp",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT64"
+        }
+      ]
+    },
+    {
+      "name": "OpenGroupSummaryRequest",
+      "field": [
+        {
+          "name": "groupTable",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".OpenGroupSummaryRequest.GroupSummaryDefinition"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "GroupSummaryDefinition",
+          "field": [
+            {
+              "name": "groupId",
+              "number": 1,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "highlightTags",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "significance",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT32"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ToggleOverlayRequest",
+      "field": [
+        {
+          "name": "visibilityType",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".OverlayVisibility"
+        }
+      ]
+    },
+    {
+      "name": "ConfigureHighlightsRequest",
+      "field": [
+        {
+          "name": "gameArt",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BYTES"
+        },
+        {
+          "name": "highlightTable",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".ConfigureHighlightsRequest.HighlightDefinition"
+        },
+        {
+          "name": "defaultLocale",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "HighlightDefinition",
+          "field": [
+            {
+              "name": "highlightId",
+              "number": 1,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "userInterest",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_BOOL"
+            },
+            {
+              "name": "highlightTags",
+              "number": 4,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "significance",
+              "number": 5,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "icon",
+              "number": 6,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_BYTES"
+            },
+            {
+              "name": "highlightLocaleNamePairs",
+              "number": 7,
+              "label": "LABEL_REPEATED",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".LocalePair"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GetUserConfigRequest"
+    },
+    {
+      "name": "RequestPermissionRequest",
+      "field": [
+        {
+          "name": "scopes",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        }
+      ]
+    },
+    {
+      "name": "OpsOptimizeRequest",
+      "field": [
+        {
+          "name": "imageFilePath",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "uwpPackageFamilyName",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "CreateSDKInstanceResponse",
+      "field": [
+        {
+          "name": "installedGfeVersion",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "installedGfeSDKIPCVersionMajor",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "installedGfeSDKIPCVersionMinor",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "scopePermission",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".ScopePermission"
+        }
+      ]
+    },
+    {
+      "name": "GetUILanguageResponse",
+      "field": [
+        {
+          "name": "localeName",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "IsClientAliveResponse",
+      "field": [
+        {
+          "name": "alive",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "GetNumberOfHighlightsInGroupResponse",
+      "field": [
+        {
+          "name": "numberOfHighlights",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "GetUserConfigResponse",
+      "field": [
+        {
+          "name": "gameEnabled",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "highlightTable",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".GetUserConfigResponse.HighlightConfig"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "HighlightConfig",
+          "field": [
+            {
+              "name": "highlightId",
+              "number": 1,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "userEnabled",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_BOOL"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PermissionsChangedNotification",
+      "field": [
+        {
+          "name": "scopePermission",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".ScopePermission"
+        }
+      ]
+    },
+    {
+      "name": "OverlayStateNotification",
+      "field": [
+        {
+          "name": "open",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "state",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "SDKIPCRequest",
+      "field": [
+        {
+          "name": "version_major",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "version_minor",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "version_build",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "version_hash",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "component",
+          "number": 5,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".SDKComponent"
+        },
+        {
+          "name": "getUILanguageRequest",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".GetUILanguageRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "openGroupRequest",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".OpenGroupRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "closeGroupRequest",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".CloseGroupRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "setScreenshotHighlightRequest",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".SetScreenshotHighlightRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "setVideoHighlightRequest",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".SetVideoHighlightRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "toggleOverlayRequest",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".ToggleOverlayRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "configureHighlightsRequest",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".ConfigureHighlightsRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "openGroupSummaryRequest",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".OpenGroupSummaryRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "createSDKInstanceRequest",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".CreateSDKInstanceRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "destroySDKInstanceRequest",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".DestroySDKInstanceRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "isClientAliveRequest",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".IsClientAliveRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "getNumberOfHighlightsInGroupRequest",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".GetNumberOfHighlightsInGroupRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "getUserConfigRequest",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".GetUserConfigRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "requestPermissionRequest",
+          "number": 24,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".RequestPermissionRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "opsOptimizeRequest",
+          "number": 25,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".OpsOptimizeRequest",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "request"
+        }
+      ]
+    },
+    {
+      "name": "SDKIPCResponse",
+      "field": [
+        {
+          "name": "retval",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "retstatus",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "getUILanguageResponse",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".GetUILanguageResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "createSDKInstanceResponse",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".CreateSDKInstanceResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "isClientAliveResponse",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".IsClientAliveResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "getNumberOfHighlightsInGroupResponse",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".GetNumberOfHighlightsInGroupResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "getUserConfigResponse",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".GetUserConfigResponse",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "response"
+        }
+      ]
+    },
+    {
+      "name": "SDKIPCNotification",
+      "field": [
+        {
+          "name": "component",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_ENUM",
+          "type_name": ".SDKComponent"
+        },
+        {
+          "name": "permissionsChangedNotification",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".PermissionsChangedNotification",
+          "oneof_index": 0
+        },
+        {
+          "name": "overlayStateNotification",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".OverlayStateNotification",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "notification"
+        }
+      ]
+    },
+    {
+      "name": "SDKIPCMessage",
+      "field": [
+        {
+          "name": "request",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".SDKIPCRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "response",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".SDKIPCResponse",
+          "oneof_index": 0
+        },
+        {
+          "name": "notification",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".SDKIPCNotification",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "message"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "SDKComponent",
+      "value": [
+        {
+          "name": "SDKComponent_CORE",
+          "number": 0
+        },
+        {
+          "name": "SDKComponent_SHARE",
+          "number": 1
+        },
+        {
+          "name": "SDKComponent_INSTALLER",
+          "number": 2
+        },
+        {
+          "name": "SDKComponent_OPS",
+          "number": 3
+        }
+      ]
+    },
+    {
+      "name": "OverlayVisibility",
+      "value": [
+        {
+          "name": "OverlayVisibility_OPEN",
+          "number": 1
+        },
+        {
+          "name": "OverlayVisibility_CLOSE",
+          "number": 2
+        },
+        {
+          "name": "OverlayVisibility_TOGGLE",
+          "number": 3
+        },
+        {
+          "name": "OverlayVisibility_OPEN_PREFS",
+          "number": 4
+        }
+      ]
+    }
+  ]
+}

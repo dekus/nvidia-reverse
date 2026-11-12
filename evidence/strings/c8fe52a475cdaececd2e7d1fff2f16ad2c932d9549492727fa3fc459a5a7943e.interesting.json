@@ -1,0 +1,537 @@
+[
+  {
+    "offset": "0x216328",
+    "encoding": "ascii",
+    "text": "McpServer"
+  },
+  {
+    "offset": "0x216670",
+    "encoding": "ascii",
+    "text": "NvcPluginStart ignored NvPluginWindow handle"
+  },
+  {
+    "offset": "0x216981",
+    "encoding": "ascii",
+    "text": "  \"id\": \"#mcpserver\","
+  },
+  {
+    "offset": "0x2169ce",
+    "encoding": "ascii",
+    "text": "  \"module\": \"McpServer\","
+  },
+  {
+    "offset": "0x217109",
+    "encoding": "ascii",
+    "text": "    \"GetMcpServerTools\": {"
+  },
+  {
+    "offset": "0x2173f2",
+    "encoding": "ascii",
+    "text": "      \"description\": \"Set the global access-level ceiling live on the running MCP server. Persistence to HKLM is handled separately via NvIGOUtil SetMcpServerAccessLevel.\","
+  },
+  {
+    "offset": "0x21759a",
+    "encoding": "ascii",
+    "text": "      \"description\": \"Broadcast when McpServer forwards an overlay tool call to Overlay UI\","
+  },
+  {
+    "offset": "0x2177ba",
+    "encoding": "ascii",
+    "text": "            \"description\": \"Tool arguments from MCP tools/call\","
+  },
+  {
+    "offset": "0x2178ad",
+    "encoding": "ascii",
+    "text": "      \"description\": \"Overlay UI sends tool execution result back to McpServer\","
+  },
+  {
+    "offset": "0x217dc7",
+    "encoding": "ascii",
+    "text": "      \"description\": \"Overlay UI fires a game event notification to McpServer for delivery to subscribed MCP clients\","
+  },
+  {
+    "offset": "0x218235",
+    "encoding": "ascii",
+    "text": "      \"description\": \"Overlay UI fires a state change notification to McpServer for delivery to subscribed MCP clients as nvapp/state_changed\","
+  },
+  {
+    "offset": "0x218c30",
+    "encoding": "ascii",
+    "text": "NVIDIA Corporation\\NVIDIA App\\McpServer"
+  },
+  {
+    "offset": "0x218c60",
+    "encoding": "ascii",
+    "text": "NvAppMcpServer.exe"
+  },
+  {
+    "offset": "0x218c88",
+    "encoding": "ascii",
+    "text": "NVIDIA Corporation\\NVIDIA App\\McpServer\\NvAppMcpServer.exe"
+  },
+  {
+    "offset": "0x218cd0",
+    "encoding": "ascii",
+    "text": "127.0.0.1"
+  },
+  {
+    "offset": "0x21a1c8",
+    "encoding": "ascii",
+    "text": "notifications/tools/list_changed"
+  },
+  {
+    "offset": "0x21a3c0",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\plugin\\McpServerPlugin.cpp"
+  },
+  {
+    "offset": "0x21a5d0",
+    "encoding": "ascii",
+    "text": "McpServerPlugin: McpAccessLevel not set (rc=%ld), defaulting to standard"
+  },
+  {
+    "offset": "0x21a660",
+    "encoding": "ascii",
+    "text": "McpServerPlugin: McpAccessLevel registry value=%lu, resolved to '%s'"
+  },
+  {
+    "offset": "0x21a7e8",
+    "encoding": "ascii",
+    "text": "http://127.0.0.1:"
+  },
+  {
+    "offset": "0x21a8e8",
+    "encoding": "ascii",
+    "text": "McpServerPlugin::Initialize - begin"
+  },
+  {
+    "offset": "0x21a928",
+    "encoding": "ascii",
+    "text": "McpServerPlugin: failed to load NvAppCore.dll"
+  },
+  {
+    "offset": "0x21a960",
+    "encoding": "ascii",
+    "text": "McpServerPlugin: failed to obtain INvAppCore interface"
+  },
+  {
+    "offset": "0x21a9b0",
+    "encoding": "ascii",
+    "text": "McpServerPlugin: INvAppCore::Initialize failed (status=%d, msg=%s)"
+  },
+  {
+    "offset": "0x21aa00",
+    "encoding": "ascii",
+    "text": "McpServerPlugin: NvAppCore SDK initialized "
+  },
+  {
+    "offset": "0x21aa40",
+    "encoding": "ascii",
+    "text": "McpServerPlugin: failed to generate session token"
+  },
+  {
+    "offset": "0x21aaa8",
+    "encoding": "ascii",
+    "text": "GetMcpServerTools"
+  },
+  {
+    "offset": "0x21ab30",
+    "encoding": "ascii",
+    "text": "McpServerPlugin: initialized (SDK + overlay + notifications + transports)"
+  },
+  {
+    "offset": "0x21ab88",
+    "encoding": "ascii",
+    "text": "McpServerPlugin::Start - begin"
+  },
+  {
+    "offset": "0x21abb0",
+    "encoding": "ascii",
+    "text": "McpServerPlugin: failed to start named pipe server"
+  },
+  {
+    "offset": "0x21abf0",
+    "encoding": "ascii",
+    "text": "McpServerPlugin: HTTP transport failed to start "
+  },
+  {
+    "offset": "0x21ac60",
+    "encoding": "ascii",
+    "text": "McpServerPlugin: CreateEvent(%s) failed err=%lu"
+  },
+  {
+    "offset": "0x21aca0",
+    "encoding": "ascii",
+    "text": "McpServerPlugin: readiness event signaled (%s)"
+  },
+  {
+    "offset": "0x21acd8",
+    "encoding": "ascii",
+    "text": "McpServerPlugin: started (pipe-only, degraded "
+  },
+  {
+    "offset": "0x21ad28",
+    "encoding": "ascii",
+    "text": "McpServerPlugin: started (pipe + http:%u)"
+  },
+  {
+    "offset": "0x21ad60",
+    "encoding": "ascii",
+    "text": "McpServerPlugin: readiness event closed"
+  },
+  {
+    "offset": "0x21ad90",
+    "encoding": "ascii",
+    "text": "McpServerPlugin::Stop - begin"
+  },
+  {
+    "offset": "0x21adb8",
+    "encoding": "ascii",
+    "text": "McpServerPlugin::Stop - http stopped"
+  },
+  {
+    "offset": "0x21ade8",
+    "encoding": "ascii",
+    "text": "McpServerPlugin::Stop - pipe stopped"
+  },
+  {
+    "offset": "0x21ae18",
+    "encoding": "ascii",
+    "text": "McpServerPlugin::Uninitialize"
+  },
+  {
+    "offset": "0x21ae40",
+    "encoding": "ascii",
+    "text": "McpServerPlugin::Uninitialize - removed discovery file (ec=%d)"
+  },
+  {
+    "offset": "0x21b270",
+    "encoding": "ascii",
+    "text": "McpServerPlugin: RegisterCallback(type=%d) failed (status=%d): %s"
+  },
+  {
+    "offset": "0x21b2f0",
+    "encoding": "ascii",
+    "text": "McpServerPlugin::OnNvAppCoreResult: ignoring result for unknown/completed requestId=%s"
+  },
+  {
+    "offset": "0x21c098",
+    "encoding": "ascii",
+    "text": "io.modelcontextprotocol/subscriptionId"
+  },
+  {
+    "offset": "0x21c2b0",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\plugin\\NotificationDispatcher.cpp"
+  },
+  {
+    "offset": "0x21cde2",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x21d35f",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x21d844",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x21dbb5",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x21de74",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x21e21c",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x21e840",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\plugin\\overlay\\OverlayBackend.cpp"
+  },
+  {
+    "offset": "0x21ebd8",
+    "encoding": "ascii",
+    "text": "tools/call"
+  },
+  {
+    "offset": "0x21ebe8",
+    "encoding": "ascii",
+    "text": "io.modelcontextprotocol/protocolVersion"
+  },
+  {
+    "offset": "0x21ed30",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\plugin\\protocol\\McpAdapter.cpp"
+  },
+  {
+    "offset": "0x21ee00",
+    "encoding": "ascii",
+    "text": "tools/list"
+  },
+  {
+    "offset": "0x21f500",
+    "encoding": "ascii",
+    "text": "McpAdapter: tools/call missing 'name' param id=%s"
+  },
+  {
+    "offset": "0x21f568",
+    "encoding": "ascii",
+    "text": "McpAdapter: tools/call 'name' is not a string id=%s"
+  },
+  {
+    "offset": "0x21f5d8",
+    "encoding": "ascii",
+    "text": "McpAdapter: tools/call tool='%s' id=%s connId=%u"
+  },
+  {
+    "offset": "0x21f7f0",
+    "encoding": "ascii",
+    "text": "McpAdapter: tools/call rate-limited (%s) tool='%s' retryAfter=%ds"
+  },
+  {
+    "offset": "0x220068",
+    "encoding": "ascii",
+    "text": "McpAdapter: tools/call input_required tool='%s' connId=%u"
+  },
+  {
+    "offset": "0x2202b0",
+    "encoding": "ascii",
+    "text": "McpAdapter: tools/call declined by user tool='%s' connId=%u"
+  },
+  {
+    "offset": "0x220340",
+    "encoding": "ascii",
+    "text": "McpAdapter: tools/call MRTR retry confirmed tool='%s' connId=%u"
+  },
+  {
+    "offset": "0x220a40",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\plugin\\NvAppCoreLoader.cpp"
+  },
+  {
+    "offset": "0x2214e3",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x221b94",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x2230ee",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x223792",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x224b1b",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x225734",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x225e86",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x227053",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x2282b1",
+    "encoding": "ascii",
+    "text": "        \"needsConsent\": false,"
+  },
+  {
+    "offset": "0x229b00",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\plugin\\tools\\NvAppCoreToolProvider.cpp"
+  },
+  {
+    "offset": "0x229de0",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\plugin\\tools\\OverlayToolProvider.cpp"
+  },
+  {
+    "offset": "0x22a080",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\plugin\\tools\\PluginToolProvider.cpp"
+  },
+  {
+    "offset": "0x22a560",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\plugin\\transport\\HttpTransport.cpp"
+  },
+  {
+    "offset": "0x22a918",
+    "encoding": "ascii",
+    "text": "http://localhost"
+  },
+  {
+    "offset": "0x22a930",
+    "encoding": "ascii",
+    "text": "http://127.0.0.1"
+  },
+  {
+    "offset": "0x22a948",
+    "encoding": "ascii",
+    "text": "https://localhost"
+  },
+  {
+    "offset": "0x22a960",
+    "encoding": "ascii",
+    "text": "https://127.0.0.1"
+  },
+  {
+    "offset": "0x22bb20",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\plugin\\transport\\NamedPipeServer.cpp"
+  },
+  {
+    "offset": "0x22c3b0",
+    "encoding": "ascii",
+    "text": "\\\\.\\pipe\\nvidia-nvapp-mcp-server-"
+  },
+  {
+    "offset": "0x22c658",
+    "encoding": "ascii",
+    "text": "needsConsent"
+  },
+  {
+    "offset": "0x22c730",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\plugin\\protocol\\LegacyProtocolHandler.cpp"
+  },
+  {
+    "offset": "0x22c990",
+    "encoding": "ascii",
+    "text": "io.modelcontextprotocol/serverInfo"
+  },
+  {
+    "offset": "0x22c9c0",
+    "encoding": "ascii",
+    "text": "io.modelcontextprotocol/clientInfo"
+  },
+  {
+    "offset": "0x22c9f0",
+    "encoding": "ascii",
+    "text": "io.modelcontextprotocol/clientCapabilities"
+  },
+  {
+    "offset": "0x22ca90",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\plugin\\protocol\\ModernProtocolHandler.cpp"
+  },
+  {
+    "offset": "0x22cf80",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\plugin\\protocol\\RequestStateManager.cpp"
+  },
+  {
+    "offset": "0x22d700",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\McpServer\\plugin\\transport\\HttpSysBackend.cpp"
+  },
+  {
+    "offset": "0x22f3a8",
+    "encoding": "ascii",
+    "text": "NvMessageBus.dll"
+  },
+  {
+    "offset": "0x232b70",
+    "encoding": "ascii",
+    "text": "Skipping telemetry report of error %s from method %s"
+  },
+  {
+    "offset": "0x240290",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\_out\\stage\\nvapp-prod-x64-release\\RelWithDebInfo\\nvc\\aiuser\\McpServerPlugin.pdb"
+  },
+  {
+    "offset": "0x26df72",
+    "encoding": "ascii",
+    "text": "McpServerPlugin.dll"
+  },
+  {
+    "offset": "0x26df86",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x270990",
+    "encoding": "ascii",
+    "text": ".?AVMcpServerPlugin@@"
+  },
+  {
+    "offset": "0x290c5a",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeA"
+  },
+  {
+    "offset": "0x292c66",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x21a560",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvApp"
+  },
+  {
+    "offset": "0x230320",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x230370",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x230670",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x231070",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  },
+  {
+    "offset": "0x295738",
+    "encoding": "utf-16le",
+    "text": "McpServerPlugin"
+  },
+  {
+    "offset": "0x295778",
+    "encoding": "utf-16le",
+    "text": "McpServerPlugin"
+  },
+  {
+    "offset": "0x2957e4",
+    "encoding": "utf-16le",
+    "text": "McpServerPlugin.dll"
+  }
+]

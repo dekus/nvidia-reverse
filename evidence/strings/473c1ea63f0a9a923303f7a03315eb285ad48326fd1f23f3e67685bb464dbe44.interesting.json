@@ -1,0 +1,1092 @@
+[
+  {
+    "offset": "0x2362c0",
+    "encoding": "ascii",
+    "text": "NvcPluginStart ignored NvPluginWindow handle"
+  },
+  {
+    "offset": "0x23664e",
+    "encoding": "ascii",
+    "text": "    \"ConsentLevel\": {"
+  },
+  {
+    "offset": "0x236695",
+    "encoding": "ascii",
+    "text": "        \"hasRequiredConsent\": {"
+  },
+  {
+    "offset": "0x2366df",
+    "encoding": "ascii",
+    "text": "        \"hasFunctionalConsent\": {"
+  },
+  {
+    "offset": "0x23672b",
+    "encoding": "ascii",
+    "text": "        \"hasTechnicalConsent\": {"
+  },
+  {
+    "offset": "0x236776",
+    "encoding": "ascii",
+    "text": "        \"hasBehavioralConsent\": {"
+  },
+  {
+    "offset": "0x2367e0",
+    "encoding": "ascii",
+    "text": "        \"hasFunctionalConsent\","
+  },
+  {
+    "offset": "0x236801",
+    "encoding": "ascii",
+    "text": "        \"hasBehavioralConsent\""
+  },
+  {
+    "offset": "0x236832",
+    "encoding": "ascii",
+    "text": "    \"PrivacySettings\": {"
+  },
+  {
+    "offset": "0x23703f",
+    "encoding": "ascii",
+    "text": "        \"consentLevel\": {"
+  },
+  {
+    "offset": "0x23705a",
+    "encoding": "ascii",
+    "text": "          \"$ref\": \"#/definitions/ConsentLevel\""
+  },
+  {
+    "offset": "0x2370e5",
+    "encoding": "ascii",
+    "text": "        \"consentLevel\""
+  },
+  {
+    "offset": "0x23790c",
+    "encoding": "ascii",
+    "text": "      \"description\": \"Returns logged in user: ids, consent. This command may return stale consent information if localization overrides are not available and a web call is needed to refresh consent.\","
+  },
+  {
+    "offset": "0x237b3a",
+    "encoding": "ascii",
+    "text": "      \"description\": \"Returns id token for currently logged in user. The token will be valid for at least 1 minute. This command may return an error if localization overrides are not available and a web call is needed to refresh consent.\","
+  },
+  {
+    "offset": "0x237d04",
+    "encoding": "ascii",
+    "text": "    \"RefreshConsent\": {"
+  },
+  {
+    "offset": "0x237d1d",
+    "encoding": "ascii",
+    "text": "      \"description\": \"Forces user consent refresh. Return an error if the user is not logged in. This command may return an error if localization overrides are not available.\","
+  },
+  {
+    "offset": "0x237e15",
+    "encoding": "ascii",
+    "text": "        \"$ref\": \"#/definitions/ConsentLevel\""
+  },
+  {
+    "offset": "0x237e68",
+    "encoding": "ascii",
+    "text": "      \"description\": \"Returns user id for sending telemetry.\","
+  },
+  {
+    "offset": "0x23819f",
+    "encoding": "ascii",
+    "text": "    \"UserConsentChangedNotification\": {"
+  },
+  {
+    "offset": "0x2381c8",
+    "encoding": "ascii",
+    "text": "      \"description\": \"This notification is broadcasted when user-level consent changes.\","
+  },
+  {
+    "offset": "0x238309",
+    "encoding": "ascii",
+    "text": "          \"consentLevel\": {"
+  },
+  {
+    "offset": "0x238326",
+    "encoding": "ascii",
+    "text": "            \"$ref\": \"#/definitions/ConsentLevel\""
+  },
+  {
+    "offset": "0x23839d",
+    "encoding": "ascii",
+    "text": "          \"consentLevel\""
+  },
+  {
+    "offset": "0x2383d3",
+    "encoding": "ascii",
+    "text": "    \"GetPrivacySettings\": {"
+  },
+  {
+    "offset": "0x2383f0",
+    "encoding": "ascii",
+    "text": "      \"description\": \"Returns product-wide privacy settings state for UI to display\","
+  },
+  {
+    "offset": "0x2384c1",
+    "encoding": "ascii",
+    "text": "          \"privacySettings\": {"
+  },
+  {
+    "offset": "0x2384e1",
+    "encoding": "ascii",
+    "text": "            \"$ref\": \"#/definitions/PrivacySettings\""
+  },
+  {
+    "offset": "0x238546",
+    "encoding": "ascii",
+    "text": "          \"privacySettings\""
+  },
+  {
+    "offset": "0x23857f",
+    "encoding": "ascii",
+    "text": "    \"SetPrivacySettings\": {"
+  },
+  {
+    "offset": "0x23859c",
+    "encoding": "ascii",
+    "text": "      \"description\": \"Sets product-wide privacy settings. Setting privacy settings to 'none' will cause API to return error.\","
+  },
+  {
+    "offset": "0x23869a",
+    "encoding": "ascii",
+    "text": "          \"privacySettings\": {"
+  },
+  {
+    "offset": "0x2386ba",
+    "encoding": "ascii",
+    "text": "            \"$ref\": \"#/definitions/PrivacySettings\""
+  },
+  {
+    "offset": "0x23871f",
+    "encoding": "ascii",
+    "text": "          \"privacySettings\""
+  },
+  {
+    "offset": "0x238758",
+    "encoding": "ascii",
+    "text": "    \"GetPrivacySettingsConsentInformation\": {"
+  },
+  {
+    "offset": "0x238787",
+    "encoding": "ascii",
+    "text": "      \"description\": \"Returns device-level consent flags corresponding to product-wide privacy settings. The intended consumer of this information is the UI telemetry library. Individual telemetry senders are not expected to need this information\","
+  },
+  {
+    "offset": "0x2388fb",
+    "encoding": "ascii",
+    "text": "          \"deviceConsent\": {"
+  },
+  {
+    "offset": "0x238919",
+    "encoding": "ascii",
+    "text": "            \"$ref\": \"#/definitions/ConsentLevel\""
+  },
+  {
+    "offset": "0x23897b",
+    "encoding": "ascii",
+    "text": "          \"deviceConsent\""
+  },
+  {
+    "offset": "0x2389b2",
+    "encoding": "ascii",
+    "text": "    \"PrivacySettingsConsentInformationChangedNotification\": {"
+  },
+  {
+    "offset": "0x2389f1",
+    "encoding": "ascii",
+    "text": "      \"description\": \"This notification is broadcasted when device-level consent flags change.\","
+  },
+  {
+    "offset": "0x238ae8",
+    "encoding": "ascii",
+    "text": "          \"deviceConsent\": {"
+  },
+  {
+    "offset": "0x238b06",
+    "encoding": "ascii",
+    "text": "            \"$ref\": \"#/definitions/ConsentLevel\""
+  },
+  {
+    "offset": "0x238b68",
+    "encoding": "ascii",
+    "text": "          \"deviceConsent\""
+  },
+  {
+    "offset": "0x238b9f",
+    "encoding": "ascii",
+    "text": "    \"PrivacySettingsChangedNotification\": {"
+  },
+  {
+    "offset": "0x238bcc",
+    "encoding": "ascii",
+    "text": "      \"description\": \"This notification is broadcasted when privacy settings change.\","
+  },
+  {
+    "offset": "0x238cb9",
+    "encoding": "ascii",
+    "text": "          \"privacySettings\": {"
+  },
+  {
+    "offset": "0x238cd9",
+    "encoding": "ascii",
+    "text": "            \"$ref\": \"#/definitions/PrivacySettings\""
+  },
+  {
+    "offset": "0x238d3e",
+    "encoding": "ascii",
+    "text": "          \"privacySettings\""
+  },
+  {
+    "offset": "0x238d77",
+    "encoding": "ascii",
+    "text": "    \"GetUserAccountAndDeviceConsent\": {"
+  },
+  {
+    "offset": "0x238da0",
+    "encoding": "ascii",
+    "text": "      \"description\": \"Returns device-level and user-level consent flags. The intended consumer of this information is the telemetry library in IGO. User context will be present only when the user is logged in.\","
+  },
+  {
+    "offset": "0x238eef",
+    "encoding": "ascii",
+    "text": "          \"deviceConsent\": {"
+  },
+  {
+    "offset": "0x238f0d",
+    "encoding": "ascii",
+    "text": "            \"$ref\": \"#/definitions/ConsentLevel\""
+  },
+  {
+    "offset": "0x239027",
+    "encoding": "ascii",
+    "text": "          \"deviceConsent\""
+  },
+  {
+    "offset": "0x23a0a8",
+    "encoding": "ascii",
+    "text": "RefreshConsent"
+  },
+  {
+    "offset": "0x23a0d0",
+    "encoding": "ascii",
+    "text": "GetPrivacySettings"
+  },
+  {
+    "offset": "0x23a0e8",
+    "encoding": "ascii",
+    "text": "SetPrivacySettings"
+  },
+  {
+    "offset": "0x23a100",
+    "encoding": "ascii",
+    "text": "GetPrivacySettingsConsentInformation"
+  },
+  {
+    "offset": "0x23a130",
+    "encoding": "ascii",
+    "text": "GetUserAccountAndDeviceConsent"
+  },
+  {
+    "offset": "0x23ae28",
+    "encoding": "ascii",
+    "text": "NvTelemetry"
+  },
+  {
+    "offset": "0x23ae38",
+    "encoding": "ascii",
+    "text": "NvTelemetry.json"
+  },
+  {
+    "offset": "0x23afe8",
+    "encoding": "ascii",
+    "text": "consentRefreshPeriodSeconds"
+  },
+  {
+    "offset": "0x23b010",
+    "encoding": "ascii",
+    "text": "nvAccount config section is missing consentRefreshPeriodSeconds"
+  },
+  {
+    "offset": "0x23b060",
+    "encoding": "ascii",
+    "text": "telemetryClientIds"
+  },
+  {
+    "offset": "0x23b078",
+    "encoding": "ascii",
+    "text": "telemetryClientIdsFunctionalConsent element is not a string"
+  },
+  {
+    "offset": "0x23b0c0",
+    "encoding": "ascii",
+    "text": "nvAccount config section is missing telemetryClientIds"
+  },
+  {
+    "offset": "0x23b2b0",
+    "encoding": "ascii",
+    "text": "Failed to set device consent for "
+  },
+  {
+    "offset": "0x23b2d8",
+    "encoding": "ascii",
+    "text": "Failed to set user consent for "
+  },
+  {
+    "offset": "0x23b63d",
+    "encoding": "ascii",
+    "text": "        \"UserConsent\": {"
+  },
+  {
+    "offset": "0x23b6c7",
+    "encoding": "ascii",
+    "text": "                \"consentExpiry\": {"
+  },
+  {
+    "offset": "0x23b722",
+    "encoding": "ascii",
+    "text": "                \"hasFunctionalConsent\": {"
+  },
+  {
+    "offset": "0x23b785",
+    "encoding": "ascii",
+    "text": "                \"hasTechnicalConsent\": {"
+  },
+  {
+    "offset": "0x23b7e7",
+    "encoding": "ascii",
+    "text": "                \"hasBehavioralConsent\": {"
+  },
+  {
+    "offset": "0x23b872",
+    "encoding": "ascii",
+    "text": "                \"consentExpiry\","
+  },
+  {
+    "offset": "0x23b893",
+    "encoding": "ascii",
+    "text": "                \"hasFunctionalConsent\","
+  },
+  {
+    "offset": "0x23b8bb",
+    "encoding": "ascii",
+    "text": "                \"hasTechnicalConsent\","
+  },
+  {
+    "offset": "0x23b8e2",
+    "encoding": "ascii",
+    "text": "                \"hasBehavioralConsent\""
+  },
+  {
+    "offset": "0x23ba58",
+    "encoding": "ascii",
+    "text": "        \"userConsent\": {"
+  },
+  {
+    "offset": "0x23ba71",
+    "encoding": "ascii",
+    "text": "            \"$ref\": \"#/definitions/UserConsent\""
+  },
+  {
+    "offset": "0x23bb05",
+    "encoding": "ascii",
+    "text": "        \"userConsent\""
+  },
+  {
+    "offset": "0x23c680",
+    "encoding": "ascii",
+    "text": "userConsent"
+  },
+  {
+    "offset": "0x23c690",
+    "encoding": "ascii",
+    "text": "hasFunctionalConsent"
+  },
+  {
+    "offset": "0x23c6b0",
+    "encoding": "ascii",
+    "text": "hasTechnicalConsent"
+  },
+  {
+    "offset": "0x23c6c8",
+    "encoding": "ascii",
+    "text": "hasBehavioralConsent"
+  },
+  {
+    "offset": "0x23c6e8",
+    "encoding": "ascii",
+    "text": "consentExpiry"
+  },
+  {
+    "offset": "0x23ca10",
+    "encoding": "ascii",
+    "text": "Next consent update is scheduled for %s"
+  },
+  {
+    "offset": "0x23ca68",
+    "encoding": "ascii",
+    "text": "Finished waiting for consent update thread"
+  },
+  {
+    "offset": "0x23cb50",
+    "encoding": "ascii",
+    "text": "Consent update worker thread is starting"
+  },
+  {
+    "offset": "0x23cb88",
+    "encoding": "ascii",
+    "text": "Consent update: exit flag is set."
+  },
+  {
+    "offset": "0x23cbb0",
+    "encoding": "ascii",
+    "text": "Consent update: use is not logged in. Skipping update."
+  },
+  {
+    "offset": "0x23cbf8",
+    "encoding": "ascii",
+    "text": "Failed to refresh user consent: %s. Retrying on %s"
+  },
+  {
+    "offset": "0x23cc40",
+    "encoding": "ascii",
+    "text": "Failed to refresh user consent: %s. The error is non-retriable. Scheduling refresh on %s."
+  },
+  {
+    "offset": "0x23ccb0",
+    "encoding": "ascii",
+    "text": "Failed to refresh user consent: %s. Scheduling refresh on %s"
+  },
+  {
+    "offset": "0x23cd00",
+    "encoding": "ascii",
+    "text": "Consent update worker thread is exiting"
+  },
+  {
+    "offset": "0x23cd30",
+    "encoding": "ascii",
+    "text": "Performing consent update"
+  },
+  {
+    "offset": "0x23cd50",
+    "encoding": "ascii",
+    "text": "Refreshing tokens before consent update"
+  },
+  {
+    "offset": "0x23cd80",
+    "encoding": "ascii",
+    "text": "Unable to obtain user tokens for consent refresh: unauthorized. Logging user out."
+  },
+  {
+    "offset": "0x23cdf0",
+    "encoding": "ascii",
+    "text": "Failed to get user consent: unauthorized. Obtaining new tokens and retrying"
+  },
+  {
+    "offset": "0x23ce90",
+    "encoding": "ascii",
+    "text": "Trying to refresh consent after refreshing tokens"
+  },
+  {
+    "offset": "0x23d080",
+    "encoding": "ascii",
+    "text": "Failed to process consent update because UserAccountEventsListener is not attached to module"
+  },
+  {
+    "offset": "0x23d140",
+    "encoding": "ascii",
+    "text": "Using default privacy settings because NvAccount was unable to read or parse the file. Reason: %s."
+  },
+  {
+    "offset": "0x23d1b8",
+    "encoding": "ascii",
+    "text": "Failed to set telemetry device-level consent flags, error: %s"
+  },
+  {
+    "offset": "0x23d208",
+    "encoding": "ascii",
+    "text": "Not setting user consent because the user is not logged in."
+  },
+  {
+    "offset": "0x23d250",
+    "encoding": "ascii",
+    "text": "Failed to set user consent, error: %s"
+  },
+  {
+    "offset": "0x23d340",
+    "encoding": "ascii",
+    "text": "Resetting privacy settings because EULA was accepted for the first time."
+  },
+  {
+    "offset": "0x23d548",
+    "encoding": "ascii",
+    "text": "Received GetPrivacySettings."
+  },
+  {
+    "offset": "0x23d570",
+    "encoding": "ascii",
+    "text": "Responding to GetPrivacySettings."
+  },
+  {
+    "offset": "0x23d598",
+    "encoding": "ascii",
+    "text": "Failed to process GetPrivacySettings: %s"
+  },
+  {
+    "offset": "0x23d5d0",
+    "encoding": "ascii",
+    "text": "Received SetPrivacySettings."
+  },
+  {
+    "offset": "0x23d5f8",
+    "encoding": "ascii",
+    "text": "Cannot set privacy setting to None"
+  },
+  {
+    "offset": "0x23d628",
+    "encoding": "ascii",
+    "text": "Processed SetPrivacySettings."
+  },
+  {
+    "offset": "0x23d650",
+    "encoding": "ascii",
+    "text": "Failed to process SetPrivacySettings: %s"
+  },
+  {
+    "offset": "0x23d688",
+    "encoding": "ascii",
+    "text": "Received GetPrivacySettingsConsentInformation."
+  },
+  {
+    "offset": "0x23d6c0",
+    "encoding": "ascii",
+    "text": "Responding to GetPrivacySettingsConsentInformation."
+  },
+  {
+    "offset": "0x23d700",
+    "encoding": "ascii",
+    "text": "Failed to process GetPrivacySettingsConsentInformation: %s"
+  },
+  {
+    "offset": "0x23d748",
+    "encoding": "ascii",
+    "text": "Received GetUserAccountAndDeviceConsent."
+  },
+  {
+    "offset": "0x23d780",
+    "encoding": "ascii",
+    "text": "GetUserAccountAndDeviceConsent: User in not logged in."
+  },
+  {
+    "offset": "0x23d7c8",
+    "encoding": "ascii",
+    "text": "Responding to GetUserAccountAndDeviceConsent."
+  },
+  {
+    "offset": "0x23d800",
+    "encoding": "ascii",
+    "text": "Failed to process GetUserAccountAndDeviceConsent: %s"
+  },
+  {
+    "offset": "0x23d840",
+    "encoding": "ascii",
+    "text": "Sending PrivacySettingsChangedNotification."
+  },
+  {
+    "offset": "0x23d878",
+    "encoding": "ascii",
+    "text": "PrivacySettingsChangedNotification"
+  },
+  {
+    "offset": "0x23d8a8",
+    "encoding": "ascii",
+    "text": "Unable to send PrivacySettingsChangedNotification"
+  },
+  {
+    "offset": "0x23d8e8",
+    "encoding": "ascii",
+    "text": "Sending PrivacySettingsConsentInformationChangedNotification."
+  },
+  {
+    "offset": "0x23d938",
+    "encoding": "ascii",
+    "text": "PrivacySettingsConsentInformationChangedNotification"
+  },
+  {
+    "offset": "0x23d980",
+    "encoding": "ascii",
+    "text": "Unable to send PrivacySettingsConsentInformationChangedNotification"
+  },
+  {
+    "offset": "0x23da60",
+    "encoding": "ascii",
+    "text": "Sending UserConsentChangedNotification."
+  },
+  {
+    "offset": "0x23da90",
+    "encoding": "ascii",
+    "text": "UserConsentChangedNotification"
+  },
+  {
+    "offset": "0x23dab8",
+    "encoding": "ascii",
+    "text": "Unable to send UserConsentChangedNotification"
+  },
+  {
+    "offset": "0x23daf0",
+    "encoding": "ascii",
+    "text": "Invalid privacySettings value: "
+  },
+  {
+    "offset": "0x23df6b",
+    "encoding": "ascii",
+    "text": "        \"PrivacySettings\": {"
+  },
+  {
+    "offset": "0x23e07b",
+    "encoding": "ascii",
+    "text": "        \"privacySettings\": {"
+  },
+  {
+    "offset": "0x23e098",
+    "encoding": "ascii",
+    "text": "            \"$ref\": \"#/definitions/PrivacySettings\""
+  },
+  {
+    "offset": "0x23e0ef",
+    "encoding": "ascii",
+    "text": "        \"privacySettings\""
+  },
+  {
+    "offset": "0x23e350",
+    "encoding": "ascii",
+    "text": "Unable to parse privacy settings string: "
+  },
+  {
+    "offset": "0x23e388",
+    "encoding": "ascii",
+    "text": "Invalid privacy settings value: "
+  },
+  {
+    "offset": "0x23e3b0",
+    "encoding": "ascii",
+    "text": "privacySettings"
+  },
+  {
+    "offset": "0x23e702",
+    "encoding": "ascii",
+    "text": "    \"title\": \"JSON schema for Starfleet /userinfo response for obtaining user-level consent information\","
+  },
+  {
+    "offset": "0x23e797",
+    "encoding": "ascii",
+    "text": "        \"ConsentLevel\": {"
+  },
+  {
+    "offset": "0x23e92f",
+    "encoding": "ascii",
+    "text": "        \"consent\": {"
+  },
+  {
+    "offset": "0x23e944",
+    "encoding": "ascii",
+    "text": "            \"$ref\": \"#/definitions/ConsentLevel\""
+  },
+  {
+    "offset": "0x23e998",
+    "encoding": "ascii",
+    "text": "        \"consent\""
+  },
+  {
+    "offset": "0x23ed90",
+    "encoding": "ascii",
+    "text": "urn:ietf:params:oauth:grant-type:client_token"
+  },
+  {
+    "offset": "0x23f060",
+    "encoding": "ascii",
+    "text": "consent"
+  },
+  {
+    "offset": "0x23f2d8",
+    "encoding": "ascii",
+    "text": "RefreshConsent: ExecuteAsync"
+  },
+  {
+    "offset": "0x23f300",
+    "encoding": "ascii",
+    "text": "NvAccountRefreshConsent: Module is null"
+  },
+  {
+    "offset": "0x23f330",
+    "encoding": "ascii",
+    "text": "Processed RefreshConsent."
+  },
+  {
+    "offset": "0x23f350",
+    "encoding": "ascii",
+    "text": "RefreshConsent - User in not logged in."
+  },
+  {
+    "offset": "0x23f380",
+    "encoding": "ascii",
+    "text": "Failed to process RefreshConsent: %s"
+  },
+  {
+    "offset": "0x23f3b0",
+    "encoding": "ascii",
+    "text": "RefreshConsent: CancelTask"
+  },
+  {
+    "offset": "0x23f3d0",
+    "encoding": "ascii",
+    "text": "RefreshConsent: FinishAsync"
+  },
+  {
+    "offset": "0x23f4d0",
+    "encoding": "ascii",
+    "text": "hasRequiredConsent"
+  },
+  {
+    "offset": "0x23f4e8",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: hasRequiredConsent is not bool"
+  },
+  {
+    "offset": "0x23f530",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: no member hasFunctionalConsent found or it is not bool"
+  },
+  {
+    "offset": "0x23f590",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: hasTechnicalConsent is not bool"
+  },
+  {
+    "offset": "0x23f5d0",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: no member hasBehavioralConsent found or it is not bool"
+  },
+  {
+    "offset": "0x23f630",
+    "encoding": "ascii",
+    "text": ": no corresponding member found in enum PrivacySettings"
+  },
+  {
+    "offset": "0x23f690",
+    "encoding": "ascii",
+    "text": "Invalid PrivacySettings value passed: "
+  },
+  {
+    "offset": "0x23fb10",
+    "encoding": "ascii",
+    "text": "consentLevel"
+  },
+  {
+    "offset": "0x23fc50",
+    "encoding": "ascii",
+    "text": "Invalid input JSON: no member privacySettings found or it is not std::string"
+  },
+  {
+    "offset": "0x23fcb0",
+    "encoding": "ascii",
+    "text": "deviceConsent"
+  },
+  {
+    "offset": "0x241ce8",
+    "encoding": "ascii",
+    "text": "NvMessageBus.dll"
+  },
+  {
+    "offset": "0x246620",
+    "encoding": "ascii",
+    "text": "Skipping telemetry report of error %s from method %s"
+  },
+  {
+    "offset": "0x248500",
+    "encoding": "ascii",
+    "text": "GetUserConsent"
+  },
+  {
+    "offset": "0x248518",
+    "encoding": "ascii",
+    "text": "HTTP Telemetry: No ServiceUseCase mapping found"
+  },
+  {
+    "offset": "0x2485d8",
+    "encoding": "ascii",
+    "text": "HTTP Telemetry: No ServiceSubUseCase mapping found"
+  },
+  {
+    "offset": "0x248640",
+    "encoding": "ascii",
+    "text": "Telemetry pointer cannot be null"
+  },
+  {
+    "offset": "0x248668",
+    "encoding": "ascii",
+    "text": "Failed to send HTTP telemetry: %d"
+  },
+  {
+    "offset": "0x248cd0",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\common\\NvTelemetryClients\\NvAppClient.cpp"
+  },
+  {
+    "offset": "0x2494d0",
+    "encoding": "ascii",
+    "text": "DDDataConsentRequestShown"
+  },
+  {
+    "offset": "0x24a3c8",
+    "encoding": "ascii",
+    "text": "ConsentAlreadyPresent"
+  },
+  {
+    "offset": "0x24a7e0",
+    "encoding": "ascii",
+    "text": "Invalid ConsentRequestAction value passed: "
+  },
+  {
+    "offset": "0x24a818",
+    "encoding": "ascii",
+    "text": ": no corresponding member found in enum ConsentRequestAction_t"
+  },
+  {
+    "offset": "0x24a868",
+    "encoding": "ascii",
+    "text": "Check gs_telemetry failed"
+  },
+  {
+    "offset": "0x24e420",
+    "encoding": "ascii",
+    "text": "InitializeTelemetry"
+  },
+  {
+    "offset": "0x24e488",
+    "encoding": "ascii",
+    "text": "InitializeTelemetry_2"
+  },
+  {
+    "offset": "0x24e540",
+    "encoding": "ascii",
+    "text": "InitializeTelemetryStandalone"
+  },
+  {
+    "offset": "0x24e658",
+    "encoding": "ascii",
+    "text": "InitializeTelemetryStandalone_2"
+  },
+  {
+    "offset": "0x24e740",
+    "encoding": "ascii",
+    "text": "UninitializeTelemetry"
+  },
+  {
+    "offset": "0x24e800",
+    "encoding": "ascii",
+    "text": "GetUserTelemetryConsent"
+  },
+  {
+    "offset": "0x24e820",
+    "encoding": "ascii",
+    "text": "Check m_getUserTelemetryConsent failed"
+  },
+  {
+    "offset": "0x24e850",
+    "encoding": "ascii",
+    "text": "GetDeviceTelemetryConsent"
+  },
+  {
+    "offset": "0x24e870",
+    "encoding": "ascii",
+    "text": "Check m_getDeviceTelemetryConsent failed"
+  },
+  {
+    "offset": "0x24e8a8",
+    "encoding": "ascii",
+    "text": "SetUserTelemetryConsent"
+  },
+  {
+    "offset": "0x24e8c8",
+    "encoding": "ascii",
+    "text": "Check m_setUserTelemetryConsent failed"
+  },
+  {
+    "offset": "0x24e8f8",
+    "encoding": "ascii",
+    "text": "SetDeviceTelemetryConsent"
+  },
+  {
+    "offset": "0x24e918",
+    "encoding": "ascii",
+    "text": "Check m_setDeviceTelemetryConsent failed"
+  },
+  {
+    "offset": "0x24e950",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendEvent"
+  },
+  {
+    "offset": "0x24e990",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendAnonymousEvent"
+  },
+  {
+    "offset": "0x24e9e0",
+    "encoding": "ascii",
+    "text": "SubscribeForTelemetryNotifications"
+  },
+  {
+    "offset": "0x24ea30",
+    "encoding": "ascii",
+    "text": "UnsubscribeFromTelemetryNotifications"
+  },
+  {
+    "offset": "0x24ea80",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendEvent_2"
+  },
+  {
+    "offset": "0x24eac0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendAnonymousEvent_2"
+  },
+  {
+    "offset": "0x24eb18",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_2"
+  },
+  {
+    "offset": "0x24eb60",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_3"
+  },
+  {
+    "offset": "0x24eb80",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_4"
+  },
+  {
+    "offset": "0x24eba0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_5"
+  },
+  {
+    "offset": "0x24ebc0",
+    "encoding": "ascii",
+    "text": "FreeTelemetryString"
+  },
+  {
+    "offset": "0x24ebd8",
+    "encoding": "ascii",
+    "text": "Check m_freeTelemetryString failed"
+  },
+  {
+    "offset": "0x24ed50",
+    "encoding": "ascii",
+    "text": "Trying to send non-anonymous telemetry anonymized."
+  },
+  {
+    "offset": "0x24edc8",
+    "encoding": "ascii",
+    "text": "telemetry"
+  },
+  {
+    "offset": "0x24f018",
+    "encoding": "ascii",
+    "text": "New Nvtelemetry SDK needed (19.0.0.0 and above) "
+  },
+  {
+    "offset": "0x24f1a8",
+    "encoding": "ascii",
+    "text": "DisplayDriverTelemetryConsentRequestAction"
+  },
+  {
+    "offset": "0x28cf60",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x28fa68",
+    "encoding": "ascii",
+    "text": ".?AVNvAccountRefreshConsent@@"
+  },
+  {
+    "offset": "0x28faa0",
+    "encoding": "ascii",
+    "text": ".?AV?$NvAccountTaskBase@VNvAccountRefreshConsent@@@@"
+  },
+  {
+    "offset": "0x28fb00",
+    "encoding": "ascii",
+    "text": ".?AV?$JsonResponseAsync@VNvAccountRefreshConsent@@@GXP@@"
+  },
+  {
+    "offset": "0x28fe88",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VNvTelemetryApi@@@std@@"
+  },
+  {
+    "offset": "0x28ffa0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Ref_count_obj2@VTelemetry@NvAppClient@NvTelemetry@@@std@@"
+  },
+  {
+    "offset": "0x290890",
+    "encoding": "ascii",
+    "text": ".?AUINvTelemetryApi@@"
+  },
+  {
+    "offset": "0x2908c0",
+    "encoding": "ascii",
+    "text": ".?AVNvTelemetryApi@@"
+  },
+  {
+    "offset": "0x293ba8",
+    "encoding": "ascii",
+    "text": ".?AUITelemetry@NvAppClient@NvTelemetry@@"
+  },
+  {
+    "offset": "0x293bf0",
+    "encoding": "ascii",
+    "text": ".?AVTelemetry@NvAppClient@NvTelemetry@@"
+  },
+  {
+    "offset": "0x2b103c",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x242e20",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x242e70",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x243170",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x243ae0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  },
+  {
+    "offset": "0x248de0",
+    "encoding": "utf-16le",
+    "text": "NvTelemetryAPI64.dll"
+  },
+  {
+    "offset": "0x248ea0",
+    "encoding": "utf-16le",
+    "text": "\\NVIDIA Corporation\\NvTelemetry"
+  }
+]

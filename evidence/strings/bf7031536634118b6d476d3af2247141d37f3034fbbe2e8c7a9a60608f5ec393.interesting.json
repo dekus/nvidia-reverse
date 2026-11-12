@@ -1,0 +1,22 @@
+[
+  {
+    "offset": "0x512178",
+    "encoding": "ascii",
+    "text": "BIO_socket_ioctl"
+  },
+  {
+    "offset": "0x512190",
+    "encoding": "ascii",
+    "text": "calling ioctlsocket()"
+  },
+  {
+    "offset": "0x60c8b0",
+    "encoding": "ascii",
+    "text": "localhost/"
+  },
+  {
+    "offset": "0x6a72cd",
+    "encoding": "ascii",
+    "text": "BIO_socket_ioctl"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "path": "NVIDIA App\\NvCpl\\NvUIR.dll",
+  "sha256": "0379f2608e9f054266d8cff9e0762cb800dcdcc7b6db2d9280f042401cc32d9b",
+  "method": "Capstone linear sweep over raw bytes of all IMAGE_SCN_MEM_EXECUTE sections; skipdata enabled; no reachability proof",
+  "sections": [],
+  "utc": "2026-11-11T21:40:10.755953+00:00",
+  "instructions": 0,
+  "skipdata_bytes": 0,
+  "calls": 0,
+  "api_reference_counts": {},
+  "complete_linear_sweep": true
+}

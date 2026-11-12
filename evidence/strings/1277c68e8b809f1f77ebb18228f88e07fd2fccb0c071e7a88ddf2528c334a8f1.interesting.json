@@ -1,0 +1,4432 @@
+[
+  {
+    "offset": "0x5dd8",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\tools\\ddk\\wddmv2\\official\\22621\\Include\\10.0.22621.0\\um\\winioctl.h"
+  },
+  {
+    "offset": "0xe11b8",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Common\\Util\\FVLogger.h"
+  },
+  {
+    "offset": "0xfdd7c",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK"
+  },
+  {
+    "offset": "0xfde30",
+    "encoding": "ascii",
+    "text": "-c -IC:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Common -IC:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDKStatic\\Private -IC:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVS"
+  },
+  {
+    "offset": "0xfdf3c",
+    "encoding": "ascii",
+    "text": "DK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDKStatic\\ -IC:\\dvs\\p4\\build\\sw\\gcomp\\sdk\\MessageBus\\3.7\\sdk\\include -IC:\\dvs\\p4\\build\\sw\\gcomp\\sdk\\MessageBus\\3.7\\sdk\\src -IC:\\dvs\\p4\\build\\sw\\tools\\rapidjson\\1.1.0\\include -IC:\\dvs\\p4\\build\\sw\\tools\\ddk\\wddmv2\\officia"
+  },
+  {
+    "offset": "0xfe260",
+    "encoding": "ascii",
+    "text": "fc\\include -Zi -nologo -W3 -WX -diagnostics:column -sdl -O2 -Oi -Oy- -GL -DWIN32 -DNDEBUG -DFVSDK_EXPORTS -D_WINDOWS -D_USRDLL -D_WINDLL -D_UNICODE -DUNICODE -X -Gm- -EHs -EHc -MD -GS -guard:cf -Gy -fp:precise -Zc:wchar_t -Zc:forScope"
+  },
+  {
+    "offset": "0xfe42c",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Release\\FvSDK_x86.pdb"
+  },
+  {
+    "offset": "0xfe4cc",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Common\\Util\\ScopedHandle.h"
+  },
+  {
+    "offset": "0xfe544",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Common\\Util\\MessageBusWrapper.h"
+  },
+  {
+    "offset": "0xfefc0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_relL"
+  },
+  {
+    "offset": "0x10247c",
+    "encoding": "ascii",
+    "text": "FvSDK::KnownWindowsBuildNumbers"
+  },
+  {
+    "offset": "0x10249c",
+    "encoding": "ascii",
+    "text": ".?AW4KnownWindowsBuildNumbers@FvSDK@@"
+  },
+  {
+    "offset": "0x102cae",
+    "encoding": "ascii",
+    "text": "HKEY__"
+  },
+  {
+    "offset": "0x102cb5",
+    "encoding": "ascii",
+    "text": ".?AUHKEY__@@"
+  },
+  {
+    "offset": "0x152c04",
+    "encoding": "ascii",
+    "text": "..\\FvSDKStatic\\nvSecureLoadLibrary.cpp"
+  },
+  {
+    "offset": "0x152e54",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Common\\SharedMem.h"
+  },
+  {
+    "offset": "0x154682",
+    "encoding": "ascii",
+    "text": "FvSDK::_NVWINTRUST_DATA"
+  },
+  {
+    "offset": "0x15469a",
+    "encoding": "ascii",
+    "text": ".?AU_NVWINTRUST_DATA@FvSDK@@"
+  },
+  {
+    "offset": "0x154872",
+    "encoding": "ascii",
+    "text": "FvSDK::_NVWINTRUST_SIGNATURE_SETTINGS_"
+  },
+  {
+    "offset": "0x154899",
+    "encoding": "ascii",
+    "text": ".?AU_NVWINTRUST_SIGNATURE_SETTINGS_@FvSDK@@"
+  },
+  {
+    "offset": "0x154a7e",
+    "encoding": "ascii",
+    "text": "FvSDK::_NVWINTRUST_DATA"
+  },
+  {
+    "offset": "0x154a96",
+    "encoding": "ascii",
+    "text": ".?AU_NVWINTRUST_DATA@FvSDK@@"
+  },
+  {
+    "offset": "0x154eb6",
+    "encoding": "ascii",
+    "text": "FvSDK::_NVCERT_STRONG_SIGN_PARA"
+  },
+  {
+    "offset": "0x154ed6",
+    "encoding": "ascii",
+    "text": ".?AU_NVCERT_STRONG_SIGN_PARA@FvSDK@@"
+  },
+  {
+    "offset": "0x154fb2",
+    "encoding": "ascii",
+    "text": "FvSDK::_NVWINTRUST_SIGNATURE_SETTINGS_"
+  },
+  {
+    "offset": "0x154fd9",
+    "encoding": "ascii",
+    "text": ".?AU_NVWINTRUST_SIGNATURE_SETTINGS_@FvSDK@@"
+  },
+  {
+    "offset": "0x155496",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_ENUMADAPTERS2"
+  },
+  {
+    "offset": "0x1554b6",
+    "encoding": "ascii",
+    "text": ".?AU_NV_D3DKMT_ENUMADAPTERS2@FvSDK@@"
+  },
+  {
+    "offset": "0x155532",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_QUERYADAPTERINFO"
+  },
+  {
+    "offset": "0x155555",
+    "encoding": "ascii",
+    "text": ".?AU_NV_D3DKMT_QUERYADAPTERINFO@FvSDK@@"
+  },
+  {
+    "offset": "0x155650",
+    "encoding": "ascii",
+    "text": "FvSDK::NvidiaDriverType"
+  },
+  {
+    "offset": "0x155668",
+    "encoding": "ascii",
+    "text": ".?AW4NvidiaDriverType@FvSDK@@"
+  },
+  {
+    "offset": "0x1556fe",
+    "encoding": "ascii",
+    "text": "HKEY__"
+  },
+  {
+    "offset": "0x155705",
+    "encoding": "ascii",
+    "text": ".?AUHKEY__@@"
+  },
+  {
+    "offset": "0x15579e",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_ADAPTERINFO"
+  },
+  {
+    "offset": "0x1557bc",
+    "encoding": "ascii",
+    "text": ".?AU_NV_D3DKMT_ADAPTERINFO@FvSDK@@"
+  },
+  {
+    "offset": "0x15589a",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_ADAPTERINFO"
+  },
+  {
+    "offset": "0x1558b8",
+    "encoding": "ascii",
+    "text": ".?AU_NV_D3DKMT_ADAPTERINFO@FvSDK@@"
+  },
+  {
+    "offset": "0x1558f2",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DDDI_QUERYREGISTRY_INFO"
+  },
+  {
+    "offset": "0x155917",
+    "encoding": "ascii",
+    "text": ".?AU_NV_D3DDDI_QUERYREGISTRY_INFO@FvSDK@@"
+  },
+  {
+    "offset": "0x155a40",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DDDI_QUERYREGISTRY_TYPE"
+  },
+  {
+    "offset": "0x155a65",
+    "encoding": "ascii",
+    "text": ".?AW4_NV_D3DDDI_QUERYREGISTRY_TYPE@FvSDK@@"
+  },
+  {
+    "offset": "0x155aa6",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DDDI_QUERYREGISTRY_FLAGS"
+  },
+  {
+    "offset": "0x155acc",
+    "encoding": "ascii",
+    "text": ".?AU_NV_D3DDDI_QUERYREGISTRY_FLAGS@FvSDK@@"
+  },
+  {
+    "offset": "0x155bcc",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DDDI_QUERYREGISTRY_STATUS"
+  },
+  {
+    "offset": "0x155bf3",
+    "encoding": "ascii",
+    "text": ".?AW4_NV_D3DDDI_QUERYREGISTRY_STATUS@FvSDK@@"
+  },
+  {
+    "offset": "0x155d3e",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DDDI_QUERYREGISTRY_INFO"
+  },
+  {
+    "offset": "0x155d63",
+    "encoding": "ascii",
+    "text": ".?AU_NV_D3DDDI_QUERYREGISTRY_INFO@FvSDK@@"
+  },
+  {
+    "offset": "0x155da6",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_ENUMADAPTERS3"
+  },
+  {
+    "offset": "0x155dc6",
+    "encoding": "ascii",
+    "text": ".?AU_NV_D3DKMT_ENUMADAPTERS3@FvSDK@@"
+  },
+  {
+    "offset": "0x155e3a",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_ENUMADAPTERS_FILTER"
+  },
+  {
+    "offset": "0x155e60",
+    "encoding": "ascii",
+    "text": ".?AT_NV_D3DKMT_ENUMADAPTERS_FILTER@FvSDK@@"
+  },
+  {
+    "offset": "0x155f3e",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_ENUMADAPTERS_FILTER"
+  },
+  {
+    "offset": "0x155f64",
+    "encoding": "ascii",
+    "text": ".?AT_NV_D3DKMT_ENUMADAPTERS_FILTER@FvSDK@@"
+  },
+  {
+    "offset": "0x155fea",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_ENUMADAPTERS3"
+  },
+  {
+    "offset": "0x15600a",
+    "encoding": "ascii",
+    "text": ".?AU_NV_D3DKMT_ENUMADAPTERS3@FvSDK@@"
+  },
+  {
+    "offset": "0x156082",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_ENUMADAPTERS2"
+  },
+  {
+    "offset": "0x1560a2",
+    "encoding": "ascii",
+    "text": ".?AU_NV_D3DKMT_ENUMADAPTERS2@FvSDK@@"
+  },
+  {
+    "offset": "0x156146",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_QUERYADAPTERINFO"
+  },
+  {
+    "offset": "0x156169",
+    "encoding": "ascii",
+    "text": ".?AU_NV_D3DKMT_QUERYADAPTERINFO@FvSDK@@"
+  },
+  {
+    "offset": "0x1561aa",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_QUERY_DEVICE_IDS"
+  },
+  {
+    "offset": "0x1561cd",
+    "encoding": "ascii",
+    "text": ".?AU_NV_D3DKMT_QUERY_DEVICE_IDS@FvSDK@@"
+  },
+  {
+    "offset": "0x15620e",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_QUERY_DEVICE_IDS::_NV_D3DKMT_DEVICE_IDS"
+  },
+  {
+    "offset": "0x156248",
+    "encoding": "ascii",
+    "text": ".?AU_NV_D3DKMT_DEVICE_IDS@_NV_D3DKMT_QUERY_DEVICE_IDS@FvSDK@@"
+  },
+  {
+    "offset": "0x15633e",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_QUERY_DEVICE_IDS::_NV_D3DKMT_DEVICE_IDS"
+  },
+  {
+    "offset": "0x156378",
+    "encoding": "ascii",
+    "text": ".?AU_NV_D3DKMT_DEVICE_IDS@_NV_D3DKMT_QUERY_DEVICE_IDS@FvSDK@@"
+  },
+  {
+    "offset": "0x15644a",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_QUERY_DEVICE_IDS"
+  },
+  {
+    "offset": "0x15646d",
+    "encoding": "ascii",
+    "text": ".?AU_NV_D3DKMT_QUERY_DEVICE_IDS@FvSDK@@"
+  },
+  {
+    "offset": "0x161f88",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDKStatic\\nvSecureLoad"
+  },
+  {
+    "offset": "0x1686e0",
+    "encoding": "ascii",
+    "text": "_tlgDefineProvider_annotation__Tlgg_hFvSDKServiceTriggerProviderProv"
+  },
+  {
+    "offset": "0x169c9a",
+    "encoding": "ascii",
+    "text": "FvSDK::_NVCERT_STRONG_SIGN_SERIALIZED_INFO"
+  },
+  {
+    "offset": "0x169cc5",
+    "encoding": "ascii",
+    "text": ".?AU_NVCERT_STRONG_SIGN_SERIALIZED_INFO@FvSDK@@"
+  },
+  {
+    "offset": "0x169d8e",
+    "encoding": "ascii",
+    "text": "FvSDK::_NVCERT_STRONG_SIGN_PARA"
+  },
+  {
+    "offset": "0x169dae",
+    "encoding": "ascii",
+    "text": ".?AU_NVCERT_STRONG_SIGN_PARA@FvSDK@@"
+  },
+  {
+    "offset": "0x169e66",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DDDI_QUERYREGISTRY_FLAGS"
+  },
+  {
+    "offset": "0x169e8c",
+    "encoding": "ascii",
+    "text": ".?AU_NV_D3DDDI_QUERYREGISTRY_FLAGS@FvSDK@@"
+  },
+  {
+    "offset": "0x169ec6",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DDDI_QUERYREGISTRY_FLAGS::<unnamed-tag>"
+  },
+  {
+    "offset": "0x169efb",
+    "encoding": "ascii",
+    "text": ".?AT<unnamed-tag>@_NV_D3DDDI_QUERYREGISTRY_FLAGS@FvSDK@@"
+  },
+  {
+    "offset": "0x169f92",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DDDI_QUERYREGISTRY_FLAGS::<unnamed-tag>::<unnamed-tag>"
+  },
+  {
+    "offset": "0x169fd6",
+    "encoding": "ascii",
+    "text": ".?AU<unnamed-tag>@0_NV_D3DDDI_QUERYREGISTRY_FLAGS@FvSDK@@"
+  },
+  {
+    "offset": "0x16a076",
+    "encoding": "ascii",
+    "text": "FvSDK::_NVWINTRUST_DATA::<unnamed-tag>"
+  },
+  {
+    "offset": "0x16a09d",
+    "encoding": "ascii",
+    "text": ".?AT<unnamed-tag>@_NVWINTRUST_DATA@FvSDK@@"
+  },
+  {
+    "offset": "0x16a13e",
+    "encoding": "ascii",
+    "text": "FvSDK::_NVCERT_STRONG_SIGN_SERIALIZED_INFO"
+  },
+  {
+    "offset": "0x16a169",
+    "encoding": "ascii",
+    "text": ".?AU_NVCERT_STRONG_SIGN_SERIALIZED_INFO@FvSDK@@"
+  },
+  {
+    "offset": "0x16a20e",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DDDI_QUERYREGISTRY_INFO::<unnamed-tag>"
+  },
+  {
+    "offset": "0x16a242",
+    "encoding": "ascii",
+    "text": ".?AT<unnamed-tag>@_NV_D3DDDI_QUERYREGISTRY_INFO@FvSDK@@"
+  },
+  {
+    "offset": "0x16a2ea",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_ENUMADAPTERS_FILTER::<unnamed-tag>"
+  },
+  {
+    "offset": "0x16a31f",
+    "encoding": "ascii",
+    "text": ".?AU<unnamed-tag>@_NV_D3DKMT_ENUMADAPTERS_FILTER@FvSDK@@"
+  },
+  {
+    "offset": "0x16a3ae",
+    "encoding": "ascii",
+    "text": "FvSDK::_NVCERT_STRONG_SIGN_PARA::<unnamed-tag>"
+  },
+  {
+    "offset": "0x16a3dd",
+    "encoding": "ascii",
+    "text": ".?AT<unnamed-tag>@_NVCERT_STRONG_SIGN_PARA@FvSDK@@"
+  },
+  {
+    "offset": "0x16d13c",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\dllmain.cpp"
+  },
+  {
+    "offset": "0x16d268",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDKStatic\\Private\\FvSDK.h"
+  },
+  {
+    "offset": "0x16d5cc",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\FvSharedMemory.h"
+  },
+  {
+    "offset": "0x16d6cc",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\FvClientCtx.h"
+  },
+  {
+    "offset": "0x16dc98",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\FvSDKBenchmarkWrapper.h"
+  },
+  {
+    "offset": "0x16de74",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\FvClientCtx.cpp"
+  },
+  {
+    "offset": "0x16e362",
+    "encoding": "ascii",
+    "text": "std::unique_ptr<FvSDK::FvClientCtx,std::default_delete<FvSDK::FvClientCtx> >"
+  },
+  {
+    "offset": "0x16e3af",
+    "encoding": "ascii",
+    "text": ".?AV?$unique_ptr@VFvClientCtx@FvSDK@@U?$default_delete@VFvClientCtx@FvSDK@@@std@@@std@@"
+  },
+  {
+    "offset": "0x16e446",
+    "encoding": "ascii",
+    "text": "std::default_delete<FvSDK::FvClientCtx>"
+  },
+  {
+    "offset": "0x16e46e",
+    "encoding": "ascii",
+    "text": ".?AU?$default_delete@VFvClientCtx@FvSDK@@@std@@"
+  },
+  {
+    "offset": "0x16e6b2",
+    "encoding": "ascii",
+    "text": "std::_Compressed_pair<std::default_delete<FvSDK::FvClientCtx>,FvSDK::FvClientCtx *,1>"
+  },
+  {
+    "offset": "0x16e708",
+    "encoding": "ascii",
+    "text": ".?AV?$_Compressed_pair@U?$default_delete@VFvClientCtx@FvSDK@@@std@@PAVFvClientCtx@FvSDK@@$00@std@@"
+  },
+  {
+    "offset": "0x16e7d4",
+    "encoding": "ascii",
+    "text": "unique_ptr<FvSDK::FvClientCtx,std::default_delete<FvSDK::FvClientCtx> >"
+  },
+  {
+    "offset": "0x16e848",
+    "encoding": "ascii",
+    "text": "~unique_ptr<FvSDK::FvClientCtx,std::default_delete<FvSDK::FvClientCtx> >"
+  },
+  {
+    "offset": "0x16e972",
+    "encoding": "ascii",
+    "text": "std::unique_ptr<FvSDK::FvClientCtx,std::default_delete<FvSDK::FvClientCtx> >"
+  },
+  {
+    "offset": "0x16e9bf",
+    "encoding": "ascii",
+    "text": ".?AV?$unique_ptr@VFvClientCtx@FvSDK@@U?$default_delete@VFvClientCtx@FvSDK@@@std@@@std@@"
+  },
+  {
+    "offset": "0x17941e",
+    "encoding": "ascii",
+    "text": "<unnamed-type-_Tlgg_hFvSDKServiceTriggerProviderProv_Meta>"
+  },
+  {
+    "offset": "0x179459",
+    "encoding": "ascii",
+    "text": ".?AU<unnamed-type-_Tlgg_hFvSDKServiceTriggerProviderProv_Meta>@@"
+  },
+  {
+    "offset": "0x1794ea",
+    "encoding": "ascii",
+    "text": "<unnamed-type-_Tlgg_hFvSDKServiceTriggerProviderProv_Meta>"
+  },
+  {
+    "offset": "0x179525",
+    "encoding": "ascii",
+    "text": ".?AU<unnamed-type-_Tlgg_hFvSDKServiceTriggerProviderProv_Meta>@@"
+  },
+  {
+    "offset": "0x182a52",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx"
+  },
+  {
+    "offset": "0x182a65",
+    "encoding": "ascii",
+    "text": ".?AVFvClientCtx@FvSDK@@"
+  },
+  {
+    "offset": "0x182db6",
+    "encoding": "ascii",
+    "text": "FVSDK_SAMPLEDATA_DONOTWAIT"
+  },
+  {
+    "offset": "0x182e72",
+    "encoding": "ascii",
+    "text": "FVSDK_BENCHMARKFLAGS_NONE"
+  },
+  {
+    "offset": "0x182e92",
+    "encoding": "ascii",
+    "text": "FVSDK_BENCHMARKFLAGS_PER_FRAME_DATA"
+  },
+  {
+    "offset": "0x182f7e",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSampleInternal"
+  },
+  {
+    "offset": "0x182f96",
+    "encoding": "ascii",
+    "text": ".?AUFvSampleInternal@FvSDK@@"
+  },
+  {
+    "offset": "0x183072",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper"
+  },
+  {
+    "offset": "0x18308f",
+    "encoding": "ascii",
+    "text": ".?AVFvSDKBenchmarkWrapper@FvSDK@@"
+  },
+  {
+    "offset": "0x183b46",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx"
+  },
+  {
+    "offset": "0x183b59",
+    "encoding": "ascii",
+    "text": ".?AVFvClientCtx@FvSDK@@"
+  },
+  {
+    "offset": "0x185a1e",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSampleInternal"
+  },
+  {
+    "offset": "0x185a36",
+    "encoding": "ascii",
+    "text": ".?AUFvSampleInternal@FvSDK@@"
+  },
+  {
+    "offset": "0x1c0386",
+    "encoding": "ascii",
+    "text": "std::map<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >"
+  },
+  {
+    "offset": "0x1c041e",
+    "encoding": "ascii",
+    "text": ".?AV?$map@IUBenchmarkSummaryData@FvSDK@@U?$less@I@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@4@@std@@"
+  },
+  {
+    "offset": "0x1c0a08",
+    "encoding": "ascii",
+    "text": "FvSDKBenchmarkWrapper"
+  },
+  {
+    "offset": "0x1c0a28",
+    "encoding": "ascii",
+    "text": "~FvSDKBenchmarkWrapper"
+  },
+  {
+    "offset": "0x1c0e76",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper"
+  },
+  {
+    "offset": "0x1c0e93",
+    "encoding": "ascii",
+    "text": ".?AVFvSDKBenchmarkWrapper@FvSDK@@"
+  },
+  {
+    "offset": "0x1cd7f4",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::StartSession::__l7::<unnamed-enum-_tlgLevelConst>"
+  },
+  {
+    "offset": "0x1cd83a",
+    "encoding": "ascii",
+    "text": ".?AW4<unnamed-enum-_tlgLevelConst>@?6??StartSession@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@XZ@`1f2c5597"
+  },
+  {
+    "offset": "0x1cd8b6",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::StartSession::__l7::<unnamed-type-_tlgEvent>"
+  },
+  {
+    "offset": "0x1cd8f7",
+    "encoding": "ascii",
+    "text": ".?AU<unnamed-type-_tlgEvent>@?6??StartSession@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@XZ@`1f2c5597"
+  },
+  {
+    "offset": "0x1cda72",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::StartSession::__l7::<unnamed-type-_tlgEvent>"
+  },
+  {
+    "offset": "0x1cdab3",
+    "encoding": "ascii",
+    "text": ".?AU<unnamed-type-_tlgEvent>@?6??StartSession@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@XZ@`1f2c5597"
+  },
+  {
+    "offset": "0x1cdb2a",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::SampleData::__l31::<lambda_1>"
+  },
+  {
+    "offset": "0x1cdb5c",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_1>@?BP@??SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z@`1f2c5597"
+  },
+  {
+    "offset": "0x1cdd0e",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::SampleData::__l31::<lambda_1>"
+  },
+  {
+    "offset": "0x1cdd40",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_1>@?BP@??SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z@`1f2c5597"
+  },
+  {
+    "offset": "0x1cddfe",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::SampleData::__l31::<lambda_2>"
+  },
+  {
+    "offset": "0x1cde30",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_2>@?BP@??SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z@`1f2c5597"
+  },
+  {
+    "offset": "0x1cdfba",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::SampleData::__l31::<lambda_2>"
+  },
+  {
+    "offset": "0x1cdfec",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_2>@?BP@??SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z@`1f2c5597"
+  },
+  {
+    "offset": "0x1ce2a2",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::SampleData::__l31::<lambda_3>"
+  },
+  {
+    "offset": "0x1ce2d4",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_3>@?BP@??SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z@`1f2c5597"
+  },
+  {
+    "offset": "0x1ce496",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::SampleData::__l31::<lambda_3>"
+  },
+  {
+    "offset": "0x1ce4c8",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_3>@?BP@??SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z@`1f2c5597"
+  },
+  {
+    "offset": "0x1d2072",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::SampleData::__l31::<lambda_5>"
+  },
+  {
+    "offset": "0x1d20a4",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_5>@?BP@??SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z@`1f2c5597"
+  },
+  {
+    "offset": "0x1d2162",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::SampleData::__l31::<lambda_4>"
+  },
+  {
+    "offset": "0x1d2194",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_4>@?BP@??SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z@`1f2c5597"
+  },
+  {
+    "offset": "0x1d23d2",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::SampleData::__l31::<lambda_5>"
+  },
+  {
+    "offset": "0x1d2404",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_5>@?BP@??SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z@`1f2c5597"
+  },
+  {
+    "offset": "0x1d2592",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::SampleData::__l31::<lambda_4>"
+  },
+  {
+    "offset": "0x1d25c4",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_4>@?BP@??SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z@`1f2c5597"
+  },
+  {
+    "offset": "0x1d6d5e",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::ReadBenchmarkData::__l24::<lambda_1>"
+  },
+  {
+    "offset": "0x1d6d97",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_1>@?BI@??ReadBenchmarkData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@PAUSamples_v1@@I@Z@`1f2c5597"
+  },
+  {
+    "offset": "0x1d6f12",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::ReadBenchmarkData::__l24::<lambda_1>"
+  },
+  {
+    "offset": "0x1d6f4b",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_1>@?BI@??ReadBenchmarkData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@PAUSamples_v1@@I@Z@`1f2c5597"
+  },
+  {
+    "offset": "0x1d7036",
+    "encoding": "ascii",
+    "text": "std::_Tree<std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0> >"
+  },
+  {
+    "offset": "0x1d70e5",
+    "encoding": "ascii",
+    "text": ".?AV?$_Tree@V?$_Tmap_traits@IUBenchmarkSummaryData@FvSDK@@U?$less@I@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@4@$0A@@std@@@std@@"
+  },
+  {
+    "offset": "0x1d7196",
+    "encoding": "ascii",
+    "text": "std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>"
+  },
+  {
+    "offset": "0x1d71d1",
+    "encoding": "ascii",
+    "text": ".?AU?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@"
+  },
+  {
+    "offset": "0x1d721e",
+    "encoding": "ascii",
+    "text": "std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >"
+  },
+  {
+    "offset": "0x1d726a",
+    "encoding": "ascii",
+    "text": ".?AV?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@"
+  },
+  {
+    "offset": "0x1d72ca",
+    "encoding": "ascii",
+    "text": "std::allocator_traits<std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >"
+  },
+  {
+    "offset": "0x1d732e",
+    "encoding": "ascii",
+    "text": ".?AU?$allocator_traits@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x1d73a6",
+    "encoding": "ascii",
+    "text": "std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *>"
+  },
+  {
+    "offset": "0x1d73f9",
+    "encoding": "ascii",
+    "text": ".?AU?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@"
+  },
+  {
+    "offset": "0x1d745a",
+    "encoding": "ascii",
+    "text": "std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> >"
+  },
+  {
+    "offset": "0x1d74be",
+    "encoding": "ascii",
+    "text": ".?AV?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@"
+  },
+  {
+    "offset": "0x1d7532",
+    "encoding": "ascii",
+    "text": "std::allocator_traits<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x1d75ae",
+    "encoding": "ascii",
+    "text": ".?AU?$allocator_traits@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x1d764a",
+    "encoding": "ascii",
+    "text": "std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >"
+  },
+  {
+    "offset": "0x1d76b0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x1d7724",
+    "encoding": "ascii",
+    "text": "std::_Tree<std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0> >::_Redbl"
+  },
+  {
+    "offset": "0x1d77db",
+    "encoding": "ascii",
+    "text": ".?AW4_Redbl@?$_Tree@V?$_Tmap_traits@IUBenchmarkSummaryData@FvSDK@@U?$less@I@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@4@$0A@@std@@@std@@"
+  },
+  {
+    "offset": "0x1d7896",
+    "encoding": "ascii",
+    "text": "std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0>"
+  },
+  {
+    "offset": "0x1d7938",
+    "encoding": "ascii",
+    "text": ".?AV?$_Tmap_traits@IUBenchmarkSummaryData@FvSDK@@U?$less@I@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@4@$0A@@std@@"
+  },
+  {
+    "offset": "0x1d79da",
+    "encoding": "ascii",
+    "text": "std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0>::value_compare"
+  },
+  {
+    "offset": "0x1d7a8b",
+    "encoding": "ascii",
+    "text": ".?AVvalue_compare@?$_Tmap_traits@IUBenchmarkSummaryData@FvSDK@@U?$less@I@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@4@$0A@@std@@"
+  },
+  {
+    "offset": "0x1d7bba",
+    "encoding": "ascii",
+    "text": "std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >"
+  },
+  {
+    "offset": "0x1d7c36",
+    "encoding": "ascii",
+    "text": ".?AV?$_Tree_iterator@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x1d7cca",
+    "encoding": "ascii",
+    "text": "std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >"
+  },
+  {
+    "offset": "0x1d7d4c",
+    "encoding": "ascii",
+    "text": ".?AV?$_Tree_const_iterator@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x1d7de6",
+    "encoding": "ascii",
+    "text": "std::_Tree_unchecked_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >"
+  },
+  {
+    "offset": "0x1d7e6c",
+    "encoding": "ascii",
+    "text": ".?AV?$_Tree_unchecked_iterator@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x1d7f0a",
+    "encoding": "ascii",
+    "text": "std::_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >,std::_Iterator_base0>"
+  },
+  {
+    "offset": "0x1d7faa",
+    "encoding": "ascii",
+    "text": ".?AV?$_Tree_unchecked_const_iterator@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@U_Iterator_base0@2@@std@@"
+  },
+  {
+    "offset": "0x1d805e",
+    "encoding": "ascii",
+    "text": "std::reverse_iterator<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > > >"
+  },
+  {
+    "offset": "0x1d80f2",
+    "encoding": "ascii",
+    "text": ".?AV?$reverse_iterator@V?$_Tree_iterator@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x1d819e",
+    "encoding": "ascii",
+    "text": "std::reverse_iterator<std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > > >"
+  },
+  {
+    "offset": "0x1d8238",
+    "encoding": "ascii",
+    "text": ".?AV?$reverse_iterator@V?$_Tree_const_iterator@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x1d82e4",
+    "encoding": "ascii",
+    "text": "std::_Tree<std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0> >::_Strategy"
+  },
+  {
+    "offset": "0x1d839e",
+    "encoding": "ascii",
+    "text": ".?AW4_Strategy@?$_Tree@V?$_Tmap_traits@IUBenchmarkSummaryData@FvSDK@@U?$less@I@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@4@$0A@@std@@@std@@"
+  },
+  {
+    "offset": "0x1d87d2",
+    "encoding": "ascii",
+    "text": "std::_Node_handle<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,std::_Node_handle_map_base,unsigned int,FvSDK::BenchmarkSummaryData>"
+  },
+  {
+    "offset": "0x1d88c8",
+    "encoding": "ascii",
+    "text": ".?AV?$_Node_handle@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@2@U_Node_handle_map_base@2@IUBenchmarkSummaryData@FvSDK@@@std@@"
+  },
+  {
+    "offset": "0x1d8a16",
+    "encoding": "ascii",
+    "text": "std::initializer_list<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >"
+  },
+  {
+    "offset": "0x1d8a69",
+    "encoding": "ascii",
+    "text": ".?AV?$initializer_list@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@"
+  },
+  {
+    "offset": "0x1d8bee",
+    "encoding": "ascii",
+    "text": "std::pair<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> *,std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> *>"
+  },
+  {
+    "offset": "0x1d8ca3",
+    "encoding": "ascii",
+    "text": ".?AU?$pair@PAU?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@PAU12@@std@@"
+  },
+  {
+    "offset": "0x1d8e42",
+    "encoding": "ascii",
+    "text": "std::pair<std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >,std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > > >"
+  },
+  {
+    "offset": "0x1d8f52",
+    "encoding": "ascii",
+    "text": ".?AU?$pair@V?$_Tree_const_iterator@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@@std@@V12@@std@@"
+  },
+  {
+    "offset": "0x1d901a",
+    "encoding": "ascii",
+    "text": "std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >,std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > > >"
+  },
+  {
+    "offset": "0x1d911e",
+    "encoding": "ascii",
+    "text": ".?AU?$pair@V?$_Tree_iterator@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@@std@@V12@@std@@"
+  },
+  {
+    "offset": "0x1d93d2",
+    "encoding": "ascii",
+    "text": "std::_Compressed_pair<std::less<unsigned int>,std::_Compressed_pair<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> >,std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >,1>,1>"
+  },
+  {
+    "offset": "0x1d94e6",
+    "encoding": "ascii",
+    "text": ".?AV?$_Compressed_pair@U?$less@I@std@@V?$_Compressed_pair@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@2@$00@2@$00@std@@"
+  },
+  {
+    "offset": "0x1d988c",
+    "encoding": "ascii",
+    "text": "_Tree<std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0> >"
+  },
+  {
+    "offset": "0x1d9978",
+    "encoding": "ascii",
+    "text": "~_Tree<std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0> >"
+  },
+  {
+    "offset": "0x1d9d46",
+    "encoding": "ascii",
+    "text": "std::_Tree<std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0> >"
+  },
+  {
+    "offset": "0x1d9df5",
+    "encoding": "ascii",
+    "text": ".?AV?$_Tree@V?$_Tmap_traits@IUBenchmarkSummaryData@FvSDK@@U?$less@I@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@4@$0A@@std@@@std@@"
+  },
+  {
+    "offset": "0x1d9ea6",
+    "encoding": "ascii",
+    "text": "FvSDK::BenchmarkSummaryData"
+  },
+  {
+    "offset": "0x1d9ec2",
+    "encoding": "ascii",
+    "text": ".?AUBenchmarkSummaryData@FvSDK@@"
+  },
+  {
+    "offset": "0x1d9efa",
+    "encoding": "ascii",
+    "text": "std::_Insert_return_type<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >,std::_Node_handle<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,std::_Node_handle_map_base,unsigned int,FvSDK::BenchmarkSummaryData> >"
+  },
+  {
+    "offset": "0x1da087",
+    "encoding": "ascii",
+    "text": ".?AU?$_Insert_return_type@V?$_Tree_iterator@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@@std@@V?$_Node_handle@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@2@U_Node_handle_map_base@2@IUBenchmarkSummaryData@FvSDK@@@2@@std@@"
+  },
+  {
+    "offset": "0x1da7cc",
+    "encoding": "ascii",
+    "text": "map<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >"
+  },
+  {
+    "offset": "0x1da8ac",
+    "encoding": "ascii",
+    "text": "~map<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >"
+  },
+  {
+    "offset": "0x1da98a",
+    "encoding": "ascii",
+    "text": "std::map<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >"
+  },
+  {
+    "offset": "0x1daa22",
+    "encoding": "ascii",
+    "text": ".?AV?$map@IUBenchmarkSummaryData@FvSDK@@U?$less@I@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@4@@std@@"
+  },
+  {
+    "offset": "0x1dacfc",
+    "encoding": "ascii",
+    "text": "_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >,std::_Iterator_base0>"
+  },
+  {
+    "offset": "0x1dae52",
+    "encoding": "ascii",
+    "text": "std::_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >,std::_Iterator_base0>"
+  },
+  {
+    "offset": "0x1daef2",
+    "encoding": "ascii",
+    "text": ".?AV?$_Tree_unchecked_const_iterator@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@U_Iterator_base0@2@@std@@"
+  },
+  {
+    "offset": "0x1db284",
+    "encoding": "ascii",
+    "text": "_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >"
+  },
+  {
+    "offset": "0x1db336",
+    "encoding": "ascii",
+    "text": "std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >"
+  },
+  {
+    "offset": "0x1db3b8",
+    "encoding": "ascii",
+    "text": ".?AV?$_Tree_const_iterator@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x1db67c",
+    "encoding": "ascii",
+    "text": "_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >"
+  },
+  {
+    "offset": "0x1db726",
+    "encoding": "ascii",
+    "text": "std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >"
+  },
+  {
+    "offset": "0x1db7a2",
+    "encoding": "ascii",
+    "text": ".?AV?$_Tree_iterator@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x1db908",
+    "encoding": "ascii",
+    "text": "pair<unsigned int const ,FvSDK::BenchmarkSummaryData>"
+  },
+  {
+    "offset": "0x1db99e",
+    "encoding": "ascii",
+    "text": "std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>"
+  },
+  {
+    "offset": "0x1db9d9",
+    "encoding": "ascii",
+    "text": ".?AU?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@"
+  },
+  {
+    "offset": "0x1dbb1a",
+    "encoding": "ascii",
+    "text": "FvSDK::BenchmarkSummaryData"
+  },
+  {
+    "offset": "0x1dbb36",
+    "encoding": "ascii",
+    "text": ".?AUBenchmarkSummaryData@FvSDK@@"
+  },
+  {
+    "offset": "0x1e3d02",
+    "encoding": "ascii",
+    "text": "std::pointer_traits<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> *>"
+  },
+  {
+    "offset": "0x1e3d54",
+    "encoding": "ascii",
+    "text": ".?AU?$pointer_traits@PAU?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@"
+  },
+  {
+    "offset": "0x2005f0",
+    "encoding": "ascii",
+    "text": "allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> >"
+  },
+  {
+    "offset": "0x2006ce",
+    "encoding": "ascii",
+    "text": "std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> >"
+  },
+  {
+    "offset": "0x200732",
+    "encoding": "ascii",
+    "text": ".?AV?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@"
+  },
+  {
+    "offset": "0x2007a6",
+    "encoding": "ascii",
+    "text": "std::_Default_allocator_traits<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x20082b",
+    "encoding": "ascii",
+    "text": ".?AU?$_Default_allocator_traits@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x200924",
+    "encoding": "ascii",
+    "text": "std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >::_Redbl"
+  },
+  {
+    "offset": "0x200992",
+    "encoding": "ascii",
+    "text": ".?AW4_Redbl@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x200a76",
+    "encoding": "ascii",
+    "text": "std::_Tree_id<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> *>"
+  },
+  {
+    "offset": "0x200ada",
+    "encoding": "ascii",
+    "text": ".?AU?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@"
+  },
+  {
+    "offset": "0x200cb4",
+    "encoding": "ascii",
+    "text": "_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >"
+  },
+  {
+    "offset": "0x200e0a",
+    "encoding": "ascii",
+    "text": "std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >"
+  },
+  {
+    "offset": "0x200e70",
+    "encoding": "ascii",
+    "text": ".?AV?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x200f0c",
+    "encoding": "ascii",
+    "text": "std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *>::_Redbl"
+  },
+  {
+    "offset": "0x200f67",
+    "encoding": "ascii",
+    "text": ".?AW4_Redbl@?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@"
+  },
+  {
+    "offset": "0x2010dc",
+    "encoding": "ascii",
+    "text": "_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *>"
+  },
+  {
+    "offset": "0x201156",
+    "encoding": "ascii",
+    "text": "std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *>"
+  },
+  {
+    "offset": "0x2011a9",
+    "encoding": "ascii",
+    "text": ".?AU?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@"
+  },
+  {
+    "offset": "0x207916",
+    "encoding": "ascii",
+    "text": "std::_Compressed_pair<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> >,std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >,1>"
+  },
+  {
+    "offset": "0x2079f9",
+    "encoding": "ascii",
+    "text": ".?AV?$_Compressed_pair@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@2@$00@std@@"
+  },
+  {
+    "offset": "0x207bca",
+    "encoding": "ascii",
+    "text": "std::_Compressed_pair<std::less<unsigned int>,std::_Compressed_pair<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> >,std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >,1>,1>"
+  },
+  {
+    "offset": "0x207cde",
+    "encoding": "ascii",
+    "text": ".?AV?$_Compressed_pair@U?$less@I@std@@V?$_Compressed_pair@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@2@$00@2@$00@std@@"
+  },
+  {
+    "offset": "0x207efe",
+    "encoding": "ascii",
+    "text": "std::_Compressed_pair<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> >,std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >,1>"
+  },
+  {
+    "offset": "0x207fe1",
+    "encoding": "ascii",
+    "text": ".?AV?$_Compressed_pair@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@2@$00@std@@"
+  },
+  {
+    "offset": "0x20fd96",
+    "encoding": "ascii",
+    "text": "std::_Tree_head_scoped_ptr<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> >,std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >"
+  },
+  {
+    "offset": "0x20fe7d",
+    "encoding": "ascii",
+    "text": ".?AU?$_Tree_head_scoped_ptr@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@2@@std@@"
+  },
+  {
+    "offset": "0x20fff8",
+    "encoding": "ascii",
+    "text": "_Tree_head_scoped_ptr<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> >,std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >"
+  },
+  {
+    "offset": "0x2100f8",
+    "encoding": "ascii",
+    "text": "~_Tree_head_scoped_ptr<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> >,std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >"
+  },
+  {
+    "offset": "0x21020a",
+    "encoding": "ascii",
+    "text": "std::_Tree_head_scoped_ptr<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> >,std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >"
+  },
+  {
+    "offset": "0x2102f1",
+    "encoding": "ascii",
+    "text": ".?AU?$_Tree_head_scoped_ptr@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@2@@std@@"
+  },
+  {
+    "offset": "0x224926",
+    "encoding": "ascii",
+    "text": "std::_Alloc_construct_ptr<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x2249a6",
+    "encoding": "ascii",
+    "text": ".?AU?$_Alloc_construct_ptr@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x224b74",
+    "encoding": "ascii",
+    "text": "_Alloc_construct_ptr<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x224c20",
+    "encoding": "ascii",
+    "text": "~_Alloc_construct_ptr<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x224cde",
+    "encoding": "ascii",
+    "text": "std::_Alloc_construct_ptr<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x224d5e",
+    "encoding": "ascii",
+    "text": ".?AU?$_Alloc_construct_ptr@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x225002",
+    "encoding": "ascii",
+    "text": "std::pointer_traits<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> *>"
+  },
+  {
+    "offset": "0x225054",
+    "encoding": "ascii",
+    "text": ".?AU?$pointer_traits@PAU?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@"
+  },
+  {
+    "offset": "0x225492",
+    "encoding": "ascii",
+    "text": "std::_Default_allocator_traits<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x225517",
+    "encoding": "ascii",
+    "text": ".?AU?$_Default_allocator_traits@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x22f8e6",
+    "encoding": "ascii",
+    "text": "std::_Default_allocator_traits<std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >"
+  },
+  {
+    "offset": "0x22f953",
+    "encoding": "ascii",
+    "text": ".?AU?$_Default_allocator_traits@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x22fc7a",
+    "encoding": "ascii",
+    "text": "std::_Default_allocator_traits<std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >"
+  },
+  {
+    "offset": "0x22fce7",
+    "encoding": "ascii",
+    "text": ".?AU?$_Default_allocator_traits@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x22fd7a",
+    "encoding": "ascii",
+    "text": "std::allocator_traits<std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >"
+  },
+  {
+    "offset": "0x22fdde",
+    "encoding": "ascii",
+    "text": ".?AU?$allocator_traits@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x2312fc",
+    "encoding": "ascii",
+    "text": "initializer_list<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >"
+  },
+  {
+    "offset": "0x2313ce",
+    "encoding": "ascii",
+    "text": "std::initializer_list<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >"
+  },
+  {
+    "offset": "0x231421",
+    "encoding": "ascii",
+    "text": ".?AV?$initializer_list@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@"
+  },
+  {
+    "offset": "0x234cbc",
+    "encoding": "ascii",
+    "text": "allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >"
+  },
+  {
+    "offset": "0x234d82",
+    "encoding": "ascii",
+    "text": "std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >"
+  },
+  {
+    "offset": "0x234dce",
+    "encoding": "ascii",
+    "text": ".?AV?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@"
+  },
+  {
+    "offset": "0x23664e",
+    "encoding": "ascii",
+    "text": "std::allocator_traits<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x2366ca",
+    "encoding": "ascii",
+    "text": ".?AU?$allocator_traits@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x2371d6",
+    "encoding": "ascii",
+    "text": "std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0>"
+  },
+  {
+    "offset": "0x237278",
+    "encoding": "ascii",
+    "text": ".?AV?$_Tmap_traits@IUBenchmarkSummaryData@FvSDK@@U?$less@I@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@4@$0A@@std@@"
+  },
+  {
+    "offset": "0x2382d4",
+    "encoding": "ascii",
+    "text": "??_7FvSDKBenchmarkWrapper@FvSDK@@6B@"
+  },
+  {
+    "offset": "0x2382f9",
+    "encoding": "ascii",
+    "text": "??_EFvSDKBenchmarkWrapper@FvSDK@@UAEPAXI@Z"
+  },
+  {
+    "offset": "0x238324",
+    "encoding": "ascii",
+    "text": "?OnMessage@FvSDKBenchmarkWrapper@FvSDK@@EAEXABV?$shared_ptr@UIBusMessage@MessageBusClient@@@std@@@Z"
+  },
+  {
+    "offset": "0x238537",
+    "encoding": "ascii",
+    "text": "?deinitialize@FvSDKBenchmarkWrapper@FvSDK@@UAEXXZ"
+  },
+  {
+    "offset": "0x2495e8",
+    "encoding": "ascii",
+    "text": "FvSDK.cpp"
+  },
+  {
+    "offset": "0x249698",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\FvSDKBenchmarkWrapper.cpp"
+  },
+  {
+    "offset": "0x24c1c2",
+    "encoding": "ascii",
+    "text": "`anonymous-namespace'::FVSDKGlobalData"
+  },
+  {
+    "offset": "0x24c1e9",
+    "encoding": "ascii",
+    "text": ".?AUFVSDKGlobalData@?A0x384e9810@@"
+  },
+  {
+    "offset": "0x24c378",
+    "encoding": "ascii",
+    "text": "FVSDKGlobalData"
+  },
+  {
+    "offset": "0x24c390",
+    "encoding": "ascii",
+    "text": "~FVSDKGlobalData"
+  },
+  {
+    "offset": "0x24c3d2",
+    "encoding": "ascii",
+    "text": "`anonymous-namespace'::FVSDKGlobalData"
+  },
+  {
+    "offset": "0x24c3f9",
+    "encoding": "ascii",
+    "text": ".?AUFVSDKGlobalData@?A0x384e9810@@"
+  },
+  {
+    "offset": "0x260108",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\FvSDK.cpp"
+  },
+  {
+    "offset": "0x260784",
+    "encoding": "ascii",
+    "text": "FVSDK_INIT_FVLOGGER"
+  },
+  {
+    "offset": "0x26500e",
+    "encoding": "ascii",
+    "text": "FvSDK::BenchmarkSummaryData"
+  },
+  {
+    "offset": "0x26502a",
+    "encoding": "ascii",
+    "text": ".?AUBenchmarkSummaryData@FvSDK@@"
+  },
+  {
+    "offset": "0x265b32",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::OnMessage::__l59::<lambda_1>"
+  },
+  {
+    "offset": "0x265b6d",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_1>@?DL@??OnMessage@FvSDKBenchmarkWrapper@FvSDK@@EAEXABV?$shared_ptr@UIBusMessage@MessageBusClient@@@std@@@Z@`6b428265"
+  },
+  {
+    "offset": "0x265e4e",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::OnMessage::__l59::<lambda_1>"
+  },
+  {
+    "offset": "0x265e89",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_1>@?DL@??OnMessage@FvSDKBenchmarkWrapper@FvSDK@@EAEXABV?$shared_ptr@UIBusMessage@MessageBusClient@@@std@@@Z@`6b428265"
+  },
+  {
+    "offset": "0x269fc2",
+    "encoding": "ascii",
+    "text": "std::default_delete<FvSDK::FvClientCtx>"
+  },
+  {
+    "offset": "0x269fea",
+    "encoding": "ascii",
+    "text": ".?AU?$default_delete@VFvClientCtx@FvSDK@@@std@@"
+  },
+  {
+    "offset": "0x26a122",
+    "encoding": "ascii",
+    "text": "std::_Compressed_pair<std::default_delete<FvSDK::FvClientCtx>,FvSDK::FvClientCtx *,1>"
+  },
+  {
+    "offset": "0x26a178",
+    "encoding": "ascii",
+    "text": ".?AV?$_Compressed_pair@U?$default_delete@VFvClientCtx@FvSDK@@@std@@PAVFvClientCtx@FvSDK@@$00@std@@"
+  },
+  {
+    "offset": "0x27800c",
+    "encoding": "ascii",
+    "text": "c:\\dvs\\p4\\build\\sw\\devrel\\playpen\\yyao\\vrbench\\vr-fcat\\fvsdk_rel_1_0\\external\\fvsdk\\fvsdk\\fvsdk\\fvsdk\\win32\\release\\nvsecureloadlibrary.obj"
+  },
+  {
+    "offset": "0x2780e2",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCertFindCertificateInStore"
+  },
+  {
+    "offset": "0x278116",
+    "encoding": "ascii",
+    "text": "FvSDK::hModCrypt32"
+  },
+  {
+    "offset": "0x27813a",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnWinVerifyTrust"
+  },
+  {
+    "offset": "0x278162",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnOpenSCManagerW"
+  },
+  {
+    "offset": "0x27818a",
+    "encoding": "ascii",
+    "text": "FvSDK::bTrustAnyLocation"
+  },
+  {
+    "offset": "0x2781b2",
+    "encoding": "ascii",
+    "text": "FvSDK::hModAdvapi32"
+  },
+  {
+    "offset": "0x2781d6",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnWTHelperProvDataFromStateData"
+  },
+  {
+    "offset": "0x27820e",
+    "encoding": "ascii",
+    "text": "FvSDK::hModWinTrust"
+  },
+  {
+    "offset": "0x278232",
+    "encoding": "ascii",
+    "text": "FvSDK::hModShell32"
+  },
+  {
+    "offset": "0x278256",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnOpenServiceW"
+  },
+  {
+    "offset": "0x27827e",
+    "encoding": "ascii",
+    "text": "FvSDK::hModCryptBase"
+  },
+  {
+    "offset": "0x2782a2",
+    "encoding": "ascii",
+    "text": "FvSDK::hModDEVOBJ"
+  },
+  {
+    "offset": "0x2782c2",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnSHGetFolderPath"
+  },
+  {
+    "offset": "0x2782ea",
+    "encoding": "ascii",
+    "text": "FvSDK::hModWldp"
+  },
+  {
+    "offset": "0x27830a",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCertFreeCertificateContext"
+  },
+  {
+    "offset": "0x27833e",
+    "encoding": "ascii",
+    "text": "FvSDK::hModDrvstore"
+  },
+  {
+    "offset": "0x278362",
+    "encoding": "ascii",
+    "text": "FvSDK::DEVPKEY_Device_DriverInfPath"
+  },
+  {
+    "offset": "0x278396",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnWTHelperGetProvSignerFromChain"
+  },
+  {
+    "offset": "0x2783ce",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCloseServiceHandle"
+  },
+  {
+    "offset": "0x2783fa",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCertGetIssuerCertificateFromStore"
+  },
+  {
+    "offset": "0x278436",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCertGetNameStringA"
+  },
+  {
+    "offset": "0x278462",
+    "encoding": "ascii",
+    "text": "FvSDK::hModCryptNet"
+  },
+  {
+    "offset": "0x278486",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnQueryServiceStatus"
+  },
+  {
+    "offset": "0x2784b2",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnWTHelperGetProvCertFromChain"
+  },
+  {
+    "offset": "0x2784ea",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCryptMsgGetParam"
+  },
+  {
+    "offset": "0x278516",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnRegOpenKeyExW"
+  },
+  {
+    "offset": "0x27853e",
+    "encoding": "ascii",
+    "text": "FvSDK::hModAsn1"
+  },
+  {
+    "offset": "0x27855e",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCryptDecodeObjectEx"
+  },
+  {
+    "offset": "0x27858a",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnRegQueryValueExW"
+  },
+  {
+    "offset": "0x2785b6",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCryptQueryObject"
+  },
+  {
+    "offset": "0x2785e2",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnRegCloseKey"
+  },
+  {
+    "offset": "0x278606",
+    "encoding": "ascii",
+    "text": "FvSDK::osVersionInfo"
+  },
+  {
+    "offset": "0x27862a",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCertCloseStore"
+  },
+  {
+    "offset": "0x278652",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCryptMsgClose"
+  },
+  {
+    "offset": "0x27867a",
+    "encoding": "ascii",
+    "text": "FvSDK::hModGDI32"
+  },
+  {
+    "offset": "0x2786bb",
+    "encoding": "ascii",
+    "text": "FvSDK::CreateSHFolderFilePath"
+  },
+  {
+    "offset": "0x278802",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnSHGetFolderPath"
+  },
+  {
+    "offset": "0x278937",
+    "encoding": "ascii",
+    "text": "FvSDK::CreateSystemFilePath"
+  },
+  {
+    "offset": "0x278ae3",
+    "encoding": "ascii",
+    "text": "FvSDK::IsNvidiaSubordinatePublicKey"
+  },
+  {
+    "offset": "0x278e5b",
+    "encoding": "ascii",
+    "text": "FvSDK::IsTrustedLocation"
+  },
+  {
+    "offset": "0x27a2e7",
+    "encoding": "ascii",
+    "text": "FvSDK::IsWindowsBuildOrGreater"
+  },
+  {
+    "offset": "0x27a526",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnRegOpenKeyExW"
+  },
+  {
+    "offset": "0x27a55e",
+    "encoding": "ascii",
+    "text": "FvSDK::hModAdvapi32"
+  },
+  {
+    "offset": "0x27a717",
+    "encoding": "ascii",
+    "text": "FvSDK::LoadSystemLibraryInternal"
+  },
+  {
+    "offset": "0x27a9a7",
+    "encoding": "ascii",
+    "text": "FvSDK::QueryRegistryValueFromKey"
+  },
+  {
+    "offset": "0x27ab8a",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnRegQueryValueExW"
+  },
+  {
+    "offset": "0x27abc6",
+    "encoding": "ascii",
+    "text": "FvSDK::hModAdvapi32"
+  },
+  {
+    "offset": "0x27cad6",
+    "encoding": "ascii",
+    "text": "std::pair<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> *,bool>"
+  },
+  {
+    "offset": "0x27cb3b",
+    "encoding": "ascii",
+    "text": ".?AU?$pair@PAU?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@_N@std@@"
+  },
+  {
+    "offset": "0x27cc9c",
+    "encoding": "ascii",
+    "text": "pair<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> *,bool>"
+  },
+  {
+    "offset": "0x27cd5a",
+    "encoding": "ascii",
+    "text": "std::pair<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> *,bool>"
+  },
+  {
+    "offset": "0x27cdbf",
+    "encoding": "ascii",
+    "text": ".?AU?$pair@PAU?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@_N@std@@"
+  },
+  {
+    "offset": "0x27e2db",
+    "encoding": "ascii",
+    "text": "FvSDK::VerifySingleSignature"
+  },
+  {
+    "offset": "0x27e78b",
+    "encoding": "ascii",
+    "text": "FvSDK::_preloadSystemDlls"
+  },
+  {
+    "offset": "0x27eb73",
+    "encoding": "ascii",
+    "text": "FvSDK::nvLoadSignedLibraryExW"
+  },
+  {
+    "offset": "0x27ef5b",
+    "encoding": "ascii",
+    "text": "FvSDK::nvLoadWVTCryptModule"
+  },
+  {
+    "offset": "0x27ef96",
+    "encoding": "ascii",
+    "text": "FvSDK::hModCrypt32"
+  },
+  {
+    "offset": "0x27f0d7",
+    "encoding": "ascii",
+    "text": "FvSDK::nvVerifyFileSignatureW"
+  },
+  {
+    "offset": "0x27f516",
+    "encoding": "ascii",
+    "text": "FvSDK::hModAdvapi32"
+  },
+  {
+    "offset": "0x28397e",
+    "encoding": "ascii",
+    "text": "std::_Tree_find_result<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> *>"
+  },
+  {
+    "offset": "0x2839eb",
+    "encoding": "ascii",
+    "text": ".?AU?$_Tree_find_result@PAU?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@"
+  },
+  {
+    "offset": "0x283ab2",
+    "encoding": "ascii",
+    "text": "std::_Tree_find_result<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> *>"
+  },
+  {
+    "offset": "0x283b1f",
+    "encoding": "ascii",
+    "text": ".?AU?$_Tree_find_result@PAU?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@"
+  },
+  {
+    "offset": "0x283c2a",
+    "encoding": "ascii",
+    "text": "std::_Tree_temp_node_alloc<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x283cab",
+    "encoding": "ascii",
+    "text": ".?AU?$_Tree_temp_node_alloc@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x283e1c",
+    "encoding": "ascii",
+    "text": "_Tree_temp_node_alloc<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x283eb4",
+    "encoding": "ascii",
+    "text": "~_Tree_temp_node_alloc<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x283f62",
+    "encoding": "ascii",
+    "text": "std::_Tree_temp_node_alloc<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x283fe3",
+    "encoding": "ascii",
+    "text": ".?AU?$_Tree_temp_node_alloc@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x284076",
+    "encoding": "ascii",
+    "text": "std::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x2840f1",
+    "encoding": "ascii",
+    "text": ".?AU?$_Tree_temp_node@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x284178",
+    "encoding": "ascii",
+    "text": "std::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >::_Redbl"
+  },
+  {
+    "offset": "0x2841fb",
+    "encoding": "ascii",
+    "text": ".?AW4_Redbl@?$_Tree_temp_node@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x28437c",
+    "encoding": "ascii",
+    "text": "_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x284410",
+    "encoding": "ascii",
+    "text": "~_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x2844b6",
+    "encoding": "ascii",
+    "text": "std::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x284531",
+    "encoding": "ascii",
+    "text": ".?AU?$_Tree_temp_node@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@@std@@"
+  },
+  {
+    "offset": "0x2849c2",
+    "encoding": "ascii",
+    "text": "std::_Tree_id<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> *>"
+  },
+  {
+    "offset": "0x284a26",
+    "encoding": "ascii",
+    "text": ".?AU?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@"
+  },
+  {
+    "offset": "0x293b18",
+    "encoding": "ascii",
+    "text": "FvSDKBenchmarkWrapper.cpp"
+  },
+  {
+    "offset": "0x2964c8",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\predefined C++ types (compiler internal)"
+  },
+  {
+    "offset": "0x29900c",
+    "encoding": "ascii",
+    "text": "c:\\dvs\\p4\\build\\sw\\devrel\\playpen\\yyao\\vrbench\\vr-fcat\\fvsdk_rel_1_0\\external\\fvsdk\\fvsdk\\fvsdk\\fvsdk\\win32\\release\\fvsdk.obj"
+  },
+  {
+    "offset": "0x299152",
+    "encoding": "ascii",
+    "text": "g_pFVSDKGlobalData"
+  },
+  {
+    "offset": "0x29958a",
+    "encoding": "ascii",
+    "text": "g_pFVSDKGlobalData"
+  },
+  {
+    "offset": "0x2997b2",
+    "encoding": "ascii",
+    "text": "g_pFVSDKGlobalData"
+  },
+  {
+    "offset": "0x29c9f7",
+    "encoding": "ascii",
+    "text": "__ehhandler$??0FvClientCtx@FvSDK@@QAE@_N@Z"
+  },
+  {
+    "offset": "0x29ca2f",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$??0FvClientCtx@FvSDK@@QAE@_N@Z$47"
+  },
+  {
+    "offset": "0x29ca6f",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$??0FvClientCtx@FvSDK@@QAE@_N@Z$46"
+  },
+  {
+    "offset": "0x29caaf",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$??0FvClientCtx@FvSDK@@QAE@_N@Z$45"
+  },
+  {
+    "offset": "0x29caef",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$??0FvClientCtx@FvSDK@@QAE@_N@Z$44"
+  },
+  {
+    "offset": "0x29cb2f",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$??0FvClientCtx@FvSDK@@QAE@_N@Z$43"
+  },
+  {
+    "offset": "0x29cb6f",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$??0FvClientCtx@FvSDK@@QAE@_N@Z$42"
+  },
+  {
+    "offset": "0x29cbaf",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$??0FvClientCtx@FvSDK@@QAE@_N@Z$41"
+  },
+  {
+    "offset": "0x29cc0b",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::FvClientCtx"
+  },
+  {
+    "offset": "0x2a083f",
+    "encoding": "ascii",
+    "text": "std::unique_ptr<FvSDK::FvClientCtx,std::default_delete<FvSDK::FvClientCtx> >::~unique_ptr<FvSDK::FvClientCtx,std::default_delete<FvSDK::FvClientCtx> >"
+  },
+  {
+    "offset": "0x2a5a53",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSampleInternal::~FvSampleInternal"
+  },
+  {
+    "offset": "0x2a825b",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::`scalar deleting destructor'"
+  },
+  {
+    "offset": "0x2a9276",
+    "encoding": "ascii",
+    "text": "g_pFVSDKGlobalData"
+  },
+  {
+    "offset": "0x2aa6aa",
+    "encoding": "ascii",
+    "text": "g_pFVSDKGlobalData"
+  },
+  {
+    "offset": "0x2aaece",
+    "encoding": "ascii",
+    "text": "g_pFVSDKGlobalData"
+  },
+  {
+    "offset": "0x2ab622",
+    "encoding": "ascii",
+    "text": "g_pFVSDKGlobalData"
+  },
+  {
+    "offset": "0x2abdf6",
+    "encoding": "ascii",
+    "text": "g_pFVSDKGlobalData"
+  },
+  {
+    "offset": "0x2af276",
+    "encoding": "ascii",
+    "text": "g_pFVSDKGlobalData"
+  },
+  {
+    "offset": "0x2af83e",
+    "encoding": "ascii",
+    "text": "g_pFVSDKGlobalData"
+  },
+  {
+    "offset": "0x2afdd2",
+    "encoding": "ascii",
+    "text": "g_pFVSDKGlobalData"
+  },
+  {
+    "offset": "0x2b03aa",
+    "encoding": "ascii",
+    "text": "g_pFVSDKGlobalData"
+  },
+  {
+    "offset": "0x2b090e",
+    "encoding": "ascii",
+    "text": "g_pFVSDKGlobalData"
+  },
+  {
+    "offset": "0x2b3daa",
+    "encoding": "ascii",
+    "text": "g_pFVSDKGlobalData"
+  },
+  {
+    "offset": "0x2b45ba",
+    "encoding": "ascii",
+    "text": "g_pFVSDKGlobalData"
+  },
+  {
+    "offset": "0x2b500e",
+    "encoding": "ascii",
+    "text": "g_pFVSDKGlobalData"
+  },
+  {
+    "offset": "0x2b56be",
+    "encoding": "ascii",
+    "text": "g_pFVSDKGlobalData"
+  },
+  {
+    "offset": "0x2b5be6",
+    "encoding": "ascii",
+    "text": "g_pFVSDKGlobalData"
+  },
+  {
+    "offset": "0x2c000c",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Release\\FvSDK_x86.exp"
+  },
+  {
+    "offset": "0x2c00c1",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK"
+  },
+  {
+    "offset": "0x2dc2e7",
+    "encoding": "ascii",
+    "text": "_crt_debugger_hook"
+  },
+  {
+    "offset": "0x2e6051",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK"
+  },
+  {
+    "offset": "0x2e60fa",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Release\\FvSDK_x86.pdb"
+  },
+  {
+    "offset": "0x2e617a",
+    "encoding": "ascii",
+    "text": " /ERRORREPORT:QUEUE /OUT:C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Release\\FvSDK_x86.dll /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\\dvs\\p4\\build\\sw\\tools\\ddk\\wddmv2\\official\\22621\\\\Lib\\10.0.22621.0\\um\\x86 /LIBPATH:C:\\dvs\\p4\\build\\sw\\tools\\win32\\msvc\\17.8.3\\\\ucrt\\lib\\x86 /LIBPATH:C:\\dvs\\p4\\build\\sw\\tools\\win32\\msvc\\17.8.3\\VC\\\\lib /LIBPATH:C:\\dvs\\p4\\build\\sw\\tools\\win32\\msvc\\17.8.3\\VC\\\\atlmfc\\lib /MANIFEST /MANIFESTUAC:NO /manifest:embed /DEBUG /PDB:C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Release\\FvSDK_x86.pdb /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Release\\FvSDK_x86.lib /MACHINE:X86 /SAFESEH /guard:cf /PDBALTPATH:%_PDB% /DLL"
+  },
+  {
+    "offset": "0x2e700c",
+    "encoding": "ascii",
+    "text": "c:\\dvs\\p4\\build\\sw\\devrel\\playpen\\yyao\\vrbench\\vr-fcat\\fvsdk_rel_1_0\\external\\fvsdk\\fvsdk\\fvsdk\\fvsdk\\win32\\release\\messagebuswrapperimpl.obj"
+  },
+  {
+    "offset": "0x35700c",
+    "encoding": "ascii",
+    "text": "c:\\dvs\\p4\\build\\sw\\devrel\\playpen\\yyao\\vrbench\\vr-fcat\\fvsdk_rel_1_0\\external\\fvsdk\\fvsdk\\fvsdk\\fvsdk\\win32\\release\\dllmain.obj"
+  },
+  {
+    "offset": "0x3572ce",
+    "encoding": "ascii",
+    "text": "_Tlgg_hFvSDKServiceTriggerProviderProv"
+  },
+  {
+    "offset": "0x357306",
+    "encoding": "ascii",
+    "text": "_Tlgg_hFvSDKServiceTriggerProviderProv_Meta"
+  },
+  {
+    "offset": "0x35827a",
+    "encoding": "ascii",
+    "text": "_Tlgg_hFvSDKServiceTriggerProviderProv"
+  },
+  {
+    "offset": "0x3583c7",
+    "encoding": "ascii",
+    "text": "_tlgDefineProvider_annotation__Tlgg_hFvSDKServiceTriggerProviderProv"
+  },
+  {
+    "offset": "0x358438",
+    "encoding": "ascii",
+    "text": "_TlgDefineProvider:|9|g_hFvSDKServiceTriggerProvider|FvSDKServiceTriggerProvider"
+  },
+  {
+    "offset": "0x35c00c",
+    "encoding": "ascii",
+    "text": "c:\\dvs\\p4\\build\\sw\\devrel\\playpen\\yyao\\vrbench\\vr-fcat\\fvsdk_rel_1_0\\external\\fvsdk\\fvsdk\\fvsdk\\fvsdk\\win32\\release\\fvsdkbenchmarkwrapper.obj"
+  },
+  {
+    "offset": "0x3618e3",
+    "encoding": "ascii",
+    "text": "__ehhandler$??0FvSDKBenchmarkWrapper@FvSDK@@QAE@XZ"
+  },
+  {
+    "offset": "0x361923",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$??0FvSDKBenchmarkWrapper@FvSDK@@QAE@XZ$10"
+  },
+  {
+    "offset": "0x36196b",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$??0FvSDKBenchmarkWrapper@FvSDK@@QAE@XZ$9"
+  },
+  {
+    "offset": "0x3619af",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$??0FvSDKBenchmarkWrapper@FvSDK@@QAE@XZ$8"
+  },
+  {
+    "offset": "0x3619f3",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$??0FvSDKBenchmarkWrapper@FvSDK@@QAE@XZ$7"
+  },
+  {
+    "offset": "0x361a37",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$??0FvSDKBenchmarkWrapper@FvSDK@@QAE@XZ$6"
+  },
+  {
+    "offset": "0x361a7b",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$??0FvSDKBenchmarkWrapper@FvSDK@@QAE@XZ$5"
+  },
+  {
+    "offset": "0x361abf",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$??0FvSDKBenchmarkWrapper@FvSDK@@QAE@XZ$4"
+  },
+  {
+    "offset": "0x361b03",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$??0FvSDKBenchmarkWrapper@FvSDK@@QAE@XZ$3"
+  },
+  {
+    "offset": "0x361b47",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$??0FvSDKBenchmarkWrapper@FvSDK@@QAE@XZ$2"
+  },
+  {
+    "offset": "0x361b8b",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$??0FvSDKBenchmarkWrapper@FvSDK@@QAE@XZ$1"
+  },
+  {
+    "offset": "0x361bcf",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$??0FvSDKBenchmarkWrapper@FvSDK@@QAE@XZ$0"
+  },
+  {
+    "offset": "0x361c2f",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::FvSDKBenchmarkWrapper"
+  },
+  {
+    "offset": "0x363273",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::~FvSDKBenchmarkWrapper"
+  },
+  {
+    "offset": "0x3645d7",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::`scalar deleting destructor'"
+  },
+  {
+    "offset": "0x3654fb",
+    "encoding": "ascii",
+    "text": "__ehhandler$?OnMessage@FvSDKBenchmarkWrapper@FvSDK@@EAEXABV?$shared_ptr@UIBusMessage@MessageBusClient@@@std@@@Z"
+  },
+  {
+    "offset": "0x365577",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?OnMessage@FvSDKBenchmarkWrapper@FvSDK@@EAEXABV?$shared_ptr@UIBusMessage@MessageBusClient@@@std@@@Z$3"
+  },
+  {
+    "offset": "0x3655fb",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?OnMessage@FvSDKBenchmarkWrapper@FvSDK@@EAEXABV?$shared_ptr@UIBusMessage@MessageBusClient@@@std@@@Z$2"
+  },
+  {
+    "offset": "0x36567f",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?OnMessage@FvSDKBenchmarkWrapper@FvSDK@@EAEXABV?$shared_ptr@UIBusMessage@MessageBusClient@@@std@@@Z$1"
+  },
+  {
+    "offset": "0x365703",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?OnMessage@FvSDKBenchmarkWrapper@FvSDK@@EAEXABV?$shared_ptr@UIBusMessage@MessageBusClient@@@std@@@Z$0"
+  },
+  {
+    "offset": "0x3657a3",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::OnMessage"
+  },
+  {
+    "offset": "0x366a7c",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::OnMessage::__l59::<lambda_1>"
+  },
+  {
+    "offset": "0x366b97",
+    "encoding": "ascii",
+    "text": "__ehhandler$?ReadSystemData@FvSDKBenchmarkWrapper@FvSDK@@QAE?BV?$vector@UFV_ProcessorStats@@V?$allocator@UFV_ProcessorStats@@@std@@@std@@XZ"
+  },
+  {
+    "offset": "0x366c2f",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?ReadSystemData@FvSDKBenchmarkWrapper@FvSDK@@QAE?BV?$vector@UFV_ProcessorStats@@V?$allocator@UFV_ProcessorStats@@@std@@@std@@XZ$1"
+  },
+  {
+    "offset": "0x366ccf",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?ReadSystemData@FvSDKBenchmarkWrapper@FvSDK@@QAE?BV?$vector@UFV_ProcessorStats@@V?$allocator@UFV_ProcessorStats@@@std@@@std@@XZ$0"
+  },
+  {
+    "offset": "0x366d8b",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::ReadSystemData"
+  },
+  {
+    "offset": "0x3677cf",
+    "encoding": "ascii",
+    "text": "__ehhandler$?ResetData@FvSDKBenchmarkWrapper@FvSDK@@AAEXXZ"
+  },
+  {
+    "offset": "0x367817",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?ResetData@FvSDKBenchmarkWrapper@FvSDK@@AAEXXZ$0"
+  },
+  {
+    "offset": "0x36787f",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::ResetData"
+  },
+  {
+    "offset": "0x367e83",
+    "encoding": "ascii",
+    "text": "__ehhandler$?StartPerFrameDataPipe@FvSDKBenchmarkWrapper@FvSDK@@QAE_NXZ"
+  },
+  {
+    "offset": "0x367ed7",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?StartPerFrameDataPipe@FvSDKBenchmarkWrapper@FvSDK@@QAE_NXZ$0"
+  },
+  {
+    "offset": "0x367f4f",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::StartPerFrameDataPipe"
+  },
+  {
+    "offset": "0x36832f",
+    "encoding": "ascii",
+    "text": "__ehhandler$?StopBenchmark@FvSDKBenchmarkWrapper@FvSDK@@QAEXXZ"
+  },
+  {
+    "offset": "0x36837b",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?StopBenchmark@FvSDKBenchmarkWrapper@FvSDK@@QAEXXZ$3"
+  },
+  {
+    "offset": "0x3683cb",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?StopBenchmark@FvSDKBenchmarkWrapper@FvSDK@@QAEXXZ$0"
+  },
+  {
+    "offset": "0x368437",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::StopBenchmark"
+  },
+  {
+    "offset": "0x3695d3",
+    "encoding": "ascii",
+    "text": "std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >::_Insert_node"
+  },
+  {
+    "offset": "0x36a11f",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::deinitialize"
+  },
+  {
+    "offset": "0x39c00c",
+    "encoding": "ascii",
+    "text": "c:\\dvs\\p4\\build\\sw\\devrel\\playpen\\yyao\\vrbench\\vr-fcat\\fvsdk_rel_1_0\\external\\fvsdk\\fvsdk\\fvsdk\\fvsdk\\win32\\release\\messagebuswrapper.obj"
+  },
+  {
+    "offset": "0x3c100c",
+    "encoding": "ascii",
+    "text": "c:\\dvs\\p4\\build\\sw\\devrel\\playpen\\yyao\\vrbench\\vr-fcat\\fvsdk_rel_1_0\\external\\fvsdk\\fvsdk\\fvsdk\\fvsdk\\win32\\release\\fvclientctx.obj"
+  },
+  {
+    "offset": "0x3c1347",
+    "encoding": "ascii",
+    "text": "`FvSDK::FvClientCtx::SampleData'::`31'::<lambda_5>::operator()<FV_ProcessorStats>"
+  },
+  {
+    "offset": "0x3c203a",
+    "encoding": "ascii",
+    "text": "_Tlgg_hFvSDKServiceTriggerProviderProv"
+  },
+  {
+    "offset": "0x3c21ff",
+    "encoding": "ascii",
+    "text": "__ehhandler$??$_Copy_nodes@$0A@@?$_Tree@V?$_Tmap_traits@IUBenchmarkSummaryData@FvSDK@@U?$less@I@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@4@$0A@@std@@@std@@IAEPAU?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@1@PAU21@0@Z"
+  },
+  {
+    "offset": "0x3c2313",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$??$_Copy_nodes@$0A@@?$_Tree@V?$_Tmap_traits@IUBenchmarkSummaryData@FvSDK@@U?$less@I@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@4@$0A@@std@@@std@@IAEPAU?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@1@PAU21@0@Z$2"
+  },
+  {
+    "offset": "0x3c244b",
+    "encoding": "ascii",
+    "text": "std::_Tree<std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0> >::_Copy_nodes<0>"
+  },
+  {
+    "offset": "0x3c291b",
+    "encoding": "ascii",
+    "text": "__catch$??$_Copy_nodes@$0A@@?$_Tree@V?$_Tmap_traits@IUBenchmarkSummaryData@FvSDK@@U?$less@I@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@4@$0A@@std@@@std@@IAEPAU?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@1@PAU21@0@Z$0"
+  },
+  {
+    "offset": "0x3d3813",
+    "encoding": "ascii",
+    "text": "std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >::_Erase_tree<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x3d4643",
+    "encoding": "ascii",
+    "text": "std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >::_Erase_tree_and_orphan<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x3e43e7",
+    "encoding": "ascii",
+    "text": "__ehhandler$??0?$map@IUBenchmarkSummaryData@FvSDK@@U?$less@I@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@4@@std@@QAE@ABV01@@Z"
+  },
+  {
+    "offset": "0x3e4487",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$??0?$map@IUBenchmarkSummaryData@FvSDK@@U?$less@I@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@4@@std@@QAE@ABV01@@Z$1"
+  },
+  {
+    "offset": "0x3e454b",
+    "encoding": "ascii",
+    "text": "std::map<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >::map<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >"
+  },
+  {
+    "offset": "0x3e4a83",
+    "encoding": "ascii",
+    "text": "std::_Alloc_construct_ptr<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >::~_Alloc_construct_ptr<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x3e547f",
+    "encoding": "ascii",
+    "text": "std::_Tree<std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0> >::~_Tree<std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0> >"
+  },
+  {
+    "offset": "0x3e5c03",
+    "encoding": "ascii",
+    "text": "std::_Tree_head_scoped_ptr<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> >,std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >::~_Tree_head_scoped_ptr<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> >,std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >"
+  },
+  {
+    "offset": "0x3e63fb",
+    "encoding": "ascii",
+    "text": "std::map<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >::~map<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >"
+  },
+  {
+    "offset": "0x3e9a90",
+    "encoding": "ascii",
+    "text": "_TlgWrite:|1080|g_hFvSDKServiceTriggerProvider|\"StopSession\"=|\"StopSession\"="
+  },
+  {
+    "offset": "0x3ec0af",
+    "encoding": "ascii",
+    "text": "__ehhandler$?ReadBenchmarkData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@PAUSamples_v1@@I@Z"
+  },
+  {
+    "offset": "0x3ec113",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?ReadBenchmarkData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@PAUSamples_v1@@I@Z$1"
+  },
+  {
+    "offset": "0x3ec17b",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?ReadBenchmarkData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@PAUSamples_v1@@I@Z$4"
+  },
+  {
+    "offset": "0x3ec1e3",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?ReadBenchmarkData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@PAUSamples_v1@@I@Z$0"
+  },
+  {
+    "offset": "0x3ec267",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::ReadBenchmarkData"
+  },
+  {
+    "offset": "0x3ecffc",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::ReadBenchmarkData::__l24::<lambda_1>"
+  },
+  {
+    "offset": "0x3ed11f",
+    "encoding": "ascii",
+    "text": "__ehhandler$?ReadBenchmarkPerFrameData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@PAUSamples_v1@@I@Z"
+  },
+  {
+    "offset": "0x3ed18b",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?ReadBenchmarkPerFrameData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@PAUSamples_v1@@I@Z$1"
+  },
+  {
+    "offset": "0x3ed1fb",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?ReadBenchmarkPerFrameData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@PAUSamples_v1@@I@Z$6"
+  },
+  {
+    "offset": "0x3ed26b",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?ReadBenchmarkPerFrameData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@PAUSamples_v1@@I@Z$3"
+  },
+  {
+    "offset": "0x3ed2db",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?ReadBenchmarkPerFrameData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@PAUSamples_v1@@I@Z$0"
+  },
+  {
+    "offset": "0x3ed367",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::ReadBenchmarkPerFrameData"
+  },
+  {
+    "offset": "0x3eea0b",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::ReadData"
+  },
+  {
+    "offset": "0x3eeeab",
+    "encoding": "ascii",
+    "text": "__ehhandler$?SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z"
+  },
+  {
+    "offset": "0x3eef0b",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z$209"
+  },
+  {
+    "offset": "0x3eef73",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z$1"
+  },
+  {
+    "offset": "0x3eefdb",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z$215"
+  },
+  {
+    "offset": "0x3ef043",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z$212"
+  },
+  {
+    "offset": "0x3ef0ab",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z$0"
+  },
+  {
+    "offset": "0x3ef12f",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::SampleData"
+  },
+  {
+    "offset": "0x3f5d44",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::SampleData::__l31::<lambda_4>"
+  },
+  {
+    "offset": "0x3f5e7c",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::SampleData::__l31::<lambda_2>"
+  },
+  {
+    "offset": "0x3f5fc8",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::SampleData::__l31::<lambda_1>"
+  },
+  {
+    "offset": "0x3f602c",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::SampleData::__l31::<lambda_3>"
+  },
+  {
+    "offset": "0x3f6068",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::SampleData::__l31::<lambda_5>"
+  },
+  {
+    "offset": "0x3f61cf",
+    "encoding": "ascii",
+    "text": "__ehhandler$?SampleDataFake@FvClientCtx@FvSDK@@AAE?AW4FvStatus@@XZ"
+  },
+  {
+    "offset": "0x3f621f",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?SampleDataFake@FvClientCtx@FvSDK@@AAE?AW4FvStatus@@XZ$0"
+  },
+  {
+    "offset": "0x3f628f",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::SampleDataFake"
+  },
+  {
+    "offset": "0x3f8d5f",
+    "encoding": "ascii",
+    "text": "__ehhandler$?StartSession@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@XZ"
+  },
+  {
+    "offset": "0x3f8dab",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?StartSession@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@XZ$6"
+  },
+  {
+    "offset": "0x3f8dff",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?StartSession@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@XZ$15"
+  },
+  {
+    "offset": "0x3f8e53",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?StartSession@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@XZ$5"
+  },
+  {
+    "offset": "0x3f8ea7",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?StartSession@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@XZ$11"
+  },
+  {
+    "offset": "0x3f8efb",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?StartSession@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@XZ$10"
+  },
+  {
+    "offset": "0x3f8f4f",
+    "encoding": "ascii",
+    "text": "__unwindfunclet$?StartSession@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@XZ$29"
+  },
+  {
+    "offset": "0x3f8fbf",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::StartSession"
+  },
+  {
+    "offset": "0x3f9907",
+    "encoding": "ascii",
+    "text": "__catch$?StartSession@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@XZ$2"
+  },
+  {
+    "offset": "0x3f9953",
+    "encoding": "ascii",
+    "text": "__catch$?StartSession@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@XZ$0"
+  },
+  {
+    "offset": "0x3f99a0",
+    "encoding": "ascii",
+    "text": "_TlgWrite:|313|g_hFvSDKServiceTriggerProvider|\"StartSession\"=|\"StartSession\"="
+  },
+  {
+    "offset": "0x3f9a08",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::StartSession::__l7::<unnamed-type-_tlgEvent>"
+  },
+  {
+    "offset": "0x3f9be7",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::StopSession"
+  },
+  {
+    "offset": "0x3fae87",
+    "encoding": "ascii",
+    "text": "std::_Tree<std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0> >::_Getal"
+  },
+  {
+    "offset": "0x410099",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK"
+  },
+  {
+    "offset": "0x43d00e",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCertFindCertificateInStore"
+  },
+  {
+    "offset": "0x43d03d",
+    "encoding": "ascii",
+    "text": "#FvSDK::eWindows8Build"
+  },
+  {
+    "offset": "0x43d062",
+    "encoding": "ascii",
+    "text": "FvSDK::hModCrypt32"
+  },
+  {
+    "offset": "0x43d086",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnWinVerifyTrust"
+  },
+  {
+    "offset": "0x43d0ae",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnOpenSCManagerW"
+  },
+  {
+    "offset": "0x43d0d6",
+    "encoding": "ascii",
+    "text": "FvSDK::bTrustAnyLocation"
+  },
+  {
+    "offset": "0x43d0fa",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DDDI_QUERYREGISTRY_STATUS_SUCCESS"
+  },
+  {
+    "offset": "0x43d136",
+    "encoding": "ascii",
+    "text": "FvSDK::hModAdvapi32"
+  },
+  {
+    "offset": "0x43d15a",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnWTHelperProvDataFromStateData"
+  },
+  {
+    "offset": "0x43d192",
+    "encoding": "ascii",
+    "text": "FvSDK::hModWinTrust"
+  },
+  {
+    "offset": "0x43d1b6",
+    "encoding": "ascii",
+    "text": "FvSDK::hModShell32"
+  },
+  {
+    "offset": "0x43d1da",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnOpenServiceW"
+  },
+  {
+    "offset": "0x43d202",
+    "encoding": "ascii",
+    "text": "FvSDK::hModCryptBase"
+  },
+  {
+    "offset": "0x43d226",
+    "encoding": "ascii",
+    "text": "FvSDK::hModDEVOBJ"
+  },
+  {
+    "offset": "0x43d246",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnSHGetFolderPath"
+  },
+  {
+    "offset": "0x43d26e",
+    "encoding": "ascii",
+    "text": "FvSDK::hModWldp"
+  },
+  {
+    "offset": "0x43d28e",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCertFreeCertificateContext"
+  },
+  {
+    "offset": "0x43d2be",
+    "encoding": "ascii",
+    "text": "FvSDK::eWindowsVistaBuild"
+  },
+  {
+    "offset": "0x43d2e6",
+    "encoding": "ascii",
+    "text": "FvSDK::hModDrvstore"
+  },
+  {
+    "offset": "0x43d30a",
+    "encoding": "ascii",
+    "text": "FvSDK::DEVPKEY_Device_DriverInfPath"
+  },
+  {
+    "offset": "0x43d33e",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnWTHelperGetProvSignerFromChain"
+  },
+  {
+    "offset": "0x43d376",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCloseServiceHandle"
+  },
+  {
+    "offset": "0x43d3a2",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCertGetIssuerCertificateFromStore"
+  },
+  {
+    "offset": "0x43d3de",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCertGetNameStringA"
+  },
+  {
+    "offset": "0x43d406",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DDDI_QUERYREGISTRY_DRIVERSTOREPATH"
+  },
+  {
+    "offset": "0x43d446",
+    "encoding": "ascii",
+    "text": "FvSDK::hModCryptNet"
+  },
+  {
+    "offset": "0x43d46a",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnQueryServiceStatus"
+  },
+  {
+    "offset": "0x43d496",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnWTHelperGetProvCertFromChain"
+  },
+  {
+    "offset": "0x43d4c9",
+    "encoding": "ascii",
+    "text": "BFvSDK::eWindows10RS4Build"
+  },
+  {
+    "offset": "0x43d4f2",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCryptMsgGetParam"
+  },
+  {
+    "offset": "0x43d51e",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnRegOpenKeyExW"
+  },
+  {
+    "offset": "0x43d546",
+    "encoding": "ascii",
+    "text": "FvSDK::hModAsn1"
+  },
+  {
+    "offset": "0x43d566",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCryptDecodeObjectEx"
+  },
+  {
+    "offset": "0x43d58e",
+    "encoding": "ascii",
+    "text": "FvSDK::NvidiaDisplayDriver"
+  },
+  {
+    "offset": "0x43d5b5",
+    "encoding": "ascii",
+    "text": "7FvSDK::eWindows10RS1DriverStoreSwitch"
+  },
+  {
+    "offset": "0x43d5ea",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnRegQueryValueExW"
+  },
+  {
+    "offset": "0x43d616",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCryptQueryObject"
+  },
+  {
+    "offset": "0x43d642",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnRegCloseKey"
+  },
+  {
+    "offset": "0x43d662",
+    "encoding": "ascii",
+    "text": "FvSDK::eWindows7Build"
+  },
+  {
+    "offset": "0x43d686",
+    "encoding": "ascii",
+    "text": "FvSDK::osVersionInfo"
+  },
+  {
+    "offset": "0x43d6aa",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCertCloseStore"
+  },
+  {
+    "offset": "0x43d6d2",
+    "encoding": "ascii",
+    "text": "FvSDK::pfnCryptMsgClose"
+  },
+  {
+    "offset": "0x43d6fa",
+    "encoding": "ascii",
+    "text": "FvSDK::hModGDI32"
+  },
+  {
+    "offset": "0x43d818",
+    "encoding": "ascii",
+    "text": "CERT_ENHKEY_USAGE"
+  },
+  {
+    "offset": "0x43d8e8",
+    "encoding": "ascii",
+    "text": "PCERT_ENHKEY_USAGE"
+  },
+  {
+    "offset": "0x43ddd8",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnStringFromGUID2"
+  },
+  {
+    "offset": "0x43ddfc",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnRegOpenKeyExW"
+  },
+  {
+    "offset": "0x43de1c",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnWTHelperGetProvCertFromChain"
+  },
+  {
+    "offset": "0x43de4c",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnD3DKMTQueryAdapterInfo"
+  },
+  {
+    "offset": "0x43de78",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnWTHelperProvDataFromStateData"
+  },
+  {
+    "offset": "0x43dea8",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DDDI_QUERYREGISTRY_FLAGS"
+  },
+  {
+    "offset": "0x43ded8",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnShellExecuteExW"
+  },
+  {
+    "offset": "0x43defc",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnRegEnumValueW"
+  },
+  {
+    "offset": "0x43df1c",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnRegQueryValueExW"
+  },
+  {
+    "offset": "0x43df40",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DDDI_QUERYREGISTRY_INFO"
+  },
+  {
+    "offset": "0x43df6c",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnOpenServiceW"
+  },
+  {
+    "offset": "0x43df8c",
+    "encoding": "ascii",
+    "text": "FvSDK::NVWINTRUST_DATA"
+  },
+  {
+    "offset": "0x43dfac",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DKMT_QUERYADAPTERINFO"
+  },
+  {
+    "offset": "0x43dfd8",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DDDI_QUERYREGISTRY_TYPE"
+  },
+  {
+    "offset": "0x446004",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCreateProcessAsUserW"
+  },
+  {
+    "offset": "0x44602c",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnShellExecuteExA"
+  },
+  {
+    "offset": "0x446050",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnOpenSCManagerW"
+  },
+  {
+    "offset": "0x446074",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCertFreeCertificateContext"
+  },
+  {
+    "offset": "0x4460a4",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCertGetNameStringA"
+  },
+  {
+    "offset": "0x4460cc",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnSetupDiGetDeviceRegistryPropertyW"
+  },
+  {
+    "offset": "0x446100",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DKMT_ENUMADAPTERS2"
+  },
+  {
+    "offset": "0x446128",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCryptMsgClose"
+  },
+  {
+    "offset": "0x446148",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCertGetIssuerCertificateFromStore"
+  },
+  {
+    "offset": "0x44617c",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCertCloseStore"
+  },
+  {
+    "offset": "0x4461a0",
+    "encoding": "ascii",
+    "text": "FvSDK::LPSHELLEXECUTEINFOA"
+  },
+  {
+    "offset": "0x4461c4",
+    "encoding": "ascii",
+    "text": "FvSDK::NVWINTRUST_SIGNATURE_SETTINGS"
+  },
+  {
+    "offset": "0x4461f4",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCryptMsgGetParam"
+  },
+  {
+    "offset": "0x446218",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCryptDecodeObjectEx"
+  },
+  {
+    "offset": "0x446240",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnSetupDiGetDeviceInterfaceDetailW"
+  },
+  {
+    "offset": "0x446274",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DKMT_ENUMADAPTERS_FILTER"
+  },
+  {
+    "offset": "0x4462a4",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCertFindCertificateInStore"
+  },
+  {
+    "offset": "0x4462d4",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnIsWow64Process"
+  },
+  {
+    "offset": "0x4462f8",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnQueryServiceConfigW"
+  },
+  {
+    "offset": "0x446320",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCryptQueryObject"
+  },
+  {
+    "offset": "0x446344",
+    "encoding": "ascii",
+    "text": "FvSDK::SHELLEXECUTEINFOW"
+  },
+  {
+    "offset": "0x446368",
+    "encoding": "ascii",
+    "text": "FvSDK::NVPCERT_STRONG_SIGN_SERIALIZED_INFO"
+  },
+  {
+    "offset": "0x44639c",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DKMT_QUERY_DEVICE_IDS"
+  },
+  {
+    "offset": "0x4463c8",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnSetupDiGetDevicePropertyW"
+  },
+  {
+    "offset": "0x4463f4",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnD3DKMTEnumAdapters3"
+  },
+  {
+    "offset": "0x44641c",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCloseServiceHandle"
+  },
+  {
+    "offset": "0x446444",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnSetupDiDestroyDeviceInfoList"
+  },
+  {
+    "offset": "0x446474",
+    "encoding": "ascii",
+    "text": "FvSDK::SHELLEXECUTEINFOA"
+  },
+  {
+    "offset": "0x446498",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DKMT_ADAPTERINFO"
+  },
+  {
+    "offset": "0x4464c0",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DKMT_ENUMADAPTERS3"
+  },
+  {
+    "offset": "0x4464e8",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnShellExecuteA"
+  },
+  {
+    "offset": "0x446508",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnD3DKMTEnumAdapters2"
+  },
+  {
+    "offset": "0x446530",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnCreateProcessAsUserA"
+  },
+  {
+    "offset": "0x446558",
+    "encoding": "ascii",
+    "text": "FvSDK::LPSHELLEXECUTEINFOW"
+  },
+  {
+    "offset": "0x44657c",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnWinVerifyTrust"
+  },
+  {
+    "offset": "0x4465a0",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnSetupDiGetClassDevsW"
+  },
+  {
+    "offset": "0x4465c8",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnSetupGetInfDriverStoreLocationW"
+  },
+  {
+    "offset": "0x4465fc",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnSetupDiEnumDeviceInfo"
+  },
+  {
+    "offset": "0x446624",
+    "encoding": "ascii",
+    "text": "FvSDK::NVPCERT_STRONG_SIGN_PARA"
+  },
+  {
+    "offset": "0x44664c",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnSHGetFolderPath_W"
+  },
+  {
+    "offset": "0x446670",
+    "encoding": "ascii",
+    "text": "FvSDK::NV_D3DDDI_QUERYREGISTRY_STATUS"
+  },
+  {
+    "offset": "0x4466a0",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnShellExecuteW"
+  },
+  {
+    "offset": "0x4466c0",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnWTHelperGetProvSignerFromChain"
+  },
+  {
+    "offset": "0x4466f4",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnQueryServiceStatus"
+  },
+  {
+    "offset": "0x44671c",
+    "encoding": "ascii",
+    "text": "FvSDK::PfnRegCloseKey"
+  },
+  {
+    "offset": "0x446b4a",
+    "encoding": "ascii",
+    "text": "FvSDK::CreateSHFolderFilePath"
+  },
+  {
+    "offset": "0x446b76",
+    "encoding": "ascii",
+    "text": "FvSDK::CreateSystemFilePath"
+  },
+  {
+    "offset": "0x446ba2",
+    "encoding": "ascii",
+    "text": "FvSDK::IsNvidiaSubordinatePublicKey"
+  },
+  {
+    "offset": "0x446bd6",
+    "encoding": "ascii",
+    "text": "FvSDK::IsTrustedLocation"
+  },
+  {
+    "offset": "0x446bfe",
+    "encoding": "ascii",
+    "text": "FvSDK::IsWindowsBuildOrGreater"
+  },
+  {
+    "offset": "0x446c2e",
+    "encoding": "ascii",
+    "text": "FvSDK::LoadSystemLibraryInternal"
+  },
+  {
+    "offset": "0x446c5e",
+    "encoding": "ascii",
+    "text": "FvSDK::QueryRegistryValueFromKey"
+  },
+  {
+    "offset": "0x446cca",
+    "encoding": "ascii",
+    "text": "FvSDK::VerifySingleSignature"
+  },
+  {
+    "offset": "0x446cf6",
+    "encoding": "ascii",
+    "text": "FvSDK::_preloadSystemDlls"
+  },
+  {
+    "offset": "0x446d1e",
+    "encoding": "ascii",
+    "text": "FvSDK::nvLoadSignedLibraryExW"
+  },
+  {
+    "offset": "0x446d4a",
+    "encoding": "ascii",
+    "text": "FvSDK::nvLoadWVTCryptModule"
+  },
+  {
+    "offset": "0x446d76",
+    "encoding": "ascii",
+    "text": "FvSDK::nvVerifyFileSignatureW"
+  },
+  {
+    "offset": "0x44711a",
+    "encoding": "ascii",
+    "text": "g_pFVSDKGlobalData"
+  },
+  {
+    "offset": "0x44773c",
+    "encoding": "ascii",
+    "text": "?A0x384e9810::FVSDKGlobalData"
+  },
+  {
+    "offset": "0x447dce",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::FvClientCtx"
+  },
+  {
+    "offset": "0x448bda",
+    "encoding": "ascii",
+    "text": "std::unique_ptr<FvSDK::FvClientCtx,std::default_delete<FvSDK::FvClientCtx> >::~unique_ptr<FvSDK::FvClientCtx,std::default_delete<FvSDK::FvClientCtx> >"
+  },
+  {
+    "offset": "0x449b32",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSampleInternal::~FvSampleInternal"
+  },
+  {
+    "offset": "0x449d8a",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::`scalar deleting destructor'"
+  },
+  {
+    "offset": "0x44bee6",
+    "encoding": "ascii",
+    "text": "__scrt_debugger_hook_flag"
+  },
+  {
+    "offset": "0x44c18e",
+    "encoding": "ascii",
+    "text": "_crt_debugger_hook"
+  },
+  {
+    "offset": "0x467522",
+    "encoding": "ascii",
+    "text": "_Tlgg_hFvSDKServiceTriggerProviderProv"
+  },
+  {
+    "offset": "0x4677aa",
+    "encoding": "ascii",
+    "text": "_Tlgg_hFvSDKServiceTriggerProviderProv_Meta"
+  },
+  {
+    "offset": "0x46781a",
+    "encoding": "ascii",
+    "text": "g_hFvSDKServiceTriggerProvider"
+  },
+  {
+    "offset": "0x467c7a",
+    "encoding": "ascii",
+    "text": "_tlgDefineProvider_annotation__Tlgg_hFvSDKServiceTriggerProviderProv"
+  },
+  {
+    "offset": "0x468eaa",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::FvSDKBenchmarkWrapper"
+  },
+  {
+    "offset": "0x4694de",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::~FvSDKBenchmarkWrapper"
+  },
+  {
+    "offset": "0x4696ee",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::`scalar deleting destructor'"
+  },
+  {
+    "offset": "0x46978a",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::OnMessage"
+  },
+  {
+    "offset": "0x4697c2",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::ReadSystemData"
+  },
+  {
+    "offset": "0x4697fe",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::ResetData"
+  },
+  {
+    "offset": "0x469836",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::StartPerFrameDataPipe"
+  },
+  {
+    "offset": "0x46987a",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::StopBenchmark"
+  },
+  {
+    "offset": "0x469912",
+    "encoding": "ascii",
+    "text": "std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >::_Insert_node"
+  },
+  {
+    "offset": "0x469b0a",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::deinitialize"
+  },
+  {
+    "offset": "0x469b5e",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper::`vftable'"
+  },
+  {
+    "offset": "0x46e976",
+    "encoding": "ascii",
+    "text": "FVSDK_BENCHMARKFLAGS_PER_FRAME_DATA"
+  },
+  {
+    "offset": "0x46ec62",
+    "encoding": "ascii",
+    "text": "FVSDK_BENCHMARKFLAGS_NONE"
+  },
+  {
+    "offset": "0x46ecda",
+    "encoding": "ascii",
+    "text": "FvSDK::MAX_SERVICE_PROGRESS_RETRIES"
+  },
+  {
+    "offset": "0x46ed0a",
+    "encoding": "ascii",
+    "text": "FvSDK::SERVICE_PROGRESS_POLL_INTERVAL"
+  },
+  {
+    "offset": "0x46ef9e",
+    "encoding": "ascii",
+    "text": "std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >::_Minimum_asan_allocation_alignment"
+  },
+  {
+    "offset": "0x46f972",
+    "encoding": "ascii",
+    "text": "std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0>::_Multi"
+  },
+  {
+    "offset": "0x4708a2",
+    "encoding": "ascii",
+    "text": "std::_Tree<std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0> >::_Is_set"
+  },
+  {
+    "offset": "0x472776",
+    "encoding": "ascii",
+    "text": "std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> >::_Minimum_asan_allocation_alignment"
+  },
+  {
+    "offset": "0x473042",
+    "encoding": "ascii",
+    "text": "std::_Tree<std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0> >::_Multi"
+  },
+  {
+    "offset": "0x474c5a",
+    "encoding": "ascii",
+    "text": "FVSDK_SAMPLEDATA_DONOTWAIT"
+  },
+  {
+    "offset": "0x4751ca",
+    "encoding": "ascii",
+    "text": "`FvSDK::FvClientCtx::SampleData'::`31'::<lambda_5>::operator()<FV_ProcessorStats>"
+  },
+  {
+    "offset": "0x475322",
+    "encoding": "ascii",
+    "text": "std::_Tree<std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0> >::_Copy_nodes<0>"
+  },
+  {
+    "offset": "0x4760da",
+    "encoding": "ascii",
+    "text": "std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >::_Erase_tree<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x476492",
+    "encoding": "ascii",
+    "text": "std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >::_Erase_tree_and_orphan<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x477c3a",
+    "encoding": "ascii",
+    "text": "std::map<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >::map<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >"
+  },
+  {
+    "offset": "0x477d76",
+    "encoding": "ascii",
+    "text": "std::_Alloc_construct_ptr<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >::~_Alloc_construct_ptr<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x47825e",
+    "encoding": "ascii",
+    "text": "std::_Tree<std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0> >::~_Tree<std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0> >"
+  },
+  {
+    "offset": "0x478542",
+    "encoding": "ascii",
+    "text": "std::_Tree_head_scoped_ptr<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> >,std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >::~_Tree_head_scoped_ptr<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> >,std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >"
+  },
+  {
+    "offset": "0x4787ba",
+    "encoding": "ascii",
+    "text": "std::map<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >::~map<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >"
+  },
+  {
+    "offset": "0x479422",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::ReadBenchmarkData"
+  },
+  {
+    "offset": "0x479456",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::ReadBenchmarkPerFrameData"
+  },
+  {
+    "offset": "0x4794b6",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::ReadData"
+  },
+  {
+    "offset": "0x4794e2",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::SampleData"
+  },
+  {
+    "offset": "0x479512",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::SampleDataFake"
+  },
+  {
+    "offset": "0x479546",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::StartSession"
+  },
+  {
+    "offset": "0x479586",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx::StopSession"
+  },
+  {
+    "offset": "0x47978a",
+    "encoding": "ascii",
+    "text": "std::_Tree<std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0> >::_Getal"
+  },
+  {
+    "offset": "0x480602",
+    "encoding": "ascii",
+    "text": "?ReadBenchmarkPerFrameData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@PAUSamples_v1@@I@Z"
+  },
+  {
+    "offset": "0x48096e",
+    "encoding": "ascii",
+    "text": "??_R0?AVFvSDKBenchmarkWrapper@FvSDK@@@8"
+  },
+  {
+    "offset": "0x480bde",
+    "encoding": "ascii",
+    "text": "?SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z"
+  },
+  {
+    "offset": "0x481c4e",
+    "encoding": "ascii",
+    "text": "?ResetData@FvSDKBenchmarkWrapper@FvSDK@@AAEXXZ"
+  },
+  {
+    "offset": "0x4828b6",
+    "encoding": "ascii",
+    "text": "?StopSession@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@XZ"
+  },
+  {
+    "offset": "0x48561e",
+    "encoding": "ascii",
+    "text": "??_C@_0BB@GCBPNCBB@NvMessageBus?4dll@"
+  },
+  {
+    "offset": "0x4876fe",
+    "encoding": "ascii",
+    "text": "??$_Erase_tree_and_orphan@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@QAEXAAV?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@1@PAU?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@1@@Z"
+  },
+  {
+    "offset": "0x488936",
+    "encoding": "ascii",
+    "text": "??1FvSDKBenchmarkWrapper@FvSDK@@UAE@XZ"
+  },
+  {
+    "offset": "0x488a9a",
+    "encoding": "ascii",
+    "text": "??_R2FvSDKBenchmarkWrapper@FvSDK@@8"
+  },
+  {
+    "offset": "0x48c19a",
+    "encoding": "ascii",
+    "text": "?nvLoadWVTCryptModule@FvSDK@@YAHXZ"
+  },
+  {
+    "offset": "0x48c2b6",
+    "encoding": "ascii",
+    "text": "??1?$_Alloc_construct_ptr@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@@std@@QAE@XZ"
+  },
+  {
+    "offset": "0x48cde6",
+    "encoding": "ascii",
+    "text": "??1?$map@IUBenchmarkSummaryData@FvSDK@@U?$less@I@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@4@@std@@QAE@XZ"
+  },
+  {
+    "offset": "0x48d372",
+    "encoding": "ascii",
+    "text": "??_GFvSDKBenchmarkWrapper@FvSDK@@UAEPAXI@Z"
+  },
+  {
+    "offset": "0x48d79a",
+    "encoding": "ascii",
+    "text": "??$_Copy_nodes@$0A@@?$_Tree@V?$_Tmap_traits@IUBenchmarkSummaryData@FvSDK@@U?$less@I@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@4@$0A@@std@@@std@@IAEPAU?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@1@PAU21@0@Z"
+  },
+  {
+    "offset": "0x48e366",
+    "encoding": "ascii",
+    "text": "_g_hFvSDKServiceTriggerProvider"
+  },
+  {
+    "offset": "0x48fbb6",
+    "encoding": "ascii",
+    "text": "?nvLoadSignedLibraryExW@FvSDK@@YAPAUHINSTANCE__@@PB_WKH@Z"
+  },
+  {
+    "offset": "0x490042",
+    "encoding": "ascii",
+    "text": "__crt_debugger_hook"
+  },
+  {
+    "offset": "0x4905a6",
+    "encoding": "ascii",
+    "text": "??_C@_0BJ@DIMCNJJJ@Global?2FVSDKSharedMemory@"
+  },
+  {
+    "offset": "0x49095e",
+    "encoding": "ascii",
+    "text": "?VerifySingleSignature@FvSDK@@YAHPAU_NVWINTRUST_DATA@1@PAX1PAH@Z"
+  },
+  {
+    "offset": "0x490a1e",
+    "encoding": "ascii",
+    "text": "?nvVerifyFileSignatureW@FvSDK@@YAHPB_WPAH@Z"
+  },
+  {
+    "offset": "0x490bda",
+    "encoding": "ascii",
+    "text": "??_R3FvSDKBenchmarkWrapper@FvSDK@@8"
+  },
+  {
+    "offset": "0x490f82",
+    "encoding": "ascii",
+    "text": "??0FvSDKBenchmarkWrapper@FvSDK@@QAE@XZ"
+  },
+  {
+    "offset": "0x49132e",
+    "encoding": "ascii",
+    "text": "??_7FvSDKBenchmarkWrapper@FvSDK@@6B@"
+  },
+  {
+    "offset": "0x491c9e",
+    "encoding": "ascii",
+    "text": "?deinitialize@FvSDKBenchmarkWrapper@FvSDK@@UAEXXZ"
+  },
+  {
+    "offset": "0x4927d6",
+    "encoding": "ascii",
+    "text": "__tlgDefineProvider_annotation__Tlgg_hFvSDKServiceTriggerProviderProv"
+  },
+  {
+    "offset": "0x493522",
+    "encoding": "ascii",
+    "text": "??1FvSampleInternal@FvSDK@@QAE@XZ"
+  },
+  {
+    "offset": "0x49359a",
+    "encoding": "ascii",
+    "text": "??_R1A@?0A@EA@FvSDKBenchmarkWrapper@FvSDK@@8"
+  },
+  {
+    "offset": "0x49470a",
+    "encoding": "ascii",
+    "text": "??_C@_05FMAILBNM@FvSDK@"
+  },
+  {
+    "offset": "0x494942",
+    "encoding": "ascii",
+    "text": "?ReadBenchmarkData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@PAUSamples_v1@@I@Z"
+  },
+  {
+    "offset": "0x497a46",
+    "encoding": "ascii",
+    "text": "??_R4FvSDKBenchmarkWrapper@FvSDK@@6B@"
+  },
+  {
+    "offset": "0x49989e",
+    "encoding": "ascii",
+    "text": "___scrt_debugger_hook_flag"
+  },
+  {
+    "offset": "0x4998ea",
+    "encoding": "ascii",
+    "text": "??$_Erase_tree@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@QAEXAAV?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@1@PAU?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@1@@Z"
+  },
+  {
+    "offset": "0x49a7de",
+    "encoding": "ascii",
+    "text": "?OnMessage@FvSDKBenchmarkWrapper@FvSDK@@EAEXABV?$shared_ptr@UIBusMessage@MessageBusClient@@@std@@@Z"
+  },
+  {
+    "offset": "0x49bf1a",
+    "encoding": "ascii",
+    "text": "??_EFvSDKBenchmarkWrapper@FvSDK@@UAEPAXI@Z"
+  },
+  {
+    "offset": "0x49c8c2",
+    "encoding": "ascii",
+    "text": "?StartSession@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@XZ"
+  },
+  {
+    "offset": "0x49cff2",
+    "encoding": "ascii",
+    "text": "?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@std@@QAEPAU?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@2@U?$_Tree_id@PAU?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@2@QAU32@@Z"
+  },
+  {
+    "offset": "0x49d846",
+    "encoding": "ascii",
+    "text": "??0FvClientCtx@FvSDK@@QAE@_N@Z"
+  },
+  {
+    "offset": "0x49d876",
+    "encoding": "ascii",
+    "text": "??_GFvClientCtx@FvSDK@@QAEPAXI@Z"
+  },
+  {
+    "offset": "0x49e2f2",
+    "encoding": "ascii",
+    "text": "??1?$_Tree@V?$_Tmap_traits@IUBenchmarkSummaryData@FvSDK@@U?$less@I@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@4@$0A@@std@@@std@@QAE@XZ"
+  },
+  {
+    "offset": "0x49eaa6",
+    "encoding": "ascii",
+    "text": "?_Getal@?$_Tree@V?$_Tmap_traits@IUBenchmarkSummaryData@FvSDK@@U?$less@I@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@4@$0A@@std@@@std@@IAEAAV?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@2@XZ"
+  },
+  {
+    "offset": "0x49f876",
+    "encoding": "ascii",
+    "text": "?SampleDataFake@FvClientCtx@FvSDK@@AAE?AW4FvStatus@@XZ"
+  },
+  {
+    "offset": "0x4a2096",
+    "encoding": "ascii",
+    "text": "??1?$_Tree_head_scoped_ptr@V?$allocator@U?$_Tree_node@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@PAX@std@@@std@@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@std@@@2@@std@@QAE@XZ"
+  },
+  {
+    "offset": "0x4a2e4a",
+    "encoding": "ascii",
+    "text": "?StopBenchmark@FvSDKBenchmarkWrapper@FvSDK@@QAEXXZ"
+  },
+  {
+    "offset": "0x4a37ca",
+    "encoding": "ascii",
+    "text": "?StartPerFrameDataPipe@FvSDKBenchmarkWrapper@FvSDK@@QAE_NXZ"
+  },
+  {
+    "offset": "0x4a4032",
+    "encoding": "ascii",
+    "text": "?ReadData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@PAUSamples_v1@@I@Z"
+  },
+  {
+    "offset": "0x4a52be",
+    "encoding": "ascii",
+    "text": "??0?$map@IUBenchmarkSummaryData@FvSDK@@U?$less@I@std@@V?$allocator@U?$pair@$$CBIUBenchmarkSummaryData@FvSDK@@@std@@@4@@std@@QAE@ABV01@@Z"
+  },
+  {
+    "offset": "0x4a793a",
+    "encoding": "ascii",
+    "text": "?ReadSystemData@FvSDKBenchmarkWrapper@FvSDK@@QAE?BV?$vector@UFV_ProcessorStats@@V?$allocator@UFV_ProcessorStats@@@std@@@std@@XZ"
+  },
+  {
+    "offset": "0x4a8106",
+    "encoding": "ascii",
+    "text": "??1?$unique_ptr@VFvClientCtx@FvSDK@@U?$default_delete@VFvClientCtx@FvSDK@@@std@@@std@@QAE@XZ"
+  },
+  {
+    "offset": "0x4a90cc",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Win32\\Release\\MessageBusWrapperImpl.obj"
+  },
+  {
+    "offset": "0x4a915a",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Win32\\Release\\MessageBusWrapperImpl.obj"
+  },
+  {
+    "offset": "0x4a9228",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Win32\\Release\\MessageBusWrapper.obj"
+  },
+  {
+    "offset": "0x4a92b2",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Win32\\Release\\MessageBusWrapper.obj"
+  },
+  {
+    "offset": "0x4a937c",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Win32\\Release\\nvSecureLoadLibrary.obj"
+  },
+  {
+    "offset": "0x4a9408",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Win32\\Release\\nvSecureLoadLibrary.obj"
+  },
+  {
+    "offset": "0x4a94d4",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Win32\\Release\\dllmain.obj"
+  },
+  {
+    "offset": "0x4a9554",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Win32\\Release\\dllmain.obj"
+  },
+  {
+    "offset": "0x4a9614",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Win32\\Release\\FvClientCtx.obj"
+  },
+  {
+    "offset": "0x4a9698",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Win32\\Release\\FvClientCtx.obj"
+  },
+  {
+    "offset": "0x4a975c",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Win32\\Release\\FvSDK.obj"
+  },
+  {
+    "offset": "0x4a97da",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Win32\\Release\\FvSDK.obj"
+  },
+  {
+    "offset": "0x4a9898",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Win32\\Release\\FvSDKBenchmarkWrapper.obj"
+  },
+  {
+    "offset": "0x4a9926",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Win32\\Release\\FvSDKBenchmarkWrapper.obj"
+  },
+  {
+    "offset": "0x4a9a58",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Release\\FvSDK_x86.exp"
+  },
+  {
+    "offset": "0x4a9ad4",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Release\\FvSDK_x86.exp"
+  },
+  {
+    "offset": "0x4c65a1",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDKStatic\\nvSecureLoadLibrary.cpp"
+  },
+  {
+    "offset": "0x4c66d5",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\tools\\ddk\\wddmv2\\official\\22621\\Include\\10.0.22621.0\\um\\winioctl.h"
+  },
+  {
+    "offset": "0x4c6f59",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDKStatic\\nvSecureLoadLibrary.h"
+  },
+  {
+    "offset": "0x4c991e",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Common\\SharedMem.h"
+  },
+  {
+    "offset": "0x4c9d3e",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\FvSDK.cpp"
+  },
+  {
+    "offset": "0x4ca6a5",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Common\\FvConfig.h"
+  },
+  {
+    "offset": "0x4ca6fc",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\FvSDKBenchmarkWrapper.h"
+  },
+  {
+    "offset": "0x4ca77a",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\framework.h"
+  },
+  {
+    "offset": "0x4ca846",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Common\\Util\\MessageBusWrapper.h"
+  },
+  {
+    "offset": "0x4caa42",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Common\\Util\\FVLogger.h"
+  },
+  {
+    "offset": "0x4caf75",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Common\\Util\\ScopedHandle.h"
+  },
+  {
+    "offset": "0x4cb98f",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\FvSharedMemory.h"
+  },
+  {
+    "offset": "0x4cba51",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\FvClientCtx.h"
+  },
+  {
+    "offset": "0x4cbb91",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDKStatic\\Private\\FvSDK.h"
+  },
+  {
+    "offset": "0x4cbc0d",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Common\\Util\\SecurityAttributesWrapper.h"
+  },
+  {
+    "offset": "0x4cbf7c",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\predefined C++ types (compiler internal)"
+  },
+  {
+    "offset": "0x4cc1fe",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\FvClientCtx.cpp"
+  },
+  {
+    "offset": "0x4cc274",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\FvSDKBenchmarkWrapper.cpp"
+  },
+  {
+    "offset": "0x4cfd18",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\dllmain.cpp"
+  },
+  {
+    "offset": "0x4cfd8a",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Common\\Util\\MessageBusWrapper.cpp"
+  },
+  {
+    "offset": "0x4d02a5",
+    "encoding": "ascii",
+    "text": "D:\\a\\_work\\1\\s\\src\\ExternalAPIs\\WindowsSDKInc\\c\\Include\\10.0.22000.0\\um\\winioctl.h"
+  },
+  {
+    "offset": "0x4d0dfb",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\Release\\FvSDK_x86.pdb"
+  },
+  {
+    "offset": "0x4ff8e4",
+    "encoding": "ascii",
+    "text": "FvSDK::KnownWindowsBuildNumbers"
+  },
+  {
+    "offset": "0x4ffa01",
+    "encoding": "ascii",
+    "text": "FvSDK::_NVWINTRUST_DATA"
+  },
+  {
+    "offset": "0x4ffa43",
+    "encoding": "ascii",
+    "text": "FvSDK::_NVWINTRUST_SIGNATURE_SETTINGS_"
+  },
+  {
+    "offset": "0x4ffa6a",
+    "encoding": "ascii",
+    "text": "FvSDK::NvidiaDriverType"
+  },
+  {
+    "offset": "0x4ffa82",
+    "encoding": "ascii",
+    "text": "HKEY__"
+  },
+  {
+    "offset": "0x4ffa89",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_ADAPTERINFO"
+  },
+  {
+    "offset": "0x4ffaa7",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DDDI_QUERYREGISTRY_TYPE"
+  },
+  {
+    "offset": "0x4ffacc",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DDDI_QUERYREGISTRY_STATUS"
+  },
+  {
+    "offset": "0x4ffaf3",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DDDI_QUERYREGISTRY_INFO"
+  },
+  {
+    "offset": "0x4ffb18",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_ENUMADAPTERS_FILTER"
+  },
+  {
+    "offset": "0x4ffb3e",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_ENUMADAPTERS3"
+  },
+  {
+    "offset": "0x4ffb5e",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_ENUMADAPTERS2"
+  },
+  {
+    "offset": "0x4ffb7e",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_QUERYADAPTERINFO"
+  },
+  {
+    "offset": "0x4ffba1",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_QUERY_DEVICE_IDS::_NV_D3DKMT_DEVICE_IDS"
+  },
+  {
+    "offset": "0x4ffbdb",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DKMT_QUERY_DEVICE_IDS"
+  },
+  {
+    "offset": "0x4ffd4f",
+    "encoding": "ascii",
+    "text": "FvSDK::_NVCERT_STRONG_SIGN_PARA"
+  },
+  {
+    "offset": "0x4ffd6f",
+    "encoding": "ascii",
+    "text": "FvSDK::_NV_D3DDDI_QUERYREGISTRY_FLAGS"
+  },
+  {
+    "offset": "0x4ffd95",
+    "encoding": "ascii",
+    "text": "FvSDK::_NVCERT_STRONG_SIGN_SERIALIZED_INFO"
+  },
+  {
+    "offset": "0x500aef",
+    "encoding": "ascii",
+    "text": "<unnamed-type-_Tlgg_hFvSDKServiceTriggerProviderProv_Meta>"
+  },
+  {
+    "offset": "0x500fea",
+    "encoding": "ascii",
+    "text": "FvSDK::FvClientCtx"
+  },
+  {
+    "offset": "0x500ffd",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSampleInternal"
+  },
+  {
+    "offset": "0x5026a4",
+    "encoding": "ascii",
+    "text": "FvSDK::FvSDKBenchmarkWrapper"
+  },
+  {
+    "offset": "0x50303b",
+    "encoding": "ascii",
+    "text": ".?AW4<unnamed-enum-_tlgLevelConst>@?6??StartSession@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@XZ@`1f2c5597"
+  },
+  {
+    "offset": "0x5030a0",
+    "encoding": "ascii",
+    "text": ".?AU<unnamed-type-_tlgEvent>@?6??StartSession@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@XZ@`1f2c5597"
+  },
+  {
+    "offset": "0x5030ff",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_1>@?BP@??SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z@`1f2c5597"
+  },
+  {
+    "offset": "0x503166",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_2>@?BP@??SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z@`1f2c5597"
+  },
+  {
+    "offset": "0x5031cd",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_3>@?BP@??SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z@`1f2c5597"
+  },
+  {
+    "offset": "0x503504",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_5>@?BP@??SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z@`1f2c5597"
+  },
+  {
+    "offset": "0x50356b",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_4>@?BP@??SampleData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@W4_FvSampleDataFlags@@@Z@`1f2c5597"
+  },
+  {
+    "offset": "0x503a22",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_1>@?BI@??ReadBenchmarkData@FvClientCtx@FvSDK@@QAE?AW4FvStatus@@PAUSamples_v1@@I@Z@`1f2c5597"
+  },
+  {
+    "offset": "0x503a8a",
+    "encoding": "ascii",
+    "text": "std::_Tree<std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0> >::_Redbl"
+  },
+  {
+    "offset": "0x503b41",
+    "encoding": "ascii",
+    "text": "std::_Tree<std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0> >::_Strategy"
+  },
+  {
+    "offset": "0x503bfb",
+    "encoding": "ascii",
+    "text": "std::_Tree<std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0> >"
+  },
+  {
+    "offset": "0x503caa",
+    "encoding": "ascii",
+    "text": "std::map<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >"
+  },
+  {
+    "offset": "0x503d42",
+    "encoding": "ascii",
+    "text": "std::_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >,std::_Iterator_base0>"
+  },
+  {
+    "offset": "0x503de2",
+    "encoding": "ascii",
+    "text": "std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >"
+  },
+  {
+    "offset": "0x503e64",
+    "encoding": "ascii",
+    "text": "std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >"
+  },
+  {
+    "offset": "0x503ee0",
+    "encoding": "ascii",
+    "text": "std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>"
+  },
+  {
+    "offset": "0x503f1b",
+    "encoding": "ascii",
+    "text": "FvSDK::BenchmarkSummaryData"
+  },
+  {
+    "offset": "0x506fdf",
+    "encoding": "ascii",
+    "text": "std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> >"
+  },
+  {
+    "offset": "0x507043",
+    "encoding": "ascii",
+    "text": "std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >::_Redbl"
+  },
+  {
+    "offset": "0x5070b1",
+    "encoding": "ascii",
+    "text": "std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >"
+  },
+  {
+    "offset": "0x507117",
+    "encoding": "ascii",
+    "text": "std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *>::_Redbl"
+  },
+  {
+    "offset": "0x507172",
+    "encoding": "ascii",
+    "text": "std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *>"
+  },
+  {
+    "offset": "0x508078",
+    "encoding": "ascii",
+    "text": "std::_Compressed_pair<std::less<unsigned int>,std::_Compressed_pair<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> >,std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >,1>,1>"
+  },
+  {
+    "offset": "0x50818c",
+    "encoding": "ascii",
+    "text": "std::_Compressed_pair<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> >,std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >,1>"
+  },
+  {
+    "offset": "0x5090e0",
+    "encoding": "ascii",
+    "text": "std::_Tree_head_scoped_ptr<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> >,std::_Tree_val<std::_Tree_simple_types<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > > >"
+  },
+  {
+    "offset": "0x50a276",
+    "encoding": "ascii",
+    "text": "std::_Alloc_construct_ptr<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x50a312",
+    "encoding": "ascii",
+    "text": "std::pointer_traits<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> *>"
+  },
+  {
+    "offset": "0x50a3e7",
+    "encoding": "ascii",
+    "text": "std::_Default_allocator_traits<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x50b460",
+    "encoding": "ascii",
+    "text": "std::_Default_allocator_traits<std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >"
+  },
+  {
+    "offset": "0x50b4cd",
+    "encoding": "ascii",
+    "text": "std::allocator_traits<std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> > >"
+  },
+  {
+    "offset": "0x50b7d9",
+    "encoding": "ascii",
+    "text": "std::initializer_list<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >"
+  },
+  {
+    "offset": "0x50c1d8",
+    "encoding": "ascii",
+    "text": "std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >"
+  },
+  {
+    "offset": "0x50c7d4",
+    "encoding": "ascii",
+    "text": "std::allocator_traits<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x50c98e",
+    "encoding": "ascii",
+    "text": "std::_Tmap_traits<unsigned int,FvSDK::BenchmarkSummaryData,std::less<unsigned int>,std::allocator<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData> >,0>"
+  },
+  {
+    "offset": "0x50ce63",
+    "encoding": "ascii",
+    "text": "std::unique_ptr<FvSDK::FvClientCtx,std::default_delete<FvSDK::FvClientCtx> >"
+  },
+  {
+    "offset": "0x50cfdb",
+    "encoding": "ascii",
+    "text": "`anonymous-namespace'::FVSDKGlobalData"
+  },
+  {
+    "offset": "0x50d20a",
+    "encoding": "ascii",
+    "text": "std::default_delete<FvSDK::FvClientCtx>"
+  },
+  {
+    "offset": "0x50d232",
+    "encoding": "ascii",
+    "text": "std::_Compressed_pair<std::default_delete<FvSDK::FvClientCtx>,FvSDK::FvClientCtx *,1>"
+  },
+  {
+    "offset": "0x50e8cd",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_1>@?DL@??OnMessage@FvSDKBenchmarkWrapper@FvSDK@@EAEXABV?$shared_ptr@UIBusMessage@MessageBusClient@@@std@@@Z@`6b428265"
+  },
+  {
+    "offset": "0x50eb24",
+    "encoding": "ascii",
+    "text": "std::pair<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> *,bool>"
+  },
+  {
+    "offset": "0x50f14a",
+    "encoding": "ascii",
+    "text": "std::_Tree_find_result<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> *>"
+  },
+  {
+    "offset": "0x50f1b7",
+    "encoding": "ascii",
+    "text": "std::_Tree_temp_node_alloc<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x50f238",
+    "encoding": "ascii",
+    "text": "std::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >::_Redbl"
+  },
+  {
+    "offset": "0x50f2bb",
+    "encoding": "ascii",
+    "text": "std::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> > >"
+  },
+  {
+    "offset": "0x50f357",
+    "encoding": "ascii",
+    "text": "std::_Tree_id<std::_Tree_node<std::pair<unsigned int const ,FvSDK::BenchmarkSummaryData>,void *> *>"
+  },
+  {
+    "offset": "0x510e02",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDKStatic\\nvSecureLoadLibrary.cpp"
+  },
+  {
+    "offset": "0x510f36",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\tools\\ddk\\wddmv2\\official\\22621\\Include\\10.0.22621.0\\um\\winioctl.h"
+  },
+  {
+    "offset": "0x5117ba",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDKStatic\\nvSecureLoadLibrary.h"
+  },
+  {
+    "offset": "0x514494",
+    "encoding": "ascii",
+    "text": "c:\\dvs\\p4\\build\\sw\\devrel\\playpen\\yyao\\vrbench\\vr-fcat\\fvsdk_rel_1_0\\external\\fvsdk\\fvsdk\\fvsdk\\fvsdk\\win32\\release\\nvsecureloadlibrary.obj"
+  },
+  {
+    "offset": "0x514bfb",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Common\\SharedMem.h"
+  },
+  {
+    "offset": "0x51501b",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\FvSDK.cpp"
+  },
+  {
+    "offset": "0x515982",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Common\\FvConfig.h"
+  },
+  {
+    "offset": "0x5159d9",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\FvSDKBenchmarkWrapper.h"
+  },
+  {
+    "offset": "0x515a57",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\framework.h"
+  },
+  {
+    "offset": "0x515b23",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Common\\Util\\MessageBusWrapper.h"
+  },
+  {
+    "offset": "0x515d1f",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Common\\Util\\FVLogger.h"
+  },
+  {
+    "offset": "0x516252",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Common\\Util\\ScopedHandle.h"
+  },
+  {
+    "offset": "0x516c6c",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\FvSharedMemory.h"
+  },
+  {
+    "offset": "0x516d2e",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\FvClientCtx.h"
+  },
+  {
+    "offset": "0x516e6e",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDKStatic\\Private\\FvSDK.h"
+  },
+  {
+    "offset": "0x516eea",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Common\\Util\\SecurityAttributesWrapper.h"
+  },
+  {
+    "offset": "0x517259",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\predefined C++ types (compiler internal)"
+  },
+  {
+    "offset": "0x518123",
+    "encoding": "ascii",
+    "text": "c:\\dvs\\p4\\build\\sw\\devrel\\playpen\\yyao\\vrbench\\vr-fcat\\fvsdk_rel_1_0\\external\\fvsdk\\fvsdk\\fvsdk\\fvsdk\\win32\\release\\fvsdk.obj"
+  },
+  {
+    "offset": "0x518288",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\FvClientCtx.cpp"
+  },
+  {
+    "offset": "0x5182fe",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\FvSDKBenchmarkWrapper.cpp"
+  },
+  {
+    "offset": "0x51e4d8",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\dllmain.cpp"
+  },
+  {
+    "offset": "0x51e5bc",
+    "encoding": "ascii",
+    "text": "c:\\dvs\\p4\\build\\sw\\devrel\\playpen\\yyao\\vrbench\\vr-fcat\\fvsdk_rel_1_0\\external\\fvsdk\\fvsdk\\fvsdk\\fvsdk\\win32\\release\\dllmain.obj"
+  },
+  {
+    "offset": "0x51e7cf",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\Common\\Util\\MessageBusWrapper.cpp"
+  },
+  {
+    "offset": "0x51efd0",
+    "encoding": "ascii",
+    "text": "D:\\a\\_work\\1\\s\\src\\ExternalAPIs\\WindowsSDKInc\\c\\Include\\10.0.22000.0\\um\\winioctl.h"
+  },
+  {
+    "offset": "0x52089c",
+    "encoding": "ascii",
+    "text": "c:\\dvs\\p4\\build\\sw\\devrel\\playpen\\yyao\\vrbench\\vr-fcat\\fvsdk_rel_1_0\\external\\fvsdk\\fvsdk\\fvsdk\\fvsdk\\win32\\release\\fvclientctx.obj"
+  },
+  {
+    "offset": "0x527702",
+    "encoding": "ascii",
+    "text": "_crt_debugger_hook"
+  },
+  {
+    "offset": "0x5294c8",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\external\\FvSDK\\FvSDK\\FvSDK\\FvSDK\\predefined C++ types (compiler internal)"
+  }
+]

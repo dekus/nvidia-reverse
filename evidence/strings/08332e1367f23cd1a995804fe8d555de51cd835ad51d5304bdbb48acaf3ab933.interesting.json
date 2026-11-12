@@ -1,0 +1,12 @@
+[
+  {
+    "offset": "0x1648c",
+    "encoding": "ascii",
+    "text": "NVUnHook"
+  },
+  {
+    "offset": "0x15640",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  }
+]

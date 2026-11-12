@@ -1,0 +1,72 @@
+[
+  {
+    "offset": "0x1ae786",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x1b63cc",
+    "encoding": "ascii",
+    "text": ".?AVCBindCtxHook@@"
+  },
+  {
+    "offset": "0x1b63e8",
+    "encoding": "ascii",
+    "text": ".?AV?$CComCoClass@VCBindCtxHook@@$1?GUID_NULL@@3U_GUID@@B@ATL@@"
+  },
+  {
+    "offset": "0x1b6430",
+    "encoding": "ascii",
+    "text": ".?AV?$CComObject@VCBindCtxHook@@@ATL@@"
+  },
+  {
+    "offset": "0x14fca8",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Logging\\Definitions\\LogFilters\\PassFilter"
+  },
+  {
+    "offset": "0x14fe78",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Logging"
+  },
+  {
+    "offset": "0x160864",
+    "encoding": "utf-16le",
+    "text": "NVI2UI.BindCtxHook"
+  },
+  {
+    "offset": "0x160a30",
+    "encoding": "utf-16le",
+    "text": "CBindCtxHook::RegisterObjectParam"
+  },
+  {
+    "offset": "0x1633b4",
+    "encoding": "utf-16le",
+    "text": "HKEY_CLASSES_ROOT"
+  },
+  {
+    "offset": "0x1633d8",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0x1633fc",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0x163424",
+    "encoding": "utf-16le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0x163520",
+    "encoding": "utf-16le",
+    "text": "\\registry\\machine\\software\\classes"
+  },
+  {
+    "offset": "0x163c08",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  }
+]

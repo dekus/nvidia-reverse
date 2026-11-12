@@ -1,0 +1,516 @@
+[
+  {
+    "pid": 2776,
+    "name": "NVDisplay.Container.exe",
+    "modules": []
+  },
+  {
+    "pid": 3600,
+    "name": "NVDisplay.Container.exe",
+    "modules": []
+  },
+  {
+    "pid": 4496,
+    "name": "nvcontainer.exe",
+    "modules": []
+  },
+  {
+    "pid": 6388,
+    "name": "nvcontainer.exe",
+    "modules": []
+  },
+  {
+    "pid": 7212,
+    "name": "nvcontainer.exe",
+    "modules": [
+      {
+        "ModuleName": "nvcontainer.exe",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\nvcontainer.exe",
+        "ModuleMemorySize": 1724416
+      },
+      {
+        "ModuleName": "CrimsonUtil.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\dependencies\\CrimsonUtil.dll",
+        "ModuleMemorySize": 2265088
+      },
+      {
+        "ModuleName": "McpServerPlugin.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\AIUser\\NVIDIA App\\McpServerPlugin.dll",
+        "ModuleMemorySize": 2756608
+      },
+      {
+        "ModuleName": "NvAppCore.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\McpServer\\NvAppCore.dll",
+        "ModuleMemorySize": 1810432
+      },
+      {
+        "ModuleName": "NvMessageBus.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\MessageBus\\NvMessageBus.dll",
+        "ModuleMemorySize": 3555328
+      }
+    ]
+  },
+  {
+    "pid": 7240,
+    "name": "nvcontainer.exe",
+    "modules": [
+      {
+        "ModuleName": "nvcontainer.exe",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\nvcontainer.exe",
+        "ModuleMemorySize": 1724416
+      },
+      {
+        "ModuleName": "_nvspcaps64.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\SPUser\\nvspcaps\\_nvspcaps64.dll",
+        "ModuleMemorySize": 4059136
+      },
+      {
+        "ModuleName": "IpcCommon64.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\ShadowPlay\\IpcCommon64.dll",
+        "ModuleMemorySize": 1327104
+      },
+      {
+        "ModuleName": "NvMessageBus.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\MessageBus\\NvMessageBus.dll",
+        "ModuleMemorySize": 3555328
+      },
+      {
+        "ModuleName": "NvTelemetryAPI64.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NvTelemetry\\NvTelemetryAPI64.dll",
+        "ModuleMemorySize": 4894720
+      },
+      {
+        "ModuleName": "NvTelemetryBridge64.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NvTelemetry\\NvTelemetryBridge64.dll",
+        "ModuleMemorySize": 438272
+      },
+      {
+        "ModuleName": "NvBackendAPI64.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvBackend\\NvBackendAPI64.dll",
+        "ModuleMemorySize": 1101824
+      }
+    ]
+  },
+  {
+    "pid": 7300,
+    "name": "nvcontainer.exe",
+    "modules": [
+      {
+        "ModuleName": "nvcontainer.exe",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\nvcontainer.exe",
+        "ModuleMemorySize": 1724416
+      },
+      {
+        "ModuleName": "NvBackend64.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\User\\NvBackend\\NvBackend64.dll",
+        "ModuleMemorySize": 8843264
+      },
+      {
+        "ModuleName": "CrimsonUtil.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\dependencies\\CrimsonUtil.dll",
+        "ModuleMemorySize": 2265088
+      },
+      {
+        "ModuleName": "NvAccount.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\User\\NVIDIA App\\NvAccount.dll",
+        "ModuleMemorySize": 2879488
+      },
+      {
+        "ModuleName": "DesktopNotification.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\User\\NVIDIA App\\NvApp\\DesktopNotification.dll",
+        "ModuleMemorySize": 2207744
+      },
+      {
+        "ModuleName": "Diagnostics.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\User\\NVIDIA App\\NvApp\\Diagnostics.dll",
+        "ModuleMemorySize": 2981888
+      },
+      {
+        "ModuleName": "libcrypto-3-x64.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\dependencies\\libcrypto-3-x64.dll",
+        "ModuleMemorySize": 7569408
+      },
+      {
+        "ModuleName": "Downloader.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\User\\NVIDIA App\\NvApp\\Downloader.dll",
+        "ModuleMemorySize": 5468160
+      },
+      {
+        "ModuleName": "DriverUpdateRecommendation.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\User\\NVIDIA App\\NvApp\\DriverUpdateRecommendation.dll",
+        "ModuleMemorySize": 2088960
+      },
+      {
+        "ModuleName": "NvAppIgoIpcProxy.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\User\\NVIDIA App\\NvApp\\NvAppIgoIpcProxy.dll",
+        "ModuleMemorySize": 1724416
+      },
+      {
+        "ModuleName": "NvKVStorage.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\User\\NVIDIA App\\NvApp\\NvKVStorage.dll",
+        "ModuleMemorySize": 1933312
+      },
+      {
+        "ModuleName": "NvTelemetryAPI64.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NvTelemetry\\NvTelemetryAPI64.dll",
+        "ModuleMemorySize": 4894720
+      },
+      {
+        "ModuleName": "NvTelemetryBridge64.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NvTelemetry\\NvTelemetryBridge64.dll",
+        "ModuleMemorySize": 438272
+      },
+      {
+        "ModuleName": "NvMessageBus.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\MessageBus\\NvMessageBus.dll",
+        "ModuleMemorySize": 3555328
+      },
+      {
+        "ModuleName": "NvBackendAPI64.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvBackend\\NvBackendAPI64.dll",
+        "ModuleMemorySize": 1101824
+      }
+    ]
+  },
+  {
+    "pid": 10008,
+    "name": "nvsphelper64.exe",
+    "modules": []
+  },
+  {
+    "pid": 10064,
+    "name": "NVIDIA Overlay.exe",
+    "modules": [
+      {
+        "ModuleName": "NVIDIA Overlay.exe",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe",
+        "ModuleMemorySize": 3690496
+      },
+      {
+        "ModuleName": "D3DCOMPILER_47.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\D3DCOMPILER_47.dll",
+        "ModuleMemorySize": 4947968
+      },
+      {
+        "ModuleName": "libcef.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\libcef.dll",
+        "ModuleMemorySize": 225394688
+      },
+      {
+        "ModuleName": "chrome_elf.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\chrome_elf.dll",
+        "ModuleMemorySize": 1421312
+      },
+      {
+        "ModuleName": "libEGL.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\libEGL.dll",
+        "ModuleMemorySize": 528384
+      },
+      {
+        "ModuleName": "libGLESv2.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\libGLESv2.dll",
+        "ModuleMemorySize": 8298496
+      },
+      {
+        "ModuleName": "nvspapi64.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\ShadowPlay\\nvspapi64.dll",
+        "ModuleMemorySize": 3411968
+      },
+      {
+        "ModuleName": "IpcCommon64.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\ShadowPlay\\IpcCommon64.dll",
+        "ModuleMemorySize": 1327104
+      },
+      {
+        "ModuleName": "NvMessageBus.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\MessageBus\\NvMessageBus.dll",
+        "ModuleMemorySize": 3555328
+      },
+      {
+        "ModuleName": "CrimsonUtil.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\dependencies\\CrimsonUtil.dll",
+        "ModuleMemorySize": 2265088
+      },
+      {
+        "ModuleName": "Gallery.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\Gallery.dll",
+        "ModuleMemorySize": 3346432
+      },
+      {
+        "ModuleName": "GraphicsSetting.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\GraphicsSetting.dll",
+        "ModuleMemorySize": 2240512
+      },
+      {
+        "ModuleName": "MessageBusRouter.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\MessageBusRouter.dll",
+        "ModuleMemorySize": 1662976
+      },
+      {
+        "ModuleName": "NvCamera.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\NvCamera.dll",
+        "ModuleMemorySize": 7581696
+      },
+      {
+        "ModuleName": "Rise.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\Rise.dll",
+        "ModuleMemorySize": 3796992
+      },
+      {
+        "ModuleName": "ShareServer.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\ShareServer.dll",
+        "ModuleMemorySize": 9633792
+      },
+      {
+        "ModuleName": "LocalGames.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\plugins\\Base\\LocalGames.dll",
+        "ModuleMemorySize": 2260992
+      },
+      {
+        "ModuleName": "NvCplDisplayPlugin.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\plugins\\Base\\NvCplDisplayPlugin.dll",
+        "ModuleMemorySize": 3932160
+      },
+      {
+        "ModuleName": "NvCplPlugin.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\plugins\\Base\\NvCplPlugin.dll",
+        "ModuleMemorySize": 4632576
+      },
+      {
+        "ModuleName": "NvPerfMon.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\plugins\\Base\\NvPerfMon.dll",
+        "ModuleMemorySize": 3088384
+      },
+      {
+        "ModuleName": "NvWorkstation.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\plugins\\Base\\NvWorkstation.dll",
+        "ModuleMemorySize": 1789952
+      },
+      {
+        "ModuleName": "SystemInfo.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\plugins\\Base\\SystemInfo.dll",
+        "ModuleMemorySize": 1957888
+      },
+      {
+        "ModuleName": "NvBackendAPI64.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvBackend\\NvBackendAPI64.dll",
+        "ModuleMemorySize": 1101824
+      },
+      {
+        "ModuleName": "NvCpl.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvCpl\\NvCpl.dll",
+        "ModuleMemorySize": 8974336
+      },
+      {
+        "ModuleName": "nvxdbat.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvCpl\\nvxdbat.dll",
+        "ModuleMemorySize": 1409024
+      },
+      {
+        "ModuleName": "nvxdplcy.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvCpl\\nvxdplcy.dll",
+        "ModuleMemorySize": 1593344
+      },
+      {
+        "ModuleName": "NvTelemetryAPI64.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NvTelemetry\\NvTelemetryAPI64.dll",
+        "ModuleMemorySize": 4894720
+      },
+      {
+        "ModuleName": "MessageBus.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\MessageBus\\MessageBus.dll",
+        "ModuleMemorySize": 7565312
+      }
+    ]
+  },
+  {
+    "pid": 11184,
+    "name": "NVIDIA Overlay.exe",
+    "modules": [
+      {
+        "ModuleName": "NVIDIA Overlay.exe",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe",
+        "ModuleMemorySize": 3690496
+      },
+      {
+        "ModuleName": "libcef.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\libcef.dll",
+        "ModuleMemorySize": 225394688
+      },
+      {
+        "ModuleName": "D3DCOMPILER_47.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\D3DCOMPILER_47.dll",
+        "ModuleMemorySize": 4947968
+      },
+      {
+        "ModuleName": "chrome_elf.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\chrome_elf.dll",
+        "ModuleMemorySize": 1421312
+      },
+      {
+        "ModuleName": "libEGL.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\libEGL.dll",
+        "ModuleMemorySize": 528384
+      },
+      {
+        "ModuleName": "libGLESv2.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\libGLESv2.dll",
+        "ModuleMemorySize": 8298496
+      },
+      {
+        "ModuleName": "dxil.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\dxil.dll",
+        "ModuleMemorySize": 1523712
+      },
+      {
+        "ModuleName": "dxcompiler.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\dxcompiler.dll",
+        "ModuleMemorySize": 21827584
+      }
+    ]
+  },
+  {
+    "pid": 11232,
+    "name": "NVIDIA Overlay.exe",
+    "modules": [
+      {
+        "ModuleName": "NVIDIA Overlay.exe",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe",
+        "ModuleMemorySize": 3690496
+      },
+      {
+        "ModuleName": "libcef.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\libcef.dll",
+        "ModuleMemorySize": 225394688
+      },
+      {
+        "ModuleName": "D3DCOMPILER_47.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\D3DCOMPILER_47.dll",
+        "ModuleMemorySize": 4947968
+      },
+      {
+        "ModuleName": "chrome_elf.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\chrome_elf.dll",
+        "ModuleMemorySize": 1421312
+      },
+      {
+        "ModuleName": "libEGL.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\libEGL.dll",
+        "ModuleMemorySize": 528384
+      },
+      {
+        "ModuleName": "libGLESv2.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\libGLESv2.dll",
+        "ModuleMemorySize": 8298496
+      }
+    ]
+  },
+  {
+    "pid": 10892,
+    "name": "NVIDIA Overlay.exe",
+    "modules": [
+      {
+        "ModuleName": "NVIDIA Overlay.exe",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe",
+        "ModuleMemorySize": 3690496
+      },
+      {
+        "ModuleName": "libcef.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\libcef.dll",
+        "ModuleMemorySize": 225394688
+      },
+      {
+        "ModuleName": "D3DCOMPILER_47.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\D3DCOMPILER_47.dll",
+        "ModuleMemorySize": 4947968
+      },
+      {
+        "ModuleName": "chrome_elf.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\chrome_elf.dll",
+        "ModuleMemorySize": 1421312
+      },
+      {
+        "ModuleName": "libEGL.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\libEGL.dll",
+        "ModuleMemorySize": 528384
+      },
+      {
+        "ModuleName": "libGLESv2.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\libGLESv2.dll",
+        "ModuleMemorySize": 8298496
+      }
+    ]
+  },
+  {
+    "pid": 11872,
+    "name": "NVIDIA Overlay.exe",
+    "modules": [
+      {
+        "ModuleName": "NVIDIA Overlay.exe",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe",
+        "ModuleMemorySize": 3690496
+      },
+      {
+        "ModuleName": "libcef.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\libcef.dll",
+        "ModuleMemorySize": 225394688
+      },
+      {
+        "ModuleName": "D3DCOMPILER_47.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\D3DCOMPILER_47.dll",
+        "ModuleMemorySize": 4947968
+      },
+      {
+        "ModuleName": "chrome_elf.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\chrome_elf.dll",
+        "ModuleMemorySize": 1421312
+      },
+      {
+        "ModuleName": "libEGL.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\libEGL.dll",
+        "ModuleMemorySize": 528384
+      },
+      {
+        "ModuleName": "libGLESv2.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\libGLESv2.dll",
+        "ModuleMemorySize": 8298496
+      }
+    ]
+  },
+  {
+    "pid": 8224,
+    "name": "NVIDIA Overlay.exe",
+    "modules": [
+      {
+        "ModuleName": "NVIDIA Overlay.exe",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe",
+        "ModuleMemorySize": 3690496
+      },
+      {
+        "ModuleName": "libcef.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\libcef.dll",
+        "ModuleMemorySize": 225394688
+      },
+      {
+        "ModuleName": "D3DCOMPILER_47.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\D3DCOMPILER_47.dll",
+        "ModuleMemorySize": 4947968
+      },
+      {
+        "ModuleName": "chrome_elf.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\chrome_elf.dll",
+        "ModuleMemorySize": 1421312
+      },
+      {
+        "ModuleName": "libEGL.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\libEGL.dll",
+        "ModuleMemorySize": 528384
+      },
+      {
+        "ModuleName": "libGLESv2.dll",
+        "FileName": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\libGLESv2.dll",
+        "ModuleMemorySize": 8298496
+      }
+    ]
+  }
+]

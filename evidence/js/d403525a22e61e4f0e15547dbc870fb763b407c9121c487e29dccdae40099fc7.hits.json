@@ -1,0 +1,6 @@
+[
+  {
+    "line": 70,
+    "text": "            this.logger.info(\"ngOnDestroy\"), this.aiChatboxService.sendSettingsMenuSessionTelemetry({\r"
+  }
+]

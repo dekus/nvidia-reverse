@@ -1,0 +1,52 @@
+[
+  {
+    "offset": "0x5283e0",
+    "encoding": "ascii",
+    "text": "HKEY_LOCAL_MACHINE\\SOFTWARE\\NVIDIA Corporation\\NvContainer\\MessageBus"
+  },
+  {
+    "offset": "0x54b8b0",
+    "encoding": "ascii",
+    "text": "HKEY_CLASSES_ROOT"
+  },
+  {
+    "offset": "0x54b8c8",
+    "encoding": "ascii",
+    "text": "HKEY_CURRENT_CONFIG"
+  },
+  {
+    "offset": "0x54b8e0",
+    "encoding": "ascii",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0x54b8f8",
+    "encoding": "ascii",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0x54b910",
+    "encoding": "ascii",
+    "text": "HKEY_PERFORMANCE_DATA"
+  },
+  {
+    "offset": "0x54b928",
+    "encoding": "ascii",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0x572ed8",
+    "encoding": "ascii",
+    "text": "ioctlsocket"
+  },
+  {
+    "offset": "0x5a2050",
+    "encoding": "ascii",
+    "text": "localhost/"
+  },
+  {
+    "offset": "0x528468",
+    "encoding": "utf-16le",
+    "text": "\\\\.\\pipe\\NvMessageBusBroadcast"
+  }
+]

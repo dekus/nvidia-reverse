@@ -1,0 +1,46 @@
+[
+  {
+    "line": 295,
+    "text": "            this.loggingService = e, this.route = n, this.osService = i, this.galleryService = o, this.bridgeService = r, this.sdkService = h, this.oscDisplayService = g, this.cacheService = C, this.telemetry = P, this.navigationService = E, this.dialogHelper = H, this.appBarService = F, this.featureSupportService = B, this.telemetryIgo = N, this.translate = L, this.igoConfig = a, this.destroy$ = new rt.B7, this.previewOpen = !1, this.initComplete = !1, this.accordionOpen = !1, this.lowDiskSpace = !1, this.originalItems = [], this.useItems = [], this.galleryItems = [], this.dropdownDisabled1 = !1, this.dropdownDisabled2 = !1, this.noEntriesYet = !1, this.emptyString = \"\", this.emptyContainerVisible = !1, this.emptyContainerString = \"\", this.emptyContainerParams = {}, this.emptyHideDropdown = !1, this.thumbSize = 116, this.delay = !0, this.highlightsCount = 0, this.currentDropdownSelection = \"\", this.dropdownIndex = -1, this.addMenu = !0, this.menuItems = [], this.menuStrings = [], this.filters = [\"all\", \"highlight\", \"video\", \"instantreplay\", \"image\"], this.telemetryFilters = [d.Xy.none, d.Xy.highlight, d.Xy.video, d.Xy.ir, d.Xy.screenshot], this.activeFilter = this.filters[0], this.multiSelectMode = !1, this.multiSelectList = void 0, this.isNvApp = !1, this.openFromSdk = !1, this.recentHighlightsIndex = 1, this.highlightsGame = \"\", this.hlPending = !1, this.allHighlightsSelected = !1, this.highlightSummaryIsOpen = !1, this.isGalleryMenuExitAllowed = !0, this.saveInProgress = "
+  },
+  {
+    "line": 298,
+    "text": "            this.dirSeparator = this.osService.getDirSeparator(), this.telemetryIgo.startGalleryAccess(d.UZ.root), this.galleryService.setGalleryThumbSize(this.thumbSize), this.cacheService.galleryActive(!0), this.seedDropdownFromSnapshot(), this.handleView(), this.initializeFilters(), this.isGalleryMenuExitAllowed = this.galleryService.isGalleryMenuExitAllowed(), this.setAppBarInitial(), this.appBarService.actionClicked$.pipe((0, p.Q)(this.destroy$)).subscribe(n => {\r"
+  },
+  {
+    "line": 308,
+    "text": "                this.telemetryIgo.sendGalleryAccess(), this.subscribeToGalleryEvents()\r"
+  },
+  {
+    "line": 438,
+    "text": "            this.logger.info(\"Event Capture: Folders IN\"), this.highlightSummaryIsOpen = this.galleryService.highlightSummaryIsOpen, this.isNvApp && this.telemetry.startUIPerfEvent(w.CV.GalleryPopulateFolders);\r"
+  },
+  {
+    "line": 459,
+    "text": "              return this.currentDropdownSelection = r, this.initializeDropdown(i), \"\" === r ? (0, y.of)([]) : (this.dropdownIndex = this.dropdownFolders.indexOf(r), this.logger.info(\"Event Capture: Folders OUT\"), this.isNvApp && (this.telemetry.sendUIPerfEvent(this.galleryService.getCurrentGameDetails(), w.CV.GalleryPopulateFolders, i.length, this.currentDesktopMode), this.telemetry.startUIPerfEvent(w.CV.GalleryPopulateFiles)), this.logger.info(\"Event Capture: \" + this.currentDropdownSelection + \" Thumbnails IN\"), null !== o && this.isAllCapturesSelected() ? (0, y.of)(o) : this.loadSelectedContents())\r"
+  },
+  {
+    "line": 463,
+    "text": "              return o || (o = 0), this.isNvApp && this.telemetry.sendUIPerfEvent(this.galleryService.getCurrentGameDetails(), w.CV.GalleryPopulateFiles, o, this.currentDesktopMode), !0\r"
+  },
+  {
+    "line": 544,
+    "text": "              this.telemetryIgo.sendGalleryOpenedFileLocation()\r"
+  },
+  {
+    "line": 621,
+    "text": "            return this.logger.info(\"Event Capture: \" + this.currentDropdownSelection + \" Thumbnails IN\"), this.telemetry.startUIPerfEvent(w.CV.GalleryPopulateFiles), this.telemetryIgo.startGalleryAccess(d.UZ.folder), this.update$ && this.update$.unsubscribe(), this.gallerySelection = void 0, this.originalItems = [], this.useItems = [], this.galleryItems = [], this.loadSelectedContents().pipe((0, M.T)(e => (this.processGalleryContent(e), this.logger.info(\"Event Capture: \" + this.currentDropdownSelection + \" Thumbnails OUT\"), this.fixMissingCounts(this.currentDropdownSelection), this.telemetryIgo.sendGalleryAccess(), !0)))\r"
+  },
+  {
+    "line": 632,
+    "text": "            e.fullFilename && (this.galleryService.currentFileData = e, this.galleryOpenItem = e, this.telemetryIgo.startGalleryAccess(d.UZ.content), this.previewOpen ? this.telemetryIgo.sendGalleryFileAccess(e) : (this.centerPaneOpened(), this.galleryService.setPreviewCaller(d.jb.galleryMain), this.navigationService.navigate([{\r"
+  },
+  {
+    "line": 640,
+    "text": "              this.telemetryIgo.sendGalleryFileAccess(e)\r"
+  },
+  {
+    "line": 654,
+    "text": "            e.active = !0, this.openFromSdk || (this.galleryService.activeFilter = n), this.activeFilter = this.filters[n], this.preFilterData(!1), this.checkForZeroEntryDropdown(), this.telemetryIgo.sendGalleryFilterUsed(this.telemetryFilters[n])\r"
+  }
+]

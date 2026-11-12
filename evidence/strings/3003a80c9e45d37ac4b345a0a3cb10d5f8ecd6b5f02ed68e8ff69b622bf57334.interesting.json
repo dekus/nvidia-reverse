@@ -1,0 +1,282 @@
+[
+  {
+    "offset": "0x1576e4",
+    "encoding": "ascii",
+    "text": "Consent feature is disabled, will show legacy ui"
+  },
+  {
+    "offset": "0x1a2546",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x1b66f8",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@VRegistryException@Logging@Nvidia@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b6780",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@VRegistryException@Logging@Nvidia@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b69b0",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Vlock_error@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b6a28",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Vlock_error@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b6a98",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Vthread_resource_error@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b6b20",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Vthread_resource_error@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b6c20",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Vtoo_many_args@io@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b6ca0",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Vtoo_many_args@io@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b6f78",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Vtoo_few_args@io@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b6ff8",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Vtoo_few_args@io@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b7070",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Vbad_format_string@io@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b70f0",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Vbad_format_string@io@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b76e0",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Vout_of_range@std@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b7758",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Vout_of_range@std@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b77a8",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Ubad_weekday@gregorian@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b7830",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Ubad_weekday@gregorian@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b78b8",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Ubad_day_of_year@gregorian@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b7940",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Ubad_day_of_year@gregorian@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b7e40",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Vbad_lexical_cast@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b7ec0",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Vbad_lexical_cast@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b7fb0",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Vruntime_error@std@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b8028",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Vruntime_error@std@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b8098",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Ubad_day_of_month@gregorian@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b8120",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Ubad_day_of_month@gregorian@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b81b0",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Ubad_month@gregorian@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b8230",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Ubad_month@gregorian@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b82b0",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Ubad_year@gregorian@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1b8330",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Ubad_year@gregorian@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x13e672",
+    "encoding": "utf-16le",
+    "text": "WHKEY_CLASSES_ROOT"
+  },
+  {
+    "offset": "0x13e698",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0x13e6bc",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0x13e6e4",
+    "encoding": "utf-16le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0x13e8d0",
+    "encoding": "utf-16le",
+    "text": "\\registry\\machine\\software\\classes"
+  },
+  {
+    "offset": "0x13ed18",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion"
+  },
+  {
+    "offset": "0x13f928",
+    "encoding": "utf-16le",
+    "text": "\\Device\\Mup"
+  },
+  {
+    "offset": "0x140f90",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x14fd80",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Installer2"
+  },
+  {
+    "offset": "0x152c00",
+    "encoding": "utf-16le",
+    "text": "Feature.NvTelemetry"
+  },
+  {
+    "offset": "0x152c28",
+    "encoding": "utf-16le",
+    "text": "NvSupportTelemetry"
+  },
+  {
+    "offset": "0x153c88",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NVTweak"
+  },
+  {
+    "offset": "0x154d50",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows"
+  },
+  {
+    "offset": "0x1554c8",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation"
+  },
+  {
+    "offset": "0x155690",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA_RemoveOptimusFilters{069F7102-A666-45F1-8762-BF8DBD9584ED}"
+  },
+  {
+    "offset": "0x155a00",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers\\"
+  },
+  {
+    "offset": "0x155a48",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Wow6432Node\\Khronos\\Vulkan\\Drivers\\"
+  },
+  {
+    "offset": "0x155aa8",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\ImplicitLayers\\"
+  },
+  {
+    "offset": "0x155af8",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Wow6432Node\\Khronos\\Vulkan\\ImplicitLayers\\"
+  },
+  {
+    "offset": "0x156f5c",
+    "encoding": "utf-16le",
+    "text": "NvFBCSymLinkPath"
+  },
+  {
+    "offset": "0x156f80",
+    "encoding": "utf-16le",
+    "text": "UsesNvFBCSymLink"
+  },
+  {
+    "offset": "0x1576b4",
+    "encoding": "utf-16le",
+    "text": "OverrideConsentFeature"
+  },
+  {
+    "offset": "0x159728",
+    "encoding": "utf-16le",
+    "text": "HKLM\\SOFTWARE\\NVIDIA Corporation"
+  },
+  {
+    "offset": "0x15d448",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Logging\\Definitions\\LogFilters\\PassFilter"
+  },
+  {
+    "offset": "0x15d568",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Logging"
+  },
+  {
+    "offset": "0x15fc40",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall"
+  }
+]

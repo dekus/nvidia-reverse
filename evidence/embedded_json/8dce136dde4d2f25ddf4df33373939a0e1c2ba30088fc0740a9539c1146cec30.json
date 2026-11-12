@@ -1,0 +1,161 @@
+[
+  {
+    "file_offset": "0x29abf0",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#nvdriverdiagnostics",
+      "title": "NvDriverDiagnostics commands",
+      "type": "object",
+      "module": "NvDriverDiagnostics",
+      "definitions": {
+        "AddNocatFrameEvent": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "frameEvent": {
+                "description": "JSON representation of NOCAT frame event in format derived from telemetry generated code",
+                "type": "string"
+              },
+              "fileNames": {
+                "description": "Names of the files to attach to telemetry",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "frameEvent",
+              "fileNames"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "file_offset": "0x29e4d0",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "Product config properties required by NvDriverDiagnostics",
+      "type": "object",
+      "properties": {
+        "build": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "string"
+            },
+            "variant": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "version",
+            "variant"
+          ]
+        },
+        "cloudVariables": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "clientId": "string"
+            }
+          },
+          "required": [
+            "clientId"
+          ]
+        },
+        "nvDriverDiagnostics": {
+          "type": "object",
+          "properties": {
+            "driverTelemetryNotificationTimeoutSeconds": {
+              "type": "integer"
+            },
+            "cloudVariablesRefreshPeriodSeconds": {
+              "type": "integer"
+            },
+            "controlVariable": {
+              "type": "string"
+            },
+            "dialogEnabled": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "driverTelemetryNotificationTimeoutSeconds",
+            "cloudVariablesRefreshPeriodSeconds",
+            "controlVariable",
+            "dialogEnabled"
+          ]
+        }
+      },
+      "required": [
+        "build",
+        "cloudVariables",
+        "nvDriverDiagnostics"
+      ]
+    }
+  },
+  {
+    "file_offset": "0x29f380",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "NvDriverDiagnosticsStateStorage storage file schema",
+      "type": "object",
+      "properties": {
+        "consentNotificationTriggeredTimestamp": {
+          "type": "string"
+        },
+        "consentRequestIsComplete": {
+          "type": "boolean"
+        },
+        "dialogEnabled": {
+          "type": "boolean"
+        },
+        "rconfigETag": {
+          "type": "string"
+        }
+      },
+      "required": []
+    }
+  },
+  {
+    "file_offset": "0x29fac0",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for cloud variables response format",
+      "type": "object",
+      "definitions": {
+        "CloudVariableDefinition": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "value": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ]
+        }
+      },
+      "properties": {
+        "cloudVariables": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CloudVariableDefinition"
+          }
+        }
+      },
+      "required": [
+        "cloudVariables"
+      ]
+    }
+  }
+]

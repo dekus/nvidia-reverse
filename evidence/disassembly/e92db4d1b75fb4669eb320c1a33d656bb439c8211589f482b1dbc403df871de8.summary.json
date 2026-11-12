@@ -1,0 +1,20 @@
+{
+  "path": "Installer2\\VirtualAudio.Driver.{7C43349F-A7F0-4D47-8E5D-C03E063D8955}\\nvaudcap64a.dll",
+  "sha256": "e92db4d1b75fb4669eb320c1a33d656bb439c8211589f482b1dbc403df871de8",
+  "method": "Capstone linear sweep over raw bytes of all IMAGE_SCN_MEM_EXECUTE sections; skipdata enabled; no reachability proof",
+  "sections": [
+    {
+      "name": ".text",
+      "raw_bytes": 147968,
+      "processed_bytes": 147968,
+      "instructions": 31086,
+      "skipdata_bytes": 23624
+    }
+  ],
+  "utc": "2026-11-11T21:40:11.105436+00:00",
+  "instructions": 31086,
+  "skipdata_bytes": 23624,
+  "calls": 0,
+  "api_reference_counts": {},
+  "complete_linear_sweep": true
+}

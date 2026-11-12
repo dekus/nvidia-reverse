@@ -1,0 +1,668 @@
+[
+  {
+    "file_offset": "0x1571a0",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#NvWorkstation",
+      "title": "NvWorkstation Endpoints",
+      "type": "object",
+      "module": "NvWorkstation",
+      "definitions": {
+        "Status": {
+          "type": "integer",
+          "description": "Return status of NvWorkstation plugin functions. 'SUCCESS' indicates valid return data",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "tsEnumNames": [
+            "SUCCESS",
+            "GENERIC_ERROR",
+            "INVALID_ARGUMENT",
+            "DEVICE_NOT_FOUND",
+            "API_FUNC_NOT_FOUND",
+            "API_FUNC_ERROR",
+            "NO_GPU_SLI_GROUPS",
+            "INVALID_USER_PRIVILEGE",
+            "DOCUMENT_PARSE_ERROR",
+            "DOCUMENT_WRITE_ERROR"
+          ]
+        },
+        "SyncSource": {
+          "type": "integer",
+          "description": "VSync/House sync",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "VSync",
+            "HouseSync"
+          ]
+        },
+        "SyncEdge": {
+          "type": "integer",
+          "description": "Indicates leading edge, falling edge, or both",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "Rising",
+            "Falling",
+            "Both"
+          ]
+        },
+        "MulDivMode": {
+          "type": "integer",
+          "description": "Indicates multiplier/divider mode for the housesync signal. (syncSource needs to be set as NVAPI_GSYNC_SYNC_SOURCE_HOUSESYNC)",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "Undefined",
+            "Multiply",
+            "Divide"
+          ]
+        },
+        "RJ45_Framelock_Port": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "Output",
+            "Input",
+            "Unused"
+          ]
+        },
+        "RtxProSyncGpuConnector": {
+          "type": "integer",
+          "description": "Indicates which connector the GPU is connected to on the RTX Pro Sync device",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "tsEnumNames": [
+            "None",
+            "GPU0",
+            "GPU1",
+            "GPU2",
+            "GPU3"
+          ]
+        },
+        "SyncState": {
+          "type": "integer",
+          "description": "Display sync state of: unsync'd, slave, or master",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "Unsynced",
+            "Slave",
+            "Master"
+          ]
+        },
+        "RtxProSyncDisplayInfo": {
+          "type": "object",
+          "properties": {
+            "nvDisplayId": {
+              "type": "integer",
+              "description": "The NvCplApi display ID corresponding to this display."
+            },
+            "bCanBeServer": {
+              "type": "boolean",
+              "description": "Can this display be a master?"
+            },
+            "ulSyncState": {
+              "$ref": "#/definitions/SyncState"
+            }
+          }
+        },
+        "RtxProSyncGpuInfo": {
+          "type": "object",
+          "properties": {
+            "ulGpuId": {
+              "type": "integer",
+              "description": "Gpu ID (also referreed to as the NvApi Gpu handle)"
+            },
+            "ulConnectorLocation": {
+              "$ref": "#/definitions/RtxProSyncGpuConnector"
+            }
+          }
+        },
+        "RtxProSyncBasicInfo": {
+          "type": "object",
+          "properties": {
+            "strFirmwareVersion": {
+              "type": "string",
+              "description": "strFirmwareVersion"
+            },
+            "ulBoardId": {
+              "type": "integer",
+              "description": "ulBoardId"
+            },
+            "bIsMulDivSupported": {
+              "type": "boolean",
+              "description": "Indicates if multiplication/division of the frequency of house sync signal is supported."
+            }
+          }
+        },
+        "RtxProSyncControlInfo": {
+          "type": "object",
+          "properties": {
+            "ulRtxProSyncIndex": {
+              "type": "integer",
+              "description": "RTX-Pro-Sync board index"
+            },
+            "ulSyncSource": {
+              "$ref": "#/definitions/SyncSource"
+            },
+            "bSyncSourceIsOutput": {
+              "type": "boolean",
+              "description": "Indicates if house sync is an output (valid only when syncSource is NVAPI_GSYNC_SYNC_SOURCE_VSYNC on P2061 boards)"
+            },
+            "ulSyncEdge": {
+              "$ref": "#/definitions/SyncEdge"
+            },
+            "ulMulDivMode": {
+              "$ref": "#/definitions/MulDivMode"
+            },
+            "ulMultiplyDivideValue": {
+              "type": "integer",
+              "description": "Indicates the multiplier/divider value for the housesync signal."
+            }
+          }
+        },
+        "RtxProSyncStatusInfo": {
+          "type": "object",
+          "properties": {
+            "bFramelockSyncPulse": {
+              "type": "boolean",
+              "description": "Indicates if an incoming frame lock sync pulse is present on an RJ45 port"
+            },
+            "ulRJ45_Framelock_Ports": {
+              "type": "array",
+              "description": "Current IO mode (framelock) of this RJ45 port",
+              "items": {
+                "$ref": "#/definitions/RJ45_Framelock_Port"
+              }
+            },
+            "bExternalSyncSignalPresent": {
+              "type": "boolean",
+              "description": "Indicates if an external BNC (house) sync signal is present"
+            },
+            "strExternalSyncSignalFreq": {
+              "type": "string",
+              "description": "Incoming house sync frequency in Hz"
+            }
+          }
+        },
+        "RtxProSyncTopologyInfo": {
+          "type": "object",
+          "properties": {
+            "ulRtxProSyncIndex": {
+              "type": "integer",
+              "description": "RTX-Pro-Sync board index"
+            },
+            "gpuInfos": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/RtxProSyncGpuInfo"
+              }
+            },
+            "displayInfos": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/RtxProSyncDisplayInfo"
+              }
+            }
+          }
+        },
+        "GpuConnectorType": {
+          "type": "integer",
+          "description": "The type of this gpu-connector",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "tsEnumNames": [
+            "VGA",
+            "DVI",
+            "COMPOSITE",
+            "SVIDEO",
+            "COMPONENT",
+            "HDMI",
+            "DISPLAYPORT",
+            "USBC",
+            "UNKNOWN"
+          ]
+        },
+        "OutputInfo": {
+          "type": "object",
+          "properties": {
+            "ulNvOutputID": {
+              "type": "integer",
+              "description": "The NvCplApi output ID associated with this gpu-connector output"
+            },
+            "ulNvDisplayID": {
+              "type": "integer",
+              "description": "The NvCplApi display ID associated with this gpu-connector output"
+            },
+            "bConnectedDisplay": {
+              "type": "boolean",
+              "description": "True if this gpu-connector has a connected display (either physical or faked via forced EDID)"
+            },
+            "bActiveDisplay": {
+              "type": "boolean",
+              "description": "True if this gpu-connector has an active display"
+            }
+          }
+        },
+        "GpuConnectorInfo": {
+          "type": "object",
+          "properties": {
+            "ulType": {
+              "$ref": "#/definitions/GpuConnectorType"
+            },
+            "ulLocationIndex": {
+              "type": "integer",
+              "description": "The location index of this gpu-connector (corresponding to physical connector location?)"
+            },
+            "outputInfos": {
+              "type": "array",
+              "description": "Array of outputs corresponding to the connector",
+              "items": {
+                "$ref": "#/definitions/OutputInfo"
+              }
+            }
+          }
+        },
+        "PciAddress": {
+          "type": "object",
+          "properties": {
+            "ulDomain": {
+              "type": "integer",
+              "description": "The PCI Domain"
+            },
+            "ulBus": {
+              "type": "integer",
+              "description": "The PCI Bus"
+            },
+            "ulDevice": {
+              "type": "integer",
+              "description": "The PCI Device"
+            },
+            "ulFunction": {
+              "type": "integer",
+              "description": "The PCI Function"
+            }
+          }
+        },
+        "DisplayTiming": {
+          "type": "object",
+          "description": "Advanced timing details for this display",
+          "properties": {
+            "HVisible": {
+              "type": "integer"
+            },
+            "HBorder": {
+              "type": "integer"
+            },
+            "HFrontPorch": {
+              "type": "integer"
+            },
+            "HSyncWidth": {
+              "type": "integer"
+            },
+            "HSyncPol": {
+              "type": "integer"
+            },
+            "VVisible": {
+              "type": "integer"
+            },
+            "VBorder": {
+              "type": "integer"
+            },
+            "VFrontPorch": {
+              "type": "integer"
+            },
+            "VSyncWidth": {
+              "type": "integer"
+            },
+            "VSyncPol": {
+              "type": "integer"
+            }
+          }
+        },
+        "GetRtxProSyncCount": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns the count of RTX-Pro-Sync boards in the system",
+          "return": {
+            "type": "object",
+            "properties": {
+              "ulStatus": {
+                "$ref": "#/definitions/Status"
+              },
+              "ulRtxProSyncCount": {
+                "type": "integer",
+                "description": "RTX-Pro-Sync board count"
+              }
+            },
+            "required": [
+              "ulStatus",
+              "ulRtxProSyncCount"
+            ]
+          }
+        },
+        "GetRtxProSyncBasicInfo": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns basic info corresponding to the given RTX-Pro-Sync board index",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ulRtxProSyncIndex": {
+                "type": "integer",
+                "maximum": 4294967295,
+                "minimum": 0,
+                "description": "RTX-Pro-Sync board index"
+              }
+            },
+            "required": [
+              "ulRtxProSyncIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "ulStatus": {
+                "$ref": "#/definitions/Status"
+              },
+              "rtxProSyncBasicInfo": {
+                "$ref": "#/definitions/RtxProSyncBasicInfo"
+              }
+            },
+            "required": [
+              "ulStatus",
+              "rtxProSyncBasicInfo"
+            ]
+          }
+        },
+        "GetRtxProSyncControlInfo": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns control info corresponding to the given RTX-Pro-Sync device handle.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ulRtxProSyncIndex": {
+                "type": "integer",
+                "maximum": 4294967295,
+                "minimum": 0,
+                "description": "RTX-Pro-Sync board index"
+              }
+            },
+            "required": [
+              "ulRtxProSyncIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "ulStatus": {
+                "$ref": "#/definitions/Status"
+              },
+              "rtxProSyncControlInfo": {
+                "$ref": "#/definitions/RtxProSyncControlInfo"
+              }
+            },
+            "required": [
+              "ulStatus",
+              "rtxProSyncControlInfo"
+            ]
+          }
+        },
+        "GetRtxProSyncStatusInfo": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns status info corresponding to the given RTX-Pro-Sync device handle.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ulRtxProSyncIndex": {
+                "type": "integer",
+                "maximum": 4294967295,
+                "minimum": 0,
+                "description": "RTX-Pro-Sync board index"
+              }
+            },
+            "required": [
+              "ulRtxProSyncIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "ulStatus": {
+                "$ref": "#/definitions/Status"
+              },
+              "rtxProSyncStatusInfo": {
+                "$ref": "#/definitions/RtxProSyncStatusInfo"
+              }
+            },
+            "required": [
+              "ulStatus",
+              "rtxProSyncStatusInfo"
+            ]
+          }
+        },
+        "GetRtxProSyncTopologyInfo": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns topology info corresponding to the given RTX-Pro-Sync device handle.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ulRtxProSyncIndex": {
+                "type": "integer",
+                "maximum": 4294967295,
+                "minimum": 0,
+                "description": "RTX-Pro-Sync board index"
+              }
+            },
+            "required": [
+              "ulRtxProSyncIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "ulStatus": {
+                "$ref": "#/definitions/Status"
+              },
+              "rtxProSyncTopologyInfo": {
+                "$ref": "#/definitions/RtxProSyncTopologyInfo"
+              }
+            },
+            "required": [
+              "ulStatus",
+              "rtxProSyncTopologyInfo"
+            ]
+          }
+        },
+        "GetGpuConnectorInfo": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns connector info for the given Gpu index",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ulGpuIndex": {
+                "type": "integer",
+                "maximum": 4294967295,
+                "minimum": 0,
+                "description": "Gpu index for which information is required."
+              }
+            },
+            "required": [
+              "ulGpuIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "ulStatus": {
+                "$ref": "#/definitions/Status"
+              },
+              "gpuConnectorInfos": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/GpuConnectorInfo"
+                }
+              }
+            },
+            "required": [
+              "ulStatus",
+              "gpuConnectorInfos"
+            ]
+          }
+        },
+        "GetGpuPciAddress": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns the PCI DBDF (Domain, Bus, Device (aka Slot), Function) address for the given Gpu index",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ulGpuIndex": {
+                "type": "integer",
+                "maximum": 4294967295,
+                "minimum": 0,
+                "description": "Gpu index for which information is required."
+              }
+            },
+            "required": [
+              "ulGpuIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "ulStatus": {
+                "$ref": "#/definitions/Status"
+              },
+              "pciAddress": {
+                "$ref": "#/definitions/PciAddress"
+              }
+            },
+            "required": [
+              "ulStatus",
+              "pciAddress"
+            ]
+          }
+        },
+        "GetDisplayTiming": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Returns the current detailed timing values for the given ulGpuIndex + ulDisplayIndex",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "ulGpuIndex": {
+                "type": "integer",
+                "maximum": 4294967295,
+                "minimum": 0,
+                "description": "Target gpu index"
+              },
+              "ulDisplayIndex": {
+                "type": "integer",
+                "maximum": 4294967295,
+                "minimum": 0,
+                "description": "Target gisplay index"
+              }
+            },
+            "required": [
+              "ulGpuIndex",
+              "ulDisplayIndex"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "ulStatus": {
+                "$ref": "#/definitions/Status"
+              },
+              "displayTiming": {
+                "$ref": "#/definitions/DisplayTiming"
+              }
+            },
+            "required": [
+              "ulStatus",
+              "displayTiming"
+            ]
+          }
+        },
+        "WriteJsonDataToFile": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Writes the given JSON file data to the given file name/path",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "strFileData": {
+                "type": "string",
+                "description": "Topology data (in JSON format) to be written to file"
+              },
+              "strFilePath": {
+                "type": "string",
+                "description": "File path + name to store the topology data"
+              }
+            },
+            "required": [
+              "strFileData",
+              "strFilePath"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "ulStatus": {
+                "$ref": "#/definitions/Status"
+              }
+            },
+            "required": [
+              "ulStatus"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

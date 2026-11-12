@@ -1,0 +1,10 @@
+[
+  {
+    "line": 300,
+    "text": "            if (this.isPowerManagementModeSetting = s === g.Tt, this.isPhysXSetting = s === g.oY, this.isShaderCacheSetting = s === g.Xb, this.isShaderCacheSetting) return this.getSettingInfoDialogDataForShaderCache();\r"
+  },
+  {
+    "line": 337,
+    "text": "          getSettingInfoDialogDataForShaderCache() {\r"
+  }
+]

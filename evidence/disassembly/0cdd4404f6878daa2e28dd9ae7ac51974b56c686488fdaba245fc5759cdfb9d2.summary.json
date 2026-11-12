@@ -1,0 +1,34 @@
+{
+  "path": "Installer2\\VirtualAudio.Driver.{7C43349F-A7F0-4D47-8E5D-C03E063D8955}\\nvvad64a.sys",
+  "sha256": "0cdd4404f6878daa2e28dd9ae7ac51974b56c686488fdaba245fc5759cdfb9d2",
+  "method": "Capstone linear sweep over raw bytes of all IMAGE_SCN_MEM_EXECUTE sections; skipdata enabled; no reachability proof",
+  "sections": [
+    {
+      "name": ".text",
+      "raw_bytes": 8704,
+      "processed_bytes": 8704,
+      "instructions": 2137,
+      "skipdata_bytes": 156
+    },
+    {
+      "name": "PAGE",
+      "raw_bytes": 20992,
+      "processed_bytes": 20992,
+      "instructions": 5169,
+      "skipdata_bytes": 316
+    },
+    {
+      "name": "INIT",
+      "raw_bytes": 2048,
+      "processed_bytes": 2048,
+      "instructions": 376,
+      "skipdata_bytes": 544
+    }
+  ],
+  "utc": "2026-11-11T21:40:10.764393+00:00",
+  "instructions": 7682,
+  "skipdata_bytes": 1016,
+  "calls": 0,
+  "api_reference_counts": {},
+  "complete_linear_sweep": true
+}

@@ -1,0 +1,347 @@
+[
+  {
+    "offset": "0x225a60",
+    "encoding": "ascii",
+    "text": "NvcPluginStart ignored NvPluginWindow handle"
+  },
+  {
+    "offset": "0x228fc0",
+    "encoding": "ascii",
+    "text": "Loading nvapi.."
+  },
+  {
+    "offset": "0x228fd8",
+    "encoding": "ascii",
+    "text": "Failed to init nvapi"
+  },
+  {
+    "offset": "0x228ff8",
+    "encoding": "ascii",
+    "text": "nvapiinit successful"
+  },
+  {
+    "offset": "0x229030",
+    "encoding": "ascii",
+    "text": "We don't have admin consent. Returning false"
+  },
+  {
+    "offset": "0x22a4d0",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClockClientClkVfPointsGetStatus API call failed with error %d"
+  },
+  {
+    "offset": "0x22a708",
+    "encoding": "ascii",
+    "text": "%s : NVAPI_OK "
+  },
+  {
+    "offset": "0x22a720",
+    "encoding": "ascii",
+    "text": "C:\\tmp\\workspace\\NvAppP1\\qemu_NvAppWinNightly\\plugins\\src\\plugin-modules\\NvOc\\module\\NvapiWrapper.cpp"
+  },
+  {
+    "offset": "0x22a7b0",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetFullName"
+  },
+  {
+    "offset": "0x22a7e8",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClockClientClkDomainsGetInfo"
+  },
+  {
+    "offset": "0x22a840",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClockClientClkVfPointsGetInfo"
+  },
+  {
+    "offset": "0x22a870",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientThermalPoliciesGetInfo"
+  },
+  {
+    "offset": "0x22a8d8",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientThermalPoliciesGetStatus"
+  },
+  {
+    "offset": "0x22a958",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientThermalPoliciesSetStatus"
+  },
+  {
+    "offset": "0x22a990",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClockClientClkVfPointsGetStatus"
+  },
+  {
+    "offset": "0x22a9c8",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientVoltRailsGetStatus"
+  },
+  {
+    "offset": "0x22a9f8",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientVoltRailsSetControl"
+  },
+  {
+    "offset": "0x22aa28",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientPowerPoliciesGetStatus"
+  },
+  {
+    "offset": "0x22aa58",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientPowerPoliciesGetInfo"
+  },
+  {
+    "offset": "0x22ab08",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientPowerPoliciesSetStatus"
+  },
+  {
+    "offset": "0x22ab38",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientFanCoolersGetStatus"
+  },
+  {
+    "offset": "0x22ab68",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetCoolerSettings"
+  },
+  {
+    "offset": "0x22ab90",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientFanCoolersGetControl"
+  },
+  {
+    "offset": "0x22aca0",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientFanCoolersSetControl"
+  },
+  {
+    "offset": "0x22acd0",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_SetCoolerLevels"
+  },
+  {
+    "offset": "0x22acf0",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientFanCoolersGetInfo"
+  },
+  {
+    "offset": "0x22ad18",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientRegisterForOcScannerStatusUpdates"
+  },
+  {
+    "offset": "0x22ad58",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientStartOcScanner"
+  },
+  {
+    "offset": "0x22ad80",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientStopOcScanner"
+  },
+  {
+    "offset": "0x22ada8",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientGetLastOcScannerResults"
+  },
+  {
+    "offset": "0x22add8",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientEnableBackgroundOcScanner"
+  },
+  {
+    "offset": "0x22ae10",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientEnableGrdOc"
+  },
+  {
+    "offset": "0x22ae38",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetSystemType"
+  },
+  {
+    "offset": "0x22ae58",
+    "encoding": "ascii",
+    "text": "NvAPI_EnumLogicalGPUs"
+  },
+  {
+    "offset": "0x22ae78",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetLogicalGpuInfo"
+  },
+  {
+    "offset": "0x22aea0",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientRevertOc"
+  },
+  {
+    "offset": "0x22aec0",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetArchInfo"
+  },
+  {
+    "offset": "0x22af00",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_GetDriverAndBranchVersion"
+  },
+  {
+    "offset": "0x22af30",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetBrandType"
+  },
+  {
+    "offset": "0x22af50",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetLastIncompleteOcScannerResults"
+  },
+  {
+    "offset": "0x22af90",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClockClientClkDomainsGetInfo API call failed with error %d"
+  },
+  {
+    "offset": "0x22aff0",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClockClientClkVfPointsGetInfo API call failed with error %d"
+  },
+  {
+    "offset": "0x22b048",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientRegisterForVoltageSampleUpdates"
+  },
+  {
+    "offset": "0x22b088",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_ClientRegisterForClockSampleUpdates"
+  },
+  {
+    "offset": "0x22d7a8",
+    "encoding": "ascii",
+    "text": "NvMessageBus.dll"
+  },
+  {
+    "offset": "0x2323b0",
+    "encoding": "ascii",
+    "text": "Skipping telemetry report of error %s from method %s"
+  },
+  {
+    "offset": "0x232b20",
+    "encoding": "ascii",
+    "text": "ProcessIdToSessionId failed while getting admin consent SID. Error:%lu"
+  },
+  {
+    "offset": "0x232b80",
+    "encoding": "ascii",
+    "text": "WTSQueryUserToken failed while getting admin consent SID. Error:%lu"
+  },
+  {
+    "offset": "0x232be0",
+    "encoding": "ascii",
+    "text": "GetUserName failed while impersonating for admin consent. Error:%lu"
+  },
+  {
+    "offset": "0x232c38",
+    "encoding": "ascii",
+    "text": "RevertToSelf failed after admin consent SID lookup. Error:%lu"
+  },
+  {
+    "offset": "0x232c90",
+    "encoding": "ascii",
+    "text": "ImpersonateLoggedOnUser failed for admin consent SID lookup. Error:%lu"
+  },
+  {
+    "offset": "0x232ce8",
+    "encoding": "ascii",
+    "text": "DuplicateToken failed for admin consent SID lookup. Error:%lu"
+  },
+  {
+    "offset": "0x232d40",
+    "encoding": "ascii",
+    "text": "GetSIDFromUserName failed. Trying impersonation for admin consent"
+  },
+  {
+    "offset": "0x232d90",
+    "encoding": "ascii",
+    "text": "Failed to get active user name for admin consent. Error:%lu"
+  },
+  {
+    "offset": "0x232dd8",
+    "encoding": "ascii",
+    "text": "Admin consent registry key is not available. Error:%ld"
+  },
+  {
+    "offset": "0x232e20",
+    "encoding": "ascii",
+    "text": "Admin consent registry value is not available. Error:%ld Type:%lu"
+  },
+  {
+    "offset": "0x233108",
+    "encoding": "ascii",
+    "text": "Unable to get current user SID for admin consent"
+  },
+  {
+    "offset": "0x234018",
+    "encoding": "ascii",
+    "text": "nvapi_QueryInterface"
+  },
+  {
+    "offset": "0x234038",
+    "encoding": "ascii",
+    "text": "nvapi_Direct_GetMethod"
+  },
+  {
+    "offset": "0x287897",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x2bc85a",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x2292b0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvApp\\OC"
+  },
+  {
+    "offset": "0x22e8e0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x22e930",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x22ec30",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x22f740",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  },
+  {
+    "offset": "0x232910",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvApp"
+  },
+  {
+    "offset": "0x233f60",
+    "encoding": "utf-16le",
+    "text": "NvAPI Direct was not found. Please update your driver."
+  },
+  {
+    "offset": "0x234088",
+    "encoding": "utf-16le",
+    "text": "nvapi64.dll"
+  }
+]

@@ -1,0 +1,217 @@
+[
+  {
+    "offset": "0x346a50",
+    "encoding": "ascii",
+    "text": "nvapi_QueryInterface"
+  },
+  {
+    "offset": "0x346a68",
+    "encoding": "ascii",
+    "text": "nvapi_Direct_GetMethod"
+  },
+  {
+    "offset": "0x3530e0",
+    "encoding": "ascii",
+    "text": "Cannot parse 'TelemetryType' value"
+  },
+  {
+    "offset": "0x353108",
+    "encoding": "ascii",
+    "text": "Invalid 'TelemetryType' value"
+  },
+  {
+    "offset": "0x357ca8",
+    "encoding": "ascii",
+    "text": "TelemetryType (version.telemetryType is invalid: )"
+  },
+  {
+    "offset": "0x358130",
+    "encoding": "ascii",
+    "text": "InstallDirRegValues (version.installDirRegValues) should start with either HKEY_CURRENT_USER or HKEY_LOCAL_MACHINE. Invalid entry: "
+  },
+  {
+    "offset": "0x363d68",
+    "encoding": "ascii",
+    "text": "HKEY_CLASSES_ROOT"
+  },
+  {
+    "offset": "0x363d88",
+    "encoding": "ascii",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0x363da0",
+    "encoding": "ascii",
+    "text": "HKEY_CURRENT_CONFIG"
+  },
+  {
+    "offset": "0x363db8",
+    "encoding": "ascii",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0x363dc8",
+    "encoding": "ascii",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0x365640",
+    "encoding": "ascii",
+    "text": "external hook"
+  },
+  {
+    "offset": "0x3656f0",
+    "encoding": "ascii",
+    "text": "gethook"
+  },
+  {
+    "offset": "0x365718",
+    "encoding": "ascii",
+    "text": "sethook"
+  },
+  {
+    "offset": "0x365750",
+    "encoding": "ascii",
+    "text": "NvAPI_GetAssociatedNvidiaDisplayHandle failed with "
+  },
+  {
+    "offset": "0x3657e8",
+    "encoding": "ascii",
+    "text": "NvAPI_GetPhysicalGPUsFromDisplay failed with "
+  },
+  {
+    "offset": "0x365840",
+    "encoding": "ascii",
+    "text": "NvAPI_EnumPhysicalGPUs failed with "
+  },
+  {
+    "offset": "0x365868",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetShortName failed with "
+  },
+  {
+    "offset": "0x365890",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetFullName failed with "
+  },
+  {
+    "offset": "0x3658b8",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_CreateSession failed with "
+  },
+  {
+    "offset": "0x3658e0",
+    "encoding": "ascii",
+    "text": "NvAPI_Initialize failed with "
+  },
+  {
+    "offset": "0x365900",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_FindApplicationByName failed with "
+  },
+  {
+    "offset": "0x365930",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_LoadSettings failed with "
+  },
+  {
+    "offset": "0x365a88",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_GetSettingInfo failed with "
+  },
+  {
+    "offset": "0x365b28",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_GetDriverAndBranchVersion failed with "
+  },
+  {
+    "offset": "0x365b60",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_SaveSettings failed with "
+  },
+  {
+    "offset": "0x365b88",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_SetProfileData failed with "
+  },
+  {
+    "offset": "0x3469cc",
+    "encoding": "utf-16le",
+    "text": "@@NvAPI Direct was not found. Please update your driver."
+  },
+  {
+    "offset": "0x346ab0",
+    "encoding": "utf-16le",
+    "text": "nvapi64.dll"
+  },
+  {
+    "offset": "0x3530c0",
+    "encoding": "utf-16le",
+    "text": "TelemetryType"
+  },
+  {
+    "offset": "0x355170",
+    "encoding": "utf-16le",
+    "text": "HKLM\\SOFTWARE\\Valve\\Steam"
+  },
+  {
+    "offset": "0x355fb0",
+    "encoding": "utf-16le",
+    "text": "HKCU\\Software\\Tencent\\bugReport\\TGP"
+  },
+  {
+    "offset": "0x356020",
+    "encoding": "utf-16le",
+    "text": "HKLM\\Software\\Tencent\\bugReport\\TGP"
+  },
+  {
+    "offset": "0x357190",
+    "encoding": "utf-16le",
+    "text": "HKLM\\SOFTWARE\\Oculus VR, LLC\\Oculus\\Config"
+  },
+  {
+    "offset": "0x358008",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0x358030",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0x35a330",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x35a3a0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x35a630",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x35b610",
+    "encoding": "utf-16le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0x35b660",
+    "encoding": "utf-16le",
+    "text": "HKEY_ROOT"
+  },
+  {
+    "offset": "0x35b678",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_CONFIG"
+  },
+  {
+    "offset": "0x3659d0",
+    "encoding": "utf-16le",
+    "text": "\\\\.\\pipe\\{671A75EB-8A98-4F90-9B16-29DC96A7A4EF}"
+  }
+]

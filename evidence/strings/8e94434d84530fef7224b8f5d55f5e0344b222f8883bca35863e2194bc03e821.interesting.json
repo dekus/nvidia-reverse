@@ -1,0 +1,92 @@
+[
+  {
+    "offset": "0x677109",
+    "encoding": "ascii",
+    "text": "VK_LAYER_KHRONOS_validation"
+  },
+  {
+    "offset": "0x67c160",
+    "encoding": "ascii",
+    "text": "Persistently map buffer memory to reduce map/unmap IOCTL overhead."
+  },
+  {
+    "offset": "0x6834c0",
+    "encoding": "ascii",
+    "text": "RONOS_validationVK_LAYER_KHRONOSCommand successfully completed"
+  },
+  {
+    "offset": "0x683b10",
+    "encoding": "ascii",
+    "text": "VK_LAYER_KHRONOS_validation"
+  },
+  {
+    "offset": "0x683b30",
+    "encoding": "ascii",
+    "text": "VK_LAYER_LUNARG_standard_validation"
+  },
+  {
+    "offset": "0x683cd0",
+    "encoding": "ascii",
+    "text": "VK_LAYER_GOOGLE_threading"
+  },
+  {
+    "offset": "0x683cea",
+    "encoding": "ascii",
+    "text": "VK_LAYER_LUNARG_parameter_validation"
+  },
+  {
+    "offset": "0x683d0f",
+    "encoding": "ascii",
+    "text": "VK_LAYER_LUNARG_object_tracker"
+  },
+  {
+    "offset": "0x683d2e",
+    "encoding": "ascii",
+    "text": "VK_LAYER_LUNARG_core_validation"
+  },
+  {
+    "offset": "0x683d4e",
+    "encoding": "ascii",
+    "text": "VK_LAYER_GOOGLE_unique_objects"
+  },
+  {
+    "offset": "0x688d2a",
+    "encoding": "ascii",
+    "text": "VK_LAYER_PATH"
+  },
+  {
+    "offset": "0x688da0",
+    "encoding": "ascii",
+    "text": "VK_LAYER_CUSTOM_STYPE_LIST"
+  },
+  {
+    "offset": "0x6d6e6e",
+    "encoding": "ascii",
+    "text": "D3D12CreateDevice"
+  },
+  {
+    "offset": "0x6d6e80",
+    "encoding": "ascii",
+    "text": "Could not retrieve D3D12CreateDevice address."
+  },
+  {
+    "offset": "0x6d6f14",
+    "encoding": "ascii",
+    "text": "D3D11CreateDevice"
+  },
+  {
+    "offset": "0x6d6f26",
+    "encoding": "ascii",
+    "text": "Could not retrieve D3D11CreateDevice address."
+  },
+  {
+    "offset": "0x6d6f54",
+    "encoding": "ascii",
+    "text": "D3D11CreateDevice (Debug)"
+  },
+  {
+    "offset": "0x6d701f",
+    "encoding": "ascii",
+    "text": "GPU.ANGLE.D3D11CreateDeviceError"
+  }
+]

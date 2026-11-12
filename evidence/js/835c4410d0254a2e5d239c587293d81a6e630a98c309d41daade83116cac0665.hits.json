@@ -1,0 +1,38 @@
+[
+  {
+    "line": 308,
+    "text": "            this.rewardService = n, this.matDialog = i, this.telemetryUtilService = m, this.keyboardMappingService = b, this.couponCodeInputBox = (0, e.ebz)(\"couponCodeInputBox\"), this.redeemAction = (0, e.CGW)(), this.isLoading = !0, this.codeInvalid = !1, this.actionButtonDisabled = !0, this.destroyRef = (0, e.WQX)(e.abz), this.logger = t.getLogger(\"nvapp/couponInputComponent\")\r"
+  },
+  {
+    "line": 320,
+    "text": "            this.logger.info(\"coupon redeeming start..\"), this.telemetryUtilService.sendClickEvent(M.EB.RedeemCouponCode, \"\", !0, this.couponCode), this.redeemCoupon()\r"
+  },
+  {
+    "line": 344,
+    "text": "            this.telemetryUtilService.sendClickEvent(M.EB.CouponCodeInfoDialog, \"\", !0, \"\"), this.detailDialogRef = this.matDialog.open(D, {\r"
+  },
+  {
+    "line": 642,
+    "text": "            this.translateService = n, this.matDialog = i, this.rewardService = m, this.telemetryUtilService = b, this.datePipe = _, this.keyboardMappingService = $, this.reward = e.hFB.required(), this.isLoading = !0, this.destroyRef = (0, e.WQX)(e.abz), this.logger = t.getLogger(\"nvapp/RewardCardComponent\")\r"
+  },
+  {
+    "line": 667,
+    "text": "            this.telemetryUtilService.sendClickEvent(n, \"\", !0, t?.campaign.uuid), this.redeemReward()\r"
+  },
+  {
+    "line": 672,
+    "text": "            t.isRewardRedeemed() ? n = E.EB.ViewDetailsRedeemed : t.isRewardAvailable() && (n = t.state === P.E.Claimable ? E.EB.ViewDetailsClaimableReward : E.EB.ViewDetailsAvailableReward), this.telemetryUtilService.sendClickEvent(n, \"\", !0, t?.campaign.uuid), this.onOpenRewardDetailsDialog()\r"
+  },
+  {
+    "line": 714,
+    "text": "            t.isRewardRedeemed() ? (t.rewardsVrsItem.gameKey?.length > 0 ? (n = E.EB.ContinueToRedeem, i = t.rewardsVrsItem.gameUrl) : (n = E.EB.ContinueRedeemOnPlatform, i = this.constructPublisherLink()), i && i.length > 0 ? (this.telemetryUtilService.sendClickEvent(n, \"\", !0, t.rewardsVrsItem.campaign?.uuid), this.logger.info(\"redirecting to\", i), window.open(i)) : this.logger.error(\"redirect URL is invalid or not properly set\")) : t.isRewardAvailable() && this.redeemReward()\r"
+  },
+  {
+    "line": 849,
+    "text": "            this.appBarService = t, this.rewardService = i, this.loginService = m, this.telemetryService = b, this.performanceMeasureService = _, this.sidebarNotificationService = $, this.hostClass = \"nv-app-component-wrapper\", this.marqueeItems = [], this.isLoading = !0, this.isUserLoggedIn = !1, this.destroyRef = (0, e.WQX)(e.abz), this.pageHighlightSection = xe.kA.Redeem, this.appBarService.setTitle(\"rewards.redeem\"), this.logger = n.getLogger(\"nvapp/RewardComponent\")\r"
+  },
+  {
+    "line": 852,
+    "text": "            this.performanceMeasureService.markNvAppPerformanceMarkers([x.mM.NvAppRedeemRouteNavigationEnd, x.mM.NvAppRedeemDataFetchStart], x.fR.Redeem), this.telemetryService.setScreen(M.f3.Redeem), this.resetRewardsLists(), this.initLoginStatusSubscription().pipe((0, fe.n)(t => this.getRewards(t).pipe((0, j.M)(n => {\r"
+  }
+]

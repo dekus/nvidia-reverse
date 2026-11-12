@@ -1,0 +1,622 @@
+[
+  {
+    "offset": "0x9d5a0",
+    "encoding": "ascii",
+    "text": "nvapi_QueryInterface"
+  },
+  {
+    "offset": "0x9d5b8",
+    "encoding": "ascii",
+    "text": "nvapi_Direct_GetMethod"
+  },
+  {
+    "offset": "0xb1a60",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_GetDriverAndBranchVersion(&driverVersion, buildBranchString) failed with status = "
+  },
+  {
+    "offset": "0xb1ad0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\backend\\NvAPI_Support\\src\\NvAPI_Support.cpp"
+  },
+  {
+    "offset": "0xb1b40",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_GetDisplayDriverInfo(NV_DISPLAY_DRIVER_INFO_VER2) failed. "
+  },
+  {
+    "offset": "0xb1c00",
+    "encoding": "ascii",
+    "text": "NvAPI_Coproc_GetCoprocInfo(reinterpret_cast<NV_COPROC_INFO*>(&coprocInfo)) failed with status = "
+  },
+  {
+    "offset": "0xb1c68",
+    "encoding": "ascii",
+    "text": "NvAPI_EnumLogicalGPUs() failed with status = "
+  },
+  {
+    "offset": "0xb1c98",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_QueryNodeInfo() failed with status = "
+  },
+  {
+    "offset": "0xb1ce0",
+    "encoding": "ascii",
+    "text": "Nvapi status is NVAPI_NVIDIA_DEVICE_NOT_FOUND. Probably a failure due to headless gpu."
+  },
+  {
+    "offset": "0xb1dc0",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_GetLastDBChangeTime(&timestamp) failed with status = "
+  },
+  {
+    "offset": "0xb1fe0",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_CreateSession(&handle) failed with status = "
+  },
+  {
+    "offset": "0xb2020",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\backend\\NvAPI_Support\\src\\drssupport.cpp"
+  },
+  {
+    "offset": "0xb2098",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_LoadSettings(m_session.get()) failed with status = "
+  },
+  {
+    "offset": "0xb20f0",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_GetProfileInfo(m_session.get(), profile, &profileInfo) failed with status = "
+  },
+  {
+    "offset": "0xb21c0",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_GetCurrentGlobalProfile(m_session.get(), &profile) failed with status = "
+  },
+  {
+    "offset": "0xb2230",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_GetSettingEx(m_session.get(), profile, settingId, &drsData, &notUsed) failed with status = "
+  },
+  {
+    "offset": "0xb2300",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_SetSettingEx(m_session.get(), profile, &drsData, 0, 0) failed with status = "
+  },
+  {
+    "offset": "0xb2358",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_SaveSettings(m_session.get()) failed with status = "
+  },
+  {
+    "offset": "0xb23a0",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_GetDriverAndBranchVersion(&driverVersion, notUsed) failed with status = "
+  },
+  {
+    "offset": "0xb2520",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_GetSettingInfo(m_session.get(), profile, settingId, reinterpret_cast<NVDRS_SETTING_INFO*>(si.get())) failed with status = "
+  },
+  {
+    "offset": "0xb25f0",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_SetProfileData(m_session.get(), profile, 1, &setting) failed with status = "
+  },
+  {
+    "offset": "0xb6408",
+    "encoding": "ascii",
+    "text": "nvapi.dll"
+  },
+  {
+    "offset": "0xb6558",
+    "encoding": "ascii",
+    "text": "nvapi64.dll"
+  },
+  {
+    "offset": "0xc76fc",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0xca268",
+    "encoding": "ascii",
+    "text": ".?AVNvAPIError@GFE@@"
+  },
+  {
+    "offset": "0xcb238",
+    "encoding": "ascii",
+    "text": ".?AVDRSDBInfo@NvAPI@GFE@@"
+  },
+  {
+    "offset": "0xcb290",
+    "encoding": "ascii",
+    "text": ".?AUIDRSDBInfo@NvAPI@GFE@@"
+  },
+  {
+    "offset": "0xcb320",
+    "encoding": "ascii",
+    "text": ".?AVNVAPIFactory@NvAPI@GFE@@"
+  },
+  {
+    "offset": "0xcb350",
+    "encoding": "ascii",
+    "text": ".?AUINVAPI@NvAPI@GFE@@"
+  },
+  {
+    "offset": "0xcb378",
+    "encoding": "ascii",
+    "text": ".?AUINVAPIFactory@NvAPI@GFE@@"
+  },
+  {
+    "offset": "0xcb3a8",
+    "encoding": "ascii",
+    "text": ".?AVNVAPI@NvAPI@GFE@@"
+  },
+  {
+    "offset": "0x9d520",
+    "encoding": "utf-16le",
+    "text": "NvAPI Direct was not found. Please update your driver."
+  },
+  {
+    "offset": "0x9d600",
+    "encoding": "utf-16le",
+    "text": "nvapi64.dll"
+  },
+  {
+    "offset": "0x9f250",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0x9f298",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0x9f2e0",
+    "encoding": "utf-16le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0x9f310",
+    "encoding": "utf-16le",
+    "text": "HKEY_ROOT"
+  },
+  {
+    "offset": "0x9f348",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_CONFIG"
+  },
+  {
+    "offset": "0xaae50",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0xaae90",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0xab140",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0xae310",
+    "encoding": "utf-16le",
+    "text": "NvAPI is not available, falling back to PCI device enumeration: "
+  },
+  {
+    "offset": "0xaf280",
+    "encoding": "utf-16le",
+    "text": "Can't get current driver info from NVAPI: "
+  },
+  {
+    "offset": "0xaf530",
+    "encoding": "utf-16le",
+    "text": "HKCU\\Software\\NVIDIA Corporation\\Global\\NvApp"
+  },
+  {
+    "offset": "0xaf5c0",
+    "encoding": "utf-16le",
+    "text": "HKCU\\SOFTWARE\\NVIDIA Corporation\\Global\\GFExperience"
+  },
+  {
+    "offset": "0xaf630",
+    "encoding": "utf-16le",
+    "text": "HKLM\\Software\\NVIDIA Corporation\\Global\\NvApp"
+  },
+  {
+    "offset": "0xb02c0",
+    "encoding": "utf-16le",
+    "text": "HKCU\\SOFTWARE\\NVIDIA Corporation\\NvBackend"
+  },
+  {
+    "offset": "0xb13e0",
+    "encoding": "utf-16le",
+    "text": "HKLM\\SOFTWARE\\NVIDIA Corporation\\Global\\NVUpdatus"
+  },
+  {
+    "offset": "0xb1450",
+    "encoding": "utf-16le",
+    "text": "HKLM\\SOFTWARE\\NVIDIA Corporation\\Global\\WebServices"
+  },
+  {
+    "offset": "0xb14d0",
+    "encoding": "utf-16le",
+    "text": "HKCU\\Software\\NVIDIA Corporation\\Global\\NvApp\\GFE_Backup"
+  },
+  {
+    "offset": "0xb17b0",
+    "encoding": "utf-16le",
+    "text": "HKLM\\Software\\NVIDIA Corporation\\Global\\GFExperience"
+  },
+  {
+    "offset": "0xb1860",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\backend\\NvAPI_Support\\src\\NvAPI_Support.cpp"
+  },
+  {
+    "offset": "0xb1920",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Initialize"
+  },
+  {
+    "offset": "0xb1948",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Unload failed with "
+  },
+  {
+    "offset": "0xb1d40",
+    "encoding": "utf-16le",
+    "text": "GFE::NvAPI::NvAPISubscription::NvAPISubscriptionstatus = "
+  },
+  {
+    "offset": "0xb1dfe",
+    "encoding": "utf-16le",
+    "text": " Creating NVAPI factory"
+  },
+  {
+    "offset": "0xb1e30",
+    "encoding": "utf-16le",
+    "text": "Destroying NVAPI factory"
+  },
+  {
+    "offset": "0xb1f00",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\backend\\NvAPI_Support\\src\\drssupport.cpp"
+  },
+  {
+    "offset": "0xb2650",
+    "encoding": "utf-16le",
+    "text": "Calling NvAPI_SYS_GetNvPresentProfileRequirements for unicode profileName: "
+  },
+  {
+    "offset": "0xb26f0",
+    "encoding": "utf-16le",
+    "text": "Calling NvAPI_SYS_GetNvPresentProfileRequirements for string profileName: "
+  },
+  {
+    "offset": "0xb2790",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SYS_GetNvPresentProfileRequirements failed with status: "
+  },
+  {
+    "offset": "0xb2e60",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall"
+  },
+  {
+    "offset": "0xb2ed0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Component Based Servicing\\Packages"
+  },
+  {
+    "offset": "0xb34f0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetDisplayIdByDisplayName"
+  },
+  {
+    "offset": "0xb3590",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetHyperSamplingSettings"
+  },
+  {
+    "offset": "0xb3710",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_SetHyperSamplingSettings"
+  },
+  {
+    "offset": "0xb39e0",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\nvlddmkm (Parameters?) not found, returning clean system status, rc="
+  },
+  {
+    "offset": "0xb4028",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPstates failed: "
+  },
+  {
+    "offset": "0xb4070",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetAllClockFrequencies failed to get frequencies: "
+  },
+  {
+    "offset": "0xb40f0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPerfClocks failed: "
+  },
+  {
+    "offset": "0xb4140",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPerfClocks returned incorrect level count."
+  },
+  {
+    "offset": "0xb41b0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPCIEInfos failed: "
+  },
+  {
+    "offset": "0xb41f0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_EnumPhysicalGPUs failed: "
+  },
+  {
+    "offset": "0xb4230",
+    "encoding": "utf-16le",
+    "text": "NvAPI_EnumLogicalGPUs failed: "
+  },
+  {
+    "offset": "0xb42b0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetValidGpuTopologies failed: "
+  },
+  {
+    "offset": "0xb4300",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetArchInfo failed: "
+  },
+  {
+    "offset": "0xb4340",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetBusType failed: "
+  },
+  {
+    "offset": "0xb4380",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetSystemType failed: "
+  },
+  {
+    "offset": "0xb43d0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetRamBankCount failed: "
+  },
+  {
+    "offset": "0xb4420",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetRamBusWidth failed: "
+  },
+  {
+    "offset": "0xb4468",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetRamType failed: "
+  },
+  {
+    "offset": "0xb44b0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPCIIdentifiers failed: "
+  },
+  {
+    "offset": "0xb4500",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetFullName failed: "
+  },
+  {
+    "offset": "0xb4540",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetShortName failed: "
+  },
+  {
+    "offset": "0xb4580",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetTotalTPCCount failed: "
+  },
+  {
+    "offset": "0xb45c8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetGPUInfo failed: "
+  },
+  {
+    "offset": "0xb4610",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetVbiosVersionString failed: "
+  },
+  {
+    "offset": "0xb4668",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetUEFIInfo failed: "
+  },
+  {
+    "offset": "0xb46b0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_ManufacturingInfo failed: "
+  },
+  {
+    "offset": "0xb4700",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPhysicalFrameBufferSize failed: "
+  },
+  {
+    "offset": "0xb4760",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetVirtualFrameBufferSize failed: "
+  },
+  {
+    "offset": "0xb47c0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetVPECount failed: "
+  },
+  {
+    "offset": "0xb4800",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetShaderPipeCount failed: "
+  },
+  {
+    "offset": "0xb4850",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetShaderSubPipeCount failed: "
+  },
+  {
+    "offset": "0xb48b0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPartitionCount failed: "
+  },
+  {
+    "offset": "0xb4900",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetTotalSMCount failed: "
+  },
+  {
+    "offset": "0xb4950",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetTotalSPCount failed: "
+  },
+  {
+    "offset": "0xb49a0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetGpuCoreCount failed: "
+  },
+  {
+    "offset": "0xb49e8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetBusId failed: "
+  },
+  {
+    "offset": "0xb4a20",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetBusSlotId failed: "
+  },
+  {
+    "offset": "0xb4aa0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetCoolerSettings failed: "
+  },
+  {
+    "offset": "0xb4af0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_QueryGpuFlags failed: "
+  },
+  {
+    "offset": "0xb4b60",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_QueryWorkstationFeatureSupport for PROVIZ status: "
+  },
+  {
+    "offset": "0xb4be0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetBrandType failed: "
+  },
+  {
+    "offset": "0xb4c20",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetQuadroStatus failed: "
+  },
+  {
+    "offset": "0xb4c70",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPerfHybridMode failed: "
+  },
+  {
+    "offset": "0xb4cc0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetTvEncoderType failed: "
+  },
+  {
+    "offset": "0xb4d70",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetThermalSettings failed: "
+  },
+  {
+    "offset": "0xb4dc0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetVbiosSecurityInfo failed: "
+  },
+  {
+    "offset": "0xb4e10",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetDisplayFromPhysicalGPU failed: "
+  },
+  {
+    "offset": "0xb4e70",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetAssociatedNvidiaDisplayName failed: "
+  },
+  {
+    "offset": "0xb4f50",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetAllClockFrequencies() status for boost:"
+  },
+  {
+    "offset": "0xb4ff0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetAllClockFrequencies() status for base:"
+  },
+  {
+    "offset": "0xb5140",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetRawFuseData failed: "
+  },
+  {
+    "offset": "0xb5210",
+    "encoding": "utf-16le",
+    "text": "updtDispDevEnumClass::GetEdidNvAPI"
+  },
+  {
+    "offset": "0xb5260",
+    "encoding": "utf-16le",
+    "text": "updtDispDevEnumClass::GetEdidNvAPI: Memory allocation error"
+  },
+  {
+    "offset": "0xb52e0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetConnectorInfo failed: "
+  },
+  {
+    "offset": "0xb53a0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetConnectedDisplayIds failed: "
+  },
+  {
+    "offset": "0xb5400",
+    "encoding": "utf-16le",
+    "text": "Second call of NvAPI_GPU_GetConnectedDisplayIds failed: "
+  },
+  {
+    "offset": "0xb5770",
+    "encoding": "utf-16le",
+    "text": "HKLM\\SOFTWARE\\NVIDIA Corporation\\Global\\Espresso"
+  },
+  {
+    "offset": "0xb57e0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetDisplayDriverBuildTitle failed: "
+  },
+  {
+    "offset": "0xb5840",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetDisplayDriverSecurityLevel failed: "
+  },
+  {
+    "offset": "0xb58a0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetDisplayDriverCompileType failed: "
+  },
+  {
+    "offset": "0xb5930",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SYS_ClientJpacGetInfo not supported "
+  }
+]

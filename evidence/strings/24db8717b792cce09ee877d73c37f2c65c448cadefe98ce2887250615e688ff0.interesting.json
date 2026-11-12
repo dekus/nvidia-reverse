@@ -1,0 +1,297 @@
+[
+  {
+    "offset": "0x1524c8",
+    "encoding": "ascii",
+    "text": "c:\\dvs\\p4\\build\\sw\\devrel\\playpen\\yyao\\vrbench\\vr-fcat\\fvsdk_rel_1_0\\nvinstaller\\extensions\\alphasubpackages\\frameviewsdk\\packageutil.cpp"
+  },
+  {
+    "offset": "0x1542a0",
+    "encoding": "ascii",
+    "text": "c:\\dvs\\p4\\build\\sw\\devrel\\playpen\\yyao\\vrbench\\vr-fcat\\fvsdk_rel_1_0\\nvinstaller\\extensions\\alphasubpackages\\frameviewsdk\\frameviewsdkextsite.h"
+  },
+  {
+    "offset": "0x154410",
+    "encoding": "ascii",
+    "text": "c:\\dvs\\p4\\build\\sw\\devrel\\playpen\\yyao\\vrbench\\vr-fcat\\fvsdk_rel_1_0\\nvinstaller\\extensions\\alphasubpackages\\frameviewsdk\\frameviewsdkextsite.cpp"
+  },
+  {
+    "offset": "0x1546b0",
+    "encoding": "ascii",
+    "text": "Decide if we need to install FVSDK"
+  },
+  {
+    "offset": "0x1547ac",
+    "encoding": "ascii",
+    "text": " is skipped from installation. Skipping FVSDK as well"
+  },
+  {
+    "offset": "0x154ad4",
+    "encoding": "ascii",
+    "text": "Failure occurred while setting FvSDK event :"
+  },
+  {
+    "offset": "0x15cd78",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\devrel\\Playpen\\yyao\\VRBench\\VR-FCAT\\FVSDK_rel_1_0\\NvInstaller\\Extensions\\AlphaSubPackages\\FrameViewSdk\\Release\\FrameViewSdkExt.pdb"
+  },
+  {
+    "offset": "0x180a18",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x1836a0",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Vbad_alloc@std@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x183718",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Vbad_alloc@std@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x183cd0",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Vruntime_error@std@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x183f00",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Vtoo_many_args@io@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x183f88",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Vout_of_range@std@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x184090",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Ubad_day_of_year@gregorian@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x184148",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Vlock_error@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x184238",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Ubad_month@gregorian@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1844c0",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Vbad_lexical_cast@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1845e0",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Vlock_error@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x184918",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Ubad_day_of_month@gregorian@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x184a40",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Vout_of_range@std@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x184cd8",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Ubad_weekday@gregorian@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x184dc0",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Vthread_resource_error@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x184f48",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Vtoo_few_args@io@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x185068",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Vbad_lexical_cast@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1850c0",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Ubad_day_of_year@gregorian@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1851d8",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Ubad_year@gregorian@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x185298",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Ubad_month@gregorian@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x185318",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Vbad_format_string@io@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x185378",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Vtoo_few_args@io@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x185488",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@VRegistryException@Logging@Nvidia@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x185568",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Ubad_weekday@gregorian@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1856e8",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@Ubad_day_of_month@gregorian@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x1857b0",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Vtoo_many_args@io@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x185880",
+    "encoding": "ascii",
+    "text": ".?AU?$error_info_injector@VRegistryException@Logging@Nvidia@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x185a68",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Vruntime_error@std@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x185b10",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Ubad_year@gregorian@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x185bc0",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Vbad_format_string@io@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x185c68",
+    "encoding": "ascii",
+    "text": ".?AV?$clone_impl@U?$error_info_injector@Vthread_resource_error@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+  },
+  {
+    "offset": "0x13e758",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion"
+  },
+  {
+    "offset": "0x13e8a0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\SharedDLLs"
+  },
+  {
+    "offset": "0x13effc",
+    "encoding": "utf-16le",
+    "text": "HKEY_CLASSES_ROOT"
+  },
+  {
+    "offset": "0x13f020",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0x13f044",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0x13f06c",
+    "encoding": "utf-16le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0x13f268",
+    "encoding": "utf-16le",
+    "text": "\\registry\\machine\\software\\classes"
+  },
+  {
+    "offset": "0x13f948",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x13f988",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x13fc40",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x151f20",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Logging\\Definitions\\LogFilters\\PassFilter"
+  },
+  {
+    "offset": "0x1520c8",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Logging"
+  },
+  {
+    "offset": "0x152558",
+    "encoding": "utf-16le",
+    "text": "c:\\dvs\\p4\\build\\sw\\devrel\\playpen\\yyao\\vrbench\\vr-fcat\\fvsdk_rel_1_0\\nvinstaller\\extensions\\alphasubpackages\\frameviewsdk\\packageutil.cpp"
+  },
+  {
+    "offset": "0x1540d8",
+    "encoding": "utf-16le",
+    "text": "c:\\dvs\\p4\\build\\sw\\devrel\\playpen\\yyao\\vrbench\\vr-fcat\\fvsdk_rel_1_0\\nvinstaller\\extensions\\alphasubpackages\\frameviewsdk\\frameviewsdkextsite.h"
+  },
+  {
+    "offset": "0x1544a8",
+    "encoding": "utf-16le",
+    "text": "c:\\dvs\\p4\\build\\sw\\devrel\\playpen\\yyao\\vrbench\\vr-fcat\\fvsdk_rel_1_0\\nvinstaller\\extensions\\alphasubpackages\\frameviewsdk\\frameviewsdkextsite.cpp"
+  },
+  {
+    "offset": "0x154720",
+    "encoding": "utf-16le",
+    "text": "CFrameViewSdkExtSite::DecideFvSdkInstallation"
+  },
+  {
+    "offset": "0x1547e8",
+    "encoding": "utf-16le",
+    "text": "Global\\FVSDK_EvtUninstallFinish"
+  },
+  {
+    "offset": "0x154828",
+    "encoding": "utf-16le",
+    "text": "Global\\FVSDK_EvtInstallFinish"
+  },
+  {
+    "offset": "0x154864",
+    "encoding": "utf-16le",
+    "text": "Global\\FVSDK_EvtInstallFailed"
+  },
+  {
+    "offset": "0x1549bc",
+    "encoding": "utf-16le",
+    "text": "Global\\FVSDK_EvtUninstallStart"
+  },
+  {
+    "offset": "0x1549fc",
+    "encoding": "utf-16le",
+    "text": "Global\\FVSDK_EvtInstallStart"
+  }
+]

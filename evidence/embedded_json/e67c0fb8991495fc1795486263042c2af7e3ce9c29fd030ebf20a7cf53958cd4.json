@@ -1,0 +1,437 @@
+[
+  {
+    "file_offset": "0x176a50",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#systemInfoRequest",
+      "title": "SystemInfo",
+      "type": "object",
+      "module": "SystemInfo",
+      "definitions": {
+        "ApiStatusEnum": {
+          "type": "string",
+          "enum": [
+            "Success",
+            "Failure"
+          ]
+        },
+        "UiModeEnum": {
+          "type": "string",
+          "enum": [
+            "Desktop",
+            "Mobile",
+            "Game"
+          ]
+        },
+        "SystemInfo": {
+          "type": "object",
+          "properties": {
+            "DeviceId": {
+              "type": "string"
+            },
+            "ProductVersion": {
+              "type": "string"
+            },
+            "ProductName": {
+              "type": "string"
+            },
+            "Region": {
+              "type": "string"
+            },
+            "CPUName": {
+              "type": "string"
+            },
+            "Disk": {
+              "type": "array",
+              "items": {
+                "title": "Disk",
+                "properties": {
+                  "FreeSpace": {
+                    "type": "string"
+                  },
+                  "MediumType": {
+                    "type": "string"
+                  },
+                  "TotalSize": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "PhysicalDisk": {
+              "type": "array",
+              "items": {
+                "title": "PhysicalDisk",
+                "properties": {
+                  "MediumType": {
+                    "type": "string"
+                  },
+                  "TotalSize": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "MediumType",
+                  "TotalSize"
+                ]
+              }
+            },
+            "Display": {
+              "type": "array",
+              "items": {
+                "title": "Display",
+                "properties": {
+                  "LogicalResolution": {
+                    "type": "string"
+                  },
+                  "PhysicalResolution": {
+                    "type": "string"
+                  },
+                  "RefreshRate": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "LogicalResolution",
+                  "PhysicalResolution",
+                  "RefreshRate"
+                ]
+              }
+            },
+            "GPU": {
+              "type": "object",
+              "title": "GPU",
+              "properties": {
+                "GPUData": {
+                  "type": "array",
+                  "items": {
+                    "title": "GPUData",
+                    "properties": {
+                      "LongGPUName": {
+                        "type": "string"
+                      },
+                      "VDSR": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "PrimaryGPUDriverInfo": {
+                  "type": "object",
+                  "title": "PrimaryGPUDriverInfo",
+                  "properties": {
+                    "GpuProduct": {
+                      "type": "string"
+                    },
+                    "GpuRevision": {
+                      "type": "string"
+                    },
+                    "GpuBuildNumHi": {
+                      "type": "string"
+                    },
+                    "GpuBuildNumLo": {
+                      "type": "string"
+                    },
+                    "GpuDriverName": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "HID": {
+              "type": "object",
+              "title": "HID",
+              "properties": {
+                "Keyboard": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "title": "HIDDevice",
+                    "properties": {
+                      "manufacturer": {
+                        "type": "string"
+                      },
+                      "productID": {
+                        "type": "string"
+                      },
+                      "reportIntervalUs": {
+                        "type": "string"
+                      },
+                      "transport": {
+                        "type": "string"
+                      },
+                      "vendorID": {
+                        "type": "string"
+                      },
+                      "versionNumber": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "Mouse": {
+                  "$ref": "#/definitions/SystemInfo/properties/HID/properties/Keyboard"
+                },
+                "GamePad": {
+                  "$ref": "#/definitions/SystemInfo/properties/HID/properties/Keyboard"
+                },
+                "Joystick": {
+                  "$ref": "#/definitions/SystemInfo/properties/HID/properties/Keyboard"
+                }
+              }
+            },
+            "Network": {
+              "type": "object",
+              "title": "Network",
+              "properties": {
+                "Fingerprint": {
+                  "type": "string"
+                },
+                "GatewayIP": {
+                  "type": "string"
+                },
+                "IPAddress": {
+                  "type": "string"
+                },
+                "IsVPN": {
+                  "type": "string"
+                },
+                "MACAddress": {
+                  "type": "string"
+                },
+                "NetworkName": {
+                  "type": "string"
+                },
+                "NetworkType": {
+                  "type": "string"
+                },
+                "RouterMACAddress": {
+                  "type": "string"
+                }
+              }
+            },
+            "OSName": {
+              "type": "string"
+            },
+            "OSVersion": {
+              "type": "string"
+            },
+            "BrowserName": {
+              "type": "string"
+            },
+            "BrowserVersion": {
+              "type": "string"
+            },
+            "OSBuildNumber": {
+              "type": "string"
+            },
+            "PhysicalMemoryCapacity": {
+              "type": "string"
+            },
+            "Platform": {
+              "type": "string"
+            },
+            "ProcessorArchitecture": {
+              "type": "string"
+            },
+            "SystemName": {
+              "type": "string"
+            },
+            "UserDefaultUILanguage": {
+              "type": "string"
+            },
+            "VendorName": {
+              "type": "string"
+            },
+            "SubApiName": {
+              "type": "string"
+            },
+            "ErrorMessage": {
+              "type": "string"
+            },
+            "ApiStatus": {
+              "$ref": "#/definitions/ApiStatusEnum"
+            },
+            "DxVersion": {
+              "type": "string"
+            },
+            "DeviceType": {
+              "type": "string"
+            },
+            "ConfidenceInBrowser": {
+              "type": "number"
+            },
+            "IsBrowserForged": {
+              "type": "boolean"
+            },
+            "Location": {
+              "type": "boolean"
+            },
+            "Make": {
+              "type": "string"
+            },
+            "Model": {
+              "type": "string"
+            },
+            "CurrentUiMode": {
+              "$ref": "#/definitions/UiModeEnum"
+            },
+            "DisplayDataInfo": {
+              "type": "object",
+              "title": "DisplayDataInfo",
+              "properties": {
+                "desiredContentMaxLuminance": {
+                  "type": "number"
+                },
+                "desiredContentMinLuminance": {
+                  "type": "number"
+                },
+                "desiredContentMaxFrameAverageLuminance": {
+                  "type": "number"
+                }
+              }
+            },
+            "UserSpecifiedDeviceName": {
+              "type": "string"
+            },
+            "AwdlEnabled": {
+              "type": "boolean"
+            }
+          }
+        },
+        "BrowserInfo": {
+          "type": "object",
+          "properties": {
+            "BrowserNameNative": {
+              "type": "string"
+            },
+            "BrowserVersionNative": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "BrowserNameNative",
+            "BrowserVersionNative"
+          ]
+        },
+        "DeviceIDInfo": {
+          "type": "object",
+          "properties": {
+            "DeviceID": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "DeviceID"
+          ]
+        },
+        "StreamingSupportInfo": {
+          "type": "object",
+          "properties": {
+            "IsStreamingSupported": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "IsStreamingSupported"
+          ]
+        },
+        "NetworkTypeChangedInfo": {
+          "type": "object",
+          "properties": {
+            "networkType": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "networkType"
+          ]
+        },
+        "GetSystemInfo": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "keys": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "keys"
+            ]
+          },
+          "return": {
+            "$ref": "#/definitions/SystemInfo"
+          }
+        },
+        "GetClientHeadersInfo": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string"
+              }
+            }
+          },
+          "return": {
+            "$ref": "#/definitions/SystemInfo"
+          }
+        },
+        "GetDeviceId": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "$ref": "#/definitions/DeviceIDInfo"
+          }
+        },
+        "GetBrowserInfo": {
+          "type": "object",
+          "isCommand": true,
+          "legacyCommand": "QUERY_BROWSER_INFO",
+          "return": {
+            "$ref": "#/definitions/BrowserInfo"
+          }
+        },
+        "GetStreamingSupportInfo": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "$ref": "#/definitions/StreamingSupportInfo"
+          }
+        },
+        "GetNetworkTypeChangedInfo": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "$ref": "#/definitions/NetworkTypeChangedInfo"
+          }
+        },
+        "DNSLookup": {
+          "type": "object",
+          "description": "Lookup DNS for the provided hostname",
+          "isCommand": true,
+          "legacyCommand": "QUERY_DNS",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "descirption": "hostname"
+              }
+            },
+            "required": [
+              "name"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

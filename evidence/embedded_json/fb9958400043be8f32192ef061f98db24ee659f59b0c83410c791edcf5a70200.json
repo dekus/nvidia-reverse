@@ -1,0 +1,149 @@
+[
+  {
+    "file_offset": "0x1fcdb0",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#nvlocalizedconfig",
+      "title": "NvLocalizedConfig Endpoints",
+      "type": "object",
+      "module": "NvLocalizedConfig",
+      "definitions": {
+        "LocalizedConfig": {
+          "type": "object",
+          "description": "This object will contain a config object with localized properties received from the localization service. The layout of the object is product-specific."
+        },
+        "LocalizationDataChangeNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "$ref": "#/definitions/LocalizedConfig"
+          }
+        },
+        "GetLocalizationData": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Returns localized config JSON received from the localization service",
+          "return": {
+            "$ref": "#/definitions/LocalizedConfig"
+          }
+        }
+      }
+    }
+  },
+  {
+    "file_offset": "0x1fdb30",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for NvLocalizedConfig plugin config format",
+      "type": "object",
+      "properties": {
+        "productConfigFilePath": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "productConfigFilePath"
+      ]
+    }
+  },
+  {
+    "file_offset": "0x1fe6d0",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for NvTelemetry config format",
+      "type": "object",
+      "properties": {
+        "nvTelemetry": {
+          "type": "object",
+          "properties": {
+            "eventsUrl": {
+              "type": "string"
+            },
+            "feedbacksUrl": {
+              "type": "string"
+            },
+            "feedbackAttachmentsUrl": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "eventsUrl",
+            "feedbacksUrl",
+            "feedbackAttachmentsUrl"
+          ]
+        }
+      },
+      "required": [
+        "nvTelemetry"
+      ]
+    }
+  },
+  {
+    "file_offset": "0x1fefb0",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for NvLocalizedConfig storage format",
+      "type": "object",
+      "definitions": {
+        "LocalizedConfig": {
+          "type": "object",
+          "description": "This object will contain a config object with localized properties received from the localization service. The layout of the object is product-specific."
+        }
+      },
+      "properties": {
+        "localizedConfig": {
+          "$ref": "#/definitions/LocalizedConfig"
+        },
+        "configTimestamp": {
+          "type": "string",
+          "description": "Date-time in ISO without milliseconds"
+        },
+        "etag": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "localizedConfig",
+        "configTimestamp",
+        "etag"
+      ]
+    }
+  },
+  {
+    "file_offset": "0x1ff730",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for RConfig response format",
+      "type": "object",
+      "definitions": {
+        "ParamObject": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "value": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ]
+        }
+      },
+      "properties": {
+        "params": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ParamObject"
+          }
+        }
+      },
+      "required": [
+        "params"
+      ]
+    }
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "offset": "0xec858",
+    "encoding": "ascii",
+    "text": "cudaGetDriverEntryPoint_ptsz"
+  },
+  {
+    "offset": "0xec880",
+    "encoding": "ascii",
+    "text": "cudaGetDriverEntryPointByVersion_ptsz"
+  },
+  {
+    "offset": "0xed3b0",
+    "encoding": "ascii",
+    "text": "cudaGetDriverEntryPoint"
+  },
+  {
+    "offset": "0xed3d0",
+    "encoding": "ascii",
+    "text": "cudaGetDriverEntryPointByVersion"
+  },
+  {
+    "offset": "0xfed70",
+    "encoding": "ascii",
+    "text": "App logging hooks successfully initialized"
+  },
+  {
+    "offset": "0xf7ee0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0xf7f30",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0xf81f0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0xfde10",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0xfde60",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0xfe1a0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0xfe750",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NGXCore"
+  }
+]

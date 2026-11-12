@@ -1,0 +1,87 @@
+[
+  {
+    "offset": "0x1b7ec0",
+    "encoding": "ascii",
+    "text": "localhost"
+  },
+  {
+    "offset": "0x1b81d0",
+    "encoding": "ascii",
+    "text": "127.0.0.1"
+  },
+  {
+    "offset": "0x1bd110",
+    "encoding": "ascii",
+    "text": "cr_in, rewind via set.ioctl_func -> %d"
+  },
+  {
+    "offset": "0x1bd140",
+    "encoding": "ascii",
+    "text": "ioctl callback returned error %d"
+  },
+  {
+    "offset": "0x1bd6d0",
+    "encoding": "ascii",
+    "text": "localhost."
+  },
+  {
+    "offset": "0x1bd6e0",
+    "encoding": "ascii",
+    "text": ".localhost"
+  },
+  {
+    "offset": "0x1bd6f0",
+    "encoding": "ascii",
+    "text": ".localhost."
+  },
+  {
+    "offset": "0x1c1718",
+    "encoding": "ascii",
+    "text": "Negotiate: noauthpersist -> %d, header part: %s"
+  },
+  {
+    "offset": "0x1c6358",
+    "encoding": "ascii",
+    "text": "localhost/"
+  },
+  {
+    "offset": "0x1c6368",
+    "encoding": "ascii",
+    "text": "127.0.0.1/"
+  },
+  {
+    "offset": "0x1c6420",
+    "encoding": "ascii",
+    "text": "%s: user=%s, passwd=%s, sasl_authzid=%s, oauth_bearer=%s, source=%d"
+  },
+  {
+    "offset": "0x1cb690",
+    "encoding": "ascii",
+    "text": "XOAUTH2"
+  },
+  {
+    "offset": "0x1cb6a0",
+    "encoding": "ascii",
+    "text": "OAUTHBEARER"
+  },
+  {
+    "offset": "0x1cb8c8",
+    "encoding": "ascii",
+    "text": "CURLOPT_XOAUTH2_BEARER"
+  },
+  {
+    "offset": "0x217e6a",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x21922c",
+    "encoding": "ascii",
+    "text": "WSAIoctl"
+  },
+  {
+    "offset": "0x1b2e50",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  }
+]

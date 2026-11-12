@@ -1,0 +1,312 @@
+[
+  {
+    "offset": "0x6671c0",
+    "encoding": "ascii",
+    "text": "nvapi_QueryInterface"
+  },
+  {
+    "offset": "0x6671d8",
+    "encoding": "ascii",
+    "text": "nvapi_Direct_GetMethod"
+  },
+  {
+    "offset": "0x6680a8",
+    "encoding": "ascii",
+    "text": "NVAPI error"
+  },
+  {
+    "offset": "0x6685a8",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\CoProcManager"
+  },
+  {
+    "offset": "0x704fb8",
+    "encoding": "ascii",
+    "text": "D3D11CreateDevice"
+  },
+  {
+    "offset": "0x7126f0",
+    "encoding": "ascii",
+    "text": "void __cdecl Nvidia::UXDriver::Shim::Persist::DeletePersistenceRecords(class Nvidia::Logging::RegistryKey,struct HKEY__ *)"
+  },
+  {
+    "offset": "0x723380",
+    "encoding": "ascii",
+    "text": "enum VideoIODataFormat __cdecl Nvidia::UXDriver::Shim::SdiSettings::NvapiDataFormatToUxdDataFormat(const enum _NVVIODATAFORMAT)"
+  },
+  {
+    "offset": "0x7234a0",
+    "encoding": "ascii",
+    "text": "enum _NVVIODATAFORMAT __cdecl Nvidia::UXDriver::Shim::SdiSettings::UxdDataFormatToNvapiDataFormat(const enum VideoIODataFormat)"
+  },
+  {
+    "offset": "0x723550",
+    "encoding": "ascii",
+    "text": "enum VideoIOCompositeSyncType __cdecl Nvidia::UXDriver::Shim::SdiSettings::NvapiCompositeSyncTypeToUxdCompositeSyncType(const enum _NVVIOCOMPSYNCTYPE &)"
+  },
+  {
+    "offset": "0x723620",
+    "encoding": "ascii",
+    "text": "enum _NVVIOCOMPSYNCTYPE __cdecl Nvidia::UXDriver::Shim::SdiSettings::UxdCompositeSyncTypeToNvapiCompositeSyncType(const enum VideoIOCompositeSyncType &)"
+  },
+  {
+    "offset": "0x7236f0",
+    "encoding": "ascii",
+    "text": "enum VideoIOSyncSource __cdecl Nvidia::UXDriver::Shim::SdiSettings::NvapiSyncSourceToUxdSyncSource(const enum _NVVIOSYNCSOURCE)"
+  },
+  {
+    "offset": "0x7237a0",
+    "encoding": "ascii",
+    "text": "enum _NVVIOSYNCSOURCE __cdecl Nvidia::UXDriver::Shim::SdiSettings::UxdSyncSourceToNvapiSyncSource(const enum VideoIOSyncSource)"
+  },
+  {
+    "offset": "0x723880",
+    "encoding": "ascii",
+    "text": "enum VideoIOSignalFormat __cdecl Nvidia::UXDriver::Shim::SdiSettings::NvapiSignalFormatToUxdSignalFormat(const enum _NVVIOSIGNALFORMAT)"
+  },
+  {
+    "offset": "0x723930",
+    "encoding": "ascii",
+    "text": "enum _NVVIOSIGNALFORMAT __cdecl Nvidia::UXDriver::Shim::SdiSettings::UxdSignalFormatToNvapiSignalFormat(const enum VideoIOSignalFormat)"
+  },
+  {
+    "offset": "0x7239c0",
+    "encoding": "ascii",
+    "text": "enum _NVVIOINPUTOUTPUTSTATUS __cdecl Nvidia::UXDriver::Shim::SdiSettings::UxdIOStatusToNvapiIOStatus(const enum VideoIOInputOutputStatus)"
+  },
+  {
+    "offset": "0x723a80",
+    "encoding": "ascii",
+    "text": "enum _NVVIOCAPTURESTATUS __cdecl Nvidia::UXDriver::Shim::SdiSettings::UxdCaptureStatusToNvapiCaptureStatus(const enum VideoIOCaptureStatus)"
+  },
+  {
+    "offset": "0x723b40",
+    "encoding": "ascii",
+    "text": "enum _NVVIOOWNERTYPE __cdecl Nvidia::UXDriver::Shim::SdiSettings::UxdOwnerTypeToNvapiOwnerType(const enum VideoIOOwnerType)"
+  },
+  {
+    "offset": "0x723bf0",
+    "encoding": "ascii",
+    "text": "enum _NVVIOSYNCSTATUS __cdecl Nvidia::UXDriver::Shim::SdiSettings::UxdSyncStatusToNvapiSyncStatus(const enum VideoIOSyncStatus)"
+  },
+  {
+    "offset": "0x723ca0",
+    "encoding": "ascii",
+    "text": "enum _NVVIOVIDEOSTANDARD __cdecl Nvidia::UXDriver::Shim::SdiSettings::UxdVideoStandardToNvapiVideoStandard(const enum VideoIOVideoStandard)"
+  },
+  {
+    "offset": "0x723d30",
+    "encoding": "ascii",
+    "text": "enum _NVVIOINTERLACEMODE __cdecl Nvidia::UXDriver::Shim::SdiSettings::UxdInterlacedModeToNvapiInterlacedMode(const enum VideoIOInterlaceMode)"
+  },
+  {
+    "offset": "0x723df0",
+    "encoding": "ascii",
+    "text": "enum _NVVIOVIDEOTYPE __cdecl Nvidia::UXDriver::Shim::SdiSettings::UxdVideoTypeToNvapiVideoType(const enum VideoIOVideoType)"
+  },
+  {
+    "offset": "0x728480",
+    "encoding": "ascii",
+    "text": "void __cdecl Nvidia::UXDriver::Utility::MosaicUtil::UxdTopologyToNvapiTopology(enum MosaicTopologyType,unsigned short,unsigned short,NV_MOSAIC_TOPO &)"
+  },
+  {
+    "offset": "0x728640",
+    "encoding": "ascii",
+    "text": "void __cdecl Nvidia::UXDriver::Utility::MosaicUtil::NvapiTopologyToUxdTopology(const NV_MOSAIC_TOPO &,enum MosaicTopologyType &,unsigned short &,unsigned short &)"
+  },
+  {
+    "offset": "0x729510",
+    "encoding": "ascii",
+    "text": "RTSSHooksLoader64.exe"
+  },
+  {
+    "offset": "0x72faa0",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::Utility::DisplayConfigPersistenceImplementor::GetPersistenceKeyId(struct HKEY__ *,const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &,const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &,class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &,bool)"
+  },
+  {
+    "offset": "0x7300c0",
+    "encoding": "ascii",
+    "text": "class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > __cdecl Nvidia::UXDriver::Utility::DisplayConfigPersistenceImplementor::GetRegKeyPathToWriteRecord(struct HKEY__ *,const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &)"
+  },
+  {
+    "offset": "0x7302c0",
+    "encoding": "ascii",
+    "text": "void __cdecl Nvidia::UXDriver::Utility::DisplayConfigPersistenceImplementor::AssociateKeyWithKeyIdInRegistry(struct HKEY__ *,const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &,const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &,const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &)"
+  },
+  {
+    "offset": "0x7b2414",
+    "encoding": "ascii",
+    "text": "UnhookWindowsHookEx"
+  },
+  {
+    "offset": "0x7b27c0",
+    "encoding": "ascii",
+    "text": "SetWindowsHookExW"
+  },
+  {
+    "offset": "0x7b27d4",
+    "encoding": "ascii",
+    "text": "CallNextHookEx"
+  },
+  {
+    "offset": "0x7b482e",
+    "encoding": "ascii",
+    "text": "NvCplApiGetGPUInfoNVAPI"
+  },
+  {
+    "offset": "0x7b8f8c",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x666d70",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x666db0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x667060",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x667140",
+    "encoding": "utf-16le",
+    "text": "NvAPI Direct was not found. Please update your driver."
+  },
+  {
+    "offset": "0x667220",
+    "encoding": "utf-16le",
+    "text": "nvapi64.dll"
+  },
+  {
+    "offset": "0x6680b8",
+    "encoding": "utf-16le",
+    "text": "\\Device\\"
+  },
+  {
+    "offset": "0x668220",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders"
+  },
+  {
+    "offset": "0x68f130",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\"
+  },
+  {
+    "offset": "0x6c4dd0",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Uxdlogging"
+  },
+  {
+    "offset": "0x6cb308",
+    "encoding": "utf-16le",
+    "text": "NvCplApiGetGPUInfoNVAPI"
+  },
+  {
+    "offset": "0x703f70",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\CoProcManager"
+  },
+  {
+    "offset": "0x7055b0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvCplApi\\Policies"
+  },
+  {
+    "offset": "0x705620",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NVControlPanel2\\Client"
+  },
+  {
+    "offset": "0x7057e0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NvTray"
+  },
+  {
+    "offset": "0x705870",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\RunOpenGLOn"
+  },
+  {
+    "offset": "0x726ae0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Parameters\\NVControlPanel2\\Client"
+  },
+  {
+    "offset": "0x727660",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Parameters\\NVControlPanel2"
+  },
+  {
+    "offset": "0x727770",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NVControlPanel2"
+  },
+  {
+    "offset": "0x72ace0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NVTweak"
+  },
+  {
+    "offset": "0x72b060",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x72c630",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global"
+  },
+  {
+    "offset": "0x72cc20",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+    "offset": "0x72cf70",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\Windows\\CurrentVersion\\Setup\\State"
+  },
+  {
+    "offset": "0x72d350",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Wow6432Node\\Microsoft\\Windows NT\\CurrentVersion\\Windows"
+  },
+  {
+    "offset": "0x72d3e0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Windows"
+  },
+  {
+    "offset": "0x72d510",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\DWM\\Schedule"
+  },
+  {
+    "offset": "0x72da40",
+    "encoding": "utf-16le",
+    "text": "Local Settings\\Software\\Microsoft\\Windows\\CurrentVersion\\AppModel\\Repository\\Packages\\"
+  },
+  {
+    "offset": "0x72dcc0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Classes\\"
+  },
+  {
+    "offset": "0x72de20",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\DirectX\\UserGpuPreferences"
+  },
+  {
+    "offset": "0x72df60",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvApp\\ECC"
+  }
+]

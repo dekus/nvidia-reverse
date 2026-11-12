@@ -1,0 +1,1312 @@
+[
+  {
+    "path": "FrameViewSDK\\nvfvsdksvc_x64.exe",
+    "sha256": "e2ca40523ce7cd0c1f3b4beab6d9adf897a119c52d3c54a9e77784705c1c98e8",
+    "bits": 64,
+    "size": 939120,
+    "imports": 175,
+    "exports": 0,
+    "function_ranges": 1885,
+    "exec_bytes": 583168
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\FvContainer.System.exe",
+    "sha256": "2ef3a9a17925bf57b7834a444f82d59b1ef7c6a546505c05b9303d7764f3b6ea",
+    "bits": 64,
+    "size": 1279088,
+    "imports": 198,
+    "exports": 1,
+    "function_ranges": 4168,
+    "exec_bytes": 874496
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\FvContainer.exe",
+    "sha256": "bd3fa80956cafa3eb6db3acc440145ee90d24abf96cd53ba02b6eb17542e5788",
+    "bits": 64,
+    "size": 1279088,
+    "imports": 198,
+    "exports": 1,
+    "function_ranges": 4168,
+    "exec_bytes": 874496
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\NvMessageBus.dll",
+    "sha256": "4915c54254d22a538c82ed438a8b01ce3b3ccdb136a9853072d463d436e80ae3",
+    "bits": 64,
+    "size": 3446896,
+    "imports": 195,
+    "exports": 6,
+    "function_ranges": 13673,
+    "exec_bytes": 2723328
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\plugins\\SystemDataCollectorsContainerPlugin_x64.dll",
+    "sha256": "0fefcd9d1b06470cf19c304f33514f6ed65ca19d85d6a3637b68135cbd87a5d2",
+    "bits": 64,
+    "size": 644208,
+    "imports": 160,
+    "exports": 90,
+    "function_ranges": 1937,
+    "exec_bytes": 444416
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\plugins.system\\AggregatorContainerPlugin_x64.dll",
+    "sha256": "bc832c7e2537e63712dd3f6822331749c67f1d8641c05154a22b9e93893d42b4",
+    "bits": 64,
+    "size": 198768,
+    "imports": 193,
+    "exports": 1,
+    "function_ranges": 608,
+    "exec_bytes": 123392
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\plugins.system\\FrameViewKMDServiceContainerPlugin_x64.dll",
+    "sha256": "f74d9172acfabcc14e2f91b4ab7ef8ebd789a8bf61fc082c1da96db43a1c3d9d",
+    "bits": 64,
+    "size": 151152,
+    "imports": 215,
+    "exports": 1,
+    "function_ranges": 299,
+    "exec_bytes": 58880
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\plugins.system\\NvMessageBusBroadcast.dll",
+    "sha256": "e07a2df896f8e081117ae027ac4fce9613118c131030b0ccbbcc5731d750e595",
+    "bits": 64,
+    "size": 3395696,
+    "imports": 206,
+    "exports": 1,
+    "function_ranges": 13386,
+    "exec_bytes": 2682880
+  },
+  {
+    "path": "FrameViewSDK\\SDK\\FvSDKTestClient_Public.exe",
+    "sha256": "b7dd66f1674e05fff5f3aed3315f6789698a562f58998b9b2132febc589d5098",
+    "bits": 64,
+    "size": 99440,
+    "imports": 112,
+    "exports": 0,
+    "function_ranges": 190,
+    "exec_bytes": 60416
+  },
+  {
+    "path": "FrameViewSDK\\SDK\\Public_Release\\FvSDK_x64.dll",
+    "sha256": "3d7fc2f6badbf9ba3796ef324638526e0438bf090cbc419654294ac7fc6bc513",
+    "bits": 64,
+    "size": 301168,
+    "imports": 237,
+    "exports": 1,
+    "function_ranges": 854,
+    "exec_bytes": 201728
+  },
+  {
+    "path": "FrameViewSDK\\SDK\\Public_Release\\FvSDK_x86.dll",
+    "sha256": "1bb621f941782a3038ba01faa979849d9050f3796f1654de7ebe7491d152bf43",
+    "bits": 32,
+    "size": 274032,
+    "imports": 235,
+    "exports": 1,
+    "function_ranges": 0,
+    "exec_bytes": 193024
+  },
+  {
+    "path": "FrameViewSDK\\bin\\FrameViewKMD.sys",
+    "sha256": "f768f331ecd2ed3eb121ca28569e8c7c52561c6f8b1c40e8c8f1b2185c200e02",
+    "bits": 64,
+    "size": 22640,
+    "imports": 24,
+    "exports": 0,
+    "function_ranges": 36,
+    "exec_bytes": 5632
+  },
+  {
+    "path": "FrameViewSDK\\bin\\FvSDK_x64.dll",
+    "sha256": "e1a209218a6edd6c01f3ca107765faa44ee24539b3df8fbfc675e7bbc67b05ac",
+    "bits": 64,
+    "size": 301168,
+    "imports": 237,
+    "exports": 1,
+    "function_ranges": 854,
+    "exec_bytes": 201728
+  },
+  {
+    "path": "FrameViewSDK\\bin\\PresentMon_x64.exe",
+    "sha256": "045a5c1465886bd8435ceab20805b119367e2d71ba02a635547c81c91e791b01",
+    "bits": 64,
+    "size": 1108080,
+    "imports": 167,
+    "exports": 89,
+    "function_ranges": 2850,
+    "exec_bytes": 788992
+  },
+  {
+    "path": "FrameViewSDK\\bin\\amd_ags_x64.dll",
+    "sha256": "6f6eabdb872cc503beace295a349d379625b5c518646af203ec4f71f06a0ca16",
+    "bits": 64,
+    "size": 176752,
+    "imports": 74,
+    "exports": 41,
+    "function_ranges": 542,
+    "exec_bytes": 104448
+  },
+  {
+    "path": "FrameViewSDK\\bin\\nvrla.exe",
+    "sha256": "ed1b58b59ac1dc101da0ddfa8a2d81fbf7adf62b83d92974fc317bccbae158d4",
+    "bits": 64,
+    "size": 1388656,
+    "imports": 211,
+    "exports": 0,
+    "function_ranges": 4295,
+    "exec_bytes": 1046528
+  },
+  {
+    "path": "FrameViewSDK\\etw_fcat\\NVFTVRDLL64.dll",
+    "sha256": "e75c2edcbb5f06c10e5a57afd50bc8c26f9374c3d2a28c8b54db8bc6e30134a8",
+    "bits": 64,
+    "size": 27248,
+    "imports": 0,
+    "exports": 0,
+    "function_ranges": 0,
+    "exec_bytes": 0
+  },
+  {
+    "path": "FrameViewSDK\\etw_nv\\ddETWExternal.dll",
+    "sha256": "676db6bd39cd2cf854e768c8da0ec5b01c2eb980f4df95f6409531b5d513f2b3",
+    "bits": 64,
+    "size": 15984,
+    "imports": 0,
+    "exports": 0,
+    "function_ranges": 0,
+    "exec_bytes": 0
+  },
+  {
+    "path": "Installer2\\Display.Driver.{92800A66-972D-4AAC-A44D-81E3328AF354}\\DisplayDriverExt.dll",
+    "sha256": "417edc653f0ea0ac8be0e58a1f1c3fc17772ae9ed8c24e3ddab5200c74c33347",
+    "bits": 32,
+    "size": 1962728,
+    "imports": 267,
+    "exports": 5,
+    "function_ranges": 0,
+    "exec_bytes": 1307648
+  },
+  {
+    "path": "Installer2\\Display.Driver.{92800A66-972D-4AAC-A44D-81E3328AF354}\\DisplayDriverExt64.dll",
+    "sha256": "69c26a1b1ab9fd9278cfa31e582a3a51020a34a257f7cec866f66543b7ee42f1",
+    "bits": 64,
+    "size": 2350824,
+    "imports": 272,
+    "exports": 5,
+    "function_ranges": 5100,
+    "exec_bytes": 1630208
+  },
+  {
+    "path": "Installer2\\Display.Driver.{F11599FA-D299-43A1-B827-83234858D1A3}\\DisplayDriverExt.dll",
+    "sha256": "3003a80c9e45d37ac4b345a0a3cb10d5f8ecd6b5f02ed68e8ff69b622bf57334",
+    "bits": 32,
+    "size": 1956072,
+    "imports": 257,
+    "exports": 5,
+    "function_ranges": 0,
+    "exec_bytes": 1287168
+  },
+  {
+    "path": "Installer2\\Display.NvApp.{39B563FC-F52F-4E62-B6EC-9DD602862CA8}\\NvAppExt.dll",
+    "sha256": "8b1f53246d0370b2f2d2712bfe7244ea3382c952540d030d637ad82c89d38b05",
+    "bits": 32,
+    "size": 1513072,
+    "imports": 240,
+    "exports": 5,
+    "function_ranges": 0,
+    "exec_bytes": 1011712
+  },
+  {
+    "path": "Installer2\\Display.PhysX.{5A50652D-B45C-4D25-84CD-19B69879382B}\\PhysXExt.dll",
+    "sha256": "56e11e85b9e6a3dafb6f8c57e4a4e1f3dd5c1632553c88ad0d0f32b216c6fac7",
+    "bits": 32,
+    "size": 968816,
+    "imports": 191,
+    "exports": 5,
+    "function_ranges": 0,
+    "exec_bytes": 709120
+  },
+  {
+    "path": "Installer2\\Display.PhysX.{5A50652D-B45C-4D25-84CD-19B69879382B}\\PhysXExt64.dll",
+    "sha256": "2d333ab49dcd59d874683c6467608bc77f87cad1fd350a6f61257262995c5c7d",
+    "bits": 64,
+    "size": 1130608,
+    "imports": 196,
+    "exports": 5,
+    "function_ranges": 3017,
+    "exec_bytes": 810496
+  },
+  {
+    "path": "Installer2\\FrameViewSdk.{9D58CA10-2FA6-49C0-9986-8FEDA998716E}\\FrameViewSdkExt.dll",
+    "sha256": "24db8717b792cce09ee877d73c37f2c65c448cadefe98ce2887250615e688ff0",
+    "bits": 32,
+    "size": 1705584,
+    "imports": 231,
+    "exports": 5,
+    "function_ranges": 0,
+    "exec_bytes": 1280000
+  },
+  {
+    "path": "Installer2\\HDAudio.Driver.{091AEA3D-8B36-4AC9-8B5B-5965F73BC7F6}\\HDAudioExt.dll",
+    "sha256": "3496720838dd19a05c76cc45f061a09bc168d409cd3883833c9e9445387a1ab4",
+    "bits": 32,
+    "size": 1083112,
+    "imports": 211,
+    "exports": 5,
+    "function_ranges": 0,
+    "exec_bytes": 782336
+  },
+  {
+    "path": "Installer2\\HDAudio.Driver.{091AEA3D-8B36-4AC9-8B5B-5965F73BC7F6}\\HDAudioExt64.dll",
+    "sha256": "a1dad609c7a2edcf2d458920ae20f9476c8c37722a089b4ddf0ab1172f04d106",
+    "bits": 64,
+    "size": 1254120,
+    "imports": 216,
+    "exports": 5,
+    "function_ranges": 3278,
+    "exec_bytes": 891904
+  },
+  {
+    "path": "Installer2\\HDAudio.Driver.{091AEA3D-8B36-4AC9-8B5B-5965F73BC7F6}\\nvhda64v.sys",
+    "sha256": "9b6178768f6f4446b3a91c9140d9bc10312c07d6aa94af73559aab462399f766",
+    "bits": 64,
+    "size": 134376,
+    "imports": 54,
+    "exports": 0,
+    "function_ranges": 346,
+    "exec_bytes": 94208
+  },
+  {
+    "path": "Installer2\\InstallerCore\\NVI2.DLL",
+    "sha256": "fe0397022b4e1bf79c31d55c43fc99792d489a889c8790b712de5a022c7994a4",
+    "bits": 32,
+    "size": 7291112,
+    "imports": 365,
+    "exports": 12,
+    "function_ranges": 0,
+    "exec_bytes": 4385792
+  },
+  {
+    "path": "Installer2\\InstallerCore\\NVI2UI.DLL",
+    "sha256": "e0840001809399d9028d5edeeccd12b30c3dcbd2196742b04a902dd1a6989bb2",
+    "bits": 32,
+    "size": 2004200,
+    "imports": 370,
+    "exports": 5,
+    "function_ranges": 0,
+    "exec_bytes": 1358848
+  },
+  {
+    "path": "Installer2\\InstallerCore\\NVPrxy32.DLL",
+    "sha256": "6dcbb489b70913c73a890691b54b5d5ac494dc43f717c29d1d74d714ccfeb501",
+    "bits": 32,
+    "size": 1069288,
+    "imports": 228,
+    "exports": 1,
+    "function_ranges": 0,
+    "exec_bytes": 777216
+  },
+  {
+    "path": "Installer2\\InstallerCore\\NVPrxy64.DLL",
+    "sha256": "599949b92a60f05705ba66c8611c177462cb44f877b16e6054c097ffb9d9e88e",
+    "bits": 64,
+    "size": 1240296,
+    "imports": 235,
+    "exports": 1,
+    "function_ranges": 3241,
+    "exec_bytes": 884224
+  },
+  {
+    "path": "Installer2\\InstallerCore\\NvInstallerUtil.dll",
+    "sha256": "e08b544f697e003cda488f09b28210b6339ed333b7d4e95beadb59fa8485b822",
+    "bits": 32,
+    "size": 5961960,
+    "imports": 327,
+    "exports": 31,
+    "function_ranges": 0,
+    "exec_bytes": 4568576
+  },
+  {
+    "path": "Installer2\\InstallerCore\\SETUP.EXE",
+    "sha256": "19e9c11f18e2ee08d601475ed92110c786700467cb5ed67f85feaec380e77e3f",
+    "bits": 32,
+    "size": 876776,
+    "imports": 137,
+    "exports": 0,
+    "function_ranges": 0,
+    "exec_bytes": 256000
+  },
+  {
+    "path": "Installer2\\ShadowPlay.{D93CCF6F-6877-4B4B-83B0-4AF388304402}\\ShadowPlayExt.dll",
+    "sha256": "1278e2dd44d3b638091913ad27719b7d8e67766a21bc34ddf882e537fb23fa30",
+    "bits": 32,
+    "size": 1172592,
+    "imports": 209,
+    "exports": 5,
+    "function_ranges": 0,
+    "exec_bytes": 798720
+  },
+  {
+    "path": "Installer2\\VirtualAudio.Driver.{7C43349F-A7F0-4D47-8E5D-C03E063D8955}\\nvaudcap32v.dll",
+    "sha256": "d41f77ca62e406125bb165450ef99d16ced0fac9a574058ca3cd31b6a3b58ca8",
+    "bits": 32,
+    "size": 168680,
+    "imports": 128,
+    "exports": 1,
+    "function_ranges": 0,
+    "exec_bytes": 132096
+  },
+  {
+    "path": "Installer2\\VirtualAudio.Driver.{7C43349F-A7F0-4D47-8E5D-C03E063D8955}\\nvaudcap64a.dll",
+    "sha256": "e92db4d1b75fb4669eb320c1a33d656bb439c8211589f482b1dbc403df871de8",
+    "bits": 64,
+    "size": 185576,
+    "imports": 125,
+    "exports": 1,
+    "function_ranges": 221,
+    "exec_bytes": 147968
+  },
+  {
+    "path": "Installer2\\VirtualAudio.Driver.{7C43349F-A7F0-4D47-8E5D-C03E063D8955}\\nvaudcap64v.dll",
+    "sha256": "cfaffaea819a28bc1c837a8da021afe8da3cc22b787a2ecca8ec90e04109ebcc",
+    "bits": 64,
+    "size": 192232,
+    "imports": 131,
+    "exports": 1,
+    "function_ranges": 461,
+    "exec_bytes": 145920
+  },
+  {
+    "path": "Installer2\\VirtualAudio.Driver.{7C43349F-A7F0-4D47-8E5D-C03E063D8955}\\nvvad32v.sys",
+    "sha256": "bf036afb14ced98ef68a3947230f58b565a14dce8c45367b6229a3b1187ccb22",
+    "bits": 32,
+    "size": 55528,
+    "imports": 50,
+    "exports": 0,
+    "function_ranges": 0,
+    "exec_bytes": 25600
+  },
+  {
+    "path": "Installer2\\VirtualAudio.Driver.{7C43349F-A7F0-4D47-8E5D-C03E063D8955}\\nvvad64a.sys",
+    "sha256": "0cdd4404f6878daa2e28dd9ae7ac51974b56c686488fdaba245fc5759cdfb9d2",
+    "bits": 64,
+    "size": 64232,
+    "imports": 44,
+    "exports": 0,
+    "function_ranges": 95,
+    "exec_bytes": 31744
+  },
+  {
+    "path": "Installer2\\VirtualAudio.Driver.{7C43349F-A7F0-4D47-8E5D-C03E063D8955}\\nvvad64v.sys",
+    "sha256": "1635fe7969dabb11902c9906432affd462e595c4b8d81d69fb55f2ff4824bc7b",
+    "bits": 64,
+    "size": 62696,
+    "imports": 44,
+    "exports": 0,
+    "function_ranges": 129,
+    "exec_bytes": 28160
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\presentations.dll",
+    "sha256": "695eaac161c28662e7ddbf04efe611713e8798e026ea57b192226f5beed77c43",
+    "bits": 32,
+    "size": 970352,
+    "imports": 186,
+    "exports": 5,
+    "function_ranges": 0,
+    "exec_bytes": 698368
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\DynamicBillboardPresentations.dll",
+    "sha256": "c7b342b4b9f063726575d2e0ac54371c02a95ad2a82d5ebe4c6c31a21c02a65c",
+    "bits": 32,
+    "size": 1100400,
+    "imports": 202,
+    "exports": 5,
+    "function_ranges": 0,
+    "exec_bytes": 779264
+  },
+  {
+    "path": "NVIDIA App\\7z.dll",
+    "sha256": "3dfedba6e092428ed5a33c4e38d646f706ced851783442a2bb2dd281499fe2ea",
+    "bits": 64,
+    "size": 1722480,
+    "imports": 123,
+    "exports": 15,
+    "function_ranges": 4228,
+    "exec_bytes": 1318400
+  },
+  {
+    "path": "NVIDIA App\\7z.exe",
+    "sha256": "3a48b1cb3d10cb76271625913c64ced4fa91f62c5c430af36fb567704b01b12f",
+    "bits": 64,
+    "size": 556144,
+    "imports": 154,
+    "exports": 0,
+    "function_ranges": 1618,
+    "exec_bytes": 408064
+  },
+  {
+    "path": "NVIDIA App\\DarkModeCheck.exe",
+    "sha256": "9c0863c1872266fd4700d303e866fb2ed8321862800b0f0de9cd05c6addb887c",
+    "bits": 64,
+    "size": 263792,
+    "imports": 97,
+    "exports": 0,
+    "function_ranges": 759,
+    "exec_bytes": 154112
+  },
+  {
+    "path": "NVIDIA App\\InstallerExtension.dll",
+    "sha256": "764358a378bf8ed483f6c2b5288736c014bed19c05039dd1e7fc26001d0b890b",
+    "bits": 32,
+    "size": 1214064,
+    "imports": 195,
+    "exports": 5,
+    "function_ranges": 0,
+    "exec_bytes": 863232
+  },
+  {
+    "path": "NVIDIA App\\NvAppApi.dll",
+    "sha256": "25fc3ecc6208e61cd08d09c8b35ebd6aa510f4d8bdfa6750bd7fca89407ec25d",
+    "bits": 64,
+    "size": 851056,
+    "imports": 250,
+    "exports": 1,
+    "function_ranges": 2227,
+    "exec_bytes": 658944
+  },
+  {
+    "path": "NVIDIA App\\CEF\\NVIDIA App.exe",
+    "sha256": "0f166e95144447c5317d92b2e74f58507cccab17033588b486f40b026f932ceb",
+    "bits": 64,
+    "size": 3656304,
+    "imports": 701,
+    "exports": 0,
+    "function_ranges": 9571,
+    "exec_bytes": 2198528
+  },
+  {
+    "path": "NVIDIA App\\CEF\\NVIDIA Overlay.exe",
+    "sha256": "7011028937e367e222b07f9199bf6a09ea28c14035c43593fd91df9a45ea7716",
+    "bits": 64,
+    "size": 3655280,
+    "imports": 700,
+    "exports": 0,
+    "function_ranges": 9569,
+    "exec_bytes": 2198016
+  },
+  {
+    "path": "NVIDIA App\\CEF\\chrome_elf.dll",
+    "sha256": "020972f183e435a7dc0d608be8d89e0f54f253bd7f7d3315c27c1715321d23ad",
+    "bits": 64,
+    "size": 1358448,
+    "imports": 177,
+    "exports": 26,
+    "function_ranges": 2716,
+    "exec_bytes": 945664
+  },
+  {
+    "path": "NVIDIA App\\CEF\\d3dcompiler_47.dll",
+    "sha256": "b09c5df3e2259d48b7559011d5e3929cc3688653ca6cb9d91951d29708be63fa",
+    "bits": 64,
+    "size": 4917360,
+    "imports": 130,
+    "exports": 29,
+    "function_ranges": 10915,
+    "exec_bytes": 3727360
+  },
+  {
+    "path": "NVIDIA App\\CEF\\dxcompiler.dll",
+    "sha256": "f1b24c125aa3ce8e25aed1840843bd25ebfb8584b507af1594007abb26b1ffa0",
+    "bits": 64,
+    "size": 21792368,
+    "imports": 141,
+    "exports": 2,
+    "function_ranges": 46735,
+    "exec_bytes": 17438208
+  },
+  {
+    "path": "NVIDIA App\\CEF\\dxil.dll",
+    "sha256": "2c93b092b20bcf0214f5eca09ae8fd1842c8a9197b77298dfe8184c65c4c7c86",
+    "bits": 64,
+    "size": 1508976,
+    "imports": 89,
+    "exports": 2,
+    "function_ranges": 3231,
+    "exec_bytes": 1171456
+  },
+  {
+    "path": "NVIDIA App\\CEF\\libEGL.dll",
+    "sha256": "4206dead23c7224f3fc3863c80861d0e9da1b2a91084e0454d84b427f944ccbb",
+    "bits": 64,
+    "size": 503920,
+    "imports": 91,
+    "exports": 113,
+    "function_ranges": 1354,
+    "exec_bytes": 356352
+  },
+  {
+    "path": "NVIDIA App\\CEF\\libGLESv2.dll",
+    "sha256": "8e94434d84530fef7224b8f5d55f5e0344b222f8883bca35863e2194bc03e821",
+    "bits": 64,
+    "size": 8244848,
+    "imports": 142,
+    "exports": 1789,
+    "function_ranges": 12454,
+    "exec_bytes": 6415360
+  },
+  {
+    "path": "NVIDIA App\\CEF\\libcef.dll",
+    "sha256": "29bb51e0fc7ebd1d41c7781d1068c60253647013e578053b8bb93a52ad33dca7",
+    "bits": 64,
+    "size": 222910064,
+    "imports": 632,
+    "exports": 216,
+    "function_ranges": 532553,
+    "exec_bytes": 188048896
+  },
+  {
+    "path": "NVIDIA App\\CEF\\NvidiaAppPermissionOc\\NVIDIA App Permission.exe",
+    "sha256": "d9b3fd4f672a1a90698f83c9123ca3832b0a42cd1a6ba51e903f71a8bfd59ce8",
+    "bits": 64,
+    "size": 593008,
+    "imports": 143,
+    "exports": 0,
+    "function_ranges": 246,
+    "exec_bytes": 82432
+  },
+  {
+    "path": "NVIDIA App\\CEF\\dependencies\\CrimsonUtil.dll",
+    "sha256": "74026f7a344f0bc5fca5843e9bd8475d0dd22599b1a88ab0a07b089ff6844949",
+    "bits": 64,
+    "size": 2240112,
+    "imports": 458,
+    "exports": 28,
+    "function_ranges": 6245,
+    "exec_bytes": 1758720
+  },
+  {
+    "path": "NVIDIA App\\CEF\\dependencies\\libcrypto-3-x64.dll",
+    "sha256": "bf7031536634118b6d476d3af2247141d37f3034fbbe2e8c7a9a60608f5ec393",
+    "bits": 64,
+    "size": 7544432,
+    "imports": 196,
+    "exports": 5895,
+    "function_ranges": 17582,
+    "exec_bytes": 5261312
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\BackgroundProcess\\BackgroundProcess.dll",
+    "sha256": "71f7038fae4657eb27dfba113ffeeb981e6952588d5e1709b952eed6760d8dcc",
+    "bits": 64,
+    "size": 1662576,
+    "imports": 389,
+    "exports": 1,
+    "function_ranges": 4562,
+    "exec_bytes": 1334272
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\LocalGames.dll",
+    "sha256": "374d54b50b3aff21eeae03752a846bb0d0e16995e4f7fe9c55a69369348fbbde",
+    "bits": 64,
+    "size": 2234480,
+    "imports": 375,
+    "exports": 1,
+    "function_ranges": 5580,
+    "exec_bytes": 1758720
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\NvCplDisplayPlugin.dll",
+    "sha256": "1ab74d6cff0c2a7e64afdb0f8602c6d3521041d768d935e3cef2ebab69787060",
+    "bits": 64,
+    "size": 3915376,
+    "imports": 407,
+    "exports": 1,
+    "function_ranges": 8292,
+    "exec_bytes": 3024384
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\NvCplPlugin.dll",
+    "sha256": "ae985824c654f6f05d73819ca800c72007b0b3bff58f2731fca9c5cc51be158b",
+    "bits": 64,
+    "size": 4521584,
+    "imports": 462,
+    "exports": 1,
+    "function_ranges": 16055,
+    "exec_bytes": 3560960
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\NvPerfMon.dll",
+    "sha256": "391ce3350020cd47f5ab8ab5f14261b64de11d97b93358602dbb73a5a20d13b8",
+    "bits": 64,
+    "size": 3034224,
+    "imports": 383,
+    "exports": 1,
+    "function_ranges": 12701,
+    "exec_bytes": 2376192
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\NvWorkstation.dll",
+    "sha256": "7b51449052214a12a0dbf001925cd9811c149bc38bf99edf8fd4dee4a1da9b76",
+    "bits": 64,
+    "size": 1762928,
+    "imports": 374,
+    "exports": 1,
+    "function_ranges": 4502,
+    "exec_bytes": 1397760
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\SystemInfo.dll",
+    "sha256": "e67c0fb8991495fc1795486263042c2af7e3ce9c29fd030ebf20a7cf53958cd4",
+    "bits": 64,
+    "size": 1934448,
+    "imports": 415,
+    "exports": 1,
+    "function_ranges": 4881,
+    "exec_bytes": 1524224
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\AppDiscovery.dll",
+    "sha256": "ee57869caf91ca90b55c43a549edbe255e9c2822f36bf26a8de578387df10870",
+    "bits": 64,
+    "size": 1699952,
+    "imports": 394,
+    "exports": 1,
+    "function_ranges": 4450,
+    "exec_bytes": 1355776
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\DriverInstall.dll",
+    "sha256": "429f7cccf4828a0cfd17962a50bb6d5b8bbe14a0666d6d36ca0a7173a4303fa1",
+    "bits": 64,
+    "size": 1692272,
+    "imports": 385,
+    "exports": 1,
+    "function_ranges": 4343,
+    "exec_bytes": 1351168
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\LoginId.dll",
+    "sha256": "87319cac6eaec67bfab7999494bfbf69d35f4c668f063196f58e22ddcf207f3e",
+    "bits": 64,
+    "size": 1707632,
+    "imports": 355,
+    "exports": 2,
+    "function_ranges": 4704,
+    "exec_bytes": 1372672
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\MessageBusRouter.dll",
+    "sha256": "517840f0c1ffbfd699c1f628e1d37449299d242e55ec13ed4a6ab3dc95a1858a",
+    "bits": 64,
+    "size": 1646704,
+    "imports": 371,
+    "exports": 1,
+    "function_ranges": 4577,
+    "exec_bytes": 1318400
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\NvIGOUtil.dll",
+    "sha256": "15be24a489474a04851042b56d2c34e5928f32872ab7721f54ead26992f7f580",
+    "bits": 64,
+    "size": 1558640,
+    "imports": 377,
+    "exports": 1,
+    "function_ranges": 4083,
+    "exec_bytes": 1226752
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\NvOc.dll",
+    "sha256": "c1a24f75b1db3cccdeab14906a32154254e03ee1f6f9d74d8cfb0dcb726ef2ee",
+    "bits": 64,
+    "size": 2772592,
+    "imports": 387,
+    "exports": 1,
+    "function_ranges": 12038,
+    "exec_bytes": 2128896
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\Gallery.dll",
+    "sha256": "5361a2c1993c80499cd6448b5f476d29a2ffee18ce20b4979ea00bcaeba32098",
+    "bits": 64,
+    "size": 3320944,
+    "imports": 445,
+    "exports": 1,
+    "function_ranges": 7331,
+    "exec_bytes": 2628608
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\GraphicsSetting.dll",
+    "sha256": "ffbc5c554ff6d125a49f830e2e26ff8798a9349ef29e753313e56e0b277f65a9",
+    "bits": 64,
+    "size": 2212464,
+    "imports": 376,
+    "exports": 1,
+    "function_ranges": 5069,
+    "exec_bytes": 1745920
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\NvCamera.dll",
+    "sha256": "c167a74311e3de18aad10c9c6a930f9fbaf3209c3d32d18c0519844079860e3f",
+    "bits": 64,
+    "size": 7535216,
+    "imports": 475,
+    "exports": 1,
+    "function_ranges": 26770,
+    "exec_bytes": 6015488
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\Rise.dll",
+    "sha256": "6fe292b656acf7611b1bfe6f94c386d01f3c9aa7312c6c29a135b8313a583f60",
+    "bits": 64,
+    "size": 3748464,
+    "imports": 410,
+    "exports": 1,
+    "function_ranges": 14232,
+    "exec_bytes": 2935296
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\ShareServer.dll",
+    "sha256": "ea5cc83f0023ad367f1e1be8b8e038c00e364fc1516afb50412742bd9f8ed1f0",
+    "bits": 64,
+    "size": 9558640,
+    "imports": 476,
+    "exports": 1,
+    "function_ranges": 30086,
+    "exec_bytes": 7649792
+  },
+  {
+    "path": "NVIDIA App\\McpServer\\NvAppCore.dll",
+    "sha256": "5b271506715f51d9690ddbfe95a9e808c1a4d616653d27eadf24da313976bc01",
+    "bits": 64,
+    "size": 1786992,
+    "imports": 380,
+    "exports": 12,
+    "function_ranges": 4296,
+    "exec_bytes": 1428480
+  },
+  {
+    "path": "NVIDIA App\\McpServer\\NvAppMcpServer.exe",
+    "sha256": "1a8f14df4d2d1070f56d1307ecef35765ea9a7ceba6197cdca3bc5ae27ac0a6c",
+    "bits": 64,
+    "size": 754288,
+    "imports": 213,
+    "exports": 0,
+    "function_ranges": 428,
+    "exec_bytes": 126976
+  },
+  {
+    "path": "NVIDIA App\\MessageBus\\MessageBus.dll",
+    "sha256": "64e300997b5796da22ad8baa49e4eb919cdc170157cbe6770279f94508a84650",
+    "bits": 64,
+    "size": 7532912,
+    "imports": 252,
+    "exports": 12,
+    "function_ranges": 26579,
+    "exec_bytes": 5349888
+  },
+  {
+    "path": "NVIDIA App\\MessageBus\\NvMessageBus.dll",
+    "sha256": "348162a5948cd59e8b0ece73c7cdf9faa55d9a9f906879392c1527308b2af85d",
+    "bits": 64,
+    "size": 3533424,
+    "imports": 186,
+    "exports": 6,
+    "function_ranges": 14098,
+    "exec_bytes": 2804224
+  },
+  {
+    "path": "NVIDIA App\\MessageBus\\NvMessageBusBroadcast.dll",
+    "sha256": "63b000b70eaea5477e8d30e141f84ccf5391a8d098377768795e694aeda8372f",
+    "bits": 64,
+    "size": 3520112,
+    "imports": 195,
+    "exports": 1,
+    "function_ranges": 13953,
+    "exec_bytes": 2794496
+  },
+  {
+    "path": "NVIDIA App\\NvBackend\\NvBackendAPI64.dll",
+    "sha256": "f2bc30fbadbe0a4559915183aaf62de5b3e4267e231c4291d9b6ac7c2af4f98f",
+    "bits": 64,
+    "size": 1081968,
+    "imports": 162,
+    "exports": 164,
+    "function_ranges": 2451,
+    "exec_bytes": 855552
+  },
+  {
+    "path": "NVIDIA App\\NvBackend\\ApplicationOntology\\NvOAWrapperCache.exe",
+    "sha256": "0d26ce0ad86cfa671425fe7de2b762c62e148597092fe0edcf5ff84a584fdbb9",
+    "bits": 64,
+    "size": 428656,
+    "imports": 102,
+    "exports": 0,
+    "function_ranges": 830,
+    "exec_bytes": 174080
+  },
+  {
+    "path": "NVIDIA App\\NvBackend\\ApplicationOntology\\OAWrapper.exe",
+    "sha256": "64ece426504fc9f057e8ce36a70659d6811f08f7117affb79b5765e8a67c88fe",
+    "bits": 64,
+    "size": 506992,
+    "imports": 94,
+    "exports": 0,
+    "function_ranges": 972,
+    "exec_bytes": 242176
+  },
+  {
+    "path": "NVIDIA App\\NvBackend\\ApplicationOntology\\Ontology64.dll",
+    "sha256": "fb6f988c718b4482eda67b2924fb088b2664b4053e0280f9a5229d05da2ba525",
+    "bits": 64,
+    "size": 4054128,
+    "imports": 230,
+    "exports": 3,
+    "function_ranges": 11264,
+    "exec_bytes": 3257344
+  },
+  {
+    "path": "NVIDIA App\\NvBackend\\Plugins\\LocalUser\\NvBackend64.dll",
+    "sha256": "7a84c83e7437cf63c94f9edd389f4b1e6f072ef1b7bb6fa1013a22e670132a50",
+    "bits": 64,
+    "size": 8795760,
+    "imports": 354,
+    "exports": 1,
+    "function_ranges": 18946,
+    "exec_bytes": 6316032
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\NvUI.dll",
+    "sha256": "b9d8948eedfcc5cbcd123d1b4fcd6f9c63e1cdc17ec4a6cbd3aeca7df098a597",
+    "bits": 64,
+    "size": 9411184,
+    "imports": 479,
+    "exports": 79,
+    "function_ranges": 10469,
+    "exec_bytes": 2913280
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\NvUIR.dll",
+    "sha256": "0379f2608e9f054266d8cff9e0762cb800dcdcc7b6db2d9280f042401cc32d9b",
+    "bits": 64,
+    "size": 5955696,
+    "imports": 0,
+    "exports": 0,
+    "function_ranges": 0,
+    "exec_bytes": 0
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvSmartMax.dll",
+    "sha256": "b2253edcb7220b0e101b96ff5c05285f4721ff4a780bea9590bbfef837d967a3",
+    "bits": 32,
+    "size": 184432,
+    "imports": 150,
+    "exports": 17,
+    "function_ranges": 0,
+    "exec_bytes": 126976
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvSmartMax64.dll",
+    "sha256": "c9e3f66e8827874042abdbc574a350762dcf17bdc01000bd23d70f4035e0dca7",
+    "bits": 64,
+    "size": 224880,
+    "imports": 152,
+    "exports": 17,
+    "function_ranges": 452,
+    "exec_bytes": 132608
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvSmartMaxapp.exe",
+    "sha256": "08332e1367f23cd1a995804fe8d555de51cd835ad51d5304bdbb48acaf3ab933",
+    "bits": 32,
+    "size": 264816,
+    "imports": 113,
+    "exports": 0,
+    "function_ranges": 0,
+    "exec_bytes": 65024
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvSmartMaxapp64.exe",
+    "sha256": "e72e76aef792b9330eda6ad16ef43514d2c7c1419a1c173cbf03dfee780be8b1",
+    "bits": 64,
+    "size": 278640,
+    "imports": 114,
+    "exports": 0,
+    "function_ranges": 316,
+    "exec_bytes": 64512
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvcpl.dll",
+    "sha256": "a7703de492d47d4e75d6f77e7350a860b927f35be719b5e78a94e4d50d236da1",
+    "bits": 64,
+    "size": 8748656,
+    "imports": 462,
+    "exports": 383,
+    "function_ranges": 19914,
+    "exec_bytes": 6640640
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvxdapix.dll",
+    "sha256": "f051472a239f3392bc59c23f3962e4dabb0ee64affdf7fa4856ace209adace6d",
+    "bits": 64,
+    "size": 7220336,
+    "imports": 356,
+    "exports": 5,
+    "function_ranges": 15093,
+    "exec_bytes": 5040128
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvxdbat.dll",
+    "sha256": "379ecc2cf34e0984e3bbfded7c8a4612f23b4375329c45ad3f253eaea19069d5",
+    "bits": 64,
+    "size": 1356400,
+    "imports": 188,
+    "exports": 5,
+    "function_ranges": 3184,
+    "exec_bytes": 936960
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvxdplcy.dll",
+    "sha256": "76b583ae106d2e2c670c3abeacea24624e68bc629cf201492326723e38744e6e",
+    "bits": 64,
+    "size": 1539696,
+    "imports": 177,
+    "exports": 5,
+    "function_ranges": 3765,
+    "exec_bytes": 1074176
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\Plugins\\LocalSystem\\NvXDCore.dll",
+    "sha256": "fca581fcb45d60136a6907be06c50a9efa3dfbc682c01acb0bdb977a777dab52",
+    "bits": 64,
+    "size": 1317488,
+    "imports": 224,
+    "exports": 1,
+    "function_ranges": 3144,
+    "exec_bytes": 900608
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\Plugins\\Session\\nvxdsyncplugin.dll",
+    "sha256": "870140e1f941c2043d5e5bd34b734f64f57b05d48f47ecf89fbf1a783371adf8",
+    "bits": 64,
+    "size": 1344624,
+    "imports": 197,
+    "exports": 1,
+    "function_ranges": 3162,
+    "exec_bytes": 927232
+  },
+  {
+    "path": "NVIDIA App\\NvDLISR\\NGXWrapper.dll",
+    "sha256": "c7351623cc93c87d68d8cffafb2b48d58c61505f1f6ceb213c565b2b2652df07",
+    "bits": 64,
+    "size": 1246320,
+    "imports": 283,
+    "exports": 4,
+    "function_ranges": 2719,
+    "exec_bytes": 945664
+  },
+  {
+    "path": "NVIDIA App\\NvDLISR\\nvngx_dlisr.dll",
+    "sha256": "81e90273502d7f6d00f5fbd191bf9e68f2cc05851b54359458f6c6e2b30a9dad",
+    "bits": 64,
+    "size": 58958448,
+    "imports": 127,
+    "exports": 29,
+    "function_ranges": 1575,
+    "exec_bytes": 700416
+  },
+  {
+    "path": "NVIDIA App\\NvDriverUpdateCheck\\NvDriverUpdateCheck64.dll",
+    "sha256": "514dcf5234b7ddd5bdd1bca1d07e5062f8217e970a8e8a21e8098fd7dac8b26c",
+    "bits": 64,
+    "size": 879216,
+    "imports": 187,
+    "exports": 1,
+    "function_ranges": 2388,
+    "exec_bytes": 639488
+  },
+  {
+    "path": "NVIDIA App\\NvLocalizedConfig\\NvLocalizedConfig.dll",
+    "sha256": "fb9958400043be8f32192ef061f98db24ee659f59b0c83410c791edcf5a70200",
+    "bits": 64,
+    "size": 2553968,
+    "imports": 388,
+    "exports": 1,
+    "function_ranges": 6381,
+    "exec_bytes": 2076672
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\aiuser\\McpServerPlugin.dll",
+    "sha256": "c8fe52a475cdaececd2e7d1fff2f16ad2c932d9549492727fa3fc459a5a7943e",
+    "bits": 64,
+    "size": 2732656,
+    "imports": 420,
+    "exports": 1,
+    "function_ranges": 7230,
+    "exec_bytes": 2182144
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvAccount.dll",
+    "sha256": "473c1ea63f0a9a923303f7a03315eb285ad48326fd1f23f3e67685bb464dbe44",
+    "bits": 64,
+    "size": 2857584,
+    "imports": 398,
+    "exports": 1,
+    "function_ranges": 6982,
+    "exec_bytes": 2312192
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\DesktopNotification.dll",
+    "sha256": "77b6a40c31dbe8319aa91cfd7921bbdea1b0a247d61986b12ed6efc53cb94089",
+    "bits": 64,
+    "size": 2174576,
+    "imports": 385,
+    "exports": 2,
+    "function_ranges": 6060,
+    "exec_bytes": 1737216
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\Diagnostics.dll",
+    "sha256": "ef4d98d1b68cf8e60bc51960b9b28be0a4e90b3291cf66953753a03f8fc056a4",
+    "bits": 64,
+    "size": 2959984,
+    "imports": 393,
+    "exports": 1,
+    "function_ranges": 7117,
+    "exec_bytes": 2426880
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\Downloader.dll",
+    "sha256": "b12df892d47aaeb73f30b9f655a1f7c39541193bc6ec3546b6e982f4e78b2bbe",
+    "bits": 64,
+    "size": 5425776,
+    "imports": 550,
+    "exports": 1,
+    "function_ranges": 14531,
+    "exec_bytes": 4298240
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\DriverUpdateRecommendation.dll",
+    "sha256": "7da2c603174a7c6c7d3e5549d7f1d37d9ac21283864f03d02fd3a35ee8d9a8b3",
+    "bits": 64,
+    "size": 2066032,
+    "imports": 377,
+    "exports": 1,
+    "function_ranges": 5412,
+    "exec_bytes": 1633280
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\NvAppIgoIpcProxy.dll",
+    "sha256": "16b4d31149d89b3ac6f1ada950907521c6b75dc515b1c063b06eb2213a5e6eb5",
+    "bits": 64,
+    "size": 1698416,
+    "imports": 370,
+    "exports": 1,
+    "function_ranges": 4736,
+    "exec_bytes": 1353216
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\NvKVStorage.dll",
+    "sha256": "8b7452fc80c02e6eedf41fd0c4eeb3d4875adea838010a3cb6afa65dc05dad84",
+    "bits": 64,
+    "size": 1907312,
+    "imports": 373,
+    "exports": 1,
+    "function_ranges": 5326,
+    "exec_bytes": 1532416
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\oc\\_OverClockingNvc.dll",
+    "sha256": "34bf6504e387f5e00ad3d662b90a2ec23a124794352af02fbcd504d3d573a39d",
+    "bits": 64,
+    "size": 2902640,
+    "imports": 387,
+    "exports": 1,
+    "function_ranges": 12717,
+    "exec_bytes": 2244608
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\session\\NvDriverDiagnostics.dll",
+    "sha256": "8dce136dde4d2f25ddf4df33373939a0e1c2ba30088fc0740a9539c1146cec30",
+    "bits": 64,
+    "size": 3313264,
+    "imports": 395,
+    "exports": 1,
+    "function_ranges": 7766,
+    "exec_bytes": 2723328
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\capcore64.dll",
+    "sha256": "ea21c7b665248ac378459dbead602436c45181cb9606b33eb6e59d30d5e9f3b4",
+    "bits": 64,
+    "size": 1654896,
+    "imports": 191,
+    "exports": 1,
+    "function_ranges": 3516,
+    "exec_bytes": 1193984
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\ipccommon64.dll",
+    "sha256": "0c2568f255d2a966bf61638c03f51bd92c0b641d70ef0c233c67120ff8fd71ea",
+    "bits": 64,
+    "size": 1296496,
+    "imports": 175,
+    "exports": 2,
+    "function_ranges": 3108,
+    "exec_bytes": 1034752
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvfcapi64.dll",
+    "sha256": "e753adbe26fb98537c482feab1228e30cacb3582a2cf4eabbb1762c5ef272c88",
+    "bits": 64,
+    "size": 1557104,
+    "imports": 160,
+    "exports": 1,
+    "function_ranges": 3375,
+    "exec_bytes": 1233920
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvfp64.dll",
+    "sha256": "64368488e1fb272e7ac68d31ba01afebf9020fa0db0017b7265b928c053b20b1",
+    "bits": 64,
+    "size": 1570928,
+    "imports": 150,
+    "exports": 1,
+    "function_ranges": 3443,
+    "exec_bytes": 1273856
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvmf64.dll",
+    "sha256": "f6078b6640f711df12da1ca6cd5d1b6aa44c59acc37d98e488d2bb7415c8e91e",
+    "bits": 64,
+    "size": 1399920,
+    "imports": 151,
+    "exports": 1,
+    "function_ranges": 3460,
+    "exec_bytes": 1057280
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvovapi64.dll",
+    "sha256": "0827392efec1368d1ba6ec18225614e5cce17d53954a7f28a2bf8245429995ab",
+    "bits": 64,
+    "size": 932464,
+    "imports": 154,
+    "exports": 1,
+    "function_ranges": 1990,
+    "exec_bytes": 724992
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvspapi64.dll",
+    "sha256": "25b2b108a502619e6f2248abaddb52b0f81667b60adb7c371d416eb12c7c9be1",
+    "bits": 64,
+    "size": 3356784,
+    "imports": 289,
+    "exports": 5,
+    "function_ranges": 12749,
+    "exec_bytes": 2562560
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvsphelper64.exe",
+    "sha256": "5637754cefd4962bb01a1508d0efcab513b4ea71d5fc923f4103cf1673218d9a",
+    "bits": 64,
+    "size": 998512,
+    "imports": 131,
+    "exports": 0,
+    "function_ranges": 1871,
+    "exec_bytes": 685056
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvsphelperplugin64.dll",
+    "sha256": "43b98088129920386e56ce706e292a49283404fdffdf834db7c47f2ca6ed6fb6",
+    "bits": 64,
+    "size": 1056368,
+    "imports": 228,
+    "exports": 2,
+    "function_ranges": 2434,
+    "exec_bytes": 829952
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvspscreenshot64.dll",
+    "sha256": "7b8b6ce9e4f48ae53f55ed74e1df2285bfa6c2ea2e5e28e920810c02c87a5ebd",
+    "bits": 64,
+    "size": 1545840,
+    "imports": 175,
+    "exports": 1,
+    "function_ranges": 3399,
+    "exec_bytes": 1234432
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\NVSPCAPS\\_nvspcaps64.dll",
+    "sha256": "0c8f771fa27f073701e99f1b3d49d45e6f99f1c2bba4291fa6003409a1c7ae1d",
+    "bits": 64,
+    "size": 3992176,
+    "imports": 344,
+    "exports": 1,
+    "function_ranges": 13884,
+    "exec_bytes": 3005440
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\Plugins\\LocalSystem\\_nvspserviceplugin64.dll",
+    "sha256": "8f7587a1610874e9263fb5ab6890875f1527c4fc9e62c82c0746958416ba76fe",
+    "bits": 64,
+    "size": 2026096,
+    "imports": 237,
+    "exports": 1,
+    "function_ranges": 4518,
+    "exec_bytes": 1617408
+  },
+  {
+    "path": "NvContainer\\nvcontainer.exe",
+    "sha256": "0f0a5352c50d4701d629e7c88a7a45632e76217bdc8e21569af5d2ab3c345817",
+    "bits": 64,
+    "size": 1691248,
+    "imports": 210,
+    "exports": 1,
+    "function_ranges": 5354,
+    "exec_bytes": 1217024
+  },
+  {
+    "path": "NvContainer\\Watchdog\\NvPluginWatchdog.dll",
+    "sha256": "92fc33f9a2d3add07058ec5fd470b6653609fd59067c50020d4c6f02b797ad5d",
+    "bits": 64,
+    "size": 1268848,
+    "imports": 190,
+    "exports": 1,
+    "function_ranges": 4244,
+    "exec_bytes": 988160
+  },
+  {
+    "path": "NvTelemetry\\NvTelemetryAPI64.dll",
+    "sha256": "ab5455ea4ae1780b9badb809f0a6ead682b8d9e34f1c9c36252b906c697737f4",
+    "bits": 64,
+    "size": 4868208,
+    "imports": 217,
+    "exports": 27,
+    "function_ranges": 11344,
+    "exec_bytes": 3378176
+  },
+  {
+    "path": "NvTelemetry\\NvTelemetryBridge64.dll",
+    "sha256": "e7ca48239c18ffb6e2fc2b645eef8cc843c23fd3fcd6b90569c6bf4660af97df",
+    "bits": 64,
+    "size": 426608,
+    "imports": 110,
+    "exports": 23,
+    "function_ranges": 1313,
+    "exec_bytes": 293888
+  },
+  {
+    "path": "NvTelemetry\\plugin\\NvTelemetry64.dll",
+    "sha256": "64f71e1b98f1fcea2d38f353e3097108c8a0d5196123d15fd94e25a44f887ee5",
+    "bits": 64,
+    "size": 8169072,
+    "imports": 336,
+    "exports": 31,
+    "function_ranges": 20623,
+    "exec_bytes": 6001152
+  }
+]

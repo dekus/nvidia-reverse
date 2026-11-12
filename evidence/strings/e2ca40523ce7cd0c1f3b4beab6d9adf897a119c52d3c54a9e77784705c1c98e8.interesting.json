@@ -1,0 +1,27 @@
+[
+  {
+    "offset": "0x9c720",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x9d0d0",
+    "encoding": "utf-16le",
+    "text": "Global\\FVSDK_EvtInstallStart"
+  },
+  {
+    "offset": "0x9d1a8",
+    "encoding": "utf-16le",
+    "text": "Global\\FVSDK_EvtInstallFinish"
+  },
+  {
+    "offset": "0x9d678",
+    "encoding": "utf-16le",
+    "text": "FVSDK_INSTALL_START"
+  },
+  {
+    "offset": "0x9d6a0",
+    "encoding": "utf-16le",
+    "text": "FVSDK_INSTALL_FINISH"
+  }
+]

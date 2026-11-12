@@ -1,0 +1,424 @@
+{
+  "name": "collector.proto",
+  "package": "lightstep.collector",
+  "dependency": [
+    "google/protobuf/timestamp.proto",
+    "google/api/annotations.proto"
+  ],
+  "message_type": [
+    {
+      "name": "SpanContext",
+      "field": [
+        {
+          "name": "trace_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT64"
+        },
+        {
+          "name": "span_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT64"
+        },
+        {
+          "name": "baggage",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".lightstep.collector.SpanContext.BaggageEntry"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "BaggageEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "KeyValue",
+      "field": [
+        {
+          "name": "key",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "string_value",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        },
+        {
+          "name": "int_value",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64",
+          "oneof_index": 0
+        },
+        {
+          "name": "double_value",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "oneof_index": 0
+        },
+        {
+          "name": "bool_value",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 0
+        },
+        {
+          "name": "json_value",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "name": "Log",
+      "field": [
+        {
+          "name": "timestamp",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "fields",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".lightstep.collector.KeyValue"
+        }
+      ]
+    },
+    {
+      "name": "Reference",
+      "field": [
+        {
+          "name": "relationship",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".lightstep.collector.Reference.Relationship"
+        },
+        {
+          "name": "span_context",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".lightstep.collector.SpanContext"
+        }
+      ],
+      "enum_type": [
+        {
+          "name": "Relationship",
+          "value": [
+            {
+              "name": "CHILD_OF",
+              "number": 0
+            },
+            {
+              "name": "FOLLOWS_FROM",
+              "number": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Span",
+      "field": [
+        {
+          "name": "span_context",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".lightstep.collector.SpanContext"
+        },
+        {
+          "name": "operation_name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "references",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".lightstep.collector.Reference"
+        },
+        {
+          "name": "start_timestamp",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "duration_micros",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT64"
+        },
+        {
+          "name": "tags",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".lightstep.collector.KeyValue"
+        },
+        {
+          "name": "logs",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".lightstep.collector.Log"
+        }
+      ]
+    },
+    {
+      "name": "Reporter",
+      "field": [
+        {
+          "name": "reporter_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT64"
+        },
+        {
+          "name": "tags",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".lightstep.collector.KeyValue"
+        }
+      ]
+    },
+    {
+      "name": "MetricsSample",
+      "field": [
+        {
+          "name": "name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "int_value",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64",
+          "oneof_index": 0
+        },
+        {
+          "name": "double_value",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "name": "InternalMetrics",
+      "field": [
+        {
+          "name": "start_timestamp",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "duration_micros",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT64"
+        },
+        {
+          "name": "logs",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".lightstep.collector.Log"
+        },
+        {
+          "name": "counts",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".lightstep.collector.MetricsSample"
+        },
+        {
+          "name": "gauges",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".lightstep.collector.MetricsSample"
+        }
+      ]
+    },
+    {
+      "name": "Auth",
+      "field": [
+        {
+          "name": "access_token",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "ReportRequest",
+      "field": [
+        {
+          "name": "reporter",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".lightstep.collector.Reporter"
+        },
+        {
+          "name": "auth",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".lightstep.collector.Auth"
+        },
+        {
+          "name": "spans",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".lightstep.collector.Span"
+        },
+        {
+          "name": "timestamp_offset_micros",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "internal_metrics",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".lightstep.collector.InternalMetrics"
+        }
+      ]
+    },
+    {
+      "name": "Command",
+      "field": [
+        {
+          "name": "disable",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "ReportResponse",
+      "field": [
+        {
+          "name": "commands",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".lightstep.collector.Command"
+        },
+        {
+          "name": "receive_timestamp",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "transmit_timestamp",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "errors",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "warnings",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "infos",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "name": "CollectorService",
+      "method": [
+        {
+          "name": "Report",
+          "input_type": ".lightstep.collector.ReportRequest",
+          "output_type": ".lightstep.collector.ReportResponse",
+          "options": {}
+        }
+      ]
+    }
+  ],
+  "options": {
+    "java_package": "com.lightstep.tracer.grpc",
+    "java_multiple_files": true,
+    "go_package": "collectorpb",
+    "objc_class_prefix": "LSPB"
+  },
+  "syntax": "proto3"
+}

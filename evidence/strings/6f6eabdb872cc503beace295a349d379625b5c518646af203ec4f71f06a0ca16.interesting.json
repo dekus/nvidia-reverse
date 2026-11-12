@@ -1,0 +1,27 @@
+[
+  {
+    "offset": "0x19f80",
+    "encoding": "ascii",
+    "text": "D3D11CreateDeviceAndSwapChain"
+  },
+  {
+    "offset": "0x19fa0",
+    "encoding": "ascii",
+    "text": "D3D11CreateDevice"
+  },
+  {
+    "offset": "0x19fb8",
+    "encoding": "ascii",
+    "text": "AmdD3D11CreateDeviceExt"
+  },
+  {
+    "offset": "0x19fd0",
+    "encoding": "ascii",
+    "text": "AmdD3D11CreateDeviceAndSwapChainExt"
+  },
+  {
+    "offset": "0x1a180",
+    "encoding": "ascii",
+    "text": "D3D12CreateDevice"
+  }
+]

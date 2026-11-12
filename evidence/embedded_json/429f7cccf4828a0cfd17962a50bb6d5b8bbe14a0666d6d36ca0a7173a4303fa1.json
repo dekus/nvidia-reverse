@@ -1,0 +1,343 @@
+[
+  {
+    "file_offset": "0x14bba0",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#driverinstall",
+      "title": "DriverInstall Endpoints",
+      "type": "object",
+      "module": "DriverInstall",
+      "definitions": {
+        "Package": {
+          "type": "object",
+          "description": "Driver package details.",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "currentVersion": {
+              "type": "string"
+            },
+            "resultText": {
+              "type": "string"
+            },
+            "resultCode": {
+              "type": "integer"
+            },
+            "selectedForInstall": {
+              "type": "boolean"
+            },
+            "critical": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "version",
+            "currentVersion",
+            "resultText",
+            "resultCode",
+            "selectedForInstall",
+            "critical"
+          ]
+        },
+        "ErrorCodeEnum": {
+          "type": "integer",
+          "enum": [
+            0,
+            -522190847,
+            -505409537,
+            -505413631,
+            -505413630,
+            -505413629,
+            -505413628,
+            -505413627,
+            -505413626,
+            -505413622,
+            -505413621,
+            505413620,
+            -505413619,
+            -505413618,
+            -505413610,
+            -505413608,
+            -505413607,
+            -505413606,
+            -505413605,
+            -505413600,
+            -505413599,
+            -505413598,
+            -505413597,
+            -505413596,
+            -505413595,
+            -505413584,
+            -505413583,
+            -505413582,
+            -505413581
+          ],
+          "tsEnumNames": [
+            "NoError",
+            "UserCancelled",
+            "GeneralError",
+            "InvalidObject",
+            "InsufficientArguments",
+            "InvalidParameters",
+            "PropertyMissing",
+            "InvalidFormat",
+            "EmptyValue",
+            "FileNotFound",
+            "PathNotFound",
+            "ProcessingPreviousCall",
+            "InstallerAlreadyRunning",
+            "MessagingChannel",
+            "ExtractedNotFound",
+            "InstallerExeNotFound",
+            "GfeExperienceKeyNotFound",
+            "GfeExperiencePathEmpty",
+            "SignatureInvalid",
+            "UacCancelled",
+            "MsgArrivedEventCreate",
+            "MsgArrivedEventSignal",
+            "ResumePathNotFound",
+            "ResumePathEmpty",
+            "ResumePathInvalid",
+            "MsgChannelInit",
+            "MsgShowFormSet",
+            "MsgProgressUpdateSet",
+            "MsgListen"
+          ]
+        },
+        "MethodEnum": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "tsEnumNames": [
+            "NotSet",
+            "ShowForm",
+            "ProgressUpdate"
+          ]
+        },
+        "FormEnum": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "tsEnumNames": [
+            "NotSet",
+            "InstallInitial",
+            "InstallChecking",
+            "InstallCheckWarnings",
+            "InstallCheckFailed",
+            "InstallCheckWait",
+            "Eula",
+            "InstallSelect",
+            "InstallSelectCustom",
+            "InstallSelectInstallPath",
+            "PreInstallCheck",
+            "PreInstallCheckRetry",
+            "PreInstallCheckWait",
+            "PreRebootInstall",
+            "PackageDownloadProgress",
+            "ProcessDownloadedPackage",
+            "PackageDownloadFailed",
+            "InstallProgress",
+            "InstallRemoveProgress",
+            "InstallFinished",
+            "InstallFinishedNoSummary",
+            "InstallFinishedLaunch",
+            "InstallFinishedNoSummaryLaunch",
+            "InstallFinishedOptions",
+            "InstallFinishedNoSummaryOptions",
+            "InstallReboot",
+            "InstallRebootOptions",
+            "InstallRebootNoSummary",
+            "InstallRebootNoSummaryOptions",
+            "InstallRemoveReboot",
+            "InstallFailed",
+            "WaitingOnUac"
+          ]
+        },
+        "NextActionEnum": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "Next",
+            "Close"
+          ]
+        },
+        "InstallerState": {
+          "type": "object",
+          "description": "Installer state used for exchanging information with plugin.",
+          "properties": {
+            "method": {
+              "$ref": "#/definitions/MethodEnum"
+            },
+            "form": {
+              "$ref": "#/definitions/FormEnum"
+            },
+            "nextAction": {
+              "$ref": "#/definitions/NextActionEnum"
+            },
+            "errorCode": {
+              "type": "integer"
+            },
+            "packages": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Package"
+              }
+            },
+            "cleanInstall": {
+              "type": "boolean"
+            },
+            "constraintFailText": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "failedConstraintId": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "method",
+            "form"
+          ]
+        },
+        "Progress": {
+          "type": "object",
+          "description": "Installation progress",
+          "properties": {
+            "method": {
+              "$ref": "#/definitions/MethodEnum"
+            },
+            "form": {
+              "$ref": "#/definitions/FormEnum"
+            },
+            "progressTitle": {
+              "type": "string"
+            },
+            "currentProgress": {
+              "type": "number"
+            },
+            "totalProgress": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "method",
+            "form",
+            "progressTitle",
+            "currentProgress",
+            "totalProgress"
+          ]
+        },
+        "InstallAsync": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Install driver endpoint",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "driverLocation": {
+                "type": "string"
+              },
+              "isCustom": {
+                "type": "boolean"
+              },
+              "resumeInstall": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "driverLocation",
+              "isCustom",
+              "resumeInstall"
+            ]
+          }
+        },
+        "SetState": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Set next action for installer.",
+          "parameters": {
+            "$ref": "#/definitions/InstallerState"
+          }
+        },
+        "GetState": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Request last state, pushes state to RegisterFormNotification also.",
+          "return": {
+            "$ref": "#/definitions/InstallerState"
+          }
+        },
+        "RegisterProgressNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Progress callback.",
+          "return": {
+            "$ref": "#/definitions/Progress"
+          }
+        },
+        "RegisterFormNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Show form callback.",
+          "return": {
+            "$ref": "#/definitions/InstallerState"
+          }
+        }
+      }
+    }
+  }
+]

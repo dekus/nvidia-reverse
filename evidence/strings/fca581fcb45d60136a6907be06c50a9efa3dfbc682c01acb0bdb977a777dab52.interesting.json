@@ -1,0 +1,207 @@
+[
+  {
+    "offset": "0xdf1a0",
+    "encoding": "ascii",
+    "text": "nvapi_QueryInterface"
+  },
+  {
+    "offset": "0xdf1b8",
+    "encoding": "ascii",
+    "text": "nvapi_Direct_GetMethod"
+  },
+  {
+    "offset": "0xf5b78",
+    "encoding": "ascii",
+    "text": "NvAPI_Unload "
+  },
+  {
+    "offset": "0xf5c08",
+    "encoding": "ascii",
+    "text": "NvAPI_Initialize "
+  },
+  {
+    "offset": "0xf75c0",
+    "encoding": "ascii",
+    "text": "Nvapi Initialization failure"
+  },
+  {
+    "offset": "0xfaf80",
+    "encoding": "ascii",
+    "text": "NVIDIA_NVPCIFLT_IOCTL_POWERUP_GPU failed"
+  },
+  {
+    "offset": "0xfdf20",
+    "encoding": "ascii",
+    "text": "RTSSHooksLoader64.exe"
+  },
+  {
+    "offset": "0x1226cf",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x123702",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x126bf8",
+    "encoding": "ascii",
+    "text": ".?AW4_NvAPI_Status@@"
+  },
+  {
+    "offset": "0x12b600",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0O@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x12c3c0",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0BC@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x12d7b0",
+    "encoding": "ascii",
+    "text": ".?AV?$GenericSimpleLoggable@W4_NvAPI_Status@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x12ec80",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0O@$$CB_WV?$Chain@AEBQEB_WV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0xdf120",
+    "encoding": "utf-16le",
+    "text": "NvAPI Direct was not found. Please update your driver."
+  },
+  {
+    "offset": "0xdf200",
+    "encoding": "utf-16le",
+    "text": "nvapi64.dll"
+  },
+  {
+    "offset": "0xef540",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0xef580",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0xef830",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0xf00a8",
+    "encoding": "utf-16le",
+    "text": "HKEY_CLASSES_ROOT"
+  },
+  {
+    "offset": "0xf00d0",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0xf00f8",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0xf0120",
+    "encoding": "utf-16le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0xf0138",
+    "encoding": "utf-16le",
+    "text": "HKEY_PERFORMANCE_DATA"
+  },
+  {
+    "offset": "0xf0168",
+    "encoding": "utf-16le",
+    "text": "HKEY_DYN_DATA"
+  },
+  {
+    "offset": "0xf0188",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_CONFIG"
+  },
+  {
+    "offset": "0xf0e00",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Uxdlogging"
+  },
+  {
+    "offset": "0xf4770",
+    "encoding": "utf-16le",
+    "text": "Global\\CplNvapiInitializtionFailure-84D93D0F-ACB2-41C5-911A-0889DA87557F"
+  },
+  {
+    "offset": "0xf8610",
+    "encoding": "utf-16le",
+    "text": "NvAPI_EnumPhysicalGPUs"
+  },
+  {
+    "offset": "0xf8750",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetAllDisplayIds"
+  },
+  {
+    "offset": "0xf8e80",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Disp_GetBrightnessCalibrationData"
+  },
+  {
+    "offset": "0xf8fa0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Disp_SetBrightnessNits"
+  },
+  {
+    "offset": "0xfae90",
+    "encoding": "utf-16le",
+    "text": "\\\\.\\nvpciflt"
+  },
+  {
+    "offset": "0xfbce0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+    "offset": "0xfc0d0",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\Windows\\CurrentVersion\\Setup\\State"
+  },
+  {
+    "offset": "0xfc520",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Wow6432Node\\Microsoft\\Windows NT\\CurrentVersion\\Windows"
+  },
+  {
+    "offset": "0xfc5b0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Windows"
+  },
+  {
+    "offset": "0xfc6e0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\DWM\\Schedule"
+  },
+  {
+    "offset": "0xfcbd0",
+    "encoding": "utf-16le",
+    "text": "Local Settings\\Software\\Microsoft\\Windows\\CurrentVersion\\AppModel\\Repository\\Packages\\"
+  },
+  {
+    "offset": "0xfcd10",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Classes\\"
+  },
+  {
+    "offset": "0xfcf10",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\DirectX\\UserGpuPreferences"
+  }
+]

@@ -1,0 +1,6 @@
+[
+  {
+    "line": 1416,
+    "text": "            t = t.concat([\"XMLHttpRequest\", \"XMLHttpRequestEventTarget\", \"IDBIndex\", \"IDBRequest\", \"IDBOpenDBRequest\", \"IDBDatabase\", \"IDBTransaction\", \"IDBCursor\", \"WebSocket\"]);\r"
+  }
+]

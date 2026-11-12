@@ -1,0 +1,50 @@
+[
+  {
+    "Name": "NvDriverUpdateCheckDaily_{REDACTED_INSTALLATION_ID}",
+    "Principal": {
+      "UserId": null,
+      "GroupId": "Users",
+      "LogonType": 4,
+      "RunLevel": 0
+    },
+    "Triggers": [
+      {
+        "Type": "MSFT_TaskDailyTrigger",
+        "Enabled": true,
+        "StartBoundary": "2026-11-06T03:00:52",
+        "DaysInterval": 1,
+        "UserId": null,
+        "Delay": null,
+        "Repetition": {
+          "Duration": null,
+          "Interval": null,
+          "StopAtDurationEnd": false
+        }
+      }
+    ]
+  },
+  {
+    "Name": "NVIDIA App SelfUpdate_{REDACTED_INSTALLATION_ID}",
+    "Principal": {
+      "UserId": null,
+      "GroupId": "Users",
+      "LogonType": 4,
+      "RunLevel": 1
+    },
+    "Triggers": [
+      {
+        "Type": "MSFT_TaskEventTrigger",
+        "Enabled": true,
+        "StartBoundary": null,
+        "DaysInterval": null,
+        "UserId": null,
+        "Delay": null,
+        "Repetition": {
+          "Duration": null,
+          "Interval": null,
+          "StopAtDurationEnd": false
+        }
+      }
+    ]
+  }
+]

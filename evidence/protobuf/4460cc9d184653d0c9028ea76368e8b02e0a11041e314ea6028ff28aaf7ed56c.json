@@ -1,0 +1,73 @@
+{
+  "name": "battlenet_parser.proto",
+  "package": "gfe.ontology.details.battlenet",
+  "message_type": [
+    {
+      "name": "Application",
+      "field": [
+        {
+          "name": "key1",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "key2",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "installData",
+          "number": 3,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".gfe.ontology.details.battlenet.Application.InstallData"
+        },
+        {
+          "name": "installFlags",
+          "number": 5,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".gfe.ontology.details.battlenet.Application.InstallFlags"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "InstallData",
+          "field": [
+            {
+              "name": "installPath",
+              "number": 1,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_STRING"
+            }
+          ]
+        },
+        {
+          "name": "InstallFlags",
+          "field": [
+            {
+              "name": "flags",
+              "number": 2,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_UINT64"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ApplicationList",
+      "field": [
+        {
+          "name": "applications",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".gfe.ontology.details.battlenet.Application"
+        }
+      ]
+    }
+  ]
+}

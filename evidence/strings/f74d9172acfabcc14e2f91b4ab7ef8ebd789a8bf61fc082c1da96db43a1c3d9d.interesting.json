@@ -1,0 +1,37 @@
+[
+  {
+    "offset": "0x135b0",
+    "encoding": "ascii",
+    "text": "NvPluginFrameViewKMDService"
+  },
+  {
+    "offset": "0x16a6d",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x19280",
+    "encoding": "ascii",
+    "text": ".?AV<lambda_1>@?1??FrameViewKMDServicePluginInitialize@@YA?AW4NvPluginResult_t@@PEBDP6AXW4NvPluginNotification_t@@PEAX2@Z2@Z@"
+  },
+  {
+    "offset": "0x194e0",
+    "encoding": "ascii",
+    "text": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??FrameViewKMDServicePluginInitialize@@YA?AW4NvPluginResult_t@@PEBDP6AXW4NvPluginNotification_t@@PEAX2@Z2@Z@_N$$V@std@@"
+  },
+  {
+    "offset": "0x1ae08",
+    "encoding": "utf-16le",
+    "text": "FvSDK KMD Service Plugin"
+  },
+  {
+    "offset": "0x1ae8c",
+    "encoding": "utf-16le",
+    "text": "FvSDK KMD Service Plugin"
+  },
+  {
+    "offset": "0x1af84",
+    "encoding": "utf-16le",
+    "text": "FvSDK KMD Service Plugin"
+  }
+]

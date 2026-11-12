@@ -1,0 +1,134 @@
+[
+  {
+    "line": 566,
+    "text": "            this.nvCameraService = t, this.loggingService = n, this.cdr = i, this.igoConfig = r, this.translateService = s, this.ppeService = d, this.oscDisplayService = p, this.telemetryIgo = f, this.featureSupportService = M, this.panelOpenState = !1, this.disableAnimation = !0, this.defaultFilter = \"\", this.filterList = [], this.multiFilterInstanceAvailable = !1, this._filterStack = new S.ho, this._ppeFilterStack = new S.ho, this.destroy$ = new x.B7, this.deepDvcId = v.VL, this.nisId = v.on, this.trueHdrId = v.Ow, this.filterListRender = [], this.isNewFilterUI = !1, this.availableFilterMessage = \"\", this.isAppStartedReceived = !1, this.isPpeSupportedGame = !1, this.isPpeFiltersVisible = !1, this.nvCameraReady = !1, this.isNis2Enabled = !1, this.isFreestyleSupportedGame = !1, this.ppeFilterTitleInfo = !0, this.aiDvcGameEnableState = !1, this.trueHdrGameEnableState = !1, this.aiDvcStateAtAppLaunch = null, this.aiHdrStateAtAppLaunch = null, this.aiDvcRealTimeErrorStringList = [], this.aiHdrRealTimeErrorStringList = [], this.rtxDvcRealTimeErrorCode = 0, this.globalToggle = S.P8, this.isGameRestartRequestedfromCTA = !1, this.disabledDueToGlobalToggle = !1, this.realtimeRtxDvcStatePollingInterval = 50, this.realtimeRtxDvcStatePollingDuration = 500, this.instantEnableSupported = !1, this.rtxHdrMinMiddleGrey = 10, this.freestyleFilterFinalized$ = new x.B7, this.deepDvcFinalized$ = new x.B7, this.trueHdrFinalized$ = new x.B7, this.nisFinalized$ = new x.B7, this.isNvApp = !1, this.l"
+  },
+  {
+    "line": 569,
+    "text": "            this.isNewFilterUI = !this.igoConfig.GFNCefClient, this.isPpeFiltersVisible = this.ppeService.isPpeFiltersVisible && !this.isUsedForPhotoMode, this.igoConfig.GFNCefClient || (this.sendSessionEventTelemetry(), this.isUsedForPhotoMode && (this.markFilterFetchFinalize(v.VL), this.markFilterFetchFinalize(v.on), this.markFilterFetchFinalize(v.Ow))), this.ppeService.isPpeFeaturesEnabled && this.isPpeSupportedGame && this.isPpeFiltersVisible && this.nvCameraService.getGlobalToggle().subscribe(t => {\r"
+  },
+  {
+    "line": 583,
+    "text": "              this.logger.error(\"error during filter section init = \" + t), this.nvCameraService.sendFunctionalityErrorTelemetry(\"FunctionalError - FilterSection Init Failed:  \" + t), this.refreshFilterList(v.dz)\r"
+  },
+  {
+    "line": 860,
+    "text": "          sendSessionEventTelemetry() {\r"
+  },
+  {
+    "line": 862,
+    "text": "              this.telemetryIgo.sendSessionEvent(z.x4.SessionMenuLaunch, \"\", Date.now() - this.nvCameraService.pageLaunchStart, this.isUsedForPhotoMode ? z.Uk.Ansel : z.Uk.Freestyle, this.nvCameraService.getFetchedSystemInfo()?.ddVersion, this.nvCameraService.pageLaunchMode, \"\", \"\"), this.nvCameraService.pageLaunchStart = 0\r"
+  },
+  {
+    "line": 909,
+    "text": "                    d > -1 && (this.filterList[d].isVisible = !1, this.filterList[d].isFeatureEnabled = !0), t.id === this.deepDvcId && (this.ppeService.isAIDVCAddSuccess = !0, this.ppeService.isAIDVCEnabled = !0, this.nvCameraService.filterAddedTelemetry(v.Qu.RTX_DVC), this.nvCameraService.updatePpeState(this.deepDvcId, !0), this.getRtxDvcRealTimeState().subscribe()), t.id === this.trueHdrId && (this.ppeService.isAIHDRAddSuccess = !0, this.nvCameraService.filterAddedTelemetry(v.Qu.RTX_HDR), this.nvCameraService.updatePpeState(this.trueHdrId, !0), this.ppeService.getTrueHDRRealTimeStateInfo().subscribe(p => {\r"
+  },
+  {
+    "line": 1429,
+    "text": "            this.loggingService = t, this.router = n, this.route = i, this.translateService = r, this.nvCameraService = s, this.ppeService = d, this.navigationService = p, this.oscDisplayService = f, this.keyboardService = M, this.appBarService = m, this.telemetryService = N, this.igoConfig = q, this.destroy$ = new x.B7, this.currentGameName = \"PUBG Lowlight\", this.slotHotkey = \"Alt + F1\", this.panelOpenState = !1, this.activeSlotIndex = null, this.positionEnum = h.SI, this.slotNameEditBox = {\r"
+  },
+  {
+    "line": 1463,
+    "text": "            return this.logger.info(\"Game filter INIT\"), this.nvCameraService.changeUIRunning(!0), this.telemetryInit(), this.navigationService.escapeEvent().pipe((0, _.Q)(this.destroy$)).subscribe(() => {\r"
+  },
+  {
+    "line": 1471,
+    "text": "            }), this.showError ? this.isPPEEnabled ? (this.emptySlots = new S.n, this.slots = this.emptySlots.modsSlotsInfo.slots, this.showError = !1, this.restartGame = !1, this.activeSlotIndex = this.nvCameraService.currentGameSlots ? this.nvCameraService.currentGameSlots.modsSlotsInfo.lastSlotIdx : this.ppeService.currentGameSlotIndex, this.previewEnabled = !!this.isNewFilterUI, this.nvCameraService.setPreviewDetails(this.slots, this.previewImgWidth, this.previewImgHeight), this.triggerPreview(), this.slotsPreview = this.nvCameraService.slotsPreviewInfo, void this.sendGameFilterErrorTelemetry()) : void this.showErrorMessage() : this.restartGame ? (this.emptySlots = new S.n, void(this.slots = this.emptySlots.modsSlotsInfo.slots)) : void(this.nvCameraSessionExists ? this.initializeSlots() : this.nvCameraService.startNvCameraSession().subscribe(t => {\r"
+  },
+  {
+    "line": 1487,
+    "text": "            this.nvCameraService.resetPreviewStatus(), this.destroy$.next(!0), this.destroy$.complete(), this.nvCameraService.isFreestyleSupportedGame() && !this.disabledDueToGlobalToggle && (this.nvCameraService.filterAppliedTelemetry(this.activeSlotIndex), this.nvCameraService.processingControlSettingsTelemetry(this.activeSlotIndex)), this.showError || this.nvCameraService.restartRequired ? this.nvCameraService.changeUIRunning(!1) : (this.slots && this.activeSlotIndex && this.slots[this.activeSlotIndex].filterStack.filters.length > 0 && (t = !0), this.nvCameraService.closeGameFilterMenu({\r"
+  },
+  {
+    "line": 1494,
+    "text": "                this.nvCameraService.nvCameraTimedOut = !0, this.errorMsg = \"notification.WarningGameRequired\", this.nvCameraService.sendAnselFreestyleErrorTelemetry(c.T7.anselFreestyleUnsupportedGameError, c.O5.GameFilter);\r"
+  },
+  {
+    "line": 1497,
+    "text": "                this.errorMsg = \"notification.WarningGameRequired\", this.nvCameraService.sendAnselFreestyleErrorTelemetry(c.T7.anselFreestyleUnsupportedGameError, c.O5.GameFilter);\r"
+  },
+  {
+    "line": 1500,
+    "text": "                this.errorMsg = \"notification.ErrorRestartGame\", this.nvCameraService.sendAnselFreestyleErrorTelemetry(c.T7.anselFreestyleMenuLaunchError, c.O5.GameFilter);\r"
+  },
+  {
+    "line": 1503,
+    "text": "                this.logger.error(\"Unknown error msg type: \" + this.errorType), this.errorMsg = \"notification.WarningGameRequired\", this.nvCameraService.sendAnselFreestyleErrorTelemetry(c.T7.anselFreestyleGeneralFailure, c.O5.GameFilter)\r"
+  },
+  {
+    "line": 1506,
+    "text": "          sendGameFilterErrorTelemetry() {\r"
+  },
+  {
+    "line": 1509,
+    "text": "                this.nvCameraService.anselFreestyleErrorTelemetry(c.T7.anselFreestyleUnsupportedGameError, c.O5.GameFilter, \"Nvcamera timed out\");\r"
+  },
+  {
+    "line": 1512,
+    "text": "                this.nvCameraService.anselFreestyleErrorTelemetry(c.T7.anselFreestyleUnsupportedGameError, c.O5.GameFilter, \"Unsupported game\");\r"
+  },
+  {
+    "line": 1515,
+    "text": "                this.nvCameraService.anselFreestyleErrorTelemetry(c.T7.anselFreestyleMenuLaunchError, c.O5.GameFilter, \"Game restart required\");\r"
+  },
+  {
+    "line": 1518,
+    "text": "                this.logger.error(\"Unknown error msg type: \" + this.errorType), this.nvCameraService.anselFreestyleErrorTelemetry(c.T7.anselFreestyleGeneralFailure, c.O5.GameFilter, \"Unknown error\")\r"
+  },
+  {
+    "line": 1567,
+    "text": "          telemetryInit() {\r"
+  },
+  {
+    "line": 2153,
+    "text": "            if (this.logger.info(\"Initializing photo mode component\"), this.nvcameraService.changeUIRunning(!0), this.isMacPlatform = navigator.platform.toUpperCase().indexOf(\"MAC\") >= 0, this.telemetryInit(), this.navigationService.escapeEvent().pipe((0, _.Q)(this.destroy$)).subscribe(() => {\r"
+  },
+  {
+    "line": 2231,
+    "text": "            this.logger.info(\"ngOnDestroy\"), this.destroy$.next(!0), this.destroy$.complete(), (this.shouldReenableAiDvc || this.shouldReenableAiHdr) && (this.shouldReenableAiDvc = !1, this.shouldReenableAiHdr = !1, this.ppeService.restorePPEFilters(), this.logger.info(\"Restoring PPE filters\")), this.nvcameraService.isFreestyleSupportedGame() && !this.showError && (this.nvcameraService.filterAppliedTelemetry(), this.nvcameraService.processingControlSettingsTelemetry()), this.captureInProgress && this.onCaptureCancel(), this.nvcameraService.closeAlert(), this.nvcameraService.enableAnselRedirection(!1), this.oscDisplayService.setHideSidebar(!1), this.nvIgoComponent.setShowGrid(!1), this.logger.info(\"Before closePhotoModeMenu\");\r"
+  },
+  {
+    "line": 2257,
+    "text": "            this.nvcameraService.cancelCurrentCapture().subscribe(), this.captureInProgress = !1, this.nvcameraService.closeAlert(), this.screenshotFinishTime = Date.now(), this.sendAnselScreenshotTelemetry(c.J7.cancelled)\r"
+  },
+  {
+    "line": 2302,
+    "text": "            }), this.screenshotStartTime = Date.now(), this.sendAnselScreenshotTelemetry(c.J7.started), this.nvcameraService.captureScreenshot(!1, void 0).subscribe(i => {}, i => {\r"
+  },
+  {
+    "line": 2303,
+    "text": "              this.logger.info(\"GFN screenshot capture failed\"), this.onCaptureFinished(), this.nvcameraService.showSnack(h.BO.CaptureFailed), this.screenshotFinishTime = Date.now(), this.sendAnselScreenshotTelemetry(c.J7.failed, c.Ng.anselScreenshotTimeoutFailure, i)\r"
+  },
+  {
+    "line": 2307,
+    "text": "              }, 500), this.screenshotFinishTime = Date.now(), this.sendAnselScreenshotTelemetry(c.J7.completed)\r"
+  },
+  {
+    "line": 2370,
+    "text": "          telemetryInit() {\r"
+  },
+  {
+    "line": 2373,
+    "text": "          sendAnselScreenshotTelemetry(t, n, i) {\r"
+  },
+  {
+    "line": 2385,
+    "text": "            }, t !== c.J7.started && (r.totalMs = this.screenshotFinishTime - this.screenshotStartTime), t === c.J7.failed && (r.errorType = n, r.errorString = i || \"Unknown error\"), this.nvcameraService.sendAnselScreenshotTelemetry(t, r)\r"
+  },
+  {
+    "line": 2390,
+    "text": "                this.nvcameraService.nvCameraTimedOut = !0, this.errorMsg = \"notification.WarningGameRequired\", this.nvcameraService.sendAnselFreestyleErrorTelemetry(c.T7.anselFreestyleUnsupportedGameError, c.O5.PhotoMode), this.nvcameraService.anselFreestyleErrorTelemetry(c.T7.anselFreestyleUnsupportedGameError, c.O5.PhotoMode, \"Nvcamera timed out\");\r"
+  },
+  {
+    "line": 2393,
+    "text": "                this.errorMsg = \"notification.WarningGameRequired\", this.nvcameraService.sendAnselFreestyleErrorTelemetry(c.T7.anselFreestyleUnsupportedGameError, c.O5.PhotoMode), this.nvcameraService.anselFreestyleErrorTelemetry(c.T7.anselFreestyleUnsupportedGameError, c.O5.PhotoMode, \"Unsupported game\");\r"
+  },
+  {
+    "line": 2396,
+    "text": "                this.errorMsg = \"notification.ErrorRestartGame\", this.nvcameraService.sendAnselFreestyleErrorTelemetry(c.T7.anselFreestyleMenuLaunchError, c.O5.PhotoMode), this.nvcameraService.anselFreestyleErrorTelemetry(c.T7.anselFreestyleMenuLaunchError, c.O5.PhotoMode, \"Game restart required\");\r"
+  },
+  {
+    "line": 2399,
+    "text": "                this.logger.error(\"Unknown error msg type: \" + this.errorType), this.errorMsg = \"\", this.nvcameraService.sendAnselFreestyleErrorTelemetry(c.T7.anselFreestyleGeneralFailure, c.O5.PhotoMode), this.nvcameraService.anselFreestyleErrorTelemetry(c.T7.anselFreestyleGeneralFailure, c.O5.PhotoMode, \"Unknown error\")\r"
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "offset": "0x17b9f8",
+    "encoding": "ascii",
+    "text": "Failed to load NvTelemetry library"
+  },
+  {
+    "offset": "0x17ba28",
+    "encoding": "ascii",
+    "text": "InitializeTelemetry_2"
+  },
+  {
+    "offset": "0x17ba48",
+    "encoding": "ascii",
+    "text": "NvTelemetryApiInitialize not found"
+  },
+  {
+    "offset": "0x17ba78",
+    "encoding": "ascii",
+    "text": "NvTelemetryApiInitialize failed"
+  },
+  {
+    "offset": "0x17bab0",
+    "encoding": "ascii",
+    "text": "DeviceID function not found in NvTelemetry library"
+  },
+  {
+    "offset": "0x17bb00",
+    "encoding": "ascii",
+    "text": "DeviceIdFree function not found in NvTelemetry library"
+  },
+  {
+    "offset": "0x17bb68",
+    "encoding": "ascii",
+    "text": "UninitializeTelemetry"
+  },
+  {
+    "offset": "0x17bb88",
+    "encoding": "ascii",
+    "text": "NvTelemetryApiUnInitialize not found"
+  },
+  {
+    "offset": "0x17bbb8",
+    "encoding": "ascii",
+    "text": "NvTelemetryApiUnInitialize failed"
+  },
+  {
+    "offset": "0x17bc18",
+    "encoding": "ascii",
+    "text": "..\\..\\NvTelemetry"
+  },
+  {
+    "offset": "0x17bc30",
+    "encoding": "ascii",
+    "text": "..\\..\\NvTelemetry\\plugin\\NvTelemetry.json"
+  },
+  {
+    "offset": "0x17be08",
+    "encoding": "ascii",
+    "text": "DeviceIoControl() failed..."
+  },
+  {
+    "offset": "0x17be30",
+    "encoding": "ascii",
+    "text": " DeviceIoControl() failed "
+  },
+  {
+    "offset": "0x17be50",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x17c7b8",
+    "encoding": "ascii",
+    "text": "DeviceIoControl() failed... :%d"
+  },
+  {
+    "offset": "0x17c7e0",
+    "encoding": "ascii",
+    "text": "DeviceIoControl() failed "
+  },
+  {
+    "offset": "0x183ec0",
+    "encoding": "ascii",
+    "text": "Skipping telemetry report of error %s from method %s"
+  },
+  {
+    "offset": "0x1cf83a",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x176590",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x1765e0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x1768e0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x17bbe0",
+    "encoding": "utf-16le",
+    "text": "NvTelemetryAPI64.dll"
+  },
+  {
+    "offset": "0x17be98",
+    "encoding": "utf-16le",
+    "text": "\\\\.\\PhysicalDrive0"
+  },
+  {
+    "offset": "0x17c800",
+    "encoding": "utf-16le",
+    "text": "\\\\.\\PhysicalDrive%d"
+  },
+  {
+    "offset": "0x181b60",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\GeForce Experience"
+  }
+]

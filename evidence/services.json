@@ -1,0 +1,29 @@
+[
+  {
+    "Name": "FvSvc",
+    "DisplayName": "NVIDIA FrameView SDK service",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "StartName": "LocalSystem",
+    "PathName": "\"C:\\Program Files\\NVIDIA Corporation\\FrameViewSDK\\nvfvsdksvc_x64.exe\" -service",
+    "ProcessId": 0
+  },
+  {
+    "Name": "NvContainerLocalSystem",
+    "DisplayName": "NVIDIA LocalSystem Container",
+    "State": "Running",
+    "StartMode": "Auto",
+    "StartName": "LocalSystem",
+    "PathName": "\"C:\\Program Files\\NVIDIA Corporation\\NvContainer\\nvcontainer.exe\" -s NvContainerLocalSystem -a -f \"C:\\ProgramData\\NVIDIA Corporation\\NVIDIA App\\NvContainer\\NvContainerLocalSystem.log\" -l 3 -d \"C:\\Program Files\\NVIDIA Corporation\\NvContainer\\plugins\\LocalSystem\" -r -p 30000  -ert",
+    "ProcessId": 4496
+  },
+  {
+    "Name": "NVDisplay.ContainerLocalSystem",
+    "DisplayName": "NVIDIA Display Container LS",
+    "State": "Running",
+    "StartMode": "Auto",
+    "StartName": "LocalSystem",
+    "PathName": "C:\\WINDOWS\\System32\\DriverStore\\FileRepository\\nv_dispi.inf_amd64_20f49c6eb5c9b39b\\Display.NvContainer\\NVDisplay.Container.exe -arg <ExeDir>\\arguments.txt",
+    "ProcessId": 2776
+  }
+]

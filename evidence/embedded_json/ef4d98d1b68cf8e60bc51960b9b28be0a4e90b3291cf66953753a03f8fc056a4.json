@@ -1,0 +1,111 @@
+[
+  {
+    "file_offset": "0x252590",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#diagnostics",
+      "title": "Diagnostics commands",
+      "type": "object",
+      "module": "Diagnostics",
+      "definitions": {
+        "ComponentName": {
+          "type": "string",
+          "description": "Unique name the component",
+          "default": "undefined"
+        },
+        "ComponentVersion": {
+          "type": "string",
+          "description": "Version of component",
+          "default": "undefined"
+        },
+        "ClientInfo": {
+          "type": "object",
+          "description": "Contains information about the client requesting for the service",
+          "properties": {
+            "componentName": {
+              "$ref": "#/definitions/ComponentName"
+            },
+            "componentVersion": {
+              "$ref": "#/definitions/ComponentVersion"
+            }
+          },
+          "required": [
+            "componentName",
+            "componentVersion"
+          ]
+        },
+        "ExceptionInfo": {
+          "type": "object",
+          "description": "Contains information needed to send Crash dump",
+          "properties": {
+            "name": {
+              "description": "String representation of exception code",
+              "type": "string"
+            },
+            "message": {
+              "description": "Additional exception message if applicable",
+              "type": "string"
+            },
+            "code": {
+              "description": "Exception code integer constant",
+              "type": "integer"
+            },
+            "stackTrace": {
+              "description": "Stacktrace information for the exception",
+              "type": "string"
+            },
+            "clientInfo": {
+              "description": "clientInformation sending this data",
+              "$ref": "#/definitions/ClientInfo"
+            }
+          },
+          "required": [
+            "name",
+            "message",
+            "stackTrace",
+            "code",
+            "clientInfo"
+          ]
+        },
+        "SendExceptionInfo": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "exceptionInfo": {
+                "$ref": "#/definitions/ExceptionInfo"
+              }
+            },
+            "required": [
+              "exceptionInfo"
+            ]
+          }
+        },
+        "SendUserFeedbackInfo": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "surveyId": {
+                "type": "string"
+              },
+              "uiPage": {
+                "type": "string"
+              },
+              "uiLanguage": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "surveyId",
+              "uiPage",
+              "uiLanguage"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

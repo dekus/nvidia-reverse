@@ -1,0 +1,593 @@
+{
+  "method": "Heuristic search for length-prefixed .proto names, bounded wire parsing, FileDescriptorProto decoding. Raw bytes retained. Unknown custom options may not appear in JSON. Not exhaustive for compressed/runtime-generated descriptors.",
+  "protobuf_python_version": "7.36.2",
+  "candidates": 75,
+  "descriptors": [
+    {
+      "descriptor_sha256": "dd57a82e03ce729ed9f0914c9f48c9c8b702ba7e5c10633926d3578eacb54978",
+      "name": "BusMessage.proto",
+      "package": "",
+      "syntax": "proto2 (implicit)",
+      "bytes": 1053,
+      "messages_top_level": 1,
+      "enums_top_level": 0,
+      "services": 0,
+      "dependencies": [],
+      "occurrences": [
+        {
+          "module": "FrameViewSDK\\FvContainer\\NvMessageBus.dll",
+          "sha256": "4915c54254d22a538c82ed438a8b01ce3b3ccdb136a9853072d463d436e80ae3",
+          "file_offset": "0x29eab0",
+          "end_file_offset": "0x29eecd"
+        },
+        {
+          "module": "FrameViewSDK\\FvContainer\\plugins.system\\NvMessageBusBroadcast.dll",
+          "sha256": "e07a2df896f8e081117ae027ac4fce9613118c131030b0ccbbcc5731d750e595",
+          "file_offset": "0x2949a0",
+          "end_file_offset": "0x294dbd"
+        },
+        {
+          "module": "NVIDIA App\\MessageBus\\NvMessageBus.dll",
+          "sha256": "348162a5948cd59e8b0ece73c7cdf9faa55d9a9f906879392c1527308b2af85d",
+          "file_offset": "0x2b3330",
+          "end_file_offset": "0x2b374d"
+        },
+        {
+          "module": "NVIDIA App\\MessageBus\\NvMessageBusBroadcast.dll",
+          "sha256": "63b000b70eaea5477e8d30e141f84ccf5391a8d098377768795e694aeda8372f",
+          "file_offset": "0x2b0e70",
+          "end_file_offset": "0x2b128d"
+        }
+      ]
+    },
+    {
+      "descriptor_sha256": "c0b34433940f687300a5974f16ca99dccf359fe1a402619c62a05c95dfd3d9e9",
+      "name": "google/protobuf/descriptor.proto",
+      "package": "google.protobuf",
+      "syntax": "proto2 (implicit)",
+      "bytes": 6078,
+      "messages_top_level": 21,
+      "enums_top_level": 0,
+      "services": 0,
+      "dependencies": [],
+      "occurrences": [
+        {
+          "module": "FrameViewSDK\\FvContainer\\NvMessageBus.dll",
+          "sha256": "4915c54254d22a538c82ed438a8b01ce3b3ccdb136a9853072d463d436e80ae3",
+          "file_offset": "0x2ac870",
+          "end_file_offset": "0x2ae02e"
+        },
+        {
+          "module": "FrameViewSDK\\FvContainer\\plugins.system\\NvMessageBusBroadcast.dll",
+          "sha256": "e07a2df896f8e081117ae027ac4fce9613118c131030b0ccbbcc5731d750e595",
+          "file_offset": "0x2a24d0",
+          "end_file_offset": "0x2a3c8e"
+        },
+        {
+          "module": "Installer2\\InstallerCore\\NvInstallerUtil.dll",
+          "sha256": "e08b544f697e003cda488f09b28210b6339ed333b7d4e95beadb59fa8485b822",
+          "file_offset": "0x521568",
+          "end_file_offset": "0x522d26"
+        },
+        {
+          "module": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\NvCamera.dll",
+          "sha256": "c167a74311e3de18aad10c9c6a930f9fbaf3209c3d32d18c0519844079860e3f",
+          "file_offset": "0x5f5470",
+          "end_file_offset": "0x5f6c2e"
+        },
+        {
+          "module": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\ShareServer.dll",
+          "sha256": "ea5cc83f0023ad367f1e1be8b8e038c00e364fc1516afb50412742bd9f8ed1f0",
+          "file_offset": "0x79b200",
+          "end_file_offset": "0x79c9be"
+        },
+        {
+          "module": "NVIDIA App\\MessageBus\\NvMessageBus.dll",
+          "sha256": "348162a5948cd59e8b0ece73c7cdf9faa55d9a9f906879392c1527308b2af85d",
+          "file_offset": "0x2c1460",
+          "end_file_offset": "0x2c2c1e"
+        },
+        {
+          "module": "NVIDIA App\\MessageBus\\NvMessageBusBroadcast.dll",
+          "sha256": "63b000b70eaea5477e8d30e141f84ccf5391a8d098377768795e694aeda8372f",
+          "file_offset": "0x2bf200",
+          "end_file_offset": "0x2c09be"
+        },
+        {
+          "module": "NvTelemetry\\plugin\\NvTelemetry64.dll",
+          "sha256": "64f71e1b98f1fcea2d38f353e3097108c8a0d5196123d15fd94e25a44f887ee5",
+          "file_offset": "0x6ed0e0",
+          "end_file_offset": "0x6ee89e"
+        }
+      ]
+    },
+    {
+      "descriptor_sha256": "b0f1f01d6d2117793b2c8b17ac30902438d3d74d3dabe824e2d7f6bbeb2b577a",
+      "name": "collector.proto",
+      "package": "lightstep.collector",
+      "syntax": "proto3",
+      "bytes": 2150,
+      "messages_top_level": 12,
+      "enums_top_level": 0,
+      "services": 1,
+      "dependencies": [
+        "google/protobuf/timestamp.proto",
+        "google/api/annotations.proto"
+      ],
+      "occurrences": [
+        {
+          "module": "Installer2\\InstallerCore\\NvInstallerUtil.dll",
+          "sha256": "e08b544f697e003cda488f09b28210b6339ed333b7d4e95beadb59fa8485b822",
+          "file_offset": "0x471670",
+          "end_file_offset": "0x471ed6"
+        },
+        {
+          "module": "NvTelemetry\\plugin\\NvTelemetry64.dll",
+          "sha256": "64f71e1b98f1fcea2d38f353e3097108c8a0d5196123d15fd94e25a44f887ee5",
+          "file_offset": "0x5d28e0",
+          "end_file_offset": "0x5d3146"
+        }
+      ]
+    },
+    {
+      "descriptor_sha256": "01d542bff545ecd5e54940c2cbfa7705017bf640f7acbb5e8ffa4d147b5d4ce4",
+      "name": "lightstep_carrier.proto",
+      "package": "lightstep",
+      "syntax": "proto3",
+      "bytes": 355,
+      "messages_top_level": 2,
+      "enums_top_level": 0,
+      "services": 0,
+      "dependencies": [],
+      "occurrences": [
+        {
+          "module": "Installer2\\InstallerCore\\NvInstallerUtil.dll",
+          "sha256": "e08b544f697e003cda488f09b28210b6339ed333b7d4e95beadb59fa8485b822",
+          "file_offset": "0x473398",
+          "end_file_offset": "0x4734fb"
+        },
+        {
+          "module": "NvTelemetry\\plugin\\NvTelemetry64.dll",
+          "sha256": "64f71e1b98f1fcea2d38f353e3097108c8a0d5196123d15fd94e25a44f887ee5",
+          "file_offset": "0x5d4f30",
+          "end_file_offset": "0x5d5093"
+        }
+      ]
+    },
+    {
+      "descriptor_sha256": "c6fa388f3cddce6a0605b51506eb6fbdb2616e075089a35bfd0472b9ded5876b",
+      "name": "google/api/http.proto",
+      "package": "google.api",
+      "syntax": "proto3",
+      "bytes": 482,
+      "messages_top_level": 3,
+      "enums_top_level": 0,
+      "services": 0,
+      "dependencies": [],
+      "occurrences": [
+        {
+          "module": "Installer2\\InstallerCore\\NvInstallerUtil.dll",
+          "sha256": "e08b544f697e003cda488f09b28210b6339ed333b7d4e95beadb59fa8485b822",
+          "file_offset": "0x4738d8",
+          "end_file_offset": "0x473aba"
+        },
+        {
+          "module": "NvTelemetry\\plugin\\NvTelemetry64.dll",
+          "sha256": "64f71e1b98f1fcea2d38f353e3097108c8a0d5196123d15fd94e25a44f887ee5",
+          "file_offset": "0x5d56b0",
+          "end_file_offset": "0x5d5892"
+        }
+      ]
+    },
+    {
+      "descriptor_sha256": "ccf002fcb7aeea1997ab1be96a02c8c8aa27459a33788f95f399d710dc68fb7e",
+      "name": "google/protobuf/timestamp.proto",
+      "package": "google.protobuf",
+      "syntax": "proto3",
+      "bytes": 239,
+      "messages_top_level": 1,
+      "enums_top_level": 0,
+      "services": 0,
+      "dependencies": [],
+      "occurrences": [
+        {
+          "module": "Installer2\\InstallerCore\\NvInstallerUtil.dll",
+          "sha256": "e08b544f697e003cda488f09b28210b6339ed333b7d4e95beadb59fa8485b822",
+          "file_offset": "0x51c168",
+          "end_file_offset": "0x51c257"
+        },
+        {
+          "module": "NvTelemetry\\plugin\\NvTelemetry64.dll",
+          "sha256": "64f71e1b98f1fcea2d38f353e3097108c8a0d5196123d15fd94e25a44f887ee5",
+          "file_offset": "0x6e6fc0",
+          "end_file_offset": "0x6e70af"
+        }
+      ]
+    },
+    {
+      "descriptor_sha256": "95f5a383d57bf5e34ae67145971d7651ab3911732bb8eb87f5dfbdd5b54f4567",
+      "name": "protos/perfetto/trace/android/android_track_event.proto",
+      "package": "perfetto.protos",
+      "syntax": "proto2 (implicit)",
+      "bytes": 370,
+      "messages_top_level": 1,
+      "enums_top_level": 0,
+      "services": 0,
+      "dependencies": [
+        "protos/perfetto/trace/track_event/track_event.proto"
+      ],
+      "occurrences": [
+        {
+          "module": "NVIDIA App\\CEF\\libcef.dll",
+          "sha256": "29bb51e0fc7ebd1d41c7781d1068c60253647013e578053b8bb93a52ad33dca7",
+          "file_offset": "0xb83c611",
+          "end_file_offset": "0xb83c783"
+        }
+      ]
+    },
+    {
+      "descriptor_sha256": "5662602366aa773bfebd4793f19a99f1c2452ed9c4a77c5e388482d16587d111",
+      "name": "ipc.proto",
+      "package": "AnselIpc",
+      "syntax": "proto2 (implicit)",
+      "bytes": 22105,
+      "messages_top_level": 135,
+      "enums_top_level": 9,
+      "services": 0,
+      "dependencies": [],
+      "occurrences": [
+        {
+          "module": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\NvCamera.dll",
+          "sha256": "c167a74311e3de18aad10c9c6a930f9fbaf3209c3d32d18c0519844079860e3f",
+          "file_offset": "0x5d8a30",
+          "end_file_offset": "0x5de089"
+        }
+      ]
+    },
+    {
+      "descriptor_sha256": "7413479803bac8621d89a80e0912c99d521a52c1ad054d9f46d681b2765bf90f",
+      "name": "BusMessage.proto",
+      "package": "",
+      "syntax": "proto2 (implicit)",
+      "bytes": 941,
+      "messages_top_level": 1,
+      "enums_top_level": 0,
+      "services": 0,
+      "dependencies": [],
+      "occurrences": [
+        {
+          "module": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\NvCamera.dll",
+          "sha256": "c167a74311e3de18aad10c9c6a930f9fbaf3209c3d32d18c0519844079860e3f",
+          "file_offset": "0x5e9120",
+          "end_file_offset": "0x5e94cd"
+        },
+        {
+          "module": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\ShareServer.dll",
+          "sha256": "ea5cc83f0023ad367f1e1be8b8e038c00e364fc1516afb50412742bd9f8ed1f0",
+          "file_offset": "0x78e6c0",
+          "end_file_offset": "0x78ea6d"
+        },
+        {
+          "module": "NVIDIA App\\MessageBus\\MessageBus.dll",
+          "sha256": "64e300997b5796da22ad8baa49e4eb919cdc170157cbe6770279f94508a84650",
+          "file_offset": "0x527de0",
+          "end_file_offset": "0x52818d"
+        }
+      ]
+    },
+    {
+      "descriptor_sha256": "2bca97041946aad8e62b73b32c9505905c57324d55d9f88346c419f90f10206e",
+      "name": "sdk.proto",
+      "package": "",
+      "syntax": "proto2 (implicit)",
+      "bytes": 4329,
+      "messages_top_level": 28,
+      "enums_top_level": 2,
+      "services": 0,
+      "dependencies": [],
+      "occurrences": [
+        {
+          "module": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\ShareServer.dll",
+          "sha256": "ea5cc83f0023ad367f1e1be8b8e038c00e364fc1516afb50412742bd9f8ed1f0",
+          "file_offset": "0x77d4a0",
+          "end_file_offset": "0x77e589"
+        }
+      ]
+    },
+    {
+      "descriptor_sha256": "22fa316280b0751612354cd58145b1de9ec291fc0a1a55f2e79c39e8b5bcafbb",
+      "name": "google/protobuf/descriptor.proto",
+      "package": "google.protobuf",
+      "syntax": "proto2 (implicit)",
+      "bytes": 4449,
+      "messages_top_level": 18,
+      "enums_top_level": 0,
+      "services": 0,
+      "dependencies": [],
+      "occurrences": [
+        {
+          "module": "NVIDIA App\\MessageBus\\MessageBus.dll",
+          "sha256": "64e300997b5796da22ad8baa49e4eb919cdc170157cbe6770279f94508a84650",
+          "file_offset": "0x605b60",
+          "end_file_offset": "0x606cc1"
+        }
+      ]
+    },
+    {
+      "descriptor_sha256": "b21e5ddcc0eb5ad054804d1112a9a70dbcff0697d5b3deae9a58ed69af725d71",
+      "name": "google/protobuf/descriptor.proto",
+      "package": "google.protobuf",
+      "syntax": "proto2 (implicit)",
+      "bytes": 11288,
+      "messages_top_level": 23,
+      "enums_top_level": 2,
+      "services": 0,
+      "dependencies": [],
+      "occurrences": [
+        {
+          "module": "NVIDIA App\\NvBackend\\ApplicationOntology\\Ontology64.dll",
+          "sha256": "fb6f988c718b4482eda67b2924fb088b2664b4053e0280f9a5229d05da2ba525",
+          "file_offset": "0x33ba30",
+          "end_file_offset": "0x33e648"
+        }
+      ]
+    },
+    {
+      "descriptor_sha256": "1c18affddcb75552d38c117f0b9ff835eacf9391ab9ec17d0802c074da5c1868",
+      "name": "google/protobuf/cpp_features.proto",
+      "package": "pb",
+      "syntax": "proto2 (implicit)",
+      "bytes": 795,
+      "messages_top_level": 1,
+      "enums_top_level": 0,
+      "services": 0,
+      "dependencies": [
+        "google/protobuf/descriptor.proto"
+      ],
+      "occurrences": [
+        {
+          "module": "NVIDIA App\\NvBackend\\ApplicationOntology\\Ontology64.dll",
+          "sha256": "fb6f988c718b4482eda67b2924fb088b2664b4053e0280f9a5229d05da2ba525",
+          "file_offset": "0x3415d0",
+          "end_file_offset": "0x3418eb"
+        }
+      ]
+    },
+    {
+      "descriptor_sha256": "4460cc9d184653d0c9028ea76368e8b02e0a11041e314ea6028ff28aaf7ed56c",
+      "name": "battlenet_parser.proto",
+      "package": "gfe.ontology.details.battlenet",
+      "syntax": "proto2 (implicit)",
+      "bytes": 411,
+      "messages_top_level": 2,
+      "enums_top_level": 0,
+      "services": 0,
+      "dependencies": [],
+      "occurrences": [
+        {
+          "module": "NVIDIA App\\NvBackend\\ApplicationOntology\\Ontology64.dll",
+          "sha256": "fb6f988c718b4482eda67b2924fb088b2664b4053e0280f9a5229d05da2ba525",
+          "file_offset": "0x347060",
+          "end_file_offset": "0x3471fb"
+        }
+      ]
+    }
+  ],
+  "candidate_errors": [
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb822e81",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb82342b",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb8235d4",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb823658",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb8236d8",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb8238b6",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb8239f1",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb826048",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb8260fc",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb82667d",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb826785",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb826801",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb826ec8",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb827303",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb8273d5",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb82756a",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb8276eb",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb827786",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb82784e",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb8278e1",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb827954",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb828ff6",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb83649d",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb836a47",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb836bf0",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb836c74",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb836cf4",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb836ed2",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb83700d",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb839664",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb839718",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb839c99",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb839da1",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb839e1d",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb83a4e4",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb83a91f",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb83a9f1",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb83ab86",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb83ad07",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb83ada2",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb83ae6a",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb83aefd",
+      "error": "'bytes' object has no attribute 'encode'"
+    },
+    {
+      "module": "NVIDIA App\\CEF\\libcef.dll",
+      "offset": "0xb83af70",
+      "error": "'bytes' object has no attribute 'encode'"
+    }
+  ]
+}

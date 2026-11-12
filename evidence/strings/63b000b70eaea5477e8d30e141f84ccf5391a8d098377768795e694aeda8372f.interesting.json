@@ -1,0 +1,82 @@
+[
+  {
+    "offset": "0x2acee0",
+    "encoding": "ascii",
+    "text": "NvMessageBusBroadcast"
+  },
+  {
+    "offset": "0x2ae390",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeW failed: %u"
+  },
+  {
+    "offset": "0x2ae3b0",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeW failed"
+  },
+  {
+    "offset": "0x2b005b",
+    "encoding": "ascii",
+    "text": "            \"description\": \"Default is 0 (disabled). When the period is non-zero, NvMessageBusBroadcast will periodically delete MessageBus client logs older than LogPruningAgeThreshold\","
+  },
+  {
+    "offset": "0x2b0173",
+    "encoding": "ascii",
+    "text": "            \"description\": \"Default is 0 (disabled). When the age threshold is non-zero, NvMessageBusBroadcast will periodically delete MessageBus client logs older than LogPruningAgeThreshold\","
+  },
+  {
+    "offset": "0x2db0ec",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\dev\\src\\MessageBus\\_build\\X64\\Release\\broadcaster\\NvMessageBusBroadcast.pdb"
+  },
+  {
+    "offset": "0x325662",
+    "encoding": "ascii",
+    "text": "NvMessageBusBroadcast.dll"
+  },
+  {
+    "offset": "0x32567c",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x325dda",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeW"
+  },
+  {
+    "offset": "0x32601e",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x2ad41e",
+    "encoding": "utf-16le",
+    "text": "gNvMessageBusBroadcast logging initialized."
+  },
+  {
+    "offset": "0x2ad480",
+    "encoding": "utf-16le",
+    "text": "NvMessageBusBroadcast version "
+  },
+  {
+    "offset": "0x2aebf0",
+    "encoding": "utf-16le",
+    "text": "\\\\.\\pipe\\NvMessageBusBroadcast"
+  },
+  {
+    "offset": "0x2b08e0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NvContainer\\MessageBus"
+  },
+  {
+    "offset": "0x35686c",
+    "encoding": "utf-16le",
+    "text": "NvMessageBusBroadcast"
+  },
+  {
+    "offset": "0x356954",
+    "encoding": "utf-16le",
+    "text": "NvMessageBusBroadcast.dll"
+  }
+]

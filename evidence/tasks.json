@@ -1,0 +1,48 @@
+[
+  {
+    "Name": "NvDriverUpdateCheckDaily_{REDACTED_INSTALLATION_ID}",
+    "Path": "\\",
+    "State": "Ready",
+    "Actions": [
+      {
+        "Execute": "\"C:\\Program Files\\NVIDIA Corporation\\NvContainer\\nvcontainer.exe\"",
+        "Arguments": "-d \"C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDriverUpdateCheck\" -l 3 -f \"C:\\ProgramData\\NVIDIA Corporation\\NVIDIA App\\NvDriverUpdateCheck.log\"",
+        "WorkingDirectory": "C:\\Program Files\\NVIDIA Corporation\\NvContainer"
+      }
+    ],
+    "Principal": {
+      "UserId": null,
+      "LogonType": 4,
+      "RunLevel": 0
+    },
+    "Triggers": [
+      {
+        "StartBoundary": "2026-11-06T03:00:52",
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Name": "NVIDIA App SelfUpdate_{REDACTED_INSTALLATION_ID}",
+    "Path": "\\",
+    "State": "Ready",
+    "Actions": [
+      {
+        "Execute": "\"C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA App.exe\"",
+        "Arguments": null,
+        "WorkingDirectory": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App"
+      }
+    ],
+    "Principal": {
+      "UserId": null,
+      "LogonType": 4,
+      "RunLevel": 1
+    },
+    "Triggers": [
+      {
+        "StartBoundary": null,
+        "Enabled": true
+      }
+    ]
+  }
+]

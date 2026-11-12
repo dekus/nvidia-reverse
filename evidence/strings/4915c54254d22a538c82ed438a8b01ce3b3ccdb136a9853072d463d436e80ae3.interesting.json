@@ -1,0 +1,32 @@
+[
+  {
+    "offset": "0x2cc184",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\dev\\src\\MessageBus\\_build\\X64\\Release\\messagebus\\NvMessageBus.pdb"
+  },
+  {
+    "offset": "0x314624",
+    "encoding": "ascii",
+    "text": "NvMessageBus.dll"
+  },
+  {
+    "offset": "0x314fec",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x29cf70",
+    "encoding": "utf-16le",
+    "text": "\\\\.\\pipe\\NvMessageBusBroadcast"
+  },
+  {
+    "offset": "0x29e4a0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NvContainer\\MessageBus"
+  },
+  {
+    "offset": "0x344b48",
+    "encoding": "utf-16le",
+    "text": "NvMessageBus.dll"
+  }
+]

@@ -1,0 +1,117 @@
+[
+  {
+    "offset": "0xe6e18",
+    "encoding": "ascii",
+    "text": "INvAPICache"
+  },
+  {
+    "offset": "0x101d58",
+    "encoding": "ascii",
+    "text": "RTSSHooksLoader64.exe"
+  },
+  {
+    "offset": "0x121205",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x122516",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0xe7478",
+    "encoding": "utf-16le",
+    "text": "HKEY_CLASSES_ROOT"
+  },
+  {
+    "offset": "0xe74a0",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0xe74c8",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0xe74f0",
+    "encoding": "utf-16le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0xe7508",
+    "encoding": "utf-16le",
+    "text": "HKEY_PERFORMANCE_DATA"
+  },
+  {
+    "offset": "0xe7538",
+    "encoding": "utf-16le",
+    "text": "HKEY_DYN_DATA"
+  },
+  {
+    "offset": "0xe7558",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_CONFIG"
+  },
+  {
+    "offset": "0xfdc20",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Uxdlogging"
+  },
+  {
+    "offset": "0xff3c0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NVTweak"
+  },
+  {
+    "offset": "0xff640",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+    "offset": "0xff9e0",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\Windows\\CurrentVersion\\Setup\\State"
+  },
+  {
+    "offset": "0xffe50",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Windows"
+  },
+  {
+    "offset": "0xffec0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Wow6432Node\\Microsoft\\Windows NT\\CurrentVersion\\Windows"
+  },
+  {
+    "offset": "0x100040",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\DWM\\Schedule"
+  },
+  {
+    "offset": "0x100560",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x100620",
+    "encoding": "utf-16le",
+    "text": "Local Settings\\Software\\Microsoft\\Windows\\CurrentVersion\\AppModel\\Repository\\Packages\\"
+  },
+  {
+    "offset": "0x1006d0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Classes\\"
+  },
+  {
+    "offset": "0x100910",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\DirectX\\UserGpuPreferences"
+  },
+  {
+    "offset": "0x1009e0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global"
+  }
+]

@@ -1,0 +1,632 @@
+[
+  {
+    "file_offset": "0x209990",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#NvOcPlugin",
+      "title": "NvOcPlugin Endpoints",
+      "type": "object",
+      "module": "NvOc",
+      "definitions": {
+        "SliderSetting": {
+          "type": "object",
+          "properties": {
+            "min": {
+              "type": "integer",
+              "description": "Minimum range value"
+            },
+            "max": {
+              "type": "integer",
+              "description": "Maximum range value"
+            },
+            "current": {
+              "type": "integer",
+              "description": "current value of the slider"
+            },
+            "absolute": {
+              "type": "integer",
+              "description": "Absolute value of the object"
+            },
+            "default": {
+              "type": "integer",
+              "description": "default value of the slider"
+            },
+            "type": {
+              "type": "integer",
+              "description": "Type of the slider",
+              "enum": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "tsEnumNames": [
+                "Unknown",
+                "GpuClock",
+                "MemoryClock",
+                "Voltage",
+                "Power",
+                "Temperature",
+                "Fan"
+              ]
+            },
+            "isSupported": {
+              "type": "boolean",
+              "description": "whether slider is supported on the system or not"
+            }
+          }
+        },
+        "GetFeatureSupportState": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Provides information about OverClocking support",
+          "return": {
+            "type": "object",
+            "properties": {
+              "supported": {
+                "type": "boolean",
+                "description": "Defines if OverClocking is supported"
+              }
+            },
+            "required": [
+              "supported"
+            ]
+          }
+        },
+        "GetManualOCLimits": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "uiGpuId": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "uiGpuId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "sliders": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/SliderSetting"
+                }
+              }
+            },
+            "required": [
+              "sliders"
+            ]
+          }
+        },
+        "GetLastOcScanResults": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "uiGpuId": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "uiGpuId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "boolean",
+                "description": "true if successfully set otherwise false"
+              }
+            },
+            "required": [
+              "result"
+            ]
+          }
+        },
+        "GetLastIncompleteOcScannerResults": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "uiGpuId": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "uiGpuId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "boolean",
+                "description": "true if successfully set otherwise false"
+              }
+            },
+            "required": [
+              "result"
+            ]
+          }
+        },
+        "FanSetting": {
+          "type": "object",
+          "properties": {
+            "index": {
+              "type": "integer",
+              "description": "Fan index"
+            },
+            "autoPower": {
+              "type": "boolean",
+              "description": "Whether Fan is user contolled ot hardware controlled"
+            },
+            "isVisible": {
+              "type": "boolean",
+              "description": "If fan control is Visible on current system"
+            },
+            "sliderSetting": {
+              "$ref": "#/definitions/SliderSetting"
+            }
+          }
+        },
+        "GetFanSettings": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "uiGpuId": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "uiGpuId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "fanSettings": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/FanSetting"
+                }
+              }
+            },
+            "required": [
+              "fanSettings"
+            ]
+          }
+        },
+        "OcScanStatusUpdatesNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Scan progress status updates ",
+          "return": {
+            "type": "object",
+            "properties": {
+              "gpuId": {
+                "type": "number",
+                "description": "Gpu index for which this notification is"
+              },
+              "type": {
+                "type": "number",
+                "description": "Progress update or Completion event"
+              },
+              "percentComplete": {
+                "type": "number",
+                "description": "Percent completed"
+              },
+              "completionStatus": {
+                "type": "integer",
+                "description": "Indicates Bitwise Combined status of the scan. 1-scan in progress, 2-No Scan in progress, 4-Completed successfully, 8-Cancelled, 16-Internal Error, 32-No result available"
+              },
+              "completionTime": {
+                "type": "number",
+                "description": "completion Timestamp"
+              },
+              "memoryOcOffsetMhz": {
+                "type": "number",
+                "description": "Applied memory offset"
+              },
+              "averageGpuClockOffsetMhz": {
+                "type": "number",
+                "description": "Applied Gpu clock offset"
+              },
+              "stable": {
+                "type": "boolean",
+                "description": "Indicates if result is stable or not. Show Last scan result only when it is stable"
+              }
+            }
+          }
+        },
+        "OcConfig": {
+          "type": "object",
+          "properties": {
+            "backgroundOcScannerEnabled": {
+              "type": "boolean",
+              "description": "true if background scan is enabled false otherwise"
+            },
+            "grdOcEnabled": {
+              "type": "boolean",
+              "description": "true GRD Oc is Enabled otherwise false"
+            },
+            "persitenceType": {
+              "type": "integer",
+              "description": "Type of persistence currently on the system",
+              "enum": [
+                0,
+                1,
+                2
+              ],
+              "tsEnumNames": [
+                "None",
+                "ManualOc",
+                "AutomaticOc"
+              ]
+            },
+            "grdOcSupported": {
+              "type": "boolean",
+              "description": " Indicates whether GRD OC is supported"
+            },
+            "backgroundOcScannerSupported": {
+              "type": "boolean",
+              "description": "Indicates whether background OC scanner is supported"
+            },
+            "manualOcScannerSupported": {
+              "type": "boolean",
+              "description": "Indicates whether manual OC scanning is supported"
+            },
+            "manualOcSupported": {
+              "type": "boolean",
+              "description": "Indicates whether manual OC is supported"
+            },
+            "notSupportedStatus": {
+              "type": "integer",
+              "description": "Indicates why OC feature is not supported, its bitwise Combined status of the unsupported state. 1-gpu not supported, 2-driver not supported "
+            }
+          }
+        },
+        "GetOCConfig": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "uiGpuId": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "uiGpuId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "boolean",
+                "description": "true if success otherwise false"
+              },
+              "ocConfig": {
+                "$ref": "#/definitions/OcConfig"
+              }
+            },
+            "required": [
+              "result"
+            ]
+          }
+        },
+        "GpuInfo": {
+          "type": "object",
+          "properties": {
+            "index": {
+              "type": "integer",
+              "description": "Index of GPU"
+            },
+            "Name": {
+              "type": "string",
+              "description": "Name of the GPU"
+            }
+          }
+        },
+        "GetGpuInfo": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Provides information about OverClocking support",
+          "return": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "boolean",
+                "description": "true if success otherwise false"
+              },
+              "gpus": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/GpuInfo"
+                }
+              }
+            },
+            "required": [
+              "result",
+              "gpus"
+            ]
+          }
+        },
+        "GetOCAdminConsent": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Provides information about OverClocking admin consent",
+          "return": {
+            "type": "object",
+            "properties": {
+              "adminConsent": {
+                "type": "boolean",
+                "description": "Return value which inform if admin consent is present or not"
+              }
+            },
+            "required": [
+              "adminConsent"
+            ]
+          }
+        },
+        "SetOCAdminConsent": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Sets OverClocking admin consent",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "adminConsent": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "adminConsent"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "boolean",
+                "description": "false if there is any error otherwise true"
+              }
+            },
+            "required": [
+              "result"
+            ]
+          }
+        },
+        "powerStatusNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Power status updates. 0-AC , 1-DC, 2-Short term power supply like UPS, 3-Unknown or out of range",
+          "return": {
+            "type": "object",
+            "properties": {
+              "powerStatus": {
+                "type": "integer",
+                "description": "power status. 0-AC, 1-DC",
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "tsEnumNames": [
+                  "AC",
+                  "DC",
+                  "UPS_LIKE",
+                  "Unknown"
+                ]
+              }
+            }
+          }
+        },
+        "VFPoint": {
+          "type": "object",
+          "properties": {
+            "index": {
+              "type": "integer",
+              "description": "index of VF point"
+            },
+            "voltage": {
+              "type": "integer",
+              "description": "Voltage in uV"
+            },
+            "frequency": {
+              "type": "integer",
+              "description": "Frequency in kHz"
+            }
+          }
+        },
+        "GetVFPoints": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Provides information about base and offset VF points. (VF Curve)",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "uiGpuId": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "uiGpuId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "baseVfPoints": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/VFPoint"
+                }
+              },
+              "offsetVfPoints": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/VFPoint"
+                }
+              }
+            }
+          }
+        },
+        "EnableCurrentVFPointNotification": {
+          "type": "object",
+          "isCommand": true,
+          "description": "enable/disable sending current VF point notification",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "uiGpuId": {
+                "type": "integer"
+              },
+              "isEnable": {
+                "type": "boolean",
+                "description": "whether to enable perf stats notification"
+              },
+              "intervalMS": {
+                "type": "integer",
+                "description": "polling interval in milisec"
+              }
+            },
+            "required": [
+              "uiGpuId",
+              "isEnable",
+              "intervalMS"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "boolean",
+                "description": "true if successfully stated otherwise false"
+              }
+            },
+            "required": [
+              "result"
+            ]
+          }
+        },
+        "CurrentVFPointNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Voltage in current VF point on VF curve",
+          "return": {
+            "type": "object",
+            "properties": {
+              "gpuId": {
+                "type": "number",
+                "description": "Gpu index for which this notification is"
+              },
+              "voltage": {
+                "type": "number",
+                "description": "current voltage"
+              },
+              "frequency": {
+                "type": "number",
+                "description": "graphics clock frequency in KHz"
+              },
+              "memoryFrequency": {
+                "type": "number",
+                "description": "memory clock frequency in KHz"
+              }
+            }
+          }
+        },
+        "ProfileType": {
+          "type": "integer",
+          "description": "Type of the perf profile",
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "tsEnumNames": [
+            "Default",
+            "Custom",
+            "Silent",
+            "MaxPerf"
+          ]
+        },
+        "PerfProfile": {
+          "type": "object",
+          "properties": {
+            "profile": {
+              "$ref": "#/definitions/ProfileType"
+            },
+            "sliders": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/SliderSetting"
+              }
+            },
+            "fanSettings": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/FanSetting"
+              }
+            }
+          },
+          "required": [
+            "profile",
+            "sliders",
+            "fanSettings"
+          ]
+        },
+        "GetPerfProfiles": {
+          "type": "object",
+          "isCommand": true,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "uiGpuId": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "uiGpuId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "CurrentProfile": {
+                "$ref": "#/definitions/ProfileType"
+              },
+              "profiles": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/PerfProfile"
+                }
+              }
+            },
+            "required": [
+              "CurrentProfile",
+              "profiles"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

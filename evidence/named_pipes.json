@@ -1,0 +1,8 @@
+[
+  {
+    "Name": "nvidia-nvapp-mcp-server-<REDACTED_MACHINE_SID>-1"
+  },
+  {
+    "Name": "NvMessageBusBroadcastNVIDIA.Display.Driver"
+  }
+]

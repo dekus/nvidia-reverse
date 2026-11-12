@@ -1,0 +1,102 @@
+[
+  {
+    "offset": "0x10ad58",
+    "encoding": "ascii",
+    "text": "INvAPICache"
+  },
+  {
+    "offset": "0x12c300",
+    "encoding": "ascii",
+    "text": "RTSSHooksLoader64.exe"
+  },
+  {
+    "offset": "0x150de0",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x10ca68",
+    "encoding": "utf-16le",
+    "text": "HKEY_CLASSES_ROOT"
+  },
+  {
+    "offset": "0x10ca90",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0x10cab8",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0x10cae0",
+    "encoding": "utf-16le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0x10caf8",
+    "encoding": "utf-16le",
+    "text": "HKEY_PERFORMANCE_DATA"
+  },
+  {
+    "offset": "0x10cb28",
+    "encoding": "utf-16le",
+    "text": "HKEY_DYN_DATA"
+  },
+  {
+    "offset": "0x10cb48",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_CONFIG"
+  },
+  {
+    "offset": "0x121ed0",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Uxdlogging"
+  },
+  {
+    "offset": "0x129c70",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x12a400",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+    "offset": "0x12a850",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\Windows\\CurrentVersion\\Setup\\State"
+  },
+  {
+    "offset": "0x12ac30",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Windows"
+  },
+  {
+    "offset": "0x12aca0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Wow6432Node\\Microsoft\\Windows NT\\CurrentVersion\\Windows"
+  },
+  {
+    "offset": "0x12ae00",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\DWM\\Schedule"
+  },
+  {
+    "offset": "0x12b2e0",
+    "encoding": "utf-16le",
+    "text": "Local Settings\\Software\\Microsoft\\Windows\\CurrentVersion\\AppModel\\Repository\\Packages\\"
+  },
+  {
+    "offset": "0x12b430",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Classes\\"
+  },
+  {
+    "offset": "0x12b630",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\DirectX\\UserGpuPreferences"
+  }
+]

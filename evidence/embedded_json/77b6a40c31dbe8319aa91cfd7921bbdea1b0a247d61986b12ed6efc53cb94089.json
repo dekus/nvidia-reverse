@@ -1,0 +1,238 @@
+[
+  {
+    "file_offset": "0x1ac450",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#desktopNotification",
+      "title": "Desktop Notification",
+      "type": "object",
+      "module": "DesktopNotification",
+      "definitions": {
+        "Tag": {
+          "type": "string",
+          "description": "Unique tag/id for the desktop notification"
+        },
+        "MessageVariables": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "value"
+            ]
+          },
+          "description": "Array of name/value pairs for variable substitutions in translated messages"
+        },
+        "Actions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "description": "Label of the action button, can be a translation key (UTF-8)"
+              },
+              "labelVariables": {
+                "$ref": "#/definitions/MessageVariables"
+              },
+              "activationURL": {
+                "type": "string",
+                "description": "URL to invoke when the action button is clicked (UTF-8)"
+              }
+            },
+            "required": [
+              "label"
+            ]
+          },
+          "maxItems": 2,
+          "description": "Array of actions represented as buttons on the desktop notification"
+        },
+        "ShowDesktopNotification": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Shows an OS-native desktop notification",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "tag": {
+                "$ref": "#/definitions/Tag"
+              },
+              "titleText": {
+                "type": "string",
+                "description": "Title of the desktop notification, can be a translation key (UTF-8)"
+              },
+              "titleVariables": {
+                "$ref": "#/definitions/MessageVariables"
+              },
+              "bodyText": {
+                "type": "string",
+                "description": "Body of the desktop notification with, can be a translation key (UTF-8)"
+              },
+              "bodyVariables": {
+                "$ref": "#/definitions/MessageVariables"
+              },
+              "iconURL": {
+                "type": "string",
+                "description": "URL for the icon displayed inside the desktop notification (UTF-8)"
+              },
+              "imageURL": {
+                "type": "string",
+                "description": "URL for the image displayed above/below the desktop notification (UTF-8)"
+              },
+              "activationURL": {
+                "type": "string",
+                "description": "URL to invoke when the desktop notification is clicked (UTF-8)"
+              },
+              "skipPopup": {
+                "type": "boolean",
+                "description": "Indicates that the desktop notification should directly be added to the Notification Center without being displayed first"
+              },
+              "actions": {
+                "$ref": "#/definitions/Actions"
+              },
+              "additionalText": {
+                "type": "string",
+                "description": "Text to be displayed in an additional block below the notification body. Can be a translation key (UTF-8)"
+              }
+            },
+            "required": [
+              "titleText"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "success": {
+                "type": "boolean"
+              },
+              "tag": {
+                "$ref": "#/definitions/Tag"
+              }
+            },
+            "required": [
+              "success",
+              "tag"
+            ]
+          }
+        },
+        "ClearDesktopNotification": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Clears a desktop notification, either hiding the popup or removing it from OS Notification Center",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "tag": {
+                "$ref": "#/definitions/Tag"
+              }
+            },
+            "required": [
+              "tag"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "success": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "success"
+            ]
+          }
+        },
+        "IsValidDesktopNotification": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Checks if a desktop notification is currently visible or saved in the OS notification center",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "tag": {
+                "$ref": "#/definitions/Tag"
+              }
+            },
+            "required": [
+              "tag"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "valid": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "valid"
+            ]
+          }
+        },
+        "DesktopNotificationsAllowed": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Checks if a desktop notification is currently visible or saved in the OS notification center",
+          "return": {
+            "type": "object",
+            "properties": {
+              "allowed": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "allowed"
+            ]
+          }
+        },
+        "DesktopNotificationActivated": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Sent when the desktop notification or one of its action buttons were clicked",
+          "return": {
+            "type": "object",
+            "properties": {
+              "tag": {
+                "$ref": "#/definitions/Tag"
+              },
+              "activationURL": {
+                "type": "string",
+                "description": "The activation URL invoked"
+              }
+            },
+            "required": [
+              "tag",
+              "activationURL"
+            ]
+          }
+        },
+        "DesktopNotificationDismissed": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Sent when the desktop notification was dismissed or cleared",
+          "return": {
+            "type": "object",
+            "properties": {
+              "tag": {
+                "$ref": "#/definitions/Tag"
+              }
+            },
+            "required": [
+              "tag"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

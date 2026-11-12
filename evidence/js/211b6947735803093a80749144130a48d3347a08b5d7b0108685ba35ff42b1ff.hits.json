@@ -1,0 +1,34 @@
+[
+  {
+    "line": 254,
+    "text": "          const i = indexedDB.open(e, t),\r"
+  },
+  {
+    "line": 644,
+    "text": "        const s = indexedDB.deleteDatabase(e);\r"
+  },
+  {
+    "line": 689,
+    "text": "          const i = indexedDB.open(e, t),\r"
+  },
+  {
+    "line": 1330,
+    "text": "          e.waitUntil(s), e.ports && e.ports[0] && s.then((() => e.ports[0].postMessage(!0)))\r"
+  },
+  {
+    "line": 1612,
+    "text": "    e.SkipWaiting = \"SKIP_WAITING\", e.GameLaunched = \"GAME_LAUNCHED\", e.GameExit = \"GAME_EXIT\", e.CloseStreamerSession = \"CLOSE_STREAM_SESSION\", e.PushNotification = \"BROWSER_PUSH_NOTIFICATION\", e.IpcPushNotification = \"IPC_PUSH_NOTIFICATION\", e.PushNotificationTelemetry = \"PUSH_NOTIFICATION_TELEMETRY\", e.UiPushNotification = \"BROWSER_VISIBLE_PUSH_NOTIFICATION\", e.PushNotificationTracing = \"PUSH_NOTIFICATION_TRACING\", e.PushNotificationReceived = \"PUSH_NOTIFICATION_RECEIVED\", e.SharedStorageUpdate = \"SHARED_STORAGE_UPDATE\", e.LoggerNotification = \"LOGGER_NOTIFICATION\", e.GetClientVersion = \"GET_CLIENT_VERSION\", e.SetLoggerSettings = \"SET_LOGGING_SETTINGS\", e.GetClientVersionWaitingSW = \"GET_CLIENT_VERSION_FROM_WAITING_SW\"\r"
+  },
+  {
+    "line": 1688,
+    "text": "    e.LCARS = \"lcars\", e.GFWSLDriverContent = \"gfwslDriverContent\", e.GFWSLArticleContent = \"gfwslArticleContent\", e.GFWSLInstaller = \"gfwslInstaller\", e.GFWSLProfile = \"gfwslProfile\", e.Telemetry = \"telemetry\", e.Offline = \"offline\", e.AllAppsMetaData = \"allAppsMetaData\"\r"
+  },
+  {
+    "line": 1778,
+    "text": "      for (const e of a) e.postMessage(r);\r"
+  },
+  {
+    "line": 1811,
+    "text": "          for (const t of s) t.postMessage(e)\r"
+  }
+]

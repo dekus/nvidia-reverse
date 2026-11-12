@@ -1,0 +1,322 @@
+[
+  {
+    "offset": "0x31d350",
+    "encoding": "ascii",
+    "text": "nvapi_QueryInterface"
+  },
+  {
+    "offset": "0x31d368",
+    "encoding": "ascii",
+    "text": "nvapi_Direct_GetMethod"
+  },
+  {
+    "offset": "0x3326c8",
+    "encoding": "ascii",
+    "text": "received nvapi message:: wparam: "
+  },
+  {
+    "offset": "0x336638",
+    "encoding": "ascii",
+    "text": "NvAPI_Unload "
+  },
+  {
+    "offset": "0x33eb10",
+    "encoding": "ascii",
+    "text": "D3D11CreateDevice"
+  },
+  {
+    "offset": "0x343f40",
+    "encoding": "ascii",
+    "text": "RTSSHooksLoader64.exe"
+  },
+  {
+    "offset": "0x345db8",
+    "encoding": "ascii",
+    "text": "NvAPI_Initialize failed with "
+  },
+  {
+    "offset": "0x39f7c8",
+    "encoding": "ascii",
+    "text": "SetWindowsHookExW"
+  },
+  {
+    "offset": "0x39f7dc",
+    "encoding": "ascii",
+    "text": "UnhookWindowsHookEx"
+  },
+  {
+    "offset": "0x39f7f2",
+    "encoding": "ascii",
+    "text": "CallNextHookEx"
+  },
+  {
+    "offset": "0x3a1468",
+    "encoding": "ascii",
+    "text": "NvUiNvapiInit"
+  },
+  {
+    "offset": "0x3a48f4",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x3a88e0",
+    "encoding": "ascii",
+    "text": ".?AW4_NvAPI_Status@@"
+  },
+  {
+    "offset": "0x3b2090",
+    "encoding": "ascii",
+    "text": ".?AV?$GenericSimpleLoggable@W4_NvAPI_Status@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x3b23a0",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0O@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x3b6950",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0BO@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x74ab7c",
+    "encoding": "ascii",
+    "text": "_COAUTHINFOWD"
+  },
+  {
+    "offset": "0x74ac1b",
+    "encoding": "ascii",
+    "text": "O_COAUTHIDENTITYW"
+  },
+  {
+    "offset": "0x2d7350",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer"
+  },
+  {
+    "offset": "0x2d73d0",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Network"
+  },
+  {
+    "offset": "0x2d7450",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Comdlg32"
+  },
+  {
+    "offset": "0x2d76b0",
+    "encoding": "utf-16le",
+    "text": "Software\\"
+  },
+  {
+    "offset": "0x2d76c8",
+    "encoding": "utf-16le",
+    "text": "Software\\Classes\\"
+  },
+  {
+    "offset": "0x2f6d70",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\"
+  },
+  {
+    "offset": "0x31d2d0",
+    "encoding": "utf-16le",
+    "text": "NvAPI Direct was not found. Please update your driver."
+  },
+  {
+    "offset": "0x31d3b0",
+    "encoding": "utf-16le",
+    "text": "nvapi64.dll"
+  },
+  {
+    "offset": "0x32dcf0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x32dd30",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x32dfe0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x32e200",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\GameUX\\Games"
+  },
+  {
+    "offset": "0x32e2e0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall"
+  },
+  {
+    "offset": "0x32f930",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Uxdlogging"
+  },
+  {
+    "offset": "0x332660",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::UI::ACEIconWindow::OnNvapiMessage"
+  },
+  {
+    "offset": "0x333950",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NVControlPanel2"
+  },
+  {
+    "offset": "0x333a40",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Parameters\\NVControlPanel2"
+  },
+  {
+    "offset": "0x334120",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NVControlPanel2\\Client"
+  },
+  {
+    "offset": "0x334190",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Parameters\\NVControlPanel2\\Client"
+  },
+  {
+    "offset": "0x335280",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvApp"
+  },
+  {
+    "offset": "0x335d40",
+    "encoding": "utf-16le",
+    "text": "HKEY_CLASSES_ROOT"
+  },
+  {
+    "offset": "0x335d68",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0x335d90",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0x335db8",
+    "encoding": "utf-16le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0x335dd0",
+    "encoding": "utf-16le",
+    "text": "HKEY_PERFORMANCE_DATA"
+  },
+  {
+    "offset": "0x335e00",
+    "encoding": "utf-16le",
+    "text": "HKEY_DYN_DATA"
+  },
+  {
+    "offset": "0x335e20",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_CONFIG"
+  },
+  {
+    "offset": "0x3363a0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\CoProcManager"
+  },
+  {
+    "offset": "0x337100",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NVTweak"
+  },
+  {
+    "offset": "0x33b910",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NvTray"
+  },
+  {
+    "offset": "0x33b960",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Parameters\\NvTray"
+  },
+  {
+    "offset": "0x33da80",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NVControlPanel2\\RegisteredServers"
+  },
+  {
+    "offset": "0x345d50",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::Utility::SystemUtil::NvApiInit"
+  },
+  {
+    "offset": "0x345dd8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Initialize success"
+  },
+  {
+    "offset": "0x345e10",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Unload success"
+  },
+  {
+    "offset": "0x3473f0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+    "offset": "0x347720",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\Windows\\CurrentVersion\\Setup\\State"
+  },
+  {
+    "offset": "0x347bb0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Wow6432Node\\Microsoft\\Windows NT\\CurrentVersion\\Windows"
+  },
+  {
+    "offset": "0x347c40",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Windows"
+  },
+  {
+    "offset": "0x347d70",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\DWM\\Schedule"
+  },
+  {
+    "offset": "0x3482a0",
+    "encoding": "utf-16le",
+    "text": "Local Settings\\Software\\Microsoft\\Windows\\CurrentVersion\\AppModel\\Repository\\Packages\\"
+  },
+  {
+    "offset": "0x3483d0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Classes\\"
+  },
+  {
+    "offset": "0x3485d0",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\DirectX\\UserGpuPreferences"
+  },
+  {
+    "offset": "0x3486b0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global"
+  },
+  {
+    "offset": "0x348828",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation"
+  },
+  {
+    "offset": "0x348860",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Parameters"
+  }
+]

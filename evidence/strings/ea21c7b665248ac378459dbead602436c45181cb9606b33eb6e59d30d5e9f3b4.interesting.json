@@ -1,0 +1,672 @@
+[
+  {
+    "offset": "0x128320",
+    "encoding": "ascii",
+    "text": "CVideoCapture::Initialize: Sys info GPUAda+:[%d], GPUBW+:[%d], nvencs:%d"
+  },
+  {
+    "offset": "0x128400",
+    "encoding": "ascii",
+    "text": "CVideoCapture::Initialize: NvFBCH264SetUp failed with code %d"
+  },
+  {
+    "offset": "0x1284a0",
+    "encoding": "ascii",
+    "text": "CVideoCapture::Reinitialize: Could not recreate NvFBC session in %d attempts. Stopping video capture!"
+  },
+  {
+    "offset": "0x1285c0",
+    "encoding": "ascii",
+    "text": "CVideoCapture::Capture: NvFBCH264GetHeader failed with code %d"
+  },
+  {
+    "offset": "0x128610",
+    "encoding": "ascii",
+    "text": "CVideoCapture::Capture: grab error = NVFBC_ERROR_INVALIDATED_SESSION count[%d], m_settings.m_uiCapturePID[%d]"
+  },
+  {
+    "offset": "0x1286a0",
+    "encoding": "ascii",
+    "text": "CVideoCapture::Capture: NvFBCH264GrabFrame failed with error = NVFBC_ERROR_PROTECTED_CONTENT"
+  },
+  {
+    "offset": "0x128710",
+    "encoding": "ascii",
+    "text": "CVideoCapture::Capture: NvFBCH264GrabFrame failed with code %d"
+  },
+  {
+    "offset": "0x128f20",
+    "encoding": "ascii",
+    "text": "CVideoCapture::NvFBCH264SetUp: Stage Buffer alloc failed"
+  },
+  {
+    "offset": "0x128f68",
+    "encoding": "ascii",
+    "text": "CVideoCapture::NvFBCH264SetUp: grab setup setup core failed"
+  },
+  {
+    "offset": "0x128fb0",
+    "encoding": "ascii",
+    "text": "CVideoCapture::NvFBCH264SetUp: grab setup allocate enc-frame data failed"
+  },
+  {
+    "offset": "0x129010",
+    "encoding": "ascii",
+    "text": "CVideoCapture::NvFBCH264SetUp: grab setup register enc-frame data with enc failed"
+  },
+  {
+    "offset": "0x129080",
+    "encoding": "ascii",
+    "text": "CVideoCapture::NvFBCH264SetUp: grab setup allocate frame data failed"
+  },
+  {
+    "offset": "0x1290e0",
+    "encoding": "ascii",
+    "text": "CVideoCapture::NvFBCH264SetUp: grab setup register frame data with enc failed"
+  },
+  {
+    "offset": "0x129140",
+    "encoding": "ascii",
+    "text": "CVideoCapture::NvFBCH264GrabFrame: nvfbc grab frame null ptr"
+  },
+  {
+    "offset": "0x129190",
+    "encoding": "ascii",
+    "text": "CVideoCapture::NvFBCH264GrabFrame: nvfbc grab frame failed"
+  },
+  {
+    "offset": "0x1291d8",
+    "encoding": "ascii",
+    "text": "CVideoCapture::NvFBCH264GetHeader: nvfbc grab header failed"
+  },
+  {
+    "offset": "0x129220",
+    "encoding": "ascii",
+    "text": "CVideoCapture::NvFBCH264Release: grab release unregister frame data with enc failed"
+  },
+  {
+    "offset": "0x129290",
+    "encoding": "ascii",
+    "text": "CVideoCapture::NvFBCH264Release: grab release deallocate frame data failed"
+  },
+  {
+    "offset": "0x1292f0",
+    "encoding": "ascii",
+    "text": "CVideoCapture::NvFBCH264Release: grab release failed"
+  },
+  {
+    "offset": "0x12bfd0",
+    "encoding": "ascii",
+    "text": "CDXDeviceManager::CheckAndCreateDXContexts: failed to load NVFBC DLL"
+  },
+  {
+    "offset": "0x130898",
+    "encoding": "ascii",
+    "text": "D3D11CreateDevice"
+  },
+  {
+    "offset": "0x130910",
+    "encoding": "ascii",
+    "text": "CD3D11Dll::D3D11CreateDevice: D3D11CreateDevice not found"
+  },
+  {
+    "offset": "0x130c88",
+    "encoding": "ascii",
+    "text": "CDX11Device::InitDevice: D3D11CreateDevice failed(0x%08X) "
+  },
+  {
+    "offset": "0x130d70",
+    "encoding": "ascii",
+    "text": "CDX11Device::InitDevice: D3D11CreateDevice failed(0x%08X) on %S GPU:%d"
+  },
+  {
+    "offset": "0x131c60",
+    "encoding": "ascii",
+    "text": "D3D12CreateDevice"
+  },
+  {
+    "offset": "0x131cd8",
+    "encoding": "ascii",
+    "text": "CD3D12Dll::D3D12CreateDevice: D3D12CreateDevice not found"
+  },
+  {
+    "offset": "0x131ed0",
+    "encoding": "ascii",
+    "text": "CDX12Device::InitDevice: D3D12CreateDevice failed(0x%08X) %S GPU:%d"
+  },
+  {
+    "offset": "0x13daf8",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvApp\\ShadowPlay"
+  },
+  {
+    "offset": "0x13fc70",
+    "encoding": "ascii",
+    "text": "CGrabVideo::CGrabVideo: NULL pointer. m_pNvFbcDll[%p], pDevice[%p]"
+  },
+  {
+    "offset": "0x13fcc0",
+    "encoding": "ascii",
+    "text": "CGrabVideo::Setup: null pointer. pParam[%p], m_pNvFbcDll[%p]"
+  },
+  {
+    "offset": "0x13fd10",
+    "encoding": "ascii",
+    "text": "CGrabVideo::Setup: Grab Video failed nvfbc setup with %#X"
+  },
+  {
+    "offset": "0x13fd58",
+    "encoding": "ascii",
+    "text": "CGrabVideo::Setup: Grab Video failed nvfbc create"
+  },
+  {
+    "offset": "0x13fde0",
+    "encoding": "ascii",
+    "text": "CGrabVideo::GrabVideo: Unable to grab using NvFBCToDx9Vid. %d"
+  },
+  {
+    "offset": "0x13fea0",
+    "encoding": "ascii",
+    "text": "CStageGrabVideo::CStageGrabVideo: NULL init pointers. pDevice[%p], pDXVA[%p], pDXVAProcService[%p], pNvEnc[%p], pBufferConfig[%p], m_pNvFbcDll[%p], psEncodeControlParams[%p]"
+  },
+  {
+    "offset": "0x13ff70",
+    "encoding": "ascii",
+    "text": "CStageGrabVideo::Setup: null ptr. pParam[%p], m_pDevice[%p], m_pNvFbcDll[%p]"
+  },
+  {
+    "offset": "0x140758",
+    "encoding": "ascii",
+    "text": "CStageGrabVideo::NvFBCH264SetUp: Stage Buffer alloc failed"
+  },
+  {
+    "offset": "0x1407a0",
+    "encoding": "ascii",
+    "text": "CStageGrabVideo::NvFBCH264SetUp: grab setup setup core failed"
+  },
+  {
+    "offset": "0x1407f0",
+    "encoding": "ascii",
+    "text": "CStageGrabVideo::NvFBCH264SetUp: grab setup allocate enc-frame data failed"
+  },
+  {
+    "offset": "0x140850",
+    "encoding": "ascii",
+    "text": "CStageGrabVideo::NvFBCH264SetUp: grab setup register enc-frame data with enc failed"
+  },
+  {
+    "offset": "0x1408c0",
+    "encoding": "ascii",
+    "text": "CStageGrabVideo::NvFBCH264SetUp: grab setup allocate frame data failed"
+  },
+  {
+    "offset": "0x140920",
+    "encoding": "ascii",
+    "text": "CStageGrabVideo::NvFBCH264SetUp: grab setup register frame data with enc failed"
+  },
+  {
+    "offset": "0x140980",
+    "encoding": "ascii",
+    "text": "CStageGrabVideo::NvFBCH264GrabFrame: nvfbc grab frame null ptr"
+  },
+  {
+    "offset": "0x1409d0",
+    "encoding": "ascii",
+    "text": "CStageGrabVideo::NvFBCH264GrabFrame: nvfbc grab frame failed"
+  },
+  {
+    "offset": "0x140a20",
+    "encoding": "ascii",
+    "text": "CStageGrabVideo::NvFBCH264GetHeader: nvfbc grab header failed"
+  },
+  {
+    "offset": "0x140a70",
+    "encoding": "ascii",
+    "text": "CStageGrabVideo::NvFBCH264Release: grab release unregister frame data with enc failed"
+  },
+  {
+    "offset": "0x140ae0",
+    "encoding": "ascii",
+    "text": "CStageGrabVideo::NvFBCH264Release: grab release deallocate frame data failed"
+  },
+  {
+    "offset": "0x140b40",
+    "encoding": "ascii",
+    "text": "CStageGrabVideo::NvFBCH264Release: grab release failed"
+  },
+  {
+    "offset": "0x144848",
+    "encoding": "ascii",
+    "text": "CCaptureCore::LoadNvFBC: failed to load NVFBC DLL"
+  },
+  {
+    "offset": "0x1463b0",
+    "encoding": "ascii",
+    "text": "VideoCaptureBase::CreateVideoCaptureInstance: eVFrameSourceNVFBC supported"
+  },
+  {
+    "offset": "0x146b30",
+    "encoding": "ascii",
+    "text": "H264VideoCapture::Initialize: NvFBCH264SetUp failed with code %d"
+  },
+  {
+    "offset": "0x146b80",
+    "encoding": "ascii",
+    "text": "H264VideoCapture::Reinitialize: Could not recreate NvFBC session in %d attempts. Stopping video capture!"
+  },
+  {
+    "offset": "0x146ca0",
+    "encoding": "ascii",
+    "text": "H264VideoCapture::Capture: NvFBC not initialized."
+  },
+  {
+    "offset": "0x146ce0",
+    "encoding": "ascii",
+    "text": "H264VideoCapture::Capture: NvFBCH264GetHeader failed with code %d"
+  },
+  {
+    "offset": "0x146d30",
+    "encoding": "ascii",
+    "text": "H264VideoCapture::Capture: grab error = NVFBC_ERROR_INVALIDATED_SESSION count[%d], m_dwTargetPID[%d]"
+  },
+  {
+    "offset": "0x146db0",
+    "encoding": "ascii",
+    "text": "H264VideoCapture::Capture: NvFBCH264GrabFrame failed with error = NVFBC_ERROR_PROTECTED_CONTENT"
+  },
+  {
+    "offset": "0x146e30",
+    "encoding": "ascii",
+    "text": "H264VideoCapture::Capture: NvFBCH264GrabFrame failed with code %d"
+  },
+  {
+    "offset": "0x149480",
+    "encoding": "ascii",
+    "text": "CH264EncodeVideo::Setup :Loading nvEncodeAPI dll Failed"
+  },
+  {
+    "offset": "0x1498f0",
+    "encoding": "ascii",
+    "text": "CH264EncodeVideo::Release: Flushing NVENC timed out. Release SP buffers anyway %d"
+  },
+  {
+    "offset": "0x149c90",
+    "encoding": "ascii",
+    "text": "CH264EncodeVideo::RegisterInputSurface :nvEncRegisterResource failed with code %d"
+  },
+  {
+    "offset": "0x149de0",
+    "encoding": "ascii",
+    "text": "CH264EncodeVideo::MapInputSurface :nvEncMapInputResource Input resource mapping failed with code :%d"
+  },
+  {
+    "offset": "0x149e60",
+    "encoding": "ascii",
+    "text": "CH264EncodeVideo::UnMapInputSurface :nvEncUnmapInputResource failed with code:%d"
+  },
+  {
+    "offset": "0x149ec8",
+    "encoding": "ascii",
+    "text": "nvEncodeAPI"
+  },
+  {
+    "offset": "0x149f20",
+    "encoding": "ascii",
+    "text": "NvEncodeAPICreateInstance"
+  },
+  {
+    "offset": "0x14a1a0",
+    "encoding": "ascii",
+    "text": "CH264EncodeVideo::OpenAndValidateHWEncoder :Failed to nvEncOpenEncodeSession with code:%d"
+  },
+  {
+    "offset": "0x14a308",
+    "encoding": "ascii",
+    "text": "nvEncGetEncodeGUIDs failed with code:%d"
+  },
+  {
+    "offset": "0x14a440",
+    "encoding": "ascii",
+    "text": "CH264EncodeVideo::OpenAndValidateHWEncoder :nvEncGetEncodePresetCount failed with code: %d"
+  },
+  {
+    "offset": "0x14a560",
+    "encoding": "ascii",
+    "text": "CH264EncodeVideo::OpenAndValidateHWEncoder nvEncGetInputFormatCount failed with code:%d"
+  },
+  {
+    "offset": "0x14a6d0",
+    "encoding": "ascii",
+    "text": "CH264EncodeVideo::AllocateBitstreamBuffer :nvEncCreateBitstreamBuffer failed with code:%d"
+  },
+  {
+    "offset": "0x14a940",
+    "encoding": "ascii",
+    "text": "CH264EncodeVideo::CreateEncodeEvent :nvEncRegisterAsyncEvent failed with code:%d"
+  },
+  {
+    "offset": "0x14a9b0",
+    "encoding": "ascii",
+    "text": "CH264EncodeVideo::DestroyEncodeEvent :nvEncUnregisterAsyncEvent failed with code:%d"
+  },
+  {
+    "offset": "0x14adc0",
+    "encoding": "ascii",
+    "text": "CH264EncodeVideo::EncodeFrame :nvEncReconfigureEncoder failed with code:%d"
+  },
+  {
+    "offset": "0x14ae20",
+    "encoding": "ascii",
+    "text": "CH264EncodeVideo::EncodeFrame :nvEncEncodePicture failed with code:%d"
+  },
+  {
+    "offset": "0x14b7e0",
+    "encoding": "ascii",
+    "text": "CH265EncodeVideo::Setup :Loading nvEncodeAPI dll Failed"
+  },
+  {
+    "offset": "0x14bc50",
+    "encoding": "ascii",
+    "text": "CH265EncodeVideo::Release: Flushing NVENC timed out. Release SP buffers anyway %d"
+  },
+  {
+    "offset": "0x14bff0",
+    "encoding": "ascii",
+    "text": "CH265EncodeVideo::RegisterInputSurface :nvEncRegisterResource failed with code %d"
+  },
+  {
+    "offset": "0x14c140",
+    "encoding": "ascii",
+    "text": "CH265EncodeVideo::MapInputSurface :nvEncMapInputResource Input resource mapping failed with code :%d"
+  },
+  {
+    "offset": "0x14c1c0",
+    "encoding": "ascii",
+    "text": "CH265EncodeVideo::UnMapInputSurface :nvEncUnmapInputResource failed with code:%d"
+  },
+  {
+    "offset": "0x14c5c0",
+    "encoding": "ascii",
+    "text": "CH265EncodeVideo::OpenAndValidateHWEncoder :Failed to nvEncOpenEncodeSession with code:%d"
+  },
+  {
+    "offset": "0x14c810",
+    "encoding": "ascii",
+    "text": "CH265EncodeVideo::OpenAndValidateHWEncoder :nvEncGetEncodePresetCount failed with code: %d"
+  },
+  {
+    "offset": "0x14c970",
+    "encoding": "ascii",
+    "text": "CH265EncodeVideo::OpenAndValidateHWEncoder [%d]: NVEncode doesn't support ARGB10 input format for HDR capture"
+  },
+  {
+    "offset": "0x14ca00",
+    "encoding": "ascii",
+    "text": "CH265EncodeVideo::OpenAndValidateHWEncoder: nvEncGetEncodeCaps RC modes value[%d]"
+  },
+  {
+    "offset": "0x14ca70",
+    "encoding": "ascii",
+    "text": "CH265EncodeVideo::OpenAndValidateHWEncoder: nvEncGetEncodeCaps 10bit encode value[%d]"
+  },
+  {
+    "offset": "0x14cae0",
+    "encoding": "ascii",
+    "text": "CH265EncodeVideo::OpenAndValidateHWEncoder [%d]: NVEncode doesn't support 10 bit encode for HDR capture"
+  },
+  {
+    "offset": "0x14cb60",
+    "encoding": "ascii",
+    "text": "CH265EncodeVideo::OpenAndValidateHWEncoder nvEncGetInputFormatCount failed with code:%d"
+  },
+  {
+    "offset": "0x14ccd0",
+    "encoding": "ascii",
+    "text": "CH265EncodeVideo::AllocateBitstreamBuffer :nvEncCreateBitstreamBuffer failed with code:%d"
+  },
+  {
+    "offset": "0x14cf40",
+    "encoding": "ascii",
+    "text": "CH265EncodeVideo::CreateEncodeEvent :nvEncRegisterAsyncEvent failed with code:%d"
+  },
+  {
+    "offset": "0x14cfb0",
+    "encoding": "ascii",
+    "text": "CH265EncodeVideo::DestroyEncodeEvent :nvEncUnregisterAsyncEvent failed with code:%d"
+  },
+  {
+    "offset": "0x14d370",
+    "encoding": "ascii",
+    "text": "CH265EncodeVideo::EncodeFrame :nvEncReconfigureEncoder failed with code:%d"
+  },
+  {
+    "offset": "0x14d3d0",
+    "encoding": "ascii",
+    "text": "CH265EncodeVideo::EncodeFrame :nvEncEncodePicture failed with code:%d"
+  },
+  {
+    "offset": "0x14dce0",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::Setup :Loading nvEncodeAPI dll Failed"
+  },
+  {
+    "offset": "0x14e110",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::Release: Flushing NVENC timed out. Release SP buffers anyway %d"
+  },
+  {
+    "offset": "0x14e4a0",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::RegisterInputSurface :nvEncRegisterResource failed with code %d"
+  },
+  {
+    "offset": "0x14e5e0",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::MapInputSurface :nvEncMapInputResource Input resource mapping failed with code :%d"
+  },
+  {
+    "offset": "0x14e660",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::UnMapInputSurface :nvEncUnmapInputResource failed with code:%d"
+  },
+  {
+    "offset": "0x14ead0",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::OpenAndValidateHWEncoder :Failed to nvEncOpenEncodeSession with code:%d"
+  },
+  {
+    "offset": "0x14ecb0",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::OpenAndValidateHWEncoder: nvEncGetEncodePresetCount retval[%d] count[%d]"
+  },
+  {
+    "offset": "0x14ed80",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::OpenAndValidateHWEncoder :nvEncGetEncodePresetCount failed with code: %d"
+  },
+  {
+    "offset": "0x14ee40",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::OpenAndValidateHWEncoder: nvEncGetInputFormatCount retval[%d] count[%d]"
+  },
+  {
+    "offset": "0x14ef30",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::OpenAndValidateHWEncoder [%d]: NVEncode doesn't support ARGB10 input format for HDR capture"
+  },
+  {
+    "offset": "0x14efc0",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::OpenAndValidateHWEncoder: nvEncGetEncodeCaps RC modes value[%d]"
+  },
+  {
+    "offset": "0x14f030",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::OpenAndValidateHWEncoder: nvEncGetEncodeCaps 10bit encode value[%d]"
+  },
+  {
+    "offset": "0x14f0a0",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::OpenAndValidateHWEncoder [%d]: NVEncode doesn't support 10 bit encode for HDR capture"
+  },
+  {
+    "offset": "0x14f120",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::OpenAndValidateHWEncoder nvEncGetInputFormatCount failed with code:%d"
+  },
+  {
+    "offset": "0x14f290",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::AllocateBitstreamBuffer :nvEncCreateBitstreamBuffer failed with code:%d"
+  },
+  {
+    "offset": "0x14f500",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::CreateEncodeEvent :nvEncRegisterAsyncEvent failed with code:%d"
+  },
+  {
+    "offset": "0x14f560",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::DestroyEncodeEvent :nvEncUnregisterAsyncEvent failed with code:%d"
+  },
+  {
+    "offset": "0x14f6a0",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::GetFrame: nvEncUnlockBitstream error:%d"
+  },
+  {
+    "offset": "0x14f810",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::GetFrameAsync: nvEncUnlockBitstream error:%d"
+  },
+  {
+    "offset": "0x14f980",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::EncodeFrame :nvEncReconfigureEncoder failed with code:%d"
+  },
+  {
+    "offset": "0x14f9e0",
+    "encoding": "ascii",
+    "text": "CAV1EncodeVideo::EncodeFrame :nvEncEncodePicture failed with code:%d"
+  },
+  {
+    "offset": "0x150680",
+    "encoding": "ascii",
+    "text": "NvFBC_Enable"
+  },
+  {
+    "offset": "0x150690",
+    "encoding": "ascii",
+    "text": "NvFBC_SetGlobalFlags"
+  },
+  {
+    "offset": "0x150710",
+    "encoding": "ascii",
+    "text": "NvFBC_GetStatusEx"
+  },
+  {
+    "offset": "0x150728",
+    "encoding": "ascii",
+    "text": "isConcurrentCaptureEnabled NvFBC concurrency support %d"
+  },
+  {
+    "offset": "0x150770",
+    "encoding": "ascii",
+    "text": "NvFBCDLL::LoadNVFBCDll nvfbc [%s] %0X"
+  },
+  {
+    "offset": "0x1507a0",
+    "encoding": "ascii",
+    "text": "NvFBCDLL::Initialize: failed to load NVFBC DLL"
+  },
+  {
+    "offset": "0x1507e0",
+    "encoding": "ascii",
+    "text": "NvFBCDLL::Initialize: Failed to get fptr for NvFBC_GetStatusEx. gle [%#X]"
+  },
+  {
+    "offset": "0x150838",
+    "encoding": "ascii",
+    "text": "NvFBC_CreateEx"
+  },
+  {
+    "offset": "0x150850",
+    "encoding": "ascii",
+    "text": "NvFBCDLL::Initialize: Failed to get fptr for NvFBC_CreateEx. gle [%#X]"
+  },
+  {
+    "offset": "0x1508b0",
+    "encoding": "ascii",
+    "text": "NvFBCDLL::Initialize: Failed to get fptr for NvFBC_SetGlobalFlags . gle [%#X]"
+  },
+  {
+    "offset": "0x150910",
+    "encoding": "ascii",
+    "text": "NvFBCDLL::CheckAndInitialize: NvFBC_GetStatusEx failed with code %d"
+  },
+  {
+    "offset": "0x150970",
+    "encoding": "ascii",
+    "text": "NvFBCDLL::CheckAndInitialize: NvFBC status: concurrency[%d], bIsCapturePossible[%d], capturing[%d], checkPIDMode[%d], bPIDCaptureSupported[%d], bCanCreatePIDSession[%d]"
+  },
+  {
+    "offset": "0x150a40",
+    "encoding": "ascii",
+    "text": "NvFBCDLL::Create: NvFBC_CreateEx failed with code %d"
+  },
+  {
+    "offset": "0x150a80",
+    "encoding": "ascii",
+    "text": "NvFBCDLL::Create: NvFBC created for capture type[%d] with PID[%d]"
+  },
+  {
+    "offset": "0x150ad0",
+    "encoding": "ascii",
+    "text": "NvFBC_UnloadNvAPI"
+  },
+  {
+    "offset": "0x150ae8",
+    "encoding": "ascii",
+    "text": "NvFBC_UnloadDll: pfnNvFBC_UnloadNvApi failed(%d)"
+  },
+  {
+    "offset": "0x17f420",
+    "encoding": "ascii",
+    "text": ".?AVTelemetryWrapper@@"
+  },
+  {
+    "offset": "0x17f6c0",
+    "encoding": "ascii",
+    "text": ".?AVNvFBCToH264HWEncoder@@"
+  },
+  {
+    "offset": "0x124eb0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x124f00",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x1251c0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x140df8",
+    "encoding": "utf-16le",
+    "text": "nvspcaps64.exe"
+  },
+  {
+    "offset": "0x140e20",
+    "encoding": "utf-16le",
+    "text": "nvspcaps.exe"
+  },
+  {
+    "offset": "0x14a398",
+    "encoding": "utf-16le",
+    "text": "nvEncStatus == NV_ENC_SUCCESS"
+  }
+]

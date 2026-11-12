@@ -1,0 +1,102 @@
+[
+  {
+    "offset": "0x21ac00",
+    "encoding": "ascii",
+    "text": "nv-nvtelemetry-config-path"
+  },
+  {
+    "offset": "0x21ac20",
+    "encoding": "ascii",
+    "text": "nv-telemetry-api-binary-path"
+  },
+  {
+    "offset": "0x21ac48",
+    "encoding": "ascii",
+    "text": "nv-nvtelemetry-config-path-override"
+  },
+  {
+    "offset": "0x21ad88",
+    "encoding": "ascii",
+    "text": "http://localhost:4200"
+  },
+  {
+    "offset": "0x21ca48",
+    "encoding": "ascii",
+    "text": "Software\\NVIDIA Corporation\\Global"
+  },
+  {
+    "offset": "0x2209d8",
+    "encoding": "ascii",
+    "text": "nvTelemetry.json"
+  },
+  {
+    "offset": "0x223c68",
+    "encoding": "ascii",
+    "text": "RestartProcess Hooked"
+  },
+  {
+    "offset": "0x225c08",
+    "encoding": "ascii",
+    "text": "127.0.0.1"
+  },
+  {
+    "offset": "0x2b5ce6",
+    "encoding": "ascii",
+    "text": "D3D11CreateDevice"
+  },
+  {
+    "offset": "0x2b6914",
+    "encoding": "ascii",
+    "text": "SetWindowsHookExW"
+  },
+  {
+    "offset": "0x2b6928",
+    "encoding": "ascii",
+    "text": "UnhookWindowsHookEx"
+  },
+  {
+    "offset": "0x2b693e",
+    "encoding": "ascii",
+    "text": "CallNextHookEx"
+  },
+  {
+    "offset": "0x2b9106",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x21b0a8",
+    "encoding": "utf-16le",
+    "text": "RTSSHooks.dll"
+  },
+  {
+    "offset": "0x21b0d0",
+    "encoding": "utf-16le",
+    "text": "RTSSHooks64.dll"
+  },
+  {
+    "offset": "0x21b2b8",
+    "encoding": "utf-16le",
+    "text": "browserhook.dll"
+  },
+  {
+    "offset": "0x21bb00",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x21bb50",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x21be50",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x227fb0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NvContainer\\ModuleMap"
+  }
+]

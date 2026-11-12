@@ -1,0 +1,1466 @@
+[
+  {
+    "file_offset": "0x1ac1a0",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#graphicsSettingPlugin",
+      "title": "GraphicsSettingPlugin Endpoints",
+      "type": "object",
+      "module": "GraphicsSetting",
+      "definitions": {
+        "DriverTypeEnum": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "tsEnumNames": [
+            "GameReadyDriver",
+            "CreatorReadyDriver"
+          ]
+        },
+        "ConstraintType": {
+          "type": "integer",
+          "description": "constraint for hard and soft requirements",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "tsEnumNames": [
+            "Unknown",
+            "GpuUnsupported",
+            "DriverUnsupported",
+            "HardwareSchedulingUnavailable",
+            "GraphicsApiUnsupported",
+            "DenyListed",
+            "x86Unsupported",
+            "SRModelDenyListed",
+            "RRModelDenyListed",
+            "FGMultiFrameCountUnsupported",
+            "FGUIRModelDriverUnsupported",
+            "DynamicFGDriverUnsupported",
+            "DynamicFGSLUnsupported",
+            "DLSSPinnedSLVersionUnsupported"
+          ]
+        },
+        "GPUInfo": {
+          "type": "object",
+          "properties": {
+            "GPU": {
+              "type": "array",
+              "items": {
+                "properties": {
+                  "LongGPUName": {
+                    "type": "string"
+                  },
+                  "ShortGPUName": {
+                    "type": "string"
+                  },
+                  "ActualVRAMSize": {
+                    "type": "string"
+                  },
+                  "GPURAMType": {
+                    "type": "string"
+                  },
+                  "IsQuadro": {
+                    "type": "string"
+                  },
+                  "DeviceId": {
+                    "type": "string"
+                  },
+                  "VendorId": {
+                    "type": "string"
+                  },
+                  "SubSystemId": {
+                    "type": "string"
+                  },
+                  "SubVendorId": {
+                    "type": "string"
+                  },
+                  "GPUArchitecture": {
+                    "type": "string"
+                  },
+                  "GPUArchImplementation": {
+                    "type": "string"
+                  },
+                  "IsPrimary": {
+                    "type": "string"
+                  },
+                  "TensorCores": {
+                    "type": "string"
+                  },
+                  "GpuHandle": {
+                    "type": "string"
+                  },
+                  "SKUMod": {
+                    "type": "string"
+                  },
+                  "Tgp": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "LongGPUName",
+                  "ShortGPUName",
+                  "ActualVRAMSize",
+                  "GPURAMType",
+                  "IsQuadro",
+                  "DeviceId",
+                  "VendorId",
+                  "SubSystemId",
+                  "SubVendorId",
+                  "GPUArchitecture",
+                  "IsPrimary",
+                  "GpuHandle",
+                  "Tgp"
+                ]
+              }
+            },
+            "SLI": {
+              "type": "object",
+              "properties": {
+                "SLISupported": {
+                  "type": "string"
+                },
+                "HasActiveSLITopology": {
+                  "type": "string"
+                },
+                "ActiveTopologyGPUCount": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "SLISupported",
+                "HasActiveSLITopology",
+                "ActiveTopologyGPUCount"
+              ]
+            },
+            "IsOptimus": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "GPU",
+            "SLI",
+            "IsOptimus"
+          ]
+        },
+        "GenericInfo": {
+          "type": "object",
+          "properties": {
+            "PhysicalMemoryCapacity": {
+              "type": "string"
+            },
+            "TotalPhysicalMemory": {
+              "type": "string"
+            },
+            "CurrentResolution": {
+              "type": "string"
+            },
+            "DriverVersion": {
+              "type": "string"
+            },
+            "DriverType": {
+              "$ref": "#/definitions/DriverTypeEnum"
+            },
+            "IsDCHDriverInstalled": {
+              "type": "string"
+            },
+            "MoboType": {
+              "type": "string"
+            },
+            "MinimumDriverVersion": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "PhysicalMemoryCapacity",
+            "TotalPhysicalMemory",
+            "CurrentResolution",
+            "DriverVersion",
+            "IsDCHDriverInstalled",
+            "MoboType",
+            "MinimumDriverVersion"
+          ]
+        },
+        "LanguagePreference": {
+          "type": "object",
+          "properties": {
+            "languageCode": {
+              "type": "string",
+              "minLength": 1
+            },
+            "isSaved": {
+              "type": "boolean"
+            }
+          }
+        },
+        "GetAIDVCSupport": {
+          "isCommand": true,
+          "description": "Gets DeepDVC system support",
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "isSupported": {
+                "type": "boolean",
+                "description": "RTX DVC is supported or not"
+              },
+              "errorCode": {
+                "type": "integer",
+                "description": "Error code for PPE features like NIS2, DeepDVC, TrueHDR"
+              },
+              "instantEnableSupported": {
+                "type": "boolean",
+                "description": "RTX DVC can be instantly enabled without game relaunch or not"
+              }
+            }
+          }
+        },
+        "AIDVCUnSupportedErrors": {
+          "type": "integer",
+          "description": "AIHDR unsupported errors",
+          "enum": [
+            20
+          ],
+          "tsEnumNames": [
+            "MINIMUM_DRIVER_VERSION_NOT_MET"
+          ]
+        },
+        "GetAIDVCState": {
+          "isCommand": true,
+          "description": "Gets DeepDVC state.",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "cmsId": {
+                "type": "integer",
+                "description": "cmsId of the application."
+              },
+              "processId": {
+                "type": "integer",
+                "description": "Process ID for the application."
+              }
+            },
+            "required": [
+              "processId",
+              "cmsId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "enabled": {
+                "type": "boolean",
+                "description": "DeepDVC enabled on system."
+              },
+              "intensity": {
+                "type": "integer",
+                "description": "Last applied vibrance value."
+              },
+              "saturation": {
+                "type": "integer",
+                "description": "Last applied saturation value."
+              },
+              "offlineSupported": {
+                "type": "boolean",
+                "description": "Offline DeepDVC support state."
+              }
+            }
+          }
+        },
+        "SetAIDVCState": {
+          "isCommand": true,
+          "description": "Sets DeepDVC state.",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "cmsId": {
+                "type": "integer",
+                "description": "cmsId of the application."
+              },
+              "processId": {
+                "type": "integer",
+                "description": "Process ID of the application to which apply vibrance."
+              },
+              "enabled": {
+                "type": "boolean",
+                "description": "Enable or disable feature per application."
+              },
+              "intensity": {
+                "type": "integer",
+                "description": "Vibrance value to set."
+              },
+              "saturation": {
+                "type": "integer",
+                "description": "Saturation value to set."
+              },
+              "saveEnabled": {
+                "type": "boolean",
+                "description": "Save vibrance value to DRS."
+              },
+              "saveIntensity": {
+                "type": "boolean",
+                "description": "Save vibrance value to DRS."
+              },
+              "saveSaturation": {
+                "type": "boolean",
+                "description": "Save vibrance value to DRS."
+              },
+              "applyEffectInRealTime": {
+                "type": "boolean",
+                "description": "Set or reset visual effect in real time."
+              },
+              "isUseGlobal": {
+                "type": "boolean",
+                "description": "Whether Global or per App profile is used in DRS"
+              }
+            },
+            "required": [
+              "cmsId",
+              "processId",
+              "enabled",
+              "intensity",
+              "saturation",
+              "saveEnabled",
+              "saveIntensity",
+              "saveSaturation",
+              "applyEffectInRealTime",
+              "isUseGlobal"
+            ]
+          }
+        },
+        "AIDVCRealTimeErrors": {
+          "type": "integer",
+          "description": "AIDVC real time errors",
+          "enum": [
+            0
+          ],
+          "tsEnumNames": [
+            "GAME_HDR_ENABLED"
+          ]
+        },
+        "GetRealtimeAIDVCState": {
+          "isCommand": true,
+          "description": "Get AIDVC realtime state",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "processId": {
+                "type": "integer",
+                "description": "processId of the application."
+              }
+            },
+            "required": [
+              "processId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "enabled": {
+                "type": "boolean",
+                "description": "AIDVC enabled for a game"
+              },
+              "errorCode": {
+                "type": "integer",
+                "description": "Error code for PPE feature like AIDVC"
+              }
+            }
+          }
+        },
+        "NIS2Resolution": {
+          "description": "NIS2 Resolution",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "percent": {
+                "type": "integer",
+                "description": "scaling factor"
+              },
+              "resolution": {
+                "type": "string",
+                "description": "resolution string"
+              }
+            }
+          }
+        },
+        "ToggleNIS2": {
+          "isCommand": true,
+          "description": "Toggle NIS2 global state.",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "toggle": {
+                "type": "boolean",
+                "description": "Toggle global NIS2 state."
+              }
+            },
+            "required": [
+              "toggle"
+            ]
+          }
+        },
+        "GetNIS2State": {
+          "isCommand": true,
+          "description": "Gets NIS2 state.",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "cmsId": {
+                "type": "integer",
+                "description": "cmsId of the application."
+              },
+              "processId": {
+                "type": "integer",
+                "description": "Process ID for the application."
+              }
+            },
+            "required": [
+              "processId",
+              "cmsId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "supported": {
+                "type": "boolean",
+                "description": "NIS2 system support state."
+              },
+              "enabled": {
+                "type": "boolean",
+                "description": "NIS2 enabled on system."
+              },
+              "sharpen": {
+                "type": "integer",
+                "description": "Last applied sharpness value."
+              },
+              "selectedResolutionIndex": {
+                "type": "integer",
+                "description": "Selected resolution index."
+              },
+              "resolutions": {
+                "type": "array",
+                "description": "Array of resolution and scaling factor",
+                "items": {
+                  "$ref": "#/definitions/NIS2Resolution"
+                }
+              }
+            }
+          }
+        },
+        "SetNIS2Sharpen": {
+          "isCommand": true,
+          "description": "Sets NIS2 state.",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "processId": {
+                "type": "integer",
+                "description": "processId of the application."
+              },
+              "sharpen": {
+                "type": "integer",
+                "description": "Sharpness value to set."
+              },
+              "saveToDRS": {
+                "type": "boolean",
+                "description": "Save sharpness value to DRS"
+              }
+            },
+            "required": [
+              "processId",
+              "sharpen",
+              "saveToDRS"
+            ]
+          }
+        },
+        "AIHDRUnSupportedErrors": {
+          "type": "integer",
+          "description": "AIHDR unsupported errors",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            20,
+            21
+          ],
+          "tsEnumNames": [
+            "GPU_INCOMPATIBLE",
+            "CLIENT_VIRTUALIZATION_ENABLED",
+            "OS_INCOMPATIBLE",
+            "MULTI_MON_DETECTED",
+            "HDR_DISABLED",
+            "SOC_FEATURE_ENABLED",
+            "SLI_ENABLED",
+            "SURROUND_ENABLED",
+            "MSHYBRID_ENABLED",
+            "MSHYBRID_ENABLED_DDS_IGPU",
+            "DISPLAY_INCOMPATIBLE",
+            "NO_DISPLAY_CONNECTED",
+            "USE_ALTERNATE_DISPLAY",
+            "MINIMUM_DRIVER_VERSION_NOT_MET",
+            "GAME_DENYLISTED"
+          ]
+        },
+        "GetAIHDRSupport_V2": {
+          "isCommand": true,
+          "description": "Gets AI HDR system support",
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "globalSupport": {
+                "type": "boolean",
+                "description": "TrueHDR is supported or not"
+              }
+            }
+          }
+        },
+        "GetAIHDRDisplayInfoForProcess": {
+          "isCommand": true,
+          "description": "Gets AI HDR system support",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "processId": {
+                "type": "integer",
+                "description": "processId of the application."
+              }
+            },
+            "required": [
+              "processId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "isSupported": {
+                "type": "boolean",
+                "description": "TrueHDR is supported or not"
+              },
+              "errorCode": {
+                "type": "integer",
+                "description": "Error code for PPE features like NIS2, DeepDVC, TrueHDR"
+              },
+              "minPeakBrightness": {
+                "type": "integer",
+                "description": "Minimum peak brightness for TrueHDR on a supported system"
+              },
+              "maxPeakBrightness": {
+                "type": "integer",
+                "description": "Maximum peak brightness for TrueHDR on a supported system"
+              }
+            }
+          }
+        },
+        "AIHDRRealTimeErrors": {
+          "type": "integer",
+          "description": "AIHDR real time errors",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "tsEnumNames": [
+            "DRS_REGKEY_NOT_SET",
+            "UNSUPPORTED_PRESENTATION_MODE",
+            "GAME_HDR_ENABLED",
+            "OS_HDR_DISABLED",
+            "SOC_FEATURES_ENABLED",
+            "MISTMATCHED_DISPLAY",
+            "API_NOT_SUPPORTED"
+          ]
+        },
+        "GetAIHDRRealTimeState": {
+          "isCommand": true,
+          "description": "Get AIHDR realtime state",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "processId": {
+                "type": "integer",
+                "description": "processId of the application."
+              }
+            },
+            "required": [
+              "processId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "enabled": {
+                "type": "boolean",
+                "description": "TrueHDR enabled for a game"
+              },
+              "errorCode": {
+                "type": "integer",
+                "description": "Error code for PPE feature like TrueHDR"
+              }
+            }
+          }
+        },
+        "GetAIHDRState_V2": {
+          "isCommand": true,
+          "description": "Gets AI HDR state.",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "cmsId": {
+                "type": "integer",
+                "description": "cmsId of the application."
+              },
+              "processId": {
+                "type": "integer",
+                "description": "Process ID for the application."
+              }
+            },
+            "required": [
+              "processId",
+              "cmsId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "supported": {
+                "type": "boolean",
+                "description": "Application allowed from DRS profile"
+              },
+              "supportError": {
+                "type": "integer",
+                "description": "Errorcode in case application is denylisted from DRS profile"
+              },
+              "enabled": {
+                "type": "boolean",
+                "description": "DeepDVC enabled on system."
+              },
+              "peakBrightness": {
+                "type": "integer",
+                "description": "Last applied peak brightness value."
+              },
+              "middleGrey": {
+                "type": "integer",
+                "description": "Last applied middle grey value."
+              },
+              "contrast": {
+                "type": "integer",
+                "description": "Last applied contrast value."
+              },
+              "saturation": {
+                "type": "integer",
+                "description": "Last applied saturation value."
+              }
+            }
+          }
+        },
+        "SetAIHDRState_V2": {
+          "isCommand": true,
+          "description": "Sets AI HDR state.",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "cmsId": {
+                "type": "integer",
+                "description": "cmsId of the application."
+              },
+              "processId": {
+                "type": "integer",
+                "description": "Process ID of the application to which apply vibrance."
+              },
+              "enabled": {
+                "type": "boolean",
+                "description": "Enable or disable feature per application."
+              },
+              "peakBrightness": {
+                "type": "integer",
+                "description": "Vibrance value to set."
+              },
+              "middleGrey": {
+                "type": "integer",
+                "description": "Saturation value to set."
+              },
+              "contrast": {
+                "type": "integer",
+                "description": "Vibrance value to set."
+              },
+              "saturation": {
+                "type": "integer",
+                "description": "Saturation value to set."
+              },
+              "saveEnabled": {
+                "type": "boolean",
+                "description": "Save vibrance value to DRS."
+              },
+              "savePeakBrightness": {
+                "type": "boolean",
+                "description": "Save vibrance value to DRS."
+              },
+              "saveMiddleGrey": {
+                "type": "boolean",
+                "description": "Save vibrance value to DRS."
+              },
+              "saveContrast": {
+                "type": "boolean",
+                "description": "Save vibrance value to DRS."
+              },
+              "saveSaturation": {
+                "type": "boolean",
+                "description": "Save vibrance value to DRS."
+              },
+              "applyEffectInRealTime": {
+                "type": "boolean",
+                "description": "Set or reset visual effect in real time."
+              },
+              "isUseGlobal": {
+                "type": "boolean",
+                "description": "Whether Global or per App profile is used in DRS"
+              }
+            },
+            "required": [
+              "cmsId",
+              "processId",
+              "enabled",
+              "peakBrightness",
+              "middleGrey",
+              "contrast",
+              "saturation",
+              "saveEnabled",
+              "savePeakBrightness",
+              "saveMiddleGrey",
+              "saveContrast",
+              "saveSaturation",
+              "applyEffectInRealTime",
+              "isUseGlobal"
+            ]
+          }
+        },
+        "GetGPUInfo": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "$ref": "#/definitions/GPUInfo"
+          }
+        },
+        "GetGenericInfo": {
+          "type": "object",
+          "isCommand": true,
+          "return": {
+            "$ref": "#/definitions/GenericInfo"
+          }
+        },
+        "GetUserPreferredLanguage": {
+          "type": "object",
+          "isCommand": true,
+          "description": "Get the preferred language set by user",
+          "return": {
+            "$ref": "#/definitions/LanguagePreference"
+          }
+        },
+        "RegisterUserPreferredLanguageChangeNotification": {
+          "type": "object",
+          "isCommand": true,
+          "persistent": false,
+          "description": "Register for the preferred language changes made by user"
+        },
+        "UserPreferredLanguageChangeNotification": {
+          "type": "object",
+          "isCommand": true,
+          "persistent": true,
+          "description": "Notification when the language is changed",
+          "return": {
+            "$ref": "#/definitions/LanguagePreference"
+          }
+        },
+        "NGXOverrideFeedback": {
+          "description": "NGXOverrideFeedback",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "dlssOverrideFlagInitialized": {
+                "type": "boolean",
+                "description": "override initialized"
+              },
+              "dlssOverrideFlagEnabled": {
+                "type": "boolean",
+                "description": "override enabled"
+              },
+              "dlssOverrideFlagDllExists": {
+                "type": "boolean",
+                "description": "dll exists"
+              },
+              "dlssOverrideFlagDllLoaded": {
+                "type": "boolean",
+                "description": "dll loaded"
+              },
+              "dlssOverrideFlagDllSelected": {
+                "type": "boolean",
+                "description": "dll selected"
+              },
+              "dlssOverrideFlagCreated": {
+                "type": "boolean",
+                "description": "override engaged"
+              },
+              "scanDone": {
+                "type": "boolean",
+                "description": "dll Scan done"
+              },
+              "scanDetectedDllExists": {
+                "type": "boolean",
+                "description": "dll scan existence"
+              },
+              "isGpuSupported": {
+                "type": "boolean",
+                "description": "gpu supported"
+              },
+              "isDriverSupported": {
+                "type": "boolean",
+                "description": "driver supported"
+              }
+            }
+          }
+        },
+        "NGXOverrideConstraints": {
+          "description": "NGXOverrideConstraints",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "bUnknown": {
+                "type": "boolean"
+              },
+              "bGpuUnsupported": {
+                "type": "boolean"
+              },
+              "bDriverUnsupported": {
+                "type": "boolean"
+              },
+              "bHWSUnavailable": {
+                "type": "boolean"
+              },
+              "bGraphicsApiUnsupported": {
+                "type": "boolean"
+              },
+              "bDenyListed": {
+                "type": "boolean"
+              },
+              "bX86Unsupported": {
+                "type": "boolean"
+              },
+              "bSRModelDenyListed": {
+                "type": "boolean"
+              },
+              "bRRModelDenyListed": {
+                "type": "boolean"
+              },
+              "bFGMultiFrameCountUnsupported": {
+                "type": "boolean"
+              },
+              "bFGUIRModelDriverUnsupported": {
+                "type": "boolean"
+              },
+              "bDynamicFGDriverUnsupported": {
+                "type": "boolean"
+              },
+              "bDynamicFGSLUnsupported": {
+                "type": "boolean"
+              },
+              "bDLSSPinnedSLVersionUnsupported": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "NGXOverrideSR_RR_Feedback": {
+          "description": "feedback bits for SR and RR",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "dlssOverrideFlagPreset": {
+                "type": "boolean",
+                "description": "override preset flag"
+              },
+              "dlssOverrideFlagPerfMode": {
+                "type": "boolean",
+                "description": "override perf mode flag"
+              },
+              "dlssOverrideFlagScalingRatio": {
+                "type": "boolean",
+                "description": "override scaling ratio"
+              }
+            }
+          }
+        },
+        "NGXOverrideErrFeedback": {
+          "description": "error feedback bits for override features",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "dlssOverrideFlagErrFailed": {
+                "type": "boolean",
+                "description": "failed"
+              },
+              "dlssOverrideFlagErrDenied": {
+                "type": "boolean",
+                "description": "denied"
+              },
+              "dlssOverrideFlagErrDRS": {
+                "type": "boolean",
+                "description": "drs error"
+              },
+              "dlssOverrideFlagErrNotFound": {
+                "type": "boolean",
+                "description": "dll not found string"
+              },
+              "dlssOverrideFlagErrDllLoad": {
+                "type": "boolean",
+                "description": "dll load error"
+              }
+            }
+          }
+        },
+        "FgxAppLaunchedGpuState": {
+          "description": "Gpu status at app launch for FGX",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "isFgxSupported": {
+                "type": "boolean",
+                "description": "fgx supported"
+              },
+              "gotResponseFromNvPresent": {
+                "type": "boolean",
+                "description": "nvpresent response flag"
+              },
+              "isHWSEnabled": {
+                "type": "boolean",
+                "description": "hws enabled"
+              },
+              "isGpuSupported": {
+                "type": "boolean",
+                "description": "gpu supported"
+              },
+              "isGraphicsApiSupported": {
+                "type": "boolean",
+                "description": "graphics api supported"
+              },
+              "isAppSupported": {
+                "type": "boolean",
+                "description": "app supported"
+              }
+            }
+          }
+        },
+        "DlssPerformanceModeOverrideEnum": {
+          "type": "integer",
+          "description": "DLSS Performance Mode Overrides",
+          "enum": [
+            3,
+            0,
+            1,
+            2,
+            5,
+            4,
+            6
+          ],
+          "tsEnumNames": [
+            "Default",
+            "Performance",
+            "Balanced",
+            "Quality",
+            "UltraPerformance",
+            "Dlaa",
+            "Custom"
+          ]
+        },
+        "DlssModelOverrideEnum": {
+          "type": "integer",
+          "description": "DLSS Model Overrides",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            10,
+            16777215
+          ],
+          "tsEnumNames": [
+            "Default",
+            "PresetA",
+            "PresetB",
+            "PresetC",
+            "PresetD",
+            "PresetE",
+            "PresetF",
+            "PresetJ",
+            "Latest"
+          ]
+        },
+        "DlssFeatures": {
+          "type": "integer",
+          "description": "DLSS Features Overrides",
+          "enum": [
+            65542,
+            65543,
+            65544,
+            65545
+          ],
+          "tsEnumNames": [
+            "DLSSSR",
+            "DLSSRR",
+            "DLSSFG",
+            "DLSSSM"
+          ]
+        },
+        "DlssOnGameLaunched": {
+          "isCommand": true,
+          "description": "Sets processId, localId and cmsId on game launch",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "processId": {
+                "type": "integer",
+                "description": "Process ID of the application."
+              },
+              "localId": {
+                "type": "integer",
+                "description": "Local ID of the application"
+              },
+              "cmsId": {
+                "type": "integer",
+                "description": "CMS ID of the application."
+              }
+            },
+            "required": [
+              "processId",
+              "localId",
+              "cmsId"
+            ]
+          }
+        },
+        "GetNGXOverrideSRState": {
+          "isCommand": true,
+          "description": "Gets NGXOverride SR state.",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "localId": {
+                "type": "integer",
+                "description": "Local ID of the application"
+              },
+              "cmsId": {
+                "type": "integer",
+                "description": "cmsId of the application."
+              }
+            },
+            "required": [
+              "localId",
+              "cmsId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "overrideEnabled": {
+                "type": "boolean",
+                "description": "NGXOverride SR enabled state."
+              },
+              "scalingRatio": {
+                "type": "integer",
+                "description": "NGXOverride SR scaling ratio"
+              },
+              "performanceMode": {
+                "type": "integer",
+                "description": "NGXOverride SR performance mode"
+              },
+              "overrideRenderPresetSelection": {
+                "type": "integer",
+                "description": "NGXOverride SR preset model"
+              },
+              "isUseGlobal": {
+                "type": "boolean",
+                "description": "NGXOverride SR global toggle state."
+              },
+              "ngxFeedback": {
+                "type": "array",
+                "description": "Array of general feedback",
+                "items": {
+                  "$ref": "#/definitions/NGXOverrideFeedback"
+                }
+              },
+              "featureFeedback": {
+                "type": "array",
+                "description": "Array of SR feature feedbacks",
+                "items": {
+                  "$ref": "#/definitions/NGXOverrideSR_RR_Feedback"
+                }
+              },
+              "errFeedback": {
+                "type": "array",
+                "description": "Array of SR error feedback",
+                "items": {
+                  "$ref": "#/definitions/NGXOverrideErrFeedback"
+                }
+              }
+            }
+          }
+        },
+        "GetNGXOverrideRRState": {
+          "isCommand": true,
+          "description": "Gets NGXOverride RR state.",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "localId": {
+                "type": "integer",
+                "description": "Local ID of the application"
+              },
+              "cmsId": {
+                "type": "integer",
+                "description": "cmsId of the application."
+              }
+            },
+            "required": [
+              "localId",
+              "cmsId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "overrideEnabled": {
+                "type": "boolean",
+                "description": "NGXOverride RR enabled state."
+              },
+              "scalingRatio": {
+                "type": "integer",
+                "description": "NGXOverride RR scaling ratio"
+              },
+              "performanceMode": {
+                "type": "integer",
+                "description": "NGXOverride RR performance mode"
+              },
+              "overrideRenderPresetSelection": {
+                "type": "integer",
+                "description": "NGXOverride RR preset model"
+              },
+              "isUseGlobal": {
+                "type": "boolean",
+                "description": "NGXOverride RR global toggle state."
+              },
+              "ngxFeedback": {
+                "type": "array",
+                "description": "Array of general feedback",
+                "items": {
+                  "$ref": "#/definitions/NGXOverrideFeedback"
+                }
+              },
+              "featureFeedback": {
+                "type": "array",
+                "description": "Array of RR feature feedback",
+                "items": {
+                  "$ref": "#/definitions/NGXOverrideSR_RR_Feedback"
+                }
+              },
+              "errFeedback": {
+                "type": "array",
+                "description": "Array of RR error feedback",
+                "items": {
+                  "$ref": "#/definitions/NGXOverrideErrFeedback"
+                }
+              }
+            }
+          }
+        },
+        "GetNGXOverrideFGState": {
+          "isCommand": true,
+          "description": "Gets NIS2 state.",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "localId": {
+                "type": "integer",
+                "description": "Local ID of the application"
+              },
+              "cmsId": {
+                "type": "integer",
+                "description": "cmsId of the application."
+              }
+            },
+            "required": [
+              "localId",
+              "cmsId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "overrideEnabled": {
+                "type": "boolean",
+                "description": "NGXOverride FG enabled state."
+              },
+              "overrideMultiFrameCountId": {
+                "type": "integer",
+                "description": "NGXOverride FG multiframe count id"
+              },
+              "dlssOverrideFgMultiFrameFeedback": {
+                "type": "boolean",
+                "description": "NGXOverride FG feedback"
+              },
+              "ngxFeedback": {
+                "type": "array",
+                "description": "Array of FG general feedback",
+                "items": {
+                  "$ref": "#/definitions/NGXOverrideFeedback"
+                }
+              },
+              "errFeedback": {
+                "type": "array",
+                "description": "Array of FG error feedback",
+                "items": {
+                  "$ref": "#/definitions/NGXOverrideErrFeedback"
+                }
+              },
+              "isUseGlobal": {
+                "type": "boolean",
+                "description": "NGXOverride FG global toggle state."
+              },
+              "overrideDynamicFGMode": {
+                "type": "integer",
+                "description": "NGXOverride FG dynamic mode"
+              },
+              "overrideDynamicFGTargetFrameRate": {
+                "type": "integer",
+                "description": "NGXOverride FG dynamic target frame rate"
+              },
+              "overrideDynamicFGMultiFrameCountMax": {
+                "type": "integer",
+                "description": "NGXOverride FG dynamic multiplier"
+              }
+            }
+          }
+        },
+        "SetNGXOverrideFGState": {
+          "isCommand": true,
+          "description": "Sets NGX Override FG state.",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "localId": {
+                "type": "integer",
+                "description": "Local ID of the application"
+              },
+              "cmsId": {
+                "type": "integer",
+                "description": "processId of the application."
+              },
+              "overrideEnabled": {
+                "type": "boolean",
+                "description": "fgx override state"
+              },
+              "dlssOverrideFgMultiFrameFeedback": {
+                "type": "boolean",
+                "description": "frame multiplier override state"
+              },
+              "overrideMultiFrameCountId": {
+                "type": "integer",
+                "description": "frame multiplier value to set."
+              }
+            },
+            "required": [
+              "localId",
+              "cmsId",
+              "overrideEnabled",
+              "dlssOverrideFgMultiFrameFeedback",
+              "overrideMultiFrameCountId"
+            ]
+          }
+        },
+        "GetFGXState": {
+          "isCommand": true,
+          "description": "Gets FGX state.",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "localId": {
+                "type": "integer",
+                "description": "Local ID of the application"
+              },
+              "cmsId": {
+                "type": "integer",
+                "description": "cmsId of the application."
+              }
+            },
+            "required": [
+              "localId",
+              "cmsId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "isFgxEnabled": {
+                "type": "boolean",
+                "description": "NGXOverride FGX enabled state."
+              },
+              "isUseGlobal": {
+                "type": "boolean",
+                "description": "NGXOverride FGX global state"
+              }
+            }
+          }
+        },
+        "GetFGXDynamicState": {
+          "isCommand": true,
+          "description": "Gets FGX dynamic state.",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "processId": {
+                "type": "integer",
+                "description": "processId of the application."
+              },
+              "localId": {
+                "type": "integer",
+                "description": "Local ID of the application"
+              },
+              "cmsId": {
+                "type": "integer",
+                "description": "cmsId of the application."
+              }
+            },
+            "required": [
+              "processId",
+              "localId",
+              "cmsId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "isFgxEnabled": {
+                "type": "boolean",
+                "description": "NGXOverride FGX enabled state."
+              },
+              "gpuState": {
+                "type": "array",
+                "description": "Array of GPU state bits on app launch",
+                "items": {
+                  "$ref": "#/definitions/FgxAppLaunchedGpuState"
+                }
+              }
+            }
+          }
+        },
+        "GetProfileSettingsForNvApp": {
+          "isCommand": true,
+          "description": "Fetches Game Profile Setting",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "localId": {
+                "type": "integer",
+                "description": "Local ID of the application"
+              },
+              "cmsId": {
+                "type": "integer",
+                "description": "cmsId of the application."
+              }
+            },
+            "required": [
+              "localId",
+              "cmsId"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "constraintsSR": {
+                "type": "array",
+                "description": "Array of Game Profile Constraints bits for SR",
+                "items": {
+                  "$ref": "#/definitions/NGXOverrideConstraints"
+                }
+              },
+              "constraintsRR": {
+                "type": "array",
+                "description": "Array of Game Profile Constraints bits for RR",
+                "items": {
+                  "$ref": "#/definitions/NGXOverrideConstraints"
+                }
+              },
+              "constraintsFG": {
+                "type": "array",
+                "description": "Array of Game Profile Constraints bits for SFG",
+                "items": {
+                  "$ref": "#/definitions/NGXOverrideConstraints"
+                }
+              },
+              "constraintsSM": {
+                "type": "array",
+                "description": "Array of Game Profile Constraints bits for SM",
+                "items": {
+                  "$ref": "#/definitions/NGXOverrideConstraints"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

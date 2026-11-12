@@ -1,0 +1,7 @@
+{
+  "Name": "McpAccessLevel",
+  "KeyExists": true,
+  "Error": "Property McpAccessLevel does not exist at path HKEY_LOCAL_MACHINE\\SOFTWARE\\NVIDIA Corporation\\Global\\NvApp.",
+  "Present": false,
+  "Path": "HKLM:\\SOFTWARE\\NVIDIA Corporation\\Global\\NvApp"
+}

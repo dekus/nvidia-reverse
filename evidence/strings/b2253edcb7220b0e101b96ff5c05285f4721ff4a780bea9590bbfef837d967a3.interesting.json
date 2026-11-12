@@ -1,0 +1,72 @@
+[
+  {
+    "offset": "0x25592",
+    "encoding": "ascii",
+    "text": "NVSetHooks"
+  },
+  {
+    "offset": "0x2559d",
+    "encoding": "ascii",
+    "text": "NVUnHook"
+  },
+  {
+    "offset": "0x25d92",
+    "encoding": "ascii",
+    "text": "SetWindowsHookExW"
+  },
+  {
+    "offset": "0x25db4",
+    "encoding": "ascii",
+    "text": "UnhookWindowsHookEx"
+  },
+  {
+    "offset": "0x25e1c",
+    "encoding": "ascii",
+    "text": "CallNextHookEx"
+  },
+  {
+    "offset": "0x24ad8",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\Setup\\VC"
+  },
+  {
+    "offset": "0x26f48",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x27450",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+    "offset": "0x2753c",
+    "encoding": "utf-16le",
+    "text": "SMARTMAX_UnHook_Event"
+  },
+  {
+    "offset": "0x275a4",
+    "encoding": "utf-16le",
+    "text": "SMARTMAX_SetHook_Event"
+  },
+  {
+    "offset": "0x275d4",
+    "encoding": "utf-16le",
+    "text": "SMARTMAX_UnHook_Event"
+  },
+  {
+    "offset": "0x27600",
+    "encoding": "utf-16le",
+    "text": "SMARTMAX_SetHook_Event"
+  },
+  {
+    "offset": "0x276bc",
+    "encoding": "utf-16le",
+    "text": "SMARTMAX_UnHook_Event"
+  },
+  {
+    "offset": "0x276e8",
+    "encoding": "utf-16le",
+    "text": "SMARTMAX_SetHook_Event"
+  }
+]

@@ -1,0 +1,1542 @@
+[
+  {
+    "file_offset": "0x756750",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for NvBackend application storage manifest",
+      "type": "object",
+      "definitions": {
+        "DetectedApplication": {
+          "type": "object",
+          "properties": {
+            "CmsId": {
+              "type": "integer"
+            },
+            "CmsVersion": {
+              "type": "integer"
+            },
+            "DisplayName": {
+              "type": "string"
+            },
+            "ShortName": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "Distributor": {
+              "type": "string"
+            },
+            "InstallDirectory": {
+              "type": "string"
+            },
+            "DetectedFiles": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "ImageFiles": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              }
+            },
+            "LaunchCmd": {
+              "type": "string"
+            },
+            "IsOpsSupported": {
+              "type": "boolean"
+            },
+            "UseDesktopResolution": {
+              "type": "boolean"
+            },
+            "UseLowResolutions": {
+              "type": "boolean"
+            },
+            "HypersamplingQuality": {
+              "type": "integer"
+            },
+            "HypersamplingFactors": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            },
+            "IsStreamingSupported": {
+              "type": "boolean"
+            },
+            "StreamingCmdLine": {
+              "type": "string"
+            },
+            "StreamingCaption": {
+              "type": "string"
+            },
+            "StreamingClassName": {
+              "type": "string"
+            },
+            "StreamingAutomatedLaunch": {
+              "type": "boolean"
+            },
+            "UwpPackageFamilyName": {
+              "type": "string"
+            },
+            "FRLPOPS": {
+              "type": "integer"
+            },
+            "QuietModePopsFactor": {
+              "type": "number"
+            },
+            "DriverProfile": {
+              "type": "string"
+            },
+            "IsCreativeApplication": {
+              "type": "boolean"
+            },
+            "SendTelemetryForGFESupportedApps": {
+              "type": "boolean"
+            },
+            "UseDRSForTelemetry": {
+              "type": "boolean"
+            },
+            "BatteryBoost2PopsFactorTPPLow": {
+              "type": "number"
+            },
+            "BatteryBoost2PopsFactorTPPHigh": {
+              "type": "number"
+            },
+            "ChromaAppId": {
+              "type": "string"
+            },
+            "LastLaunchTimeISO": {
+              "type": "string"
+            },
+            "InitialTimeISO": {
+              "type": "string"
+            },
+            "IsManuallyAdded": {
+              "type": "boolean"
+            },
+            "IsFingerprintDetected": {
+              "type": "boolean"
+            },
+            "Disable_FG_Override": {
+              "type": "boolean"
+            },
+            "Disable_RR_Override": {
+              "type": "boolean"
+            },
+            "Disable_SR_Override": {
+              "type": "boolean"
+            },
+            "Disable_RR_Model_Override": {
+              "type": "boolean"
+            },
+            "Disable_SR_Model_Override": {
+              "type": "boolean"
+            },
+            "DLSS_Override_No_OPS": {
+              "type": "boolean"
+            },
+            "IsARM64OpsSupported": {
+              "type": "boolean"
+            },
+            "IsMultiGPUInferenceAllowed": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "CmsId",
+            "CmsVersion",
+            "DisplayName",
+            "ShortName",
+            "Version",
+            "Distributor",
+            "InstallDirectory",
+            "ImageFiles",
+            "LaunchCmd",
+            "IsOpsSupported",
+            "UseDesktopResolution",
+            "UseLowResolutions",
+            "HypersamplingQuality",
+            "IsStreamingSupported",
+            "StreamingCmdLine",
+            "StreamingCaption",
+            "StreamingClassName",
+            "StreamingAutomatedLaunch",
+            "DriverProfile",
+            "IsCreativeApplication",
+            "SendTelemetryForGFESupportedApps",
+            "UseDRSForTelemetry",
+            "ChromaAppId",
+            "LastLaunchTimeISO",
+            "InitialTimeISO",
+            "IsManuallyAdded",
+            "IsFingerprintDetected",
+            "Disable_FG_Override",
+            "Disable_RR_Override",
+            "Disable_SR_Override",
+            "Disable_RR_Model_Override",
+            "Disable_SR_Model_Override",
+            "DLSS_Override_No_OPS",
+            "IsARM64OpsSupported",
+            "IsMultiGPUInferenceAllowed"
+          ]
+        }
+      },
+      "properties": {
+        "Applications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "LocalId": {
+                "type": "integer"
+              },
+              "Application": {
+                "$ref": "#/definitions/DetectedApplication"
+              }
+            },
+            "required": [
+              "LocalId",
+              "Application"
+            ]
+          }
+        }
+      },
+      "required": [
+        "Applications"
+      ]
+    }
+  },
+  {
+    "file_offset": "0x758100",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for NvBackend application storage manifest",
+      "type": "object",
+      "definitions": {
+        "DetectedApplication": {
+          "type": "object",
+          "properties": {
+            "CmsId": {
+              "type": "integer"
+            },
+            "CmsVersion": {
+              "type": "integer"
+            },
+            "DisplayName": {
+              "type": "string"
+            },
+            "ShortName": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "Distributor": {
+              "type": "string"
+            },
+            "InstallDirectory": {
+              "type": "string"
+            },
+            "DetectedFiles": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "ImageFiles": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              }
+            },
+            "LaunchCmd": {
+              "type": "string"
+            },
+            "IsOpsSupported": {
+              "type": "boolean"
+            },
+            "UseDesktopResolution": {
+              "type": "boolean"
+            },
+            "UseLowResolutions": {
+              "type": "boolean"
+            },
+            "HypersamplingQuality": {
+              "type": "integer"
+            },
+            "HypersamplingFactors": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            },
+            "IsStreamingSupported": {
+              "type": "boolean"
+            },
+            "StreamingCmdLine": {
+              "type": "string"
+            },
+            "StreamingCaption": {
+              "type": "string"
+            },
+            "StreamingClassName": {
+              "type": "string"
+            },
+            "StreamingAutomatedLaunch": {
+              "type": "boolean"
+            },
+            "UwpPackageFamilyName": {
+              "type": "string"
+            },
+            "FRLPOPS": {
+              "type": "integer"
+            },
+            "QuietModePopsFactor": {
+              "type": "number"
+            },
+            "DriverProfile": {
+              "type": "string"
+            },
+            "IsCreativeApplication": {
+              "type": "boolean"
+            },
+            "SendTelemetryForGFESupportedApps": {
+              "type": "boolean"
+            },
+            "UseDRSForTelemetry": {
+              "type": "boolean"
+            },
+            "BatteryBoost2PopsFactorTPPLow": {
+              "type": "number"
+            },
+            "BatteryBoost2PopsFactorTPPHigh": {
+              "type": "number"
+            },
+            "BatteryBoost2PopsFactorARM64": {
+              "type": "number"
+            },
+            "ChromaAppId": {
+              "type": "string"
+            },
+            "LastLaunchTimeISO": {
+              "type": "string"
+            },
+            "InitialTimeISO": {
+              "type": "string"
+            },
+            "IsManuallyAdded": {
+              "type": "boolean"
+            },
+            "IsFingerprintDetected": {
+              "type": "boolean"
+            },
+            "Disable_FG_Override": {
+              "type": "boolean"
+            },
+            "Disable_RR_Override": {
+              "type": "boolean"
+            },
+            "Disable_SR_Override": {
+              "type": "boolean"
+            },
+            "Disable_RR_Model_Override": {
+              "type": "boolean"
+            },
+            "Disable_SR_Model_Override": {
+              "type": "boolean"
+            },
+            "DLSS_Override_No_OPS": {
+              "type": "boolean"
+            },
+            "IsARM64OpsSupported": {
+              "type": "boolean"
+            },
+            "IsMultiGPUInferenceAllowed": {
+              "type": "boolean"
+            },
+            "DLSS_OTA_OptOut_PinnedSLVersion": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "CmsId",
+            "CmsVersion",
+            "DisplayName",
+            "ShortName",
+            "Version",
+            "Distributor",
+            "InstallDirectory",
+            "ImageFiles",
+            "LaunchCmd",
+            "IsOpsSupported",
+            "UseDesktopResolution",
+            "UseLowResolutions",
+            "HypersamplingQuality",
+            "IsStreamingSupported",
+            "StreamingCmdLine",
+            "StreamingCaption",
+            "StreamingClassName",
+            "StreamingAutomatedLaunch",
+            "DriverProfile",
+            "IsCreativeApplication",
+            "SendTelemetryForGFESupportedApps",
+            "UseDRSForTelemetry",
+            "ChromaAppId",
+            "LastLaunchTimeISO",
+            "InitialTimeISO",
+            "IsManuallyAdded",
+            "IsFingerprintDetected",
+            "Disable_FG_Override",
+            "Disable_RR_Override",
+            "Disable_SR_Override",
+            "Disable_RR_Model_Override",
+            "Disable_SR_Model_Override",
+            "DLSS_Override_No_OPS",
+            "IsMultiGPUInferenceAllowed"
+          ]
+        }
+      },
+      "properties": {
+        "Applications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "LocalId": {
+                "type": "integer"
+              },
+              "Application": {
+                "$ref": "#/definitions/DetectedApplication"
+              }
+            },
+            "required": [
+              "LocalId",
+              "Application"
+            ]
+          }
+        }
+      },
+      "required": [
+        "Applications"
+      ]
+    }
+  },
+  {
+    "file_offset": "0x759b60",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for NvBackend application storage manifest",
+      "type": "object",
+      "definitions": {
+        "DetectedApplication": {
+          "type": "object",
+          "properties": {
+            "CmsId": {
+              "type": "integer"
+            },
+            "CmsVersion": {
+              "type": "integer"
+            },
+            "DisplayName": {
+              "type": "string"
+            },
+            "ShortName": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "Distributor": {
+              "type": "string"
+            },
+            "InstallDirectory": {
+              "type": "string"
+            },
+            "DetectedFiles": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "ImageFiles": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              }
+            },
+            "LaunchCmd": {
+              "type": "string"
+            },
+            "IsOpsSupported": {
+              "type": "boolean"
+            },
+            "UseDesktopResolution": {
+              "type": "boolean"
+            },
+            "UseLowResolutions": {
+              "type": "boolean"
+            },
+            "HypersamplingQuality": {
+              "type": "integer"
+            },
+            "HypersamplingFactors": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            },
+            "IsStreamingSupported": {
+              "type": "boolean"
+            },
+            "StreamingCmdLine": {
+              "type": "string"
+            },
+            "StreamingCaption": {
+              "type": "string"
+            },
+            "StreamingClassName": {
+              "type": "string"
+            },
+            "StreamingAutomatedLaunch": {
+              "type": "boolean"
+            },
+            "UwpPackageFamilyName": {
+              "type": "string"
+            },
+            "FRLPOPS": {
+              "type": "integer"
+            },
+            "QuietModePopsFactor": {
+              "type": "number"
+            },
+            "DriverProfile": {
+              "type": "string"
+            },
+            "IsCreativeApplication": {
+              "type": "boolean"
+            },
+            "SendTelemetryForGFESupportedApps": {
+              "type": "boolean"
+            },
+            "UseDRSForTelemetry": {
+              "type": "boolean"
+            },
+            "BatteryBoost2PopsFactorTPPLow": {
+              "type": "number"
+            },
+            "BatteryBoost2PopsFactorTPPHigh": {
+              "type": "number"
+            },
+            "ChromaAppId": {
+              "type": "string"
+            },
+            "LastLaunchTimeISO": {
+              "type": "string"
+            },
+            "InitialTimeISO": {
+              "type": "string"
+            },
+            "IsManuallyAdded": {
+              "type": "boolean"
+            },
+            "IsFingerprintDetected": {
+              "type": "boolean"
+            },
+            "Disable_FG_Override": {
+              "type": "boolean"
+            },
+            "Disable_RR_Override": {
+              "type": "boolean"
+            },
+            "Disable_SR_Override": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "CmsId",
+            "CmsVersion",
+            "DisplayName",
+            "ShortName",
+            "Version",
+            "Distributor",
+            "InstallDirectory",
+            "ImageFiles",
+            "LaunchCmd",
+            "IsOpsSupported",
+            "UseDesktopResolution",
+            "UseLowResolutions",
+            "HypersamplingQuality",
+            "IsStreamingSupported",
+            "StreamingCmdLine",
+            "StreamingCaption",
+            "StreamingClassName",
+            "StreamingAutomatedLaunch",
+            "DriverProfile",
+            "IsCreativeApplication",
+            "SendTelemetryForGFESupportedApps",
+            "UseDRSForTelemetry",
+            "ChromaAppId",
+            "LastLaunchTimeISO",
+            "InitialTimeISO",
+            "IsManuallyAdded",
+            "IsFingerprintDetected",
+            "Disable_FG_Override",
+            "Disable_RR_Override",
+            "Disable_SR_Override"
+          ]
+        }
+      },
+      "properties": {
+        "Applications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "LocalId": {
+                "type": "integer"
+              },
+              "Application": {
+                "$ref": "#/definitions/DetectedApplication"
+              }
+            },
+            "required": [
+              "LocalId",
+              "Application"
+            ]
+          }
+        }
+      },
+      "required": [
+        "Applications"
+      ]
+    }
+  },
+  {
+    "file_offset": "0x75b240",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for NvBackend application storage manifest",
+      "type": "object",
+      "definitions": {
+        "DetectedApplication": {
+          "type": "object",
+          "properties": {
+            "CmsId": {
+              "type": "integer"
+            },
+            "CmsVersion": {
+              "type": "integer"
+            },
+            "DisplayName": {
+              "type": "string"
+            },
+            "ShortName": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "Distributor": {
+              "type": "string"
+            },
+            "InstallDirectory": {
+              "type": "string"
+            },
+            "DetectedFiles": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "ImageFiles": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              }
+            },
+            "LaunchCmd": {
+              "type": "string"
+            },
+            "IsOpsSupported": {
+              "type": "boolean"
+            },
+            "UseDesktopResolution": {
+              "type": "boolean"
+            },
+            "UseLowResolutions": {
+              "type": "boolean"
+            },
+            "HypersamplingQuality": {
+              "type": "integer"
+            },
+            "HypersamplingFactors": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            },
+            "IsStreamingSupported": {
+              "type": "boolean"
+            },
+            "StreamingCmdLine": {
+              "type": "string"
+            },
+            "StreamingCaption": {
+              "type": "string"
+            },
+            "StreamingClassName": {
+              "type": "string"
+            },
+            "StreamingAutomatedLaunch": {
+              "type": "boolean"
+            },
+            "UwpPackageFamilyName": {
+              "type": "string"
+            },
+            "FRLPOPS": {
+              "type": "integer"
+            },
+            "QuietModePopsFactor": {
+              "type": "number"
+            },
+            "DriverProfile": {
+              "type": "string"
+            },
+            "IsCreativeApplication": {
+              "type": "boolean"
+            },
+            "SendTelemetryForGFESupportedApps": {
+              "type": "boolean"
+            },
+            "UseDRSForTelemetry": {
+              "type": "boolean"
+            },
+            "BatteryBoost2PopsFactorTPPLow": {
+              "type": "number"
+            },
+            "BatteryBoost2PopsFactorTPPHigh": {
+              "type": "number"
+            },
+            "ChromaAppId": {
+              "type": "string"
+            },
+            "LastLaunchTimeISO": {
+              "type": "string"
+            },
+            "InitialTimeISO": {
+              "type": "string"
+            },
+            "IsManuallyAdded": {
+              "type": "boolean"
+            },
+            "IsFingerprintDetected": {
+              "type": "boolean"
+            },
+            "Disable_FG_Override": {
+              "type": "boolean"
+            },
+            "Disable_RR_Override": {
+              "type": "boolean"
+            },
+            "Disable_SR_Override": {
+              "type": "boolean"
+            },
+            "Disable_RR_Model_Override": {
+              "type": "boolean"
+            },
+            "Disable_SR_Model_Override": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "CmsId",
+            "CmsVersion",
+            "DisplayName",
+            "ShortName",
+            "Version",
+            "Distributor",
+            "InstallDirectory",
+            "ImageFiles",
+            "LaunchCmd",
+            "IsOpsSupported",
+            "UseDesktopResolution",
+            "UseLowResolutions",
+            "HypersamplingQuality",
+            "IsStreamingSupported",
+            "StreamingCmdLine",
+            "StreamingCaption",
+            "StreamingClassName",
+            "StreamingAutomatedLaunch",
+            "DriverProfile",
+            "IsCreativeApplication",
+            "SendTelemetryForGFESupportedApps",
+            "UseDRSForTelemetry",
+            "ChromaAppId",
+            "LastLaunchTimeISO",
+            "InitialTimeISO",
+            "IsManuallyAdded",
+            "IsFingerprintDetected",
+            "Disable_FG_Override",
+            "Disable_RR_Override",
+            "Disable_SR_Override",
+            "Disable_RR_Model_Override",
+            "Disable_SR_Model_Override"
+          ]
+        }
+      },
+      "properties": {
+        "Applications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "LocalId": {
+                "type": "integer"
+              },
+              "Application": {
+                "$ref": "#/definitions/DetectedApplication"
+              }
+            },
+            "required": [
+              "LocalId",
+              "Application"
+            ]
+          }
+        }
+      },
+      "required": [
+        "Applications"
+      ]
+    }
+  },
+  {
+    "file_offset": "0x75ca40",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for NvBackend application storage manifest",
+      "type": "object",
+      "definitions": {
+        "DetectedApplication": {
+          "type": "object",
+          "properties": {
+            "CmsId": {
+              "type": "integer"
+            },
+            "CmsVersion": {
+              "type": "integer"
+            },
+            "DisplayName": {
+              "type": "string"
+            },
+            "ShortName": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "Distributor": {
+              "type": "string"
+            },
+            "InstallDirectory": {
+              "type": "string"
+            },
+            "DetectedFiles": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "ImageFiles": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              }
+            },
+            "LaunchCmd": {
+              "type": "string"
+            },
+            "IsOpsSupported": {
+              "type": "boolean"
+            },
+            "UseDesktopResolution": {
+              "type": "boolean"
+            },
+            "UseLowResolutions": {
+              "type": "boolean"
+            },
+            "HypersamplingQuality": {
+              "type": "integer"
+            },
+            "HypersamplingFactors": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            },
+            "IsStreamingSupported": {
+              "type": "boolean"
+            },
+            "StreamingCmdLine": {
+              "type": "string"
+            },
+            "StreamingCaption": {
+              "type": "string"
+            },
+            "StreamingClassName": {
+              "type": "string"
+            },
+            "StreamingAutomatedLaunch": {
+              "type": "boolean"
+            },
+            "UwpPackageFamilyName": {
+              "type": "string"
+            },
+            "FRLPOPS": {
+              "type": "integer"
+            },
+            "QuietModePopsFactor": {
+              "type": "number"
+            },
+            "DriverProfile": {
+              "type": "string"
+            },
+            "IsCreativeApplication": {
+              "type": "boolean"
+            },
+            "SendTelemetryForGFESupportedApps": {
+              "type": "boolean"
+            },
+            "UseDRSForTelemetry": {
+              "type": "boolean"
+            },
+            "BatteryBoost2PopsFactorTPPLow": {
+              "type": "number"
+            },
+            "BatteryBoost2PopsFactorTPPHigh": {
+              "type": "number"
+            },
+            "ChromaAppId": {
+              "type": "string"
+            },
+            "LastLaunchTimeISO": {
+              "type": "string"
+            },
+            "InitialTimeISO": {
+              "type": "string"
+            },
+            "IsManuallyAdded": {
+              "type": "boolean"
+            },
+            "IsFingerprintDetected": {
+              "type": "boolean"
+            },
+            "Disable_FG_Override": {
+              "type": "boolean"
+            },
+            "Disable_RR_Override": {
+              "type": "boolean"
+            },
+            "Disable_SR_Override": {
+              "type": "boolean"
+            },
+            "Disable_RR_Model_Override": {
+              "type": "boolean"
+            },
+            "Disable_SR_Model_Override": {
+              "type": "boolean"
+            },
+            "DLSS_Override_No_OPS": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "CmsId",
+            "CmsVersion",
+            "DisplayName",
+            "ShortName",
+            "Version",
+            "Distributor",
+            "InstallDirectory",
+            "ImageFiles",
+            "LaunchCmd",
+            "IsOpsSupported",
+            "UseDesktopResolution",
+            "UseLowResolutions",
+            "HypersamplingQuality",
+            "IsStreamingSupported",
+            "StreamingCmdLine",
+            "StreamingCaption",
+            "StreamingClassName",
+            "StreamingAutomatedLaunch",
+            "DriverProfile",
+            "IsCreativeApplication",
+            "SendTelemetryForGFESupportedApps",
+            "UseDRSForTelemetry",
+            "ChromaAppId",
+            "LastLaunchTimeISO",
+            "InitialTimeISO",
+            "IsManuallyAdded",
+            "IsFingerprintDetected",
+            "Disable_FG_Override",
+            "Disable_RR_Override",
+            "Disable_SR_Override",
+            "Disable_RR_Model_Override",
+            "Disable_SR_Model_Override",
+            "DLSS_Override_No_OPS"
+          ]
+        }
+      },
+      "properties": {
+        "Applications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "LocalId": {
+                "type": "integer"
+              },
+              "Application": {
+                "$ref": "#/definitions/DetectedApplication"
+              }
+            },
+            "required": [
+              "LocalId",
+              "Application"
+            ]
+          }
+        }
+      },
+      "required": [
+        "Applications"
+      ]
+    }
+  },
+  {
+    "file_offset": "0x75e2d0",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for NvBackend application storage manifest",
+      "type": "object",
+      "definitions": {
+        "DetectedApplication": {
+          "type": "object",
+          "properties": {
+            "CmsId": {
+              "type": "integer"
+            },
+            "CmsVersion": {
+              "type": "integer"
+            },
+            "DisplayName": {
+              "type": "string"
+            },
+            "ShortName": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "Distributor": {
+              "type": "string"
+            },
+            "InstallDirectory": {
+              "type": "string"
+            },
+            "DetectedFiles": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "ImageFiles": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              }
+            },
+            "LaunchCmd": {
+              "type": "string"
+            },
+            "IsOpsSupported": {
+              "type": "boolean"
+            },
+            "UseDesktopResolution": {
+              "type": "boolean"
+            },
+            "UseLowResolutions": {
+              "type": "boolean"
+            },
+            "HypersamplingQuality": {
+              "type": "integer"
+            },
+            "HypersamplingFactors": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            },
+            "IsStreamingSupported": {
+              "type": "boolean"
+            },
+            "StreamingCmdLine": {
+              "type": "string"
+            },
+            "StreamingCaption": {
+              "type": "string"
+            },
+            "StreamingClassName": {
+              "type": "string"
+            },
+            "StreamingAutomatedLaunch": {
+              "type": "boolean"
+            },
+            "UwpPackageFamilyName": {
+              "type": "string"
+            },
+            "FRLPOPS": {
+              "type": "integer"
+            },
+            "QuietModePopsFactor": {
+              "type": "number"
+            },
+            "DriverProfile": {
+              "type": "string"
+            },
+            "IsCreativeApplication": {
+              "type": "boolean"
+            },
+            "SendTelemetryForGFESupportedApps": {
+              "type": "boolean"
+            },
+            "UseDRSForTelemetry": {
+              "type": "boolean"
+            },
+            "BatteryBoost2PopsFactorTPPLow": {
+              "type": "number"
+            },
+            "BatteryBoost2PopsFactorTPPHigh": {
+              "type": "number"
+            },
+            "ChromaAppId": {
+              "type": "string"
+            },
+            "LastLaunchTimeISO": {
+              "type": "string"
+            },
+            "InitialTimeISO": {
+              "type": "string"
+            },
+            "IsManuallyAdded": {
+              "type": "boolean"
+            },
+            "IsFingerprintDetected": {
+              "type": "boolean"
+            },
+            "Disable_FG_Override": {
+              "type": "boolean"
+            },
+            "Disable_RR_Override": {
+              "type": "boolean"
+            },
+            "Disable_SR_Override": {
+              "type": "boolean"
+            },
+            "Disable_RR_Model_Override": {
+              "type": "boolean"
+            },
+            "Disable_SR_Model_Override": {
+              "type": "boolean"
+            },
+            "DLSS_Override_No_OPS": {
+              "type": "boolean"
+            },
+            "IsARM64OpsSupported": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "CmsId",
+            "CmsVersion",
+            "DisplayName",
+            "ShortName",
+            "Version",
+            "Distributor",
+            "InstallDirectory",
+            "ImageFiles",
+            "LaunchCmd",
+            "IsOpsSupported",
+            "UseDesktopResolution",
+            "UseLowResolutions",
+            "HypersamplingQuality",
+            "IsStreamingSupported",
+            "StreamingCmdLine",
+            "StreamingCaption",
+            "StreamingClassName",
+            "StreamingAutomatedLaunch",
+            "DriverProfile",
+            "IsCreativeApplication",
+            "SendTelemetryForGFESupportedApps",
+            "UseDRSForTelemetry",
+            "ChromaAppId",
+            "LastLaunchTimeISO",
+            "InitialTimeISO",
+            "IsManuallyAdded",
+            "IsFingerprintDetected",
+            "Disable_FG_Override",
+            "Disable_RR_Override",
+            "Disable_SR_Override",
+            "Disable_RR_Model_Override",
+            "Disable_SR_Model_Override",
+            "DLSS_Override_No_OPS",
+            "IsARM64OpsSupported"
+          ]
+        }
+      },
+      "properties": {
+        "Applications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "LocalId": {
+                "type": "integer"
+              },
+              "Application": {
+                "$ref": "#/definitions/DetectedApplication"
+              }
+            },
+            "required": [
+              "LocalId",
+              "Application"
+            ]
+          }
+        }
+      },
+      "required": [
+        "Applications"
+      ]
+    }
+  },
+  {
+    "file_offset": "0x75fc30",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for NvBackend application state",
+      "type": "object",
+      "definitions": {
+        "Resolution": {
+          "type": "object",
+          "properties": {
+            "Width": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "Height": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "required": [
+            "Width",
+            "Height"
+          ]
+        },
+        "SettingsTweak": {
+          "type": "object",
+          "properties": {
+            "Resolution": {
+              "$ref": "#/definitions/Resolution"
+            },
+            "DisplayMode": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "Resolution"
+          ]
+        },
+        "OpsSliderPosition": {
+          "type": "object",
+          "properties": {
+            "Tweak": {
+              "$ref": "#/definitions/SettingsTweak"
+            },
+            "Position ": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "Tweak",
+            "Position"
+          ]
+        },
+        "SettingValue": {
+          "type": "object",
+          "properties": {
+            "Value": {
+              "type": "string"
+            },
+            "SettingName": {
+              "type": "string"
+            },
+            "SettingType ": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Value",
+            "SettingName",
+            "SettingType"
+          ]
+        },
+        "SettingValueSet": {
+          "type": "object",
+          "properties": {
+            "Target": {
+              "type": "integer"
+            },
+            "Values": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/SettingValue"
+              }
+            }
+          },
+          "required": [
+            "Target",
+            "Values"
+          ]
+        },
+        "AppliedPositionAC": {
+          "type": "object",
+          "properties": {
+            "Pos": {
+              "$ref": "#/definitions/OpsSliderPosition"
+            },
+            "Original": {
+              "$ref": "#/definitions/SettingValueSet"
+            }
+          },
+          "required": [
+            "Pos",
+            "Original"
+          ]
+        }
+      },
+      "properties": {
+        "EverChangedByGFE": {
+          "type": "boolean"
+        },
+        "CurrentPowerMode": {
+          "type": "integer"
+        },
+        "CurrentACPosition": {
+          "$ref": "#/definitions/AppliedPositionAC"
+        },
+        "CurrentDCState": {
+          "type": "integer"
+        },
+        "CurrentDCPosition": {
+          "$ref": "#/definitions/OpsSliderPosition"
+        },
+        "CurrentHistory": {
+          "$ref": "#/definitions/SettingValueSet"
+        },
+        "TargetPowerMode": {
+          "type": "integer"
+        },
+        "TargetACPosition": {
+          "$ref": "#/definitions/OpsSliderPosition"
+        },
+        "TargetDCState": {
+          "type": "integer"
+        },
+        "TargetDCPosition": {
+          "$ref": "#/definitions/OpsSliderPosition"
+        }
+      },
+      "required": [
+        "CurrentPowerMode",
+        "CurrentDCState",
+        "TargetPowerMode",
+        "TargetDCState"
+      ]
+    }
+  },
+  {
+    "file_offset": "0x760b10",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for NvBackend application storage manifest",
+      "type": "object",
+      "definitions": {
+        "DetectedApplication": {
+          "type": "object",
+          "properties": {
+            "CmsId": {
+              "type": "integer"
+            },
+            "CmsVersion": {
+              "type": "integer"
+            },
+            "DisplayName": {
+              "type": "string"
+            },
+            "ShortName": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "Distributor": {
+              "type": "string"
+            },
+            "InstallDirectory": {
+              "type": "string"
+            },
+            "DetectedFiles": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "ImageFiles": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              }
+            },
+            "LaunchCmd": {
+              "type": "string"
+            },
+            "IsOpsSupported": {
+              "type": "boolean"
+            },
+            "UseDesktopResolution": {
+              "type": "boolean"
+            },
+            "UseLowResolutions": {
+              "type": "boolean"
+            },
+            "HypersamplingQuality": {
+              "type": "integer"
+            },
+            "HypersamplingFactors": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            },
+            "IsStreamingSupported": {
+              "type": "boolean"
+            },
+            "StreamingCmdLine": {
+              "type": "string"
+            },
+            "StreamingCaption": {
+              "type": "string"
+            },
+            "StreamingClassName": {
+              "type": "string"
+            },
+            "StreamingAutomatedLaunch": {
+              "type": "boolean"
+            },
+            "UwpPackageFamilyName": {
+              "type": "string"
+            },
+            "FRLPOPS": {
+              "type": "integer"
+            },
+            "QuietModePopsFactor": {
+              "type": "number"
+            },
+            "DriverProfile": {
+              "type": "string"
+            },
+            "IsCreativeApplication": {
+              "type": "boolean"
+            },
+            "SendTelemetryForGFESupportedApps": {
+              "type": "boolean"
+            },
+            "UseDRSForTelemetry": {
+              "type": "boolean"
+            },
+            "BatteryBoost2PopsFactorTPPLow": {
+              "type": "number"
+            },
+            "BatteryBoost2PopsFactorTPPHigh": {
+              "type": "number"
+            },
+            "ChromaAppId": {
+              "type": "string"
+            },
+            "LastLaunchTime": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "CmsId",
+            "CmsVersion",
+            "DisplayName",
+            "ShortName",
+            "Version",
+            "Distributor",
+            "InstallDirectory",
+            "ImageFiles",
+            "LaunchCmd",
+            "IsOpsSupported",
+            "UseDesktopResolution",
+            "UseLowResolutions",
+            "HypersamplingQuality",
+            "IsStreamingSupported",
+            "StreamingCmdLine",
+            "StreamingCaption",
+            "StreamingClassName",
+            "StreamingAutomatedLaunch",
+            "DriverProfile",
+            "IsCreativeApplication",
+            "SendTelemetryForGFESupportedApps",
+            "UseDRSForTelemetry",
+            "ChromaAppId"
+          ]
+        }
+      },
+      "properties": {
+        "Applications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "LocalId": {
+                "type": "integer"
+              },
+              "Application": {
+                "$ref": "#/definitions/DetectedApplication"
+              }
+            },
+            "required": [
+              "LocalId",
+              "Application"
+            ]
+          }
+        }
+      },
+      "required": [
+        "Applications"
+      ]
+    }
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "name": "protos/perfetto/trace/android/android_track_event.proto",
+  "package": "perfetto.protos",
+  "dependency": [
+    "protos/perfetto/trace/track_event/track_event.proto"
+  ],
+  "message_type": [
+    {
+      "name": "AndroidTrackEvent",
+      "extension": [
+        {
+          "name": "binder_service_name",
+          "extendee": ".perfetto.protos.TrackEvent",
+          "number": 2001,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "json_name": "binderServiceName"
+        },
+        {
+          "name": "binder_interface_name",
+          "extendee": ".perfetto.protos.TrackEvent",
+          "number": 2002,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "json_name": "binderInterfaceName"
+        },
+        {
+          "name": "apex_name",
+          "extendee": ".perfetto.protos.TrackEvent",
+          "number": 2003,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "json_name": "apexName"
+        }
+      ]
+    }
+  ],
+  "public_dependency": [
+    0
+  ]
+}

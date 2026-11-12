@@ -1,0 +1,5588 @@
+[
+  {
+    "path": "FrameViewSDK\\nvfvsdksvc_x64.exe",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\bin\\amd_ags_x64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\bin\\FrameViewKMD.sys",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\bin\\FvSDK_x64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\bin\\nvrla.exe",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\bin\\PresentMon_x64.exe",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\etw_fcat\\NVFTVRDLL64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\etw_nv\\ddETWExternal.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\FvContainer.exe",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\FvContainer.System.exe",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\NvMessageBus.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\plugins\\SystemDataCollectorsContainerPlugin_x64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\plugins.system\\AggregatorContainerPlugin_x64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\plugins.system\\FrameViewKMDServiceContainerPlugin_x64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\FvContainer\\plugins.system\\NvMessageBusBroadcast.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\SDK\\FvSDKTestClient_Public.exe",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\SDK\\Public_Release\\FvSDK_x64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "FrameViewSDK\\SDK\\Public_Release\\FvSDK_x86.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\Display.Driver.{92800A66-972D-4AAC-A44D-81E3328AF354}\\DisplayDriverExt.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\Display.Driver.{92800A66-972D-4AAC-A44D-81E3328AF354}\\DisplayDriverExt64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\Display.Driver.{F11599FA-D299-43A1-B827-83234858D1A3}\\DisplayDriverExt.dll",
+    "owner": "NT AUTHORITY\\SYSTEM",
+    "sddl": "O:SYG:SYD:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\Display.NvApp.{39B563FC-F52F-4E62-B6EC-9DD602862CA8}\\NvAppExt.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\Display.PhysX.{5A50652D-B45C-4D25-84CD-19B69879382B}\\PhysXExt.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\Display.PhysX.{5A50652D-B45C-4D25-84CD-19B69879382B}\\PhysXExt64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\FrameViewSdk.{9D58CA10-2FA6-49C0-9986-8FEDA998716E}\\FrameViewSdkExt.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\HDAudio.Driver.{091AEA3D-8B36-4AC9-8B5B-5965F73BC7F6}\\HDAudioExt.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\HDAudio.Driver.{091AEA3D-8B36-4AC9-8B5B-5965F73BC7F6}\\HDAudioExt64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\HDAudio.Driver.{091AEA3D-8B36-4AC9-8B5B-5965F73BC7F6}\\nvhda64v.sys",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\installer.{414B0123-8E6B-417D-9D7B-F3F765532B2B}\\presentations.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\installer.{EE6BEEBC-9431-4428-8DDB-EB839185C877}\\DynamicBillboardPresentations.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\InstallerCore\\NVI2.DLL",
+    "owner": "NT AUTHORITY\\SYSTEM",
+    "sddl": "O:SYG:SYD:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\InstallerCore\\NVI2UI.DLL",
+    "owner": "NT AUTHORITY\\SYSTEM",
+    "sddl": "O:SYG:SYD:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\InstallerCore\\NvInstallerUtil.dll",
+    "owner": "NT AUTHORITY\\SYSTEM",
+    "sddl": "O:SYG:SYD:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\InstallerCore\\NVPrxy32.DLL",
+    "owner": "NT AUTHORITY\\SYSTEM",
+    "sddl": "O:SYG:SYD:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\InstallerCore\\NVPrxy64.DLL",
+    "owner": "NT AUTHORITY\\SYSTEM",
+    "sddl": "O:SYG:SYD:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\InstallerCore\\SETUP.EXE",
+    "owner": "NT AUTHORITY\\SYSTEM",
+    "sddl": "O:SYG:SYD:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\ShadowPlay.{D93CCF6F-6877-4B4B-83B0-4AF388304402}\\ShadowPlayExt.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\VirtualAudio.Driver.{7C43349F-A7F0-4D47-8E5D-C03E063D8955}\\nvaudcap32v.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\VirtualAudio.Driver.{7C43349F-A7F0-4D47-8E5D-C03E063D8955}\\nvaudcap64a.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\VirtualAudio.Driver.{7C43349F-A7F0-4D47-8E5D-C03E063D8955}\\nvaudcap64v.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\VirtualAudio.Driver.{7C43349F-A7F0-4D47-8E5D-C03E063D8955}\\nvvad32v.sys",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\VirtualAudio.Driver.{7C43349F-A7F0-4D47-8E5D-C03E063D8955}\\nvvad64a.sys",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "Installer2\\VirtualAudio.Driver.{7C43349F-A7F0-4D47-8E5D-C03E063D8955}\\nvvad64v.sys",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NvContainer\\nvcontainer.exe",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NvContainer\\plugins\\LocalSystem\\NvMessageBusBroadcast.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NvContainer\\Watchdog\\NvPluginWatchdog.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\7z.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\7z.exe",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\DarkModeCheck.exe",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\InstallerExtension.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvAppApi.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\chrome_elf.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\d3dcompiler_47.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\dxcompiler.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\dxil.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\libcef.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\libEGL.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\libGLESv2.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\NVIDIA App.exe",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\NVIDIA Overlay.exe",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\dependencies\\CrimsonUtil.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\dependencies\\libcrypto-3-x64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\NvidiaAppPermissionOc\\NVIDIA App Permission.exe",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\BackgroundProcess\\BackgroundProcess.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\LocalGames.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\NvCplDisplayPlugin.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\NvCplPlugin.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\NvPerfMon.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\NvWorkstation.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\Base\\SystemInfo.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\AppDiscovery.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\DriverInstall.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\LoginId.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\MessageBusRouter.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\NvIGOUtil.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\NvOc.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\Gallery.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\GraphicsSetting.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\MessageBusRouter.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\NvCamera.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\Rise.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\ShareServer.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\McpServer\\NvAppCore.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\McpServer\\NvAppMcpServer.exe",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\MessageBus\\MessageBus.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\MessageBus\\NvMessageBus.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\MessageBus\\NvMessageBusBroadcast.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvBackend\\NvBackendAPI64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvBackend\\ApplicationOntology\\NvOAWrapperCache.exe",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvBackend\\ApplicationOntology\\OAWrapper.exe",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvBackend\\ApplicationOntology\\Ontology64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvBackend\\Plugins\\LocalUser\\NvBackend64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvcpl.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvSmartMax.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvSmartMax64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvSmartMaxapp.exe",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvSmartMaxapp64.exe",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\NvUI.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\NvUIR.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvxdapix.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvxdbat.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\nvxdplcy.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\Plugins\\LocalSystem\\NvXDCore.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvCpl\\Plugins\\Session\\nvxdsyncplugin.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvDLISR\\NGXWrapper.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvDLISR\\nvngx_dlisr.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvDriverUpdateCheck\\NvDriverUpdateCheck64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\NvLocalizedConfig\\NvLocalizedConfig.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\aiuser\\McpServerPlugin.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvAccount.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\DesktopNotification.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\Diagnostics.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\Downloader.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\DriverUpdateRecommendation.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\NvAppIgoIpcProxy.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\localuser\\NvApp\\NvKVStorage.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\oc\\_OverClockingNvc.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\Plugins\\session\\NvDriverDiagnostics.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\capcore64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\ipccommon64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvfcapi64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvfp64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvmf64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvovapi64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvspapi64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvsphelper64.exe",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvsphelperplugin64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\nvspscreenshot64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\NVSPCAPS\\_nvspcaps64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NVIDIA App\\ShadowPlay\\Plugins\\LocalSystem\\_nvspserviceplugin64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NvTelemetry\\NvTelemetryAPI64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NvTelemetry\\NvTelemetryBridge64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  },
+  {
+    "path": "NvTelemetry\\plugin\\NvTelemetry64.dll",
+    "owner": "BUILTIN\\Administrators",
+    "sddl": "O:BAG:<REDACTED_MACHINE_SID>D:AI(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)",
+    "access": [
+      {
+        "identity": "NT AUTHORITY\\SYSTEM",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Administrators",
+        "rights": "FullControl",
+        "rights_value": 2032127,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "BUILTIN\\Users",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      },
+      {
+        "identity": "APPLICATION PACKAGE AUTHORITY\\ALL RESTRICTED APPLICATION PACKAGES",
+        "rights": "ReadAndExecute, Synchronize",
+        "rights_value": 1179817,
+        "type": "Allow",
+        "inherited": true
+      }
+    ]
+  }
+]

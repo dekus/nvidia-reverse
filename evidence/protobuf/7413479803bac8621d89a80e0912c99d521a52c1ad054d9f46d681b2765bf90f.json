@@ -1,0 +1,252 @@
+{
+  "name": "BusMessage.proto",
+  "message_type": [
+    {
+      "name": "BusMessage",
+      "field": [
+        {
+          "name": "uniqueid",
+          "number": 1,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "source_system",
+          "number": 2,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "source_module",
+          "number": 3,
+          "label": "LABEL_REQUIRED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "domain",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "joined",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "target_system",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "target_module",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "source_session",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "source_username",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "reference_uniqueid",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "source_pid",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "target_session",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "target_username",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "bus_peer",
+          "number": 15,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".BusMessage.Peer"
+        },
+        {
+          "name": "generic",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".BusMessage.Generic"
+        },
+        {
+          "name": "status",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".BusMessage.Status"
+        },
+        {
+          "name": "encryptedBusMessage",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".BusMessage.EncryptedBusMessage"
+        },
+        {
+          "name": "encryptionsetup",
+          "number": 200,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".BusMessage.EncryptionSetup"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "Generic",
+          "field": [
+            {
+              "name": "type",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_UINT32"
+            },
+            {
+              "name": "data",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_BYTES"
+            }
+          ]
+        },
+        {
+          "name": "EncryptedBusMessage",
+          "field": [
+            {
+              "name": "type",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".BusMessage.EncryptedBusMessage.EncryptionType"
+            },
+            {
+              "name": "data",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_BYTES"
+            },
+            {
+              "name": "iv",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_BYTES"
+            }
+          ],
+          "enum_type": [
+            {
+              "name": "EncryptionType",
+              "value": [
+                {
+                  "name": "NONE",
+                  "number": 1
+                },
+                {
+                  "name": "RSA",
+                  "number": 2
+                },
+                {
+                  "name": "AES",
+                  "number": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Status",
+          "field": [
+            {
+              "name": "code",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".BusMessage.Status.Code"
+            }
+          ],
+          "enum_type": [
+            {
+              "name": "Code",
+              "value": [
+                {
+                  "name": "Received",
+                  "number": 1
+                },
+                {
+                  "name": "Completed",
+                  "number": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Peer",
+          "field": [
+            {
+              "name": "system",
+              "number": 1,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "module",
+              "number": 2,
+              "label": "LABEL_REQUIRED",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "session",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "username",
+              "number": 4,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ]
+        },
+        {
+          "name": "EncryptionSetup",
+          "field": [
+            {
+              "name": "AESKey",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_BYTES"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

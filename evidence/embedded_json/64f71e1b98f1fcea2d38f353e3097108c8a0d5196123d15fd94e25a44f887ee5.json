@@ -1,0 +1,125 @@
+[
+  {
+    "file_offset": "0x6fb1a0",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for NvTelemetry localized config storage format",
+      "type": "object",
+      "properties": {
+        "eventUrl": {
+          "type": "string"
+        },
+        "feedbackUrl": {
+          "type": "string"
+        },
+        "feedbackAttachmentUrl": {
+          "type": "string"
+        }
+      },
+      "required": []
+    }
+  },
+  {
+    "file_offset": "0x6fcb20",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "title": "JSON schema for NvTelemetry CurrentState.json:",
+      "type": "object",
+      "properties": {
+        "distributedTracingState": {
+          "type": "integer",
+          "default": 1
+        }
+      },
+      "required": [
+        "distributedTracingState"
+      ]
+    }
+  },
+  {
+    "file_offset": "0x703260",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "additionalProperties": false,
+      "definitions": {
+        "event": {
+          "additionalProperties": false,
+          "type": "object",
+          "required": [
+            "name",
+            "parameters"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "parameters": {
+              "type": "object"
+            },
+            "GDPRCategory": {
+              "type": "string",
+              "enum": [
+                "technical",
+                "behavioral",
+                "functional",
+                "required"
+              ]
+            },
+            "personalization": {
+              "type": "string",
+              "enum": [
+                "anonymous",
+                "deviceOnly",
+                "devicePreferred",
+                "userPreferred",
+                "userRequired"
+              ]
+            }
+          }
+        }
+      },
+      "description": "Input Event JSON schema",
+      "properties": {
+        "clientId": {
+          "type": "string"
+        },
+        "userId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "externalUserId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "idpId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "clientVer": {
+          "type": "string"
+        },
+        "eventSchemaVer": {
+          "type": "string"
+        },
+        "ts": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "service": {
+          "type": "string"
+        },
+        "event": {
+          "$ref": "#/definitions/event"
+        }
+      },
+      "required": [
+        "clientId",
+        "clientVer",
+        "userId",
+        "eventSchemaVer",
+        "event"
+      ],
+      "type": "object"
+    }
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "snapshot_date": "2026-11-11",
+  "source_root": "C:\\Program Files\\NVIDIA Corporation",
+  "source_identity": "Filenames containing a SHA-256 identify the analyzed source, not the generated artifact.",
+  "transformations": [
+    "English coverage labels",
+    "Removed analyst-local paths and execution bookkeeping",
+    "Redacted user-profile paths, machine SIDs, installation task identifiers and recognized credential values",
+    "Removed generated C and assembly comments while preserving line counts",
+    "Added line-span indexes for reconstructed C functions",
+    "JavaScript comments removed with parser-based syntax-tree equivalence checks; literal credential values redacted separately",
+    "Distributed JavaScript text re-read only where its SHA-256 matched the source inventory"
+  ],
+  "excluded": [
+    "Original executable binaries and PDB files",
+    "IDA databases",
+    "Analysis worker logs and orchestration scripts",
+    "Machine-specific HTTP.sys dump",
+    "Capture-backend modification project"
+  ],
+  "artifact_count_before_documentation": 1994
+}

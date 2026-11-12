@@ -1,0 +1,20 @@
+DISTRIBUTED THIRD-PARTY NOTICES
+
+Original distributed notice and license texts are retained at the locations below.
+No copyright or license comment blocks were encountered in the parsed JavaScript.
+The source hashes identify the distributed files; publication artifacts can be transformed.
+
+grid-third-party-licenses.txt
+evidence/text/45e7f07d8d9517080a69be2d73064507d747ae8b9dc3550daea3b148d75b97fb.txt
+
+FrameViewSDK\licenses\LICENSES.txt
+evidence/text/41c1f5005f048dcd8002a81b0ae92c4bec685fe08c2f94d878ec55d248f5b535.txt
+
+NVIDIA App\license.txt
+evidence/text/7d1025610761cadfe2376326340853bb3f55674268ec88b43db5213acacdad64.txt
+
+NVIDIA App\osc\3rdpartylicenses.txt
+evidence/text/0e0da73971670ef88536ba091d5957e47a49dfd5330d19c344148fdd6717e81e.txt
+
+NVIDIA App\www\3rdpartylicenses.txt
+evidence/text/cc83258e14cf0ff75ed1e04328b8d39c18ca5a438bdae5e36c9cef20cef24129.txt

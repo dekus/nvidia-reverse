@@ -1,0 +1,254 @@
+[
+  {
+    "path": "NVIDIA App\\osc\\137.2d71d06978fe2945.js",
+    "sha256": "2a752a5f7a161d689163b88c8cbd2fa9bc9ccf51ad9473ca4ed776a35536475c",
+    "lines": 1150,
+    "hits": 0,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\osc\\185.b00faed8cdeb1a12.js",
+    "sha256": "f9c88c686887bdacc9df19838b445d458b7b33f3c8f3637e989e435cb82b5f10",
+    "lines": 502,
+    "hits": 0,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\osc\\248.13fedbb8a5057e31.js",
+    "sha256": "d403525a22e61e4f0e15547dbc870fb763b407c9121c487e29dccdae40099fc7",
+    "lines": 485,
+    "hits": 1,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\osc\\281.f3dbf00fd132db06.js",
+    "sha256": "b7d758562fc2ae1435cc4d2c35da5392b3a55bcfd0bbc520a3265377204256f1",
+    "lines": 539,
+    "hits": 0,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\osc\\48.fdda62c272a49c62.js",
+    "sha256": "038fdf094ac5ca9a6dd53d91c9b896e452ce969593e059eb80495caa8aec00ef",
+    "lines": 2850,
+    "hits": 33,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\osc\\496.a20a3f8d0910c521.js",
+    "sha256": "15511710a1ae96e8ef1fb31cb8462460552e5794d40c97b07cbdb2b286d9b8bb",
+    "lines": 25878,
+    "hits": 36,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\osc\\531.a97ff808b5a5a618.js",
+    "sha256": "7a5ff492069bfb9bd48dd3261c9816867ad2b7f8da5585322c44d0c1a56f33d0",
+    "lines": 9365,
+    "hits": 43,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\osc\\540.254f527e82720f3e.js",
+    "sha256": "91a85d7ac36115fd9a7eca1ab0fa532932f0f52282df43b2d901be0ce301bcbc",
+    "lines": 1560,
+    "hits": 0,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\osc\\832.baab773bfaf091f0.js",
+    "sha256": "bd7c68d6b16e5e5b51376bb8d303d70e1266947f1f6a8a7a529462aa597aad3a",
+    "lines": 471,
+    "hits": 0,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\osc\\834.3d9da991be5e589f.js",
+    "sha256": "08568d600bda7e075d1a7f5567c43ae968ad4922d4d96b08777b1c4e8ea475ba",
+    "lines": 1208,
+    "hits": 11,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\osc\\840.4ffbc88bc2efd88c.js",
+    "sha256": "3b06525c067bcde717e06fa7c29c1e74b635279505df22b3448d25ff975853de",
+    "lines": 4336,
+    "hits": 1,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\osc\\842.ac013a5bc355d1fa.js",
+    "sha256": "aa480802827b0da040c72128cf87c643b0d459edce57d2e45420a92c192eefff",
+    "lines": 1693,
+    "hits": 5,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\osc\\851.fe65cbcfee1d857c.js",
+    "sha256": "5bb0e359aff61ab366c8cebb6b050edefd0a597fe875aa9987925e01b2e8232e",
+    "lines": 705,
+    "hits": 0,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\osc\\common.0ec4c044ad0e04ab.js",
+    "sha256": "e8876cdef8115764704dd65e0dd4cf5f272e8389a95eda207b1d952850e5d48a",
+    "lines": 357,
+    "hits": 0,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\osc\\main.61a92495293d6c3d.js",
+    "sha256": "e337b0db37fef702124c2ab2913d46157c249f7b58b7ca00ffc3d48f3adb5250",
+    "lines": 193859,
+    "hits": 2184,
+    "source_map_references": [
+      "divider-styles.css.map"
+    ],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\osc\\polyfills.bf75149cdc274fc4.js",
+    "sha256": "0463e977d8c3a968d3800c658219a2c8be643d71c7b6b15d4b44d25cba428aea",
+    "lines": 1874,
+    "hits": 1,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\osc\\runtime.8be3083074be3456.js",
+    "sha256": "df9081f995b427bbafd3a59a07d6f5a7e36537c1bdb3da74dd8c3dc5c3c0482c",
+    "lines": 461,
+    "hits": 0,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\www\\16.2a62c2ca690ca283.js",
+    "sha256": "bc8440a030ceb485136e9622f21d8e1235ca2287c1abc743b47b67a2cf76087a",
+    "lines": 4730,
+    "hits": 15,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\www\\165.ac8178ef31112c30.js",
+    "sha256": "26baa8c4b31c00135078ef7916778c1b1da26b3cffaa936a97055796d319128f",
+    "lines": 2052,
+    "hits": 53,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\www\\427.e013fdf4eb0640ba.js",
+    "sha256": "ff1df4c3b46fa763c19f87abce7e732da3d8532677e5586f0b27bc24ea0d4c69",
+    "lines": 12386,
+    "hits": 53,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\www\\51.a21bdcf9f588ebbe.js",
+    "sha256": "c46d922cf730d465e7e573d3092e1cd84170a6beec5d4c4bd76e1d292980a10f",
+    "lines": 717,
+    "hits": 2,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\www\\586.4611ca7513127967.js",
+    "sha256": "835c4410d0254a2e5d239c587293d81a6e630a98c309d41daade83116cac0665",
+    "lines": 1295,
+    "hits": 9,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\www\\74.f8e6825684cea8c8.js",
+    "sha256": "4e913da0dede716d152ad9c0abb47f3d8c2c8f3175c9a6da47442eb28efc7bdf",
+    "lines": 724,
+    "hits": 2,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\www\\807.474f3536cf77f764.js",
+    "sha256": "54be84a5ad4f3f38ffd91aafbebfd81fa910d832c2f430acf987180c66f97dab",
+    "lines": 1742,
+    "hits": 11,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\www\\981.284bfd762cbde521.js",
+    "sha256": "adf063c2a72279852f21cec2e206811e5a545efe671d60558781384e6612ce18",
+    "lines": 6834,
+    "hits": 3,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\www\\988.e82ce2767f3e9951.js",
+    "sha256": "1087ab489ba46ccf98260a52bfae86f0bd4475781fe17f1877e3106e4ea8fe94",
+    "lines": 3257,
+    "hits": 43,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\www\\common.d1bcd97f77731908.js",
+    "sha256": "6bf17b20a5181a65686a2d8421a0190eebd83e3a3f467b0d960b615e2a8ac2ae",
+    "lines": 599,
+    "hits": 0,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\www\\main.4110f620ac1963df.js",
+    "sha256": "fdd45764a54d48266b570c7811a57a30f3e738923108feb824d333c27f9ebe7c",
+    "lines": 156076,
+    "hits": 1598,
+    "source_map_references": [
+      "divider-styles.css.map"
+    ],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\www\\nvapp-service-worker.js",
+    "sha256": "211b6947735803093a80749144130a48d3347a08b5d7b0108685ba35ff42b1ff",
+    "lines": 2378,
+    "hits": 8,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\www\\polyfills.9f6fe9d1b0e3b8c2.js",
+    "sha256": "f8afcd7b43d354222281fc13f61284ff0871f98d86b074a329929f8df4a601a8",
+    "lines": 1874,
+    "hits": 1,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  },
+  {
+    "path": "NVIDIA App\\www\\runtime.81c60e776d7c0fcf.js",
+    "sha256": "cd333b282428add4be380c76a0b71654f3eae41886940e31e70eff14cf603f25",
+    "lines": 445,
+    "hits": 0,
+    "source_map_references": [],
+    "transform": "jsbeautifier formatting; comments removed with an ECMAScript parser; line positions preserved; minified names retained"
+  }
+]

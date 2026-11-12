@@ -1,0 +1,142 @@
+[
+  {
+    "offset": "0x159c44",
+    "encoding": "ascii",
+    "text": "Consent feature is disabled, will show legacy ui"
+  },
+  {
+    "offset": "0x1a418e",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x14344e",
+    "encoding": "utf-16le",
+    "text": "WHKEY_CLASSES_ROOT"
+  },
+  {
+    "offset": "0x143474",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0x143498",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0x1434c0",
+    "encoding": "utf-16le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0x143700",
+    "encoding": "utf-16le",
+    "text": "\\registry\\machine\\software\\classes"
+  },
+  {
+    "offset": "0x143b50",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion"
+  },
+  {
+    "offset": "0x144770",
+    "encoding": "utf-16le",
+    "text": "\\Device\\Mup"
+  },
+  {
+    "offset": "0x144ee0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x1522e8",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Installer2"
+  },
+  {
+    "offset": "0x155168",
+    "encoding": "utf-16le",
+    "text": "Feature.NvTelemetry"
+  },
+  {
+    "offset": "0x155190",
+    "encoding": "utf-16le",
+    "text": "NvSupportTelemetry"
+  },
+  {
+    "offset": "0x1561f0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NVTweak"
+  },
+  {
+    "offset": "0x1572b0",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows"
+  },
+  {
+    "offset": "0x157a28",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation"
+  },
+  {
+    "offset": "0x157bf0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA_RemoveOptimusFilters{069F7102-A666-45F1-8762-BF8DBD9584ED}"
+  },
+  {
+    "offset": "0x157f60",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers\\"
+  },
+  {
+    "offset": "0x157fa8",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Wow6432Node\\Khronos\\Vulkan\\Drivers\\"
+  },
+  {
+    "offset": "0x158008",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\ImplicitLayers\\"
+  },
+  {
+    "offset": "0x158058",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Wow6432Node\\Khronos\\Vulkan\\ImplicitLayers\\"
+  },
+  {
+    "offset": "0x1594bc",
+    "encoding": "utf-16le",
+    "text": "NvFBCSymLinkPath"
+  },
+  {
+    "offset": "0x1594e0",
+    "encoding": "utf-16le",
+    "text": "UsesNvFBCSymLink"
+  },
+  {
+    "offset": "0x159c14",
+    "encoding": "utf-16le",
+    "text": "OverrideConsentFeature"
+  },
+  {
+    "offset": "0x15c1f0",
+    "encoding": "utf-16le",
+    "text": "HKLM\\SOFTWARE\\NVIDIA Corporation"
+  },
+  {
+    "offset": "0x1601d8",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Logging\\Definitions\\LogFilters\\PassFilter"
+  },
+  {
+    "offset": "0x1602f8",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Logging"
+  },
+  {
+    "offset": "0x164770",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "Name": "nvdimm",
+    "DisplayName": "Microsoft NVDIMM device driver",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "PathName": "C:\\WINDOWS\\system32\\drivers\\nvdimm.sys"
+  },
+  {
+    "Name": "NVHDA",
+    "DisplayName": "Service for NVIDIA High Definition Audio Driver",
+    "State": "Running",
+    "StartMode": "Manual",
+    "PathName": "C:\\WINDOWS\\system32\\drivers\\nvhda64v.sys"
+  },
+  {
+    "Name": "nvlddmkm",
+    "DisplayName": "nvlddmkm",
+    "State": "Running",
+    "StartMode": "Manual",
+    "PathName": "C:\\WINDOWS\\system32\\DriverStore\\FileRepository\\nv_dispi.inf_amd64_20f49c6eb5c9b39b\\nvlddmkm.sys"
+  },
+  {
+    "Name": "nvmedisk",
+    "DisplayName": "Microsoft NVMe disk driver",
+    "State": "Running",
+    "StartMode": "Boot",
+    "PathName": "C:\\WINDOWS\\system32\\drivers\\nvmedisk.sys"
+  },
+  {
+    "Name": "nvraid",
+    "DisplayName": "nvraid",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "PathName": "C:\\WINDOWS\\system32\\drivers\\nvraid.sys"
+  },
+  {
+    "Name": "nvstor",
+    "DisplayName": "nvstor",
+    "State": "Stopped",
+    "StartMode": "Manual",
+    "PathName": "C:\\WINDOWS\\system32\\drivers\\nvstor.sys"
+  },
+  {
+    "Name": "nvvad_WaveExtensible",
+    "DisplayName": "NVIDIA Virtual Audio Device (Wave Extensible) (WDM)",
+    "State": "Running",
+    "StartMode": "Manual",
+    "PathName": "C:\\WINDOWS\\system32\\drivers\\nvvad64v.sys"
+  }
+]

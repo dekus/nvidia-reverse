@@ -1,0 +1,102 @@
+[
+  {
+    "offset": "0x2b4a0",
+    "encoding": "ascii",
+    "text": "nvapi_QueryInterface"
+  },
+  {
+    "offset": "0x2b4b8",
+    "encoding": "ascii",
+    "text": "nvapi_Direct_GetMethod"
+  },
+  {
+    "offset": "0x368b8",
+    "encoding": "ascii",
+    "text": "NvAPI_Initialize failed with "
+  },
+  {
+    "offset": "0x368d8",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_GetLastDBChangeTime failed with "
+  },
+  {
+    "offset": "0x36908",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_CreateSession failed with "
+  },
+  {
+    "offset": "0x36930",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_LoadSettings failed with "
+  },
+  {
+    "offset": "0x36980",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_FindApplicationByName failed with "
+  },
+  {
+    "offset": "0x369b0",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_GetSettingInfo failed with "
+  },
+  {
+    "offset": "0x36a28",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_GetDriverAndBranchVersion failed with "
+  },
+  {
+    "offset": "0x36a70",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_SetProfileData failed with "
+  },
+  {
+    "offset": "0x36a98",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_SaveSettingsEx failed with "
+  },
+  {
+    "offset": "0x36ac0",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_SaveSettings failed with "
+  },
+  {
+    "offset": "0x36bb0",
+    "encoding": "ascii",
+    "text": "CreateNamedPipe failed"
+  },
+  {
+    "offset": "0x3c0b2",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeW"
+  },
+  {
+    "offset": "0x2b420",
+    "encoding": "utf-16le",
+    "text": "NvAPI Direct was not found. Please update your driver."
+  },
+  {
+    "offset": "0x2b500",
+    "encoding": "utf-16le",
+    "text": "nvapi64.dll"
+  },
+  {
+    "offset": "0x2b850",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x2b890",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x2bb40",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x36b50",
+    "encoding": "utf-16le",
+    "text": "\\\\.\\pipe\\{671A75EB-8A98-4F90-9B16-29DC96A7A4EF}"
+  }
+]

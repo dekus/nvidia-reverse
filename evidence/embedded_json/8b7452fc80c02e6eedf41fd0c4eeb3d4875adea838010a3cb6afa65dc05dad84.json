@@ -1,0 +1,105 @@
+[
+  {
+    "file_offset": "0x177f50",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#nvkvstorage",
+      "title": "NvKVStorage commands",
+      "type": "object",
+      "module": "NvKVStorage",
+      "definitions": {
+        "Key": {
+          "description": "unique identifier for the data",
+          "type": "string"
+        },
+        "Value": {
+          "description": "data associated with the key",
+          "type": "string"
+        },
+        "Write": {
+          "description": "Adds or replaces the data associated with the specific key",
+          "isCommand": true,
+          "persistent": false,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "$ref": "#/definitions/Key"
+              },
+              "value": {
+                "$ref": "#/definitions/Value"
+              }
+            },
+            "required": [
+              "key",
+              "value"
+            ]
+          }
+        },
+        "Read": {
+          "description": "Returns the data associated with the key",
+          "isCommand": true,
+          "persistent": false,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "$ref": "#/definitions/Key"
+              }
+            },
+            "required": [
+              "key"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "$ref": "#/definitions/Value"
+              }
+            }
+          }
+        },
+        "Delete": {
+          "description": "Deletes the data associated with the specific key, if it exists",
+          "isCommand": true,
+          "persistent": false,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "$ref": "#/definitions/Key"
+              }
+            },
+            "required": [
+              "key"
+            ]
+          }
+        },
+        "Notification": {
+          "description": "This notification is broadcasted when something changes in the storage. If value is missing, then it was removed.",
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "$ref": "#/definitions/Key"
+              },
+              "value": {
+                "$ref": "#/definitions/Value"
+              }
+            },
+            "required": [
+              "key"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

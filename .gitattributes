@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.gz filter=lfs diff=lfs merge=lfs -text
+evidence/pe/*.json filter=lfs diff=lfs merge=lfs -text
+evidence/api_xrefs/*.json filter=lfs diff=lfs merge=lfs -text
+evidence/decompiled/*.summary.json filter=lfs diff=lfs merge=lfs -text
+evidence/text/* filter=lfs diff=lfs merge=lfs -text
+evidence/js/*.js filter=lfs diff=lfs merge=lfs -text
+*.pb binary

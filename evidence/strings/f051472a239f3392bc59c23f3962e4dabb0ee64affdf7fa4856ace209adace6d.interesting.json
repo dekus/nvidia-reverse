@@ -1,0 +1,3097 @@
+[
+  {
+    "offset": "0x4da808",
+    "encoding": "ascii",
+    "text": "m_desktopHook != NULL"
+  },
+  {
+    "offset": "0x4da888",
+    "encoding": "ascii",
+    "text": "m_desktopHook != NULL"
+  },
+  {
+    "offset": "0x4ddbb0",
+    "encoding": "ascii",
+    "text": "void __cdecl Nvidia::UXDriver::ApiX::CNvApixEngine::HandleExceptions(class std::map<enum SettingId,class boost::shared_ptr<class std::exception>,struct std::less<enum SettingId>,class std::allocator<struct std::pair<enum SettingId const ,class boost::shared_ptr<class std::exception> > > > &)"
+  },
+  {
+    "offset": "0x4ddce0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\uxd\\Framework\\NVXDApiX\\NvApixEngine.cpp"
+  },
+  {
+    "offset": "0x4de000",
+    "encoding": "ascii",
+    "text": "void __cdecl Nvidia::UXDriver::ApiX::CNvApixEngine::ProcessGetSettings(class Nvidia::UXDriver::SmartCollection<class Nvidia::UXDriver::Descriptor,struct DescriptorCollectionRaw,struct DescriptorRaw> &)"
+  },
+  {
+    "offset": "0x4de0d0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\uxd\\Framework\\NVXDApiX\\NvApixEngine.cpp"
+  },
+  {
+    "offset": "0x4de130",
+    "encoding": "ascii",
+    "text": "void __cdecl Nvidia::UXDriver::ApiX::CNvApixEngine::ProcessGetSettings(class Nvidia::UXDriver::SmartCollection<class Nvidia::UXDriver::Descriptor,struct DescriptorCollectionRaw,struct DescriptorRaw> &)"
+  },
+  {
+    "offset": "0x4de200",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\uxd\\Framework\\NVXDApiX\\NvApixEngine.cpp"
+  },
+  {
+    "offset": "0x4de400",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\uxd\\Framework\\NVXDApiX\\NvApixEngine.cpp"
+  },
+  {
+    "offset": "0x4de490",
+    "encoding": "ascii",
+    "text": "void __cdecl Nvidia::UXDriver::ApiX::CNvApixEngine::ProcessDoOperation(const class Nvidia::UXDriver::OperationDescriptor &,class Nvidia::UXDriver::StateDataSourcePassThrough &,class Nvidia::UXDriver::Handle)"
+  },
+  {
+    "offset": "0x4de560",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\uxd\\Framework\\NVXDApiX\\NvApixEngine.cpp"
+  },
+  {
+    "offset": "0x4de5c0",
+    "encoding": "ascii",
+    "text": "void __cdecl Nvidia::UXDriver::ApiX::CNvApixEngine::ProcessDoOperation(const class Nvidia::UXDriver::OperationDescriptor &,class Nvidia::UXDriver::StateDataSourcePassThrough &,class Nvidia::UXDriver::Handle)"
+  },
+  {
+    "offset": "0x4de690",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\uxd\\Framework\\NVXDApiX\\NvApixEngine.cpp"
+  },
+  {
+    "offset": "0x4dfa40",
+    "encoding": "ascii",
+    "text": "Error opening CPL_NVAPI_INITIALIZATION_FAILURE event, error code : "
+  },
+  {
+    "offset": "0x4dfa90",
+    "encoding": "ascii",
+    "text": "Resetting CPL_NVAPI_INITIALIZATION_FAILURE event failed, error code : "
+  },
+  {
+    "offset": "0x4dfbc8",
+    "encoding": "ascii",
+    "text": "NvAPI_Initialize failed with error : "
+  },
+  {
+    "offset": "0x4dfc10",
+    "encoding": "ascii",
+    "text": "Setting CPL_NVAPI_INITIALIZATION_FAILURE event failed, error code : "
+  },
+  {
+    "offset": "0x4dfd40",
+    "encoding": "ascii",
+    "text": "NvAPI_Unload start"
+  },
+  {
+    "offset": "0x4dfd58",
+    "encoding": "ascii",
+    "text": "NvAPI_Unload "
+  },
+  {
+    "offset": "0x4ebbf0",
+    "encoding": "ascii",
+    "text": "nvapi_QueryInterface"
+  },
+  {
+    "offset": "0x4ebc08",
+    "encoding": "ascii",
+    "text": "nvapi_Direct_GetMethod"
+  },
+  {
+    "offset": "0x518f58",
+    "encoding": "ascii",
+    "text": "RTSSHooksLoader64.exe"
+  },
+  {
+    "offset": "0x522ca0",
+    "encoding": "ascii",
+    "text": "Unexpected failure of NvAPI function."
+  },
+  {
+    "offset": "0x523050",
+    "encoding": "ascii",
+    "text": "NvAPI_DISP_GetSourceModeSet called. Source Mode Count::"
+  },
+  {
+    "offset": "0x523210",
+    "encoding": "ascii",
+    "text": "NvAPI_DISP_GetSourceModeSet called"
+  },
+  {
+    "offset": "0x5264b0",
+    "encoding": "ascii",
+    "text": "enum _NvAPI_Status __cdecl Nvidia::UXDriver::ApiX::Features::NvAPICache::GetDisplayConfig(unsigned __int64 &,class boost::shared_array<struct _NV_DISPLAYCONFIG_PATH_INFO_V3> &)"
+  },
+  {
+    "offset": "0x526570",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\uxd\\Features\\ApiWrappers\\NvAPICache.cpp"
+  },
+  {
+    "offset": "0x529c90",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x529d80",
+    "encoding": "ascii",
+    "text": "nvPluginInfo->startProc Failed "
+  },
+  {
+    "offset": "0x529da0",
+    "encoding": "ascii",
+    "text": "pfnNvPluginGetInfo Failed "
+  },
+  {
+    "offset": "0x529e18",
+    "encoding": "ascii",
+    "text": "nvPluginInfo->stopProc Failed "
+  },
+  {
+    "offset": "0x52b808",
+    "encoding": "ascii",
+    "text": "NVAPI Failed NvAPI_GPU_NVLINK_GetBridgeEEPROMStatus() status: "
+  },
+  {
+    "offset": "0x52c2d8",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_GetSerialNumber failed for GPU : "
+  },
+  {
+    "offset": "0x52c530",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::ApiX::NvAPIUtility::BusyRepeatSupported<class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvPhysicalGpuHandle__ *,unsigned long *,unsigned long *,unsigned long *),class boost::_bi::list<class boost::_bi::value<struct NvPhysicalGpuHandle__ *>,class boost::_bi::value<unsigned long *>,class boost::_bi::value<unsigned long *>,class boost::_bi::value<unsigned long *> > >>(class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvPhysicalGpuHandle__ *,unsigned long *,unsigned long *,unsigned long *),class boost::_bi::list<class boost::_bi::value<struct NvPhysicalGpuHandle__ *>,class boost::_bi::value<unsigned long *>,class boost::_bi::value<unsigned long *>,class boost::_bi::value<unsigned long *> > >,const wchar_t *)"
+  },
+  {
+    "offset": "0x52c860",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\uxd\\Features\\ApiWrappers\\NvapiUtility.h"
+  },
+  {
+    "offset": "0x52c8c0",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::ApiX::NvAPIUtility::BusyRepeatSupported<class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvPhysicalGpuHandle__ *,unsigned long *),class boost::_bi::list<class boost::_bi::value<struct NvPhysicalGpuHandle__ *>,class boost::_bi::value<unsigned long *> > >>(class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvPhysicalGpuHandle__ *,unsigned long *),class boost::_bi::list<class boost::_bi::value<struct NvPhysicalGpuHandle__ *>,class boost::_bi::value<unsigned long *> > >,const wchar_t *)"
+  },
+  {
+    "offset": "0x52cf00",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::ApiX::NvAPIUtility::BusyRepeatSupported<class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvPhysicalGpuHandle__ *,struct NV_COPROC_INFO_V7 *),class boost::_bi::list<class boost::_bi::value<struct NvPhysicalGpuHandle__ *>,class boost::_bi::value<struct NV_COPROC_INFO_V7 *> > >>(class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvPhysicalGpuHandle__ *,struct NV_COPROC_INFO_V7 *),class boost::_bi::list<class boost::_bi::value<struct NvPhysicalGpuHandle__ *>,class boost::_bi::value<struct NV_COPROC_INFO_V7 *> > >,const wchar_t *)"
+  },
+  {
+    "offset": "0x52d320",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::ApiX::NvAPIUtility::BusyRepeatSupported<class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvPhysicalGpuHandle__ *,struct NV_GPU_SKU_INFO_V3 *),class boost::_bi::list<class boost::_bi::value<struct NvPhysicalGpuHandle__ *>,class boost::_bi::value<struct NV_GPU_SKU_INFO_V3 *> > >>(class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvPhysicalGpuHandle__ *,struct NV_GPU_SKU_INFO_V3 *),class boost::_bi::list<class boost::_bi::value<struct NvPhysicalGpuHandle__ *>,class boost::_bi::value<struct NV_GPU_SKU_INFO_V3 *> > >,const wchar_t *)"
+  },
+  {
+    "offset": "0x532e58",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_GetPhysicalGPUs() succeded"
+  },
+  {
+    "offset": "0x533000",
+    "encoding": "ascii",
+    "text": "class std::vector<struct NvPhysicalGpuHandle__ *,class std::allocator<struct NvPhysicalGpuHandle__ *> > __cdecl Nvidia::UXDriver::ApiX::Features::PhysicalStructure::GetTccGpusFromNvAPI(void)"
+  },
+  {
+    "offset": "0x5371a0",
+    "encoding": "ascii",
+    "text": "NvAPI_DISP_SetDisplayMux responseAssigned: "
+  },
+  {
+    "offset": "0x5388a0",
+    "encoding": "ascii",
+    "text": "NvAPI_DISP_GetSourceModeSet  called, Source Mode Count::"
+  },
+  {
+    "offset": "0x53a9c0",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::ApiX::NvAPIUtility::BusyRepeatSupported<class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct _NV_COMPUTE_GPU_TOPOLOGY_V2 *,struct NV_GPU_TOPOLOGIES *,unsigned long,struct _NV_DISPLAYCONFIG_PATH_INFO_V3 *),class boost::_bi::list<class boost::_bi::value<struct _NV_COMPUTE_GPU_TOPOLOGY_V2 *>,class boost::_bi::value<struct NV_GPU_TOPOLOGIES *>,class boost::_bi::value<unsigned long>,class boost::_bi::value<struct _NV_DISPLAYCONFIG_PATH_INFO_V3 *> > >>(class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct _NV_COMPUTE_GPU_TOPOLOGY_V2 *,struct NV_GPU_TOPOLOGIES *,unsigned long,struct _NV_DISPLAYCONFIG_PATH_INFO_V3 *),class boost::_bi::list<class boost::_bi::value<struct _NV_COMPUTE_GPU_TOPOLOGY_V2 *>,class boost::_bi::value<struct NV_GPU_TOPOLOGIES *>,class boost::_bi::value<unsigned long>,class boost::_bi::value<struct _NV_DISPLAYCONFIG_PATH_INFO_V3 *> > >,const wchar_t *)"
+  },
+  {
+    "offset": "0x53ad90",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::ApiX::NvAPIUtility::BusyRepeatSupported<class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(enum _NV_HYBRID_MODE *),class boost::_bi::list<class boost::_bi::value<enum _NV_HYBRID_MODE *> > >>(class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(enum _NV_HYBRID_MODE *),class boost::_bi::list<class boost::_bi::value<enum _NV_HYBRID_MODE *> > >,const wchar_t *)"
+  },
+  {
+    "offset": "0x53dba0",
+    "encoding": "ascii",
+    "text": "void __cdecl Nvidia::UXDriver::ApiX::Features::VideoSettings::SetActiveVideoDevice(struct NvDisplayHandle__ *,enum _NVAPI_ACTIVE_VIDEO_DEVICE,unsigned long)"
+  },
+  {
+    "offset": "0x53e100",
+    "encoding": "ascii",
+    "text": "void __cdecl Nvidia::UXDriver::ApiX::Features::VideoSettings::GetVideoSetting(struct _NVAPI_GET_VIDEO_STATE_COMPONENT_EX &,const class Nvidia::UXDriver::Source &,unsigned long,unsigned long)"
+  },
+  {
+    "offset": "0x53e310",
+    "encoding": "ascii",
+    "text": "void __cdecl Nvidia::UXDriver::ApiX::Features::VideoSettings::SetVideoSetting(struct _NVAPI_SET_VIDEO_STATE_COMPONENT_EX &,struct NvDisplayHandle__ *,unsigned long,unsigned long)"
+  },
+  {
+    "offset": "0x540100",
+    "encoding": "ascii",
+    "text": "NVAPI reports HDMIStereoModes are not available"
+  },
+  {
+    "offset": "0x542650",
+    "encoding": "ascii",
+    "text": "NVAPI reports TvEncoder controls as not supported"
+  },
+  {
+    "offset": "0x542890",
+    "encoding": "ascii",
+    "text": " NvAPI_GetDisplayPortInfo() for outputID = "
+  },
+  {
+    "offset": "0x5431e0",
+    "encoding": "ascii",
+    "text": " NvAPI_GetHDMISupportInfo() : info.isYCbCr422SupportedOnCurrentMode = "
+  },
+  {
+    "offset": "0x543980",
+    "encoding": "ascii",
+    "text": " Valid color combination number (NVAPI Values) "
+  },
+  {
+    "offset": "0x544f40",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::ApiX::NvAPIUtility::BusyRepeatSupported<class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvDisplayHandle__ *,unsigned long,struct NV_DISPLAY_HUE_INFO *),class boost::_bi::list<class boost::_bi::value<struct NvDisplayHandle__ *>,class boost::_bi::value<unsigned long>,class boost::_bi::value<struct NV_DISPLAY_HUE_INFO *> > >>(class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvDisplayHandle__ *,unsigned long,struct NV_DISPLAY_HUE_INFO *),class boost::_bi::list<class boost::_bi::value<struct NvDisplayHandle__ *>,class boost::_bi::value<unsigned long>,class boost::_bi::value<struct NV_DISPLAY_HUE_INFO *> > >,const wchar_t *)"
+  },
+  {
+    "offset": "0x545220",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::ApiX::NvAPIUtility::BusyRepeatSupported<class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvDisplayHandle__ *,unsigned long,struct NV_DISPLAY_DVC_INFO_EX *),class boost::_bi::list<class boost::_bi::value<struct NvDisplayHandle__ *>,class boost::_bi::value<unsigned long>,class boost::_bi::value<struct NV_DISPLAY_DVC_INFO_EX *> > >>(class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvDisplayHandle__ *,unsigned long,struct NV_DISPLAY_DVC_INFO_EX *),class boost::_bi::list<class boost::_bi::value<struct NvDisplayHandle__ *>,class boost::_bi::value<unsigned long>,class boost::_bi::value<struct NV_DISPLAY_DVC_INFO_EX *> > >,const wchar_t *)"
+  },
+  {
+    "offset": "0x5460b0",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::ApiX::NvAPIUtility::BusyRepeatSupported<class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct _NV_VIO_TOPOLOGY *),class boost::_bi::list<class boost::_bi::value<struct _NV_VIO_TOPOLOGY *> > >>(class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct _NV_VIO_TOPOLOGY *),class boost::_bi::list<class boost::_bi::value<struct _NV_VIO_TOPOLOGY *> > >,const wchar_t *)"
+  },
+  {
+    "offset": "0x54a660",
+    "encoding": "ascii",
+    "text": "Upscaling : NvAPI_DISP_GetHyperSamplingSettings returned NVAPI_NOT_SUPPORTED"
+  },
+  {
+    "offset": "0x54aab8",
+    "encoding": "ascii",
+    "text": "Lagcy DSR nvapi Set failed."
+  },
+  {
+    "offset": "0x54acd0",
+    "encoding": "ascii",
+    "text": "DLDSR nvapi Set failed."
+  },
+  {
+    "offset": "0x54b010",
+    "encoding": "ascii",
+    "text": "Smooth scaling : NvAPI_DISP_GetHyperSamplingSettings returned NVAPI_NOT_SUPPORTED"
+  },
+  {
+    "offset": "0x54d1c0",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::ApiX::NvAPIUtility::BusyRepeatSupported<class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(unsigned char *),class boost::_bi::list<class boost::_bi::value<unsigned char *> > >>(class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(unsigned char *),class boost::_bi::list<class boost::_bi::value<unsigned char *> > >,const wchar_t *)"
+  },
+  {
+    "offset": "0x5538f0",
+    "encoding": "ascii",
+    "text": "NvAPI_Disp_GSyncPulsarControl SET status: "
+  },
+  {
+    "offset": "0x553a70",
+    "encoding": "ascii",
+    "text": "Calling NvAPI_Disp_GSyncPulsarControl SET displayId: "
+  },
+  {
+    "offset": "0x553ac8",
+    "encoding": "ascii",
+    "text": "NvAPI_Disp_AmbientLightControl SET status: "
+  },
+  {
+    "offset": "0x553d58",
+    "encoding": "ascii",
+    "text": "Calling NvAPI_Disp_AmbientLightControl SET displayId: "
+  },
+  {
+    "offset": "0x553fb0",
+    "encoding": "ascii",
+    "text": "Calling NvAPI_Disp_GetGSyncPulsarDynamicCaps displayId: "
+  },
+  {
+    "offset": "0x553ff0",
+    "encoding": "ascii",
+    "text": "NvAPI_Disp_GetGSyncPulsarDynamicCaps status: "
+  },
+  {
+    "offset": "0x5540e8",
+    "encoding": "ascii",
+    "text": "Calling NvAPI_Disp_GetGSyncPulsarStaticCaps displayId: "
+  },
+  {
+    "offset": "0x554120",
+    "encoding": "ascii",
+    "text": "NvAPI_Disp_GetGSyncPulsarStaticCaps status: "
+  },
+  {
+    "offset": "0x5542b0",
+    "encoding": "ascii",
+    "text": "Calling NvAPI_Disp_GSyncPulsarControl GET displayId: "
+  },
+  {
+    "offset": "0x5542e8",
+    "encoding": "ascii",
+    "text": "NvAPI_Disp_GSyncPulsarControl GET status: "
+  },
+  {
+    "offset": "0x554d00",
+    "encoding": "ascii",
+    "text": "Calling NvAPI_Disp_AmbientLightControl GET displayId: "
+  },
+  {
+    "offset": "0x554d38",
+    "encoding": "ascii",
+    "text": "NvAPI_Disp_AmbientLightControl GET status: "
+  },
+  {
+    "offset": "0x555400",
+    "encoding": "ascii",
+    "text": "void __cdecl Nvidia::UXDriver::ApiX::Features::GSyncSettingsWrapper::GetGSyncTopologyNvAPIWrapper(struct NvGSyncDeviceHandle__ *,unsigned long *,struct _NV_GSYNC_GPU *,unsigned long *,struct _NV_GSYNC_DISPLAY_V2 *)"
+  },
+  {
+    "offset": "0x555790",
+    "encoding": "ascii",
+    "text": "void __cdecl Nvidia::UXDriver::ApiX::Features::GSyncSettingsWrapper::SetGSyncStateNvAPIWrapper(unsigned long,struct _NV_GSYNC_DISPLAY_V2 *,unsigned long)"
+  },
+  {
+    "offset": "0x5567e0",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::ApiX::NvAPIUtility::BusyRepeatSupported<class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvVisualComputingDeviceHandle__ *,struct NvGSyncDeviceHandle__ * * const,unsigned long *),class boost::_bi::list<class boost::_bi::value<struct NvVisualComputingDeviceHandle__ *>,class boost::_bi::value<struct NvGSyncDeviceHandle__ * *>,class boost::_bi::value<unsigned long *> > >>(class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvVisualComputingDeviceHandle__ *,struct NvGSyncDeviceHandle__ * * const,unsigned long *),class boost::_bi::list<class boost::_bi::value<struct NvVisualComputingDeviceHandle__ *>,class boost::_bi::value<struct NvGSyncDeviceHandle__ * *>,class boost::_bi::value<unsigned long *> > >,const wchar_t *)"
+  },
+  {
+    "offset": "0x5585b0",
+    "encoding": "ascii",
+    "text": "nvapiStatus= "
+  },
+  {
+    "offset": "0x558648",
+    "encoding": "ascii",
+    "text": "NvAPI_CUDA_EnumComputeCapableByTopology flags= "
+  },
+  {
+    "offset": "0x558798",
+    "encoding": "ascii",
+    "text": "NvAPI_CUDA_PhysxSetState(hPhysxGpu["
+  },
+  {
+    "offset": "0x558bd0",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::ApiX::NvAPIUtility::BusyRepeatSupported<class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct _NV_COMPUTE_GPU_TOPOLOGY_V2 *,struct NV_GPU_TOPOLOGIES *,unsigned long,struct _NV_DISPLAYCONFIG_PATH_INFO_V3 *),class boost::_bi::list<class boost::_bi::value<struct _NV_COMPUTE_GPU_TOPOLOGY_V2 *>,class boost::_bi::value<struct NV_GPU_TOPOLOGIES *>,class boost::_bi::value<int>,class boost::_bi::value<struct _NV_DISPLAYCONFIG_PATH_INFO_V3 *> > >>(class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct _NV_COMPUTE_GPU_TOPOLOGY_V2 *,struct NV_GPU_TOPOLOGIES *,unsigned long,struct _NV_DISPLAYCONFIG_PATH_INFO_V3 *),class boost::_bi::list<class boost::_bi::value<struct _NV_COMPUTE_GPU_TOPOLOGY_V2 *>,class boost::_bi::value<struct NV_GPU_TOPOLOGIES *>,class boost::_bi::value<int>,class boost::_bi::value<struct _NV_DISPLAYCONFIG_PATH_INFO_V3 *> > >,const wchar_t *)"
+  },
+  {
+    "offset": "0x559a80",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::ApiX::NvAPIUtility::BusyRepeatSupported<class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvPhysicalGpuHandle__ *,unsigned long,struct NV_GPU_THERMAL_SETTINGS_V2 *),class boost::_bi::list<class boost::_bi::value<struct NvPhysicalGpuHandle__ *>,class boost::_bi::value<enum NV_THERMAL_TARGET>,class boost::_bi::value<struct NV_GPU_THERMAL_SETTINGS_V2 *> > >>(class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvPhysicalGpuHandle__ *,unsigned long,struct NV_GPU_THERMAL_SETTINGS_V2 *),class boost::_bi::list<class boost::_bi::value<struct NvPhysicalGpuHandle__ *>,class boost::_bi::value<enum NV_THERMAL_TARGET>,class boost::_bi::value<struct NV_GPU_THERMAL_SETTINGS_V2 *> > >,const wchar_t *)"
+  },
+  {
+    "offset": "0x55a900",
+    "encoding": "ascii",
+    "text": "class boost::optional<struct NV_AUDIO_STREAMS> __cdecl Nvidia::UXDriver::ApiX::Features::AudioInformationWrapper::GetNvApiAudioStream(const class Nvidia::UXDriver::Output &,class std::map<unsigned long,struct NV_GET_AUDIO_STREAMS_V1,struct std::less<unsigned long>,class std::allocator<struct std::pair<unsigned long const ,struct NV_GET_AUDIO_STREAMS_V1> > > &)"
+  },
+  {
+    "offset": "0x55b3a0",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::ApiX::NvAPIUtility::BusyRepeatSupported<class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvPhysicalGpuHandle__ *,struct NV_GPU_ECC_STATUS_INFO *),class boost::_bi::list<class boost::_bi::value<struct NvPhysicalGpuHandle__ *>,class boost::_bi::value<struct NV_GPU_ECC_STATUS_INFO *> > >>(class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvPhysicalGpuHandle__ *,struct NV_GPU_ECC_STATUS_INFO *),class boost::_bi::list<class boost::_bi::value<struct NvPhysicalGpuHandle__ *>,class boost::_bi::value<struct NV_GPU_ECC_STATUS_INFO *> > >,const wchar_t *)"
+  },
+  {
+    "offset": "0x55c960",
+    "encoding": "ascii",
+    "text": "void __cdecl Nvidia::UXDriver::ApiX::Features::Stereo3DVisionStateWrapper::UpdateChannelInfoMetadata(class Nvidia::UXDriver::ApiX::ApiXModelSlice &,class Nvidia::UXDriver::Transceiver &,const NVAPI_3DVP_TRANSCEIVER_INFO &)"
+  },
+  {
+    "offset": "0x55d660",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::ApiX::NvAPIUtility::BusyRepeatSupported<class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct Nv3DVPContextHandle__ *,struct Nv3DVPTransceiverHandle__ *,unsigned long *),class boost::_bi::list<class boost::_bi::value<struct Nv3DVPContextHandle__ *>,class boost::_bi::value<struct Nv3DVPTransceiverHandle__ *>,class boost::_bi::value<unsigned long *> > >>(class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct Nv3DVPContextHandle__ *,struct Nv3DVPTransceiverHandle__ *,unsigned long *),class boost::_bi::list<class boost::_bi::value<struct Nv3DVPContextHandle__ *>,class boost::_bi::value<struct Nv3DVPTransceiverHandle__ *>,class boost::_bi::value<unsigned long *> > >,const wchar_t *)"
+  },
+  {
+    "offset": "0x55f1c0",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::ApiX::NvAPIUtility::BusyRepeatSupported<class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvPhysicalGpuHandle__ *,struct NV_GPU_PERF_PSTATES_INFO_V2 *),class boost::_bi::list<class boost::_bi::value<struct NvPhysicalGpuHandle__ *>,class boost::_bi::value<struct NV_GPU_PERF_PSTATES_INFO_V2 *> > >>(class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvPhysicalGpuHandle__ *,struct NV_GPU_PERF_PSTATES_INFO_V2 *),class boost::_bi::list<class boost::_bi::value<struct NvPhysicalGpuHandle__ *>,class boost::_bi::value<struct NV_GPU_PERF_PSTATES_INFO_V2 *> > >,const wchar_t *)"
+  },
+  {
+    "offset": "0x561250",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::ApiX::NvAPIUtility::BusyRepeatSupported<class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NV_CHIPSET_INFO_v4 *),class boost::_bi::list<class boost::_bi::value<struct NV_CHIPSET_INFO_v4 *> > >>(class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NV_CHIPSET_INFO_v4 *),class boost::_bi::list<class boost::_bi::value<struct NV_CHIPSET_INFO_v4 *> > >,const wchar_t *)"
+  },
+  {
+    "offset": "0x561be0",
+    "encoding": "ascii",
+    "text": "RID62152 - call NvAPI_DISP_SetMergedDisplaysTopology() for gpu:"
+  },
+  {
+    "offset": "0x561d90",
+    "encoding": "ascii",
+    "text": "NvAPI_DISP_SetMergedDisplaysTopology For Scaling and Region is failed with "
+  },
+  {
+    "offset": "0x561f90",
+    "encoding": "ascii",
+    "text": "NvAPI_DISP_SetMergedDisplaysTopology is failed with "
+  },
+  {
+    "offset": "0x563010",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::ApiX::NvAPIUtility::BusyRepeatSupported<class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NV_HCLONE_TOPOLOGY_V1 *),class boost::_bi::list<class boost::_bi::value<struct NV_HCLONE_TOPOLOGY_V1 *> > >>(class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NV_HCLONE_TOPOLOGY_V1 *),class boost::_bi::list<class boost::_bi::value<struct NV_HCLONE_TOPOLOGY_V1 *> > >,const wchar_t *)"
+  },
+  {
+    "offset": "0x564e40",
+    "encoding": "ascii",
+    "text": "enum _NvAPI_Status __cdecl Nvidia::UXDriver::ApiX::Features::DisplayConfigUtil::DisplayNoneRepeat<class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(unsigned long *,struct _NV_DISPLAYCONFIG_PATH_INFO_V3 *),class boost::_bi::list<class boost::_bi::value<unsigned long *>,class boost::_bi::value<struct _NV_DISPLAYCONFIG_PATH_INFO_V3 *> > >>(class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(unsigned long *,struct _NV_DISPLAYCONFIG_PATH_INFO_V3 *),class boost::_bi::list<class boost::_bi::value<unsigned long *>,class boost::_bi::value<struct _NV_DISPLAYCONFIG_PATH_INFO_V3 *> > >,const wchar_t *)"
+  },
+  {
+    "offset": "0x5671a0",
+    "encoding": "ascii",
+    "text": "Nvapi to Ccd path Conversion failed, so we dont do any modeset"
+  },
+  {
+    "offset": "0x568680",
+    "encoding": "ascii",
+    "text": "smartmax failure hook error notify"
+  },
+  {
+    "offset": "0x56a3e0",
+    "encoding": "ascii",
+    "text": "NvAPI_DISP_SetAdaptiveSyncData :: "
+  },
+  {
+    "offset": "0x56ae90",
+    "encoding": "ascii",
+    "text": "before hooking smartmax"
+  },
+  {
+    "offset": "0x56b318",
+    "encoding": "ascii",
+    "text": "Cursor Position Sending to NVAPI: "
+  },
+  {
+    "offset": "0x56ffc0",
+    "encoding": "ascii",
+    "text": " NvAPI_DISP_SetDisplayConfig failed to do null modeset"
+  },
+  {
+    "offset": "0x5700a0",
+    "encoding": "ascii",
+    "text": " NvAPI_DISP_GetDisplayConfig failed "
+  },
+  {
+    "offset": "0x5727f0",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::ApiX::NvAPIUtility::BusyRepeatSupported<class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvPhysicalGpuHandle__ *,unsigned long),class boost::_bi::list<class boost::_bi::value<struct NvPhysicalGpuHandle__ *>,class boost::_bi::value<int> > >>(class boost::_bi::bind_t<enum _NvAPI_Status,enum _NvAPI_Status (__cdecl*)(struct NvPhysicalGpuHandle__ *,unsigned long),class boost::_bi::list<class boost::_bi::value<struct NvPhysicalGpuHandle__ *>,class boost::_bi::value<int> > >,const wchar_t *)"
+  },
+  {
+    "offset": "0x5751a0",
+    "encoding": "ascii",
+    "text": "fetched from nvapi not found in mdtl table"
+  },
+  {
+    "offset": "0x575270",
+    "encoding": "ascii",
+    "text": "NvAPI_SYS_GetMDTLData() returned 0 valid acpiId combinations"
+  },
+  {
+    "offset": "0x576658",
+    "encoding": "ascii",
+    "text": "NvAPI_GPU_MapGpuTimestampToUsermode returned status = "
+  },
+  {
+    "offset": "0x5791b1",
+    "encoding": "ascii",
+    "text": " NvAPI_GPU_GetPerGpuRegistryPath"
+  },
+  {
+    "offset": "0x581e40",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::Utility::DisplayConfigPersistenceImplementor::GetPersistenceKeyId(struct HKEY__ *,const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &,const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &,class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &,bool)"
+  },
+  {
+    "offset": "0x582300",
+    "encoding": "ascii",
+    "text": "class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > __cdecl Nvidia::UXDriver::Utility::DisplayConfigPersistenceImplementor::GetRegKeyPathToWriteRecord(struct HKEY__ *,const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &)"
+  },
+  {
+    "offset": "0x5829d0",
+    "encoding": "ascii",
+    "text": "void __cdecl Nvidia::UXDriver::Utility::DisplayConfigPersistenceImplementor::AssociateKeyWithKeyIdInRegistry(struct HKEY__ *,const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &,const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &,const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &)"
+  },
+  {
+    "offset": "0x5838f0",
+    "encoding": "ascii",
+    "text": "class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > __cdecl Nvidia::UXDriver::Utility::SpanPersistenceImplementor::GetRegKeyPathToWriteRecord(struct HKEY__ *,const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &,enum Nvidia::UXDriver::Utility::SpanPersistenceImplementor::QueryType)"
+  },
+  {
+    "offset": "0x583aa0",
+    "encoding": "ascii",
+    "text": "bool __cdecl Nvidia::UXDriver::Utility::SpanPersistenceImplementor::GetPersistenceKeyId(struct HKEY__ *,const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &,const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &,class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &,bool)"
+  },
+  {
+    "offset": "0x633a88",
+    "encoding": "ascii",
+    "text": "SetWinEventHook"
+  },
+  {
+    "offset": "0x633a9a",
+    "encoding": "ascii",
+    "text": "UnhookWinEvent"
+  },
+  {
+    "offset": "0x633e46",
+    "encoding": "ascii",
+    "text": "NVSetHooks"
+  },
+  {
+    "offset": "0x633e88",
+    "encoding": "ascii",
+    "text": "NVUnHook"
+  },
+  {
+    "offset": "0x635708",
+    "encoding": "ascii",
+    "text": "NvUiNvapiInit"
+  },
+  {
+    "offset": "0x6362b2",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeW"
+  },
+  {
+    "offset": "0x636a0c",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x6371f0",
+    "encoding": "ascii",
+    "text": "INvAPICache"
+  },
+  {
+    "offset": "0x638b68",
+    "encoding": "ascii",
+    "text": ".?AW4_NvAPI_Status@@"
+  },
+  {
+    "offset": "0x63a690",
+    "encoding": "ascii",
+    "text": ".?AVNvAPIException@ApiX@UXDriver@Nvidia@@"
+  },
+  {
+    "offset": "0x63a6d0",
+    "encoding": "ascii",
+    "text": ".PEAUtag_NvAPI_Status@ApiX@UXDriver@Nvidia@@"
+  },
+  {
+    "offset": "0x63a710",
+    "encoding": "ascii",
+    "text": ".?AV?$error_info@Utag_NvAPI_Status@ApiX@UXDriver@Nvidia@@W4_NvAPI_Status@@@boost@@"
+  },
+  {
+    "offset": "0x63a8e0",
+    "encoding": "ascii",
+    "text": ".?AUtype@?$wrapexcept_add_base@VNvAPIException@ApiX@UXDriver@Nvidia@@Vexception@boost@@$00@detail@boost@@"
+  },
+  {
+    "offset": "0x63a960",
+    "encoding": "ascii",
+    "text": ".?AU?$wrapexcept@VNvAPIException@ApiX@UXDriver@Nvidia@@@boost@@"
+  },
+  {
+    "offset": "0x63aee0",
+    "encoding": "ascii",
+    "text": ".?AW4NvPluginResult_t@@"
+  },
+  {
+    "offset": "0x63b310",
+    "encoding": "ascii",
+    "text": ".P6AXVVideoSettingLevel@UXDriver@Nvidia@@AEAU_NVAPI_SET_VIDEO_STATE_COMPONENT_EX@@@Z"
+  },
+  {
+    "offset": "0x63b380",
+    "encoding": "ascii",
+    "text": ".?AV?$bind_t@XP6AXPEBW4VideoLevel@@_KVVideoSettingLevel@UXDriver@Nvidia@@AEBU_NVAPI_GET_VIDEO_STATE_COMPONENT_EX@@@ZV?$list@V?$value@PEBW4VideoLevel@@@_bi@boost@@V?$value@_K@23@U?$arg@$00@3@U?$arg@$01@3@@_bi@boost@@@_bi@boost@@"
+  },
+  {
+    "offset": "0x63b480",
+    "encoding": "ascii",
+    "text": ".?AV?$bind_t@XP6AX_KVVideoSettingLong@UXDriver@Nvidia@@AEAU_NVAPI_SET_VIDEO_STATE_COMPONENT_EX@@@ZV?$list@V?$value@H@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@@_bi@boost@@@_bi@boost@@"
+  },
+  {
+    "offset": "0x63b550",
+    "encoding": "ascii",
+    "text": ".P6AXVVideoSettingLong@UXDriver@Nvidia@@AEBU_NVAPI_GET_VIDEO_STATE_COMPONENT_EX@@@Z"
+  },
+  {
+    "offset": "0x63b5c0",
+    "encoding": "ascii",
+    "text": ".P6AXVVideoSettingInverseTelecine@UXDriver@Nvidia@@AEAU_NVAPI_SET_VIDEO_STATE_COMPONENT_EX@@@Z"
+  },
+  {
+    "offset": "0x63b630",
+    "encoding": "ascii",
+    "text": ".?AV?$bind_t@XP6AXPEBW4VideoInverseTelecine@@_KVVideoSettingInverseTelecine@UXDriver@Nvidia@@AEBU_NVAPI_GET_VIDEO_STATE_COMPONENT_EX@@@ZV?$list@V?$value@PEBW4VideoInverseTelecine@@@_bi@boost@@V?$value@_K@23@U?$arg@$00@3@U?$arg@$01@3@@_bi@boost@@@_bi@boost@@"
+  },
+  {
+    "offset": "0x63b750",
+    "encoding": "ascii",
+    "text": ".P6AXVVideoSettingSkinTone@UXDriver@Nvidia@@AEAU_NVAPI_SET_VIDEO_STATE_COMPONENT_EX@@@Z"
+  },
+  {
+    "offset": "0x63b7c0",
+    "encoding": "ascii",
+    "text": ".?AV?$bind_t@XP6AXPEBW4VideoSkinTone@@_KVVideoSettingSkinTone@UXDriver@Nvidia@@AEBU_NVAPI_GET_VIDEO_STATE_COMPONENT_EX@@@ZV?$list@V?$value@PEBW4VideoSkinTone@@@_bi@boost@@V?$value@_K@23@U?$arg@$00@3@U?$arg@$01@3@@_bi@boost@@@_bi@boost@@"
+  },
+  {
+    "offset": "0x63b8c0",
+    "encoding": "ascii",
+    "text": ".P6AXVVideoSettingTrueHDR@UXDriver@Nvidia@@AEAU_NVAPI_SET_VIDEO_STATE_COMPONENT_EX@@@Z"
+  },
+  {
+    "offset": "0x63b930",
+    "encoding": "ascii",
+    "text": ".?AV?$bind_t@XP6AXPEBW4VideoTrueHDR@@_KVVideoSettingTrueHDR@UXDriver@Nvidia@@AEBU_NVAPI_GET_VIDEO_STATE_COMPONENT_EX@@@ZV?$list@V?$value@PEBW4VideoTrueHDR@@@_bi@boost@@V?$value@_K@23@U?$arg@$00@3@U?$arg@$01@3@@_bi@boost@@@_bi@boost@@"
+  },
+  {
+    "offset": "0x63ba30",
+    "encoding": "ascii",
+    "text": ".P6AXVVideoSettingSuperResolution@UXDriver@Nvidia@@AEAU_NVAPI_SET_VIDEO_STATE_COMPONENT_EX@@@Z"
+  },
+  {
+    "offset": "0x63baa0",
+    "encoding": "ascii",
+    "text": ".?AV?$bind_t@XP6AXPEBW4VideoSuperResolution@@_KVVideoSettingSuperResolution@UXDriver@Nvidia@@AEBU_NVAPI_GET_VIDEO_STATE_COMPONENT_EX@@@ZV?$list@V?$value@PEBW4VideoSuperResolution@@@_bi@boost@@V?$value@_K@23@U?$arg@$00@3@U?$arg@$01@3@@_bi@boost@@@_bi@boost@@"
+  },
+  {
+    "offset": "0x63bbc0",
+    "encoding": "ascii",
+    "text": ".P6AXVVideoSettingFloat@UXDriver@Nvidia@@AEAU_NVAPI_SET_VIDEO_STATE_COMPONENT_EX@@@Z"
+  },
+  {
+    "offset": "0x63bc30",
+    "encoding": "ascii",
+    "text": ".P6AXVVideoSettingFloat@UXDriver@Nvidia@@AEBU_NVAPI_GET_VIDEO_STATE_COMPONENT_EX@@@Z"
+  },
+  {
+    "offset": "0x63bca0",
+    "encoding": "ascii",
+    "text": ".P6AXVVideoSettingSRGpuUtilization@UXDriver@Nvidia@@AEAU_NVAPI_SET_VIDEO_STATE_COMPONENT_EX@@@Z"
+  },
+  {
+    "offset": "0x63bd10",
+    "encoding": "ascii",
+    "text": ".?AV?$bind_t@XP6AXPEBW4VideoSRGpuUtilization@@_KVVideoSettingSRGpuUtilization@UXDriver@Nvidia@@AEBU_NVAPI_GET_VIDEO_STATE_COMPONENT_EX@@@ZV?$list@V?$value@PEBW4VideoSRGpuUtilization@@@_bi@boost@@V?$value@_K@23@U?$arg@$00@3@U?$arg@$01@3@@_bi@boost@@@_bi@boost@@"
+  },
+  {
+    "offset": "0x63be30",
+    "encoding": "ascii",
+    "text": ".?AV?$bind_t@XP6AX_KVVideoSettingLong@UXDriver@Nvidia@@AEAU_NVAPI_SET_VIDEO_STATE_COMPONENT_EX@@@ZV?$list@V?$value@W4_NVAPI_VIDEO_COMPONENT_ALGORITHM@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@@_bi@boost@@@_bi@boost@@"
+  },
+  {
+    "offset": "0x63bf20",
+    "encoding": "ascii",
+    "text": ".?AV?$bind_t@XP6AX_K0VVideoSettingBoolean@UXDriver@Nvidia@@AEAU_NVAPI_SET_VIDEO_STATE_COMPONENT_EX@@@ZV?$list@V?$value@W4_NVAPI_VIDEO_COMPONENT_ALGORITHM@@@_bi@boost@@V123@U?$arg@$00@3@U?$arg@$01@3@@_bi@boost@@@_bi@boost@@"
+  },
+  {
+    "offset": "0x63c010",
+    "encoding": "ascii",
+    "text": ".?AV?$bind_t@XP6AX_KVVideoSettingBoolean@UXDriver@Nvidia@@AEBU_NVAPI_GET_VIDEO_STATE_COMPONENT_EX@@@ZV?$list@V?$value@W4_NVAPI_VIDEO_COMPONENT_ALGORITHM@@@_bi@boost@@U?$arg@$00@3@U?$arg@$01@3@@_bi@boost@@@_bi@boost@@"
+  },
+  {
+    "offset": "0x63cad0",
+    "encoding": "ascii",
+    "text": ".?AW4_NVAPI_GSYNC_RJ45_IO@@"
+  },
+  {
+    "offset": "0x63cb00",
+    "encoding": "ascii",
+    "text": ".?AW4_NVAPI_GSYNC_GPU_TOPOLOGY_CONNECTOR@@"
+  },
+  {
+    "offset": "0x63cb40",
+    "encoding": "ascii",
+    "text": ".?AW4_NVAPI_GSYNC_DISPLAY_SYNC_STATE@@"
+  },
+  {
+    "offset": "0x63cb78",
+    "encoding": "ascii",
+    "text": ".?AW4_NVAPI_GSYNC_VIDEO_MODE@@"
+  },
+  {
+    "offset": "0x63cba8",
+    "encoding": "ascii",
+    "text": ".?AW4_NVAPI_GSYNC_POLARITY@@"
+  },
+  {
+    "offset": "0x63cbd8",
+    "encoding": "ascii",
+    "text": ".?AW4_NVAPI_GSYNC_MULTIPLY_DIVIDE_MODE@@"
+  },
+  {
+    "offset": "0x63cc18",
+    "encoding": "ascii",
+    "text": ".?AW4_NVAPI_GSYNC_SYNC_SOURCE@@"
+  },
+  {
+    "offset": "0x63cf60",
+    "encoding": "ascii",
+    "text": ".?AU?$checked_array_deleter@UNVAPI_DISPLAY_DEVICE_INFO_V1@@@checked_deleters@boost@@"
+  },
+  {
+    "offset": "0x63f810",
+    "encoding": "ascii",
+    "text": ".?AUINvAPICache@@"
+  },
+  {
+    "offset": "0x63f860",
+    "encoding": "ascii",
+    "text": ".?AVCNvApixEngine@ApiX@UXDriver@Nvidia@@"
+  },
+  {
+    "offset": "0x63f8a0",
+    "encoding": "ascii",
+    "text": ".?AV?$CComCoClass@VCNvApixEngine@ApiX@UXDriver@Nvidia@@$1?CLSID_NvApixEngine@@3U_GUID@@B@ATL@@"
+  },
+  {
+    "offset": "0x63f910",
+    "encoding": "ascii",
+    "text": ".?AV?$IConnectionPointContainerImpl@VCNvApixEngine@ApiX@UXDriver@Nvidia@@@ATL@@"
+  },
+  {
+    "offset": "0x63f970",
+    "encoding": "ascii",
+    "text": ".?AV?$CProxyIStateEvents@VCNvApixEngine@ApiX@UXDriver@Nvidia@@@@"
+  },
+  {
+    "offset": "0x63f9d0",
+    "encoding": "ascii",
+    "text": ".?AV?$IConnectionPointImpl@VCNvApixEngine@ApiX@UXDriver@Nvidia@@$1?_GUID_8deef6be_6810_4817_956c_c54ae0b0ffac@@3U__s_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@"
+  },
+  {
+    "offset": "0x63faf0",
+    "encoding": "ascii",
+    "text": ".?AV?$CComObject@VCNvApixEngine@ApiX@UXDriver@Nvidia@@@ATL@@"
+  },
+  {
+    "offset": "0x63fcc0",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEAY0BD@$$CBDV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0CG@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x63fe70",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0O@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x6402d0",
+    "encoding": "ascii",
+    "text": ".?AV?$thread_data@V?$bind_t@XV?$mf@P8CNvApixEngine@ApiX@UXDriver@Nvidia@@EAAXXZXV1234@$$V@_mfi@boost@@V?$list@V?$value@PEAVCNvApixEngine@ApiX@UXDriver@Nvidia@@@_bi@boost@@@_bi@3@@_bi@boost@@@detail@boost@@"
+  },
+  {
+    "offset": "0x6403b0",
+    "encoding": "ascii",
+    "text": ".?AV?$sp_counted_impl_p@VUxdServiceController@CNvApixEngine@ApiX@UXDriver@Nvidia@@@detail@boost@@"
+  },
+  {
+    "offset": "0x6441e0",
+    "encoding": "ascii",
+    "text": ".?AV?$GenericSimpleLoggable@W4_NvAPI_Status@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x64e1e0",
+    "encoding": "ascii",
+    "text": ".?AV?$sp_counted_impl_p@V?$error_info@Utag_NvAPI_Status@ApiX@UXDriver@Nvidia@@W4_NvAPI_Status@@@boost@@@detail@boost@@"
+  },
+  {
+    "offset": "0x650a10",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0O@$$CB_WV?$Chain@AEBQEB_WV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x650ba0",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBVtime_duration@posix_time@boost@@V?$Chain@AEAY07$$CBDV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0O@$$CB_WV?$Chain@AEBQEB_WV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x651dd0",
+    "encoding": "ascii",
+    "text": ".?AVNvAPIStatusLoggable@?$LoggableTraits@W4_NvAPI_Status@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x655e10",
+    "encoding": "ascii",
+    "text": ".?AV?$GenericSimpleLoggable@W4NvPluginResult_t@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x656090",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4NvPluginResult_t@@V?$Chain@AEAY0BP@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x656160",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4NvPluginResult_t@@V?$Chain@AEAY0CA@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x658f30",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0L@$$CBDV?$Chain@AEBQEAUNvPhysicalGpuHandle__@@V?$Chain@AEAY0CM@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x659c30",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0DP@$$CBDV?$Chain@EV?$Chain@AEAY09$$CBDV?$Chain@AEBQEAUNvPhysicalGpuHandle__@@V?$Chain@AEAY0N@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x65b530",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0CB@$$CB_WV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x65b7a0",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0BN@$$CB_WV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x6687d0",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEAY0CJ@$$CB_WV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0DH@$$CB_WV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x668ab0",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEAY0BM@$$CB_WV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0CO@$$CB_WV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x66caa0",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0CG@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x66d150",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEAY0N@$$CBDV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0DB@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x66d260",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEAY0N@$$CBDV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0CO@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x66d370",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEAY0N@$$CBDV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0DG@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x66d580",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEAY0N@$$CBDV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0CP@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x66dd50",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEAY08$$CBDV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY08$$CBDV?$Chain@KV?$Chain@AEAY0DO@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x66e360",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0CK@$$CB_WV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x676c60",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEAY0BD@$$CBDV?$Chain@KV?$Chain@AEAY0BE@$$CBDV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY09$$CBDV?$Chain@_NV?$Chain@AEAY0BC@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x678a30",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0BI@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x67e930",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@KV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x67ed40",
+    "encoding": "ascii",
+    "text": ".?AV?$FormattedChainLoggable@V?$Chain@KV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@KV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x67efb0",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@KV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x67f360",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x67f400",
+    "encoding": "ascii",
+    "text": ".?AV?$FormattedChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@KV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x67f590",
+    "encoding": "ascii",
+    "text": ".?AV?$FormattedChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@KV?$Chain@KV?$Chain@KV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x67f690",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@KV?$Chain@KV?$Chain@KV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x67f7a0",
+    "encoding": "ascii",
+    "text": ".?AV?$FormattedChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x67f850",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@KV?$Chain@KV?$Chain@KV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x67f940",
+    "encoding": "ascii",
+    "text": ".?AV?$FormattedChainLoggable@V?$Chain@KV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x67fa10",
+    "encoding": "ascii",
+    "text": ".?AV?$FormattedChainLoggable@V?$Chain@KV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@KV?$Chain@KV?$Chain@KV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x67fb30",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x67fbf0",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEAY09$$CBDV?$Chain@KV?$Chain@AEAY0P@$$CBDV?$Chain@KV?$Chain@AEAY0BJ@$$CBDV?$Chain@KV?$Chain@AEAY0BC@$$CBDV?$Chain@KV?$Chain@AEAY0O@$$CBDV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0CM@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x680170",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEAY0BA@$$CBDV?$Chain@KV?$Chain@AEAY0BD@$$CBDV?$Chain@KV?$Chain@AEAY0BA@$$CBDV?$Chain@KV?$Chain@AEAY0O@$$CBDV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0CO@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x6805c0",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEAY0BA@$$CBDV?$Chain@KV?$Chain@AEAY0BD@$$CBDV?$Chain@KV?$Chain@AEAY0O@$$CBDV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0CO@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x680850",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEAY0L@$$CBDV?$Chain@KV?$Chain@AEAY0M@$$CBDV?$Chain@KV?$Chain@AEAY0O@$$CBDV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0CL@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x6809e0",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEAY0O@$$CBDV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0CM@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x680c30",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEAY0BE@$$CBDV?$Chain@KV?$Chain@AEAY0O@$$CBDV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0CN@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x680f00",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEAY0O@$$CBDV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0CL@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x6812e0",
+    "encoding": "ascii",
+    "text": ".?AV?$GenericSimpleLoggable@W4_NVAPI_GSYNC_RJ45_IO@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x6817a0",
+    "encoding": "ascii",
+    "text": ".?AV?$GenericSimpleLoggable@W4_NVAPI_GSYNC_SYNC_SOURCE@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x681800",
+    "encoding": "ascii",
+    "text": ".?AV?$GenericSimpleLoggable@W4_NVAPI_GSYNC_MULTIPLY_DIVIDE_MODE@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x681870",
+    "encoding": "ascii",
+    "text": ".?AV?$GenericSimpleLoggable@W4_NVAPI_GSYNC_POLARITY@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x6818d0",
+    "encoding": "ascii",
+    "text": ".?AV?$GenericSimpleLoggable@W4_NVAPI_GSYNC_VIDEO_MODE@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x681a00",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NVAPI_GSYNC_GPU_TOPOLOGY_CONNECTOR@@V?$Chain@AEAY0N@$$CB_WV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x681ae0",
+    "encoding": "ascii",
+    "text": ".?AV?$GenericSimpleLoggable@W4_NVAPI_GSYNC_DISPLAY_SYNC_STATE@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x681b50",
+    "encoding": "ascii",
+    "text": ".?AV?$GenericSimpleLoggable@W4_NVAPI_GSYNC_GPU_TOPOLOGY_CONNECTOR@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x681bc0",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NVAPI_GSYNC_DISPLAY_SYNC_STATE@@V?$Chain@AEAY0N@$$CB_WV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x682450",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEAY0N@$$CB_WV?$Chain@AEBW4_NVAPI_GSYNC_RJ45_IO@@V?$Chain@AEAY05$$CB_WV?$Chain@AEAY04$$CB_WV?$Chain@IV?$Chain@AEAY06$$CB_WV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x6825d0",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NVAPI_GSYNC_MULTIPLY_DIVIDE_MODE@@V?$Chain@AEAY0BG@$$CB_WV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x6829a0",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NVAPI_GSYNC_VIDEO_MODE@@V?$Chain@AEAY08$$CB_WV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x682a70",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NVAPI_GSYNC_SYNC_SOURCE@@V?$Chain@AEAY09$$CB_WV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x682df0",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NVAPI_GSYNC_POLARITY@@V?$Chain@AEAY0M@$$CB_WV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x684a80",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEAY01$$CBDV?$Chain@AEBQEAUNvPhysicalGpuHandle__@@V?$Chain@AEAY0CE@$$CBDV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0O@$$CBDV?$Chain@_NV?$Chain@AEAY0BL@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x68ae10",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0EM@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x68b0a0",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEAY0CM@$$CBDV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0BE@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x68b570",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0DF@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x68bbd0",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEAY0CC@$$CBDV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY07$$CBDV?$Chain@AEBQEAUNvPhysicalGpuHandle__@@V?$Chain@AEAY0CM@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x68bd40",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@KV?$Chain@AEAY0CC@$$CBDV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY07$$CBDV?$Chain@AEBQEAUNvPhysicalGpuHandle__@@V?$Chain@AEAY0CJ@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x68bf50",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0CL@$$CB_WV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x68c260",
+    "encoding": "ascii",
+    "text": ".?AV?$sp_counted_impl_pd@PEAUNVAPI_DISPLAY_DEVICE_INFO_V1@@U?$checked_array_deleter@UNVAPI_DISPLAY_DEVICE_INFO_V1@@@checked_deleters@boost@@@detail@boost@@"
+  },
+  {
+    "offset": "0x691970",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0CF@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x691a40",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0DH@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x693f80",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0CD@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x697850",
+    "encoding": "ascii",
+    "text": ".?AV?$ChainLoggable@V?$Chain@AEAY01$$CBDV?$Chain@_KV?$Chain@AEAY01$$CBDV?$Chain@KV?$Chain@AEAY0O@$$CBDV?$Chain@AEBQEA_KV?$Chain@AEAY09$$CBDV?$Chain@AEBW4_NvAPI_Status@@V?$Chain@AEAY0DH@$$CBDV?$Chain@UNullType@Logging@Nvidia@@U123@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@@Logging@Nvidia@@"
+  },
+  {
+    "offset": "0x6cbd12",
+    "encoding": "ascii",
+    "text": "NVXDApiX.NvApixEngine.1 = s 'NvAppNvApixEngine Class'"
+  },
+  {
+    "offset": "0x6cbd88",
+    "encoding": "ascii",
+    "text": "NVXDApiX.NvApixEngine = s 'NvAppNvApixEngine Class'"
+  },
+  {
+    "offset": "0x6cbdf9",
+    "encoding": "ascii",
+    "text": "CurVer = s 'NVXDApiX.NvApixEngine.1'"
+  },
+  {
+    "offset": "0x6cbe3a",
+    "encoding": "ascii",
+    "text": "ForceRemove {7331B944-F96F-4785-8AF3-3075B5DED9C5} = s 'NvAppNvApixEngine Class'"
+  },
+  {
+    "offset": "0x6cbe94",
+    "encoding": "ascii",
+    "text": "ProgID = s 'NVXDApiX.NvApixEngine.1'"
+  },
+  {
+    "offset": "0x6cbebd",
+    "encoding": "ascii",
+    "text": "VersionIndependentProgID = s 'NVXDApiX.NvApixEngine'"
+  },
+  {
+    "offset": "0x6cc4d8",
+    "encoding": "ascii",
+    "text": "NvApixEngine"
+  },
+  {
+    "offset": "0x4dd660",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\uxd\\Framework\\NVXDApiX\\NvApixEngine.cpp"
+  },
+  {
+    "offset": "0x4dd720",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::ApiX::CNvApixEngine::WorkerThreadProc"
+  },
+  {
+    "offset": "0x4dd7ae",
+    "encoding": "utf-16le",
+    "text": "pC:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\uxd\\Framework\\NVXDApiX\\NvApixEngine.cpp"
+  },
+  {
+    "offset": "0x4dd870",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::ApiX::CNvApixEngine::WorkerThreadProc"
+  },
+  {
+    "offset": "0x4dd910",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\uxd\\Framework\\NVXDApiX\\NvApixEngine.cpp"
+  },
+  {
+    "offset": "0x4dd9d0",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::ApiX::CNvApixEngine::WorkerThreadProc"
+  },
+  {
+    "offset": "0x4dda60",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\uxd\\Framework\\NVXDApiX\\NvApixEngine.cpp"
+  },
+  {
+    "offset": "0x4ddb20",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::ApiX::CNvApixEngine::WorkerThreadProc"
+  },
+  {
+    "offset": "0x4ddd40",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\uxd\\Framework\\NVXDApiX\\NvApixEngine.cpp"
+  },
+  {
+    "offset": "0x4dde00",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::ApiX::CNvApixEngine::CallWrapper"
+  },
+  {
+    "offset": "0x4ddea0",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\uxd\\Framework\\NVXDApiX\\NvApixEngine.cpp"
+  },
+  {
+    "offset": "0x4ddf60",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::ApiX::CNvApixEngine::CallWrapper"
+  },
+  {
+    "offset": "0x4de270",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\uxd\\Framework\\NVXDApiX\\NvApixEngine.cpp"
+  },
+  {
+    "offset": "0x4de330",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::ApiX::CNvApixEngine::ProcessSetSettings"
+  },
+  {
+    "offset": "0x4de770",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\uxd\\Framework\\NVXDApiX\\NvApixEngine.cpp"
+  },
+  {
+    "offset": "0x4de830",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::ApiX::CNvApixEngine::Start"
+  },
+  {
+    "offset": "0x4debc8",
+    "encoding": "utf-16le",
+    "text": "HKEY_CLASSES_ROOT"
+  },
+  {
+    "offset": "0x4debf0",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "offset": "0x4dec18",
+    "encoding": "utf-16le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "offset": "0x4dec40",
+    "encoding": "utf-16le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "offset": "0x4dec58",
+    "encoding": "utf-16le",
+    "text": "HKEY_PERFORMANCE_DATA"
+  },
+  {
+    "offset": "0x4dec88",
+    "encoding": "utf-16le",
+    "text": "HKEY_DYN_DATA"
+  },
+  {
+    "offset": "0x4deca8",
+    "encoding": "utf-16le",
+    "text": "HKEY_CURRENT_CONFIG"
+  },
+  {
+    "offset": "0x4df850",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\uxd\\Framework\\NVXDApiX\\NvApixEngine.h"
+  },
+  {
+    "offset": "0x4df910",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::ApiX::CNvApixEngine::FinalConstruct"
+  },
+  {
+    "offset": "0x4df9a0",
+    "encoding": "utf-16le",
+    "text": "Global\\CplNvapiInitializtionFailure-84D93D0F-ACB2-41C5-911A-0889DA87557F"
+  },
+  {
+    "offset": "0x4dfcd0",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::ApiX::CNvApixEngine::FinalRelease"
+  },
+  {
+    "offset": "0x4e0240",
+    "encoding": "utf-16le",
+    "text": "CProxyIStateEvents<class Nvidia::UXDriver::ApiX::CNvApixEngine>::Fire_Activity"
+  },
+  {
+    "offset": "0x4e4490",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Event_RegisterForEvents"
+  },
+  {
+    "offset": "0x4e52f0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Event_Unregister"
+  },
+  {
+    "offset": "0x4ead70",
+    "encoding": "utf-16le",
+    "text": "CProxyIStateEvents<class Nvidia::UXDriver::ApiX::CNvApixEngine>::Fire_DataChanged"
+  },
+  {
+    "offset": "0x4eb090",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\uxd\\Features\\ApiWrappers\\NvAPIUtility.h"
+  },
+  {
+    "offset": "0x4eb7a0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x4eb7e0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x4eba90",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x4ebb70",
+    "encoding": "utf-16le",
+    "text": "NvAPI Direct was not found. Please update your driver."
+  },
+  {
+    "offset": "0x4ebc50",
+    "encoding": "utf-16le",
+    "text": "nvapi64.dll"
+  },
+  {
+    "offset": "0x509690",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NVControlPanel2"
+  },
+  {
+    "offset": "0x5096f0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Parameters\\NVControlPanel2"
+  },
+  {
+    "offset": "0x50b370",
+    "encoding": "utf-16le",
+    "text": "Software\\NVIDIA Corporation\\Uxdlogging"
+  },
+  {
+    "offset": "0x50e490",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x50e9a0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+  },
+  {
+    "offset": "0x50ed40",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\Windows\\CurrentVersion\\Setup\\State"
+  },
+  {
+    "offset": "0x50f1b0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Windows"
+  },
+  {
+    "offset": "0x50f220",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Wow6432Node\\Microsoft\\Windows NT\\CurrentVersion\\Windows"
+  },
+  {
+    "offset": "0x50f3a0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows\\DWM\\Schedule"
+  },
+  {
+    "offset": "0x50f910",
+    "encoding": "utf-16le",
+    "text": "Local Settings\\Software\\Microsoft\\Windows\\CurrentVersion\\AppModel\\Repository\\Packages\\"
+  },
+  {
+    "offset": "0x50f9c0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Classes\\"
+  },
+  {
+    "offset": "0x50fc00",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\DirectX\\UserGpuPreferences"
+  },
+  {
+    "offset": "0x50fe60",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global"
+  },
+  {
+    "offset": "0x510190",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Parameters"
+  },
+  {
+    "offset": "0x5101e0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation"
+  },
+  {
+    "offset": "0x510bd0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NVControlPanel2\\Client"
+  },
+  {
+    "offset": "0x510c40",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Parameters\\NVControlPanel2\\Client"
+  },
+  {
+    "offset": "0x51aad0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NVTweak"
+  },
+  {
+    "offset": "0x522e80",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetSourceModeSet"
+  },
+  {
+    "offset": "0x523238",
+    "encoding": "utf-16le",
+    "text": "modes returned by NvAPI"
+  },
+  {
+    "offset": "0x524270",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::ApiX::NvAPIUtility::BusyRepeatUntil"
+  },
+  {
+    "offset": "0x524360",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\uxd\\Features\\ApiWrappers\\NvapiUtility.h"
+  },
+  {
+    "offset": "0x5245e0",
+    "encoding": "utf-16le",
+    "text": "Resolution Count from : NvAPI_Mosaic_GetResolutionPruning"
+  },
+  {
+    "offset": "0x5247d0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Mosaic_GetResolutionPruning"
+  },
+  {
+    "offset": "0x52497e",
+    "encoding": "utf-16le",
+    "text": ")NvAPI_Mosaic_GetDisplayCapabilities"
+  },
+  {
+    "offset": "0x525f98",
+    "encoding": "utf-16le",
+    "text": "UXDriver.ApiX.NvAPIUtility"
+  },
+  {
+    "offset": "0x5260c0",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::ApiX::Features::NvAPICache::StartStopNvAPICache"
+  },
+  {
+    "offset": "0x526160",
+    "encoding": "utf-16le",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\uxd\\Features\\ApiWrappers\\NvAPICache.cpp"
+  },
+  {
+    "offset": "0x526220",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::ApiX::Features::NvAPICache::EnumPhysicalGpus"
+  },
+  {
+    "offset": "0x526308",
+    "encoding": "utf-16le",
+    "text": "NvAPI_EnumPhysicalGPUs"
+  },
+  {
+    "offset": "0x5263a0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetValidGpuTopologiesInternal"
+  },
+  {
+    "offset": "0x5263e8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetValidGpuTopologies"
+  },
+  {
+    "offset": "0x526420",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::ApiX::Features::NvAPICache::GetValidGpuTopologies"
+  },
+  {
+    "offset": "0x5265d0",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::ApiX::Features::NvAPICache::GetValidGpuTopologiesInternal"
+  },
+  {
+    "offset": "0x526668",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetDisplayConfig"
+  },
+  {
+    "offset": "0x5266e0",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::ApiX::Features::NvAPICache::GetDisplayConfig"
+  },
+  {
+    "offset": "0x526788",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetAllDisplayIds"
+  },
+  {
+    "offset": "0x5267c0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetConnectedDisplayIds"
+  },
+  {
+    "offset": "0x52b770",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_NVLINK_GetBridgeEEPROMStatus"
+  },
+  {
+    "offset": "0x52b7c0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_QueryMuxInfo"
+  },
+  {
+    "offset": "0x52bca8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetDisplayMuxCaps"
+  },
+  {
+    "offset": "0x52c308",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetBoardInfo"
+  },
+  {
+    "offset": "0x52ed40",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SYS_GetDisplayIdFromGpuAndOutputId"
+  },
+  {
+    "offset": "0x52f020",
+    "encoding": "utf-16le",
+    "text": "NvAPI_HIC_QueryTopology"
+  },
+  {
+    "offset": "0x52f180",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetAllGpusOnSameBoard"
+  },
+  {
+    "offset": "0x52f330",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SYS_GetCpuInfo"
+  },
+  {
+    "offset": "0x52f520",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_ClientPowerModesGetControl"
+  },
+  {
+    "offset": "0x52f580",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_ClientPowerModesGetInfo"
+  },
+  {
+    "offset": "0x52f5d0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_ClientPowerModesSetControl"
+  },
+  {
+    "offset": "0x52fa68",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetSystemType"
+  },
+  {
+    "offset": "0x52fb30",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetArchInfo"
+  },
+  {
+    "offset": "0x52fc08",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetFullName"
+  },
+  {
+    "offset": "0x52fcb8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetSKUInfo"
+  },
+  {
+    "offset": "0x52fd88",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetBarInfo"
+  },
+  {
+    "offset": "0x52fdb8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetGpuCoreCount"
+  },
+  {
+    "offset": "0x52fdf0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPowerConnectorStatus"
+  },
+  {
+    "offset": "0x52fe38",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetVbiosRevision"
+  },
+  {
+    "offset": "0x52fe70",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetVbiosOEMRevision"
+  },
+  {
+    "offset": "0x52feb0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetGPUType"
+  },
+  {
+    "offset": "0x52ff88",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_QueryGpuFlags"
+  },
+  {
+    "offset": "0x5300c0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetMaxSourceCount"
+  },
+  {
+    "offset": "0x5300f8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetGPUIDfromPhysicalGPU"
+  },
+  {
+    "offset": "0x530370",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetMonitorColorCapabilities"
+  },
+  {
+    "offset": "0x530448",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetFlatPanelInfo"
+  },
+  {
+    "offset": "0x5306a0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetConnectorInfoEx"
+  },
+  {
+    "offset": "0x530740",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetConnectorState"
+  },
+  {
+    "offset": "0x530930",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_EnumClusterTopologies"
+  },
+  {
+    "offset": "0x530b98",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetHDMISupportInfo"
+  },
+  {
+    "offset": "0x530dc8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetDisplayPortInfo"
+  },
+  {
+    "offset": "0x530e90",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_Get_DisplayPort_DongleInfo"
+  },
+  {
+    "offset": "0x5314f0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_ClientPwrPoliciesGetInfo"
+  },
+  {
+    "offset": "0x5315f0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetInterruptInfo"
+  },
+  {
+    "offset": "0x531628",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_PowerPolicyGetInfo"
+  },
+  {
+    "offset": "0x5318c8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetMemoryInfoEx"
+  },
+  {
+    "offset": "0x531b80",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetRamBusWidth"
+  },
+  {
+    "offset": "0x531bb8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetRamType"
+  },
+  {
+    "offset": "0x531c98",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPCIEInfo"
+  },
+  {
+    "offset": "0x531d80",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetBusId"
+  },
+  {
+    "offset": "0x531e30",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetBrandType"
+  },
+  {
+    "offset": "0x531ef0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetBusSlotId"
+  },
+  {
+    "offset": "0x532078",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetBusType"
+  },
+  {
+    "offset": "0x532458",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_QueryDPTopology"
+  },
+  {
+    "offset": "0x532620",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetMaxAudioStreamCount"
+  },
+  {
+    "offset": "0x532850",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_ClockClkDomainsGetInfo"
+  },
+  {
+    "offset": "0x5328c8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_PerfPstatesGetInfo"
+  },
+  {
+    "offset": "0x532a50",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetAllClockFrequencies"
+  },
+  {
+    "offset": "0x532da8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPerfClocks"
+  },
+  {
+    "offset": "0x532e10",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SYS_GetDriverAndBranchVersion"
+  },
+  {
+    "offset": "0x532f60",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::ApiX::Features::PhysicalStructure::GetTccGpusFromNvAPI"
+  },
+  {
+    "offset": "0x533178",
+    "encoding": "utf-16le",
+    "text": "NvAPI_EnumTCCPhysicalGPUs"
+  },
+  {
+    "offset": "0x533290",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetVirtualizationInfo"
+  },
+  {
+    "offset": "0x533416",
+    "encoding": "utf-16le",
+    "text": ")NvAPI_SYS_GetPowerStatus"
+  },
+  {
+    "offset": "0x5335f0",
+    "encoding": "utf-16le",
+    "text": "Could not find the displayId returned by NVAPI"
+  },
+  {
+    "offset": "0x533650",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetDynamicPstatesInfo"
+  },
+  {
+    "offset": "0x533690",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Coproc_GetCoprocInfoEx"
+  },
+  {
+    "offset": "0x533798",
+    "encoding": "utf-16le",
+    "text": "GPU NVAPI handle not found"
+  },
+  {
+    "offset": "0x533830",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Coproc_SetCoprocInfoFlagsEx2"
+  },
+  {
+    "offset": "0x533aa0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetGSyncInfo"
+  },
+  {
+    "offset": "0x533ad0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetGSyncInfo failed for displayId:"
+  },
+  {
+    "offset": "0x533b30",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Coproc_RegisterProcess"
+  },
+  {
+    "offset": "0x533bc0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Coproc_RegisterProcess failed"
+  },
+  {
+    "offset": "0x533c08",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetP2PCapsData"
+  },
+  {
+    "offset": "0x533c40",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SYS_SetFeatureState"
+  },
+  {
+    "offset": "0x535ed0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_SetDisplayMux"
+  },
+  {
+    "offset": "0x537d50",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_MuxTransition"
+  },
+  {
+    "offset": "0x538f10",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_ClientThermalPoliciesGetInfo"
+  },
+  {
+    "offset": "0x539926",
+    "encoding": "utf-16le",
+    "text": " NvAPI_QueryGpuCap"
+  },
+  {
+    "offset": "0x539eb0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetInvalidGpuTopologies"
+  },
+  {
+    "offset": "0x539ef0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetHybridMode"
+  },
+  {
+    "offset": "0x53a2c0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_CUDA_EnumComputeCapableByTopology"
+  },
+  {
+    "offset": "0x53a330",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SetGpuTopologies"
+  },
+  {
+    "offset": "0x53a360",
+    "encoding": "utf-16le",
+    "text": "calling  NvAPI_SetGpuTopologies with flags = %X"
+  },
+  {
+    "offset": "0x53a5f0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Mosaic_GetMosaicCapabilitiesEx"
+  },
+  {
+    "offset": "0x53af80",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetValidGpuTopologies()- returnValue = "
+  },
+  {
+    "offset": "0x53b100",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetValidGpuTopologiesInternal() - returnValue = "
+  },
+  {
+    "offset": "0x53bad0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_EnumLogicalGPUs"
+  },
+  {
+    "offset": "0x53bcd0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetPhysicalGPUsFromLogicalGPU"
+  },
+  {
+    "offset": "0x53c0be",
+    "encoding": "utf-16le",
+    "text": ")NvAPI_EnumNvidiaUnAttachedDisplayHandle"
+  },
+  {
+    "offset": "0x53c950",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetAssociatedNvidiaDisplayName"
+  },
+  {
+    "offset": "0x53cf20",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetUnAttachedAssociatedDisplayName"
+  },
+  {
+    "offset": "0x53d680",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetTargetPhysicalGPUsFromUnAttachedDisplay"
+  },
+  {
+    "offset": "0x53d780",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetLogicalGPUFromDisplay"
+  },
+  {
+    "offset": "0x53d840",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetLogicalGPUFromPhysicalGPU"
+  },
+  {
+    "offset": "0x53da00",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetActiveVideoDevice"
+  },
+  {
+    "offset": "0x53db60",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Video_GetVideoStateInfo"
+  },
+  {
+    "offset": "0x53dc40",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SetActiveVideoDevice"
+  },
+  {
+    "offset": "0x53e006",
+    "encoding": "utf-16le",
+    "text": ")NvAPI_GetVideoDeviceCount"
+  },
+  {
+    "offset": "0x53e1c0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetVideoStateEx"
+  },
+  {
+    "offset": "0x53e1f0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetVideoDeviceInfo"
+  },
+  {
+    "offset": "0x53e3c8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SetVideoStateEx"
+  },
+  {
+    "offset": "0x53e7b8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetVideoLinkParams"
+  },
+  {
+    "offset": "0x53e830",
+    "encoding": "utf-16le",
+    "text": " NvAPI_GetVideoLinkParams failed for display handle "
+  },
+  {
+    "offset": "0x53e9b8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SetDisplayPosition"
+  },
+  {
+    "offset": "0x53eac8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetDisplayPosition"
+  },
+  {
+    "offset": "0x53f0b8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Disp_GSyncPulsarControl"
+  },
+  {
+    "offset": "0x53f130",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Disp_AmbientLightControl"
+  },
+  {
+    "offset": "0x53f270",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GSync_GetTopology"
+  },
+  {
+    "offset": "0x53f2a0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_EnumGSyncDevices"
+  },
+  {
+    "offset": "0x53f550",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_SetDisplayConfig"
+  },
+  {
+    "offset": "0x53fb30",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_SetScalingCapsOverride"
+  },
+  {
+    "offset": "0x53fc80",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetDisplayChangeInhibitState"
+  },
+  {
+    "offset": "0x53fed0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_SetPanScanInfo"
+  },
+  {
+    "offset": "0x5402a8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_EnumHDMIStereoModes"
+  },
+  {
+    "offset": "0x5403a0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetTimingInfo"
+  },
+  {
+    "offset": "0x540550",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetHyperSamplingSettingsEx"
+  },
+  {
+    "offset": "0x540b80",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_EnableUnderscanConfig"
+  },
+  {
+    "offset": "0x540bc8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_QueryUnderscanCap"
+  },
+  {
+    "offset": "0x540de0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_DisableUnderscanConfig"
+  },
+  {
+    "offset": "0x540eb8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SetUnderscanConfig"
+  },
+  {
+    "offset": "0x540fe0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_EnumUnderscanConfig"
+  },
+  {
+    "offset": "0x5410e8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DeleteUnderscanConfig"
+  },
+  {
+    "offset": "0x5412a0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DeleteUnderscanConfig - End Status:"
+  },
+  {
+    "offset": "0x541950",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NVTweak\\Defaults"
+  },
+  {
+    "offset": "0x541d10",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_ColorAccuracyMode"
+  },
+  {
+    "offset": "0x541f8e",
+    "encoding": "utf-16le",
+    "text": " NvAPI_GetHUEInfo"
+  },
+  {
+    "offset": "0x542078",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SetDVCLevelEx"
+  },
+  {
+    "offset": "0x5420a0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetDVCInfoEx"
+  },
+  {
+    "offset": "0x542190",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetImageSharpeningInfo"
+  },
+  {
+    "offset": "0x542280",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SetHUEAngle"
+  },
+  {
+    "offset": "0x542350",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetTVEncoderControls"
+  },
+  {
+    "offset": "0x542448",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SetImageSharpeningLevel"
+  },
+  {
+    "offset": "0x542550",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SetTVEncoderControls"
+  },
+  {
+    "offset": "0x542748",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SetTVOutputBorderColor"
+  },
+  {
+    "offset": "0x542850",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetTVOutputBorderColor"
+  },
+  {
+    "offset": "0x543130",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Disp_ColorControl"
+  },
+  {
+    "offset": "0x543270",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Disp_ColorControl() for DisplayId = "
+  },
+  {
+    "offset": "0x543700",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Disp_GetColorSupportedCombinations"
+  },
+  {
+    "offset": "0x543b60",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Disp_InfoFrameControl"
+  },
+  {
+    "offset": "0x54413e",
+    "encoding": "utf-16le",
+    "text": ")NvAPI_DISP_GetMonitorCapabilities"
+  },
+  {
+    "offset": "0x544640",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_SetTargetGammaCorrection"
+  },
+  {
+    "offset": "0x5456c0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_VIO_QueryTopology"
+  },
+  {
+    "offset": "0x545b58",
+    "encoding": "utf-16le",
+    "text": "NvAPI_VIO_GetCapabilities"
+  },
+  {
+    "offset": "0x546720",
+    "encoding": "utf-16le",
+    "text": "NvAPI_VIO_EnumSignalFormats"
+  },
+  {
+    "offset": "0x546930",
+    "encoding": "utf-16le",
+    "text": "NvAPI_VIO_Status"
+  },
+  {
+    "offset": "0x546a60",
+    "encoding": "utf-16le",
+    "text": "NvAPI_VIO_IsFrameLockModeCompatible"
+  },
+  {
+    "offset": "0x546aa8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_VIO_EnumDataFormats"
+  },
+  {
+    "offset": "0x546c08",
+    "encoding": "utf-16le",
+    "text": "NvAPI_VIO_GetConfig"
+  },
+  {
+    "offset": "0x546cc0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_VIO_SetConfig"
+  },
+  {
+    "offset": "0x546ce8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_VIO_Close"
+  },
+  {
+    "offset": "0x546f20",
+    "encoding": "utf-16le",
+    "text": "NvAPI_VIO_Open"
+  },
+  {
+    "offset": "0x548408",
+    "encoding": "utf-16le",
+    "text": "NvAPI_TryCustomDisplay"
+  },
+  {
+    "offset": "0x548438",
+    "encoding": "utf-16le",
+    "text": "NvAPI_RevertCustomDisplayTrial"
+  },
+  {
+    "offset": "0x548538",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_TryCustomDisplay"
+  },
+  {
+    "offset": "0x548670",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_DeleteCustomDisplay"
+  },
+  {
+    "offset": "0x5486b0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DeleteCustomDisplay"
+  },
+  {
+    "offset": "0x5486e8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetTiming"
+  },
+  {
+    "offset": "0x5487c8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_SaveCustomDisplay"
+  },
+  {
+    "offset": "0x5488f8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SaveCustomDisplay"
+  },
+  {
+    "offset": "0x548c60",
+    "encoding": "utf-16le",
+    "text": "NvAPI_EnumCustomDisplay"
+  },
+  {
+    "offset": "0x549230",
+    "encoding": "utf-16le",
+    "text": "NvAPI_RestartDisplayDriver"
+  },
+  {
+    "offset": "0x549bf0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SendHybridMessage"
+  },
+  {
+    "offset": "0x549d78",
+    "encoding": "utf-16le",
+    "text": "NvAPI_QueryNonMigratableApps"
+  },
+  {
+    "offset": "0x549e48",
+    "encoding": "utf-16le",
+    "text": "NvAPI_IsIntelHybrid"
+  },
+  {
+    "offset": "0x549f90",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SYS_GetDisplayDriverInfo"
+  },
+  {
+    "offset": "0x54a060",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::ApiX::Features::SystemSettings::GetDriverBrandTypeNvapiToUxd"
+  },
+  {
+    "offset": "0x54a300",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetHCloneTopology"
+  },
+  {
+    "offset": "0x54a418",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Set_NIS2_Sharpness"
+  },
+  {
+    "offset": "0x54a78e",
+    "encoding": "utf-16le",
+    "text": ":NvAPI_DISP_SetHyperSamplingSettingsEx"
+  },
+  {
+    "offset": "0x54aa70",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_SetHyperSamplingSettings"
+  },
+  {
+    "offset": "0x54ad80",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetHyperSamplingSettings"
+  },
+  {
+    "offset": "0x54b6e0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_PerfDebugModeGetInfo_Wrapper"
+  },
+  {
+    "offset": "0x54b7c0",
+    "encoding": "utf-16le",
+    "text": " NvAPI_GPU_GetMemoryInfo failed "
+  },
+  {
+    "offset": "0x54b940",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_PerfDebugModeGetControl_Wrapper"
+  },
+  {
+    "offset": "0x54bb20",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_PerfDebugModeSetControl_Wrapper"
+  },
+  {
+    "offset": "0x54c430",
+    "encoding": "utf-16le",
+    "text": "NvAPI_InitializeEx"
+  },
+  {
+    "offset": "0x54c458",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetPlatformPowerMode"
+  },
+  {
+    "offset": "0x54c698",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SetPlatformPowerMode"
+  },
+  {
+    "offset": "0x54c700",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_ClientThermalPoliciesGetStatus"
+  },
+  {
+    "offset": "0x54c770",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_ClientThermalPoliciesSetStatus"
+  },
+  {
+    "offset": "0x54cc58",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SYS_GetLidAndDockInfo"
+  },
+  {
+    "offset": "0x552900",
+    "encoding": "utf-16le",
+    "text": "GpuUtilizationPreference NvAPI_EnumPhysicalGPUs completed: status=%d gpuCount=%u"
+  },
+  {
+    "offset": "0x5529a8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SYS_CmcYieldPctControl"
+  },
+  {
+    "offset": "0x552f20",
+    "encoding": "utf-16le",
+    "text": "GpuUtilizationPreference NvAPI_SYS_CmcYieldPctControl completed: GPU index=%u command=%u inputYieldPct=%u status=%d outputYieldPct=%u"
+  },
+  {
+    "offset": "0x553030",
+    "encoding": "utf-16le",
+    "text": "GpuUtilizationPreference NvAPI_SYS_CmcYieldPctControl failed: GPU index=%u command=%u inputYieldPct=%u status=%d"
+  },
+  {
+    "offset": "0x553b88",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetEdidData"
+  },
+  {
+    "offset": "0x553e70",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetAdaptiveSyncData"
+  },
+  {
+    "offset": "0x553f38",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_SetAdaptiveSyncData"
+  },
+  {
+    "offset": "0x55415e",
+    "encoding": "utf-16le",
+    "text": " NvAPI_DISP_GetEdidParsed"
+  },
+  {
+    "offset": "0x554720",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetTvClassification"
+  },
+  {
+    "offset": "0x5548c0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetOutputType"
+  },
+  {
+    "offset": "0x554b80",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetHCloneDisplayCaps"
+  },
+  {
+    "offset": "0x5552e8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_VCD_GetAssociatedGSyncs"
+  },
+  {
+    "offset": "0x5554e0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GSync_SetSyncStateSettings"
+  },
+  {
+    "offset": "0x555528",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GSync_QueryCapabilities"
+  },
+  {
+    "offset": "0x555570",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GSync_GetStatusParameters"
+  },
+  {
+    "offset": "0x5555b0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GSync_SetControlParameters"
+  },
+  {
+    "offset": "0x5556b0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GSync_GetControlParameters"
+  },
+  {
+    "offset": "0x555da8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GSync_GetSyncStatus"
+  },
+  {
+    "offset": "0x5572e0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Mosaic_ValidateDisplayGridsWithSLI"
+  },
+  {
+    "offset": "0x5579a0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Mosaic_GetGridOverlapLimits"
+  },
+  {
+    "offset": "0x558020",
+    "encoding": "utf-16le",
+    "text": "NvAPI_VCD_UpdatePerformanceMode"
+  },
+  {
+    "offset": "0x5581d8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_VCD_GetDeviceInfo"
+  },
+  {
+    "offset": "0x558308",
+    "encoding": "utf-16le",
+    "text": "NvAPI_VCD_GetCoolerSettings"
+  },
+  {
+    "offset": "0x558558",
+    "encoding": "utf-16le",
+    "text": "NvAPI_CUDA_PhysxSetState"
+  },
+  {
+    "offset": "0x559270",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Hybrid_GetIntelDeviceMap"
+  },
+  {
+    "offset": "0x559340",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetHybridEDID"
+  },
+  {
+    "offset": "0x559370",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetHybridConnectedOutputs"
+  },
+  {
+    "offset": "0x559688",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetThermalSettings"
+  },
+  {
+    "offset": "0x5596c8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_VCD_GetThermalInfo"
+  },
+  {
+    "offset": "0x559e70",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetInfoFrameStatePvt"
+  },
+  {
+    "offset": "0x55a120",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetInfoFrameStatePvt :: DisplayHandle ="
+  },
+  {
+    "offset": "0x55a1e0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SetInfoFrameState"
+  },
+  {
+    "offset": "0x55a410",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SetInfoFrameState:: Display Handle = "
+  },
+  {
+    "offset": "0x55a4a0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_SetAudioStreams"
+  },
+  {
+    "offset": "0x55a700",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_SetAudioStreams :: audioStreamCount = "
+  },
+  {
+    "offset": "0x55a7b0",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::ApiX::Features::AudioInformationWrapper::GetNvApiAudioStream"
+  },
+  {
+    "offset": "0x55a850",
+    "encoding": "utf-16le",
+    "text": "Querying NvAPI_GPU_GetAudioStreams with Display Id : "
+  },
+  {
+    "offset": "0x55a8c0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetAudioStreams"
+  },
+  {
+    "offset": "0x55af98",
+    "encoding": "utf-16le",
+    "text": "NvAPI_VCD_GetPowerSupplyInfo"
+  },
+  {
+    "offset": "0x55b0f0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_SetEdidData"
+  },
+  {
+    "offset": "0x55b1a0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_ValidateEdidData"
+  },
+  {
+    "offset": "0x55b228",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetECCStatusInfo"
+  },
+  {
+    "offset": "0x55b700",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetECCConfigurationInfo"
+  },
+  {
+    "offset": "0x55b830",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_SetECCConfiguration"
+  },
+  {
+    "offset": "0x55b870",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetScanoutRasterDimension"
+  },
+  {
+    "offset": "0x55baf0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetScalingCapsOverride"
+  },
+  {
+    "offset": "0x55bbf0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetScalingCaps"
+  },
+  {
+    "offset": "0x55c150",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetDisplayFeatureConfigDefaults"
+  },
+  {
+    "offset": "0x55c228",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetDisplayFeatureConfig"
+  },
+  {
+    "offset": "0x55c370",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SetDisplayFeatureConfig"
+  },
+  {
+    "offset": "0x55c4c0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_3DVP_EnumTransceiver"
+  },
+  {
+    "offset": "0x55c500",
+    "encoding": "utf-16le",
+    "text": "NvAPI_3DVP_OpenTransceiverPriviledged"
+  },
+  {
+    "offset": "0x55c550",
+    "encoding": "utf-16le",
+    "text": "NvAPI_3DVP_CreateContext"
+  },
+  {
+    "offset": "0x55c588",
+    "encoding": "utf-16le",
+    "text": "NvAPI_3DVP_DestroyContext"
+  },
+  {
+    "offset": "0x55c5c0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_3DVP_IsAirplaneModeEnabled"
+  },
+  {
+    "offset": "0x55c608",
+    "encoding": "utf-16le",
+    "text": "NvAPI_3DVP_GetTransceiverInfo"
+  },
+  {
+    "offset": "0x55c6e8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_3DVP_GetTransceiverMode"
+  },
+  {
+    "offset": "0x55c7c0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_3DVP_EnumGlasses"
+  },
+  {
+    "offset": "0x55c910",
+    "encoding": "utf-16le",
+    "text": "NvAPI_3DVP_GetTransceiverChannelInfo"
+  },
+  {
+    "offset": "0x55cb90",
+    "encoding": "utf-16le",
+    "text": "NvAPI_3DVP_SetTransceiverMode"
+  },
+  {
+    "offset": "0x55cd28",
+    "encoding": "utf-16le",
+    "text": "NvAPI_3DVP_PairGlasses"
+  },
+  {
+    "offset": "0x55ce70",
+    "encoding": "utf-16le",
+    "text": "NvAPI_3DVP_SetTransceiverChannel"
+  },
+  {
+    "offset": "0x55cfe0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_3DVP_GetTransceiverChannel"
+  },
+  {
+    "offset": "0x55d148",
+    "encoding": "utf-16le",
+    "text": "NvAPI_3DVP_IdentifyGlasses"
+  },
+  {
+    "offset": "0x55d180",
+    "encoding": "utf-16le",
+    "text": "NvAPI_3DVP_SetGlassesName"
+  },
+  {
+    "offset": "0x55d1b8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_3DVP_GetGlassesState"
+  },
+  {
+    "offset": "0x55d280",
+    "encoding": "utf-16le",
+    "text": "NvAPI_3DVP_GetGlassesInfo"
+  },
+  {
+    "offset": "0x55d2b8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_3DVP_GetGlassesName"
+  },
+  {
+    "offset": "0x55d388",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Stereo_GetWindowedMode"
+  },
+  {
+    "offset": "0x55d460",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Stereo_SetWindowedMode"
+  },
+  {
+    "offset": "0x55d530",
+    "encoding": "utf-16le",
+    "text": "NvAPI_3DVP_UnpairGlasses"
+  },
+  {
+    "offset": "0x55d600",
+    "encoding": "utf-16le",
+    "text": "NvAPI_3DVP_ResetTransceiverToFactorySettings"
+  },
+  {
+    "offset": "0x55dc10",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Stereo_GetStereoCapsInternal"
+  },
+  {
+    "offset": "0x55e488",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Mosaic_GetBezelPeeking"
+  },
+  {
+    "offset": "0x55e4c8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Mosaic_SetBezelPeeking"
+  },
+  {
+    "offset": "0x55f180",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPstatesInfo"
+  },
+  {
+    "offset": "0x55ff70",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Mosaic_GetDisplayViewportsByResolution"
+  },
+  {
+    "offset": "0x560510",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_SetupClusterTopology"
+  },
+  {
+    "offset": "0x560dc0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetViewPortInfo"
+  },
+  {
+    "offset": "0x561018",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_SetViewPortInfo"
+  },
+  {
+    "offset": "0x561418",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SYS_GetChipSetInfo"
+  },
+  {
+    "offset": "0x561550",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_SetMergedDisplaysTopology"
+  },
+  {
+    "offset": "0x561710",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetMergedDisplaysTopology"
+  },
+  {
+    "offset": "0x5628d0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetHCloneTopology - Begin"
+  },
+  {
+    "offset": "0x5629a0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetHCloneTopology - End Status:"
+  },
+  {
+    "offset": "0x562b90",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_ValidateHCloneTopology"
+  },
+  {
+    "offset": "0x562c88",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_SetHCloneTopology"
+  },
+  {
+    "offset": "0x564c10",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GetAssociatedDisplayFromOutputId"
+  },
+  {
+    "offset": "0x565a18",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Mosaic_SetGridTopology"
+  },
+  {
+    "offset": "0x565b00",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Mosaic_EnumGridTopologies"
+  },
+  {
+    "offset": "0x565c20",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Mosaic_SetDisplayGridsWithSLI"
+  },
+  {
+    "offset": "0x5660a0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Mosaic_SetDisplayGridsWithSLI returns:"
+  },
+  {
+    "offset": "0x566100",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Mosaic_GetResolutions"
+  },
+  {
+    "offset": "0x566ca0",
+    "encoding": "utf-16le",
+    "text": "Failed to find the output for nvapigridtopo display"
+  },
+  {
+    "offset": "0x567416",
+    "encoding": "utf-16le",
+    "text": ")NvAPI_EnumNvidiaDisplayHandle"
+  },
+  {
+    "offset": "0x5674c0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetTargetID"
+  },
+  {
+    "offset": "0x567580",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SYS_GetGpuAndOutputIdFromDisplayId"
+  },
+  {
+    "offset": "0x567740",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetAdapterIdFromPhysicalGpu"
+  },
+  {
+    "offset": "0x567860",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DISP_GetTargetModeSetEx"
+  },
+  {
+    "offset": "0x5684a0",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\NVIDIAStereo"
+  },
+  {
+    "offset": "0x5686b0",
+    "encoding": "utf-16le",
+    "text": "Nvidia::UXDriver::ApiX::Features::DelayLoadErrorHelper::SmartmaxDelayLoadFailureHook"
+  },
+  {
+    "offset": "0x56adc0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_SetVidPnInfo"
+  },
+  {
+    "offset": "0x56ae00",
+    "encoding": "utf-16le",
+    "text": "Failed to call NvAPI_GPU_SetVidPnInfo for GPU handle: "
+  },
+  {
+    "offset": "0x56aeb0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Hybrid_ControlDriverHDABusEx"
+  },
+  {
+    "offset": "0x56be68",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetSLIStateInfo"
+  },
+  {
+    "offset": "0x5718a6",
+    "encoding": "utf-16le",
+    "text": "rNvAPI_DISP_SetFeatureConfig"
+  },
+  {
+    "offset": "0x571bb0",
+    "encoding": "utf-16le",
+    "text": "Calling nvapi to update OS HDR mode to"
+  },
+  {
+    "offset": "0x571f38",
+    "encoding": "utf-16le",
+    "text": "NvAPI_Disp_HdrColorControl"
+  },
+  {
+    "offset": "0x5720d0",
+    "encoding": "utf-16le",
+    "text": "Software\\Microsoft\\Windows\\CurrentVersion\\DeviceSetup\\InstalledPfns"
+  },
+  {
+    "offset": "0x573660",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\Startup"
+  },
+  {
+    "offset": "0x574f70",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SYS_GetMDTLData"
+  },
+  {
+    "offset": "0x574fb0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_SYS_GetACPIIdMappings"
+  },
+  {
+    "offset": "0x5756f0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GSync_Signal_Event"
+  },
+  {
+    "offset": "0x576600",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_MapGpuTimestampToUsermode"
+  },
+  {
+    "offset": "0x5790f0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_AccessDisplayDriverRegistry"
+  },
+  {
+    "offset": "0x579150",
+    "encoding": "utf-16le",
+    "text": "NvAPI_GPU_GetPerGpuRegistryPath"
+  },
+  {
+    "offset": "0x579db8",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DRS_SetSettingEx"
+  },
+  {
+    "offset": "0x579e98",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DRS_CreateSession"
+  },
+  {
+    "offset": "0x579ef0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DRS_GetSettingEx"
+  },
+  {
+    "offset": "0x579fc0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DRS_FindProfileByName"
+  },
+  {
+    "offset": "0x57a020",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DRS_LoadSettings"
+  },
+  {
+    "offset": "0x57a198",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DRS_CreateApplication"
+  },
+  {
+    "offset": "0x57a1d0",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DRS_CreateProfile"
+  },
+  {
+    "offset": "0x57a200",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DRS_DestroySession"
+  },
+  {
+    "offset": "0x57a540",
+    "encoding": "utf-16le",
+    "text": "NvAPI_DRS_SaveSettings"
+  },
+  {
+    "offset": "0x57f798",
+    "encoding": "utf-16le",
+    "text": "\\\\.\\pipe\\nvcs"
+  },
+  {
+    "offset": "0x585cf0",
+    "encoding": "utf-16le",
+    "text": "IOCTL_USB_GET_NODE_CONNECTION_INFORMATION failed. GetLastError() error code - "
+  },
+  {
+    "offset": "0x585fc0",
+    "encoding": "utf-16le",
+    "text": "IOCTL_USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION : DeviceIoControl returned false"
+  },
+  {
+    "offset": "0x5861f0",
+    "encoding": "utf-16le",
+    "text": "IOCTL_USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION : DeviceIoControl() returned false"
+  },
+  {
+    "offset": "0x5862a0",
+    "encoding": "utf-16le",
+    "text": "IOCTL_USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION : nBytes != bosDesc->wTotalLength + sizeof(USB_DESCRIPTOR_REQUEST)"
+  },
+  {
+    "offset": "0x586410",
+    "encoding": "utf-16le",
+    "text": "IOCTL_USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION: DeviceIoControl returned false"
+  },
+  {
+    "offset": "0x5864b0",
+    "encoding": "utf-16le",
+    "text": "IOCTL_USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION : nBytes != bytesReturned"
+  },
+  {
+    "offset": "0x586540",
+    "encoding": "utf-16le",
+    "text": "IOCTL_USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION : bosDesc->wTotalLength < sizeof(USB_BOS_DESCRIPTOR)"
+  },
+  {
+    "offset": "0x586820",
+    "encoding": "utf-16le",
+    "text": "IOCTL_USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION : stringDescriptor->bDescriptorType != USB_STRING_DESCRIPTOR_TYPE"
+  },
+  {
+    "offset": "0x586900",
+    "encoding": "utf-16le",
+    "text": "IOCTL_USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION : stringDescriptor->bLength % 2 != 0"
+  },
+  {
+    "offset": "0x586b70",
+    "encoding": "utf-16le",
+    "text": "IOCTL_USB_GET_HUB_INFORMATION_EX : DeviceIoControl() returned false"
+  }
+]

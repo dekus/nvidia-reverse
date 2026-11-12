@@ -1,0 +1,1437 @@
+[
+  {
+    "offset": "0x2e2648",
+    "encoding": "ascii",
+    "text": "D3D11CreateDevice"
+  },
+  {
+    "offset": "0x2e26c0",
+    "encoding": "ascii",
+    "text": "CD3D11Dll::D3D11CreateDevice: D3D11CreateDevice not found"
+  },
+  {
+    "offset": "0x2e2a38",
+    "encoding": "ascii",
+    "text": "CDX11Device::InitDevice: D3D11CreateDevice failed(0x%08X) "
+  },
+  {
+    "offset": "0x2e2b20",
+    "encoding": "ascii",
+    "text": "CDX11Device::InitDevice: D3D11CreateDevice failed(0x%08X) on %S GPU:%d"
+  },
+  {
+    "offset": "0x2e3f40",
+    "encoding": "ascii",
+    "text": "NvFBC_Enable"
+  },
+  {
+    "offset": "0x2e3f50",
+    "encoding": "ascii",
+    "text": "NvFBC_SetGlobalFlags"
+  },
+  {
+    "offset": "0x2e3fd0",
+    "encoding": "ascii",
+    "text": "NvFBC_GetStatusEx"
+  },
+  {
+    "offset": "0x2e3fe8",
+    "encoding": "ascii",
+    "text": "isConcurrentCaptureEnabled NvFBC concurrency support %d"
+  },
+  {
+    "offset": "0x2e4030",
+    "encoding": "ascii",
+    "text": "NvFBCDLL::LoadNVFBCDll nvfbc [%s] %0X"
+  },
+  {
+    "offset": "0x2e4060",
+    "encoding": "ascii",
+    "text": "NvFBCDLL::Initialize: failed to load NVFBC DLL"
+  },
+  {
+    "offset": "0x2e40a0",
+    "encoding": "ascii",
+    "text": "NvFBCDLL::Initialize: Failed to get fptr for NvFBC_GetStatusEx. gle [%#X]"
+  },
+  {
+    "offset": "0x2e40f8",
+    "encoding": "ascii",
+    "text": "NvFBC_CreateEx"
+  },
+  {
+    "offset": "0x2e4110",
+    "encoding": "ascii",
+    "text": "NvFBCDLL::Initialize: Failed to get fptr for NvFBC_CreateEx. gle [%#X]"
+  },
+  {
+    "offset": "0x2e4170",
+    "encoding": "ascii",
+    "text": "NvFBCDLL::Initialize: Failed to get fptr for NvFBC_SetGlobalFlags . gle [%#X]"
+  },
+  {
+    "offset": "0x2e41d0",
+    "encoding": "ascii",
+    "text": "NvFBCDLL::CheckAndInitialize: NvFBC_GetStatusEx failed with code %d"
+  },
+  {
+    "offset": "0x2e4230",
+    "encoding": "ascii",
+    "text": "NvFBCDLL::CheckAndInitialize: NvFBC status: concurrency[%d], bIsCapturePossible[%d], capturing[%d], checkPIDMode[%d], bPIDCaptureSupported[%d], bCanCreatePIDSession[%d]"
+  },
+  {
+    "offset": "0x2e4300",
+    "encoding": "ascii",
+    "text": "NvFBCDLL::Create: NvFBC_CreateEx failed with code %d"
+  },
+  {
+    "offset": "0x2e4340",
+    "encoding": "ascii",
+    "text": "NvFBCDLL::Create: NvFBC created for capture type[%d] with PID[%d]"
+  },
+  {
+    "offset": "0x2e4390",
+    "encoding": "ascii",
+    "text": "NvFBC_UnloadNvAPI"
+  },
+  {
+    "offset": "0x2e43a8",
+    "encoding": "ascii",
+    "text": "NvFBC_UnloadDll: pfnNvFBC_UnloadNvApi failed(%d)"
+  },
+  {
+    "offset": "0x2e6d58",
+    "encoding": "ascii",
+    "text": "../common/telemetry/NvTelemetryEvents.cpp"
+  },
+  {
+    "offset": "0x2e7ad8",
+    "encoding": "ascii",
+    "text": "Check gs_telemetry failed"
+  },
+  {
+    "offset": "0x2e9788",
+    "encoding": "ascii",
+    "text": "InitializeTelemetry"
+  },
+  {
+    "offset": "0x2e97f0",
+    "encoding": "ascii",
+    "text": "InitializeTelemetry_2"
+  },
+  {
+    "offset": "0x2e98b0",
+    "encoding": "ascii",
+    "text": "InitializeTelemetryStandalone"
+  },
+  {
+    "offset": "0x2e99c8",
+    "encoding": "ascii",
+    "text": "InitializeTelemetryStandalone_2"
+  },
+  {
+    "offset": "0x2e9ab0",
+    "encoding": "ascii",
+    "text": "UninitializeTelemetry"
+  },
+  {
+    "offset": "0x2e9b70",
+    "encoding": "ascii",
+    "text": "GetUserTelemetryConsent"
+  },
+  {
+    "offset": "0x2e9b90",
+    "encoding": "ascii",
+    "text": "Check m_getUserTelemetryConsent failed"
+  },
+  {
+    "offset": "0x2e9bc0",
+    "encoding": "ascii",
+    "text": "GetDeviceTelemetryConsent"
+  },
+  {
+    "offset": "0x2e9be0",
+    "encoding": "ascii",
+    "text": "Check m_getDeviceTelemetryConsent failed"
+  },
+  {
+    "offset": "0x2e9c18",
+    "encoding": "ascii",
+    "text": "SetUserTelemetryConsent"
+  },
+  {
+    "offset": "0x2e9c38",
+    "encoding": "ascii",
+    "text": "Check m_setUserTelemetryConsent failed"
+  },
+  {
+    "offset": "0x2e9c68",
+    "encoding": "ascii",
+    "text": "SetDeviceTelemetryConsent"
+  },
+  {
+    "offset": "0x2e9c88",
+    "encoding": "ascii",
+    "text": "Check m_setDeviceTelemetryConsent failed"
+  },
+  {
+    "offset": "0x2e9cc0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendEvent"
+  },
+  {
+    "offset": "0x2e9d00",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendAnonymousEvent"
+  },
+  {
+    "offset": "0x2e9d50",
+    "encoding": "ascii",
+    "text": "SubscribeForTelemetryNotifications"
+  },
+  {
+    "offset": "0x2e9da0",
+    "encoding": "ascii",
+    "text": "UnsubscribeFromTelemetryNotifications"
+  },
+  {
+    "offset": "0x2e9df0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendEvent_2"
+  },
+  {
+    "offset": "0x2e9e30",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendAnonymousEvent_2"
+  },
+  {
+    "offset": "0x2e9e88",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_2"
+  },
+  {
+    "offset": "0x2e9ed0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_3"
+  },
+  {
+    "offset": "0x2e9ef0",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_4"
+  },
+  {
+    "offset": "0x2e9f10",
+    "encoding": "ascii",
+    "text": "NvTelemetrySendFeedback_5"
+  },
+  {
+    "offset": "0x2e9f30",
+    "encoding": "ascii",
+    "text": "FreeTelemetryString"
+  },
+  {
+    "offset": "0x2e9f48",
+    "encoding": "ascii",
+    "text": "Check m_freeTelemetryString failed"
+  },
+  {
+    "offset": "0x2ea0c0",
+    "encoding": "ascii",
+    "text": "Trying to send non-anonymous telemetry anonymized."
+  },
+  {
+    "offset": "0x2ea168",
+    "encoding": "ascii",
+    "text": "telemetry"
+  },
+  {
+    "offset": "0x2eb930",
+    "encoding": "ascii",
+    "text": "TelemetryManager::HandleEventTelemetry Param mismatch for event %d (%d!=%d)"
+  },
+  {
+    "offset": "0x2eb9c0",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendShadowPlayRecordingEvent : NULL param"
+  },
+  {
+    "offset": "0x2eba58",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendCaptureRequestResponseEvent : NULL param"
+  },
+  {
+    "offset": "0x2ebaf0",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendShadowPlayInfoEvent : NULL param"
+  },
+  {
+    "offset": "0x2ebb88",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendShadowPlayToggleEvent : NULL param"
+  },
+  {
+    "offset": "0x2ebc10",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendThreadCrashEvent : NULL param"
+  },
+  {
+    "offset": "0x2ebc88",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendAPIErrorEvent : NULL param"
+  },
+  {
+    "offset": "0x2ebd00",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendShadowPlayErrorEvent : NULL param"
+  },
+  {
+    "offset": "0x2ebd88",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendTrimErrorEvent : NULL param"
+  },
+  {
+    "offset": "0x2ebdf8",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendCapCoreFatalEvent : NULL param"
+  },
+  {
+    "offset": "0x2ebe78",
+    "encoding": "ascii",
+    "text": "TelemetryManager::OnRecordingStop app telemetry not allowed"
+  },
+  {
+    "offset": "0x2ebec0",
+    "encoding": "ascii",
+    "text": "TelemetryManager::OnScreenshot app telemetry not allowed"
+  },
+  {
+    "offset": "0x2ebf10",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendRecordingEventAsync: m_pRecEventQueue(%p)"
+  },
+  {
+    "offset": "0x2ebf60",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendRecordingEventAsync: EnqueueMessage failed(0x%08X)"
+  },
+  {
+    "offset": "0x2ebfb8",
+    "encoding": "ascii",
+    "text": "TelemetryManager::EventQueueCb: pArgs NULL"
+  },
+  {
+    "offset": "0x2ebff0",
+    "encoding": "ascii",
+    "text": "TelemetryManager::EventQueueCb: args hContext(0x%X) pvMsgData(%p) uiMsgSize(%d)"
+  },
+  {
+    "offset": "0x2ec050",
+    "encoding": "ascii",
+    "text": "TelemetryManager::HandleRecordingEvent unrecognised event (%d)"
+  },
+  {
+    "offset": "0x2ec0a0",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendSystemConfigurationEvent : NULL param"
+  },
+  {
+    "offset": "0x2ec130",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SendLicenceCountingEvent : NULL param"
+  },
+  {
+    "offset": "0x2ec178",
+    "encoding": "ascii",
+    "text": "TelemetryManager::SetParams: IN"
+  },
+  {
+    "offset": "0x2edca8",
+    "encoding": "ascii",
+    "text": "CreateServerImplInterface: WaitForNvApiReady failed!!"
+  },
+  {
+    "offset": "0x2ede50",
+    "encoding": "ascii",
+    "text": "CServerImpl::CServerImpl: CreateNvApi failed. 0x%08X"
+  },
+  {
+    "offset": "0x2edfd8",
+    "encoding": "ascii",
+    "text": "CServerImpl::Initialize: CreateNvApi failed. 0x%08X"
+  },
+  {
+    "offset": "0x2ee270",
+    "encoding": "ascii",
+    "text": "CServerImpl::CreateNvApi: m_pNvApiUtils OOM 0x%08X"
+  },
+  {
+    "offset": "0x2ee4f0",
+    "encoding": "ascii",
+    "text": "CServerImpl::HandleDriverUnload: [NvApiMonitor]Display Driver Unloaded. Disabling Shadowplay..."
+  },
+  {
+    "offset": "0x2ee9d0",
+    "encoding": "ascii",
+    "text": "CServerImpl::EnableNVFBCLogger: EnableNvFBCLogger failed! 0x%08X"
+  },
+  {
+    "offset": "0x2eea20",
+    "encoding": "ascii",
+    "text": "CServerImpl::DisableNVFBCLogger: EnableNvFBCLogger failed! 0x%08X"
+  },
+  {
+    "offset": "0x2eebc0",
+    "encoding": "ascii",
+    "text": "CServerImpl::EnableShadowPlay: EnableNvFBC failed! 0x%08X"
+  },
+  {
+    "offset": "0x2ef390",
+    "encoding": "ascii",
+    "text": "CServerImpl::CreateCaptureSession: EnableNVFBCLogger Failed"
+  },
+  {
+    "offset": "0x2ef5f0",
+    "encoding": "ascii",
+    "text": "CServerImpl::DestroyCaptureSession: DisableNVFBCLogger Failed. 0x%08X"
+  },
+  {
+    "offset": "0x2f04f8",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\ShadowPlay\\NVSPCAPS"
+  },
+  {
+    "offset": "0x2f0680",
+    "encoding": "ascii",
+    "text": "CShowOsc::SendThreadTelemetryEvent: Telemetry Manager not available for reporting Thread Crash"
+  },
+  {
+    "offset": "0x2f1058",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global"
+  },
+  {
+    "offset": "0x2f19a8",
+    "encoding": "ascii",
+    "text": "CServerIpc::EnableNvFbcLogger : IN"
+  },
+  {
+    "offset": "0x2f19d8",
+    "encoding": "ascii",
+    "text": "CServerIpc::EnableNvFbcLogger: IpcProxy not initilized."
+  },
+  {
+    "offset": "0x2f1a20",
+    "encoding": "ascii",
+    "text": "CServerIpc::EnableNvFbcLogger: IpcSyncCall Failed error = 0x%08X"
+  },
+  {
+    "offset": "0x2f1a70",
+    "encoding": "ascii",
+    "text": "CServerIpc::EnableNvFbcLoggerCall to HeapFree has failed (%u)"
+  },
+  {
+    "offset": "0x2f1ac0",
+    "encoding": "ascii",
+    "text": "CServerIpc::EnableNvFbcLogger: OUT IpcSyncCall Failed error = 0x%08X. Invalid response. msgType = 0x%X, args.MsgIn.pPayload(0x%X), size(%d), actual size(%d)"
+  },
+  {
+    "offset": "0x2f1b80",
+    "encoding": "ascii",
+    "text": "CServerIpc::EnableNvFBC : IN"
+  },
+  {
+    "offset": "0x2f1ba8",
+    "encoding": "ascii",
+    "text": "CServerIpc::EnableNvFBC: IpcProxy not initilized."
+  },
+  {
+    "offset": "0x2f1bf0",
+    "encoding": "ascii",
+    "text": "CServerIpc::EnableNvFBC: CreateEvent (NVFBC enable event) failed %d"
+  },
+  {
+    "offset": "0x2f1c48",
+    "encoding": "ascii",
+    "text": "CServerIpc::EnableNvFBC: IpcSyncCall Failed error = 0x%08X"
+  },
+  {
+    "offset": "0x2f1c90",
+    "encoding": "ascii",
+    "text": "CServerIpc::EnableNvFBC: Call to HeapFree has failed (%u)"
+  },
+  {
+    "offset": "0x2f1cd8",
+    "encoding": "ascii",
+    "text": "NVFBC event signal failed"
+  },
+  {
+    "offset": "0x2f1cf8",
+    "encoding": "ascii",
+    "text": "CServerIpc::EnableNvFBC: Failed error = 0x%08X"
+  },
+  {
+    "offset": "0x2f1d30",
+    "encoding": "ascii",
+    "text": "CServerIpc::EnableNvFBC: OUT ret code = 0x%08X"
+  },
+  {
+    "offset": "0x2f78d0",
+    "encoding": "ascii",
+    "text": "CCaptureSession::SendErrorTelemetry: SendCapCoreFatalEvent failed. 0x%08X"
+  },
+  {
+    "offset": "0x2f9780",
+    "encoding": "ascii",
+    "text": "CCaptureSession::HandleScreenshotCB: Screenshot Telemetry failed [%#X]"
+  },
+  {
+    "offset": "0x2f9f20",
+    "encoding": "ascii",
+    "text": "CCaptureSession::SendThreadTelemetryEvent: Telemetry Manager not available for reporting Thread Crash"
+  },
+  {
+    "offset": "0x2ff560",
+    "encoding": "ascii",
+    "text": "CSharedDataManager::SendThreadTelemetryEvent: Telemetry Manager not available for reporting Thread Crash"
+  },
+  {
+    "offset": "0x303d80",
+    "encoding": "ascii",
+    "text": "CSPShareStateWorker<class CRemoteLoggerHost,&public: int __cdecl CRemoteLoggerHost::FlushRemoteLog(void)>::SendThreadTelemetryEvent: Telemetry Manager not available for reporting Thread Crash"
+  },
+  {
+    "offset": "0x3045a0",
+    "encoding": "ascii",
+    "text": "CEndProcessListener::SendThreadTelemetryEvent: Telemetry Manager not available for reporting Thread Crash"
+  },
+  {
+    "offset": "0x304e90",
+    "encoding": "ascii",
+    "text": "CSPEventListener::SendThreadTelemetryEvent: Telemetry Manager not available for reporting Thread Crash"
+  },
+  {
+    "offset": "0x304f30",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::WaitforNvApiReady: Waiting for NvApi monitor Dll callback and nvapi64.dll loading"
+  },
+  {
+    "offset": "0x304fa8",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::WaitforNvApiReady: Wait failed!!!"
+  },
+  {
+    "offset": "0x304fe8",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::WaitforNvApiReady: NvApi ready"
+  },
+  {
+    "offset": "0x305020",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::Initialize: IN"
+  },
+  {
+    "offset": "0x305050",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::Initialize: GetDisplayDriverVersion failed 0x%08X"
+  },
+  {
+    "offset": "0x3050a0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::Finalize: IN"
+  },
+  {
+    "offset": "0x3050c8",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::LoadNvApi: IN"
+  },
+  {
+    "offset": "0x3050f0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::LoadNvApi: NvApi is Already Loaded"
+  },
+  {
+    "offset": "0x305130",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::LoadNvApi: NvApi ready!!"
+  },
+  {
+    "offset": "0x305160",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::LoadNvApi: NvAPI_Initialize failed 0x%08X"
+  },
+  {
+    "offset": "0x3051a8",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::UnloadNvApi: IN"
+  },
+  {
+    "offset": "0x3051d0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::UnloadNvApi: NvAPI_Unload failed 0x%08X"
+  },
+  {
+    "offset": "0x305220",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::UnloadNvApi: NvAPI_Unload successful(%d)"
+  },
+  {
+    "offset": "0x305270",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::LoadNvapiDllMonitorInterface: SHGetKnownFolderPath failed.HRESULT = 0x%08X"
+  },
+  {
+    "offset": "0x305380",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::LoadNvapiDllMonitorInterface: Could not locate %S. Error 0x%08X"
+  },
+  {
+    "offset": "0x3053e0",
+    "encoding": "ascii",
+    "text": "CreateNvapiDllMonitorApiInterface"
+  },
+  {
+    "offset": "0x305410",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::LoadNvapiDllMonitorInterface: CreateNvapiMonitorDllApiInterface entrypoint not found! 0x%08X"
+  },
+  {
+    "offset": "0x3054b0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::LoadNvapiDllMonitorInterface: CreateNvapiDllMonitorApiInterface failed with error:%d"
+  },
+  {
+    "offset": "0x305528",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::LoadNvapiDllMonitorInterface: OUT "
+  },
+  {
+    "offset": "0x305568",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::UnloadNvapiDllMonitorInterface: OUT"
+  },
+  {
+    "offset": "0x3055a8",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::RegisterNvApiMonitorCallback: In"
+  },
+  {
+    "offset": "0x3055f0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::RegisterNvApiMonitorCallback: LoadNvapiDllMonitorInterface failed "
+  },
+  {
+    "offset": "0x305660",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::RegisterNvApiMonitorCallback: callback registered successfully with context:0x%x callback:0x%x"
+  },
+  {
+    "offset": "0x3056f0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::RegisterNvApiMonitorCallback: NvApiMonitorDllInterface RegisterCallback failed with error:%d"
+  },
+  {
+    "offset": "0x305778",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::RegisterNvApiMonitorCallback: Out"
+  },
+  {
+    "offset": "0x3057b8",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::DeRegisterNvApiMonitorCallback: In"
+  },
+  {
+    "offset": "0x305800",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::DeRegisterNvApiMonitorCallback: NvApiMonitorDllInterface is unloaded before De-Register callback"
+  },
+  {
+    "offset": "0x305890",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::DeRegisterNvApiMonitorCallback: callback DeRegistered successfully"
+  },
+  {
+    "offset": "0x3058f8",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::DeRegisterNvApiMonitorCallback: Out"
+  },
+  {
+    "offset": "0x305938",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::HandleNvapiMonitorDllCallback: In"
+  },
+  {
+    "offset": "0x305980",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::HandleNvapiMonitorDllCallback: Invalid action from monitor dll callback"
+  },
+  {
+    "offset": "0x3059e8",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::HandleNvapiMonitorDllCallback: Out"
+  },
+  {
+    "offset": "0x305a28",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::NvapiMonitorDllCallback: Invalid Args"
+  },
+  {
+    "offset": "0x305a68",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::NvapiMonitorDllCallback: pContext: 0x%x"
+  },
+  {
+    "offset": "0x305ab0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::NvapiMonitorDllCallback: pContext is NULL"
+  },
+  {
+    "offset": "0x305af8",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_CreateSession failed %d"
+  },
+  {
+    "offset": "0x305b20",
+    "encoding": "ascii",
+    "text": "NvAPI_DRS_LoadSettings %d"
+  },
+  {
+    "offset": "0x305b40",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::DestroyDRSSession: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x305b90",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::DestroyDRSSession: NvAPI_DRS_DestroySession failed 0x%08X"
+  },
+  {
+    "offset": "0x305bf0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetMsHybrid: NvAPI_Coproc_GetCoprocInfo failed 0x%08X"
+  },
+  {
+    "offset": "0x305c50",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetNotebook: NvAPI_EnumPhysicalGPUs failed 0x%08X"
+  },
+  {
+    "offset": "0x305ca0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetPrimaryDisplayId: NvAPI_DISP_GetGDIPrimaryDisplayId failed %d"
+  },
+  {
+    "offset": "0x305d00",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::IsMsHybrid: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x305d40",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::IsNotebook: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x305d80",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetPrimaryDisplayId: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x305dc8",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::IsPrimaryDisplayHDR: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x305e10",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::IsPrimaryDisplayHDR: NvAPI_GetHdrCapabilities Failed"
+  },
+  {
+    "offset": "0x305e70",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::IsPrimaryDisplayHDR: Failed to get primary display ID"
+  },
+  {
+    "offset": "0x305ed0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::IsPrimaryDisplayHDRModeSet: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x305f20",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::IsPrimaryDisplayHDRModeSet:  NvAPI_Disp_GetOutputMode NvApi call failed %d "
+  },
+  {
+    "offset": "0x305f90",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::IsPrimaryDisplayHDRModeSet: NvAPI_Disp_HdrColorControl NvApi call failed %d "
+  },
+  {
+    "offset": "0x306000",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::IsPrimaryDisplayHDRModeSet: Failed to get primary display ID"
+  },
+  {
+    "offset": "0x306060",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::IsPrimaryDisplayChanged: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x3060c0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::isCoProcSystemInWhiteList: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x306110",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::IsSystemDDSModeCapable: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x306160",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::IsSystemDDSModeCapable: failed nvapi enum gpus"
+  },
+  {
+    "offset": "0x3061b0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::IsSystemDDSModeCapable: failed nvapi enum gpus count"
+  },
+  {
+    "offset": "0x306210",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::IsSystemDDSModeCapable: failed nvapi display ids"
+  },
+  {
+    "offset": "0x306260",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::IsSystemDDSModeCapable: failed nvapi display ids count"
+  },
+  {
+    "offset": "0x3062b8",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::IsSystemDDSModeCapable: failed malloc"
+  },
+  {
+    "offset": "0x3062f8",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::IsVRRMode: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x306338",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::IsVRRMode"
+  },
+  {
+    "offset": "0x3063f0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetDisplayDriverVersion: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x306440",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetDRSAppName: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x306480",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetDRSAppName: Path not provided"
+  },
+  {
+    "offset": "0x3064c0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetDRSAppName: DRSProfileName '%S' in cache"
+  },
+  {
+    "offset": "0x306508",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetDRSAppName: Failed to get driver version"
+  },
+  {
+    "offset": "0x306550",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetDRSAppName: InCompatible Driver %d(<36452). Trying VER3 ..."
+  },
+  {
+    "offset": "0x3065b0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetDRSAppName: NvAPI_DRS_FindApplicationByName VER3 failed with %d. Trying VER2 ..."
+  },
+  {
+    "offset": "0x306630",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetDRSAppName: NvAPI_DRS_FindApplicationByName failed with %d"
+  },
+  {
+    "offset": "0x306690",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetDRSAppName: No DRSAppName returned"
+  },
+  {
+    "offset": "0x3066d0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetDRSAppName: Using exe name as executable"
+  },
+  {
+    "offset": "0x306718",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetSliSupport: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x306760",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetSliSupport NvAPI_GetValidGpuTopologies failed (%#X)"
+  },
+  {
+    "offset": "0x3067c0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetSliSupport NvAPI_GetValidGpuTopologies status %#X not OK"
+  },
+  {
+    "offset": "0x306820",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetExternalGpus: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x306868",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetExternalGpus Invalid Param"
+  },
+  {
+    "offset": "0x3068a0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetExternalGpus: Logical GPU:%d's info -> physicalGpuCount:%d adapterluid's LowPart:0x%x HighPart:0x%x"
+  },
+  {
+    "offset": "0x306930",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetExternalGpus: eGPU LUID = 0x%X, 0x%X"
+  },
+  {
+    "offset": "0x306980",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetExternalGpus: NvAPI_GPU_GetGPUInfo failed status: %d"
+  },
+  {
+    "offset": "0x3069e0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetExternalGpus: NvAPI_GPU_GetLogicalGpuInfo failed, NvApi_Status: %d"
+  },
+  {
+    "offset": "0x306a50",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetExternalGpus: NvAPI_EnumLogicalGPUs failed status: %d"
+  },
+  {
+    "offset": "0x306aa8",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetGPUArch: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x306af0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetGPUArch Call to NvAPI_GPU_GetArchInfo() failed. Error (%d)"
+  },
+  {
+    "offset": "0x306b50",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetGPUArch Call to NvAPI_EnumPhysicalGPUs() failed. Error (%d)"
+  },
+  {
+    "offset": "0x306bb0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetGPUArchDisplay Id of GDI primary not returned successfully. Error (%d)"
+  },
+  {
+    "offset": "0x306c20",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetGPUArchPhysical GPU handle connected to provided display not returned successfully. Error (%d)"
+  },
+  {
+    "offset": "0x306cb0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetGPUArchGet Architecture Info API failed. Error(%d)"
+  },
+  {
+    "offset": "0x306d08",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetSourceColorSpace: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x306d50",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetSourceColorSpace: Invalid Params"
+  },
+  {
+    "offset": "0x306d90",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::LogGPUInfo: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x306e50",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::ShowHWCursor: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x306e90",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::IsWorkstationSetup: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x306ee0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::IsGPUArchitectureSupported: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x306f30",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::getGpuManufactureInfo: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x306f80",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::getGpuManufactureInfo: Invalid Argument"
+  },
+  {
+    "offset": "0x306fd0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::getGpuManufactureInfo: Logical GPU:%d's Info -> physicalGpuCount:%d adapterluid's LowPart:0x%x HighPart:0x%x"
+  },
+  {
+    "offset": "0x307070",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::getGpuManufactureInfo: NvAPI_GPU_ManufacturingInfo failed, NvAPI_Status:%d"
+  },
+  {
+    "offset": "0x3070e0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::getGpuManufactureInfo: NvAPI_GPU_GetGPUInfo failed, NvAPI_Status:%d"
+  },
+  {
+    "offset": "0x307150",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::getGpuManufactureInfo: NvAPI_GPU_GetLogicalGpuInfo failed, NvApi_Status: %d"
+  },
+  {
+    "offset": "0x3071c0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::getGpuManufactureInfo: NvAPI_EnumLogicalGPUs failed, NvApi_Status: %d"
+  },
+  {
+    "offset": "0x307228",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::getClusteredTargetIds: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x307278",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::getClusteredTargetIdsERROR %d"
+  },
+  {
+    "offset": "0x3072b0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::readScanoutParams: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x3072f8",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::readScanoutParams: Invalid Param"
+  },
+  {
+    "offset": "0x307338",
+    "encoding": "ascii",
+    "text": "NvAPI_D3D11_WksReadScanout() failed with error:%d"
+  },
+  {
+    "offset": "0x307380",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetHyperSamplingSettings: NvApiLib is not loaded"
+  },
+  {
+    "offset": "0x3073d0",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetHyperSamplingSettings: Invalid Param"
+  },
+  {
+    "offset": "0x307420",
+    "encoding": "ascii",
+    "text": "CSPNvAPIUtils::GetHyperSamplingSettingsNvAPI_DISP_GetHyperSamplingSettingsEx failed with error %d for Upscaling Resolution flag"
+  },
+  {
+    "offset": "0x307500",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvApp\\ShadowPlay"
+  },
+  {
+    "offset": "0x307f10",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\ShadowPlay\\NVSPCAPS"
+  },
+  {
+    "offset": "0x307f48",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\ShadowPlay\\Overrides"
+  },
+  {
+    "offset": "0x3094b0",
+    "encoding": "ascii",
+    "text": "NvEncLogoSec"
+  },
+  {
+    "offset": "0x3094c0",
+    "encoding": "ascii",
+    "text": "EnableNvEncLogo"
+  },
+  {
+    "offset": "0x30b3a0",
+    "encoding": "ascii",
+    "text": "CSettings::getBitrateFPSRange 240fps not supported for 4k on systems with 1 NvENc"
+  },
+  {
+    "offset": "0x30b450",
+    "encoding": "ascii",
+    "text": "CSettings::getBitrateRangeNew 240fps not supported for 4k on systems with 1 NvENc"
+  },
+  {
+    "offset": "0x30d590",
+    "encoding": "ascii",
+    "text": "CSettings::EvaluateVideoCaptureSettings: recfps[%f] capped to 120 for 4K capture on single-NvENC system"
+  },
+  {
+    "offset": "0x30d7b0",
+    "encoding": "ascii",
+    "text": "CSettings::EvaluateVideoCaptureSettings: This is first Hevc capture, send licence counting telemetry"
+  },
+  {
+    "offset": "0x30dbb8",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps m_bNVEncCapsChecked[%d]: "
+  },
+  {
+    "offset": "0x30dbf8",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps [%d]: m_pSystemConfig->IsWoA() = %d"
+  },
+  {
+    "offset": "0x30dc48",
+    "encoding": "ascii",
+    "text": "nvEncodeAPI"
+  },
+  {
+    "offset": "0x30dc60",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps :LoadLibrary Could not Load NvEncodeAPI.dll [%d]"
+  },
+  {
+    "offset": "0x30dcc0",
+    "encoding": "ascii",
+    "text": "NvEncodeAPICreateInstance"
+  },
+  {
+    "offset": "0x30dce0",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps :Can't Initialize EncodeAPI function list"
+  },
+  {
+    "offset": "0x30dd40",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps :Could not get NV_ENCODE_API_FUNCTION_LIST"
+  },
+  {
+    "offset": "0x30dda0",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps :Failed to create EncodeAPI Instance with code:%d"
+  },
+  {
+    "offset": "0x30de00",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps :Failed to create D3D11 device hr[%#X]"
+  },
+  {
+    "offset": "0x30de50",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps :Failed to nvEncOpenEncodeSession with code:%d"
+  },
+  {
+    "offset": "0x30dea8",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps [%d]: dwEncodeGUIDCount[%d]"
+  },
+  {
+    "offset": "0x30def0",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps :EncGUID array alloc failed"
+  },
+  {
+    "offset": "0x30df38",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps [%d]: encode uArraysize[%d]"
+  },
+  {
+    "offset": "0x30df80",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps : H264 encoder available"
+  },
+  {
+    "offset": "0x30dfc0",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps : H264 async encode supported[%d]"
+  },
+  {
+    "offset": "0x30e010",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps : H265 encoder available"
+  },
+  {
+    "offset": "0x30e050",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps : H265 10-bit encoder supported[%d]"
+  },
+  {
+    "offset": "0x30e0a0",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps : Num NVENCs(HEVC) = %d"
+  },
+  {
+    "offset": "0x30e0e0",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps : H265 async encode supported[%d]"
+  },
+  {
+    "offset": "0x30e130",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps : AV1 encoder available"
+  },
+  {
+    "offset": "0x30e170",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps : AV1 10-bit encoder supported[%d]"
+  },
+  {
+    "offset": "0x30e1c0",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps : Num NVENCs(AV1) = %d"
+  },
+  {
+    "offset": "0x30e200",
+    "encoding": "ascii",
+    "text": "CSettings::SaveNVEncHWCaps : AV1 async encode supported[%d]"
+  },
+  {
+    "offset": "0x30e250",
+    "encoding": "ascii",
+    "text": "nvEncGetEncodeGUIDs returned[%d]. uArraysize[%d], dwEncodeGUIDCount[%d]"
+  },
+  {
+    "offset": "0x30e2b0",
+    "encoding": "ascii",
+    "text": "CSettings::IsNVEncoderSupported: requested caps: codec[%d] 10-bit-encode[%d]"
+  },
+  {
+    "offset": "0x30e310",
+    "encoding": "ascii",
+    "text": "CSettings::IsNVEncoderSupported: HW NVEnc caps: codec[%d] 10-bit-encode[%d]"
+  },
+  {
+    "offset": "0x30e628",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\ShadowPlay\\NVSPCAPS"
+  },
+  {
+    "offset": "0x30f0c8",
+    "encoding": "ascii",
+    "text": "NVSPCAPS"
+  },
+  {
+    "offset": "0x30f318",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvApp\\ShadowPlay\\FTS"
+  },
+  {
+    "offset": "0x30fae0",
+    "encoding": "ascii",
+    "text": "GetSocVideoSupportedReason: NvFbc SocVideoCapture is not supported for all Apis(Dxs, OGL&Vulkan)"
+  },
+  {
+    "offset": "0x310298",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global"
+  },
+  {
+    "offset": "0x310738",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\NVIDIA Corporation\\Global\\NvApp"
+  },
+  {
+    "offset": "0x310900",
+    "encoding": "ascii",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\Layers"
+  },
+  {
+    "offset": "0x310a40",
+    "encoding": "ascii",
+    "text": "IsNvFBCEnabled: NvFBC_GetStatusEx failed with code 0x%08X"
+  },
+  {
+    "offset": "0x310a88",
+    "encoding": "ascii",
+    "text": "IsNvFBCEnabled: LoadDll failed, error: %d"
+  },
+  {
+    "offset": "0x311550",
+    "encoding": "ascii",
+    "text": "CSystemConfiguration::QueryHyperSamplingInvalid DisplayID/NvAPI_Initialize failed"
+  },
+  {
+    "offset": "0x3118a0",
+    "encoding": "ascii",
+    "text": "Application_ShouldReportTelemetry"
+  },
+  {
+    "offset": "0x311aa0",
+    "encoding": "ascii",
+    "text": "NvBackendAPIController::LoadNvBackendLibraryAndQueryInterface: Application_ShouldReportTelemetry not found"
+  },
+  {
+    "offset": "0x311ef0",
+    "encoding": "ascii",
+    "text": "NvBackendAPIController::IsAppTelemetryAllowed : Could not load Dll"
+  },
+  {
+    "offset": "0x311f40",
+    "encoding": "ascii",
+    "text": "NvBackendAPIController::IsAppTelemetryAllowed: Failed to init EasyAPI"
+  },
+  {
+    "offset": "0x311fa0",
+    "encoding": "ascii",
+    "text": "NvBackendAPIController::IsAppTelemetryAllowed Application_ShouldReportTelemetry failed | ret=%d"
+  },
+  {
+    "offset": "0x312018",
+    "encoding": "ascii",
+    "text": "NvBackendAPIController::IsAppTelemetryAllowed : took %dms"
+  },
+  {
+    "offset": "0x312600",
+    "encoding": "ascii",
+    "text": "PropertyStoreHelper::SendThreadTelemetryEvent: Telemetry Manager not available for reporting Thread Crash"
+  },
+  {
+    "offset": "0x329308",
+    "encoding": "ascii",
+    "text": "nvapi_QueryInterface"
+  },
+  {
+    "offset": "0x329328",
+    "encoding": "ascii",
+    "text": "nvapi_Direct_GetMethod"
+  },
+  {
+    "offset": "0x34338c",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\rel\\gfclient\\nvapp_11_09_PATCH1\\shadowplay2\\server\\win7_amd64_release\\_nvspcaps64.pdb"
+  },
+  {
+    "offset": "0x3909e2",
+    "encoding": "ascii",
+    "text": "_nvspcaps64.dll"
+  },
+  {
+    "offset": "0x3909f2",
+    "encoding": "ascii",
+    "text": "NvPluginGetInfo"
+  },
+  {
+    "offset": "0x3934a0",
+    "encoding": "ascii",
+    "text": ".?AUITelemetry@ShadowPlay@NvTelemetry@@"
+  },
+  {
+    "offset": "0x3934e8",
+    "encoding": "ascii",
+    "text": ".?AVTelemetry@ShadowPlay@NvTelemetry@@"
+  },
+  {
+    "offset": "0x3c47ce",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeW"
+  },
+  {
+    "offset": "0x3c546c",
+    "encoding": "ascii",
+    "text": "D3D11CreateDevice"
+  },
+  {
+    "offset": "0x3c56ec",
+    "encoding": "ascii",
+    "text": "CreateNamedPipeA"
+  },
+  {
+    "offset": "0x2e49e0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\Vulkan\\Drivers"
+  },
+  {
+    "offset": "0x2e4a30",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Khronos\\OpenCL\\Vendors"
+  },
+  {
+    "offset": "0x2e4cf0",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+  },
+  {
+    "offset": "0x2e6e30",
+    "encoding": "utf-16le",
+    "text": "NvTelemetryAPI64.dll"
+  },
+  {
+    "offset": "0x2e6ef0",
+    "encoding": "utf-16le",
+    "text": "\\NVIDIA Corporation\\NvTelemetry"
+  },
+  {
+    "offset": "0x2ffef0",
+    "encoding": "utf-16le",
+    "text": "\\\\.\\pipe\\5D2E8F14-9B3A-4C6D-A1E7-3F08B4C92D6A"
+  },
+  {
+    "offset": "0x3052e0",
+    "encoding": "utf-16le",
+    "text": "NvapiDllMonitor.dll"
+  },
+  {
+    "offset": "0x30b8e8",
+    "encoding": "utf-16le",
+    "text": "NvFBC.dll"
+  },
+  {
+    "offset": "0x310c30",
+    "encoding": "utf-16le",
+    "text": "nvspcaps.exe"
+  },
+  {
+    "offset": "0x310c50",
+    "encoding": "utf-16le",
+    "text": "nvspcaps64.exe"
+  },
+  {
+    "offset": "0x329250",
+    "encoding": "utf-16le",
+    "text": "NvAPI Direct was not found. Please update your driver."
+  },
+  {
+    "offset": "0x329378",
+    "encoding": "utf-16le",
+    "text": "nvapi64.dll"
+  },
+  {
+    "offset": "0x3c8250",
+    "encoding": "utf-16le",
+    "text": "_nvspcaps64"
+  },
+  {
+    "offset": "0x3c8290",
+    "encoding": "utf-16le",
+    "text": "_nvspcaps64.dll"
+  }
+]

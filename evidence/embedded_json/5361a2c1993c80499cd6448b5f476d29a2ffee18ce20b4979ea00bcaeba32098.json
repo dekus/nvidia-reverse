@@ -1,0 +1,1830 @@
+[
+  {
+    "file_offset": "0x283b80",
+    "object": {
+      "$schema": "http://json-schema.org/draft-07/hyper-schema",
+      "id": "#gallery",
+      "title": "Gallery Endpoints",
+      "type": "object",
+      "module": "Gallery",
+      "definitions": {
+        "FileType": {
+          "type": "string",
+          "description": "Type information of file",
+          "enum": [
+            "video",
+            "image",
+            "other"
+          ]
+        },
+        "SubType": {
+          "type": "string",
+          "description": "Share-oriented subtype of file",
+          "enum": [
+            "Highlight",
+            "AnimatedGif",
+            "Normal",
+            "SuperResolution",
+            "SuperResolution_Oversized",
+            "360Mono",
+            "Stereo",
+            "360Stereo",
+            "Exr",
+            "Normal_Ansel",
+            "Montage",
+            "InstantReplay",
+            "Manual",
+            "Unknown"
+          ]
+        },
+        "AudioType": {
+          "type": "string",
+          "description": "Indicates Single or Multi-track audio",
+          "enum": [
+            "Single",
+            "Separate",
+            "Unknown"
+          ]
+        },
+        "Quality": {
+          "type": "string",
+          "description": "Quality level",
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "Source": {
+          "type": "string",
+          "description": "Feature that generated the file",
+          "enum": [
+            "GFE_Share",
+            "GFE_Ansel",
+            "GFE_SDK",
+            "StandAlone_Ansel",
+            "Undefined"
+          ]
+        },
+        "HighlightAppInfo": {
+          "type": "object",
+          "description": "DRS-sourced information about an application",
+          "properties": {
+            "appShortName": {
+              "type": "string",
+              "description": "DRS-sourced short name of the application for the Highlight"
+            },
+            "name": {
+              "type": "string",
+              "description": "DRS-sourced name of the application for the Highlight"
+            },
+            "profileName": {
+              "type": "string",
+              "description": "DRS-sourced profile name of the application for the Highlight"
+            }
+          }
+        },
+        "HighlightGroupInfo": {
+          "type": "object",
+          "description": "Group information set by the application",
+          "properties": {
+            "groupId": {
+              "type": "string",
+              "description": "Application-sourced group identifier that the Highlight belongs to"
+            },
+            "tags": {
+              "type": "integer",
+              "description": "Application-sourced tag values for the Highlight"
+            },
+            "significance": {
+              "type": "integer",
+              "description": "Application-sourced significance values for the Highlight"
+            }
+          }
+        },
+        "Highlight": {
+          "type": "object",
+          "description": "Data for a generated Higlight",
+          "properties": {
+            "id": {
+              "type": "integer",
+              "description": "Internal identifier value of the Highlight"
+            },
+            "definitionId": {
+              "type": "string",
+              "description": "Application-sourced definition identifier of the Highlight"
+            },
+            "name": {
+              "type": "string",
+              "description": "Application-sourced name of the Highlight"
+            },
+            "groupId": {
+              "type": "string",
+              "description": "Application-sourced group identifier that the Highlight belongs to"
+            },
+            "type": {
+              "type": "string",
+              "description": "Type of the highlight",
+              "enum": [
+                "screenshot",
+                "video"
+              ]
+            },
+            "path": {
+              "type": "string",
+              "description": "Fully-quantified path of the Highlight"
+            },
+            "tags": {
+              "type": "integer",
+              "description": "Application-sourced tag values for the Highlight"
+            },
+            "significance": {
+              "type": "integer",
+              "description": "Application-sourced significance values for the Highlight"
+            },
+            "savedToGallery": {
+              "type": "boolean",
+              "description": "Defines if the Highlight is saved to gallery (true), or in the temporary location (false)"
+            },
+            "videoLengthSeconds": {
+              "type": "integer",
+              "description": "Length of the video, in seconds (defined only if Highlight type is video, videos less than 1 second report as 0)",
+              "minimum": 0
+            }
+          }
+        },
+        "MontageInput": {
+          "type": "object",
+          "properties": {
+            "details": {
+              "type": "object",
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "description": "Path to input file"
+                },
+                "duration": {
+                  "type": "number",
+                  "description": "Duration, in milliseconds, of the video or audio file"
+                },
+                "width": {
+                  "type": "number",
+                  "description": "Horizontal size of video or image"
+                },
+                "height": {
+                  "type": "number",
+                  "description": "Vertical size of video or image"
+                },
+                "highlightType": {
+                  "type": "string",
+                  "description": "Label of specific highlight type"
+                },
+                "filter": {
+                  "type": "string",
+                  "description": "Filter to apply"
+                },
+                "source": {
+                  "type": "object",
+                  "properties": {
+                    "app": {
+                      "type": "string",
+                      "descritpion": "Monikor for NV app used to input file"
+                    },
+                    "method": {
+                      "type": "string",
+                      "description": "Monikor for how NV app captured the input file"
+                    }
+                  }
+                },
+                "transition": {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "type": "string",
+                      "description": "Type of transition"
+                    },
+                    "speed": {
+                      "type": "number",
+                      "description": "Speed of transition",
+                      "enum": [
+                        0.5,
+                        1.0,
+                        2.0
+                      ],
+                      "default": [
+                        1.0
+                      ]
+                    }
+                  }
+                },
+                "cmsid": {
+                  "type": "string",
+                  "description": "cmsId of current game"
+                }
+              },
+              "required": [
+                "path",
+                "duration"
+              ]
+            },
+            "inputFileType": {
+              "type": "string",
+              "description": "Type of Montage input: image, video or audio",
+              "enum": [
+                "video",
+                "image",
+                "audio"
+              ],
+              "default": "video"
+            },
+            "edgeLog": {
+              "type": "string",
+              "description": "Path to the EDGE log associated with the input video",
+              "default": ""
+            }
+          },
+          "required": [
+            "details",
+            "inputFileType"
+          ]
+        },
+        "Storyboard": {
+          "type": "object",
+          "properties": {
+            "titleSequence": {
+              "type": "object",
+              "properties": {
+                "seqType": {
+                  "type": "string",
+                  "description": "Type of tile sequence",
+                  "enum": [
+                    "none",
+                    "titleBasic"
+                  ],
+                  "default": "titleBasic"
+                },
+                "seqDetails": {
+                  "type": "object",
+                  "properties": {
+                    "txtTitle": {
+                      "type": "string",
+                      "description": "This is the text used in the title sequence"
+                    },
+                    "txtSubtitle": {
+                      "type": "string",
+                      "description": "This is the Subtitle used in the title sequence"
+                    }
+                  }
+                }
+              }
+            },
+            "celebration": {
+              "type": "string",
+              "description": "Choose a celebration to use in the story board"
+            },
+            "brandNV": {
+              "type": "object",
+              "properties": {
+                "brandType": {
+                  "type": "string",
+                  "description": "Type of brand to use",
+                  "enum": [
+                    "none",
+                    "brandSliderInOnly",
+                    "brandSlideInOut"
+                  ],
+                  "default": "brandSlideInOnly"
+                },
+                "brandDetails": {
+                  "type": "object",
+                  "properties": {
+                    "position": {
+                      "type": "string",
+                      "description": "Position of brand within story board",
+                      "enum": [
+                        "atStart",
+                        "atEnd"
+                      ],
+                      "default": "atEnd"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "MemeInfo": {
+          "type": "object",
+          "properties": {
+            "topBarText": {
+              "type": "string",
+              "description": "Text string to be displayed in the top bar"
+            },
+            "bottomBarText": {
+              "type": "string",
+              "description": "Text string to be displayed in the bottom bar"
+            }
+          },
+          "required": [
+            "topBarText",
+            "bottomBarText"
+          ]
+        },
+        "UGC": {
+          "type": "object",
+          "description": "Data for a generated UGC",
+          "properties": {
+            "id": {
+              "type": "integer",
+              "description": "Internal identifier value of the UGC"
+            },
+            "path": {
+              "type": "string",
+              "description": "Fully-quantified path of the UGC"
+            },
+            "fileType": {
+              "$ref": "#/definitions/FileType"
+            },
+            "fileSubType": {
+              "$ref": "#/definitions/SubType"
+            },
+            "fileSource": {
+              "$ref": "#/definitions/Source"
+            },
+            "fileSizeKB": {
+              "type": "number",
+              "description": "Size of file in kilobytes"
+            },
+            "date": {
+              "type": "string",
+              "description": "Creation date of the file"
+            },
+            "DRSName": {
+              "type": "string",
+              "description": "DRS Name embedded in the file"
+            },
+            "DRSProfileName": {
+              "type": "string",
+              "description": "DRS profile embedded in the file"
+            },
+            "cmsId": {
+              "type": "integer",
+              "maximum": 9223372036854775807,
+              "minimum": 0,
+              "description": "CMS ID of the app"
+            },
+            "duration": {
+              "type": "string",
+              "description": "Duration of video file in hh:mm:ss"
+            },
+            "msDuration": {
+              "type": "integer",
+              "description": "Duration of video file in milliseconds"
+            },
+            "audiotype": {
+              "$ref": "#/definitions/AudioType"
+            },
+            "highlightDefinitionId": {
+              "type": "string",
+              "description": "Application-sourced definition identifier of the Highlight"
+            },
+            "highlightName": {
+              "type": "string",
+              "description": "Application-sourced name of the Highlight"
+            },
+            "highlightGroupId": {
+              "type": "string",
+              "description": "Application-sourced group identifier that the Highlight belongs to"
+            },
+            "highlightTags": {
+              "type": "integer",
+              "description": "Application-sourced tag values for the Highlight"
+            },
+            "highlightSignificance": {
+              "type": "integer",
+              "description": "Application-sourced significance values for the Highlight"
+            },
+            "eventTimeStamp": {
+              "type": "string",
+              "description": "Timestamp of Highlight Media File"
+            },
+            "memeInfo": {
+              "$ref": "#/definitions/MemeInfo"
+            },
+            "codecType": {
+              "type": "string",
+              "description": "Codec used for file"
+            }
+          }
+        },
+        "GalleryPathUpdateStatus": {
+          "type": "string",
+          "description": "Tracker update status",
+          "enum": [
+            "TrackerUpdateNotActive",
+            "TrackerUpdateInProgress",
+            "TrackerUpdateComplete",
+            "CancelUpdateComplete",
+            "CancelUpdate"
+          ]
+        },
+        "GalleryNotifications": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "galleryPathUpdateStatus": {
+                "type": "object",
+                "description": "Indicates Highlights has been saved",
+                "properties": {
+                  "status": {
+                    "$ref": "#/definitions/GalleryPathUpdateStatus"
+                  }
+                }
+              },
+              "openSummary": {
+                "type": "object",
+                "description": "Notification to open Highlights summary",
+                "properties": {
+                  "ugc": {
+                    "type": "array",
+                    "description": "Array of Highlights to show in the summary",
+                    "items": {
+                      "$ref": "#/definitions/UGC"
+                    }
+                  }
+                }
+              },
+              "highlightCanceled": {
+                "type": "object",
+                "description": "Highlight Capture timed out",
+                "properties": {
+                  "highlight": {
+                    "$ref": "#/definitions/Highlight"
+                  }
+                }
+              },
+              "highlightCaptureFailed": {
+                "type": "object",
+                "description": "SP failed to capture Highlight",
+                "properties": {
+                  "errorCode": {
+                    "type": "integer",
+                    "description": "Error code indicating highlight capture failure"
+                  }
+                }
+              },
+              "ugcDeleted": {
+                "type": "object",
+                "description": "Highlight Capture timed out",
+                "properties": {
+                  "ugc": {
+                    "$ref": "#/definitions/UGC"
+                  }
+                }
+              },
+              "captureSaved": {
+                "type": "object",
+                "description": "Capture Saved",
+                "properties": {
+                  "ugc": {
+                    "$ref": "#/definitions/UGC"
+                  },
+                  "unannounced": {
+                    "type": "boolean",
+                    "description": "Indicates if user needs to be notified on Highlight Captures"
+                  }
+                }
+              },
+              "galleryIsFull": {
+                "type": "boolean",
+                "description": "Indicates the gallery cap has been reached"
+              },
+              "checkDiskSpace": {
+                "type": "object",
+                "description": "Indicates system is running low on disk space",
+                "properties": {
+                  "lowDiskSpace": {
+                    "type": "boolean",
+                    "description": "Indicates if disk space is low"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "MontageNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Notification triggers when montage being created and progress updated.",
+          "return": {
+            "type": "object",
+            "properties": {
+              "progress": {
+                "type": "number",
+                "description": "Percentage of montage creation that is complete"
+              }
+            }
+          }
+        },
+        "PathChangeNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Notification triggers when the Gallery path changes",
+          "return": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string",
+                "description": "Fully-quantified path of Gallery"
+              }
+            }
+          }
+        },
+        "TempFolderChangeNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Notification triggers when the Temporary Folder path changes",
+          "return": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string",
+                "description": "Fully-quantified path of temp folder"
+              }
+            }
+          }
+        },
+        "GalleryCapInfo": {
+          "type": "object",
+          "description": "Information about Gallery disk space usage and allowed capacity",
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Defines if the disk space cap should be enforced or not"
+            },
+            "usageMB": {
+              "type": "integer",
+              "description": "Gallery disk usage",
+              "minimum": 0
+            },
+            "capacityPercent": {
+              "type": "integer",
+              "description": "Allow disk space capacity when cap is enabled"
+            },
+            "totalDiskSpaceMB": {
+              "type": "integer",
+              "description": "Total disk space of the drive"
+            }
+          }
+        },
+        "GalleryCapStateChangeNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Notification triggers when Gallery cap is enabled/disabled",
+          "return": {
+            "type": "object",
+            "properties": {
+              "capacity": {
+                "$ref": "#/definitions/GalleryCapInfo"
+              }
+            }
+          }
+        },
+        "GalleryUpdatedNotification": {
+          "isCommand": true,
+          "persistent": true,
+          "type": "object",
+          "description": "Notification triggers when UGC is added/deleted from Gallery",
+          "return": {
+            "type": "object",
+            "properties": {
+              "capacity": {
+                "$ref": "#/definitions/GalleryCapInfo"
+              }
+            }
+          }
+        },
+        "GetFolderListing": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "directory": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Name of folder"
+              },
+              "shouldGetOnlyNv": {
+                "type": "boolean",
+                "description": "Optional, limits NV-based screenshots",
+                "default": false
+              },
+              "excludeDirectoryType": {
+                "type": "string",
+                "enum": [
+                  "none",
+                  "hidden",
+                  "empty",
+                  "hiddenOrEmpty",
+                  "hiddenAndEmpty"
+                ],
+                "default": "none"
+              },
+              "shouldShowEXR": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "directory"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "files": {
+                "type": "array",
+                "description": "Array of files and their extended information",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "description": "Name of file"
+                    },
+                    "type": {
+                      "$ref": "#/definitions/FileType"
+                    },
+                    "subtype": {
+                      "$ref": "#/definitions/SubType"
+                    },
+                    "source": {
+                      "$ref": "#/definitions/Source"
+                    },
+                    "thumbnail": {
+                      "type": "string",
+                      "description": "Fully-quantified path of thumbnail for current file"
+                    }
+                  }
+                }
+              },
+              "directories": {
+                "type": "array",
+                "description": "Array of subdirectories",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "files",
+              "directories"
+            ]
+          }
+        },
+        "GetAppStats": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "appName": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Name of Folder"
+              }
+            },
+            "required": [
+              "appName"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "screenshots": {
+                "type": "integer",
+                "description": "Number of screenshots in the directory"
+              },
+              "videos": {
+                "type": "integer",
+                "description": "Number of videos in the directory"
+              }
+            }
+          }
+        },
+        "GetAppUGC": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "appName": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Name of Folder"
+              }
+            },
+            "required": [
+              "appName"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "ugc": {
+                "type": "array",
+                "description": "Array of Highlights to show in the summary",
+                "items": {
+                  "$ref": "#/definitions/UGC"
+                }
+              }
+            },
+            "required": [
+              "ugc"
+            ]
+          }
+        },
+        "RemoveGalleryItem": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "file": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Full File/Directory Path"
+              },
+              "forceDelete": {
+                "type": "boolean",
+                "default": false,
+                "description": "(optional)"
+              }
+            },
+            "required": [
+              "file"
+            ]
+          }
+        },
+        "EnumerateDrives": {
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "drives": {
+                "type": "array",
+                "description": "Array of system drives",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "description": "Name of drive"
+                    },
+                    "type": {
+                      "type": "string",
+                      "description": "Type of drive"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "type"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "GetFileMetadata": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "file": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Full File Path"
+              },
+              "width": {
+                "type": "integer",
+                "description": "Desired thumbnail width in px",
+                "default": "undefined"
+              },
+              "height": {
+                "type": "integer",
+                "description": "Desired thumbnail height in px",
+                "default": "undefined"
+              }
+            },
+            "required": [
+              "file"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "fileType": {
+                "$ref": "#/definitions/FileType"
+              },
+              "fileSubType": {
+                "$ref": "#/definitions/SubType"
+              },
+              "fileSource": {
+                "$ref": "#/definitions/Source"
+              },
+              "DRSName": {
+                "type": "string",
+                "description": "DRS Name embedded in the file"
+              },
+              "DRSProfileName": {
+                "type": "string",
+                "description": "DRS profile embedded in the file"
+              },
+              "cmsId": {
+                "type": "integer",
+                "maximum": 9223372036854775807,
+                "minimum": 0,
+                "description": "CMS ID of the app"
+              },
+              "date": {
+                "type": "string",
+                "description": "Creation date of the file"
+              },
+              "fileSizeKB": {
+                "type": "number",
+                "description": "Size of file in kilobytes"
+              },
+              "thumbnail": {
+                "type": "string",
+                "description": "Fully-quanitified path to corresponding thumbnail image file"
+              },
+              "duration": {
+                "type": "string",
+                "description": "Duration of video file"
+              },
+              "msDuration": {
+                "type": "integer",
+                "description": "Duration of video file in milliseconds"
+              },
+              "eventTimeStamp": {
+                "type": "string",
+                "description": "Timestamp of Highlight Media File"
+              },
+              "audiotype": {
+                "$ref": "#/definitions/AudioType"
+              },
+              "memeInfo": {
+                "$ref": "#/definitions/MemeInfo"
+              },
+              "codecType": {
+                "type": "string",
+                "description": "Codec used for file"
+              }
+            }
+          }
+        },
+        "ActivityEvent": {
+          "type": "object",
+          "description": "Edge Log Event",
+          "properties": {
+            "time": {
+              "type": "string",
+              "description": "time of the game event"
+            },
+            "name": {
+              "type": "string",
+              "description": "name of the game event"
+            },
+            "info": {
+              "type": "string",
+              "description": "additional information for the event"
+            },
+            "round": {
+              "type": "integer",
+              "description": "round number of the event"
+            }
+          },
+          "required": [
+            "name",
+            "time",
+            "info"
+          ]
+        },
+        "ActivityRound": {
+          "type": "object",
+          "description": "Data for a round score of gameplay",
+          "properties": {
+            "number": {
+              "type": "integer",
+              "description": "round number"
+            },
+            "score1": {
+              "type": "integer",
+              "description": "team1 score"
+            },
+            "score2": {
+              "type": "integer",
+              "description": "team2 score"
+            },
+            "time": {
+              "type": "string",
+              "description": "start time of the round"
+            }
+          },
+          "required": [
+            "number",
+            "time"
+          ]
+        },
+        "ActivityData": {
+          "type": "object",
+          "description": "Data for a generated Higlight",
+          "properties": {
+            "gameName": {
+              "type": "string",
+              "description": "name of the game"
+            },
+            "session": {
+              "type": "integer",
+              "description": "session number of the game"
+            },
+            "playStarted": {
+              "type": "string",
+              "description": ""
+            },
+            "playTime": {
+              "type": "string",
+              "description": ""
+            },
+            "startTime": {
+              "type": "string",
+              "description": "game start time"
+            },
+            "endTime": {
+              "type": "string",
+              "description": "game end time"
+            },
+            "mapFileName": {
+              "type": "string",
+              "description": "name of filename for map"
+            },
+            "events": {
+              "type": "array",
+              "description": "array of edge events",
+              "items": {
+                "$ref": "#/definitions/ActivityEvent"
+              }
+            },
+            "rounds": {
+              "type": "array",
+              "description": "array of round end scores",
+              "items": {
+                "$ref": "#/definitions/ActivityRound"
+              }
+            },
+            "metaData": {
+              "type": "string",
+              "description": "metadata for map files"
+            }
+          }
+        },
+        "GetEventData": {
+          "isCommand": true,
+          "type": "object",
+          "return": {
+            "type": "object",
+            "properties": {
+              "recents": {
+                "type": "array",
+                "description": "Array of activity feed data for different games",
+                "items": {
+                  "$ref": "#/definitions/ActivityData"
+                }
+              }
+            }
+          }
+        },
+        "GetThumbnail": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "file": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Full File Path"
+              },
+              "width": {
+                "type": "integer",
+                "description": "Desired thumbnail width in px",
+                "minimum": 1
+              },
+              "height": {
+                "type": "integer",
+                "description": "Desired thumbnail height in px",
+                "minimum": 1
+              }
+            },
+            "required": [
+              "file",
+              "width",
+              "height"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "thumbnail": {
+                "type": "string",
+                "description": "Thumbnail of the image file"
+              }
+            }
+          }
+        },
+        "GetFolderCRC": {
+          "isCommand": true,
+          "id": "#getFolderCRC",
+          "title": "GetFolderCRC",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "directory": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Name of folder"
+              }
+            },
+            "required": [
+              "directory"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "crc": {
+                "type": "integer",
+                "description": "CRC checksum value for the folder"
+              }
+            },
+            "required": [
+              "crc"
+            ]
+          }
+        },
+        "GetImageFileDimensions": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "file": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Full File Path"
+              }
+            },
+            "required": [
+              "file"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "width": {
+                "type": "integer",
+                "description": "Pixel width of the image"
+              },
+              "height": {
+                "type": "integer",
+                "description": "Pixel height of the image"
+              }
+            }
+          }
+        },
+        "CopyFile": {
+          "isCommand": true,
+          "description": "Copies a specified file. Only works for files with NV metadata to prevent rogue usage",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "source": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Full source file path"
+              },
+              "destination": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Full source file path"
+              }
+            },
+            "required": [
+              "source",
+              "destination"
+            ]
+          }
+        },
+        "MoveFile": {
+          "isCommand": true,
+          "description": "Moves a specified file. Only works for files with NV metadata to prevent rogue usage",
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "source": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Full source file path"
+              },
+              "destination": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Full source file path"
+              }
+            },
+            "required": [
+              "source",
+              "destination"
+            ]
+          }
+        },
+        "IsDirectoryWriteable": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "directory": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Full directory path"
+              }
+            },
+            "required": [
+              "directory"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "writeable": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "GallerySettings": {
+          "type": "object",
+          "description": "Information about Gallery disk space usage and allowed capacity",
+          "properties": {
+            "path": {
+              "type": "string",
+              "description": "Fully-quantified path to root of Gallery"
+            },
+            "userGalleryPath": {
+              "type": "string",
+              "description": "User selected Gallery path, not including PRODUCT subfolder"
+            },
+            "tempFolderPath": {
+              "type": "string",
+              "description": "Fully-quantified path to ShadowPlay temp folder"
+            },
+            "capacity": {
+              "$ref": "#/definitions/GalleryCapInfo"
+            },
+            "trackerStatus": {
+              "$ref": "#/definitions/GalleryPathUpdateStatus"
+            }
+          }
+        },
+        "GetSettings": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets Gallery settings",
+          "return": {
+            "type": "object",
+            "properties": {
+              "settings": {
+                "$ref": "#/definitions/GallerySettings"
+              }
+            },
+            "required": [
+              "settings"
+            ]
+          }
+        },
+        "SetSettings": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Sets one or more Gallery settings",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "settings": {
+                "$ref": "#/definitions/GallerySettings"
+              }
+            },
+            "required": [
+              "settings"
+            ]
+          }
+        },
+        "GetDriveInfo": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets information about a physical drive",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "drive": {
+                "type": "string",
+                "description": "Designator of drive to gather info about (ex: C or C:)"
+              }
+            },
+            "required": [
+              "drive"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "freeSpaceMB": {
+                "type": "integer",
+                "description": "Free space on the drive, in megabytes"
+              },
+              "totalSpaceMB": {
+                "type": "integer",
+                "description": "Total size of the drive, in megabytes"
+              }
+            },
+            "required": [
+              "freeSpaceMB",
+              "totalSpaceMB"
+            ]
+          }
+        },
+        "CancelPathUpdate": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Cancels gallery path update and restores to old path"
+        },
+        "GetRecentUGC": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "count": {
+                "type": "integer",
+                "description": "Number of ugcs to get",
+                "minimum": 1
+              }
+            },
+            "required": [
+              "count"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "recents": {
+                "type": "array",
+                "description": "Array of Recent UGC",
+                "items": {
+                  "$ref": "#/definitions/UGC"
+                }
+              },
+              "pending": {
+                "type": "array",
+                "description": "Array of in-flight highlights not yet written to disk",
+                "items": {
+                  "$ref": "#/definitions/UGC"
+                }
+              }
+            }
+          }
+        },
+        "CheckDiskSpace": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Check if Disk space is running low",
+          "return": {
+            "type": "object",
+            "properties": {
+              "lowDiskSpace": {
+                "type": "boolean",
+                "description": "Indicates if disk space is low"
+              }
+            }
+          }
+        },
+        "EnqueuePendingHighlight": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Add the HL to tracker",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "app": {
+                "$ref": "#/definitions/HighlightAppInfo"
+              },
+              "highlight": {
+                "$ref": "#/definitions/Highlight"
+              }
+            },
+            "required": [
+              "highlight"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "highlight": {
+                "$ref": "#/definitions/Highlight"
+              }
+            },
+            "required": [
+              "highlight"
+            ]
+          }
+        },
+        "OpenHighlightsGroupSummary": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Open IGO with HL from the groups' specified",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "app": {
+                "$ref": "#/definitions/HighlightAppInfo"
+              },
+              "groupsInfo": {
+                "type": "array",
+                "description": "Array of Groups to show in the summary",
+                "items": {
+                  "$ref": "#/definitions/HighlightGroupInfo"
+                }
+              }
+            },
+            "required": [
+              "app",
+              "groups"
+            ]
+          }
+        },
+        "GetHighlightsCount": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Get count of HLs",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "app": {
+                "$ref": "#/definitions/HighlightAppInfo"
+              },
+              "group": {
+                "$ref": "#/definitions/HighlightGroupInfo"
+              }
+            },
+            "required": [
+              "app",
+              "group"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "count": {
+                "type": "integer",
+                "description": "Highlights count"
+              }
+            },
+            "required": [
+              "count"
+            ]
+          }
+        },
+        "DeleteGroupHighlights": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Delete group highlights",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "app": {
+                "$ref": "#/definitions/HighlightAppInfo"
+              },
+              "groupId": {
+                "type": "string",
+                "description": "Application-sourced group identifier that the Highlight belongs to"
+              }
+            },
+            "required": [
+              "app",
+              "groupId"
+            ]
+          }
+        },
+        "WriteEncryptedBitmap": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Write encrypted string to bmp",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "bitmapImage": {
+                "type": "string",
+                "description": "Meme image"
+              }
+            },
+            "required": [
+              "bitmapImage"
+            ]
+          }
+        },
+        "TranscodeMediaFile": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "file": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Full File Path that is to be transcoded"
+              },
+              "targetPath": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Full File Path for the output file"
+              },
+              "userData": {
+                "type": "string",
+                "minLength": 1,
+                "description": "User context"
+              },
+              "maxFileSizeMB": {
+                "type": "integer",
+                "description": "Max file size",
+                "minimum": 1
+              },
+              "quality": {
+                "type": "string",
+                "description": "encode quality"
+              },
+              "newDuration": {
+                "type": "number",
+                "description": "Duration of the output file",
+                "minimum": 1
+              },
+              "newWidth": {
+                "type": "integer",
+                "description": "Desired thumbnail width in px"
+              },
+              "newHeight": {
+                "type": "integer",
+                "description": "Desired thumbnail height in px"
+              },
+              "newFps": {
+                "type": "string",
+                "description": "FPS"
+              },
+              "memeImage": {
+                "type": "string",
+                "description": "Meme image"
+              }
+            },
+            "required": [
+              "file",
+              "targetPath"
+            ]
+          },
+          "return": {
+            "type": "object",
+            "properties": {
+              "userData": {
+                "type": "string",
+                "description": "User data passed in API parameters"
+              },
+              "newFile": {
+                "type": "string",
+                "description": "Full File Path of the output file"
+              },
+              "newFileSizeB": {
+                "type": "integer",
+                "description": "File size in bytes of the output file"
+              },
+              "newFileWidth": {
+                "type": "integer",
+                "description": "Width of the output file in px"
+              },
+              "newFileHeight": {
+                "type": "integer",
+                "description": "Height of the output file in px"
+              },
+              "numIterations": {
+                "type": "integer",
+                "description": "Height of the output file in px"
+              },
+              "errorString": {
+                "type": "string",
+                "description": "Indicates transcode error"
+              }
+            },
+            "required": [
+              "userData"
+            ]
+          }
+        },
+        "CreateMontage": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Creates a video montage as directed by the script",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "script": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Fully-qualified path to input GEMS script file"
+              }
+            },
+            "required": [
+              "script"
+            ]
+          }
+        },
+        "CreateMontageFromRecipe": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Creates a video montage script from a list of videos and EDGE logs",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "inputs": {
+                "type": "array",
+                "description": "Array of Montage inputs containing pairs of videos and EDGE logs",
+                "minItems": 1,
+                "items": {
+                  "$ref": "#/definitions/MontageInput"
+                }
+              },
+              "storyboard": {
+                "$ref": "#/definitions/Storyboard"
+              },
+              "recipe": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Name of recipe script file (including extension).  This path will be applied relative to the main montage application data files."
+              },
+              "output": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Fully-qualified path to name of output montage video to create"
+              }
+            },
+            "required": [
+              "inputs",
+              "recipe",
+              "output"
+            ]
+          }
+        },
+        "CancelMontage": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Stops the montage that is in progress."
+        },
+        "UpdateMontageProgress": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Updates the progress indicator of the montage that is in progress.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "progress": {
+                "type": "number",
+                "description": "Double from 0.0 to 100.0 indicating current progress",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "progress"
+            ]
+          }
+        },
+        "Trim": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Requests a video be trimmed",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "input": {
+                "type": "string",
+                "minLength": 1,
+                "description": "File path of video to trim"
+              },
+              "output": {
+                "type": "string",
+                "minLength": 1,
+                "description": "File path of trimmed video"
+              },
+              "headTrimMs": {
+                "type": "number",
+                "minimum": 0,
+                "description": "number of millisecs to trim from the front"
+              },
+              "lengthMs": {
+                "type": "number",
+                "minimum": 1,
+                "description": "length of video in millisecs to from the headTrimMs"
+              }
+            },
+            "required": [
+              "input",
+              "output",
+              "headTrimMs",
+              "lengthMs"
+            ]
+          }
+        },
+        "AddMeme": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "file": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Full File Path"
+              },
+              "memeInfo": {
+                "$ref": "#/definitions/MemeInfo"
+              }
+            },
+            "required": [
+              "file",
+              "memeInfo"
+            ]
+          }
+        },
+        "EngraveMP4": {
+          "isCommand": true,
+          "type": "object",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "file": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Full File Path"
+              },
+              "cmsId": {
+                "type": "integer",
+                "maximum": 9223372036854775807,
+                "minimum": 0,
+                "description": "CMS ID of the app"
+              },
+              "DRSProfileName": {
+                "type": "string",
+                "description": "Profile name of the app"
+              },
+              "DRSAppName": {
+                "type": "string",
+                "description": "DRS App name of the app"
+              },
+              "DRSShortName": {
+                "type": "string",
+                "description": "OPS short name of the app"
+              },
+              "IsAHighlight": {
+                "type": "boolean",
+                "description": "Indicates if it is a Highlight"
+              },
+              "highlightDefinitionId": {
+                "type": "string",
+                "description": "Application-sourced definition identifier of the Highlight"
+              },
+              "highlightGroupId": {
+                "type": "string",
+                "description": "Application-sourced group identifier that the Highlight belongs to"
+              },
+              "highlightTags": {
+                "type": "integer",
+                "description": "Application-sourced tag values for the Highlight"
+              },
+              "highlightSignificance": {
+                "type": "integer",
+                "description": "Application-sourced significance values for the Highlight"
+              },
+              "mediaType": {
+                "type": "string",
+                "description": "Application-sourced group identifier that the Highlight belongs to"
+              }
+            },
+            "required": [
+              "file"
+            ]
+          }
+        },
+        "DeletePreview": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Delete previews on game exit",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "previewFilepath": {
+                "type": "string",
+                "description": "Path of the preview Image"
+              }
+            },
+            "required": [
+              "previewFilepath"
+            ]
+          }
+        },
+        "PreviewPathInfo": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Path of all previews",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "paths": {
+                "type": "array",
+                "minItems": 0,
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "paths"
+            ]
+          }
+        },
+        "MontageConfigInfo": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "GetMontageCloudConfig": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Gets Montage Cloud Configuration",
+          "return": {
+            "type": "object",
+            "properties": {
+              "montageConfig": {
+                "type": "object",
+                "properties": {
+                  "celebrations": {
+                    "$ref": "#/definitions/MontageConfigInfo"
+                  },
+                  "transitions": {
+                    "$ref": "#/definitions/MontageConfigInfo"
+                  },
+                  "filters": {
+                    "$ref": "#/definitions/MontageConfigInfo"
+                  }
+                }
+              }
+            }
+          },
+          "required": [
+            "montageConfig"
+          ]
+        },
+        "MigrateHighlightsTracker": {
+          "isCommand": true,
+          "type": "object",
+          "description": "Migrate Highlights tracker metadata"
+        }
+      }
+    }
+  }
+]

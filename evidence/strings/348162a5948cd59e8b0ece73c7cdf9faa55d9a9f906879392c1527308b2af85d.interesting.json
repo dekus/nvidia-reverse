@@ -1,0 +1,47 @@
+[
+  {
+    "offset": "0x2afb48",
+    "encoding": "ascii",
+    "text": "NvMessageBus logging initialized."
+  },
+  {
+    "offset": "0x2b23eb",
+    "encoding": "ascii",
+    "text": "            \"description\": \"Default is 0 (disabled). When the period is non-zero, NvMessageBusBroadcast will periodically delete MessageBus client logs older than LogPruningAgeThreshold\","
+  },
+  {
+    "offset": "0x2b2503",
+    "encoding": "ascii",
+    "text": "            \"description\": \"Default is 0 (disabled). When the age threshold is non-zero, NvMessageBusBroadcast will periodically delete MessageBus client logs older than LogPruningAgeThreshold\","
+  },
+  {
+    "offset": "0x2ddcb0",
+    "encoding": "ascii",
+    "text": "C:\\dvs\\p4\\build\\sw\\gcomp\\dev\\src\\MessageBus\\_build\\X64\\Release\\messagebus\\NvMessageBus.pdb"
+  },
+  {
+    "offset": "0x328254",
+    "encoding": "ascii",
+    "text": "NvMessageBus.dll"
+  },
+  {
+    "offset": "0x328c16",
+    "encoding": "ascii",
+    "text": "DeviceIoControl"
+  },
+  {
+    "offset": "0x2b0f80",
+    "encoding": "utf-16le",
+    "text": "\\\\.\\pipe\\NvMessageBusBroadcast"
+  },
+  {
+    "offset": "0x2b2c70",
+    "encoding": "utf-16le",
+    "text": "SOFTWARE\\NVIDIA Corporation\\NvContainer\\MessageBus"
+  },
+  {
+    "offset": "0x359d48",
+    "encoding": "utf-16le",
+    "text": "NvMessageBus.dll"
+  }
+]

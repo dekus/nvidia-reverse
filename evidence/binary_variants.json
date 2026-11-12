@@ -1,0 +1,531 @@
+[
+  {
+    "basename": "nvmessagebus.dll",
+    "variants": [
+      {
+        "path": "FrameViewSDK\\FvContainer\\NvMessageBus.dll",
+        "sha256": "4915c54254d22a538c82ed438a8b01ce3b3ccdb136a9853072d463d436e80ae3",
+        "sections": [
+          {
+            "name": ".text",
+            "rva": "0x1000",
+            "sha256_raw_section": "a759e4ad293439a4e086c4b28d9390e715463db8a3d8aee293618a24c8b4ec12"
+          },
+          {
+            "name": ".rdata",
+            "rva": "0x29a000",
+            "sha256_raw_section": "b12a04ba5cd76b5d11739c3ef201a2800f3e8ab9fc621c17205d94eae5a93c6a"
+          },
+          {
+            "name": ".data",
+            "rva": "0x317000",
+            "sha256_raw_section": "f73f77211f4f4e6230ffbc963a6d04af777533f286279b200e5b76ce9461b453"
+          },
+          {
+            "name": ".pdata",
+            "rva": "0x321000",
+            "sha256_raw_section": "fbaea5165d2b2b605466efeaa6c99cd66d68c78edcc135dd3cf031e3ce3d9ae2"
+          },
+          {
+            "name": "_RDATA",
+            "rva": "0x34a000",
+            "sha256_raw_section": "ad8756132f3bbe873653540a4799740639fc9f411ae8a8d9a0c2be470c3b89cb"
+          },
+          {
+            "name": ".rsrc",
+            "rva": "0x34b000",
+            "sha256_raw_section": "8e79a5e834d4b36bd89ff31b968e22a8fa4bb967535c5dc260cc38a861917392"
+          },
+          {
+            "name": ".reloc",
+            "rva": "0x34c000",
+            "sha256_raw_section": "52d8c12d620095b7b320b7ca218a6cf47878f73d92a82e673c87731e485894d9"
+          }
+        ],
+        "coff_timestamp": 1669728682,
+        "checksum": 3476735,
+        "certificate_size": 10352
+      },
+      {
+        "path": "NVIDIA App\\MessageBus\\NvMessageBus.dll",
+        "sha256": "348162a5948cd59e8b0ece73c7cdf9faa55d9a9f906879392c1527308b2af85d",
+        "sections": [
+          {
+            "name": ".text",
+            "rva": "0x1000",
+            "sha256_raw_section": "b8354f0a431907e73f3a21d00f478be6019c67612c49e0675dd3b3c181eed376"
+          },
+          {
+            "name": ".rdata",
+            "rva": "0x2ae000",
+            "sha256_raw_section": "4991fcf56eaa7668e404d487e1cbd018ce6e388f7938cdb341b3d393458c146d"
+          },
+          {
+            "name": ".data",
+            "rva": "0x32b000",
+            "sha256_raw_section": "d05caefb7a892441b54113938394162a04c0800c0bcece1269a8122cf2094f17"
+          },
+          {
+            "name": ".pdata",
+            "rva": "0x335000",
+            "sha256_raw_section": "b9638d01159162604d41189b98bf137182e470f9bc9e7967af03b19b5d48f0c0"
+          },
+          {
+            "name": "_RDATA",
+            "rva": "0x35f000",
+            "sha256_raw_section": "4390d81736d977c04f569a394ded448f8da7be1b2b2ab67a901aecde8f6fb600"
+          },
+          {
+            "name": ".rsrc",
+            "rva": "0x360000",
+            "sha256_raw_section": "afb9e2364ab483e4e41c8bc41557a4fc260d3aad89157bffc9b0d5b820e00746"
+          },
+          {
+            "name": ".reloc",
+            "rva": "0x361000",
+            "sha256_raw_section": "a51c0e1b6ddc5422b9e7cb829ce0c5939f142cb644a6fd9fb6c8fd258446d1c4"
+          }
+        ],
+        "coff_timestamp": 1762181095,
+        "checksum": 3536865,
+        "certificate_size": 10352
+      }
+    ],
+    "all_section_bytes_identical": false
+  },
+  {
+    "basename": "nvmessagebusbroadcast.dll",
+    "variants": [
+      {
+        "path": "FrameViewSDK\\FvContainer\\plugins.system\\NvMessageBusBroadcast.dll",
+        "sha256": "e07a2df896f8e081117ae027ac4fce9613118c131030b0ccbbcc5731d750e595",
+        "sections": [
+          {
+            "name": ".text",
+            "rva": "0x1000",
+            "sha256_raw_section": "c80c7ea2cd3a432f1d130199c4261be1449242272fafb77a13290e81568aa143"
+          },
+          {
+            "name": ".rdata",
+            "rva": "0x290000",
+            "sha256_raw_section": "e527286de1325da229e230303927b610037b8777cd57b407d03072c8dac0d63e"
+          },
+          {
+            "name": ".data",
+            "rva": "0x30c000",
+            "sha256_raw_section": "b9d512999f0f9831652cb90ec692d983c4c3cb04b3912660539099dbf2181509"
+          },
+          {
+            "name": ".pdata",
+            "rva": "0x316000",
+            "sha256_raw_section": "c49cedbc6018382403c6ebde95ee40232ec53c6d914b0924e17440367fdab495"
+          },
+          {
+            "name": "_RDATA",
+            "rva": "0x33e000",
+            "sha256_raw_section": "5b1797e9f48527e822e4d13f36563c26479f358dc77e9c0c3fa5de379b557762"
+          },
+          {
+            "name": ".rsrc",
+            "rva": "0x33f000",
+            "sha256_raw_section": "fdf4516fc837072a4ec0dadbd92a75bcfd5e80d55405860f508d710ef77015e5"
+          },
+          {
+            "name": ".reloc",
+            "rva": "0x340000",
+            "sha256_raw_section": "2b67af6d36b5c57934e04822dbc9249e6d133145fd4fb549ea300e2ed34d9250"
+          }
+        ],
+        "coff_timestamp": 1669728682,
+        "checksum": 3417003,
+        "certificate_size": 10352
+      },
+      {
+        "path": "NVIDIA App\\MessageBus\\NvMessageBusBroadcast.dll",
+        "sha256": "63b000b70eaea5477e8d30e141f84ccf5391a8d098377768795e694aeda8372f",
+        "sections": [
+          {
+            "name": ".text",
+            "rva": "0x1000",
+            "sha256_raw_section": "97b66bda668b1b483158a82df51bbff2f017fd3d53369ca75a0cf7c9b6a1d0c9"
+          },
+          {
+            "name": ".rdata",
+            "rva": "0x2ac000",
+            "sha256_raw_section": "44fa052a7d32f1520d0c4886b5f1a94200428dcaba4d25a63087dd54020da15f"
+          },
+          {
+            "name": ".data",
+            "rva": "0x329000",
+            "sha256_raw_section": "f9a6303ef4521414acc82add392ffe175e29363ee39fa235176bdd443d91685b"
+          },
+          {
+            "name": ".pdata",
+            "rva": "0x333000",
+            "sha256_raw_section": "b218eacf322dee3dbee0a2f36f16d83a2a851efb9ffb5055856080b2234dbfe9"
+          },
+          {
+            "name": "_RDATA",
+            "rva": "0x35c000",
+            "sha256_raw_section": "1b473b5b3b73bed91f2ea57efcead72d5cb903ee8551eada82ab8a1b44d94ad9"
+          },
+          {
+            "name": ".rsrc",
+            "rva": "0x35d000",
+            "sha256_raw_section": "29f1bfe1c44934b27f9aacbbea0086a34e28ebca121d1f38bed6bf93f80fca42"
+          },
+          {
+            "name": ".reloc",
+            "rva": "0x35e000",
+            "sha256_raw_section": "e7f22e2db1d3321bda406698aa46be45e92f75840d15bce09d8944264700b70d"
+          }
+        ],
+        "coff_timestamp": 1762181095,
+        "checksum": 3530891,
+        "certificate_size": 10352
+      },
+      {
+        "path": "NvContainer\\plugins\\LocalSystem\\NvMessageBusBroadcast.dll",
+        "sha256": "63b000b70eaea5477e8d30e141f84ccf5391a8d098377768795e694aeda8372f",
+        "sections": [
+          {
+            "name": ".text",
+            "rva": "0x1000",
+            "sha256_raw_section": "97b66bda668b1b483158a82df51bbff2f017fd3d53369ca75a0cf7c9b6a1d0c9"
+          },
+          {
+            "name": ".rdata",
+            "rva": "0x2ac000",
+            "sha256_raw_section": "44fa052a7d32f1520d0c4886b5f1a94200428dcaba4d25a63087dd54020da15f"
+          },
+          {
+            "name": ".data",
+            "rva": "0x329000",
+            "sha256_raw_section": "f9a6303ef4521414acc82add392ffe175e29363ee39fa235176bdd443d91685b"
+          },
+          {
+            "name": ".pdata",
+            "rva": "0x333000",
+            "sha256_raw_section": "b218eacf322dee3dbee0a2f36f16d83a2a851efb9ffb5055856080b2234dbfe9"
+          },
+          {
+            "name": "_RDATA",
+            "rva": "0x35c000",
+            "sha256_raw_section": "1b473b5b3b73bed91f2ea57efcead72d5cb903ee8551eada82ab8a1b44d94ad9"
+          },
+          {
+            "name": ".rsrc",
+            "rva": "0x35d000",
+            "sha256_raw_section": "29f1bfe1c44934b27f9aacbbea0086a34e28ebca121d1f38bed6bf93f80fca42"
+          },
+          {
+            "name": ".reloc",
+            "rva": "0x35e000",
+            "sha256_raw_section": "e7f22e2db1d3321bda406698aa46be45e92f75840d15bce09d8944264700b70d"
+          }
+        ],
+        "coff_timestamp": 1762181095,
+        "checksum": 3530891,
+        "certificate_size": 10352
+      }
+    ],
+    "all_section_bytes_identical": false
+  },
+  {
+    "basename": "fvsdk_x64.dll",
+    "variants": [
+      {
+        "path": "FrameViewSDK\\SDK\\Public_Release\\FvSDK_x64.dll",
+        "sha256": "3d7fc2f6badbf9ba3796ef324638526e0438bf090cbc419654294ac7fc6bc513",
+        "sections": [
+          {
+            "name": ".text",
+            "rva": "0x1000",
+            "sha256_raw_section": "41210c0b0f23ab3321653d45d846d918ecae79bb86ca5e019b0f92c08a1974b8"
+          },
+          {
+            "name": ".rdata",
+            "rva": "0x33000",
+            "sha256_raw_section": "781da7a349903977f71d3ab2a7fe818b29e7c8e42f87502e48bbfa406631037d"
+          },
+          {
+            "name": ".data",
+            "rva": "0x44000",
+            "sha256_raw_section": "a2c45782762c6cd83e38611c0a99074230fcb9364659d86dc0b1a05d9d4977ed"
+          },
+          {
+            "name": ".pdata",
+            "rva": "0x48000",
+            "sha256_raw_section": "511b2c61d8c8c2a9b60ca5fb7830d8b3a29975136e1b90a963f5be4d039b3e9d"
+          },
+          {
+            "name": ".rsrc",
+            "rva": "0x4b000",
+            "sha256_raw_section": "ec2e380421c96f9fda269a7f2bed8dfc31d39bef3748cbe7b5fe08cf81867ab4"
+          },
+          {
+            "name": ".reloc",
+            "rva": "0x4c000",
+            "sha256_raw_section": "59235d0bca77258d57154fe0178eda4f562388738e7fc3d255022866280d1b2f"
+          }
+        ],
+        "coff_timestamp": 1785268877,
+        "checksum": 314126,
+        "certificate_size": 10352
+      },
+      {
+        "path": "FrameViewSDK\\bin\\FvSDK_x64.dll",
+        "sha256": "e1a209218a6edd6c01f3ca107765faa44ee24539b3df8fbfc675e7bbc67b05ac",
+        "sections": [
+          {
+            "name": ".text",
+            "rva": "0x1000",
+            "sha256_raw_section": "41210c0b0f23ab3321653d45d846d918ecae79bb86ca5e019b0f92c08a1974b8"
+          },
+          {
+            "name": ".rdata",
+            "rva": "0x33000",
+            "sha256_raw_section": "781da7a349903977f71d3ab2a7fe818b29e7c8e42f87502e48bbfa406631037d"
+          },
+          {
+            "name": ".data",
+            "rva": "0x44000",
+            "sha256_raw_section": "a2c45782762c6cd83e38611c0a99074230fcb9364659d86dc0b1a05d9d4977ed"
+          },
+          {
+            "name": ".pdata",
+            "rva": "0x48000",
+            "sha256_raw_section": "511b2c61d8c8c2a9b60ca5fb7830d8b3a29975136e1b90a963f5be4d039b3e9d"
+          },
+          {
+            "name": ".rsrc",
+            "rva": "0x4b000",
+            "sha256_raw_section": "ec2e380421c96f9fda269a7f2bed8dfc31d39bef3748cbe7b5fe08cf81867ab4"
+          },
+          {
+            "name": ".reloc",
+            "rva": "0x4c000",
+            "sha256_raw_section": "59235d0bca77258d57154fe0178eda4f562388738e7fc3d255022866280d1b2f"
+          }
+        ],
+        "coff_timestamp": 1785268877,
+        "checksum": 356507,
+        "certificate_size": 10352
+      }
+    ],
+    "all_section_bytes_identical": true
+  },
+  {
+    "basename": "displaydriverext.dll",
+    "variants": [
+      {
+        "path": "Installer2\\Display.Driver.{92800A66-972D-4AAC-A44D-81E3328AF354}\\DisplayDriverExt.dll",
+        "sha256": "417edc653f0ea0ac8be0e58a1f1c3fc17772ae9ed8c24e3ddab5200c74c33347",
+        "sections": [
+          {
+            "name": ".text",
+            "rva": "0x1000",
+            "sha256_raw_section": "d7ddea7eefc112e3fbbfa2d8b4da770191654e58ad0192f35771633909e151d1"
+          },
+          {
+            "name": ".rdata",
+            "rva": "0x141000",
+            "sha256_raw_section": "952500eb353c91ca27a187413de49343c19aa165d71835ba1b5d759b1a75adee"
+          },
+          {
+            "name": ".data",
+            "rva": "0x1a7000",
+            "sha256_raw_section": "675e22a1fef0aacf616fc091ca51ed9368af3edfdfa54771f4cc5e029724101a"
+          },
+          {
+            "name": ".fptable",
+            "rva": "0x1c0000",
+            "sha256_raw_section": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560"
+          },
+          {
+            "name": ".rsrc",
+            "rva": "0x1c1000",
+            "sha256_raw_section": "5e40638426b3fe6bd9a92a874eb0b13b66ae83db660cb94179e826a12dd37f0f"
+          },
+          {
+            "name": ".reloc",
+            "rva": "0x1c6000",
+            "sha256_raw_section": "333649b4c1af51ce2ee2538d6a222d6b4beae0eb8aca18c3d03e90a317782ba5"
+          }
+        ],
+        "coff_timestamp": 1792401494,
+        "checksum": 2000691,
+        "certificate_size": 20200
+      },
+      {
+        "path": "Installer2\\Display.Driver.{F11599FA-D299-43A1-B827-83234858D1A3}\\DisplayDriverExt.dll",
+        "sha256": "3003a80c9e45d37ac4b345a0a3cb10d5f8ecd6b5f02ed68e8ff69b622bf57334",
+        "sections": [
+          {
+            "name": ".text",
+            "rva": "0x1000",
+            "sha256_raw_section": "ffd75051f2b47e5944d484626987fa4bf3829cbf2fbe8b33f992a46b56933cc1"
+          },
+          {
+            "name": ".rdata",
+            "rva": "0x13c000",
+            "sha256_raw_section": "d167d8fa0dfcbf6199f24c5919ed10cd5998df977f9a45c347483732b771341f"
+          },
+          {
+            "name": ".data",
+            "rva": "0x1a5000",
+            "sha256_raw_section": "11d5a1c4c9e134a7dd8f22400534d5c8311a88acf8483dbe759aa593ab69fe8c"
+          },
+          {
+            "name": ".rsrc",
+            "rva": "0x1be000",
+            "sha256_raw_section": "e704f51a598f07287bc6d8a24fe2f571ef29fede5c9d13f1152ee9bf512338d8"
+          },
+          {
+            "name": ".reloc",
+            "rva": "0x1c3000",
+            "sha256_raw_section": "53bb0999c7ca51369dce2d7ca72114808dc95e47bd1e7584bbf53d4c4f8a3c81"
+          }
+        ],
+        "coff_timestamp": 1784683482,
+        "checksum": 2000235,
+        "certificate_size": 20200
+      }
+    ],
+    "all_section_bytes_identical": false
+  },
+  {
+    "basename": "messagebusrouter.dll",
+    "variants": [
+      {
+        "path": "NVIDIA App\\CEF\\plugins\\NVIDIA App\\MessageBusRouter.dll",
+        "sha256": "517840f0c1ffbfd699c1f628e1d37449299d242e55ec13ed4a6ab3dc95a1858a",
+        "sections": [
+          {
+            "name": ".text",
+            "rva": "0x1000",
+            "sha256_raw_section": "c0d3ac9a838fc14cc9d72f20237187781d5c98b899b9f841708bfb5d8d88b9d6"
+          },
+          {
+            "name": ".rdata",
+            "rva": "0x143000",
+            "sha256_raw_section": "e9f4f12c57cee555c7619afbd5ba35d37f9a68129c1fd0f59ef42e66e17ea3c1"
+          },
+          {
+            "name": ".data",
+            "rva": "0x173000",
+            "sha256_raw_section": "6de7dc35d61a1cc4ae5329ce78c5c2a9ee7620608a7ebd2955a8e139a9d7753b"
+          },
+          {
+            "name": ".pdata",
+            "rva": "0x179000",
+            "sha256_raw_section": "a68a06efe433aec6528e3daa1abe9409f8b94f18fcc51acb4f7cea7e273b2627"
+          },
+          {
+            "name": ".idata",
+            "rva": "0x188000",
+            "sha256_raw_section": "e7a5170bb30e3129dcec332f9d794fd6cbe3b28cc9be91b54819a68fbf142d4a"
+          },
+          {
+            "name": ".gfids",
+            "rva": "0x18f000",
+            "sha256_raw_section": "c56db50f425146fa4bfc351aff7836a7917f396dea13286abfa53b4192429531"
+          },
+          {
+            "name": ".giats",
+            "rva": "0x190000",
+            "sha256_raw_section": "64fcf413eb72ab82accc2bce8a28c6ccb089e1060bdcfc80fe2f40fd834d38c1"
+          },
+          {
+            "name": ".tls",
+            "rva": "0x191000",
+            "sha256_raw_section": "13bde09a110c13b533dc985f3e2c475b6f6bcf514d1a23fce5b784a653548e91"
+          },
+          {
+            "name": ".00cfg",
+            "rva": "0x192000",
+            "sha256_raw_section": "5917fe6cc07e1ca6158b4848fb4961aec518503be0b53c741a29948f4878bda7"
+          },
+          {
+            "name": ".rsrc",
+            "rva": "0x193000",
+            "sha256_raw_section": "74a13215e56547cedd72e75b4ac90d4663e2ebca9aa9a2b32ed2a7e8f316ca9e"
+          },
+          {
+            "name": ".reloc",
+            "rva": "0x194000",
+            "sha256_raw_section": "ba75beebf41cd0e96d35b854e6cde2da9e268c8c4a0f55a4140a2afacb15b492"
+          }
+        ],
+        "coff_timestamp": 1793350226,
+        "checksum": 1697670,
+        "certificate_size": 10352
+      },
+      {
+        "path": "NVIDIA App\\CEF\\plugins\\NVIDIA Overlay\\MessageBusRouter.dll",
+        "sha256": "517840f0c1ffbfd699c1f628e1d37449299d242e55ec13ed4a6ab3dc95a1858a",
+        "sections": [
+          {
+            "name": ".text",
+            "rva": "0x1000",
+            "sha256_raw_section": "c0d3ac9a838fc14cc9d72f20237187781d5c98b899b9f841708bfb5d8d88b9d6"
+          },
+          {
+            "name": ".rdata",
+            "rva": "0x143000",
+            "sha256_raw_section": "e9f4f12c57cee555c7619afbd5ba35d37f9a68129c1fd0f59ef42e66e17ea3c1"
+          },
+          {
+            "name": ".data",
+            "rva": "0x173000",
+            "sha256_raw_section": "6de7dc35d61a1cc4ae5329ce78c5c2a9ee7620608a7ebd2955a8e139a9d7753b"
+          },
+          {
+            "name": ".pdata",
+            "rva": "0x179000",
+            "sha256_raw_section": "a68a06efe433aec6528e3daa1abe9409f8b94f18fcc51acb4f7cea7e273b2627"
+          },
+          {
+            "name": ".idata",
+            "rva": "0x188000",
+            "sha256_raw_section": "e7a5170bb30e3129dcec332f9d794fd6cbe3b28cc9be91b54819a68fbf142d4a"
+          },
+          {
+            "name": ".gfids",
+            "rva": "0x18f000",
+            "sha256_raw_section": "c56db50f425146fa4bfc351aff7836a7917f396dea13286abfa53b4192429531"
+          },
+          {
+            "name": ".giats",
+            "rva": "0x190000",
+            "sha256_raw_section": "64fcf413eb72ab82accc2bce8a28c6ccb089e1060bdcfc80fe2f40fd834d38c1"
+          },
+          {
+            "name": ".tls",
+            "rva": "0x191000",
+            "sha256_raw_section": "13bde09a110c13b533dc985f3e2c475b6f6bcf514d1a23fce5b784a653548e91"
+          },
+          {
+            "name": ".00cfg",
+            "rva": "0x192000",
+            "sha256_raw_section": "5917fe6cc07e1ca6158b4848fb4961aec518503be0b53c741a29948f4878bda7"
+          },
+          {
+            "name": ".rsrc",
+            "rva": "0x193000",
+            "sha256_raw_section": "74a13215e56547cedd72e75b4ac90d4663e2ebca9aa9a2b32ed2a7e8f316ca9e"
+          },
+          {
+            "name": ".reloc",
+            "rva": "0x194000",
+            "sha256_raw_section": "ba75beebf41cd0e96d35b854e6cde2da9e268c8c4a0f55a4140a2afacb15b492"
+          }
+        ],
+        "coff_timestamp": 1793350226,
+        "checksum": 1697670,
+        "certificate_size": 10352
+      }
+    ],
+    "all_section_bytes_identical": true
+  }
+]
